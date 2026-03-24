@@ -1,5 +1,0 @@
-node_modules/
-contracts/hardhat-dependency-compiler/
-build/
-cache/
-artifacts/

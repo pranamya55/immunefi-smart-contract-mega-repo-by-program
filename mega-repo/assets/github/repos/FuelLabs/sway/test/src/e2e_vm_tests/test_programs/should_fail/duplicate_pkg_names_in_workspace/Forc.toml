@@ -1,3 +1,0 @@
-[workspace]
-
-members = ["contract", "contract2", "script", "script2"]

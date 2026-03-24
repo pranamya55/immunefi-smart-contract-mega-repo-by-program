@@ -1,2 +1,0 @@
-# Syntax highlighting of ir files as LLVM
-*.ir linguist-language=LLVM

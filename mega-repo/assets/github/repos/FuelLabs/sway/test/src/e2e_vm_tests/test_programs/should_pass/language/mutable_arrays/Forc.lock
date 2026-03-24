@@ -1,8 +1,0 @@
-[[package]]
-name = "mutable_arrays"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-BA3A7C875093CBDA"

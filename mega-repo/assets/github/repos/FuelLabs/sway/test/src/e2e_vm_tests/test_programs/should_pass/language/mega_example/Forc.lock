@@ -1,8 +1,0 @@
-[[package]]
-name = "mega_example"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-A63EC0723332CE0D"

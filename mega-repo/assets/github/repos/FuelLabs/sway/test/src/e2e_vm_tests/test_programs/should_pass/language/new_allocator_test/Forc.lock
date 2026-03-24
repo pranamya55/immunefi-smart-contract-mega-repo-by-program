@@ -1,8 +1,0 @@
-[[package]]
-name = "new_allocator_test"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-905B8C522C0BD730"

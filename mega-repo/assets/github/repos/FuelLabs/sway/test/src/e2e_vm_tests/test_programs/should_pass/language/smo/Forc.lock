@@ -1,8 +1,0 @@
-[[package]]
-name = "smo"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-F9B47834260273EA"

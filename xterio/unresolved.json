@@ -1,0 +1,32 @@
+[
+  {
+    "asset_id": "4D9uoLdS36uSBNxbOmMGEh",
+    "url": "https://bscscan.com/address/0x7127f0FEaEF8143241A5FaC62aC5b7be02Ef26A9",
+    "description": "TokenGateway"
+  },
+  {
+    "asset_id": "5s0vRyQmF1uKWLfoQYfsl8",
+    "url": "https://eth.xterscan.io/address/0x7127f0FEaEF8143241A5FaC62aC5b7be02Ef26A9",
+    "description": "TokenGateway"
+  },
+  {
+    "asset_id": "5ybAvFAbPxtC5zfByaQvgx",
+    "url": "https://bnb.xterscan.io/address/0xFC1759E75180aeE982DC08D0d6D365ebFA0296a7",
+    "description": "MarketplaceV2"
+  },
+  {
+    "asset_id": "6JpHQvKEFxniJKPioJQz2E",
+    "url": "https://bnb.xterscan.io/address/0x7127f0FEaEF8143241A5FaC62aC5b7be02Ef26A9",
+    "description": "TokenGateway"
+  },
+  {
+    "asset_id": "7At0K17vLCloNv57RdXalG",
+    "url": "https://immunefi.com",
+    "description": "Primacy of Impact"
+  },
+  {
+    "asset_id": "7xLkkza8yKparZFxxIZFFb",
+    "url": "https://eth.xterscan.io/address/0xFC1759E75180aeE982DC08D0d6D365ebFA0296a7",
+    "description": "MarketplaceV2"
+  }
+]

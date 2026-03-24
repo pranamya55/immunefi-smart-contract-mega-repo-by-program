@@ -1,7 +1,0 @@
-{
-    "summary": "Read-only function failure response",
-    "value": {
-        "okay": false,
-        "cause": "NotReadOnly"
-    }
-}

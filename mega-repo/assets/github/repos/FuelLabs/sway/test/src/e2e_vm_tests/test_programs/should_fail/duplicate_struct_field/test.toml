@@ -1,4 +1,0 @@
-category = "fail"
-
-# check: $()Struct field has multiple definitions
-# check: $()Field "x" has multiple definitions.

@@ -1,7 +1,0 @@
-{
-  "url": "https://www.oklink.com/x-layer/address/0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
-  "host": "www.oklink.com",
-  "address": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
-  "mode": "placeholder-onchain",
-  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:http 404"
-}

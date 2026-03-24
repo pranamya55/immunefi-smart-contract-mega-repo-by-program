@@ -1,8 +1,0 @@
-[[package]]
-name = "mutable_arrays_nested"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-02F18C78CF5FE44B"

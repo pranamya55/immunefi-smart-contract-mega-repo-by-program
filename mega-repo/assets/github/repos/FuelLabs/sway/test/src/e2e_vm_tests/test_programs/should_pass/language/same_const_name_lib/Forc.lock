@@ -1,8 +1,0 @@
-[[package]]
-name = "same_const_name_lib"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-1B900B1A49ACF7FE"

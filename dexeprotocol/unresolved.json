@@ -1,0 +1,37 @@
+[
+  {
+    "asset_id": "1YpSpcgVh5qpCph1tjE1MR",
+    "url": "https://bscscan.com/address/0xaB9d2a2347D5fF5B760C0226C52d5C673b8D9e44",
+    "description": "CoreProperties"
+  },
+  {
+    "asset_id": "3kf2rGbc2vdboVDRFcFpfN",
+    "url": "https://bscscan.com/address/0xc7730074736c10ed0d3F928A10Ee4162DA9a7983",
+    "description": "PriceFeed"
+  },
+  {
+    "asset_id": "U9g5NTEqfs2hwRiUt4cSg",
+    "url": "https://bscscan.com/address/0x892B3292cF80CB298b7fA20D04EF4732640db404",
+    "description": "ERC721Expert"
+  },
+  {
+    "asset_id": "6A6l1YOunoASMXJlYaGxvR",
+    "url": "https://bscscan.com/address/0x85f86ef7E72e86BdEAb5F65e2B76A2c551f22109",
+    "description": "PoolFactory "
+  },
+  {
+    "asset_id": "7BuPqlLi0Gxw5HvQrtd7rt",
+    "url": "https://bscscan.com/address/0xFEB26AAB75638440B3CEFe8B10de6118972f9C6B",
+    "description": "PoolRegistry"
+  },
+  {
+    "asset_id": "3WfRR1GHvxftZXzOIwr0bT",
+    "url": "https://bscscan.com/address/0x41260f637a993ce714Ece1ee9875F489e483e9b3",
+    "description": "SphereXEngine"
+  },
+  {
+    "asset_id": "4HYfZT6dn9zLJVjQ7E7U4N",
+    "url": "https://www.immunefi.com",
+    "description": "Primacy of Impacts"
+  }
+]

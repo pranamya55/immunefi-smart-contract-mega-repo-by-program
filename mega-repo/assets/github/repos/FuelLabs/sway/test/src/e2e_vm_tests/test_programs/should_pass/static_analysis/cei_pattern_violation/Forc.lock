@@ -1,8 +1,0 @@
-[[package]]
-name = "cei_pattern_violation"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-DF35851ECC937459"

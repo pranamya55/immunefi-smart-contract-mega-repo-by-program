@@ -1,1 +1,0 @@
-../../../../../../../../../mega-repo/assets/github/blob-snapshots/OffchainLabs/nitro-contracts/main/src/precompiles/ArbOwnerPublic.sol

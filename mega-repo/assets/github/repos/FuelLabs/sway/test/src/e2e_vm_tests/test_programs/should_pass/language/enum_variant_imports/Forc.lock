@@ -1,8 +1,0 @@
-[[package]]
-name = "enum_variant_imports"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-EAB7045877462196"

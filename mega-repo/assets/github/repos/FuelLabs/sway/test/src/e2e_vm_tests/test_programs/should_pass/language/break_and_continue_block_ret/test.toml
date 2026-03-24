@@ -1,4 +1,0 @@
-category = "compile"
-
-# not: $()Returned value is ignored
-# not: $()This returns a value which is not assigned to anything and is ignored.

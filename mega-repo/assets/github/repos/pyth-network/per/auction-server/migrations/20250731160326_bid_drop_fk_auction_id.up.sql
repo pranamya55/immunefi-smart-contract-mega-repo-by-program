@@ -1,1 +1,0 @@
-ALTER TABLE bid DROP CONSTRAINT IF EXISTS fk_auction_id;

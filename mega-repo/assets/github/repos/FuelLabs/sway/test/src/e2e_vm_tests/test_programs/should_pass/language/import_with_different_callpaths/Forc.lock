@@ -1,8 +1,0 @@
-[[package]]
-name = "import_with_different_callpaths"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-9E94934D4E529F7D"

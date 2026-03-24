@@ -1,8 +1,0 @@
-[[package]]
-name = "passing_and_returning_references_to_and_from_functions"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-F6AA645E4A741D0E"

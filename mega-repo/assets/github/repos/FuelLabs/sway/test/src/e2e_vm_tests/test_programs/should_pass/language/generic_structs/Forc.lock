@@ -1,8 +1,0 @@
-[[package]]
-name = "generic_structs"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-275E66803932EADF"

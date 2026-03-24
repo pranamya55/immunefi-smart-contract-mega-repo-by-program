@@ -1,3 +1,0 @@
-category = "compile"
-expected_warnings = 5
-validate_abi = true

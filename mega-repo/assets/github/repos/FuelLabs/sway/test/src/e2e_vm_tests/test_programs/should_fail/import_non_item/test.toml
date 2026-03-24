@@ -1,5 +1,0 @@
-category = "fail"
-
-# check: $()error
-# check: $()Imports without items are not supported
-# check: $()Aborting due to 1 error

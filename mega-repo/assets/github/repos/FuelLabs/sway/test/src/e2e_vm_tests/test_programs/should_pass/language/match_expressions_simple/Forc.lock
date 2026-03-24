@@ -1,8 +1,0 @@
-[[package]]
-name = "match_expressions_simple"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-0F6A160E4339920A"

@@ -1,4 +1,0 @@
-{
-    "detectors_to_exclude": "assembly,low-level-calls,solc-version,timestamp,dead-code,controlled-delegatecall",
-    "filter_paths": "(contracts/test/|node_modules/)"
-}

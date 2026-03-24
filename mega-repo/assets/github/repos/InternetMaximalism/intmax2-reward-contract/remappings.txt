@@ -1,5 +1,0 @@
-@prb/math/=lib/prb-math/
-@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/
-@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/
-@scroll-tech/contracts=lib/scroll-contracts/src
-@intmax2contract/contracts/=lib/intmax2-contract/contracts/

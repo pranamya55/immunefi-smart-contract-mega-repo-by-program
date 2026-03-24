@@ -1,6 +1,0 @@
-category = "fail"
-
-# check: $()const X;
-# nextln: $()Constant requires expression.
-
-# check: $()1 error.

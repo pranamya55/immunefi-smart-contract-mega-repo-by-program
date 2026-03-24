@@ -1,0 +1,12 @@
+[
+  {
+    "asset_id": "9GeDAT7suA3EXGebE9zon",
+    "url": "https://www.mintscan.io/noble/assets/native/YXVzZHk=",
+    "description": "USDY Token (Noble)"
+  },
+  {
+    "asset_id": "TJwGG8nT5j2ZoBYq234Wz",
+    "url": "https://explorer.aptoslabs.com/account/0xcfea864b32833f157f042618bd845145256b1bf4c0da34a7013b76e42daa53cc/modules/code/usdy?network=mainnet",
+    "description": "USDY Token (Aptos)"
+  }
+]

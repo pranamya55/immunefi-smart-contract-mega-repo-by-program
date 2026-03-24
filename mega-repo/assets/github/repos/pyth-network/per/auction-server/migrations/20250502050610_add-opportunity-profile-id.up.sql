@@ -1,1 +1,0 @@
-ALTER TABLE opportunity ADD COLUMN profile_id UUID REFERENCES profile(id) ON DELETE SET NULL;

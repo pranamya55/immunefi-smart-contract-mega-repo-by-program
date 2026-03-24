@@ -1,8 +1,0 @@
-[[package]]
-name = "std"
-source = "path+from-root-21A5DCDE7B419474"
-
-[[package]]
-name = "unused_struct_field_enum"
-source = "member"
-dependencies = ["std"]

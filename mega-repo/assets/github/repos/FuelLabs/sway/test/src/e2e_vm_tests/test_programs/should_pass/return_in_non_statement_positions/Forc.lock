@@ -1,8 +1,0 @@
-[[package]]
-name = "return_in_non_statement_positions"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-C14A34E80F4CB235"

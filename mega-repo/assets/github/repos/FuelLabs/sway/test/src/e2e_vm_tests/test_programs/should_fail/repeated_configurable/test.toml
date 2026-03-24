@@ -1,5 +1,0 @@
-category = "fail"
-
-# check: X: b256
-# nextln: X: u64
-# nextln: $()configurable "X" already declared

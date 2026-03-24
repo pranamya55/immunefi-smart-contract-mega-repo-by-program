@@ -1,8 +1,0 @@
-[[package]]
-name = "binary_and_hex_literals"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-5E3505F1F1F37230"

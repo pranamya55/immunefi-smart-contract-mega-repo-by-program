@@ -1,0 +1,142 @@
+[
+  {
+    "asset_id": "487GSTQvFOdDwaO9Yfe1G1",
+    "url": "https://optimistic.etherscan.io/address/0xda03Dc399aF3F1545748243aAFbC5050A63B17eC",
+    "description": "SinkDrain"
+  },
+  {
+    "asset_id": "IIVyeVfK9XGhqLptRa0Bo",
+    "url": "https://optimistic.etherscan.io/address/0x5aeE5F0E6C2055EbD776DB25F48f6c9A68ABcdaE",
+    "description": "SinkManager"
+  },
+  {
+    "asset_id": "5VHmOrh7Fv638wVA1sQqYm",
+    "url": "https://optimistic.etherscan.io/address/0x45fF00822E8235b86Cb605ac8295c14628cE78a4",
+    "description": "SinkManagerFacilitator"
+  },
+  {
+    "asset_id": "64hfdSeJ1O1KEUNn4eEbKK",
+    "url": "https://optimistic.etherscan.io/address/0x756E7C245C69d351FfFBfb88bA234aa395AdA8ec",
+    "description": "VotingRewardsFactory"
+  },
+  {
+    "asset_id": "1heOk3LW4ZMKsW51e4tXyp",
+    "url": "https://immunefi.com",
+    "description": "Primacy of Impact"
+  },
+  {
+    "asset_id": "zzo0UxL8rt4vQR6vExzjb",
+    "url": "https://optimistic.etherscan.io/address/0xA9c319945f706dd1809819321a2e31C9A169e9c1#code",
+    "description": "CustomSwapFeeModule"
+  },
+  {
+    "asset_id": "P3YQlCukaVY4w4ojHpob6",
+    "url": "https://optimistic.etherscan.io/address/0x5A993209065ea74b50E23a378ddB7068189345D0#code",
+    "description": "CustomUnstakedFeeModule"
+  },
+  {
+    "asset_id": "2iMxnvnm3O1AWp2bQxQXfw",
+    "url": "https://optimistic.etherscan.io/address/0x282AC0eA96493650F1A5E5e5d20490C782F1592a#code",
+    "description": "CLGaugeFactory"
+  },
+  {
+    "asset_id": "kMEi7Ybq7QdOHk8W8Y72c",
+    "url": "https://optimistic.etherscan.io/address/0x6D600CC5F14B81665606Ca1985605464BA332Bad#code",
+    "description": "CLGauge"
+  },
+  {
+    "asset_id": "57bvdtnFY5frkG0ZezuEN5",
+    "url": "https://optimistic.etherscan.io/address/0xbB5DFE1380333CEE4c2EeBd7202c80dE2256AdF4#code",
+    "description": "NonfungiblePositionManager"
+  },
+  {
+    "asset_id": "42N6WSx54PxMYdNLKMPm5B",
+    "url": "https://optimistic.etherscan.io/address/0x10499d88Bd32AF443Fc936F67DE32bE1c8Bb374C#code",
+    "description": "RootPoolImplementation"
+  },
+  {
+    "asset_id": "7Fix1yxGGM8X6areQmc22z",
+    "url": "https://optimistic.etherscan.io/address/0x73CaE4450f11f4A33a49C880CE3E8E56a9294B31#code",
+    "description": "RootXFactory"
+  },
+  {
+    "asset_id": "ud4oPg8qGUfWk90JY8Skc",
+    "url": "https://optimistic.etherscan.io/address/0x7f9AdFbd38b669F03d1d11000Bc76b9AaEA28A81#code",
+    "description": "RootXVELO"
+  },
+  {
+    "asset_id": "1TRYCVzqWoEZeF6MfS257K",
+    "url": "https://modescan.io/address/0x42e403b73898320f23109708b0ba1Ae85838C445/contract/34443/code",
+    "description": "LeafGuageFactory"
+  },
+  {
+    "asset_id": "343o7knVLXHQb99LCpzx0l",
+    "url": "https://modescan.io/address/0xF278761576f45472bdD721EACA19317cE159c011/contract/34443/code",
+    "description": "LeafMessageBridge"
+  },
+  {
+    "asset_id": "40xQVqNnVISN6e3B8BTQVl",
+    "url": "https://modescan.io/address/0xF385603a12Be8b7B885222329c581FDD1C30071D/contract/34443/code",
+    "description": "LeafMessageModule"
+  },
+  {
+    "asset_id": "1igAhNE3bQACjzIk5lfske",
+    "url": "https://modescan.io/address/0x31832f2a97Fd20664D76Cc421207669b55CE4BC0/contract/34443/code",
+    "description": "LeafPoolFactory"
+  },
+  {
+    "asset_id": "65brmJqaPGhE2KfdHfQqO8",
+    "url": "https://modescan.io/address/0x10499d88Bd32AF443Fc936F67DE32bE1c8Bb374C/contract/34443/code",
+    "description": "LeafPoolImplementation"
+  },
+  {
+    "asset_id": "2LbERYsdxUjxODL58R2Gdl",
+    "url": "https://modescan.io/address/0xA7287a56C01ac8Baaf8e7B662bDB41b10889C7A6/contract/34443/code",
+    "description": "LeafTokenBridge"
+  },
+  {
+    "asset_id": "6w8OCijJFS4f7wQEy2xDjY",
+    "url": "https://modescan.io/address/0x7f9AdFbd38b669F03d1d11000Bc76b9AaEA28A81/contract/34443/code",
+    "description": "LeafXVELO"
+  },
+  {
+    "asset_id": "6wQcWaSIlPS0ckWR4Rk0id",
+    "url": "https://optimistic.etherscan.io/address/0xeAD23f606643E387a073D0EE8718602291ffaAeB#code",
+    "description": "RootCLGuageFactory"
+  },
+  {
+    "asset_id": "6l9VBix6OPNkGzleP3pawd",
+    "url": "https://optimistic.etherscan.io/address/0x04625B046C69577EfC40e6c0Bb83CDBAfab5a55F#code",
+    "description": "RootCLPoolFactory"
+  },
+  {
+    "asset_id": "7HkaBdPCuVgecPRhpAcRdG",
+    "url": "https://modescan.io/address/0xeAD23f606643E387a073D0EE8718602291ffaAeB/contract/34443/code",
+    "description": "LeafCLGuageFactory"
+  },
+  {
+    "asset_id": "3vLixSJBwb6qgffLiY2ijO",
+    "url": "https://modescan.io/address/0x04625B046C69577EfC40e6c0Bb83CDBAfab5a55F/contract/34443/code",
+    "description": "LeafCLPoolFactory"
+  },
+  {
+    "asset_id": "JbsJd1HzmljE3a9t4kqPj",
+    "url": "https://modescan.io/address/0x321f7Dfb9B2eA9131B8C17691CF6e01E5c149cA8/contract/34443/code",
+    "description": "LeafCLPool"
+  },
+  {
+    "asset_id": "4AfRAcLGJA4gnBlzmLwnYZ",
+    "url": "https://modescan.io/address/0x991d5546C4B442B4c5fdc4c8B8b8d131DEB24702/contract/34443/code",
+    "description": "LeafNonFungiblePositionManager"
+  },
+  {
+    "asset_id": "4PJMdW64NjoftW5btvnJF4",
+    "url": "https://modescan.io/address/0x479Bec910d4025b4aC440ec27aCf28eac522242B/contract/34443/code",
+    "description": "LeafCustomSwapFeeModule"
+  },
+  {
+    "asset_id": "PXUEqPfQEWvqt5Or0k5xR",
+    "url": "https://modescan.io/address/0x03Cd805861CC6D9891e4908BAcD0472a3341E90C/contract/34443/code",
+    "description": "LeafCustomUnstakedFeeModule"
+  }
+]

@@ -1,7 +1,0 @@
-{
-  "url": "https://snowtrace.io/address/0xc0f8C29e3a9A7650a3F642e467d70087819926d6/contract/43114/code",
-  "host": "snowtrace.io",
-  "address": "0xc0f8C29e3a9A7650a3F642e467d70087819926d6",
-  "mode": "placeholder-onchain",
-  "reason": "etherscan-v2:unexpected-response; scan-host-no-key:http 403"
-}

@@ -1,6 +1,0 @@
-[workspace]
-members = [
-  "multi_asset_vault",
-  "single_asset_single_sub_vault",
-  "single_asset_vault",
-]

@@ -1,8 +1,0 @@
-{
-  "url": "https://seiscan.io/address/0x6f04b655d5209e85e47d3920a2ef407a66e83f6c",
-  "host": "seiscan.io",
-  "address": "0x6f04b655d5209e85e47d3920a2ef407a66e83f6c",
-  "chainid": 1329,
-  "mode": "bytecode-v2-proxy",
-  "bytecode_length_hex_chars": 27372
-}

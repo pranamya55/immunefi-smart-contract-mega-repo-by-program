@@ -1,8 +1,0 @@
-{
-  "url": "https://hyperevmscan.io/address/0x1250304f66404cd153fa39388ddcdaec7e0f1707",
-  "host": "hyperevmscan.io",
-  "address": "0x1250304f66404cd153fa39388ddcdaec7e0f1707",
-  "chainid": 999,
-  "mode": "bytecode-v2-proxy",
-  "bytecode_length_hex_chars": 476
-}

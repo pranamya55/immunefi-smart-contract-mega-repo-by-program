@@ -1,7 +1,0 @@
-{
-  "url": "https://basescan.org/address/0xafcfa6e8689a7a5469c6bda351c507cd0108423a",
-  "host": "basescan.org",
-  "address": "0xafcfa6e8689a7a5469c6bda351c507cd0108423a",
-  "mode": "placeholder-onchain",
-  "reason": "etherscan-v2:unexpected-response; scan-host-no-key:http 403"
-}

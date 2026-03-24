@@ -1,5 +1,0 @@
-script;
-
-#[fallback]
-fn fallback() {
-}

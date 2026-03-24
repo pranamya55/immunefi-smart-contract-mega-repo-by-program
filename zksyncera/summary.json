@@ -1,4 +1,6 @@
 {
-  "manifest_linked": 64,
-  "github_blob_linked": 2
+  "manifest_linked": 59,
+  "github_blob_linked": 2,
+  "unresolved": 5,
+  "onchain_missing": 4
 }

@@ -1,0 +1,32 @@
+[
+  {
+    "asset_id": "2OfVCJlW0aIyTlXGrEnbVp",
+    "url": "https://bscscan.com/address/0xbee335BB44e75C4794a0b9B54E8027b111395943",
+    "description": "FireBridge"
+  },
+  {
+    "asset_id": "6evPVGYCOGEXbjB3xNu7mi",
+    "url": "https://bscscan.com/address/0x09e4c43eD89E5972df026d94FdA3a7680637c59A",
+    "description": "GovernorModule"
+  },
+  {
+    "asset_id": "6DqIU0MRlDiFf1o2GkVwhE",
+    "url": "https://bscscan.com/address/0x0Ed3bb37CD17d17bD18dB0D36558D57520D76292#code",
+    "description": "Factory Contract"
+  },
+  {
+    "asset_id": "4UqJ88aKfxbW4c5jOSa3cV",
+    "url": "https://basescan.org/address/0x0d771823c72ccca4d74695934d5a346938914547",
+    "description": "GovernorModule"
+  },
+  {
+    "asset_id": "2cUs8mekVJuTDqL8AKbdtp",
+    "url": "https://basescan.org/address/0x26D4a08Ed364Cf07142127aeC202Df910aB33455",
+    "description": "Factory Contract"
+  },
+  {
+    "asset_id": "6cCXwCGfy8s8qcw3GFlya5",
+    "url": "https://basescan.org/address/0xbee335bb44e75c4794a0b9b54e8027b111395943",
+    "description": "FireBridge"
+  }
+]

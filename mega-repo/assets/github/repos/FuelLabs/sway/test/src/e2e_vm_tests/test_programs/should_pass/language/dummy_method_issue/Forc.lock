@@ -1,8 +1,0 @@
-[[package]]
-name = "dummy_method_issue"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-0E536E049C0227B9"

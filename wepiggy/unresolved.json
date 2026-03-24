@@ -1,0 +1,392 @@
+[
+  {
+    "asset_id": "2YBcD6lquzntlCKsDrwHBM",
+    "url": "https://explorer.harmony.one/address/0xb205d0AeF84C666FBBe441C61DC04fEb844444E6",
+    "description": "WP_PRICE_PROVIDER_V1"
+  },
+  {
+    "asset_id": "3Xel7CwBTVVYRE1AeJONZR",
+    "url": "https://explorer.harmony.one/address/0x6F620EC89B8479e97A6985792d0c64F237566746",
+    "description": "WPC"
+  },
+  {
+    "asset_id": "2m3izuL401kejXuDnMnRkW",
+    "url": "https://bscscan.com/address/0xFfceAcfD39117030314A07b2C86dA36E51787948",
+    "description": "WE_PIGGY_PRICE_ORACLE_V1"
+  },
+  {
+    "asset_id": "20CLRWY1InmtDAHPYKjPnA",
+    "url": "https://bscscan.com/address/0xE6320460Aca9E4A4385058EEfD7D4D70123fC9c9",
+    "description": "PIGGY_DISTRIBUTION"
+  },
+  {
+    "asset_id": "3knJMV344z0DoPAu0LAmH7",
+    "url": "https://bscscan.com/address/0xC1B02E52e9512519EDF99671931772E452fb4399",
+    "description": "STABLECOIN_JUMP_RATE_MODEL"
+  },
+  {
+    "asset_id": "1mYnrR0RaANSvtWMK9n3je",
+    "url": "https://bscscan.com/address/0xd1121aDe04EE215524aeFbF7f8D45029214d668D",
+    "description": "BTC_ETH_JUMP_RATE_MODEL"
+  },
+  {
+    "asset_id": "3eYi1IZj9IOnYTUGon1Ykg",
+    "url": "https://bscscan.com/address/0x621CE6596E0B9CcF635316BFE7FdBC80C3029Bec",
+    "description": "MAINSTREAM_JUMP_RATE_MODEL"
+  },
+  {
+    "asset_id": "3AXJ2NQI6RdIl6dIRfyHps",
+    "url": "https://bscscan.com/address/0xe212829Ca055eD63279753971672c693C6C6d088",
+    "description": "MAX_IMILLION"
+  },
+  {
+    "asset_id": "1mzDN5fOPknUA3FIRrQFEq",
+    "url": "https://bscscan.com/address/0x12D803497D1e58dD4D4A4F455D754f1d0F937C8b",
+    "description": "P_DAI"
+  },
+  {
+    "asset_id": "6oEDbwDlrjTaQ2plSgekXG",
+    "url": "https://bscscan.com/address/0x811Cd5CB4cC43F44600Cfa5eE3F37a402C82aec2",
+    "description": "P_DOT"
+  },
+  {
+    "asset_id": "5CjWTuw9CdJ8xszgfGJSd8",
+    "url": "https://bscscan.com/address/0x417FDfC74503d8008AeEB53248E5C0f1960c2C1d",
+    "description": "P_CAKE"
+  },
+  {
+    "asset_id": "1U0Linc0f7Gc3szx6ProTx",
+    "url": "https://bscscan.com/address/0x00FF07204C3b27D72cF83Ef521Adb7066167561a",
+    "description": "P_LINK"
+  },
+  {
+    "asset_id": "6Yph1swy9sIUeFlAv6NJ3V",
+    "url": "https://bscscan.com/address/0xBc52BCE2C73Fec358ABBf047c50377183B9EAd0d",
+    "description": "P_ADA"
+  },
+  {
+    "asset_id": "3jNBnnkD4dPoNdWBpX1QYi",
+    "url": "https://bscscan.com/address/0xDF21D42a0fC6746718F2CFe2798F91C9d7277F32",
+    "description": "P_FIL"
+  },
+  {
+    "asset_id": "4t9eJlZSNoQbbiCZw2DFzA",
+    "url": "https://bscscan.com/address/0x33d295Aaa719fD756310eB42DE2847d0E7Be294E",
+    "description": "P_MASK"
+  },
+  {
+    "asset_id": "5ml6cFDqKDfrTW0Fgwdw9e",
+    "url": "https://bscscan.com/address/0xd58fb16eace4693b2c641cae6850a82763c00a34#code",
+    "description": "WE_PIGGY_PRICE_ORACLE_V1 (Implementation)"
+  },
+  {
+    "asset_id": "12GNOhy4hasTrX0RlDOXQw",
+    "url": "https://bscscan.com/address/0x4dccd53c9f1e2cb5eb9cda98bb41bf7694760ea7#code",
+    "description": "PIGGY_DISTRIBUTION (Implementation)"
+  },
+  {
+    "asset_id": "32rS0NnSkFabqVU0mwfeeS",
+    "url": "https://www.oklink.com/en/oec/address/0x4c78015679fabe22f6e02ce8102afbf7d93794ea",
+    "description": "WP_PRICE_PROVIDER_V1"
+  },
+  {
+    "asset_id": "6QLtWapBvqQEI4M9fZzzZF",
+    "url": "https://www.oklink.com/en/oec/address/0xffceacfd39117030314a07b2c86da36e51787948",
+    "description": "WE_PIGGY_PRICE_ORACLE_V1"
+  },
+  {
+    "asset_id": "4YADukRycPPxY3N3Iv4w5Z",
+    "url": "https://www.oklink.com/en/oec/address/0xaa87715e858b482931eb2f6f92e504571588390b",
+    "description": "COMPTROLLER"
+  },
+  {
+    "asset_id": "4S8SzrRs7u69R6JgZfq0w5",
+    "url": "https://www.oklink.com/en/oec/address/0x8c925623708a94c7de98a8e83e8200259ff716e0",
+    "description": "BTC_ETH_JUMP_RATE_MODEL"
+  },
+  {
+    "asset_id": "3uG2bDBx1moXsmDlAsvip7",
+    "url": "https://www.oklink.com/en/oec/address/0x77401ff895bde043d40aae58f98de5698682c12a",
+    "description": "STABLECOIN_JUMP_RATE_MODEL"
+  },
+  {
+    "asset_id": "5BgER2zQezOa6kRwXZJCTn",
+    "url": "https://www.oklink.com/en/oec/address/0x3401d01e31bb6defcfc7410c312c0181e19b9dd5",
+    "description": "MAINSTREAM_JUMP_RATE_MODEL"
+  },
+  {
+    "asset_id": "76ZS11McQm9hP32KhZHkgU",
+    "url": "https://www.oklink.com/en/oec/address/0x12d803497d1e58dd4d4a4f455d754f1d0f937c8b",
+    "description": "MAX_IMILLION"
+  },
+  {
+    "asset_id": "NAS0Nbcqg18xY29SbjDYk",
+    "url": "https://www.oklink.com/en/oec/address/0x3ec77d16a5dbfbf2e22be99a4533fa4333343a3b",
+    "description": "PIGGY_DISTRIBUTION"
+  },
+  {
+    "asset_id": "58NgisMQcG7yHErmvKSpfK",
+    "url": "https://www.oklink.com/en/oec/address/0x621ce6596e0b9ccf635316bfe7fdbc80c3029bec",
+    "description": "P_OKT"
+  },
+  {
+    "asset_id": "23E5kj3c6zxRaOLgnlMcaP",
+    "url": "https://www.oklink.com/en/oec/address/0x8e1e582879cb8bac6283368e8ede458b63f499a5",
+    "description": "P_OKB"
+  },
+  {
+    "asset_id": "7HY1SMiLi4CWo7n6pAAR1e",
+    "url": "https://www.oklink.com/en/oec/address/0x33a32f0ad4aa704e28c93ed8ffa61d50d51622a7",
+    "description": "P_BTCK"
+  },
+  {
+    "asset_id": "5vHwMZZ4xIRIkdxzg5VUkN",
+    "url": "https://www.oklink.com/en/oec/address/0x75dcd2536a5f414b8f90bb7f2f3c015a26dc8c79",
+    "description": "P_ETHK"
+  },
+  {
+    "asset_id": "5VdFb0ekX7t5FSv4Z3pN2C",
+    "url": "https://www.oklink.com/en/oec/address/0x849c37a029b38d3826562697ccc40c34477c6293",
+    "description": "P_USDC"
+  },
+  {
+    "asset_id": "20vth9NyizopX8xPLxQCiK",
+    "url": "https://www.oklink.com/en/oec/address/0x311aea58ca127b955890647413846e351df32554",
+    "description": "P_DAIK"
+  },
+  {
+    "asset_id": "4paYnS1uurSDuih4lQaY7I",
+    "url": "https://www.oklink.com/en/oec/address/0xadf040519fe24ba9df6670599b2de7fd6049772f",
+    "description": "P_USDT"
+  },
+  {
+    "asset_id": "28eRK8oFIruFqYeQGu7AeV",
+    "url": "https://www.oklink.com/en/oec/address/0xe0bac94cd406ef59065b083ba347fcc95dfdd3a2",
+    "description": "P_DOTK"
+  },
+  {
+    "asset_id": "3yT3kPJEPkCoF7ynvgjzS4",
+    "url": "https://www.oklink.com/en/oec/address/0xea567f5355765ec40b70caa09a8836ae696d06d6",
+    "description": "P_UNIK"
+  },
+  {
+    "asset_id": "4ysBBg6lvp11zN886n8RHm",
+    "url": "https://www.oklink.com/en/oec/address/0x733c7DDeC16aF34a998e17A122c70FBA10910258",
+    "description": "P_LINKK"
+  },
+  {
+    "asset_id": "kQzotU8OatVYybS53dhjr",
+    "url": "https://www.oklink.com/en/oec/address/0xD6a78766514CdFC1a1fA188a7782b52313133705",
+    "description": "P_ETCK"
+  },
+  {
+    "asset_id": "JW19W0M9xCnOT6kw2tsCx",
+    "url": "https://www.oklink.com/en/oec/address/0x12BD9eDE4941f2c4aC8Fc9B4F15C1D9FC960B8AC",
+    "description": "P_SUSHIK"
+  },
+  {
+    "asset_id": "4hIrdQWL2eSyeKIbZVZCbp",
+    "url": "https://www.oklink.com/en/oec/address/0x6067fd56Dc969bffc5441F96c9389a95CcD8D32b",
+    "description": "P_FILK"
+  },
+  {
+    "asset_id": "5dkxKvKjW66Vd6mKbniqLa",
+    "url": "https://www.oklink.com/en/oec/address/0x324Dab2dfE9f1341577e91b991D9d8e16419A190",
+    "description": "P_WBTCK"
+  },
+  {
+    "asset_id": "Tqz0kstolazGgx5RBgKgq",
+    "url": "https://www.oklink.com/en/oec/address/0x6F620EC89B8479e97A6985792d0c64F237566746",
+    "description": "WPC"
+  },
+  {
+    "asset_id": "4FIFLrsD3rEghgofDe20OH",
+    "url": "https://www.oklink.com/en/oec/address/0xd58fb16eace4693b2c641cae6850a82763c00a34",
+    "description": "WE_PIGGY_PRICE_ORACLE_V1 (Implementation)"
+  },
+  {
+    "asset_id": "3kGlGiWnWI0cGoLeznpQb9",
+    "url": "https://www.oklink.com/en/oec/address/0xf0fe1cb691c4153bbcf7ef03cd26e1d85848042a",
+    "description": "COMPTROLLER(Implementation)"
+  },
+  {
+    "asset_id": "2aT9lAaRMFXgAW8uw67Nhl",
+    "url": "https://www.oklink.com/en/oec/address/0x9a9b2bf1d1c96332c55d0b6acb8c2b441381116d",
+    "description": "BTC_ETH_JUMP_RATE_MODEL (Implementation)"
+  },
+  {
+    "asset_id": "Rr0W8tZGl7DJwk10k73qJ",
+    "url": "https://www.oklink.com/en/oec/address/0x070f93412559a95bdd7f30c2b597578dcb34bc25",
+    "description": "PIGGY_DISTRIBUTION(Implementation)"
+  },
+  {
+    "asset_id": "13rd1Rmw3Hsjc8S1YJkFha",
+    "url": "https://www.oklink.com/en/oec/address/0xd1121ade04ee215524aefbf7f8d45029214d668d",
+    "description": "P_OKT (Implementation)"
+  },
+  {
+    "asset_id": "1B5kUV2DIJIgcdweHTz4pc",
+    "url": "https://www.oklink.com/en/oec/address/0xc1b02e52e9512519edf99671931772e452fb4399",
+    "description": "P_OKB(Implementation)"
+  },
+  {
+    "asset_id": "42Lwk0b6n7tydrQIcs8D9u",
+    "url": "https://optimistic.etherscan.io/address/0x896aecb9E73Bf21C50855B7874729596d0e511CB",
+    "description": "COMPTROLLER"
+  },
+  {
+    "asset_id": "1VTy4SoSHmv83SxADuvmo5",
+    "url": "https://optimistic.etherscan.io/address/0x3157e0bbDc7E5DEa0f4c33a0Ad7211B9a4FF19Ee",
+    "description": "PIGGY_DISTRIBUTION"
+  },
+  {
+    "asset_id": "7FBqygnS9lYrrpq9H74Tjd",
+    "url": "https://optimistic.etherscan.io/address/0x2B7F68170a598E507B19Bca41ED745eABc936B3F",
+    "description": "MAX_IMILLION"
+  },
+  {
+    "asset_id": "2KxLuzp5It8QXkgOjww5JH",
+    "url": "https://optimistic.etherscan.io/address/0x8e1e582879Cb8baC6283368e8ede458B63F499a5",
+    "description": "P_ETH"
+  },
+  {
+    "asset_id": "73lYVYqUOigA9zRwYfsnBp",
+    "url": "https://optimistic.etherscan.io/address/0x811Cd5CB4cC43F44600Cfa5eE3F37a402C82aec2",
+    "description": "P_USDC"
+  },
+  {
+    "asset_id": "7BAd7xi466bWoBmOGn8Yay",
+    "url": "https://optimistic.etherscan.io/address/0x8158B34fF8A36dD9E4519d62C52913C24ad5554b",
+    "description": "P_USDT"
+  },
+  {
+    "asset_id": "7FFLzH7Mh0U7uf4uDuOwRe",
+    "url": "https://optimistic.etherscan.io/address/0xc12B9D620bFCB48be3e0CCbf0ea80C717333b46F",
+    "description": "P_DAI"
+  },
+  {
+    "asset_id": "6m5LP26KHDt1uFrfnyKmLG",
+    "url": "https://optimistic.etherscan.io/address/0x48a5322c3021d5eD5CE4293112141045d12c7EFC",
+    "description": "P_BTC"
+  },
+  {
+    "asset_id": "2fqbqY3fzCOD7wjmFzxn9A",
+    "url": "https://optimistic.etherscan.io/address/0x6F620EC89B8479e97A6985792d0c64F237566746",
+    "description": "WPC"
+  },
+  {
+    "asset_id": "5adkZGr53kmzQq0tjegSyP",
+    "url": "https://hecoinfo.com/address/0x4C78015679FabE22F6e02Ce8102AFbF7d93794eA",
+    "description": "WP_PRICE_PROVIDER_V1"
+  },
+  {
+    "asset_id": "2rC1WIPTkRhXHGbPqUuS9E",
+    "url": "https://hecoinfo.com/address/0xFfceAcfD39117030314A07b2C86dA36E51787948",
+    "description": "WE_PIGGY_PRICE_ORACLE_V1"
+  },
+  {
+    "asset_id": "6NK2Tz4ss2FDgEZTOEOkbL",
+    "url": "https://hecoinfo.com/address/0x3401D01E31BB6DefcFc7410c312C0181E19b9dd5",
+    "description": "COMPTROLLER"
+  },
+  {
+    "asset_id": "2ltrkvptuL5UkARSeA2tKT",
+    "url": "https://hecoinfo.com/address/0x8b4397A92D53916f24a8E06777CEf4485281224C",
+    "description": "PIGGY_DISTRIBUTION"
+  },
+  {
+    "asset_id": "7Cl3EPzNbQUpJA1ZyLC7VF",
+    "url": "https://hecoinfo.com/address/0xd1121aDe04EE215524aeFbF7f8D45029214d668D",
+    "description": "STABLECOIN_JUMP_RATE_MODEL"
+  },
+  {
+    "asset_id": "3E5bpYOLgK8hgd5fxboMJg",
+    "url": "https://hecoinfo.com/address/0x621CE6596E0B9CcF635316BFE7FdBC80C3029Bec",
+    "description": "BTC_ETH_JUMP_RATE_MODEL"
+  },
+  {
+    "asset_id": "1z04D6jvZWgCz8vSTmldQw",
+    "url": "https://hecoinfo.com/address/0x8e1e582879Cb8baC6283368e8ede458B63F499a5",
+    "description": "MAINSTREAM_JUMP_RATE_MODEL"
+  },
+  {
+    "asset_id": "5nMZByVFaQ8P88GA5p0bs8",
+    "url": "https://hecoinfo.com/address/0x8158B34fF8A36dD9E4519d62C52913C24ad5554b",
+    "description": "MAX_IMILLION"
+  },
+  {
+    "asset_id": "6RoefYOtrvDUJdt4hX4ku8",
+    "url": "https://hecoinfo.com/address/0x75DCd2536a5f414B8F90Bb7F2F3c015a26dc8c79",
+    "description": "P_HT"
+  },
+  {
+    "asset_id": "5eTkuLWEbImqcQuYjmvYGC",
+    "url": "https://hecoinfo.com/address/0x311aEA58Ca127B955890647413846E351df32554",
+    "description": "P_HUSD"
+  },
+  {
+    "asset_id": "4pIdlXYDPqvPoNdazX9AzA",
+    "url": "https://hecoinfo.com/address/0x12D803497D1e58dD4D4A4F455D754f1d0F937C8b",
+    "description": "P_USDT"
+  },
+  {
+    "asset_id": "eUZVVtgZtLDoCutbtaCuE",
+    "url": "https://hecoinfo.com/address/0x2a8Cd78bFb91ACF53f589961D213d87c956e0d7f",
+    "description": "P_USDC"
+  },
+  {
+    "asset_id": "4yoCdj6Dvv27bNe2pD2wBs",
+    "url": "https://hecoinfo.com/address/0x2B7F68170a598E507B19Bca41ED745eABc936B3F",
+    "description": "P_ETH"
+  },
+  {
+    "asset_id": "3kUYFVgOp75I45FFZ2CnME",
+    "url": "https://hecoinfo.com/address/0x2dd8FFA7923a17739F70C34759Af7650e44EA3BE",
+    "description": "P_HBTC"
+  },
+  {
+    "asset_id": "6nqTrdu7HXM7uUnj0rmzds",
+    "url": "https://hecoinfo.com/address/0x811Cd5CB4cC43F44600Cfa5eE3F37a402C82aec2",
+    "description": "P_HPT"
+  },
+  {
+    "asset_id": "290VMe55XluW6UZNGki8Py",
+    "url": "https://hecoinfo.com/address/0x17933112E9780aBd0F27f2B7d9ddA9E840D43159",
+    "description": "P_HDOT"
+  },
+  {
+    "asset_id": "6lhsV4BW9CwOvqXZEBSKn4",
+    "url": "https://hecoinfo.com/address/0x417FDfC74503d8008AeEB53248E5C0f1960c2C1d",
+    "description": "P_HLTC"
+  },
+  {
+    "asset_id": "7cTo3rrHfLR61j0QRSYkaX",
+    "url": "https://hecoinfo.com/address/0xe212829Ca055eD63279753971672c693C6C6d088",
+    "description": "P_HBCH"
+  },
+  {
+    "asset_id": "1Sr2DYaTxoCIsdudVA8Q3u",
+    "url": "https://hecoinfo.com/address/0x30ac79B557973771c931D8d765E0728261A742a0",
+    "description": "P_MDX"
+  },
+  {
+    "asset_id": "cneTwvlGpc2NQ5MiuZ1nS",
+    "url": "https://hecoinfo.com/address/0x0C8c1ab017c3C0c8A48dD9F1DB2F59022D190f0b",
+    "description": "P_HFIL"
+  },
+  {
+    "asset_id": "1nLIqHVGNNyXZknxLESpLB",
+    "url": "https://hecoinfo.com/address/0xd828F7029CC58C4E9Cab3B1E0726CEFab411bc65",
+    "description": "P_UNI"
+  },
+  {
+    "asset_id": "1olV6n9wJ5Ixd9ZiCFoFcK",
+    "url": "https://hecoinfo.com/address/0xC24230002c3386F0bCe325CB04FAC789fE66460a",
+    "description": "P_DAI"
+  },
+  {
+    "asset_id": "02Du2UpD8v8wpEA0dkKDa",
+    "url": "https://hecoinfo.com/address/0x6F620EC89B8479e97A6985792d0c64F237566746",
+    "description": "WPC"
+  }
+]

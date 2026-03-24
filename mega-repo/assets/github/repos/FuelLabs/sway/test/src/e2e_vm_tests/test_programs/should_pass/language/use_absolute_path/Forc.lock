@@ -1,8 +1,0 @@
-[[package]]
-name = "std"
-source = "path+from-root-9F4EED204534DB2D"
-
-[[package]]
-name = "use_absolute_path"
-source = "member"
-dependencies = ["std"]

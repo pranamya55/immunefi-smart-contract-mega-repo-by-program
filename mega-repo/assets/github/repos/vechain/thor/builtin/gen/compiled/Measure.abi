@@ -1,1 +1,0 @@
-[{"constant":true,"inputs":[],"name":"inner","outputs":[],"payable":false,"stateMutability":"pure","type":"function"},{"constant":true,"inputs":[],"name":"outer","outputs":[],"payable":false,"stateMutability":"view","type":"function"}]

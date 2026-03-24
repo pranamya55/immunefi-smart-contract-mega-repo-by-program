@@ -1,7 +1,0 @@
-{
-  "url": "https://ftmscan.com/token/0x91fa20244fb509e8289ca630e5db3e9166233fdc?utm_source=immunefi",
-  "host": "ftmscan.com",
-  "address": "0x91fa20244fb509e8289ca630e5db3e9166233fdc",
-  "mode": "placeholder-onchain",
-  "reason": "etherscan-v2:unexpected-response; scan-host-no-key:HTTPSConnectionPool(host='ftmscan.com', port=443): Max retries exceeded with url: /api?module=contract&action=getsourcecode&address=0x91fa20244fb509e8289ca630e5db3e9166233fdc (Caused by NameResolutionError(\"HTTPSConnection(host='ftmscan.com', port=443): Failed to resolve 'ftmscan.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
-}

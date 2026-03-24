@@ -1,0 +1,57 @@
+[
+  {
+    "asset_id": "2MRwB7JY7McrrbXUPJ3z2F",
+    "url": "https://optimistic.etherscan.io/address/0x8f7492DE823025b4CfaAB1D34c58963F2af5DEDA",
+    "description": "Connext.sol"
+  },
+  {
+    "asset_id": "6zQjer00PlC4RYXnDiEKHV",
+    "url": "https://basescan.org/address/0xB8448C6f7f7887D36DcA487370778e419e9ebE3F",
+    "description": "Connext.sol"
+  },
+  {
+    "asset_id": "5ZBQBy25AMBAXkg3cz68LC",
+    "url": "https://bscscan.com/address/0x779D30a8BDD8f8A1cEC0292d7799350a8cCef119",
+    "description": "WormholeSpokeConnector.sol"
+  },
+  {
+    "asset_id": "29DZn8FJDFw2IaNBDTOGwZ",
+    "url": "https://optimistic.etherscan.io/address/0x4778170Ff14883A8e0dC0313E303dCB6B4dAD493",
+    "description": "RelayerProxy.sol"
+  },
+  {
+    "asset_id": "3MSO2NtQUBCKjyyQTFcKPb",
+    "url": "https://basescan.org/address/0x43Add7f520Cc35e5DbF04f5426a03EA8Ca052c98",
+    "description": "RelayerProxy.sol"
+  },
+  {
+    "asset_id": "7j3ZngVNOD2SFJeVF8jdVm",
+    "url": "https://bscscan.com/address/0x5543EAFD20e25fBBBd66E2c154fF8FF8407e3a57",
+    "description": "WatcherManager.sol"
+  },
+  {
+    "asset_id": "42kqg0uFioQj5XmwEv9JFV",
+    "url": "https://optimistic.etherscan.io/address/0x9fc0124db7F203EBECd44d77548c35e17d7822b2",
+    "description": "WatcherManager.sol"
+  },
+  {
+    "asset_id": "2VJAXoTFArND8IgO5A8qeI",
+    "url": "https://optimistic.etherscan.io/address/0x88483b3e3b4dd7cedb8efcef81f6dc9adb6292d5",
+    "description": "MerkleTreeManager.sol"
+  },
+  {
+    "asset_id": "4hG39LpsceWBRY8ko3A1Vl",
+    "url": "https://basescan.org/address/0xEc2140EB4A23e36ff676E18626A8652Ea2be47FB",
+    "description": "MerkleTreeManager.sol"
+  },
+  {
+    "asset_id": "7ixJjsTCYJoskgwG8fQkJq",
+    "url": "https://bscscan.com/address/0x8d5A6BE033d6Aec504F87c8be946aE9B6b1f2dD7",
+    "description": "UpgradeBeaconController.sol"
+  },
+  {
+    "asset_id": "42v7UKhjL3JBKQ4QrFpaoJ",
+    "url": "https://optimistic.etherscan.io/address/0xa28DE94d2e6F84659c2C32dF14334Daa08DD6461",
+    "description": "UpgradeBeaconController.sol"
+  }
+]

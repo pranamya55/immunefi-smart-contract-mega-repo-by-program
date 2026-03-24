@@ -1,6 +1,0 @@
-{
-  "network": "mainnet",
-  "pool": "aave-dai",
-  "protocol": "aave",
-  "decimals": 18
-}

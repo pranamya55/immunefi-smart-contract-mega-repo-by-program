@@ -1,5 +1,0 @@
-[contracts.main]
-name = "liquid-staking"
-
-[[proxy]]
-path = "src/proxy/proxy_liquid_staking.rs"

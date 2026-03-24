@@ -1,8 +1,0 @@
-[[package]]
-name = "enum_padding"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-A0BCD08337035E65"

@@ -1,7 +1,0 @@
-{
-  "url": "https://plasmascan.to/address/0x02ca37966753bDdDf11216B73B16C1dE756A7CF9",
-  "host": "plasmascan.to",
-  "address": "0x02ca37966753bDdDf11216B73B16C1dE756A7CF9",
-  "mode": "placeholder-onchain",
-  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:unexpected-response"
-}

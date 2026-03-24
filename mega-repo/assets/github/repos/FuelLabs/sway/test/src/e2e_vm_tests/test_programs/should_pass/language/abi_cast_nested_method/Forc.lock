@@ -1,8 +1,0 @@
-[[package]]
-name = "abi_cast_nested_method"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-0D81C4DB888BC505"

@@ -1,3 +1,0 @@
-category = "fail"
-
-# check: $()ABI cannot define a method of the same name as its super-ABI "MySuperSuperAbi"

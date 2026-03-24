@@ -1,4 +1,0 @@
-category = "fail"
-
-# check: $()Expected an import name, group of imports, or `*`.
-# check: $()Mismatched types.

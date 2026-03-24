@@ -1,4 +1,7 @@
 {
-  "github_blob_linked": 79,
-  "manifest_linked": 4
+  "github_blob_linked": 75,
+  "github_blob_missing": 4,
+  "github_repo_linked": 4,
+  "manifest_linked": 3,
+  "unresolved": 1
 }

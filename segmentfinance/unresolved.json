@@ -1,0 +1,42 @@
+[
+  {
+    "asset_id": "67vAcwyv0tZAtOY2CRybBD",
+    "url": "https://bscscan.com/address/0xDEb81884F0405aAa777744A57E8F1097E0C92fa5",
+    "description": "Comptroller: Diamond"
+  },
+  {
+    "asset_id": "7cgZtbutAaxIvUlvNfPvq8",
+    "url": "https://bscscan.com/address/0xEEBE1ABC85014b114D691Ec1F0d72C38001b3D3D",
+    "description": "Diamond: MarketFacet"
+  },
+  {
+    "asset_id": "6glEAVl6hsrTCL6TbOcUvC",
+    "url": "https://bscscan.com/address/0x07B9b9bDc4DC65F177F7B45320338eC05f47F45E",
+    "description": "Diamond: PolicyFacet"
+  },
+  {
+    "asset_id": "3Jm8RdIJEViYY3jMZhyZmL",
+    "url": "https://bscscan.com/address/0x674B1C283fF5Ca1Fd7c9Cd4caA0a55311Dd8cd61",
+    "description": "Diamond: RewardFacet"
+  },
+  {
+    "asset_id": "4xP7tS4Mn2zMbsl1Rb8zm7",
+    "url": "https://bscscan.com/address/0xaDbfba66c5634825a720C2f23bE36ae42367c0bF",
+    "description": "Diamond: SetterFacet"
+  },
+  {
+    "asset_id": "1JhDZ4HyKZKAjZo8No7HTk",
+    "url": "https://bscscan.com/address/0x8969b89D5f38359fBE95Bbe392f5ad82dd93e226",
+    "description": "SeToken Delegator: e.g. seUSDC"
+  },
+  {
+    "asset_id": "4NWUFSWKfXpIFi8Zw43MpK",
+    "url": "https://bscscan.com/address/0x9c1f9b823b5aa5352831f050178FdD9B3503677F",
+    "description": "SeToken Delegate"
+  },
+  {
+    "asset_id": "2DKiGUf9IfwSwXUTfqwmd4",
+    "url": "https://bscscan.com/address/0x5de40c1152c990492eaeaeecc4ecaab788bbc4fd",
+    "description": "SEF"
+  }
+]

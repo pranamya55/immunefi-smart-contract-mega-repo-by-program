@@ -1,0 +1,377 @@
+[
+  {
+    "asset_id": "59hTLMVNUG52Bja63zFcYt",
+    "url": "https://basescan.org/address/0xEd9e3f98bBed560e66B89AaC922E29D4596A9642#code",
+    "description": "WooPPV2.2 - Swap"
+  },
+  {
+    "asset_id": "62JwAqTX4MILwxVFihN1HE",
+    "url": "https://basescan.org/address/0x4c4AF8DBc524681930a27b2F1Af5bcC8062E6fB7#code",
+    "description": "WooRouterV2 - Swap"
+  },
+  {
+    "asset_id": "3y7naOrnovKfDzUMmUXJt0",
+    "url": "https://basescan.org/address/0x4c4AF8DBc524681930a27b2F1Af5bcC8062E6fB7#code",
+    "description": "CrossswapRouterv3.1 - Swap"
+  },
+  {
+    "asset_id": "1C2K5Qw43l1rqHMGL4QtPn",
+    "url": "https://basescan.org/address/0x44dF096D2600C6a6db77899dB3DE3AeCff746cb8#code",
+    "description": "USDC_SuperChargerVaultV2 - Earn"
+  },
+  {
+    "asset_id": "7J8iBsj4qMvparamaO3h8k",
+    "url": "https://basescan.org/address/0x73Bd3C7e44E1c228713A24448e9B7250391ACa15#code",
+    "description": "USDC_LendingManager - Earn"
+  },
+  {
+    "asset_id": "YTrmnCQR8QpD5va7E8MfK",
+    "url": "https://basescan.org/address/0xa1bb8a8ED84A37a8c93a10Df5153E612f58e34E5#code",
+    "description": "USDC_WithdrawManagerV2 - Earn"
+  },
+  {
+    "asset_id": "3UotYUAK5jzggYirvReuVb",
+    "url": "https://basescan.org/address/0xf2bE87391e2040D4CB1F646fbb023C074315E94E#code",
+    "description": "USDC_VaultV2 - Earn"
+  },
+  {
+    "asset_id": "5uAuyGCE39zXzF0Hi5MqBu",
+    "url": "https://basescan.org/address/0x6875eb0496b6BAA0527c5915d78b9BcdC800e98f#code",
+    "description": "USDC_AaveStrat - Earn"
+  },
+  {
+    "asset_id": "4MTvCgfYXcBT5NYbLzQlLr",
+    "url": "https://basescan.org/address/0xb772122C4a37fe1754B46AB1799b909351e8Cb43#code",
+    "description": "ETH_SuperChargerVaultV2 - Earn"
+  },
+  {
+    "asset_id": "3nRgnZCPod7wzLmO79DaJ4",
+    "url": "https://basescan.org/address/0x913E116cD0E279763B0419798c0bA18F9311B390#code",
+    "description": "ETH_LendingManager - Earn"
+  },
+  {
+    "asset_id": "7MgUYwK3tXsmnmzeBQ8U9R",
+    "url": "https://basescan.org/address/0xe61Acb121a2B538dF495A85C4E50dD8581de4ed0#code",
+    "description": "ETH_WithdrawManagerV2 - Earn"
+  },
+  {
+    "asset_id": "3Bd8um2lIgcfPPSuUl4R3O",
+    "url": "https://basescan.org/address/0x5A958b9E4370Da91498F494105BBe4C4123C513f#code",
+    "description": "ETH_VaultV2 - Earn"
+  },
+  {
+    "asset_id": "2uR1Js7RntPsSZYcfjy8pd",
+    "url": "https://basescan.org/address/0x160020B09DeD3d862f7f851B5c50632BcF2062FF#code",
+    "description": "ETH_AaveStrat - Earn"
+  },
+  {
+    "asset_id": "7qLgI2p6PtZO4KrsFDqXBv",
+    "url": "https://optimistic.etherscan.io/address/0xEd9e3f98bBed560e66B89AaC922E29D4596A9642#code",
+    "description": "WooracleV2_2 - Swap"
+  },
+  {
+    "asset_id": "1vupcrKWcXwWJTVDqNsndq",
+    "url": "https://optimistic.etherscan.io/address/0xEd9e3f98bBed560e66B89AaC922E29D4596A9642#code",
+    "description": "WooPPV2 - Swap"
+  },
+  {
+    "asset_id": "7D4nIJSQu1V8VGhiETJLkw",
+    "url": "https://optimistic.etherscan.io/address/0x4c4AF8DBc524681930a27b2F1Af5bcC8062E6fB7#code",
+    "description": "WooRouterV2 - Swap"
+  },
+  {
+    "asset_id": "2aY9vREANDhMnzPJqrOWgn",
+    "url": "https://optimistic.etherscan.io/address/0xc0f8C29e3a9A7650a3F642e467d70087819926d6#code",
+    "description": "RewardMasterchef - Earn"
+  },
+  {
+    "asset_id": "28zznkmYakm8f8k5BTplf3",
+    "url": "https://optimistic.etherscan.io/address/0x4bAa5Fd82A455f2BfEFF4FBB91969288D7DE7316#code",
+    "description": "USDC_LendingManager - Earn"
+  },
+  {
+    "asset_id": "6ekGdDvehVne1URLEFk9Wc",
+    "url": "https://optimistic.etherscan.io/address/0x2500AD59b46fF4B96f8e1EaC3fE1f78eAF955777#code",
+    "description": "USDC_WithdrawManagerV2 - Earn"
+  },
+  {
+    "asset_id": "4vjjxulCaiwxGmOLAy0p0R",
+    "url": "https://optimistic.etherscan.io/address/0x73504eaCB100c7576146618DC306c97454CB3620#code",
+    "description": "USDC_VaultV2 - Earn"
+  },
+  {
+    "asset_id": "yhbSw8ISWFq4OCpSNuKhx",
+    "url": "https://optimistic.etherscan.io/address/0x63Fdc50AA784f4A979517D2dCc91227634aE1234#code",
+    "description": "USDC_StrategyAave - Earn"
+  },
+  {
+    "asset_id": "1YXGmPmzDY6wZsXE7O4KNM",
+    "url": "https://optimistic.etherscan.io/address/0xB54e1d90d845d888d39dcaCBd54a3EEc0d8853B2#code",
+    "description": "SuperChargerVault_ETH - Earn"
+  },
+  {
+    "asset_id": "37WXfK4nJphXiKj0BDgM39",
+    "url": "https://optimistic.etherscan.io/address/0x1dDd225ef26714Bb8055dDCEaEE2589ba09c89ed#code",
+    "description": "LendingManager_ETH - Earn"
+  },
+  {
+    "asset_id": "6STNPhOUxqxYXlmSORmNke",
+    "url": "https://optimistic.etherscan.io/address/0x91741863A48f0B29fC0B6D10b3cdE2122feB58f7#code",
+    "description": "WithdrawManager_ETH - Earn"
+  },
+  {
+    "asset_id": "1ojGvYw52j4zhAvht6splE",
+    "url": "https://optimistic.etherscan.io/address/0x7e1996945eA8866DE873179DC1677E93A4380107#code",
+    "description": "farmingvault_ETH - Earn"
+  },
+  {
+    "asset_id": "2McpDLU4JgmNGyrw0OLXsa",
+    "url": "https://optimistic.etherscan.io/address/0x31aE608cBadD1214D6A3d5dcf49E45Fb18E2a48E#code",
+    "description": "ETH_StrategyAave - Earn"
+  },
+  {
+    "asset_id": "6H5WEX2MAZFlanPYfEkBDy",
+    "url": "https://optimistic.etherscan.io/address/0xcA7184eA1cb4cF04d49Bf219c49a39231299dA26#code",
+    "description": "SuperChargerVault_OP - Earn"
+  },
+  {
+    "asset_id": "fuPQqlsh31PU3tV4Nc9a6",
+    "url": "https://optimistic.etherscan.io/address/0xD2635bc7e4E4F63B2892eD80D0b0f9Dff7eDA899#code",
+    "description": "LendingManager_OP - Earn"
+  },
+  {
+    "asset_id": "6EWdn4TdXkxpdV1vn5z7ID",
+    "url": "https://optimistic.etherscan.io/address/0x0FAd8f10746171C0616cE4B7B4E2e9439a9a02E2#code",
+    "description": "WithdrawManager_OP - Earn"
+  },
+  {
+    "asset_id": "1NOaZsBjirt4mTalBMor2g",
+    "url": "https://optimistic.etherscan.io/address/0xa8452E2d63B29783ED2E5ca0d8D4Fe0cC2161D5B#code",
+    "description": "farmingvault_OP - Earn"
+  },
+  {
+    "asset_id": "Y8mZT2kREBcg5T5yvPE4O",
+    "url": "https://optimistic.etherscan.io/address/0xDa4B53F75921C109fED0ffd8AD9f22430B4c3438#code",
+    "description": "voidstrategy_OP - Earn"
+  },
+  {
+    "asset_id": "42abjNjmF1lLen5TkNkDCb",
+    "url": "https://snowtrace.io/address/0x2A375567f5E13F6bd74fDa7627Df3b1Af6BfA5a6/contract/43114/code",
+    "description": "WooracleV2_2 - Swap"
+  },
+  {
+    "asset_id": "FGu1IF0jaRb4WSsbTOzfA",
+    "url": "https://snowtrace.io/address/0xEd9e3f98bBed560e66B89AaC922E29D4596A9642/contract/43114/code",
+    "description": "WooPPV2 - Swap"
+  },
+  {
+    "asset_id": "3wWCLRqJUQusB7ivAbaYNw",
+    "url": "https://snowtrace.io/address/0x4c4AF8DBc524681930a27b2F1Af5bcC8062E6fB7/contract/43114/code",
+    "description": "WooRouterV2 - Swap"
+  },
+  {
+    "asset_id": "3vxp3FLnSUNWVNrnYymUJH",
+    "url": "https://snowtrace.io/address/0xCa10E8825FA9F1dB0651Cd48A9097997DBf7615d/contract/43114/code",
+    "description": "CrossswapRouterV3.1 - Swap"
+  },
+  {
+    "asset_id": "fh98cbedWeAMHT4Q5KGPo",
+    "url": "https://snowtrace.io/address/0x020630613E296c3E9b06186f630D1bF97A2B6Ad1/contract/43114/code",
+    "description": "IntegrationHelper (token info) - Swap"
+  },
+  {
+    "asset_id": "4KOT4Esu39Q7wDLD6kRQsl",
+    "url": "https://snowtrace.io/address/0x3Bd96847C40De8b0F20dA32568BD15462C1386E3/contract/43114/code",
+    "description": "StakeProxy - Stake"
+  },
+  {
+    "asset_id": "59TSl4SvrMSFSJqHQP8T7n",
+    "url": "https://snowtrace.io/address/0xc0f8C29e3a9A7650a3F642e467d70087819926d6/contract/43114/code",
+    "description": "RewardMasterchef - Earn"
+  },
+  {
+    "asset_id": "tiyfy9KiFK3nZOz0MjU4B",
+    "url": "https://snowtrace.io/address/0x866810349B2e28E411669911bB0babb06cc60625/contract/43114/code",
+    "description": "SuperChargerVault_AVAX - Earn"
+  },
+  {
+    "asset_id": "4JHg4aJpP8w6fwLVis0lEw",
+    "url": "https://snowtrace.io/address/0x385E063DeA8908d06BE024de85dA5B8DA4b10F73/contract/43114/code",
+    "description": "LendingManager_AVAX - Earn"
+  },
+  {
+    "asset_id": "6lV3B4bhMByYafdZtnoFb8",
+    "url": "https://snowtrace.io/address/0x755e4Af9E77a91999693947B02975c584D1B56F6/contract/43114/code",
+    "description": "WithdrawManager_AVAX - Earn"
+  },
+  {
+    "asset_id": "6a92XGPQtS2K2XvQhHFVCX",
+    "url": "https://snowtrace.io/address/0xdA442c468f77F4f90032aE8ca99850eEA2091Bfe/contract/43114/code",
+    "description": "farmingvault_AVAX - Earn"
+  },
+  {
+    "asset_id": "2SKRjN985SsFq86NV7Y6fd",
+    "url": "https://snowtrace.io/address/0x76e1775b5207d616506462aBb7292BaA2bdf5D05/contract/43114/code",
+    "description": "AVAX_AAVEstrat - Earn"
+  },
+  {
+    "asset_id": "3N8plrdW2dauTZIjxr3hME",
+    "url": "https://snowtrace.io/address/0x91921908259559d19da415E8E407dC533BFA61EB/contract/43114/code",
+    "description": "ExternalReward_AVAX - Earn"
+  },
+  {
+    "asset_id": "5sUFdACbXwF99ErcgYqpQn",
+    "url": "https://snowtrace.io/address/0x11B29AE3037F4526e4AA56952318e0d01ADA836A/contract/43114/code",
+    "description": "SuperChargerVault_USDC - Earn"
+  },
+  {
+    "asset_id": "6UB7uSKMC0WKbZblMFVCFu",
+    "url": "https://snowtrace.io/address/0xc8Ec7f48a82a07D95110ff26FAacde9757Dd9Dc7/contract/43114/code",
+    "description": "LendingManager_USDC - Earn"
+  },
+  {
+    "asset_id": "2x2VT5uEzjtNfEumt3Zukw",
+    "url": "https://snowtrace.io/address/0x1bB2ebecfbb4F78D83FB0A21cB415383779602C9/contract/43114/code",
+    "description": "WithdrawManager_USDC - Earn"
+  },
+  {
+    "asset_id": "5TFRRVMnb1A9Onnn6EYeSx",
+    "url": "https://snowtrace.io/address/0x7bcB0CC7ee1158827a1e29254E83Bd55799855C5/contract/43114/code",
+    "description": "USDC_AAVEstrat - Earn"
+  },
+  {
+    "asset_id": "3SJdHmJTg47TyXv3FQxDMk",
+    "url": "https://snowtrace.io/address/0x65003ba7c8E30e7B15903F70B36924057adfD070/contract/43114/code",
+    "description": "ExternalReward_USDC - Earn"
+  },
+  {
+    "asset_id": "07Oru9ZMGuQFjcr0BMeja",
+    "url": "https://snowtrace.io/address/0xA429B468d222bb31Ff256f3D08DDC0A2D8a59664/contract/43114/code",
+    "description": "WithdrawManager_BTC.b - Earn"
+  },
+  {
+    "asset_id": "1NVjxRJvClbOeUsD1CtoGu",
+    "url": "https://snowtrace.io/address/0x34C3847a9d8ff02cB50ce76d9AB6B51c610EbCde/contract/43114/code",
+    "description": "farmingvault_BTC.b - Earn"
+  },
+  {
+    "asset_id": "4QS2MSti2cujIwVeFqijsk",
+    "url": "https://snowtrace.io/address/0xA5025842791224238F5606dB1f8863c87A5A9Dc1/contract/43114/code",
+    "description": "ExternalReward_BTC.b - Earn"
+  },
+  {
+    "asset_id": "juJUrrMSSxhghEzH7nUNS",
+    "url": "https://bscscan.com/address/0xCa10E8825FA9F1dB0651Cd48A9097997DBf7615d#code",
+    "description": "CrossRouterv4 - Swap"
+  },
+  {
+    "asset_id": "1QgSuPbldb5JPGp3X0d5uC",
+    "url": "https://bscscan.com/address/0xAA9c15cd603428cA8ddD45e933F8EfE3Afbcc173#code",
+    "description": "IntegrationHelper (token info) - Swap"
+  },
+  {
+    "asset_id": "52iJn0qUTrC6vZW6AbaJqZ",
+    "url": "https://bscscan.com/address/0x2A375567f5E13F6bd74fDa7627Df3b1Af6BfA5a6#code",
+    "description": "WooracleV2_2 - Swap"
+  },
+  {
+    "asset_id": "2E5CSvmLaN64iRmKMmzax7",
+    "url": "https://bscscan.com/address/0xEd9e3f98bBed560e66B89AaC922E29D4596A9642#code",
+    "description": "WooPPV2 - Swap"
+  },
+  {
+    "asset_id": "68DiDRJ81atYrQW69emutc",
+    "url": "https://bscscan.com/address/0xc0f8C29e3a9A7650a3F642e467d70087819926d6#code",
+    "description": "RewardMasterchef - Earn"
+  },
+  {
+    "asset_id": "11Akwluube4MWi6KT9zstn",
+    "url": "https://bscscan.com/address/0x438baAfF63Af83549020feAD36C7de167384463a#code",
+    "description": "LendingManager_BNB - Earn"
+  },
+  {
+    "asset_id": "1ysWS7izPzqZkZQzlwC2C2",
+    "url": "https://bscscan.com/address/0xf5d6560356Cc5d7FCBf4CA20736Af88B7cfa2Ad1#code",
+    "description": "ExternalReward_BNB - Earn"
+  },
+  {
+    "asset_id": "6oVfschblPwqp12jUeUrcI",
+    "url": "https://bscscan.com/address/0x5CB9ba4a6f05c4125D61172E1b2C1DBe3afb3158#code",
+    "description": "SuperChargerVault_USDT - Earn"
+  },
+  {
+    "asset_id": "4KvSXe9iqwLdhG28ph793G",
+    "url": "https://bscscan.com/address/0xdecc5458A0fDe482Ae04aB13BD6866cfcfA8cF4B#code",
+    "description": "ExternalReward_USDT - Earn"
+  },
+  {
+    "asset_id": "3M24vKNUbVlxXh2oM051bz",
+    "url": "https://explorer.zksync.io/address/0xAe45cBE2d1E90358CbD216bC16f2C9267a4EA80a#contract",
+    "description": "WooracleV2_2 - Swap"
+  },
+  {
+    "asset_id": "3nFRzbR1ZuXRuNO64vGiiC",
+    "url": "https://explorer.zksync.io/address/0xE656d70bc3550e3EEE9dE7dC79367A44Fd13d975#contract",
+    "description": "WooPPV2 - Swap"
+  },
+  {
+    "asset_id": "4KFs7p8NWOM95CtE40nfEe",
+    "url": "https://explorer.zksync.io/address/0x09873bfECA34F1Acd0a7e55cDA591f05d8a75369#contract",
+    "description": "WooRouterV2 - Swap"
+  },
+  {
+    "asset_id": "ck2JQx9YIN89x3RIk1Bbo",
+    "url": "https://explorer.zksync.io/address/0x636DfeB023463F176f87D61E3B604231986bd935#contract",
+    "description": "IntegrationHelper (token info) - Swap"
+  },
+  {
+    "asset_id": "5tPPACByNFZT184j9cU1oy",
+    "url": "https://explorer.zksync.io/address/0xA8bbAB0aC88382A0f507B9E93CDbe65ffa1F50D1#contract",
+    "description": "SuperChargerVault_USDC - Earn"
+  },
+  {
+    "asset_id": "3aJxtz8WZPupyPH74clUwN",
+    "url": "https://explorer.zksync.io/address/0xa681B14Ea827280213DFCBDE48D8695A745F41Ab#contract",
+    "description": "LendingManager_USDC - Earn"
+  },
+  {
+    "asset_id": "37eVJvAWhgnjw5PvZC1Ggx",
+    "url": "https://explorer.zksync.io/address/0xa5A3235Ab50Df36A67784D7F40d2631292cBfB08#contract",
+    "description": "WithdrawManager_USDC - Earn"
+  },
+  {
+    "asset_id": "472vmaj6JWOmQEBNoLCiqX",
+    "url": "https://explorer.zksync.io/address/0xAC41281Fa4648c22E1a01Deb821AcD2C64616966#contract",
+    "description": "FarmingVault_USDC - Earn"
+  },
+  {
+    "asset_id": "4rQvIAVTxP4UQf8vsRGevr",
+    "url": "https://explorer.zksync.io/address/0xFf44b22E9146e30520c89237Ebb06DB4f5153e9B#contract",
+    "description": "VoidStrategy_USDC - Earn"
+  },
+  {
+    "asset_id": "3oc9l0u33zHzkNOLLXMnFX",
+    "url": "https://explorer.zksync.io/address/0x1d686250BBffA9Fe120B591F5992DD7fC0FD99a4#contract",
+    "description": "SuperChargerVault_ETH - Earn"
+  },
+  {
+    "asset_id": "70RykXMlal4Pp18tSBfs12",
+    "url": "https://explorer.zksync.io/address/0xaEed9101c760A2a306B6B9Ed774A775Ecc9686F3#contract",
+    "description": "LendingManager_ETH - Earn"
+  },
+  {
+    "asset_id": "PrpQZnbYh4WbAxaEp9kqL",
+    "url": "https://explorer.zksync.io/address/0x674db8f08620726dAC5eF787D5e1F4784a3ABC23#contract",
+    "description": "WithdrawManager_ETH - Earn"
+  },
+  {
+    "asset_id": "5TN6EQeYKUBvmmGp8Ldqm4",
+    "url": "https://explorer.zksync.io/address/0xc5D8fC6a7E72CA1e5041d528feEF42D7bD8A770c#contract",
+    "description": "FarmingVault_ETH - Earn"
+  },
+  {
+    "asset_id": "2nkWwpraPpFnOsB5nT9jct",
+    "url": "https://explorer.zksync.io/address/0x5DaB2541175FBB2CAd3DC624Ee41917284a00fEb#contract",
+    "description": "VoidStrategy_ETH - Earn"
+  }
+]

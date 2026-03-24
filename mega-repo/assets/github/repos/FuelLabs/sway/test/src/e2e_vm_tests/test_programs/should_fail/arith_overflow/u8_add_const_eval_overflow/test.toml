@@ -1,7 +1,0 @@
-category = "fail"
-
-# check: $()error
-# not: $()error
-# check: $()Could not evaluate initializer to a const declaration.
-
-# not: $()error$

@@ -1,3 +1,0 @@
-# Even though we don't need any custom configuration, the `cargo-generate.toml`
-# file is added to indicate the root of the default template within the
-# repository.

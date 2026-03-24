@@ -1,0 +1,22 @@
+[
+  {
+    "asset_id": "6BIog3fUoB93zxhc698VpW",
+    "url": "https://voyager.online/contract/0x02a85bd616f912537c50a49a4076db02c00b29b2cdc8a197ce92ed1837fa875b",
+    "description": "Oracle"
+  },
+  {
+    "asset_id": "742rjptdkZAf6nRxWXIe3v",
+    "url": "https://voyager.online/contract/0x024a55b928496ef83468fdb9a5430fe031ac386b8f62f5c2eb7dd20ef7237415",
+    "description": "PublisherRegistry"
+  },
+  {
+    "asset_id": "7tnaYPAVjZrvaB5EefH4mb",
+    "url": "https://voyager.online/contract/0x49eefafae944d07744d07cc72a5bf14728a6fb463c3eae5bca13552f5d455fd#readContract",
+    "description": "TWAP/Volatility"
+  },
+  {
+    "asset_id": "6e50pM12ySv8CccgRgLTxK",
+    "url": "https://immunefi.com/",
+    "description": "Primacy of Impact"
+  }
+]

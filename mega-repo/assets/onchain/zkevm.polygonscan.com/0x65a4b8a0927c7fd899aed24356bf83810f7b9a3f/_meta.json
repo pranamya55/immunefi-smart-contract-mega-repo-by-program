@@ -1,7 +1,0 @@
-{
-  "url": "https://zkevm.polygonscan.com/address/0x65A4b8A0927c7FD899aed24356BF83810f7b9A3f#code",
-  "host": "zkevm.polygonscan.com",
-  "address": "0x65A4b8A0927c7FD899aed24356BF83810f7b9A3f",
-  "mode": "placeholder-onchain",
-  "reason": "etherscan-v2:unexpected-response; scan-host-no-key:HTTPSConnectionPool(host='zkevm.polygonscan.com', port=443): Max retries exceeded with url: /api?module=contract&action=getsourcecode&address=0x65A4b8A0927c7FD899aed24356BF83810f7b9A3f (Caused by NameResolutionError(\"HTTPSConnection(host='zkevm.polygonscan.com', port=443): Failed to resolve 'zkevm.polygonscan.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
-}

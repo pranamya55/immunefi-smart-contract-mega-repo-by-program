@@ -1,3 +1,0 @@
-library;
-
-pub struct Foo {}

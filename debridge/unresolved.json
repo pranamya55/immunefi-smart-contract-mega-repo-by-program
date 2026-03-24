@@ -1,0 +1,152 @@
+[
+  {
+    "asset_id": "74827yr1jhDpxO0um5skyh",
+    "url": "https://bscscan.com/address/0xE4427af3555CD9303D728C491364FAdFDD7494Fe",
+    "description": "ProxyAdmin BSC"
+  },
+  {
+    "asset_id": "4xroe6GzIn8LA3QtKyXUAH",
+    "url": "https://hecoinfo.com/address/0xE4427af3555CD9303D728C491364FAdFDD7494Fe",
+    "description": "ProxyAdmin HECO"
+  },
+  {
+    "asset_id": "DlIxlCljHE9RljjMEMRlK",
+    "url": "https://ftmscan.com/address/0xE4427af3555CD9303D728C491364FAdFDD7494Fe",
+    "description": "ProxyAdmin FTM"
+  },
+  {
+    "asset_id": "ea7DhCiPmuf0837w5bw4P",
+    "url": "https://bscscan.com/address/0x43dE2d77BF8027e25dBD179B491e8d64f38398aA",
+    "description": "deBridgeGate Proxy BSC"
+  },
+  {
+    "asset_id": "26T6lzDo7fkvYspDZtfn4u",
+    "url": "https://hecoinfo.com/address/0x43dE2d77BF8027e25dBD179B491e8d64f38398aA",
+    "description": "deBridgeGate Proxy HECO"
+  },
+  {
+    "asset_id": "b88yiXBFEGgYXgwXbtKhW",
+    "url": "https://snowtrace.io/address/0x43dE2d77BF8027e25dBD179B491e8d64f38398aA",
+    "description": "deBridgeGate Proxy AVAX"
+  },
+  {
+    "asset_id": "2KUdWwvxE9lml52UO3upho",
+    "url": "https://ftmscan.com/address/0x43dE2d77BF8027e25dBD179B491e8d64f38398aA",
+    "description": "deBridgeGate Proxy FTM"
+  },
+  {
+    "asset_id": "42z8J6eQpZlakjb115cj8r",
+    "url": "https://hecoinfo.com/address/0x24455aa55ded7728783c9474be8ea2f5c935f8eb",
+    "description": "deBridgeGate HECO"
+  },
+  {
+    "asset_id": "6ow7J9lum2j6IxbxQehVqx",
+    "url": "https://ftmscan.com/address/0xb1a20d1c885fd775df97396397d6f8f07abdd20d",
+    "description": "deBridgeGate FTM"
+  },
+  {
+    "asset_id": "2sYFG3m7A8Gl6pN4rtSW44",
+    "url": "https://hecoinfo.com/address/0x8244d6Ffe0695B30b2bAD424683Ee3bc534Ea464",
+    "description": "deBridgeToken Proxy HECO"
+  },
+  {
+    "asset_id": "3jKEccTwnsn6HuTYCUGdyQ",
+    "url": "https://ftmscan.com/address/0x8244d6Ffe0695B30b2bAD424683Ee3bc534Ea464",
+    "description": "deBridgeToken Proxy FTM"
+  },
+  {
+    "asset_id": "3axjCcfOreJAqaIAzcB6WZ",
+    "url": "https://hecoinfo.com/address/0xf8A2902c0a5f817F5e22C82f453538d3f0734C2b",
+    "description": "deBridgeGate Proxy HECO"
+  },
+  {
+    "asset_id": "2EJPCfHmiK0IBI4zXAqofV",
+    "url": "https://ftmscan.com/address/0xc1656B63D9EEBa6d114f6bE19565177893e5bCBF",
+    "description": "deBridgeToken FTM"
+  },
+  {
+    "asset_id": "2vq47IwfS1JMvXfdfcmVy3",
+    "url": "https://hecoinfo.com/address/0x4c7CA8fcFFE77281A8B81D4580CFf8257d785491",
+    "description": "deBridgeTokenDeployer HECO"
+  },
+  {
+    "asset_id": "5v9Hc4xFqYCHMh5DcBB6tf",
+    "url": "https://snowtrace.io/address/0x4c7CA8fcFFE77281A8B81D4580CFf8257d785491",
+    "description": "deBridgeTokenDeployer AVAX"
+  },
+  {
+    "asset_id": "2n3WsIdbXtGnrPhr8x4C5i",
+    "url": "https://ftmscan.com/address/0x4c7CA8fcFFE77281A8B81D4580CFf8257d785491",
+    "description": "deBridgeTokenDeployer FTM"
+  },
+  {
+    "asset_id": "3et9QOeiAUkKLEb9qXQHJP",
+    "url": "https://hecoinfo.com/address/0x949b3B3c098348b879C9e4F15cecc8046d9C8A8c",
+    "description": "SignatureVerifier Proxy HECO"
+  },
+  {
+    "asset_id": "4Zf4nd2B0Wquvt8pcjkeRW",
+    "url": "https://ftmscan.com/address/0x949b3B3c098348b879C9e4F15cecc8046d9C8A8c",
+    "description": "SignatureVerifier Proxy FTM"
+  },
+  {
+    "asset_id": "7bzwLQttTG6BiIFt3kshti",
+    "url": "https://hecoinfo.com/address/0xfE7De3c1e1BD252C67667B56347cABFC6df08dF4",
+    "description": "SignatureVerifier HECO"
+  },
+  {
+    "asset_id": "11EWNolNpiTOl1K31ams4C",
+    "url": "https://ftmscan.com/address/0x2a3e72eD893b5958690e16c3BBe1BD92137b6250",
+    "description": "SignatureVerifier FTM"
+  },
+  {
+    "asset_id": "2laYUQlUHj7jRu3m8HezYA",
+    "url": "https://hecoinfo.com/address/0x8a0C79F5532f3b2a16AD1E4282A5DAF81928a824",
+    "description": "CallProxy Proxy HECO"
+  },
+  {
+    "asset_id": "6vv1HL3hBWM8qJ642umgxp",
+    "url": "https://ftmscan.com/address/0x8a0C79F5532f3b2a16AD1E4282A5DAF81928a824",
+    "description": "CallProxy Proxy FTM"
+  },
+  {
+    "asset_id": "5pLqkH5xeS92lAiVYX0Uj",
+    "url": "https://hecoinfo.com/address/0xBd3d657AE87671eC6f8D6272A9f431a7c4a9B6f8",
+    "description": "CallProxy HECO"
+  },
+  {
+    "asset_id": "5HvZy6hAyzTwovj6hPdY6U",
+    "url": "https://ftmscan.com/address/0x55C93b20Dd2F790AC429D6341a022A781791654A",
+    "description": "CallProxy FTM"
+  },
+  {
+    "asset_id": "35H3v4vQMTxMb0y69mp5jj",
+    "url": "https://hecoinfo.com/address/0xC2bAC0DB5B18B0c3225581Ba14BD0B448c623636",
+    "description": "SimpleFeeProxy Proxy HECO"
+  },
+  {
+    "asset_id": "ZDVludfYgv2FU5Q5axaZ0",
+    "url": "https://ftmscan.com/address/0xc2bac0db5b18b0c3225581ba14bd0b448c623636",
+    "description": "SimpleFeeProxy Proxy FTM"
+  },
+  {
+    "asset_id": "4hyuR38wZ54CIuggZTSblq",
+    "url": "https://hecoinfo.com/address/0x37a52ddb753c924f8C914de65ef00b5210Caa83C",
+    "description": "SimpleFeeProxy HECO"
+  },
+  {
+    "asset_id": "2cXnRJ2XfDPODgvndZFV7M",
+    "url": "https://ftmscan.com/address/0x27406EbF0b76923d93b4C6c6224bCaB7fFf11f87",
+    "description": "SimpleFeeProxy FTM"
+  },
+  {
+    "asset_id": "4vPIfr0vjEYBvfDXgYK6Ax",
+    "url": "https://hecoinfo.com/address/0xFCf83648b8cDeF62e5d03319a6f1FCE16e4D6A59",
+    "description": "WethGate HECO"
+  },
+  {
+    "asset_id": "uubp7eTMRlANyOrT7WqhQ",
+    "url": "https://ftmscan.com/address/0xFCf83648b8cDeF62e5d03319a6f1FCE16e4D6A59",
+    "description": "WethGate FTM"
+  }
+]

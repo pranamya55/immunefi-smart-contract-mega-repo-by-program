@@ -1,0 +1,32 @@
+[
+  {
+    "asset_id": "2AmP60wiyY3A1vsackWhML",
+    "url": "https://bscscan.com/address/0x004074879Bc69E9B95084580A6Cc132a19b7A3Ac",
+    "description": "VaultFactory"
+  },
+  {
+    "asset_id": "1yhYF13I1e6GpwcOIgD5Dn",
+    "url": "https://bscscan.com/address/0x124d426898eF174aa8D23f548fCfd13c34F91D2B",
+    "description": "AaveV3Connector"
+  },
+  {
+    "asset_id": "6VSjkVfgbdVL9uHB7IvQxk",
+    "url": "https://bscscan.com/address/0x4d1806C26A728f2e1b82b4549b9E074DBE5940B9",
+    "description": "Cool Wallet AaveV3 USDT"
+  },
+  {
+    "asset_id": "1QKqehIrP7JEdYeV49VhdY",
+    "url": "https://optimistic.etherscan.io/address/0x4094fc930CcFe3fc3A9369BE7335467dac8b20fa",
+    "description": "Vault Implementation"
+  },
+  {
+    "asset_id": "3bCDSou5gxY2j5fpKpdS6r",
+    "url": "https://optimistic.etherscan.io/address/0x35a60d4bDeedb3d6103ae1521cd985C649D81297",
+    "description": "AaveV3Connector"
+  },
+  {
+    "asset_id": "7LiNG8rWh86MFH47EHDMUV",
+    "url": "https://optimistic.etherscan.io/address/0xb9ebff375d5eade50ed561f611754902f70e34cf",
+    "description": "Dakota AAVE v3 USDC"
+  }
+]

@@ -1,3 +1,0 @@
-category = "fail"
-
-#check: $()Variable "DOES_NOT_EXIST" does not exist in this scope.

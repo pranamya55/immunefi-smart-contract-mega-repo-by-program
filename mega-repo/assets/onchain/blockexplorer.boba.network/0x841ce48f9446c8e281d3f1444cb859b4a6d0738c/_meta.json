@@ -1,7 +1,0 @@
-{
-  "url": "https://blockexplorer.boba.network/address/0x841ce48F9446C8E281D3F1444cB859b4A6D0738C",
-  "host": "blockexplorer.boba.network",
-  "address": "0x841ce48F9446C8E281D3F1444cB859b4A6D0738C",
-  "mode": "placeholder-onchain",
-  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:http 403"
-}

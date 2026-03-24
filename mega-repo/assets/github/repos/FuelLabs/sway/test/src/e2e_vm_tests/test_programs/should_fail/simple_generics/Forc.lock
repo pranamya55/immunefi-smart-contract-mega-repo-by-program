@@ -1,8 +1,0 @@
-[[package]]
-name = "simple_generics"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-3607B3CB15B5EBEF"

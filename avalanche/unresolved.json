@@ -1,0 +1,52 @@
+[
+  {
+    "asset_id": "50thggwLxDBTiMYDO1RTJV",
+    "url": "https://snowtrace.io/address/0x8a0cac13c7da965a312f08ea4229c37869e85cb9",
+    "description": "GRT.e"
+  },
+  {
+    "asset_id": "6A2KBSTFqpYTjX7Xisygks",
+    "url": "https://snowtrace.io/address/0xc7b5d72c836e718cda8888eaf03707faef675079",
+    "description": "SWAP.e"
+  },
+  {
+    "asset_id": "6DnCkoszIzNpBiNA4STVyF",
+    "url": "https://snowtrace.io/address/0xc3048e19e76cb9a3aa9d77d8c03c29fc906e2437",
+    "description": "COMP.e"
+  },
+  {
+    "asset_id": "7bGs3OcOwiTY2vZGRTdHLv",
+    "url": "https://snowtrace.io/address/0x596fa47043f99a4e0f122243b841e55375cde0d2",
+    "description": " ZRX.e"
+  },
+  {
+    "asset_id": "7lQrlXxrZhiy7ef0VObv96",
+    "url": "https://snowtrace.io/address/0x02d980a0d7af3fb7cf7df8cb35d9edbcf355f665",
+    "description": "SHIB.e"
+  },
+  {
+    "asset_id": "7oKth99H19D5zc5xAiF4ZP",
+    "url": "https://snowtrace.io/address/0x19860ccb0a68fd4213ab9d8266f7bbf05a8dde98",
+    "description": "BUSD.e"
+  },
+  {
+    "asset_id": "HZzFVxAP3QbZvlCdMVKwn",
+    "url": "https://snowtrace.io/address/0xd501281565bf7789224523144fe5d98e8b28f267",
+    "description": "1inch.e"
+  },
+  {
+    "asset_id": "QkEQBxjK0VDa0WhuuCRGF",
+    "url": "https://snowtrace.io/address/0x249848beca43ac405b8102ec90dd5f22ca513c06",
+    "description": "CRV.e"
+  },
+  {
+    "asset_id": "Y2jqBFo1hI1q6aVYAxIkN",
+    "url": "https://snowtrace.io/address/address/0x2147efff675e4a4ee1c2f918d181cdbd7a8e208f",
+    "description": "ALPHA.e"
+  },
+  {
+    "asset_id": "w3pve0pkm8YdtRV3FP226",
+    "url": "https://snowtrace.io/address/0xabc9547b534519ff73921b1fba6e672b5f58d083",
+    "description": "WOO.e"
+  }
+]

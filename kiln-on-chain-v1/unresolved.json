@@ -1,0 +1,37 @@
+[
+  {
+    "asset_id": "5GpwQUSWM7eELtHDyXOi0w",
+    "url": "https://goerli.etherscan.io/address/0xD36B422a7EE65219732724d849B8b6BceD6155Fe",
+    "description": "Consensus Layer Fee Dispatcher (testnet)"
+  },
+  {
+    "asset_id": "1uAckEZfyGjHSKCEx2kwZU",
+    "url": "https://goerli.etherscan.io/address/0x50Dba42662FD69f5Fd9236540aaD9f99f7F6b3b2",
+    "description": "Consensus Layer Fee Dispatcher Proxy (testnet)"
+  },
+  {
+    "asset_id": "9HrhiKTY7DIYEk6c6cO96",
+    "url": "https://goerli.etherscan.io/address/0xa69dDEBd0B6893A6F3d34A5df610d0E2ED433D18",
+    "description": "Execution Layer Fee Dispatcher (testnet)"
+  },
+  {
+    "asset_id": "6xU2HowYjg61HBNFo9wbrd",
+    "url": "https://goerli.etherscan.io/address/0x639d818639B85a1892Bfbb40Bd724b4Ddea43C0C",
+    "description": "Execution Layer Fee Dispatcher Proxy (testnet)"
+  },
+  {
+    "asset_id": "2zerwJPCbDUS8ot3a0Qhhj",
+    "url": "https://goerli.etherscan.io/address/0x1AcD717aDF8A3A1e4c23C6510cfbE76834E3f1bf",
+    "description": "Fee Recipient (testnet)"
+  },
+  {
+    "asset_id": "5h5VLKpEikaWsfNGPwndqG",
+    "url": "https://goerli.etherscan.io/address/0xcd01846F1b37aCE16916969989C136e3c52ef7d2",
+    "description": "Staking Contract (testnet)"
+  },
+  {
+    "asset_id": "3CvSKYIs1JRZkgjfTzaQlc",
+    "url": "https://goerli.etherscan.io/address/0xe8Ff2a04837aac535199eEcB5ecE52b2735b3543",
+    "description": "Staking Contract Proxy (testnet)"
+  }
+]

@@ -1,8 +1,0 @@
-.form {
-  display: grid;
-  gap: var(--spacing-lg);
-
-  @include bp(tablet) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}

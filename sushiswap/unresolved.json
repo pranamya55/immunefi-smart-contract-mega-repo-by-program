@@ -1,0 +1,17 @@
+[
+  {
+    "asset_id": "5TFgF2NoKSQeWTEdlpUGzk",
+    "url": "https://docs.sushi.com/contracts/red-snwapper#deployments",
+    "description": "Red Snwapper"
+  },
+  {
+    "asset_id": "6B4xxxhUuHtuPjrOciREcp",
+    "url": "https://docs.sushi.com/contracts/cpamm#deployments",
+    "description": "cpAMM (SuhiSwap V2)"
+  },
+  {
+    "asset_id": "2ZofOr0vchGeyPipicfqKv",
+    "url": "https://docs.sushi.com/contracts/clamm#deployments",
+    "description": "clAMM (SuhiSwap V3)"
+  }
+]

@@ -1,8 +1,0 @@
-[[package]]
-name = "std"
-source = "path+from-root-EE49CDD50FD361DD"
-
-[[package]]
-name = "supertraits_with_trait_methods"
-source = "member"
-dependencies = ["std"]

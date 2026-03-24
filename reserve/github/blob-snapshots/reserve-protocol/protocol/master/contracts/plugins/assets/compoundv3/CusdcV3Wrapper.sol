@@ -1,1 +1,0 @@
-../../../../../../../../../../../mega-repo/assets/github/blob-snapshots/reserve-protocol/protocol/master/contracts/plugins/assets/compoundv3/CusdcV3Wrapper.sol

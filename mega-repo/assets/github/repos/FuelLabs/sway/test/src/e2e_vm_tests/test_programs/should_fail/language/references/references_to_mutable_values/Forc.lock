@@ -1,8 +1,0 @@
-[[package]]
-name = "references_to_mutable_values"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-13ECF009A69220F6"

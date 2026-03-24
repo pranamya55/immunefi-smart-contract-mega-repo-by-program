@@ -1,6 +1,0 @@
-export enum UserBalanceOpKind {
-  DEPOSIT_INTERNAL = 0,
-  WITHDRAW_INTERNAL = 1,
-  TRANSFER_INTERNAL = 2,
-  TRANSFER_EXTERNAL = 3,
-}

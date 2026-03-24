@@ -1,2 +1,0 @@
-[workspace]
-members = ["initialized_example", "uninitialized_example"]

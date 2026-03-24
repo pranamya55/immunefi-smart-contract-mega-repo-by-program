@@ -1,7 +1,0 @@
-{
-  "url": "https://www.oklink.com/fantom/address/0x1ab3747da0f88e883895de58c105fd25c21491ce",
-  "host": "www.oklink.com",
-  "address": "0x1ab3747da0f88e883895de58c105fd25c21491ce",
-  "mode": "placeholder-onchain",
-  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:http 404"
-}

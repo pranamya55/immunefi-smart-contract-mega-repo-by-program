@@ -1,4 +1,0 @@
-category = "fail"
-
-# check: let mut forbidden = true;
-# nextln: $()Expected an item.

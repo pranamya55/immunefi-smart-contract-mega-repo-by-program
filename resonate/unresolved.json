@@ -1,0 +1,37 @@
+[
+  {
+    "asset_id": "25WqoXlJNg23FrQgvNLYeV",
+    "url": "https://ftmscan.com/address/0x062B3aB17dFac433F9E211F95e6a7A0C627c9a62",
+    "description": "LP Oracle"
+  },
+  {
+    "asset_id": "3SH4NUFbBjTHkn37rqVZ9J",
+    "url": "https://optimistic.etherscan.io/address/0x22031BE61b10d2C6cC9648f251E1284Be5AFa3f9",
+    "description": "Velodrome TWAP Oracle"
+  },
+  {
+    "asset_id": "17yTzhDTTRknzWYHPgjKo4",
+    "url": "https://ftmscan.com/address/0x8e20A69aF81eaeDD74589C9d0684557fd54b0DdA",
+    "description": "TWAP Oracle"
+  },
+  {
+    "asset_id": "3E6J7XGMxBpm04mRWrxVA8",
+    "url": "https://ftmscan.com/address/0xdB84260bE05054b42a71D4a287fF17a199C1c8FF",
+    "description": "Reaper Farms Adapter"
+  },
+  {
+    "asset_id": "60Y5d6UCUTvqFHDW7g2c7z",
+    "url": "https://ftmscan.com/address/0x1A5C2ee3FB7fe4A2C2e42474a3657C71f6C775CF",
+    "description": "Yearn Adapter"
+  },
+  {
+    "asset_id": "7LoSF66b9C8GzCwQGTJIIT",
+    "url": "https://ftmscan.com/address/0xA6273F603985D13Ea7405B1B497C3b2F7D798Fd2",
+    "description": "Beefy Adapter"
+  },
+  {
+    "asset_id": "6zCEYHS0An83LMQSJUe0O2",
+    "url": "https://ftmscan.com/address/0xeF1ffCa755216941874Bd2ab28C9CfC2F3f652bC",
+    "description": "Stader sFTMx Oracle"
+  }
+]

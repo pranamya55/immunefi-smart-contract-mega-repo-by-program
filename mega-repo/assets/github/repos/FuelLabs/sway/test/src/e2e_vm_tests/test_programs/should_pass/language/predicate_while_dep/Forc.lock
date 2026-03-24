@@ -1,8 +1,0 @@
-[[package]]
-name = "predicate_while_dep"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-59287BAA38E86311"

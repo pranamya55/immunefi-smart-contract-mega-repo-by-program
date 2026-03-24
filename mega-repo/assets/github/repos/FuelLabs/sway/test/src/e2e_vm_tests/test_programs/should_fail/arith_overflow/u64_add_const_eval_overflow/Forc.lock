@@ -1,8 +1,0 @@
-[[package]]
-name = "std"
-source = "path+from-root-0E1504C05220483B"
-
-[[package]]
-name = "u64_add_const_eval_overflow"
-source = "member"
-dependencies = ["std"]

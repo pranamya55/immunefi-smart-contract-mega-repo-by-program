@@ -1,8 +1,0 @@
-[[package]]
-name = "illegal_continue"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-61AF9510BDC399A3"

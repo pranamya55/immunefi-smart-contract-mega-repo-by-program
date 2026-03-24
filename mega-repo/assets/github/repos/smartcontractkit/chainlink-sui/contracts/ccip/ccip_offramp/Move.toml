@@ -1,7 +1,0 @@
-[package]
-name = "ccip_offramp"
-edition = "2024"
-
-[dependencies]
-ccip = { local = "../ccip" }
-mcms = { local = "../../mcms/mcms" }

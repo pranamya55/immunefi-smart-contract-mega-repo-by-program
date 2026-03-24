@@ -1,8 +1,0 @@
-[[package]]
-name = "associated_type_container"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-264B0ABCEA24EB36"

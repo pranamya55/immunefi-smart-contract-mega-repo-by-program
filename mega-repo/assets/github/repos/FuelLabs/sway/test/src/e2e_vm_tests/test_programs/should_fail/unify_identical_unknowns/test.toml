@@ -1,5 +1,0 @@
-category = "fail"
-
-# check: $()Could not find symbol "NonExistent" in this scope.
-
-# check: $()Unknown type name "NonExistent".

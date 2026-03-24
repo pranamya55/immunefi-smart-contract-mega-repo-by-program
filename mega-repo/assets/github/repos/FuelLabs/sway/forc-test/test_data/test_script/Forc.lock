@@ -1,8 +1,0 @@
-[[package]]
-name = "std"
-source = "path+from-root-C9E1B0494AB5FDF1"
-
-[[package]]
-name = "test_script"
-source = "member"
-dependencies = ["std"]

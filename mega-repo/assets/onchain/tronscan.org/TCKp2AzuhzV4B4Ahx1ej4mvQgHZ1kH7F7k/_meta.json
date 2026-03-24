@@ -1,8 +1,0 @@
-{
-  "url_host": "tronscan.org",
-  "address": "TCKp2AzuhzV4B4Ahx1ej4mvQgHZ1kH7F7k",
-  "chain_kind": "tron",
-  "mode": "tronscan-contract-detail",
-  "verified_status": 2,
-  "name": "PriceOracleProxy"
-}

@@ -1,9 +1,0 @@
-plugins {
-  id 'net.consensys.zkevm.kotlin-library-conventions'
-}
-
-group = 'build.linea.staterecover'
-
-dependencies {
-  api(project(':jvm-libs:generic:extensions:kotlin'))
-}

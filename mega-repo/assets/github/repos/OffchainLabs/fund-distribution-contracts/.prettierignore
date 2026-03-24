@@ -1,4 +1,0 @@
-# yarn format will also ignore files in gitignore
-lib/
-
-# end with new line

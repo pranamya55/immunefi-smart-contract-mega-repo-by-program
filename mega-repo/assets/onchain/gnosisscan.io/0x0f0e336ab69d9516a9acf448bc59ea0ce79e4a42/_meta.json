@@ -1,8 +1,0 @@
-{
-  "url": "https://gnosisscan.io/address/0x0f0e336ab69d9516a9acf448bc59ea0ce79e4a42",
-  "host": "gnosisscan.io",
-  "address": "0x0f0e336ab69d9516a9acf448bc59ea0ce79e4a42",
-  "chainid": 100,
-  "mode": "bytecode-v2-proxy",
-  "bytecode_length_hex_chars": 4800
-}

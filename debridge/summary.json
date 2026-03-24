@@ -1,3 +1,5 @@
 {
-  "manifest_linked": 90
+  "manifest_linked": 60,
+  "onchain_missing": 30,
+  "unresolved": 30
 }

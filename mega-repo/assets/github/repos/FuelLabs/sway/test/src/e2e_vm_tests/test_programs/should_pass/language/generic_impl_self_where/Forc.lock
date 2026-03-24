@@ -1,8 +1,0 @@
-[[package]]
-name = "generic_impl_self_where"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-701263CC2F33CD43"

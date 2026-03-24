@@ -1,8 +1,0 @@
-packages:
-  - "tsconfig/**"
-  - "cli/**"
-  - "sdk/**"
-  - "sdk-tests/sdk-anchor-test/**"
-  - "js/stateless.js/**"
-  - "js/compressed-token/**"
-  - "examples/**"

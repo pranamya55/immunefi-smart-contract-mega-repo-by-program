@@ -1,8 +1,0 @@
-[[package]]
-name = "func_param"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-1AB19CB4A65849EA"

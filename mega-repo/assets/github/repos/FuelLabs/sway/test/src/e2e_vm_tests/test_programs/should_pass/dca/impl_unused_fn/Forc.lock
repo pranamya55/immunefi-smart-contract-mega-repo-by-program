@@ -1,8 +1,0 @@
-[[package]]
-name = "impl_unused_fn"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-8BD23ADAD4D39823"

@@ -1,9 +1,0 @@
-node_modules
-.DS_Store
-.env
-/messages
-dist
-.jest
-jwt.hex
-/.idea
-artifacts

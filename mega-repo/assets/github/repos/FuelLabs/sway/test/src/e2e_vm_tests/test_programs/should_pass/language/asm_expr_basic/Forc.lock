@@ -1,8 +1,0 @@
-[[package]]
-name = "asm_expr_basic"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-C1BABCC798F19F0B"

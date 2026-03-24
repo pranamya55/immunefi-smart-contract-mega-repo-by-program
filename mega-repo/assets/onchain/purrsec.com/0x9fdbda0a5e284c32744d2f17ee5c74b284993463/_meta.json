@@ -1,7 +1,0 @@
-{
-  "url": "https://purrsec.com/address/0x9fdbda0a5e284c32744d2f17ee5c74b284993463",
-  "host": "purrsec.com",
-  "address": "0x9fdbda0a5e284c32744d2f17ee5c74b284993463",
-  "mode": "placeholder-onchain",
-  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:http 404"
-}

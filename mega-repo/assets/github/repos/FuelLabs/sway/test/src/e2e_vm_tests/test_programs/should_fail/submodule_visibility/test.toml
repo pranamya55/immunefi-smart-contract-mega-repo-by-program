@@ -1,9 +1,0 @@
-category = "fail"
-
-# check: $()error
-# check: $()Module "lib" is private.
-
-# check: $()error
-# check: $()Module "lib" could not be found.
-
-# check: $()Aborting due to 2 errors.

@@ -1,7 +1,0 @@
-{
-  "url": "https://snowtrace.io/address/0x2ECB664e934aCd5DF1EE889Dbb2E7D6C1d7CE3Cb",
-  "host": "snowtrace.io",
-  "address": "0x2ECB664e934aCd5DF1EE889Dbb2E7D6C1d7CE3Cb",
-  "mode": "placeholder-onchain",
-  "reason": "etherscan-v2:unexpected-response; scan-host-no-key:http 403"
-}

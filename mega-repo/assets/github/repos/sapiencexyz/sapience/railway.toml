@@ -1,6 +1,0 @@
-[build]
-watchPatterns = ["packages/**"]
-
-[deploy]
-restartPolicyType = "on_failure"
-restartPolicyMaxRetries = 3

@@ -1,1 +1,0 @@
-Inputs for Mainnet scripts.

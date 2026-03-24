@@ -1,1 +1,0 @@
-[Can be found here](https://samczsun.com/instadapp-audit-loa/)

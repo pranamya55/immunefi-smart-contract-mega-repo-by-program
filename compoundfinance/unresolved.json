@@ -1,0 +1,212 @@
+[
+  {
+    "asset_id": "2XsnhfpwrPnTnb6caNwDAs",
+    "url": "https://basescan.org/address/0xb125E6687d4313864e53df431d5425969c15Eb2F",
+    "description": "cUSDCv3 (Base USDC)"
+  },
+  {
+    "asset_id": "YR6f0eNuBHUr7KxJWZTe3",
+    "url": "https://basescan.org/address/0x3bac64185786922292266AA92a58cf870D694E2a",
+    "description": "cUSDCv3 Ext (Base USDC)"
+  },
+  {
+    "asset_id": "2KJk0390t4dxv21hfgOx2m",
+    "url": "https://basescan.org/address/0xbdE8F31D2DdDA895264e27DD990faB3DC87b372d",
+    "description": "Proxy Admin (Base USDC)"
+  },
+  {
+    "asset_id": "5ggavU8fbn4Vzhwu0lj4we",
+    "url": "https://basescan.org/address/0x18281dfC4d00905DA1aaA6731414EABa843c468A",
+    "description": "Bridge Receiver (Base USDC)"
+  },
+  {
+    "asset_id": "3GJTwcoHcutlri32A8W02A",
+    "url": "https://basescan.org/address/0x123964802e6ABabBE1Bc9547D72Ef1B69B00A6b1",
+    "description": "Rewards (Base USDC)"
+  },
+  {
+    "asset_id": "69Iw8Ulp6U0hE0F7F7sUqB",
+    "url": "https://basescan.org/address/0x78D0677032A35c63D142a48A2037048871212a8C",
+    "description": "Bulker (Base USDC)"
+  },
+  {
+    "asset_id": "53gVQntx345S2mMj2G4EHF",
+    "url": "https://basescan.org/address/0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "description": "USDC (Base USDC)"
+  },
+  {
+    "asset_id": "55d1pUecdhNQO1hNwb11qx",
+    "url": "https://basescan.org/address/0xbdE8F31D2DdDA895264e27DD990faB3DC87b372d",
+    "description": "Proxy Admin (Base USDbC)"
+  },
+  {
+    "asset_id": "5AkOnDVZlR16m4eQHtaIlQ",
+    "url": "https://basescan.org/address/0x18281dfC4d00905DA1aaA6731414EABa843c468A",
+    "description": "Bridge Receiver (Base USDbC)"
+  },
+  {
+    "asset_id": "28wawygpqRJmEynPeMvhqj",
+    "url": "https://basescan.org/address/0x123964802e6ABabBE1Bc9547D72Ef1B69B00A6b1",
+    "description": "Rewards (Base USDbC)"
+  },
+  {
+    "asset_id": "3Pq8li0Jfa1VCNqZfeCHCR",
+    "url": "https://basescan.org/address/0x78D0677032A35c63D142a48A2037048871212a8C",
+    "description": "Bulker (Base USDbC)"
+  },
+  {
+    "asset_id": "4WA3ZdR7bNPhVfAlLBbKL2",
+    "url": "https://basescan.org/address/0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "description": "USDbC (Base USDbC)"
+  },
+  {
+    "asset_id": "3prZYouYSQwSzZPLfrTJy2",
+    "url": "https://basescan.org/address/0xbdE8F31D2DdDA895264e27DD990faB3DC87b372d",
+    "description": "Proxy Admin (Base WETH)"
+  },
+  {
+    "asset_id": "4CEAFQCqjY7qVQcEBBtC2Z",
+    "url": "https://basescan.org/address/0x18281dfC4d00905DA1aaA6731414EABa843c468A",
+    "description": "Bridge Receiver (Base WETH)"
+  },
+  {
+    "asset_id": "2Ps3kzwbQWuMvDRBzBtHUi",
+    "url": "https://basescan.org/address/0x123964802e6ABabBE1Bc9547D72Ef1B69B00A6b1",
+    "description": "Rewards (Base WETH)"
+  },
+  {
+    "asset_id": "2m3HCHzYzkHQoN4dV7EOh6",
+    "url": "https://basescan.org/address/0x78D0677032A35c63D142a48A2037048871212a8C",
+    "description": "Bulker (Base WETH)"
+  },
+  {
+    "asset_id": "3H3ktqOdEPjWClCC6VpI8",
+    "url": "https://optimistic.etherscan.io/address/0x2e44e174f7D53F0212823acC11C01A11d58c5bCB",
+    "description": "cUSDCv3 (Optimism USDC)"
+  },
+  {
+    "asset_id": "4VLHstNyyVOVo0asqvA5rU",
+    "url": "https://optimistic.etherscan.io/address/0xE802a0b833f6080FEB46DD54c75444c5dba0c873",
+    "description": "cUSDCv3 Ext (Optimism USDC)"
+  },
+  {
+    "asset_id": "bb5TJytQTja6EGTiS4rAL",
+    "url": "https://optimistic.etherscan.io/address/0xFa454dE61b317b6535A0C462267208E8FdB89f45",
+    "description": "Comet Factory (Optimism USDC)"
+  },
+  {
+    "asset_id": "5FSRNjJwHl5TYMWBBxBLIA",
+    "url": "https://optimistic.etherscan.io/address/0xd98Be00b5D27fc98112BdE293e487f8D4cA57d07",
+    "description": "Timelock (Optimism USDC)"
+  },
+  {
+    "asset_id": "3dWU3qbcWB04SaPmeZWE5y",
+    "url": "https://optimistic.etherscan.io/address/0xC3a73A70d1577CD5B02da0bA91C0Afc8fA434DAF",
+    "description": "Bridge Receiver (Optimism USDC)"
+  },
+  {
+    "asset_id": "4TOxyaAsSadV6vgCPnXwiK",
+    "url": "https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006",
+    "description": "WETH (Optimism USDC)"
+  },
+  {
+    "asset_id": "oCAbxKdgrC5wmdjuQOaUy",
+    "url": "https://optimistic.etherscan.io/address/0x68f180fcCe6836688e9084f035309E29Bf0A2095",
+    "description": "WBTC (Optimism USDC)"
+  },
+  {
+    "asset_id": "1TYNFZziUuOK3e3rgmYq2q",
+    "url": "https://optimistic.etherscan.io/address/0x7e7d4467112689329f7E06571eD0E8CbAd4910eE",
+    "description": "COMP (Optimism USDC)"
+  },
+  {
+    "asset_id": "525x98YAdxMk6uYWNBWF3N",
+    "url": "https://optimistic.etherscan.io/address/0x995E394b8B2437aC8Ce61Ee0bC610D617962B214",
+    "description": "cUSDTv3 (Optimism USDT)"
+  },
+  {
+    "asset_id": "19OEakbN5amuiilV90nuIu",
+    "url": "https://optimistic.etherscan.io/address/0xFa454dE61b317b6535A0C462267208E8FdB89f45",
+    "description": "Comet Factory (Optimism USDT)"
+  },
+  {
+    "asset_id": "v46xpCsVMRfkC7GpA7YWV",
+    "url": "https://optimistic.etherscan.io/address/0xd98Be00b5D27fc98112BdE293e487f8D4cA57d07",
+    "description": "Timelock (Optimism USDT)"
+  },
+  {
+    "asset_id": "1SAO5fUZcc8bFSklwvMen6",
+    "url": "https://optimistic.etherscan.io/address/0xC3a73A70d1577CD5B02da0bA91C0Afc8fA434DAF",
+    "description": "Bridge Receiver (Optimism USDT)"
+  },
+  {
+    "asset_id": "6Z0At4a5CJoU8in1EsJW7x",
+    "url": "https://optimistic.etherscan.io/address/0x7e7d4467112689329f7E06571eD0E8CbAd4910eE",
+    "description": "COMP (Optimism USDT)"
+  },
+  {
+    "asset_id": "7kmTtIUUikP9LjjPYRR11e",
+    "url": "https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006",
+    "description": "WETH (Optimism USDT)"
+  },
+  {
+    "asset_id": "69fvtNGM7xMJNwG9SBYmOX",
+    "url": "https://optimistic.etherscan.io/address/0x68f180fcCe6836688e9084f035309E29Bf0A2095",
+    "description": "WBTC (Optimism USDT)"
+  },
+  {
+    "asset_id": "4MQusXARxaPyLIzgneqpK9",
+    "url": "https://optimistic.etherscan.io/address/0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+    "description": "USDT (Optimism USDT)"
+  },
+  {
+    "asset_id": "4N4kmvj8LlnT9X85Crj9nj",
+    "url": "https://optimistic.etherscan.io/address/0xE36A30D249f7761327fd973001A32010b521b6Fd",
+    "description": "cWETHv3 (Optimism WETH)"
+  },
+  {
+    "asset_id": "35rxbryhqbbnFUOjtGq5tG",
+    "url": "https://optimistic.etherscan.io/address/0x3870FAc3De911c12A57E5a2532D15aD8Ca275A60",
+    "description": "Configurator Implementation (Optimism WETH)"
+  },
+  {
+    "asset_id": "1Iwx9cFI0F0HzTbOMBWEZl",
+    "url": "https://optimistic.etherscan.io/address/0xFa454dE61b317b6535A0C462267208E8FdB89f45",
+    "description": "Comet Factory (Optimism USWETHDT)"
+  },
+  {
+    "asset_id": "6gcjy5WuU5YTDUEsm6i1IL",
+    "url": "https://optimistic.etherscan.io/address/0xd98Be00b5D27fc98112BdE293e487f8D4cA57d07",
+    "description": "Timelock (Optimism WETH)"
+  },
+  {
+    "asset_id": "3DCv8t128NjRW6Dxi7tBfi",
+    "url": "https://optimistic.etherscan.io/address/0xC3a73A70d1577CD5B02da0bA91C0Afc8fA434DAF",
+    "description": "Bridge Receiver (Optimism WETH)"
+  },
+  {
+    "asset_id": "4YajZGwobwiYpF35VgQ7vw",
+    "url": "https://optimistic.etherscan.io/address/0x7e7d4467112689329f7E06571eD0E8CbAd4910eE",
+    "description": "COMP (Optimism WETH)"
+  },
+  {
+    "asset_id": "5A2lnudZVrmrWQYIKoFSxa",
+    "url": "https://optimistic.etherscan.io/address/0x1F32b1c2345538c0c6f582fCB022739c4A194Ebb",
+    "description": "wstETH (Optimism WETH)"
+  },
+  {
+    "asset_id": "A9B3n8jgmErW2pMj4aTAz",
+    "url": "https://optimistic.etherscan.io/address/0x9Bcef72be871e61ED4fBbc7630889beE758eb81D",
+    "description": "rETH (Optimism WETH)"
+  },
+  {
+    "asset_id": "21e54hJOhQe9DVSpdjd5Ly",
+    "url": "https://optimistic.etherscan.io/address/0x68f180fcCe6836688e9084f035309E29Bf0A2095",
+    "description": "WBTC (Optimism WETH)"
+  },
+  {
+    "asset_id": "2N0qbUKkJXff6jVjmgo6oQ",
+    "url": "https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006",
+    "description": "WETH (Optimism WETH)"
+  }
+]

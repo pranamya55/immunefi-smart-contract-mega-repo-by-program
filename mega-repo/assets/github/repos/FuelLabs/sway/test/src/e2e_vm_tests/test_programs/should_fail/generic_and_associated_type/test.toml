@@ -1,9 +1,0 @@
-category = "fail"
-
-# check: $()Associated function or method is not found
-# check: $()Self::method()
-# nextln: $()"method() -> T" is not found for type "Self".
-# nextln: $()Only this "method" function is implemented for the type:
-# nextln: $()- Self::method() -> Self::T
-# nextln: $()Did you mean to call that function?
-

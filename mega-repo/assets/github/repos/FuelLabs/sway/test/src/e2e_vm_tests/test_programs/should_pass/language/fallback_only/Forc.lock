@@ -1,8 +1,0 @@
-[[package]]
-name = "fallback_only"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-542D0E8F1D1E5950"

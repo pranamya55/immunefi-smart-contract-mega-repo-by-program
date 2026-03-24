@@ -1,8 +1,0 @@
-[[package]]
-name = "aliases"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-D05BA88A39195D06"

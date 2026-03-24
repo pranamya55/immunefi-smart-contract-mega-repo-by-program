@@ -1,8 +1,0 @@
-[[package]]
-name = "memcpyopt"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-CA019CD48EEC4945"

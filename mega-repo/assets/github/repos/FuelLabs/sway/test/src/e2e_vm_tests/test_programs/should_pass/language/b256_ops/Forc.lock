@@ -1,8 +1,0 @@
-[[package]]
-name = "b256_ops"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-963ABD293AAA1DE4"

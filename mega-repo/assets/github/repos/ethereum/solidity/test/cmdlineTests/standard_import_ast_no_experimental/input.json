@@ -1,8 +1,0 @@
-{
-    "language": "SolidityAST",
-    "sources": {
-        "A.sol": {
-            "content": "contract A { constructor() { uint x = 2; { uint y = 3; } } }"
-        }
-  }
-}

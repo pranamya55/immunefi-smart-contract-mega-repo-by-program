@@ -1,3 +1,0 @@
-category = "fail"
-
-# check: $()ABI cannot inherit samely named method ("method") from several super-ABIs: "MySuperAbi1" and "MySuperAbi2"

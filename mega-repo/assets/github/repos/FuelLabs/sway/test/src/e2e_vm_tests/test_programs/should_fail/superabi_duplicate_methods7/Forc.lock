@@ -1,8 +1,0 @@
-[[package]]
-name = "std"
-source = "path+from-root-F200AB6B0CC62813"
-
-[[package]]
-name = "superabi_duplicate_methods7"
-source = "member"
-dependencies = ["std"]

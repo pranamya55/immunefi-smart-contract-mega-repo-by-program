@@ -1,0 +1,67 @@
+[
+  {
+    "asset_id": "6gI1JOwUp756wwJcitbI3P",
+    "url": "https://optimistic.etherscan.io/address/0xbb505c54d71e9e599cb8435b4f0ceec05fc71cbd",
+    "description": "LendingPool (LYF)"
+  },
+  {
+    "asset_id": "7xqVuwDHNjrnPYs5Te7vB",
+    "url": "https://optimistic.etherscan.io/token/0x2dad3a13ef0c6366220f989157009e501e7938f8",
+    "description": "EXTRA (LYF)"
+  },
+  {
+    "asset_id": "4q3ctgxjHcQgGX74zBZcI6",
+    "url": "https://optimistic.etherscan.io/address/0xb7d8613728efcfbb18bcd63deec06f64441d322a",
+    "description": "RewardDistributor (LYF)"
+  },
+  {
+    "asset_id": "7ddm6z4UCuQN1Yi3f4HA4x",
+    "url": "https://optimistic.etherscan.io/address/0xe0bec4f45aef64cec9dcb9010d4beffb13e91466",
+    "description": "VeToken (LYF)"
+  },
+  {
+    "asset_id": "6s9Uuw8xpgBnlWEJKq0t5",
+    "url": "https://immunefi.com",
+    "description": "Primacy of Impact"
+  },
+  {
+    "asset_id": "ZbvM1H4JImZC8farn8COO",
+    "url": "https://optimistic.etherscan.io/address/0x345D2827f36621b02B783f7D5004B4a2fec00186#code",
+    "description": "Pool_Proxy (Lending Market)"
+  },
+  {
+    "asset_id": "531kc8VlXtsi6kzN51NzUU",
+    "url": "https://optimistic.etherscan.io/address/0x2B275176804dd01b6a90d61bDa3c80E3A470662E#code",
+    "description": "A_Token (Lending Market)"
+  },
+  {
+    "asset_id": "58vhXI6hXVGpRW1LBbHkIM",
+    "url": "https://optimistic.etherscan.io/address/0xC0C88d2752C58263c2b7F4Ac6ecBedC78eDD5d5E#code",
+    "description": "Debt_Token (Lending Market)"
+  },
+  {
+    "asset_id": "54j04vqrhhiQQMt0D6gASH",
+    "url": "https://optimistic.etherscan.io/address/0xc1504B3D0e72C717151957ceb0252FF8f93A9A1e#code",
+    "description": "PoolConfigurator (Lending Market)"
+  },
+  {
+    "asset_id": "6CBTkGrEdwCRtc48c2xIvB",
+    "url": "https://optimistic.etherscan.io/address/0x90cF2763CC710B9Ce215584A89c77F70bbb96B44#code",
+    "description": "ExtraXAccountFactoryProxy"
+  },
+  {
+    "asset_id": "45xmrn3Cq9BOqKLNaLQKzb",
+    "url": "https://optimistic.etherscan.io/address/0x345e8250cb11f61f0d8cfabac6be59a356309a58#code",
+    "description": "ExtraXAccountFactoryImpl"
+  },
+  {
+    "asset_id": "6DG3qvYcHyBqNfhWZGnbLV",
+    "url": "https://optimistic.etherscan.io/address/0x1EEA0464D31F349D31FF7D318ce236F48AD92438#code",
+    "description": "ExtraXAccountCreatorSafe130"
+  },
+  {
+    "asset_id": "2qIztJ3mwuzLs0XtQNjBe8",
+    "url": "https://optimistic.etherscan.io/address/0xd4b5D2A9F8e9Ec1883Ef997eB508EA6Cc12B240f#code",
+    "description": "ExtraXAccountCreatorCoinbase"
+  }
+]

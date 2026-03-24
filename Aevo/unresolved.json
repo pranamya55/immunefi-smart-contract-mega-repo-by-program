@@ -1,0 +1,17 @@
+[
+  {
+    "asset_id": "3lPWjNmI7NT0chf11H4VOR",
+    "url": "https://snowtrace.io/address/0x6BF686d99A4cE17798C45d09C21181fAc29A9fb3",
+    "description": "sAVAX Theta Vault (Avalanche Chain)"
+  },
+  {
+    "asset_id": "5jyAEunRoR6utUBf9JtFjY",
+    "url": "https://snowtrace.io/address/0x98d03125c62DaE2328D9d3cb32b7B969e6a87787",
+    "description": "AVAX Theta Vault (Avalanche Chain)"
+  },
+  {
+    "asset_id": "3PnbQI6tbvdYxUhTFrFjfr",
+    "url": "https://bscscan.com/address/0x70b9C89FCFeE3310eA6675A707427676FdC2d437",
+    "description": "BNB Theta Vault (Binance Chain)"
+  }
+]

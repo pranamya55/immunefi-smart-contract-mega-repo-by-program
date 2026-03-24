@@ -1,7 +1,0 @@
-.aptos/
-build/
-.idea
-*.json
-\[*\]/
-*data*
-*temp*

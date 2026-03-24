@@ -1,0 +1,57 @@
+[
+  {
+    "asset_id": "3YqmaeXzy0hvG7GXFdWHmW",
+    "url": "https://docs.rs/light-hasher/latest/light_hasher/",
+    "description": "Crate - light_hasher"
+  },
+  {
+    "asset_id": "4HPL1BYnxBFXNHgboyW6RY",
+    "url": "https://docs.rs/aligned-sized/latest/aligned_sized/",
+    "description": "Crate - aligned_sized"
+  },
+  {
+    "asset_id": "5AeaLuvVOJTiRPva9tQ336",
+    "url": "https://docs.rs/light-indexed-merkle-tree/latest/light_indexed_merkle_tree/",
+    "description": "Crate - light_indexed_merkle_tree"
+  },
+  {
+    "asset_id": "5naBeDVoUqbfyNBTXDEwZp",
+    "url": "https://docs.rs/light-verifier/latest/light_verifier/",
+    "description": "Crate - light_verifier"
+  },
+  {
+    "asset_id": "5vc4NCIYybmfR0wwRez06Z",
+    "url": "https://docs.rs/light-hash-set/latest/light_hash_set/",
+    "description": "Crate - light_hash_set"
+  },
+  {
+    "asset_id": "6Xh0fCHeGZWLsDuSD21xKa",
+    "url": "https://docs.rs/light-utils/latest/light_utils/",
+    "description": "Crate - light_utils"
+  },
+  {
+    "asset_id": "6Y5cMRZWHWTuRB2tapfZty",
+    "url": "https://docs.rs/light-heap/latest/light_heap/",
+    "description": "Crate - light_heap"
+  },
+  {
+    "asset_id": "6sqFIiR4nD4ibQwEiHM1fb",
+    "url": "https://docs.rs/groth16-solana/latest/groth16_solana/",
+    "description": "Crate - groth16_solana"
+  },
+  {
+    "asset_id": "78RDgthb74BB1blVEVrvG8",
+    "url": "https://docs.rs/light-macros/latest/light_macros/",
+    "description": "Crate - light_macros"
+  },
+  {
+    "asset_id": "7dHsRdmdVcew5f5DIcfDlY",
+    "url": "https://docs.rs/light-concurrent-merkle-tree/latest/light_concurrent_merkle_tree/",
+    "description": "Crate - light_concurrent_merkle_tree"
+  },
+  {
+    "asset_id": "98759",
+    "url": "https://immunefi.com/",
+    "description": "Primacy of Impact"
+  }
+]

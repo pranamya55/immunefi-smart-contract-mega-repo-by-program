@@ -1,8 +1,0 @@
-[[package]]
-name = "std"
-source = "path+from-root-0ACF6FE48FDFC4A8"
-
-[[package]]
-name = "typeinfo_custom_callpath2"
-source = "member"
-dependencies = ["std"]

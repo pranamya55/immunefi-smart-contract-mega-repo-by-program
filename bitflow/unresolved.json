@@ -1,0 +1,52 @@
+[
+  {
+    "asset_id": "1b0RqlxSmzajKDfSXpp5Bk",
+    "url": "https://explorer.hiro.so/txid/SP3ESW1QCNQPVXJDGQWT7E45RDCH38QBK9HEJSX4X.dlmm-pool-c-v-0-1?chain=mainnet",
+    "description": "dlmm-pool-c-v-0-1"
+  },
+  {
+    "asset_id": "36Z6Bp60qppHT4kyUyAiy5",
+    "url": "https://explorer.hiro.so/txid/SP3ESW1QCNQPVXJDGQWT7E45RDCH38QBK9HEJSX4X.dlmm-swap-router-v-0-1?chain=mainnet",
+    "description": "dlmm-swap-router-v-0-1"
+  },
+  {
+    "asset_id": "3qOmBxFJeHHHlAIRRyGSMe",
+    "url": "https://explorer.hiro.so/txid/SP3ESW1QCNQPVXJDGQWT7E45RDCH38QBK9HEJSX4X.dlmm-pool-h-v-0-1?chain=mainnet",
+    "description": "dlmm-pool-h-v-0-1"
+  },
+  {
+    "asset_id": "4cxcJZzAiUpQdH0DOX4Ex7",
+    "url": "https://explorer.hiro.so/txid/SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR.token-stx-v-1-2?chain=mainnet",
+    "description": "token-stx-v-1-2"
+  },
+  {
+    "asset_id": "5XJ3M6ggPAFXJarQjtFq4V",
+    "url": "https://explorer.hiro.so/txid/SP3ESW1QCNQPVXJDGQWT7E45RDCH38QBK9HEJSX4X.dlmm-pool-d-v-0-1?chain=mainnet",
+    "description": "dlmm-pool-d-v-0-1"
+  },
+  {
+    "asset_id": "5jFioauR92OFCIWEnsfRjH",
+    "url": "https://explorer.hiro.so/txid/SP3ESW1QCNQPVXJDGQWT7E45RDCH38QBK9HEJSX4X.dlmm-core-v-0-1?chain=mainnet",
+    "description": "dlmm-core-v-0-1"
+  },
+  {
+    "asset_id": "6HRjrhKCx1FiuIZDraYsav",
+    "url": "https://explorer.hiro.so/txid/SP3ESW1QCNQPVXJDGQWT7E45RDCH38QBK9HEJSX4X.dlmm-pool-g-v-0-1?chain=mainnet",
+    "description": "dlmm-pool-g-v-0-1"
+  },
+  {
+    "asset_id": "B4HmB2UqxIdiAWWf23Wg2",
+    "url": "https://explorer.hiro.so/txid/SP3ESW1QCNQPVXJDGQWT7E45RDCH38QBK9HEJSX4X.dlmm-pool-b-v-0-1?chain=mainnet",
+    "description": "dlmm-pool-b-v-0-1"
+  },
+  {
+    "asset_id": "XZDaemW2QQ0cCkOF1Wpai",
+    "url": "https://explorer.hiro.so/txid/SP3ESW1QCNQPVXJDGQWT7E45RDCH38QBK9HEJSX4X.dlmm-pool-trait-v-0-1?chain=mainnet",
+    "description": "dlmm-pool-trait-v-0-1"
+  },
+  {
+    "asset_id": "srMsB8Pvy6mT6v2BA7KdA",
+    "url": "https://explorer.hiro.so/txid/SP3ESW1QCNQPVXJDGQWT7E45RDCH38QBK9HEJSX4X.dlmm-liquidity-router-v-0-1?chain=mainnet",
+    "description": "dlmm-liquidity-router-v-0-1"
+  }
+]

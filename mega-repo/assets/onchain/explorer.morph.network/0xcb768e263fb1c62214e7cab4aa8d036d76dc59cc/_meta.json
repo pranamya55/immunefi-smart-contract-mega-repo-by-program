@@ -1,7 +1,0 @@
-{
-  "url": "https://explorer.morph.network/address/0xcb768e263FB1C62214E7cab4AA8d036D76dc59CC",
-  "host": "explorer.morph.network",
-  "address": "0xcb768e263FB1C62214E7cab4AA8d036D76dc59CC",
-  "mode": "placeholder-onchain",
-  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:http 404"
-}

@@ -1,8 +1,0 @@
-{
-  "url": "https://moonbeam.moonscan.io/address/0x06a3b410b681c82417a906993acefb91bab6a080",
-  "host": "moonbeam.moonscan.io",
-  "address": "0x06a3b410b681c82417a906993acefb91bab6a080",
-  "chainid": 1284,
-  "mode": "bytecode-v2-proxy",
-  "bytecode_length_hex_chars": 15738
-}

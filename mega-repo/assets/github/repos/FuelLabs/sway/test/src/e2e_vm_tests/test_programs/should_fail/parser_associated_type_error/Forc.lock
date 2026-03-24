@@ -1,8 +1,0 @@
-[[package]]
-name = "parser_associated_type_error"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-6C2FF70C66B98326"

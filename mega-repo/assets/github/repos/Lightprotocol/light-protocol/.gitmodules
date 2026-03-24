@@ -1,3 +1,0 @@
-[submodule "external/photon"]
-	path = external/photon
-	url = git@github.com:Lightprotocol/photon.git

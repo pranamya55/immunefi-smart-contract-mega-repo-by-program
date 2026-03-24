@@ -1,8 +1,0 @@
-[[package]]
-name = "cei_pattern_violation_storage_var_update"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-0B085CF179DC32DD"

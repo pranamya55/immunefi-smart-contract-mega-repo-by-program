@@ -1,7 +1,0 @@
-{
-  "url": "https://hyperscan.gas.zip/address/0x0a3d8466F5dE586FA5F6DE117301e2f90bCC5c48",
-  "host": "hyperscan.gas.zip",
-  "address": "0x0a3d8466F5dE586FA5F6DE117301e2f90bCC5c48",
-  "mode": "placeholder-onchain",
-  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:HTTPSConnectionPool(host='hyperscan.gas.zip', port=443): Max retries exceeded with url: /api?module=contract&action=getsourcecode&address=0x0a3d8466F5dE586FA5F6DE117301e2f90bCC5c48 (Caused by NameResolutionError(\"HTTPSConnection(host='hyperscan.gas.zip', port=443): Failed to resolve 'hyperscan.gas.zip' ([Errno 8] nodename nor servname provided, or not known)\"))"
-}

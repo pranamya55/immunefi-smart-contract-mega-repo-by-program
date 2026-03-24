@@ -1,9 +1,0 @@
-[contracts.main]
-name = "price_aggregator"
-
-[[proxy]]
-path = "../controller/tests/proxys/proxy_aggregator.rs"
-
-[[proxy]]
-path = "../proxy/price_aggregator.rs"
- 

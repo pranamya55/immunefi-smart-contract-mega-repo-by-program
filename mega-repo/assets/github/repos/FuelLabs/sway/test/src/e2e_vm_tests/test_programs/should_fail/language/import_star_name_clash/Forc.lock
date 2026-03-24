@@ -1,8 +1,0 @@
-[[package]]
-name = "import_star_name_clash"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-95C7DDCD726BD0EA"

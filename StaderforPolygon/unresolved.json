@@ -1,0 +1,17 @@
+[
+  {
+    "asset_id": "6rP3loetR2aFbQT7kmOCh",
+    "url": "https://finder.terra.money/mainnet/address/terra1xacqx447msqp46qmv8k2sq6v5jh9fdj37az898",
+    "description": "Staking"
+  },
+  {
+    "asset_id": "6fTzhdCZH3mJ4jwNMPh6W0",
+    "url": "https://finder.terra.money/mainnet/address/terra1d8cjkwxvrw8cmpyja3p8luag2hxsktersc0wez",
+    "description": "Reward"
+  },
+  {
+    "asset_id": "oZs4iBs2UPCCHNRxAWi9T",
+    "url": "https://finder.terra.money/mainnet/address/terra1vq83s69rykjypyqcqhc7hsqzups6p9fwzu0wre",
+    "description": "Airdrops Registry"
+  }
+]

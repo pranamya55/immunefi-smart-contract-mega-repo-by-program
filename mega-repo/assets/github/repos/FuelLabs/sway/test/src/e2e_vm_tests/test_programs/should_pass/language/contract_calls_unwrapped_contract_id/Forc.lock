@@ -1,8 +1,0 @@
-[[package]]
-name = "contract_calls_unwrapped_contract_id"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-A615F9B9DE584E81"

@@ -1,7 +1,0 @@
-{
-  "url": "https://etherscan.io/address/0xba0e352AB5c13861C26e4E773e7a833C3A223FE6",
-  "host": "etherscan.io",
-  "address": "0xba0e352AB5c13861C26e4E773e7a833C3A223FE6",
-  "mode": "placeholder-onchain",
-  "reason": "etherscan-v2:unexpected-response; scan-host-no-key:http 403"
-}

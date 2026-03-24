@@ -1,4 +1,0 @@
-library;
-
-pub trait Trait {
-}

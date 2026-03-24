@@ -1,8 +1,0 @@
-[[package]]
-name = "std"
-source = "path+from-root-5340A91F7729E05D"
-
-[[package]]
-name = "storage_ops_in_library"
-source = "member"
-dependencies = ["std"]

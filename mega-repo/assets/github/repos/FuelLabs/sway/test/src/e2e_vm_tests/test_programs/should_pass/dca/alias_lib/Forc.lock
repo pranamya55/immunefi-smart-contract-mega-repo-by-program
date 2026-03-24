@@ -1,8 +1,0 @@
-[[package]]
-name = "alias_lib"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-88457E6D05374F3B"

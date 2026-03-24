@@ -1,0 +1,147 @@
+[
+  {
+    "asset_id": "1IfHzarGbzLWnUdacngRcA",
+    "url": "https://explorer.hiro.so/txid/SP1CGXWEAMG6P6FT04W66NVGJ7PQWMDAC19R7PJ0Y.pyth-traits-v2?chain=mainnet",
+    "description": "pyth-traits-v2.clar"
+  },
+  {
+    "asset_id": "1ObLcODhPTEbfFJShZWMl2",
+    "url": "https://explorer.hiro.so/txid/SP35E2BBMDT2Y1HB0NTK139YBGYV3PAPK3WA8BRNA.constants-v1?chain=mainnet",
+    "description": "constants-v1.clar"
+  },
+  {
+    "asset_id": "23niITp3y9we0NvAEcIPdQ",
+    "url": "https://explorer.hiro.so/txid/SP1CGXWEAMG6P6FT04W66NVGJ7PQWMDAC19R7PJ0Y.pyth-governance-v3?chain=mainnet",
+    "description": "pyth-governance-v3.clar"
+  },
+  {
+    "asset_id": "2WJ5gSeR989VA4OV4RoHWe",
+    "url": "https://explorer.hiro.so/txid/SP26NGV9AFZBX7XBDBS2C7EC7FCPSAV9PKREQNMVS.pyth-adapter-v1?chain=mainnet",
+    "description": "pyth-adapter-v1.clar"
+  },
+  {
+    "asset_id": "2XnPSkbRuWHUBO4kL60rjG",
+    "url": "https://explorer.hiro.so/txid/SP35E2BBMDT2Y1HB0NTK139YBGYV3PAPK3WA8BRNA.constants-v1?chain=mainnet",
+    "description": "constants-v1.clar"
+  },
+  {
+    "asset_id": "3597paDdeF6tf9QPZcE6is",
+    "url": "https://explorer.hiro.so/txid/SP1CGXWEAMG6P6FT04W66NVGJ7PQWMDAC19R7PJ0Y.pyth-pnau-decoder-v3?chain=mainnet",
+    "description": "pyth-pnau-decoder-v3.clar"
+  },
+  {
+    "asset_id": "3QeHeE6xiuXeAoC25tJCVi",
+    "url": "https://explorer.hiro.so/txid/SP1CGXWEAMG6P6FT04W66NVGJ7PQWMDAC19R7PJ0Y.wormhole-core-v4?chain=mainnet",
+    "description": "wormhole-core-v4.clar"
+  },
+  {
+    "asset_id": "3yTkuuj6Y78Vl0FjBvDaxm",
+    "url": "https://explorer.hiro.so/txid/SP26NGV9AFZBX7XBDBS2C7EC7FCPSAV9PKREQNMVS.governance-v1?chain=mainnet",
+    "description": "governance-v1.clar"
+  },
+  {
+    "asset_id": "44c0kYgjUT7NqZnKUX5e13",
+    "url": "https://explorer.hiro.so/txid/SP35E2BBMDT2Y1HB0NTK139YBGYV3PAPK3WA8BRNA.math-v1?chain=mainnet",
+    "description": "math-v1.clar"
+  },
+  {
+    "asset_id": "44mgTU2SCDIaEdzVyC0IQ7",
+    "url": "https://explorer.hiro.so/txid/SP3BJR4P3W2Y9G22HA595Z59VHBC9EQYRFWSKG743.constants-v1?chain=mainnet",
+    "description": "constants-v2.clar"
+  },
+  {
+    "asset_id": "5QDpLpBK8Sn9uzV3uqsD7W",
+    "url": "https://explorer.hiro.so/txid/SP26NGV9AFZBX7XBDBS2C7EC7FCPSAV9PKREQNMVS.borrower-v1?chain=mainnet",
+    "description": "borrower-v1.clar"
+  },
+  {
+    "asset_id": "5h3c1q3agpo28w6PGKYwrp",
+    "url": "https://explorer.hiro.so/txid/SP26NGV9AFZBX7XBDBS2C7EC7FCPSAV9PKREQNMVS.flash-loan-v1?chain=mainnet",
+    "description": "flash-loan-v1.clar"
+  },
+  {
+    "asset_id": "5rGkFcGnoobYOR9fRbyx68",
+    "url": "https://immunefi.com",
+    "description": "Primacy of Impact"
+  },
+  {
+    "asset_id": "61vUMUkMfcaOLH5QV453xw",
+    "url": "https://explorer.hiro.so/txid/SP35E2BBMDT2Y1HB0NTK139YBGYV3PAPK3WA8BRNA.meta-governance-v1?chain=mainnet",
+    "description": "meta-governance-v1.clar"
+  },
+  {
+    "asset_id": "6HitUmyuJaeXksSJy3R3gG",
+    "url": "https://explorer.hiro.so/txid/SP1CGXWEAMG6P6FT04W66NVGJ7PQWMDAC19R7PJ0Y.wormhole-traits-v2?chain=mainnet",
+    "description": "wormhole-traits-v2.clar"
+  },
+  {
+    "asset_id": "6isLBKQuM1m8VPrbzfmzr",
+    "url": "https://explorer.hiro.so/txid/SP26NGV9AFZBX7XBDBS2C7EC7FCPSAV9PKREQNMVS.liquidator-v1?chain=mainnet",
+    "description": "liquidator-v1.clar"
+  },
+  {
+    "asset_id": "6u9HNjpsU7f7YRlPdSElm3",
+    "url": "https://explorer.hiro.so/txid/SP35E2BBMDT2Y1HB0NTK139YBGYV3PAPK3WA8BRNA.state-v1?chain=mainnet",
+    "description": "state-v1.clar"
+  },
+  {
+    "asset_id": "7E3kcFcbGoWtkIrwCZvys4",
+    "url": "https://explorer.hiro.so/txid/SP3BJR4P3W2Y9G22HA595Z59VHBC9EQYRFWSKG743.staking-v1?chain=mainnet",
+    "description": "staking-v1.clar"
+  },
+  {
+    "asset_id": "7c0oLmpTkjrLgM6WEsQ75K",
+    "url": "https://explorer.hiro.so/txid/SP26NGV9AFZBX7XBDBS2C7EC7FCPSAV9PKREQNMVS.withdrawal-caps-v1?chain=mainnet",
+    "description": "withdrawal-caps-v1"
+  },
+  {
+    "asset_id": "D1PVcksVzYtuYf0U4o688",
+    "url": "https://explorer.hiro.so/txid/SP26NGV9AFZBX7XBDBS2C7EC7FCPSAV9PKREQNMVS.liquidity-provider-v1?chain=mainnet",
+    "description": "liquidity-provider-v1.clar"
+  },
+  {
+    "asset_id": "I9iWaAVd87KXObHnPJ2YD",
+    "url": "https://explorer.hiro.so/txid/SP1CGXWEAMG6P6FT04W66NVGJ7PQWMDAC19R7PJ0Y.pyth-governance-v3?chain=mainnet",
+    "description": "pyth-governance-v3.clar"
+  },
+  {
+    "asset_id": "KpjYg6xHawrPeDlc4pcHC",
+    "url": "https://explorer.hiro.so/txid/SP1CGXWEAMG6P6FT04W66NVGJ7PQWMDAC19R7PJ0Y.pyth-oracle-v4?chain=mainnet",
+    "description": "pyth-oracle-v4.clar"
+  },
+  {
+    "asset_id": "iHjQ8r82QBhtJFsfP5QLl",
+    "url": "https://explorer.hiro.so/txid/SP35E2BBMDT2Y1HB0NTK139YBGYV3PAPK3WA8BRNA.linear-kinked-ir-v1?chain=mainnet",
+    "description": "linear-kinked-ir-v1.clar"
+  },
+  {
+    "asset_id": "tZvW7CgeHq5Rz5ZNgTs79",
+    "url": "https://explorer.hiro.so/txid/SP1CGXWEAMG6P6FT04W66NVGJ7PQWMDAC19R7PJ0Y.pyth-storage-v4?chain=mainnet",
+    "description": "pyth-storage-v4.clar"
+  },
+  {
+    "asset_id": "98685",
+    "url": "https://explorer.hiro.so/txid/SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.state-v1?chain=mainnet",
+    "description": "USDCx Market"
+  },
+  {
+    "asset_id": "98686",
+    "url": "https://explorer.hiro.so/txid/SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.liquidity-provider-v1?chain=mainnet",
+    "description": "Supplier USDCx"
+  },
+  {
+    "asset_id": "98687",
+    "url": "https://explorer.hiro.so/txid/SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.liquidator-v1?chain=mainnet",
+    "description": "Liquidator USDCx"
+  },
+  {
+    "asset_id": "98688",
+    "url": "https://explorer.hiro.so/txid/SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.linear-kinked-ir-v1?chain=mainnet",
+    "description": "USDCx interest rate kink"
+  },
+  {
+    "asset_id": "98689",
+    "url": "https://explorer.hiro.so/txid/SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.borrower-v1?chain=mainnet",
+    "description": "Borrow USDCx "
+  }
+]

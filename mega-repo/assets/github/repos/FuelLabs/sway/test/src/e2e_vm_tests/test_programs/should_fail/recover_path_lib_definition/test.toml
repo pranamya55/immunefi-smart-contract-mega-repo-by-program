@@ -1,5 +1,0 @@
-category = "fail"
-
-# check: $()Expected an identifier.
-# not: $()functions used in applications may not be arbitrary expressions
-# check: $()Mismatched types.

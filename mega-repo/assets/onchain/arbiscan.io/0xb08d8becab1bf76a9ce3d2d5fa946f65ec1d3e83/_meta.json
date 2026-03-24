@@ -1,8 +1,0 @@
-{
-  "url": "https://arbiscan.io/address/0xb08d8becab1bf76a9ce3d2d5fa946f65ec1d3e83",
-  "host": "arbiscan.io",
-  "address": "0xb08d8becab1bf76a9ce3d2d5fa946f65ec1d3e83",
-  "chainid": 42161,
-  "mode": "bytecode-v2-proxy",
-  "bytecode_length_hex_chars": 354
-}

@@ -1,7 +1,0 @@
-{
-  "url": "https://lineascan.build/address/0x73d9ccd3017b41e9b29f1e4a49d5468b52bd17c6",
-  "host": "lineascan.build",
-  "address": "0x73d9ccd3017b41e9b29f1e4a49d5468b52bd17c6",
-  "mode": "placeholder-onchain",
-  "reason": "etherscan-v2:unexpected-response; scan-host-no-key:unexpected-response"
-}

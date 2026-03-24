@@ -1,8 +1,0 @@
-[[package]]
-name = "revert_in_first_if_branch"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-49235A13EB0FF975"

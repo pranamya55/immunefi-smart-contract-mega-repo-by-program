@@ -1,7 +1,0 @@
-{
-  "url": "https://explorer.zero.network/address/0x4667fFb6a24017f977c93Da1BD630CF1801343b6",
-  "host": "explorer.zero.network",
-  "address": "0x4667fFb6a24017f977c93Da1BD630CF1801343b6",
-  "mode": "placeholder-onchain",
-  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:empty-source"
-}

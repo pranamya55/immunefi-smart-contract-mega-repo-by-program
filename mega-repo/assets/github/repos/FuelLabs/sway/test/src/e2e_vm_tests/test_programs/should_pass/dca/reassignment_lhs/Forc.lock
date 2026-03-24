@@ -1,8 +1,0 @@
-[[package]]
-name = "reassignment_lhs"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-565B0B583CE96EA8"

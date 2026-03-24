@@ -1,0 +1,27 @@
+[
+  {
+    "asset_id": "2oz4cwnKp78mcsHFWM7lTi",
+    "url": "https://immunefi.com",
+    "description": "Primacy of Impact"
+  },
+  {
+    "asset_id": "RFhNcruj55g4ZI7jAnesJ",
+    "url": "https://explorer.zksync.io/address/0x11f943b2c77b743AB90f4A0Ae7d5A4e7FCA3E102#contract",
+    "description": "L2SharedBridge proxy TransparentUpgradeableProxy.sol"
+  },
+  {
+    "asset_id": "WWmvsRJb44ni7FVVXwDod",
+    "url": "https://explorer.zksync.io/address/0x0000000000000000000000000000000000010000#contract",
+    "description": "Create2Factory"
+  },
+  {
+    "asset_id": "hM5ov8JPyLEypQYcHE6yi",
+    "url": "https://explorer.zksync.io/address/0x000000000000000000000000000000000000800b#contract",
+    "description": "SystemContext"
+  },
+  {
+    "asset_id": "jNn5ApsPtqSM4IXYiPaa9",
+    "url": "https://explorer.zksync.io/address/0x0000000000000000000000000000000000010004#contract",
+    "description": "L2NativeTokenVault"
+  }
+]

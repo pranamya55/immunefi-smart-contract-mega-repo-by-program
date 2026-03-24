@@ -1,9 +1,0 @@
-**/*.log
-.git/
-**/test-ledger/
-**/logs/
-target
-**/target/
-Dockerfile
-.dockerignore
-.git

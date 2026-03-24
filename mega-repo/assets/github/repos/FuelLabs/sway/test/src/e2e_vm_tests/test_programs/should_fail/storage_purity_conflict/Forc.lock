@@ -1,8 +1,0 @@
-[[package]]
-name = "std"
-source = "path+from-root-AB487C347066147A"
-
-[[package]]
-name = "storage_purity_conflict"
-source = "member"
-dependencies = ["std"]

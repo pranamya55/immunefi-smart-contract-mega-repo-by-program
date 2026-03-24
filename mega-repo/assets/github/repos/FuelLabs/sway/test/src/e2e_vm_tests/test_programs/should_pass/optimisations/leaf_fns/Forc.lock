@@ -1,8 +1,0 @@
-[[package]]
-name = "leaf_fns"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-D5D9D5DF1644212C"

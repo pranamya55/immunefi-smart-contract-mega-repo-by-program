@@ -1,8 +1,0 @@
-{
-  "url": "https://berascan.io/address/0xbc9ee0d911739cbc72cd094ada26f56e0c49eeae",
-  "host": "berascan.io",
-  "address": "0xbc9ee0d911739cbc72cd094ada26f56e0c49eeae",
-  "chainid": 80094,
-  "mode": "bytecode-v2-proxy",
-  "bytecode_length_hex_chars": 6054
-}

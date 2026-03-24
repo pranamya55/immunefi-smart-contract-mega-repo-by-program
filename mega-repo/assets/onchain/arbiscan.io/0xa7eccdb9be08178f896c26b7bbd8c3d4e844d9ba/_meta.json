@@ -1,7 +1,0 @@
-{
-  "url": "https://arbiscan.io/address/0xa7ECcdb9Be08178f896c26b7BbD8C3D4E844d9Ba",
-  "host": "arbiscan.io",
-  "address": "0xa7ECcdb9Be08178f896c26b7BbD8C3D4E844d9Ba",
-  "mode": "placeholder-onchain",
-  "reason": "etherscan-v2:unexpected-response; scan-host-no-key:unexpected-response"
-}

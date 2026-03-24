@@ -1,8 +1,0 @@
-[[package]]
-name = "predicate_with_nested_libs"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-91B9CE925561FBEC"

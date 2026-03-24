@@ -1,8 +1,0 @@
-[[package]]
-name = "ret_string_in_struct"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-EDAAFE2B18508935"

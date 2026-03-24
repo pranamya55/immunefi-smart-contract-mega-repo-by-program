@@ -1,0 +1,472 @@
+[
+  {
+    "asset_id": "NoWKbHIxUtJSCGdCUgRzQ",
+    "url": "https://bscscan.com/address/0x0782b6d8c4551B9760e74c0545a9bCD90bdc41E5",
+    "description": "lisUSD"
+  },
+  {
+    "asset_id": "6AtjWV0gbJUOFekDrNrh0b",
+    "url": "https://bscscan.com/address/0xB68443Ee3e828baD1526b3e0Bdf2Dfc6b1975ec4",
+    "description": "INTERACTION"
+  },
+  {
+    "asset_id": "288nKGjpE20LNRFeYyRDt5",
+    "url": "https://bscscan.com/address/0x272d6589cecc19165cfcd0466f73a648cb1ea700",
+    "description": "AuctionLib"
+  },
+  {
+    "asset_id": "pxiksigpq717zaUA8UXBj",
+    "url": "https://bscscan.com/address/0x4b30fcAA7945fE9fDEFD2895aae539ba102Ed6F6",
+    "description": "clisBNB"
+  },
+  {
+    "asset_id": "U4jRXxH9i34j0WrGq8lp9",
+    "url": "https://bscscan.com/address/0x25b21472c073095bebC681001Cbf165f849eEe5E",
+    "description": "CeVault"
+  },
+  {
+    "asset_id": "43SbxAURaIgtA4Lr6qKLQR",
+    "url": "https://bscscan.com/address/0xA186D2363E5048D129E0a35E2fddDe767d4dada8",
+    "description": "CerosRouter"
+  },
+  {
+    "asset_id": "6WHzzzCaI0YeqXV87Npt5j",
+    "url": "https://bscscan.com/address/0xa835F890Fcde7679e7F7711aBfd515d2A267Ed0B",
+    "description": "HelioProvider"
+  },
+  {
+    "asset_id": "4MlnjBnFkcfrpKbNGUd3pu",
+    "url": "https://bscscan.com/address/0x33A34eAB3ee892D40420507B820347b1cA2201c4",
+    "description": "VAT"
+  },
+  {
+    "asset_id": "4uNQI92oEzp8eLMSCL1RYI",
+    "url": "https://bscscan.com/address/0x49bc2c4E5B035341b7d92Da4e6B267F7426F3038",
+    "description": "SPOT"
+  },
+  {
+    "asset_id": "KNqtMJuQwb3fmO74ZaQHE",
+    "url": "https://bscscan.com/address/0x4C798F81de7736620Cd8e6510158b1fE758e22F7",
+    "description": "HayJoin"
+  },
+  {
+    "asset_id": "3rJWhtKBalMkmX6A3xyJxQ",
+    "url": "https://bscscan.com/address/0x787BdEaa29A253e40feB35026c3d05C18CbCA7B3",
+    "description": "JUG"
+  },
+  {
+    "asset_id": "3MmcnLzHjs0kymzaXMR3OK",
+    "url": "https://bscscan.com/address/0xd57E7b53a1572d27A04d9c1De2c4D423f1926d0B",
+    "description": "DOG"
+  },
+  {
+    "asset_id": "17mkHxTIqNtFQBLwv82W1j",
+    "url": "https://bscscan.com/address/0x0a1Fd12F73432928C190CAF0810b3B767A59717e",
+    "description": "JAR"
+  },
+  {
+    "asset_id": "5eL5IRbpPuhwnhf6n8GDmO",
+    "url": "https://bscscan.com/address/0x2078A1969Ea581D618FDBEa2C0Dc13Fc15CB9fa7",
+    "description": "VOW"
+  },
+  {
+    "asset_id": "6xKQ1Lgs6L5VG83iBQH21m",
+    "url": "https://bscscan.com/address/0xf81748d12171De989A5Bbf2d76bf10BFbBaEC596",
+    "description": "BnbOracle"
+  },
+  {
+    "asset_id": "5btIaB6nvLAxdGtfYQtMtd",
+    "url": "https://bscscan.com/address/0x9945e33be177b5fccb90710fee59c548cac8acba",
+    "description": "EthOracle"
+  },
+  {
+    "asset_id": "4TM43QRi7RGU0tr1tA50sX",
+    "url": "https://bscscan.com/address/0xB0b84D294e0C75A6abe60171b70edEb2EFd14A1B",
+    "description": "slisBNB"
+  },
+  {
+    "asset_id": "5ndUzX7umsqckUr6F3ZAul",
+    "url": "https://bscscan.com/address/0x1adB950d8bB3dA4bE104211D5AB038628e477fE6",
+    "description": "ListaStakeManger"
+  },
+  {
+    "asset_id": "5yZJLoujHw4MvePrbQrcGZ",
+    "url": "https://bscscan.com/address/0xb0af7db079f599255b1e43ef83e8ce16e88fd174",
+    "description": "ceankrBNB"
+  },
+  {
+    "asset_id": "1Jx80zrpZx0Qp2XECW8OdN",
+    "url": "https://bscscan.com/address/0x986b40c2618ff295a49ac442c5ec40febb26cc54#code",
+    "description": "Master Vault"
+  },
+  {
+    "asset_id": "KUhl0GnxWz3rn6oZJjepb",
+    "url": "https://bscscan.com/address/0x00d8697d73216278de8f97bbeae6ca90cf0a5cb0",
+    "description": "CerosYiledConverterStrategy"
+  },
+  {
+    "asset_id": "WLmHm4WndrMIpfbTDqusf",
+    "url": "https://bscscan.com/address/0x6f28fec449dbd2056b76ac666350af8773e03873",
+    "description": "snBNBStrategy"
+  },
+  {
+    "asset_id": "4xfTlKNTb6zSAVuSur70MA",
+    "url": "https://bscscan.com/address/0x6ae7073d801a74ee753f19323df320c8f5fe2dbc",
+    "description": "bnbYieldConverterStrategy"
+  },
+  {
+    "asset_id": "2kHWf0YBbsntukEsFLMqgu",
+    "url": "https://bscscan.com/address/0x91e49983598685dd5acac90ceb4061a772f6e5ae",
+    "description": "Gemjoin(slisBNB)"
+  },
+  {
+    "asset_id": "1qlNAOfgwrDFlvGIwjEmYg",
+    "url": "https://bscscan.com/address/0xba92899ea8bebb717cfc60507251acbb79a3b959",
+    "description": "clipCE(slisBNB)"
+  },
+  {
+    "asset_id": "libLeair7iqv9eJBaBZ2T",
+    "url": "https://bscscan.com/address/0x8ecf78fb59e5a4c26cb218d34db29c4696af89f6",
+    "description": "Oracle(slisBNB)"
+  },
+  {
+    "asset_id": "i1jaolB9hz4IKNXm73wVr",
+    "url": "https://bscscan.com/address/0xf45c3b619ee86f653805e007fe211b7e930e0b3b",
+    "description": "Gemjoin(wBETH)"
+  },
+  {
+    "asset_id": "2KaOnAHVMlLDezanA82jHX",
+    "url": "https://bscscan.com/address/0xad9eAAe95617c39019aCC42301a1dCa4ea5b6f65",
+    "description": "Gemjoin(BTCB)"
+  },
+  {
+    "asset_id": "5X3sjAHmOHPrDO2JdiK8AI",
+    "url": "https://bscscan.com/address/0xb12fF6FD1885a9Cb2b26302c98092644604B1e92",
+    "description": "clipCE(BTCB)"
+  },
+  {
+    "asset_id": "6wx7vP7q2NFVhyjVqLll8o",
+    "url": "https://bscscan.com/address/0x2eeDc4723b1ED2f24afCD9c0e3665061bD2D5642",
+    "description": "Oracle(BTCB)"
+  },
+  {
+    "asset_id": "1UUbGsb4JlSgMxqayx36ZQ",
+    "url": "https://bscscan.com/address/0xd7E33948e2a43e7C1ec2F19937bf5bf8BbF9BaE8",
+    "description": "Gemjoin(ezETH)"
+  },
+  {
+    "asset_id": "1l5MuMkI3jucxm7RyLm790",
+    "url": "https://bscscan.com/address/0x5784e62b4495c7Cc4B09CcD3f206Cc7128449CE0",
+    "description": "clipCE(ezETH)"
+  },
+  {
+    "asset_id": "3vGAlL9vSpEeOcY5w127BD",
+    "url": "https://bscscan.com/address/0xE859f3f6EE5532313C33A02283150E201290F45F",
+    "description": "Oracle(ezETH)"
+  },
+  {
+    "asset_id": "23KE1bQnpsGggdac9xEWg1",
+    "url": "https://bscscan.com/address/0x2367f2Da6fd39De6944218CC9EC706BCdc9a6918",
+    "description": "Gemjoin(weETH)"
+  },
+  {
+    "asset_id": "54U6Dke5hzFq6IKco3ccOO",
+    "url": "https://bscscan.com/address/0xF21B35EdF7A927799b80F09C395C460C3d31D057",
+    "description": "clipCE(weETH)"
+  },
+  {
+    "asset_id": "4EoGODUnmrIuSnrSDoBJbm",
+    "url": "https://bscscan.com/address/0xE514851E324B54f152F7D9631ACe1A0a87248b46",
+    "description": "Oracle(weETH)"
+  },
+  {
+    "asset_id": "a8zRXVG4mOxcm437HMJ60",
+    "url": "https://bscscan.com/address/0x876cd9a380Ee7712129b52f8293F6f06056c3104",
+    "description": "Gemjoin(STONE)"
+  },
+  {
+    "asset_id": "2ERUPCxVLEz4jIAmGWEJwJ",
+    "url": "https://bscscan.com/address/0xf920018fc69515102b915a543DFEfbC837c3F9e6",
+    "description": "clipCE(solvBTC)"
+  },
+  {
+    "asset_id": "1e2KxNWoGFzq41NkTERwGt",
+    "url": "https://bscscan.com/address/0xb7A753f3776282976c1f2b0bcB2fF0d13d48Af85",
+    "description": "Oracle(solvBTC)"
+  },
+  {
+    "asset_id": "3c4QM8gakQ12SpOjkHhYB9",
+    "url": "https://bscscan.com/address/0x157c9a692ee99C39272856055957083a928cE299",
+    "description": "Gemjoin(BBTC)"
+  },
+  {
+    "asset_id": "3cZFqqXZHEG9UyitEA09Rc",
+    "url": "https://bscscan.com/address/0xf3afD82A4071f272F403dC176916141f44E6c750",
+    "description": "ResilientOracle"
+  },
+  {
+    "asset_id": "172UC4v936UfVa67A1s4MO",
+    "url": "https://bscscan.com/address/0xFf5ed1E64aCA62c822B178FFa5C36B40c112Eb00",
+    "description": "ERC20Distributor (Thena slisBNB/BNB correlated)"
+  },
+  {
+    "asset_id": "45g0ZWRX56WUwml3ANaaTN",
+    "url": "https://bscscan.com/address/0x1Cf9c6D475CdcA67942d41B0a34BD9cB9D336C4d",
+    "description": "ERC20Distributor (Thena lisUSD/FRAX stable)"
+  },
+  {
+    "asset_id": "1nNP0GHVfNpkZy1Y4MfZLY",
+    "url": "https://bscscan.com/address/0xC23d348f9cC86dDB059ec798e87E7F76FBC077C1",
+    "description": "ERC20Distributor (Thena lisUSD/USDT cl stable)"
+  },
+  {
+    "asset_id": "1sypTXiZNf1WbGg63f8ptd",
+    "url": "https://bscscan.com/address/0x9B4FcbC3a01378B85d81DEFbaf9359155718be4a",
+    "description": "ERC20Distributor (Thena lisUSD/frxETH norrow)"
+  },
+  {
+    "asset_id": "3B1J5uk3Gn2P2s8Jc5MO3Q",
+    "url": "https://bscscan.com/address/0x11bf1122871e13c13466681022C74B496B59147a",
+    "description": "ERC20Distributor (Thena lisUSD/frxETH wide)"
+  },
+  {
+    "asset_id": "6tsV3sLdlsf6wutG7FXuWb",
+    "url": "https://bscscan.com/address/0x39D099F6A78c7Cef7a527f55c921E7e1EE39716a",
+    "description": "ERC20Distributor (Thena lisUSD/BNB norrow)"
+  },
+  {
+    "asset_id": "2djVVCpucIwP9AsspiRkxz",
+    "url": "https://bscscan.com/address/0x9f6C251C3122207Adf561714C1171534B569eFf4",
+    "description": "ERC20Distributor (Thena lisUSD/BNB wide)"
+  },
+  {
+    "asset_id": "6kBxt2vmDM1mz9JB0Lhy0c",
+    "url": "https://bscscan.com/address/0xF6aB5cfdB46357f37b0190b793fB199D62Dcf504",
+    "description": "ERC20Distributor (Thena lisUSD/BNB ichi)"
+  },
+  {
+    "asset_id": "2wc4qLjKvOpF0Df1OMeIuW",
+    "url": "https://bscscan.com/address/0x4b2D67Bf25245783Fc4C33a48962775437F9159c",
+    "description": "ERC20Distributor (Thena LISTA/USDT norrow)"
+  },
+  {
+    "asset_id": "1IX0x974E8e6dTTFs0x8t9",
+    "url": "https://bscscan.com/address/0xE31f0BcE1F825A8e27f2Cc30B54af19DA2978f10",
+    "description": "PancakeStaking"
+  },
+  {
+    "asset_id": "1DU66mkrUQ9Ivj1gyz8VKR",
+    "url": "https://bscscan.com/address/0x9a0530A81c83D3b0daE720BF91C9254FECC3BF5E",
+    "description": "VeListaAutoCompounder"
+  },
+  {
+    "asset_id": "1PS7JXCSx81X0eeWjEM3Xz",
+    "url": "https://bscscan.com/address/0xEB995ff652da728E7B0EBC31Ab543c39e054b1eA",
+    "description": "clipCE(SolvBTC.BBN)"
+  },
+  {
+    "asset_id": "2zjWJvlER9DEOiRxkrrhGp",
+    "url": "https://bscscan.com/address/0x0AD764098FF68b100d0976a8BCF2294B67669cAa",
+    "description": "Oracle(SolvBTC.BBN)"
+  },
+  {
+    "asset_id": "4jQ287hbylSmdV8DoLntJf",
+    "url": "https://bscscan.com/address/0xfD31e1C5e5571f8E7FE318f80888C1e6da97819b",
+    "description": "slisBNBProvider"
+  },
+  {
+    "asset_id": "47UcwW7pM0gHN0luNDyvaU",
+    "url": "https://bscscan.com/address/0xaa57F36DD5Ef2aC471863ec46277f976f272eC0c",
+    "description": "PSM(USDT)"
+  },
+  {
+    "asset_id": "3SEhtwiVHRNIXrcnjk5l8O",
+    "url": "https://bscscan.com/address/0x5763DDeB60c82684F3D0098aEa5076C0Da972ec7",
+    "description": "VaultManager(USDT)"
+  },
+  {
+    "asset_id": "3kxYj3sVXvbaRz9iRjlRiD",
+    "url": "https://bscscan.com/address/0xf76D9cFD08dF91491680313B1A5b44307129CDa9",
+    "description": "VenusAdapter(USDT)"
+  },
+  {
+    "asset_id": "5vdkjozbrVD68AnFREvbl3",
+    "url": "https://bscscan.com/address/0x37DB1AE9B24055D1F9fE973Aea40B7EB2995D0Bf",
+    "description": "LisUSDPoolSet"
+  },
+  {
+    "asset_id": "2f0TIE3ctfkZ1FiaDTkIqW",
+    "url": "https://bscscan.com/address/0x66dE07893Db7492B56bA88503B4cC99bAb1796F3",
+    "description": "EarnPool"
+  },
+  {
+    "asset_id": "MnWXIuBKyv89HH5GNmep7",
+    "url": "https://bscscan.com/address/0xf2fA32498305E6595e3D54Dc41674d0FcA207026",
+    "description": "StakeLisUSDListaDistributor(USDT)"
+  },
+  {
+    "asset_id": "6GV6YqhRPmSBxTbPgbSQ1m",
+    "url": "https://bscscan.com/address/0x4510aa2b3efd13bBFD78C9BfdE764F224ecc7f50",
+    "description": "cemBTC"
+  },
+  {
+    "asset_id": "2qnLb0eaR6infbKYrrUfVH",
+    "url": "https://bscscan.com/address/0x8A016f1896dC2939fFDbB60f6E42bCc245e2bB0b",
+    "description": "mBTCProvider"
+  },
+  {
+    "asset_id": "3vzgo2Pp7x8pKLsuk2O4Oy",
+    "url": "https://bscscan.com/address/0x3F3e0A03A9E123e5861044d436862dFA1468CC10",
+    "description": "GemJoin(cemBTC)"
+  },
+  {
+    "asset_id": "1R1v8kIyCTt3yqxOodCK8w",
+    "url": "https://bscscan.com/address/0x334e4F80cC2985D0F8196Cc562DD8aedDdA1b704",
+    "description": "Clipper(cemBTC)"
+  },
+  {
+    "asset_id": "78fJglajJKZEDL5tcgcYEX",
+    "url": "https://bscscan.com/address/0x31D558b899461D6Ea498C3c1664a150a19b87AAF",
+    "description": "Oracle(cemBTC)"
+  },
+  {
+    "asset_id": "2lnvX48lc0NkShKD9beyYK",
+    "url": "https://bscscan.com/address/0x605356cc9f725e6744A51E78CD49E6029DcC4404",
+    "description": "GemJoin(mCake)"
+  },
+  {
+    "asset_id": "323MTpkvuhIIYNME0E8KBn",
+    "url": "https://bscscan.com/address/0xf57a8cF44104EA0dfbE286781BD1f51533a659F3",
+    "description": "Clipper(mCake)"
+  },
+  {
+    "asset_id": "1b0dAH9XjQdf0iUGfiYGHR",
+    "url": "https://bscscan.com/address/0x01b39E969A76D2F7c9a8a81EcD1B2F7116b44E23",
+    "description": "Oracle(mCake)"
+  },
+  {
+    "asset_id": "7zxqKFu5cuMYSXjpkQJ3BX",
+    "url": "https://bscscan.com/address/0x3cd434f0A58018B87eF1D2436cb710ca46F0fC43",
+    "description": "GemJoin(mwBETH)"
+  },
+  {
+    "asset_id": "6OaGo2WZrLbl4SGcx2z9xm",
+    "url": "https://bscscan.com/address/0xc4857c08295cB9270fEB0a87Fd60b3BFD459a998",
+    "description": "Clipper(mwBETH)"
+  },
+  {
+    "asset_id": "6HFAvsURVnrPsc1CgcxP4C",
+    "url": "https://bscscan.com/address/0xAa4912633e4e2F65604Fe7f6A6bA9Eb5EF6D50d0",
+    "description": "Oracle(mwBETH)"
+  },
+  {
+    "asset_id": "2m3ginVBhL1bghf7G83cXw",
+    "url": "https://bscscan.com/address/0x982d1DB2D643Ff4f497D5A4F566A565376eCF70C",
+    "description": "BorrowListaDistributor(cemBTC)"
+  },
+  {
+    "asset_id": "5Tz7qQwSNTzX9APiJF6Z3N",
+    "url": "https://bscscan.com/address/0xa3BCE2dEf1823A551A407b14572C54D2aDB0Fd45",
+    "description": "BorrowListaDistributor(mCake)"
+  },
+  {
+    "asset_id": "5lQjKULnpKZvl4a7l2yDqD",
+    "url": "https://bscscan.com/address/0xF8d1D8a862eA77Bf4f826BF6612bFf0d0883eafa",
+    "description": "BorrowListaDistributor(mwBETH)"
+  },
+  {
+    "asset_id": "66cLC8zg869K37GRhV1qdB",
+    "url": "https://bscscan.com/address/0xE4153Eb04417bE05b8d6B2222E4Cdd8AE674ee76",
+    "description": "VeListaRevenueDistributor"
+  },
+  {
+    "asset_id": "3hjZXwZOcGWLohE3GASHbl",
+    "url": "https://bscscan.com/address/0xda1E93d58CCCC9683f9Cb051cAEC5CF2F01B3253",
+    "description": "VeListaInterestRebater"
+  },
+  {
+    "asset_id": "4YhZ6JlhL6Ii19KOShsMn2",
+    "url": "https://bscscan.com/address/0x8B35291ecF29fD36BA405A03C9832725f2E9e164",
+    "description": "gemJoin(USDF)"
+  },
+  {
+    "asset_id": "3eeRZbLxnBXcRUZQv71utO",
+    "url": "https://bscscan.com/address/0x63393E8a6Fa3dab6874729AE680B370c0Ca96b2b",
+    "description": "clipper(USDF)"
+  },
+  {
+    "asset_id": "4IHyppqPIa25juUr2OmFO6",
+    "url": "https://bscscan.com/address/0xa53A9a3e496F00bbe3f1247cac88Ea28C2b6B107",
+    "description": "oracle(USDF)"
+  },
+  {
+    "asset_id": "mVwbTyrYoMj2kXjhiRedP",
+    "url": "https://bscscan.com/address/0xB53e69b662a2d10343f857eBa9e3b6158Acf632F",
+    "description": "gemJoin(asUSDF)"
+  },
+  {
+    "asset_id": "5h4rhl8yve5jIAPyvm8egi",
+    "url": "https://bscscan.com/address/0xe7e8098a724CF4F2f1aCf67b06a17710a52011ac",
+    "description": "clipper(asUSDF)"
+  },
+  {
+    "asset_id": "7qbdYeXjWuTxwbKlbcZvPe",
+    "url": "https://bscscan.com/address/0x53C7024411E5d12C0B17D412943C3Dd5939a2Fb1",
+    "description": "oracle(asUSDF)"
+  },
+  {
+    "asset_id": "55h3B9bFG8SoRBlQutNbP5",
+    "url": "https://bscscan.com/address/0xF53330104B4943bBf6e3f366FE11270183f93A46",
+    "description": "CollateralListaDistributor(USDF)"
+  },
+  {
+    "asset_id": "yJGEZdt943r7ldykqpbcr",
+    "url": "https://bscscan.com/address/0xD60316C4FAB1fB2eb18Fc5B72eCf982aDb04e579",
+    "description": "CollateralListaDistributor(asUSDF)"
+  },
+  {
+    "asset_id": "3ZELbfwep544KOf89SZtfo",
+    "url": "https://bscscan.com/address/0x5F43C6a44E314f09173C2a517bEE8db9304c30F1",
+    "description": "BorrowListaDistributor(USDF)"
+  },
+  {
+    "asset_id": "20ZLBBtASSofg0PpfOw6jY",
+    "url": "https://bscscan.com/address/0x031a6F543449D5FBf9C3e77F907043f7BE7c1461",
+    "description": "BorrowListaDistributor(asUSDF)"
+  },
+  {
+    "asset_id": "4BfC1K1RSnxSvsLTPewR94",
+    "url": "https://bscscan.com/address/0x2725d7336027773d7a958e10819a923dcd65aa57",
+    "description": "ERC20TokenProvider"
+  },
+  {
+    "asset_id": "7IYFh6jnAVkgvU1JXnk97O",
+    "url": "https://bscscan.com/address/0x367384C54756a25340c63057D87eA22d47Fd5701",
+    "description": "BNBProvider (Lista WBNB Vault)"
+  },
+  {
+    "asset_id": "24lSH6HnXO08EDjysrDwUD",
+    "url": "https://bscscan.com/address/0x501bE17CcA1d8a009753Da271D6714C18c1A35c9",
+    "description": "BNBProvider (MEV WBNB Vault)"
+  },
+  {
+    "asset_id": "2G50WM03SOIDw5mqqYfKm9",
+    "url": "https://bscscan.com/address/0x33f7A980a246f9B8FEA2254E3065576E127D4D5f",
+    "description": "SlisBNBProvider"
+  },
+  {
+    "asset_id": "7GC8HXo4JpcGO4nFLMSD4q",
+    "url": "https://bscscan.com/address/0x665410ee5Ea96aa729589491bADC11E0FE163d29",
+    "description": "LendingRewardsDistributor"
+  },
+  {
+    "asset_id": "58AGVoTTccbw7ATC2Sn9nR",
+    "url": "https://bscscan.com/address/0x68B9A9eA70f4391c016746BE240037E5d4f63807",
+    "description": "GemJoin(USD1)"
+  },
+  {
+    "asset_id": "6dOqAoeyIIVScxe4AV8tTd",
+    "url": "https://bscscan.com/address/0xdeB93441fAc0737321199E84a5F0420931A6562e",
+    "description": "Clipper(USD1)"
+  }
+]

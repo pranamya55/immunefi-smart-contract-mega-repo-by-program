@@ -1,8 +1,0 @@
-[[package]]
-name = "blanket_impl_u16"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-FE682CBBF6E34EF4"

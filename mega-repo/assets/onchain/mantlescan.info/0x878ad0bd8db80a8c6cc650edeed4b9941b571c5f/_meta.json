@@ -1,8 +1,0 @@
-{
-  "url": "https://mantlescan.info/address/0x878ad0bd8db80a8c6cc650edeed4b9941b571c5f",
-  "host": "mantlescan.info",
-  "address": "0x878ad0bd8db80a8c6cc650edeed4b9941b571c5f",
-  "chainid": 5000,
-  "mode": "bytecode-v2-proxy",
-  "bytecode_length_hex_chars": 1360
-}

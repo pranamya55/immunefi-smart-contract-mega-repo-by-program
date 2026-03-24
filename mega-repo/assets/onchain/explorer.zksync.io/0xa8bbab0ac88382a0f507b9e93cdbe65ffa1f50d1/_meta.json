@@ -1,7 +1,0 @@
-{
-  "url": "https://explorer.zksync.io/address/0xA8bbAB0aC88382A0f507B9E93CDbe65ffa1F50D1#contract",
-  "host": "explorer.zksync.io",
-  "address": "0xA8bbAB0aC88382A0f507B9E93CDbe65ffa1F50D1",
-  "mode": "placeholder-onchain",
-  "reason": "etherscan-v2:HTTPSConnectionPool(host='api.etherscan.io', port=443): Read timed out. (read timeout=10); scan-host-no-key:Expecting value: line 1 column 1 (char 0)"
-}

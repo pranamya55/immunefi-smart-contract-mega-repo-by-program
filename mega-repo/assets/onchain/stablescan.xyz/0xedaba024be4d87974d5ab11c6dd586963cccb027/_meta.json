@@ -1,7 +1,0 @@
-{
-  "url": "https://stablescan.xyz/address/0xedaba024be4d87974d5aB11C6Dd586963CcCB027",
-  "host": "stablescan.xyz",
-  "address": "0xedaba024be4d87974d5aB11C6Dd586963CcCB027",
-  "mode": "placeholder-onchain",
-  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:unexpected-response"
-}

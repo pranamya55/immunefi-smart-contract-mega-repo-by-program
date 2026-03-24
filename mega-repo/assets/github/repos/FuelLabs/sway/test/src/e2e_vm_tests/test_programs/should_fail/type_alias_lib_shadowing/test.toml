@@ -1,4 +1,0 @@
-category = "fail"
-
-# check: $()type MyType = MyStruct;
-# nextln: $()Name "MyType" is defined multiple times.

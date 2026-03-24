@@ -1,3 +1,0 @@
-[submodule "lib/token-tests"]
-	path = lib/token-tests
-	url = https://github.com/makerdao/token-tests

@@ -1,8 +1,0 @@
-[[package]]
-name = "multi_impl_self"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-1DF5C05780D5D4CE"

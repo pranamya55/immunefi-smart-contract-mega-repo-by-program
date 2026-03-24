@@ -1,6 +1,0 @@
-out
-lib
-cache
-node_modules
-src/contracts/dependencies
-forge-clones

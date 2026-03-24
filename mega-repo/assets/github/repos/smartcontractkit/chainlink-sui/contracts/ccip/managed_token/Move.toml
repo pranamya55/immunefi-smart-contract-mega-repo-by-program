@@ -1,6 +1,0 @@
-[package]
-name = "managed_token"
-edition = "2024"
-
-[dependencies]
-mcms = { local = "../../mcms/mcms" }

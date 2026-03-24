@@ -1,7 +1,0 @@
-{
-  "url": "https://uniscan.xyz/address/0x9B1BEB11CFE05117029a30eb799B6586125321FF#code",
-  "host": "uniscan.xyz",
-  "address": "0x9B1BEB11CFE05117029a30eb799B6586125321FF",
-  "mode": "placeholder-onchain",
-  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:unexpected-response"
-}

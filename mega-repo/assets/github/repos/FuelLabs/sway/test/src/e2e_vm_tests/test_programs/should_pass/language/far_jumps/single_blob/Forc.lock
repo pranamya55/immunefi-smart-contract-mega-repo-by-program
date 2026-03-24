@@ -1,8 +1,0 @@
-[[package]]
-name = "single_blob"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-6C0E4D3584CB39F4"

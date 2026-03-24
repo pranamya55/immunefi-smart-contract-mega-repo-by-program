@@ -1,7 +1,0 @@
-{
-  "url": "https://blockscout.com/xdai/mainnet/address/0x5671b0B8aC13DC7813D36B99C21c53F6cd376a14#code",
-  "host": "blockscout.com",
-  "address": "0x5671b0B8aC13DC7813D36B99C21c53F6cd376a14",
-  "mode": "placeholder-onchain",
-  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:http 503; blockscout-v2:http 503"
-}

@@ -1,5 +1,0 @@
-category = "fail"
-
-# check: $()error
-# check: $()fn method() -> u64 { 42 }
-# check: $()Name "method" is defined multiple times.

@@ -1,8 +1,0 @@
-{
-  "url": "https://sepolia.etherscan.io/address/0x8282e8f6486bf4571c85212f7b663b7f3e364aa6",
-  "host": "sepolia.etherscan.io",
-  "address": "0x8282e8f6486bf4571c85212f7b663b7f3e364aa6",
-  "chainid": 11155111,
-  "mode": "bytecode-v2-proxy",
-  "bytecode_length_hex_chars": 5100
-}

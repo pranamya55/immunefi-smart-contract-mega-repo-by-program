@@ -1,7 +1,0 @@
-[environments]
-  devnet = 'a9149565'
-  local = '92d92e5c'
-
-[package]
-  edition = '2024'
-  name = 'test_secondary'

@@ -1,8 +1,0 @@
-[[package]]
-name = "configurables_initializer_not_const_eval"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-4346025B37ED178A"

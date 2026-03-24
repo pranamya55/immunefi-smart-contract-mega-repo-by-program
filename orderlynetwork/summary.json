@@ -1,4 +1,6 @@
 {
   "github_repo_linked": 2,
-  "manifest_linked": 20
+  "manifest_linked": 17,
+  "onchain_missing": 3,
+  "unresolved": 3
 }

@@ -1,8 +1,0 @@
-[[package]]
-name = "configurables_undefined_var"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-37EE290E49DDBF00"

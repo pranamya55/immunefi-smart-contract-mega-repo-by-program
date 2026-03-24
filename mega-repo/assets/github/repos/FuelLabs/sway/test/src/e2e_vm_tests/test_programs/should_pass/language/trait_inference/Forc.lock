@@ -1,8 +1,0 @@
-[[package]]
-name = "std"
-source = "path+from-root-3903213068BE1E4C"
-
-[[package]]
-name = "trait_inference"
-source = "member"
-dependencies = ["std"]

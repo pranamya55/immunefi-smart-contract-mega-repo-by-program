@@ -1,8 +1,0 @@
-[[package]]
-name = "abi_with_same_name_types"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-CB93C045115475F5"

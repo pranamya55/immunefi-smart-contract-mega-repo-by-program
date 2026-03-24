@@ -1,6 +1,0 @@
-category = "fail"
-
-# check: $()let x = "a
-# nextln: $()
-# nextln: $()} 
-# nextln: $()unclosed string literal

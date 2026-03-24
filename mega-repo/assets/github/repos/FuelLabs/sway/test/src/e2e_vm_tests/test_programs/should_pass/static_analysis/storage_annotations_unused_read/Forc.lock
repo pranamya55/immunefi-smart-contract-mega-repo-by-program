@@ -1,8 +1,0 @@
-[[package]]
-name = "std"
-source = "path+from-root-B415B1E0A318C0B0"
-
-[[package]]
-name = "storage_annotations_unused_read"
-source = "member"
-dependencies = ["std"]

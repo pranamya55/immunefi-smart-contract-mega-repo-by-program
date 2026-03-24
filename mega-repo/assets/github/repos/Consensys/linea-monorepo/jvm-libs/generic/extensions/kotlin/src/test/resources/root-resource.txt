@@ -1,1 +1,0 @@
-root resource 1

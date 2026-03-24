@@ -1,3 +1,0 @@
-{
-  "rust-analyzer.linkedProjects": ["./contracts/svm/Cargo.toml", "./Cargo.toml"]
-}

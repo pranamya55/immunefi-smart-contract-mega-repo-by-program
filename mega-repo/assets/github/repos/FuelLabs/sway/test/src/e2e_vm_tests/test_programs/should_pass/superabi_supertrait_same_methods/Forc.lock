@@ -1,8 +1,0 @@
-[[package]]
-name = "std"
-source = "path+from-root-72BA93DF3531ECC6"
-
-[[package]]
-name = "superabi_supertrait_same_methods"
-source = "member"
-dependencies = ["std"]

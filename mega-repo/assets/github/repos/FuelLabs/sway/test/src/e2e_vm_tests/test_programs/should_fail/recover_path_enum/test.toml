@@ -1,4 +1,0 @@
-category = "fail"
-
-# check: $()Expected an identifier.
-# check: $()Mismatched types.

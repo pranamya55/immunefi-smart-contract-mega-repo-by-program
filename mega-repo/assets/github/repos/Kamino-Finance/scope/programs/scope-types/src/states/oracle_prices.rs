@@ -1,1 +1,0 @@
-../../../scope/src/states/oracle_prices.rs

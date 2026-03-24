@@ -1,8 +1,0 @@
-[[package]]
-name = "impl_self_method_order"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-6CAAE7BDB8E5A7C5"

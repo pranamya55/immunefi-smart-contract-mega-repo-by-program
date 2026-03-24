@@ -1,7 +1,0 @@
-{
-  "url": "https://explorer.harmony.one/address/0xb205d0AeF84C666FBBe441C61DC04fEb844444E6",
-  "host": "explorer.harmony.one",
-  "address": "0xb205d0AeF84C666FBBe441C61DC04fEb844444E6",
-  "mode": "placeholder-onchain",
-  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:empty-source"
-}

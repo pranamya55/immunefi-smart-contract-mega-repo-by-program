@@ -1,0 +1,537 @@
+[
+  {
+    "asset_id": "3iL5BlPgEU3bSb9rRNcLIt",
+    "url": "https://snowtrace.io/address/0x091eD806490Cc58Fd514441499e58984cCce0630",
+    "description": "Reward RouterV2"
+  },
+  {
+    "asset_id": "67BLOXaIDdGEBUAz0JfvbI",
+    "url": "https://snowtrace.io/address/0x8087a341D32D445d9aC8aCc9c14F5781E04A26d2",
+    "description": "BnGMX"
+  },
+  {
+    "asset_id": "4kc4yiMSGdeUpZFLvSDEEI",
+    "url": "https://snowtrace.io/address/0xc0253c3cC6aa5Ab407b5795a04c28fB063273894",
+    "description": "USDG"
+  },
+  {
+    "asset_id": "5m4KKlm1VlpYpl35UZmNRH",
+    "url": "https://snowtrace.io/address/0x908C4D94D34924765f1eDc22A1DD098397c59dD4",
+    "description": "Bonus Gmx Tracker"
+  },
+  {
+    "asset_id": "3Thlveg4jC6686K2xwVw1F",
+    "url": "https://snowtrace.io/address/0xB0D12Bf95CC1341d6C845C978daaf36F70b5910d",
+    "description": "Extended Gmx Tracker"
+  },
+  {
+    "asset_id": "6dTl4MdM3jOesrdVZhI124",
+    "url": "https://snowtrace.io/address/0x4d268a7d4C16ceB5a606c173Bd974984343fea13",
+    "description": "Fee Gmx Tracker"
+  },
+  {
+    "asset_id": "1jKyfKtpwuIRK6V8Uqb8HB",
+    "url": "https://snowtrace.io/address/0x9e295B5B976a184B14aD8cd72413aD846C299660",
+    "description": "Staked Glp Tracker"
+  },
+  {
+    "asset_id": "2NYxI5SpxvfdWeMd4QIoE5",
+    "url": "https://snowtrace.io/address/0xd2D1162512F927a7e282Ef43a362659E4F2a728F",
+    "description": "Fee Glp Tracker"
+  },
+  {
+    "asset_id": "2CSV5DEm1mP7kN0mCGVzl7",
+    "url": "https://snowtrace.io/address/0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a",
+    "description": "Staked Gmx Distributor"
+  },
+  {
+    "asset_id": "4cFymrDEnRSvwqKlgV3Fzt",
+    "url": "https://snowtrace.io/address/0x23208b91a98c7c1cd9fe63085bff68311494f193",
+    "description": "Bonus Gmx Distributor"
+  },
+  {
+    "asset_id": "6XpJvb8QJHkMdfefUNvBK5",
+    "url": "https://snowtrace.io/address/0x03f349b3cc4f200d7fae4d8ddaf1507f5a40d356",
+    "description": "Fee Gmx Distributor"
+  },
+  {
+    "asset_id": "5n3rgx0g3CIfmTRPAlujpw",
+    "url": "https://snowtrace.io/address/0xdd593cf40734199afc9207ebe9fff23da4bf7720",
+    "description": "Staked Glp Distributor"
+  },
+  {
+    "asset_id": "60DgPpJ7EF5EGzSlEd0Ucx",
+    "url": "https://snowtrace.io/address/0x5643F4b25E36478eE1E90418d5343cb6591BcB9d",
+    "description": "Staked Glp"
+  },
+  {
+    "asset_id": "7gw6HGCmen5GrkQidfpT5m",
+    "url": "https://snowtrace.io/address/0x4296e307f108B2f583FF2F7B7270ee7831574Ae5",
+    "description": "Order Book"
+  },
+  {
+    "asset_id": "6M7WASnheHHapHKM6V5mDH",
+    "url": "https://snowtrace.io/address/0x129174043B134aD27eaE552D6BEA08f23f771205",
+    "description": "AdlHandler"
+  },
+  {
+    "asset_id": "4mkpuhqeifJlNun0DhlpZe",
+    "url": "https://snowtrace.io/address/0x949FF0357eC250A6b1BcFE9B9E36822B8Bc2Eabf",
+    "description": "AdlUtils"
+  },
+  {
+    "asset_id": "4QaC0laeguYXmU2QqQ15TW",
+    "url": "https://snowtrace.io/address/0x2B4FCd7552c53f56891100D6E584633C7E5a9078",
+    "description": "AutoCancelSyncer"
+  },
+  {
+    "asset_id": "vXtedPNJDWddmzeJjMII3",
+    "url": "https://snowtrace.io/address/0xD382216A61745bdBD0E73A59D7c4e5aAb2b547ab",
+    "description": "BaseOrderUtils"
+  },
+  {
+    "asset_id": "27YGrJbDRQtlMp9Rvqrtvd",
+    "url": "https://snowtrace.io/address/0xA6A8713E85e1b5Fa72b6687A19EA7090cBcB43a5",
+    "description": "CallbackUtils"
+  },
+  {
+    "asset_id": "6DBnePN3YDhTec6HTrpwYR",
+    "url": "https://snowtrace.io/address/0x46088fA22988c40CE5aBC0647a7638D27A8bF7d1",
+    "description": "ChainlinkDataStreamProvider"
+  },
+  {
+    "asset_id": "hunWKHnKlJO6XDnQtMNVQ",
+    "url": "https://snowtrace.io/address/0x713c6a2479f6C079055A6AD3690D95dEDCEf9e1e",
+    "description": "ChainlinkPriceFeedProvider"
+  },
+  {
+    "asset_id": "6ELh7ahbMEExRBR33GgRk0",
+    "url": "https://snowtrace.io/address/0x1Ad2560bD34D17A413e4eb9420643d1782466dDA",
+    "description": "Config"
+  },
+  {
+    "asset_id": "2sjDQmtnZlLqP4qjuLToIO",
+    "url": "https://snowtrace.io/address/0xcF71721924c312374bF8366c3f60a127A1e80e3C",
+    "description": "ConfigSyncer"
+  },
+  {
+    "asset_id": "4lFgGMkDyoDzHv0kmLjOuT",
+    "url": "https://snowtrace.io/address/0x2F0b22339414ADeD7D5F06f9D604c7fF5b2fe3f6",
+    "description": "DataStore"
+  },
+  {
+    "asset_id": "5tPnizRlWXN7CU7foxEHJW",
+    "url": "https://snowtrace.io/address/0x5B6856a9E427BE70B19BBF7BAbb5A6aDB36a2716",
+    "description": "DecreaseOrderUtils"
+  },
+  {
+    "asset_id": "4QceC5ZoEDWBqJAEvdeDsV",
+    "url": "https://snowtrace.io/address/0x0b7E3E946Fd9aFF1b103810C36B610ad9D4Cb7d0",
+    "description": "DecreasePositionCollateralUtils"
+  },
+  {
+    "asset_id": "7kxUQsmcv4ztVNWkl32INA",
+    "url": "https://snowtrace.io/address/0xB85d6625D36411d136e83941a122f7DA12C14279",
+    "description": "DecreasePositionSwapUtils"
+  },
+  {
+    "asset_id": "4xHaEXgHu8vGUcjAYYSa1j",
+    "url": "https://snowtrace.io/address/0x9901D033dBDdFACBb82B768Bb913186E54F5EEd4",
+    "description": "DecreasePositionUtils"
+  },
+  {
+    "asset_id": "2ymdC8PYXnzhMUzqEefST9",
+    "url": "https://snowtrace.io/address/0x05DC08259f1E511541f553617BAE6D4465C93355",
+    "description": "DepositEventUtils"
+  },
+  {
+    "asset_id": "464qlY4X7GBMmhuf8b4I4U",
+    "url": "https://snowtrace.io/address/0x8AE344DEeD1526B1772adDF78718722A169288Dc",
+    "description": "DepositHandler"
+  },
+  {
+    "asset_id": "3Phw1oqCADRgIj1KhfOEpe",
+    "url": "https://snowtrace.io/address/0xd43fF770f43Ae90b6aADa70a57341D3dfB73252e",
+    "description": "DepositStoreUtils"
+  },
+  {
+    "asset_id": "7986IoK0bYOgLUTobIBShJ",
+    "url": "https://snowtrace.io/address/0x76fCBAF92eA8F9Fc2c21Ef785F37C52095F76DCC",
+    "description": "DepositUtils"
+  },
+  {
+    "asset_id": "7MFg8nAgTbw30AwUYqOtAV",
+    "url": "https://snowtrace.io/address/0xe60B7526e05d8D8aEA17607245fd6D7C9953A1CA",
+    "description": "ExchangeRouter"
+  },
+  {
+    "asset_id": "7DaCn5OhOYEYIaY915V1Cd",
+    "url": "https://snowtrace.io/address/0xe58Ce07a0e9B42b2a2E0D423365C8Db64272d3b6",
+    "description": "ExecuteDepositUtils"
+  },
+  {
+    "asset_id": "5Ll1nSb13V5RSZPsKkHSWD",
+    "url": "https://snowtrace.io/address/0x70205d90Ba4017e98aA0b95EB3d3E8a0DBb2021E",
+    "description": "ExecuteOrderUtils"
+  },
+  {
+    "asset_id": "4fNeuBtsSMgQX9M842pcQ5",
+    "url": "https://snowtrace.io/address/0x377D0e11Bb5F4a97275C16EB2FcBeb157B8c3697",
+    "description": "ExecuteWithdrawalUtils"
+  },
+  {
+    "asset_id": "5UTU5KMf78Bu5yO6OcubcZ",
+    "url": "https://snowtrace.io/address/0xD149573a098223a9185433290a5A5CDbFa54a8A9",
+    "description": "ExternalHandler"
+  },
+  {
+    "asset_id": "1Jmn8aJrYE8KZwVC13JwPM",
+    "url": "https://snowtrace.io/address/0x1A3A103F9F536a0456C9b205152A3ac2b3c54490",
+    "description": "FeeHandler"
+  },
+  {
+    "asset_id": "3ni2akEPeKA1boGwy975yI",
+    "url": "https://snowtrace.io/address/0x8C75f9905a9fD94A0D95cb0801d7De33A432667C",
+    "description": "FeeUtils"
+  },
+  {
+    "asset_id": "2L35cfSmmoWX7SmSb7g6HA",
+    "url": "https://snowtrace.io/address/0xe045f6B2a4d615C185f332C0a4Fed4D6Aa46c090",
+    "description": "GasUtils"
+  },
+  {
+    "asset_id": "4h6MPPWL6KI6vEhYqRouCS",
+    "url": "https://snowtrace.io/address/0xb6ED1df6914a6d8714b76E76663d5138e7099C02",
+    "description": "GlvDepositEventUtils"
+  },
+  {
+    "asset_id": "35w916Lm1sWmcYdo6IDszO",
+    "url": "https://snowtrace.io/address/0xe4c9B8d007Dfa2E1DCA47703321Db26506444745",
+    "description": "GlvDepositStoreUtils"
+  },
+  {
+    "asset_id": "5adVxt4mJy2XBjrm3usRp3",
+    "url": "https://snowtrace.io/address/0xf4b315c591B7F62B7ed988342aFc91d2bea352b2",
+    "description": "GlvDepositUtils"
+  },
+  {
+    "asset_id": "7u0FnwD3cElUiBZA3jMdqB",
+    "url": "https://snowtrace.io/address/0x5d6B84086DA6d4B0b6C0dF7E02f8a6A039226530",
+    "description": "GlvFactory"
+  },
+  {
+    "asset_id": "474uHqjBYVNITp2H7PXjFR",
+    "url": "https://snowtrace.io/address/0x48486CaF8851ed0085432789D28A8820bEcbfd45",
+    "description": "GlvHandler"
+  },
+  {
+    "asset_id": "1PHOKJGUf0UTxF9YwrR9kp",
+    "url": "https://snowtrace.io/address/0xae9596a1C438675AcC75f69d32E21Ac9c8fF99bD",
+    "description": "GlvReader"
+  },
+  {
+    "asset_id": "42aC7YFTik1a65nNaTuQ9K",
+    "url": "https://snowtrace.io/address/0x2098465FC0329C4d2F3B266190a6A664fBC6E0Db",
+    "description": "GlvRouter"
+  },
+  {
+    "asset_id": "4e4urMNWAnHo994gEHhHHU",
+    "url": "https://snowtrace.io/address/0x21A2253c136042075b15CD44846A5fF89F06662c",
+    "description": "GlvShiftEventUtils"
+  },
+  {
+    "asset_id": "5GEC4UEUzUKIhu3skK6MMA",
+    "url": "https://snowtrace.io/address/0x25e6385C1b4CE6B80928Ef2406EcE24D2319D191",
+    "description": "GlvShiftStoreUtils"
+  },
+  {
+    "asset_id": "7GN5BlpyagWhQvpmHcE3QF",
+    "url": "https://snowtrace.io/address/0x470b40dc22D7a4974b199E13e4A00893EB140479",
+    "description": "GlvShiftUtils"
+  },
+  {
+    "asset_id": "4t3HB9DIBVCDJ3zSXl1pQJ",
+    "url": "https://snowtrace.io/address/0xE62A5966664adff03841bB87b6d0BAb18f2408F0",
+    "description": "GlvStoreUtils"
+  },
+  {
+    "asset_id": "1XIXAKoo7QMvlOtWdFJ7aB",
+    "url": "https://snowtrace.io/address/0xF7FFc26351154A151127Ea0C993867FC2DfC9374",
+    "description": "GlvUtils"
+  },
+  {
+    "asset_id": "5pI7rV7VYXk06YP1It9zxu",
+    "url": "https://snowtrace.io/address/0x527FB0bCfF63C47761039bB386cFE181A92a4701",
+    "description": "GlvVault"
+  },
+  {
+    "asset_id": "6I9LVmwlBCKsfQC4RtEZcc",
+    "url": "https://snowtrace.io/address/0x036E2e8Eae7C647C580BCCe5aC9224e487721280",
+    "description": "GlvWithdrawalEventUtils"
+  },
+  {
+    "asset_id": "4XiiYV5oqo0e7zuKu5ISqc",
+    "url": "https://snowtrace.io/address/0xf0028eCA8Dd5152d7dbFB421746aE6E30BAD91b3",
+    "description": "GlvWithdrawalStoreUtils"
+  },
+  {
+    "asset_id": "35mpy1fnSxG9SLXumq1gDe",
+    "url": "https://snowtrace.io/address/0x51e42dd437aBfF9E715f8C5853F42cB1597A1ea0",
+    "description": "GlvWithdrawalUtils"
+  },
+  {
+    "asset_id": "3TCSmTPAtxI8QZIdNh9ZtF",
+    "url": "https://snowtrace.io/address/0x9Dc4f12Eb2d8405b499FB5B8AF79a5f64aB8a457",
+    "description": "GmOracleProvider"
+  },
+  {
+    "asset_id": "4W2ovnDmXrKh2ajPU5Bt56",
+    "url": "https://snowtrace.io/address/0xC55e165Bf9247256DBeCA8DDE892aE9a7B271b2D",
+    "description": "GovTimelockController"
+  },
+  {
+    "asset_id": "3EWuEkVtVChW5vboJ6M9zo",
+    "url": "https://snowtrace.io/address/0x0ff183E29f1924ad10475506D7722169010CecCb",
+    "description": "GovToken"
+  },
+  {
+    "asset_id": "TzbUsMdIpXhJnX6WJ5Ftb",
+    "url": "https://snowtrace.io/address/0x26d2D37567c4944d3EC867f693b40c8063A4B4F9",
+    "description": "IncreaseOrderUtils"
+  },
+  {
+    "asset_id": "7lek14RphIeb1S6nPUwbxq",
+    "url": "https://snowtrace.io/address/0x0885bcf264Fb71518443A3b2Cd87466036f222Bc",
+    "description": "IncreasePositionUtils"
+  },
+  {
+    "asset_id": "6BW9cjTyZ0mpYKFYyMdqOz",
+    "url": "https://snowtrace.io/address/0x34acBf9Fb2f0dDAB489F6B75FBf394C240b97276",
+    "description": "LiquidationHandler"
+  },
+  {
+    "asset_id": "780WW5BLPMZc9yPvmrFnkl",
+    "url": "https://snowtrace.io/address/0x85d2B53cE13f2A2e2be7F95E3A26d265301a0B49",
+    "description": "LiquidationUtils"
+  },
+  {
+    "asset_id": "3tcytPsZwsI8wD807RgrGd",
+    "url": "https://snowtrace.io/address/0x69C527fC77291722b52649E45c838e41be8Bf5d5",
+    "description": "MarketEventUtils"
+  },
+  {
+    "asset_id": "1C50keFopa19qwlDfsfXUq",
+    "url": "https://snowtrace.io/address/0x27346Fdab142e2b8B6C6d2ecFe73e75B5e249A57",
+    "description": "MarketStoreUtils"
+  },
+  {
+    "asset_id": "kEUx3ibxAkcaxzIClrLzx",
+    "url": "https://snowtrace.io/address/0x55E9A5E1Aed46500F746F7683e87F3D9f3C1E14E",
+    "description": "MarketUtils"
+  },
+  {
+    "asset_id": "6A5M746suC3XV9zU1yz263",
+    "url": "https://snowtrace.io/address/0x5AF9de15Bc0E332622f6dFE77fC489d709CE12fE",
+    "description": "MockPriceFeed"
+  },
+  {
+    "asset_id": "5moIFiW5YszBxwP7EG5cpi",
+    "url": "https://snowtrace.io/address/0x50474CAe810B316c294111807F94F9f48527e7F8",
+    "description": "Multicall3"
+  },
+  {
+    "asset_id": "3RiJgkhXDXKRFqFCKdps1l",
+    "url": "https://snowtrace.io/address/0xAd7a7568F500F65AEA3D9417A210CBc5dcD7b273",
+    "description": "Oracle"
+  },
+  {
+    "asset_id": "3x77sS6TOxLbXqIaWM9Fo9",
+    "url": "https://snowtrace.io/address/0xED467Ce941BA9ec2aa74DCDAea7A53995840a79d",
+    "description": "OracleModuleTest"
+  },
+  {
+    "asset_id": "1GX1FB7YH33TLHMulaxA0n",
+    "url": "https://snowtrace.io/address/0xA6aC2e08C6d6bbD9B237e0DaaEcd7577996f4e84",
+    "description": "OracleStore"
+  },
+  {
+    "asset_id": "5NbuieViYQANq0v6ORqsEA",
+    "url": "https://snowtrace.io/address/0x08A902113F7F41a8658eBB1175f9c847bf4fB9D8",
+    "description": "OrderEventUtils"
+  },
+  {
+    "asset_id": "f297fjVoAVSVHA4RPElF4",
+    "url": "https://snowtrace.io/address/0x088711C3d2FA992188125e009E65c726bA090AD6",
+    "description": "OrderHandler"
+  },
+  {
+    "asset_id": "3RZRbkZ3bBU8y9YEeyUHxw",
+    "url": "https://snowtrace.io/address/0xb3Ecc8Db8d58363B7C0E2094CdDe72EC0222A614",
+    "description": "OrderStoreUtils"
+  },
+  {
+    "asset_id": "4AnE8txXszQyvjg3tp5Gi8",
+    "url": "https://snowtrace.io/address/0xA1Bc5A861F55ccd79CEBb07De6120C6356C2a356",
+    "description": "OrderUtils"
+  },
+  {
+    "asset_id": "3JGUpROKwBeXFVbFBGQ9DI",
+    "url": "https://snowtrace.io/address/0xD3D60D22d415aD43b7e64b510D86A30f19B1B12C",
+    "description": "OrderVault"
+  },
+  {
+    "asset_id": "7wmsL30YkA9tt7i4g3UZOL",
+    "url": "https://snowtrace.io/address/0x2ECB664e934aCd5DF1EE889Dbb2E7D6C1d7CE3Cb",
+    "description": "PositionEventUtils"
+  },
+  {
+    "asset_id": "5RWL0iYK2OEYBNpiJpfSxZ",
+    "url": "https://snowtrace.io/address/0x5Ca84c34a381434786738735265b9f3FD814b824",
+    "description": "PositionPricingUtils"
+  },
+  {
+    "asset_id": "1QQIIOkkxnth3WTvmMeJxH",
+    "url": "https://snowtrace.io/address/0xFe1531c3b27E9E882881D9917B9cae9f2082c6dF",
+    "description": "PositionStoreUtils"
+  },
+  {
+    "asset_id": "4Ob7FefT9tB1CEWRo4GKPy",
+    "url": "https://snowtrace.io/address/0x9F48160eDc3Ad78F4cA0E3FDF54A75D8FB228452",
+    "description": "PositionUtils"
+  },
+  {
+    "asset_id": "1SycII9dhJt67RrpcWEV5n",
+    "url": "https://snowtrace.io/address/0x41613136174912714faF4cF0680fB1Acbe0cC7D1",
+    "description": "Printer"
+  },
+  {
+    "asset_id": "5kssvdIsif03qBC0C2lh6N",
+    "url": "https://snowtrace.io/address/0x226ED647C6eA2C0cE4C08578e2F37b8c2F922849",
+    "description": "ProtocolGovernor"
+  },
+  {
+    "asset_id": "A8i4636yUdgwzT38YLVX9",
+    "url": "https://snowtrace.io/address/0x618fCEe30D9A26e8533C3B244CAd2D6486AFf655",
+    "description": "Reader"
+  },
+  {
+    "asset_id": "71XpyK5BSv3gTzeAH4QvAE",
+    "url": "https://snowtrace.io/address/0x393053B58f9678C9c28c2cE941fF6cac49C3F8f9",
+    "description": "ReaderDepositUtils"
+  },
+  {
+    "asset_id": "LoyMw0ii5eOlmNym8rxTP",
+    "url": "https://snowtrace.io/address/0x8410C65EA0fE4533492f2D4a2FB045F0072059ea",
+    "description": "ReaderPositionUtils"
+  },
+  {
+    "asset_id": "5fdjVn4PzvxHOnbNS6KxHM",
+    "url": "https://snowtrace.io/address/0xeA05c84336E53e7C954776200A9f0Ca7e7879a4F",
+    "description": "ReaderPricingUtils"
+  },
+  {
+    "asset_id": "23yZK5lVqDrbkwbGYHJRhv",
+    "url": "https://snowtrace.io/address/0x2CdA6CF21aFA4A8ff61a888865E26231fA0bd565",
+    "description": "ReaderUtils"
+  },
+  {
+    "asset_id": "6kPA2n0eESbJkY3GLD7Sy5",
+    "url": "https://snowtrace.io/address/0x56AEd6EA2538487603EC56417d44379A921a5b48",
+    "description": "ReaderWithdrawalUtils"
+  },
+  {
+    "asset_id": "6VxDMaM7nIuW2K6s8H5djB",
+    "url": "https://snowtrace.io/address/0x4895170e184441da9BD2bF95c120c07ba628eeF0",
+    "description": "ReferralEventUtils"
+  },
+  {
+    "asset_id": "Dco0k2NdbEx4u0awvQUwZ",
+    "url": "https://snowtrace.io/address/0x8BFB5291eEd1535B50ee6F1B8a8CEFc374FC49c5",
+    "description": "ReferralUtils"
+  },
+  {
+    "asset_id": "2g46W2HTOVLp94eUaCq1UB",
+    "url": "https://snowtrace.io/address/0xA44F830B6a2B6fa76657a3B92C1fe74fcB7C6AfD",
+    "description": "RoleStore"
+  },
+  {
+    "asset_id": "6gX2aL6zKG20YlP0aUrTOG",
+    "url": "https://snowtrace.io/address/0x3b944bda5521C2eCE014CF1E4717ce130266c0Db",
+    "description": "ShiftEventUtils"
+  },
+  {
+    "asset_id": "GwhxPTI8WEaVCuRtOpBWg",
+    "url": "https://snowtrace.io/address/0x418F9CC6cA4870be1088Ce03CC48985B145c79a8",
+    "description": "ShiftHandler"
+  },
+  {
+    "asset_id": "1VGMZB4ZSafOFbfwHFOV6O",
+    "url": "https://snowtrace.io/address/0x857aA530f3EaC0a5a4fE7628012ccAC7FaF54eEf",
+    "description": "ShiftStoreUtils"
+  },
+  {
+    "asset_id": "45GjLPL1vWWgMH9ddnI15d",
+    "url": "https://snowtrace.io/address/0x0747e9641549690Ed9f0FB89B519AA3e57354203",
+    "description": "ShiftUtils"
+  },
+  {
+    "asset_id": "x8jled1N2YUhSJk6IgnHe",
+    "url": "https://snowtrace.io/address/0x7fC46CCb386e9bbBFB49A2639002734C3Ec52b39",
+    "description": "ShiftVault"
+  },
+  {
+    "asset_id": "3khWzDnoofgtuFZZ1lBal5",
+    "url": "https://snowtrace.io/address/0x5aEb6AD978f59e220aA9099e09574e1c5E03AafD",
+    "description": "SubaccountRouter"
+  },
+  {
+    "asset_id": "2YLT248lezgE3FdQpVvtU5",
+    "url": "https://snowtrace.io/address/0x81d8B0F2FD89D31728E8fe36fa3C9aD8BAcF10DC",
+    "description": "SwapHandler"
+  },
+  {
+    "asset_id": "7g3gOCjmrOOlTG7D0AVHIX",
+    "url": "https://snowtrace.io/address/0x97c067B65AC815c08d73B867fe32F61Ce772468F",
+    "description": "SwapOrderUtils"
+  },
+  {
+    "asset_id": "6bSOPvZO8wtQ4o4V1zYLED",
+    "url": "https://snowtrace.io/address/0xe14f1a0387A76C6427F22945246acD40E3f59aE0",
+    "description": "SwapPricingUtils"
+  },
+  {
+    "asset_id": "6PKbPsF3VNiTpOx5YEG22j",
+    "url": "https://snowtrace.io/address/0x85Fcd569577A0bb52abF9D9E691F69D94dD61aF8",
+    "description": "SwapUtils"
+  },
+  {
+    "asset_id": "14M8GlJtDZ9azmHGuHZpid",
+    "url": "https://snowtrace.io/address/0xdF23692341538340db0ff04C65017F51b69a29f6",
+    "description": "Timelock"
+  },
+  {
+    "asset_id": "7LEeXne7gI0g5hf2trUULq",
+    "url": "https://snowtrace.io/address/0x4FB4e6db5738709490856ecE38EcEcf264F2a97F",
+    "description": "TimestampInitializer"
+  },
+  {
+    "asset_id": "7e6yPnaA6cuLXXqui2VHNT",
+    "url": "https://snowtrace.io/address/0x8583b878DA0844B7f59974069f00D3A9eaE0F4ae",
+    "description": "WithdrawalEventUtils"
+  },
+  {
+    "asset_id": "3HNo9OFt6hvjaXCrYz3kg8",
+    "url": "https://snowtrace.io/address/0x1b0a44dD3bCCC2Ddae33921694EBc34E3ECC1415",
+    "description": "WithdrawalHandler"
+  },
+  {
+    "asset_id": "7eckuPNVkLgRGb4VnjystS",
+    "url": "https://snowtrace.io/address/0xDD88C6E2C28e3974aDd060eB2Bc918AA9f186bB1",
+    "description": "WithdrawalStoreUtils"
+  },
+  {
+    "asset_id": "22WJ1WdLiR09T16JKwyrVp",
+    "url": "https://snowtrace.io/address/0xf32b417A93Acc039B236F1eCC86B56bd3cB8E698",
+    "description": "WithdrawalUtils"
+  }
+]

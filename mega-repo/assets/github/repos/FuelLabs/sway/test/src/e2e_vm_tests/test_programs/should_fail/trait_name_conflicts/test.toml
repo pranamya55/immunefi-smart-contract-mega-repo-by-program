@@ -1,5 +1,0 @@
-category = "fail"
-
-# check: $()Name "a" is defined multiple times.
-# check: $()Name "b" is defined multiple times.
-# check: $()Name "c" is defined multiple times.

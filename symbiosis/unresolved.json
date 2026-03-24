@@ -1,0 +1,12 @@
+[
+  {
+    "asset_id": "3O5ALoL4pZtEMWBuxpCJE5",
+    "url": "https://snowtrace.io/address/0x6F0f6393e45fE0E7215906B6f9cfeFf53EA139cf#code",
+    "description": "MetaRouter"
+  },
+  {
+    "asset_id": "2xg5EsZfGkR3uZevqmREnl",
+    "url": "https://snowtrace.io/address/0x4cfA66497Fa84D739a0f785FBcEe9196f1C64e4a#code",
+    "description": "MetaRouterGateway"
+  }
+]

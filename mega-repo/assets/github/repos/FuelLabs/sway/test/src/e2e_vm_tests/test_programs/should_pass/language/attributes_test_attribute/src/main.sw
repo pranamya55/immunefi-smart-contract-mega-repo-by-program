@@ -1,5 +1,0 @@
-library;
-
-#[test]
-fn foo() {
-}

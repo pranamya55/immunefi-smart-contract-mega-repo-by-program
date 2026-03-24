@@ -1,8 +1,0 @@
-{
-  "url": "https://worldscan.org/address/0x33a3ab524a43e69f30bfd9ae97d1ec679ff00b64",
-  "host": "worldscan.org",
-  "address": "0x33a3ab524a43e69f30bfd9ae97d1ec679ff00b64",
-  "chainid": 480,
-  "mode": "bytecode-v2-proxy",
-  "bytecode_length_hex_chars": 2810
-}

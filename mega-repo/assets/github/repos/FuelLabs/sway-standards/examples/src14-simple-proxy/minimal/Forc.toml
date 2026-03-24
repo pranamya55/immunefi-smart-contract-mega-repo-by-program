@@ -1,8 +1,0 @@
-[project]
-authors = ["Fuel Labs <contact@fuel.sh>"]
-entry = "minimal.sw"
-license = "Apache-2.0"
-name = "minimal_src14"
-
-[dependencies]
-src14 = { path = "../../../standards/src14" }

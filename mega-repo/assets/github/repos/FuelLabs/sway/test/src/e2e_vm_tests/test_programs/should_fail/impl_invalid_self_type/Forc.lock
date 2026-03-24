@@ -1,3 +1,0 @@
-[[package]]
-name = "impl_invalid_self_type"
-source = "member"

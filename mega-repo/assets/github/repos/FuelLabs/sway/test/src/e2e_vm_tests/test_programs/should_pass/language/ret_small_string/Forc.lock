@@ -1,8 +1,0 @@
-[[package]]
-name = "ret_small_string"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-8040345C04CDD52C"

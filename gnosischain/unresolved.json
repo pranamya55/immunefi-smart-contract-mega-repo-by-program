@@ -1,0 +1,12 @@
+[
+  {
+    "asset_id": "6VGumskpUySCP01OvbYYMn",
+    "url": "https://blockscout.com/xdai/mainnet/address/0x7301CFA0e1756B71869E93d4e4Dca5c7d0eb0AA6",
+    "description": "HomeBridgeErcToNative: DAI-xDAI TokenBridge contract on the Gnosis chain"
+  },
+  {
+    "asset_id": "1TEVjuzA8DmpOMImDZWzs3",
+    "url": "https://blockscout.com/xdai/mainnet/address/0xf6A78083ca3e2a662D6dd1703c939c8aCE2e268d",
+    "description": "HomeOmnibridge: OmniBridge contract on the Gnosis chain"
+  }
+]

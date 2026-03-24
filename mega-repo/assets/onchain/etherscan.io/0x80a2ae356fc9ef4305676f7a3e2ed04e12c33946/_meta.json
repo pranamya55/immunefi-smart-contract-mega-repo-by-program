@@ -1,8 +1,0 @@
-{
-  "url": "https://etherscan.io/address/0x80a2ae356fc9ef4305676f7a3e2ed04e12c33946",
-  "host": "etherscan.io",
-  "address": "0x80a2ae356fc9ef4305676f7a3e2ed04e12c33946",
-  "chainid": 1,
-  "mode": "bytecode-v2-proxy",
-  "bytecode_length_hex_chars": 15648
-}

@@ -1,7 +1,0 @@
-{
-  "url": "https://monadscan.com/address/0x9151434b16b9763660705744891fA906F660EcC5",
-  "host": "monadscan.com",
-  "address": "0x9151434b16b9763660705744891fA906F660EcC5",
-  "mode": "placeholder-onchain",
-  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:unexpected-response"
-}

@@ -1,5 +1,0 @@
-[profile.default]
-ast = true
-solc_version = "0.8.27"
-allow_paths = ["../../"]
-optimizer = true

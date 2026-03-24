@@ -1,7 +1,0 @@
-version: "3"
-
-tasks:
-  generate:
-    desc: "Run bindings generation"
-    cmds:
-      - sh ./scripts/generate_bindings.sh

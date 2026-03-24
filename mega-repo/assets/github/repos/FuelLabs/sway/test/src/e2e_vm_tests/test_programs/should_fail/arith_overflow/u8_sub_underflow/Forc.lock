@@ -1,8 +1,0 @@
-[[package]]
-name = "std"
-source = "path+from-root-7FEE5C5203242351"
-
-[[package]]
-name = "u8_sub_underflow"
-source = "member"
-dependencies = ["std"]

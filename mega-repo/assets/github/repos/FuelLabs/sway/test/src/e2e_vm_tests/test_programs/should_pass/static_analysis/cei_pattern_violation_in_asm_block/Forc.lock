@@ -1,8 +1,0 @@
-[[package]]
-name = "cei_pattern_violation_in_asm_block"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-47C86A4D273AB650"

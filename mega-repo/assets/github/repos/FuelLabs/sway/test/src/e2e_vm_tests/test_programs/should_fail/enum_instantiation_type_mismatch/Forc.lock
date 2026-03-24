@@ -1,8 +1,0 @@
-[[package]]
-name = "enum_instantiation_type_mismatch"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-FE8B7166B51EFCA0"

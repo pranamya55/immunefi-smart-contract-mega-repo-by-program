@@ -1,6 +1,0 @@
-category = "compile"
-
-# check: $()let dead = used;
-# nextln: $()This declaration is never used.
-
-expected_warnings = 1

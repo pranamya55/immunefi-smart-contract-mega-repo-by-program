@@ -1,8 +1,0 @@
-[[package]]
-name = "shadowed_glob_imports"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-CC27AB1D954FF5C9"

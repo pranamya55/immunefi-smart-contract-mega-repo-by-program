@@ -1,8 +1,0 @@
-[[package]]
-name = "out_of_order_decl"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-02BB6BAC50786DCA"

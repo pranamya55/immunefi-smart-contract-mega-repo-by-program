@@ -1,8 +1,0 @@
-[[package]]
-name = "std"
-source = "path+from-root-3D27300F0A8AC1DF"
-
-[[package]]
-name = "visibility"
-source = "member"
-dependencies = ["std"]

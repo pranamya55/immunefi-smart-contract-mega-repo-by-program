@@ -1,8 +1,0 @@
-[[package]]
-name = "return_path_analysis"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-EA042F5351E6BA99"

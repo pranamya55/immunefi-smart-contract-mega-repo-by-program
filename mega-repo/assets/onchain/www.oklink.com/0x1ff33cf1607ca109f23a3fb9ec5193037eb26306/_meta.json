@@ -1,7 +1,0 @@
-{
-  "url": "https://www.oklink.com/fr/fantom/address/0x1ff33cf1607ca109f23a3fb9ec5193037eb26306/contract",
-  "host": "www.oklink.com",
-  "address": "0x1ff33cf1607ca109f23a3fb9ec5193037eb26306",
-  "mode": "placeholder-onchain",
-  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:http 404"
-}

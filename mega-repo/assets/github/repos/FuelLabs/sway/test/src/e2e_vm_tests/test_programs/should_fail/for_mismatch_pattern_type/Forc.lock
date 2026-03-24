@@ -1,8 +1,0 @@
-[[package]]
-name = "for_mismatch_pattern_type"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-ED9C2DBB478FF28E"

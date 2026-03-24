@@ -1,0 +1,177 @@
+[
+  {
+    "asset_id": "N9hfzJ53JpCz0UMptVQzq",
+    "url": "https://optimistic.etherscan.io/address/0x2F248e80901aE9e5b2109524546D68d425Df9543",
+    "description": "AMO"
+  },
+  {
+    "asset_id": "1JTKgDsyVbaPwDF3c8Bpcm",
+    "url": "https://optimistic.etherscan.io/address/0xCEA698Cf2420433E21BeC006F1718216c6198B52",
+    "description": "CrossChainDispatcher"
+  },
+  {
+    "asset_id": "tNUoPNpSsFayV6GK9PtYV",
+    "url": "https://optimistic.etherscan.io/address/0x2f6EF744B1f47F5A4e91213B55C69dAb10c6D535",
+    "description": "DebtToken"
+  },
+  {
+    "asset_id": "7lixnTJ0ZZ1wyLgIZ0P3BE",
+    "url": "https://optimistic.etherscan.io/address/0x850C8d57F6c5FEf42D9A44Df9e99feaa807e4cCc",
+    "description": "DepositToken"
+  },
+  {
+    "asset_id": "3kO90fFcMU6TXu3Vfrcp0k",
+    "url": "https://optimistic.etherscan.io/address/0x95dCFf2bfd19af97267B8c9D516206Dcc87EECDD",
+    "description": "MsETHProxyOFT"
+  },
+  {
+    "asset_id": "6CxFVZOx28irD5nWpvnZ5y",
+    "url": "https://optimistic.etherscan.io/address/0x1610e3c85dd44Af31eD7f33a63642012Dca0C5A5",
+    "description": "MsETHSynthetic"
+  },
+  {
+    "asset_id": "4cS6e9DCgznWmxLiROoVjV",
+    "url": "https://optimistic.etherscan.io/address/0xB55ced4d5F7346a6601EbEbdDC98D0415c94095A",
+    "description": "MsUSDDebt"
+  },
+  {
+    "asset_id": "76dWrmrFUvag3rVvxaaCtD",
+    "url": "https://optimistic.etherscan.io/address/0xc2C433D36d7184192E442a243b351a9e3055FD5f",
+    "description": "MsUSDProxyOFT"
+  },
+  {
+    "asset_id": "7B6hHGcYymSGypKPKaGt59",
+    "url": "https://optimistic.etherscan.io/address/0x9dAbAE7274D28A45F0B65Bf8ED201A5731492ca0",
+    "description": "MsUSDSynthetic"
+  },
+  {
+    "asset_id": "6hTWH3Y1YeH0MPnX0sC4vg",
+    "url": "https://optimistic.etherscan.io/address/0x1E6039574bBf6b1F65650bC50B2Bca8911Fd9b27",
+    "description": "OPDepositToken"
+  },
+  {
+    "asset_id": "7GtkAJpNTfocYJWzozcSZK",
+    "url": "https://optimistic.etherscan.io/address/0xbdF0380E921b4c0d73B9EF86a5b4c08869ACc23D",
+    "description": "Pool"
+  },
+  {
+    "asset_id": "36vDWjEHFbBJyH7YmMMnUG",
+    "url": "https://optimistic.etherscan.io/address/0x696Ee5a8c82e621eCcc4909Ff020950b146351a0",
+    "description": "SmartFarmingManager"
+  },
+  {
+    "asset_id": "7sXfX6AvNmwwV8F7YSbxKY",
+    "url": "https://optimistic.etherscan.io/address/0x22C799230d837958Fc24920f8DA9Bd1254A5538c",
+    "description": "Treasury"
+  },
+  {
+    "asset_id": "7tlSZKyVGsudXZyZLHlM6k",
+    "url": "https://optimistic.etherscan.io/address/0x4C6bF87b7fc1C8Db85877151C6edE38Ed27c34f6",
+    "description": "Treasury"
+  },
+  {
+    "asset_id": "4SBNLjrw7TOXlVfEpia4zc",
+    "url": "https://optimistic.etherscan.io/address/0xd2e32323686de92411639d446396AFA5E6149C28",
+    "description": "USDCDepositToken"
+  },
+  {
+    "asset_id": "7KDkiK221JTyNkcic2cH2F",
+    "url": "https://optimistic.etherscan.io/address/0x293aaC1fef48b2ebf95d0CB3a31A7B219e8Ece9E",
+    "description": "VaWSTETHDepositToken"
+  },
+  {
+    "asset_id": "3jBsFWOTaFF5UzrczTisu7",
+    "url": "https://optimistic.etherscan.io/address/0x5c18f45c4C62B0687425598579B026B90785c28E",
+    "description": "WETHDepositToken"
+  },
+  {
+    "asset_id": "2IgBiZu0ghVd6cJqSCUa5l",
+    "url": "https://basescan.org/address/0xDb9bD9eb1CdD9AE62A2e9569075A5154296CD632",
+    "description": "AMO"
+  },
+  {
+    "asset_id": "4tH2aZUVzYZmGs5eVwTDkn",
+    "url": "https://basescan.org/address/0x94020A4636bcdCA343014988114d755984B44175",
+    "description": "DebtToken"
+  },
+  {
+    "asset_id": "337oVRvlSUHsND5njowG2v",
+    "url": "https://basescan.org/address/0x9bF24739310FB7F79af48ECc38557E2172469EEE",
+    "description": "DepositToken"
+  },
+  {
+    "asset_id": "4Rwk1hXb6dCcvDNsJcmLiY",
+    "url": "https://basescan.org/address/0x98dAC76F26C6b067eB9FC13714b068d787C899DE",
+    "description": "FeeProvider"
+  },
+  {
+    "asset_id": "4bXfBEqSoxR7uKqCyt5J0D",
+    "url": "https://basescan.org/address/0xE1525Aa6D21A172F4e0C4420Ff68C73FD38B0CC6",
+    "description": "FeeProvider"
+  },
+  {
+    "asset_id": "7aIfZABRvVodyekIdBqmZV",
+    "url": "https://basescan.org/address/0x6F622b037F9146bdE102db84FC9152dF1042aa98",
+    "description": "MsETHDebt"
+  },
+  {
+    "asset_id": "5slrxxAHDp20fBaQItFQeG",
+    "url": "https://basescan.org/address/0x7Ba6F01772924a82D9626c126347A28299E98c98",
+    "description": "MsETHSynthetic"
+  },
+  {
+    "asset_id": "2r9nmbe0AvnddG2NayUoGq",
+    "url": "https://basescan.org/address/0x7bcC1DEcCaa98D52Bf89485f17a3E8607011cFde",
+    "description": "MsUSDDebt"
+  },
+  {
+    "asset_id": "4OY7CPxKoWIZ4hfndvcWgl",
+    "url": "https://basescan.org/address/0x526728DBc96689597F85ae4cd716d4f7fCcBAE9d",
+    "description": "MsUSDSynthetic"
+  },
+  {
+    "asset_id": "7cCmu5jJsmnXKhqLQwo6Dm",
+    "url": "https://basescan.org/address/0xBd700f301DC8e644DC074023369fe5Bdf6051b29",
+    "description": "NativeTokenGateway"
+  },
+  {
+    "asset_id": "5j1HpyJtUaRMTBPMHrFnsR",
+    "url": "https://basescan.org/address/0x2144B696bEbA98f077531e96023A7DF821Bc4586",
+    "description": "Pool"
+  },
+  {
+    "asset_id": "2vZvJ7V4vcIlbn9HFWDxjX",
+    "url": "https://basescan.org/address/0xdDd9864C68072a4723889644b5E7075452718deD",
+    "description": "ProxyOFT"
+  },
+  {
+    "asset_id": "1FCTc8ATmqZ2DNrtxUiMQ1",
+    "url": "https://basescan.org/address/0x2f4F85be85245c91779C3e36cBddf87b4eD73E3d",
+    "description": "Quoter"
+  },
+  {
+    "asset_id": "4pcw3qgmiMxFt84e4B9sg8",
+    "url": "https://basescan.org/address/0x0d29f7cD7EC338528F4330C5a7ff6D92aCf5819A",
+    "description": "SmartFarmingManager"
+  },
+  {
+    "asset_id": "1wHLW92jY3TtZXDVfl6mQY",
+    "url": "https://basescan.org/address/0x2f12dfb525564055B4A007B0b15eA5CD0BfF986C",
+    "description": "SmartFarmingManager"
+  },
+  {
+    "asset_id": "7CsyRUg9Xw7zvYPSHRtARB",
+    "url": "https://basescan.org/address/0x1a9e6d0303eC473bCFAc0720b4427045317Fd6d8",
+    "description": "SyntheticToken"
+  },
+  {
+    "asset_id": "6RJP5CzhhT1wC5ewZgOs0J",
+    "url": "https://basescan.org/address/0x934aB2262C6258fafd619Cb63bE7d89B20C19633",
+    "description": "Treasury"
+  },
+  {
+    "asset_id": "1DYFWzHULMK8wUCYniwGWc",
+    "url": "https://basescan.org/address/0xAeDF96597338FE03E8c07a1077A296df5422320e",
+    "description": "Treasury"
+  }
+]

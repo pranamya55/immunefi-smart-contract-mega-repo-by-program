@@ -1,8 +1,0 @@
-[[package]]
-name = "associated_const_impl_local_same_name"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-7DADFC0A2CCF9771"

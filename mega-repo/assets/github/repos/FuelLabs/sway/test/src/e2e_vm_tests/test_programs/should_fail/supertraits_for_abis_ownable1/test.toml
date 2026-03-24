@@ -1,3 +1,0 @@
-category = "fail"
-
-# check: $()Trait "StorageHelpers" is not implemented for type "Contract".

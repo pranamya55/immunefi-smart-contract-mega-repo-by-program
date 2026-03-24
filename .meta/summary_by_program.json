@@ -1,23 +1,30 @@
 {
   "0x": {
-    "manifest_linked": 1,
+    "unresolved": 1,
     "github_repo_linked": 1
   },
   "Aevo": {
-    "manifest_linked": 14
+    "manifest_linked": 11,
+    "onchain_missing": 3,
+    "unresolved": 3
   },
   "AlphaVentureDAO": {
     "github_gist_linked": 5
   },
   "StaderforPolygon": {
-    "manifest_linked": 5
+    "manifest_linked": 2,
+    "unresolved": 3
   },
   "aave": {
-    "github_blob_linked": 79,
-    "manifest_linked": 4
+    "github_blob_linked": 75,
+    "github_blob_missing": 4,
+    "github_repo_linked": 4,
+    "manifest_linked": 3,
+    "unresolved": 1
   },
   "aera": {
-    "manifest_linked": 6
+    "manifest_linked": 5,
+    "unresolved": 1
   },
   "alchemix": {
     "github_repo_linked": 1
@@ -27,20 +34,25 @@
     "github_repo_linked": 1
   },
   "ankr": {
-    "manifest_linked": 12
+    "manifest_linked": 11,
+    "onchain_missing": 1,
+    "unresolved": 1
   },
   "arbitrum": {
-    "github_blob_linked": 179,
-    "github_repo_linked": 2
+    "github_blob_linked": 162,
+    "github_blob_missing": 17,
+    "github_repo_linked": 19
   },
   "arkadiko": {
-    "manifest_linked": 12
+    "unresolved": 12
   },
   "aspida": {
     "manifest_linked": 5
   },
   "aster": {
-    "manifest_linked": 10
+    "onchain_missing": 6,
+    "unresolved": 6,
+    "manifest_linked": 4
   },
   "aurafinance": {
     "manifest_linked": 32
@@ -49,10 +61,14 @@
     "github_repo_linked": 1
   },
   "avalanche": {
-    "manifest_linked": 25
+    "manifest_linked": 15,
+    "onchain_missing": 10,
+    "unresolved": 10
   },
   "axelarnetwork": {
-    "manifest_linked": 15,
+    "manifest_linked": 13,
+    "onchain_missing": 2,
+    "unresolved": 2,
     "github_repo_linked": 3,
     "github_blob_linked": 1
   },
@@ -63,13 +79,17 @@
     "manifest_linked": 20
   },
   "beefyfinance": {
-    "manifest_linked": 243
+    "manifest_linked": 242,
+    "onchain_missing": 1,
+    "unresolved": 1
   },
   "beets": {
     "manifest_linked": 3
   },
   "benqi": {
-    "manifest_linked": 36
+    "onchain_missing": 34,
+    "unresolved": 34,
+    "manifest_linked": 2
   },
   "berachain": {
     "github_repo_linked": 2
@@ -78,39 +98,48 @@
     "manifest_linked": 42
   },
   "bitflow": {
-    "manifest_linked": 10
+    "unresolved": 10
   },
   "bobanetwork": {
     "manifest_linked": 5
   },
   "burrow": {
-    "manifest_linked": 1
+    "unresolved": 1
   },
   "buttonwood": {
     "github_blob_linked": 14
   },
   "capyfi": {
-    "manifest_linked": 10
+    "manifest_linked": 9,
+    "unresolved": 1
   },
   "celer": {
-    "manifest_linked": 14
+    "manifest_linked": 10,
+    "onchain_missing": 4,
+    "unresolved": 4
   },
   "chainlink": {
     "github_repo_linked": 9,
-    "manifest_linked": 1
+    "unresolved": 1
   },
   "compoundfinance": {
     "github_repo_linked": 1,
-    "manifest_linked": 253
+    "manifest_linked": 211,
+    "onchain_missing": 42,
+    "unresolved": 42
   },
   "connext": {
-    "manifest_linked": 64
+    "manifest_linked": 53,
+    "onchain_missing": 11,
+    "unresolved": 11
   },
   "cowprotocol": {
     "github_blob_linked": 19
   },
   "debridge": {
-    "manifest_linked": 90
+    "manifest_linked": 60,
+    "onchain_missing": 30,
+    "unresolved": 30
   },
   "decentraland": {
     "manifest_linked": 43
@@ -122,7 +151,9 @@
     "manifest_linked": 39
   },
   "dexeprotocol": {
-    "manifest_linked": 11
+    "manifest_linked": 4,
+    "onchain_missing": 6,
+    "unresolved": 7
   },
   "dhedge": {
     "manifest_linked": 5
@@ -139,29 +170,38 @@
   },
   "enzyme-onyx": {
     "github_blob_linked": 22,
-    "manifest_linked": 1
+    "unresolved": 1
   },
   "enzymefinance": {
     "manifest_linked": 322,
     "github_repo_linked": 1
   },
   "ern": {
-    "manifest_linked": 5
+    "manifest_linked": 3,
+    "unresolved": 2
   },
   "ethena": {
-    "manifest_linked": 23
+    "manifest_linked": 18,
+    "unresolved": 5
   },
   "etherfi": {
-    "manifest_linked": 58
+    "manifest_linked": 56,
+    "unresolved": 2,
+    "onchain_missing": 1
   },
   "extrafinance": {
-    "manifest_linked": 18
+    "manifest_linked": 5,
+    "onchain_missing": 12,
+    "unresolved": 13
   },
   "fbtc": {
-    "manifest_linked": 36
+    "manifest_linked": 30,
+    "onchain_missing": 6,
+    "unresolved": 6
   },
   "felix": {
-    "manifest_linked": 29
+    "onchain_missing": 29,
+    "unresolved": 29
   },
   "flamingofinance": {
     "github_blob_linked": 1,
@@ -169,16 +209,17 @@
   },
   "flarenetwork": {
     "github_blob_linked": 2,
-    "manifest_linked": 2
+    "unresolved": 2
   },
   "fluxfinance": {
     "manifest_linked": 9
   },
   "folksfinance": {
-    "manifest_linked": 2
+    "unresolved": 2
   },
   "gainsnetwork": {
-    "manifest_linked": 24
+    "manifest_linked": 23,
+    "unresolved": 1
   },
   "galagames": {
     "manifest_linked": 3
@@ -187,45 +228,56 @@
     "manifest_linked": 3
   },
   "gearbox": {
-    "manifest_linked": 3,
-    "github_blob_linked": 1
+    "manifest_linked": 2,
+    "github_blob_linked": 1,
+    "unresolved": 1
   },
   "glodollar": {
     "manifest_linked": 4
   },
   "gmx": {
-    "manifest_linked": 248
+    "manifest_linked": 141,
+    "onchain_missing": 107,
+    "unresolved": 107
   },
   "gnosischain": {
-    "manifest_linked": 4
+    "manifest_linked": 2,
+    "onchain_missing": 2,
+    "unresolved": 2
   },
   "gogopool": {
-    "manifest_linked": 16
+    "onchain_missing": 15,
+    "unresolved": 15,
+    "manifest_linked": 1
   },
   "granite-protocol": {
-    "manifest_linked": 29
+    "unresolved": 29
   },
   "harvest": {
     "github_repo_linked": 4
   },
   "haven1": {
-    "manifest_linked": 14
+    "onchain_missing": 13,
+    "unresolved": 14
   },
   "hermetica": {
-    "manifest_linked": 13
+    "unresolved": 13
   },
   "hyperlane": {
-    "manifest_linked": 220
+    "manifest_linked": 219,
+    "unresolved": 1
   },
   "ichi": {
     "manifest_linked": 4,
     "github_repo_linked": 1
   },
   "immunefi": {
-    "manifest_linked": 3
+    "manifest_linked": 2,
+    "unresolved": 1
   },
   "immutable": {
-    "manifest_linked": 10
+    "manifest_linked": 9,
+    "unresolved": 1
   },
   "impossiblefinance": {
     "github_repo_linked": 1
@@ -247,7 +299,8 @@
     "manifest_linked": 12
   },
   "katana": {
-    "manifest_linked": 19
+    "manifest_linked": 18,
+    "unresolved": 1
   },
   "kelp-dao": {
     "manifest_linked": 10
@@ -256,36 +309,46 @@
     "manifest_linked": 35
   },
   "kiln-defi": {
-    "manifest_linked": 35
+    "manifest_linked": 29,
+    "onchain_missing": 6,
+    "unresolved": 6
   },
   "kiln-on-chain-v1": {
-    "manifest_linked": 14
+    "manifest_linked": 7,
+    "onchain_missing": 7,
+    "unresolved": 7
   },
   "kleidi": {
-    "manifest_linked": 19
+    "manifest_linked": 18,
+    "unresolved": 1
   },
   "layerzero": {
-    "manifest_linked": 18,
+    "manifest_linked": 9,
+    "unresolved": 9,
     "github_blob_linked": 4,
     "github_repo_linked": 3
   },
   "lido": {
-    "manifest_linked": 1,
+    "unresolved": 1,
     "github_repo_linked": 18
   },
   "light-protocol": {
     "github_repo_linked": 2,
-    "manifest_linked": 15
+    "unresolved": 11,
+    "manifest_linked": 4
   },
   "linea": {
     "github_blob_linked": 6,
-    "manifest_linked": 1
+    "unresolved": 1
   },
   "listadao": {
-    "manifest_linked": 134
+    "onchain_missing": 94,
+    "unresolved": 94,
+    "manifest_linked": 40
   },
   "lombard-finance": {
-    "manifest_linked": 4
+    "manifest_linked": 3,
+    "unresolved": 1
   },
   "mETH": {
     "manifest_linked": 10
@@ -297,17 +360,21 @@
     "github_repo_linked": 1
   },
   "metronome": {
-    "manifest_linked": 91
+    "manifest_linked": 56,
+    "onchain_missing": 35,
+    "unresolved": 35
   },
   "mux": {
     "github_repo_linked": 12
   },
   "neutron": {
-    "manifest_linked": 40,
+    "unresolved": 39,
+    "manifest_linked": 1,
     "github_repo_linked": 1
   },
   "notional-exponent": {
-    "manifest_linked": 15
+    "manifest_linked": 14,
+    "unresolved": 1
   },
   "nucleus": {
     "manifest_linked": 31
@@ -316,50 +383,61 @@
     "github_repo_linked": 8
   },
   "olympus": {
-    "manifest_linked": 72
+    "manifest_linked": 71,
+    "onchain_missing": 1,
+    "unresolved": 1
   },
   "ondofinance": {
-    "manifest_linked": 88
+    "manifest_linked": 86,
+    "unresolved": 2
   },
   "optimism": {
-    "manifest_linked": 18
+    "manifest_linked": 17,
+    "unresolved": 1
   },
   "orca": {
     "manifest_linked": 3
   },
   "orderlynetwork": {
     "github_repo_linked": 2,
-    "manifest_linked": 20
+    "manifest_linked": 17,
+    "onchain_missing": 3,
+    "unresolved": 3
   },
   "originprotocol": {
-    "manifest_linked": 32
+    "manifest_linked": 31,
+    "unresolved": 1
   },
   "pancakeswap": {
     "github_repo_linked": 5
   },
   "paradex": {
-    "manifest_linked": 5
+    "unresolved": 5
   },
   "parallel": {
     "manifest_linked": 171
   },
   "pareto": {
-    "manifest_linked": 2
+    "unresolved": 2
   },
   "polygon": {
-    "manifest_linked": 6
+    "manifest_linked": 4,
+    "unresolved": 2
   },
   "polymarket": {
-    "manifest_linked": 13
+    "manifest_linked": 12,
+    "unresolved": 1
   },
   "pragmaoracle": {
-    "manifest_linked": 4
+    "unresolved": 4
   },
   "pythnetwork": {
     "github_repo_linked": 14
   },
   "raydium": {
-    "github_blob_linked": 74
+    "github_blob_linked": 73,
+    "github_blob_missing": 1,
+    "github_repo_linked": 1
   },
   "reffinance": {
     "github_blob_linked": 38
@@ -368,75 +446,99 @@
     "manifest_linked": 8
   },
   "reserve": {
-    "github_blob_linked": 105
+    "github_blob_linked": 101,
+    "github_blob_missing": 4,
+    "github_repo_linked": 4
   },
   "resolv": {
-    "manifest_linked": 54
+    "manifest_linked": 51,
+    "onchain_missing": 2,
+    "unresolved": 3
   },
   "resonate": {
-    "manifest_linked": 24,
-    "github_blob_linked": 1
+    "manifest_linked": 17,
+    "github_blob_linked": 1,
+    "onchain_missing": 7,
+    "unresolved": 7
   },
   "revest": {
-    "manifest_linked": 14
+    "manifest_linked": 13,
+    "onchain_missing": 1,
+    "unresolved": 1
   },
   "rhinofi": {
-    "manifest_linked": 9
+    "onchain_missing": 3,
+    "unresolved": 3,
+    "manifest_linked": 6
   },
   "rocketpool": {
     "github_blob_linked": 77
   },
   "rootstocklabs": {
-    "manifest_linked": 5
+    "manifest_linked": 4,
+    "unresolved": 1
   },
   "royco": {
-    "manifest_linked": 8
+    "unresolved": 1,
+    "manifest_linked": 7
   },
   "scroll": {
-    "manifest_linked": 34
+    "manifest_linked": 33,
+    "unresolved": 1
   },
   "segmentfinance": {
     "github_repo_linked": 1,
-    "manifest_linked": 10
+    "manifest_linked": 2,
+    "onchain_missing": 8,
+    "unresolved": 8
   },
   "sherlock": {
     "manifest_linked": 15
   },
   "silofinance-v2": {
-    "manifest_linked": 11
+    "manifest_linked": 10,
+    "unresolved": 1
   },
   "sky": {
-    "github_blob_linked": 204,
-    "github_repo_linked": 8
+    "github_blob_linked": 201,
+    "github_blob_missing": 3,
+    "github_repo_linked": 11
   },
   "sparklend": {
-    "manifest_linked": 325,
-    "github_blob_linked": 20
+    "manifest_linked": 324,
+    "github_blob_linked": 19,
+    "unresolved": 1,
+    "github_blob_missing": 1,
+    "github_repo_linked": 1
   },
   "ssvnetwork": {
-    "manifest_linked": 3
+    "manifest_linked": 2,
+    "unresolved": 1
   },
   "stackingdao": {
-    "manifest_linked": 23
+    "unresolved": 23
   },
   "stacks": {
     "github_repo_linked": 1,
     "github_blob_linked": 3
   },
   "staderforeth": {
-    "manifest_linked": 22
+    "manifest_linked": 21,
+    "unresolved": 1
   },
   "stakelink": {
     "manifest_linked": 14
   },
   "stakestone": {
-    "manifest_linked": 9
+    "manifest_linked": 8,
+    "unresolved": 1
   },
   "stakewise": {
     "manifest_linked": 14
   },
   "stargate": {
-    "manifest_linked": 15
+    "manifest_linked": 14,
+    "unresolved": 1
   },
   "starkex": {
     "manifest_linked": 24
@@ -452,36 +554,44 @@
     "manifest_linked": 9
   },
   "sushiswap": {
-    "manifest_linked": 3
+    "unresolved": 3
   },
   "sweateconomy": {
     "github_repo_linked": 3
   },
   "swell": {
-    "manifest_linked": 29
+    "manifest_linked": 28,
+    "onchain_missing": 1,
+    "unresolved": 1
   },
   "symbiosis": {
-    "manifest_linked": 8
+    "manifest_linked": 6,
+    "onchain_missing": 2,
+    "unresolved": 2
   },
   "synthetix": {
     "github_blob_linked": 10
   },
   "templar-protocol": {
-    "manifest_linked": 2
+    "unresolved": 2
   },
   "termstructurelabs": {
     "github_repo_linked": 2,
-    "manifest_linked": 1
+    "unresolved": 1
   },
   "thesandbox": {
-    "manifest_linked": 27
+    "manifest_linked": 26,
+    "onchain_missing": 1,
+    "unresolved": 1
   },
   "thresholdnetwork": {
-    "manifest_linked": 49,
+    "manifest_linked": 43,
+    "unresolved": 6,
     "github_repo_linked": 2
   },
   "twyne": {
-    "manifest_linked": 13
+    "manifest_linked": 12,
+    "unresolved": 1
   },
   "usdn": {
     "manifest_linked": 9
@@ -491,67 +601,84 @@
   },
   "usx": {
     "github_repo_linked": 1,
-    "manifest_linked": 5
+    "manifest_linked": 4,
+    "unresolved": 1
   },
   "utix": {
     "manifest_linked": 1
   },
   "variational": {
-    "manifest_linked": 4
+    "manifest_linked": 3,
+    "unresolved": 1
   },
   "veda": {
     "manifest_linked": 16
   },
   "velodromefinance": {
-    "manifest_linked": 54
+    "manifest_linked": 26,
+    "onchain_missing": 27,
+    "unresolved": 28
   },
   "velvetcapital": {
-    "manifest_linked": 31
+    "manifest_linked": 30,
+    "unresolved": 1
   },
   "vesper": {
-    "manifest_linked": 17
+    "manifest_linked": 12,
+    "onchain_missing": 5,
+    "unresolved": 5
   },
   "vesu": {
     "github_blob_linked": 26
   },
   "wepiggy": {
-    "manifest_linked": 193,
+    "manifest_linked": 115,
+    "onchain_missing": 78,
+    "unresolved": 78,
     "github_blob_linked": 14
   },
   "woofi": {
-    "manifest_linked": 173
+    "manifest_linked": 98,
+    "onchain_missing": 75,
+    "unresolved": 75
   },
   "wormhole": {
-    "manifest_linked": 1,
+    "unresolved": 1,
     "github_repo_linked": 10
   },
   "xion": {
     "github_repo_linked": 1,
-    "manifest_linked": 1
+    "unresolved": 1
   },
   "xoxno": {
     "github_repo_linked": 4
   },
   "xterio": {
-    "manifest_linked": 15
+    "manifest_linked": 9,
+    "onchain_missing": 5,
+    "unresolved": 6
   },
   "yearnfinance": {
     "manifest_linked": 40
   },
   "yelay": {
-    "manifest_linked": 40
+    "manifest_linked": 33,
+    "onchain_missing": 5,
+    "unresolved": 7
   },
   "zest-protocol-v2": {
-    "manifest_linked": 18
+    "unresolved": 18
   },
   "zestprotocol": {
-    "manifest_linked": 24
+    "unresolved": 24
   },
   "zksync": {
     "github_blob_linked": 8
   },
   "zksyncera": {
-    "manifest_linked": 64,
-    "github_blob_linked": 2
+    "manifest_linked": 59,
+    "github_blob_linked": 2,
+    "unresolved": 5,
+    "onchain_missing": 4
   }
 }

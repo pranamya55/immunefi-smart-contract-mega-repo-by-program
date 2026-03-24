@@ -1,8 +1,0 @@
-[[package]]
-name = "std"
-source = "path+from-root-68564698A1CBA050"
-
-[[package]]
-name = "struct_field_privacy_storage"
-source = "member"
-dependencies = ["std"]

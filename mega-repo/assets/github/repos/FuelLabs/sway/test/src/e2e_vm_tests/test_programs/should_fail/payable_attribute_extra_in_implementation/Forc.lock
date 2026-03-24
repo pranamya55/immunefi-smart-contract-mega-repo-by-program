@@ -1,8 +1,0 @@
-[[package]]
-name = "payable_attribute_extra_in_implementation"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-3E84FDD77FAF620A"

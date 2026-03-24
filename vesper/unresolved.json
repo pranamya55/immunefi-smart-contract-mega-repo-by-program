@@ -1,0 +1,27 @@
+[
+  {
+    "asset_id": "7iEjed5mSQa7JFMLBUtc7V",
+    "url": "https://optimistic.etherscan.io/address/0xdd63ae655b388Cd782681b7821Be37fdB6d0E78d",
+    "description": "Optimism wSTETH"
+  },
+  {
+    "asset_id": "bOnsOkGEqXe0r8SyRP7MZ",
+    "url": "https://optimistic.etherscan.io/address/0x539505Dde2B9771dEBE0898a84441c5E7fDF6BC0",
+    "description": "Optimism USDC"
+  },
+  {
+    "asset_id": "4eE18NIapBzj6QXAVnUrO5",
+    "url": "https://optimistic.etherscan.io/address/0x19382707d5a47E74f60053b652Ab34b6e30Febad",
+    "description": "Optimism OP"
+  },
+  {
+    "asset_id": "5kwrBOAVmIacqoIq4G6BmN",
+    "url": "https://basescan.org//address/0x82562507429876486B60AF4F32390ef0947b3d13",
+    "description": "Base ETH"
+  },
+  {
+    "asset_id": "JJDQTyKsmNRmmi3hgf9u7",
+    "url": "https://basescan.org//address/0x46fb68Eb2b1Fc43654AbaE5691D39D18D933E4b4",
+    "description": "Base wstETH"
+  }
+]

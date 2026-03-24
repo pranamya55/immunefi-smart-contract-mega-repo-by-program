@@ -1,8 +1,0 @@
-[[package]]
-name = "std"
-source = "path+from-root-F4B09A090030990E"
-
-[[package]]
-name = "trait_import_with_star"
-source = "member"
-dependencies = ["std"]

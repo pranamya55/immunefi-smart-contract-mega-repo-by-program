@@ -1,0 +1,47 @@
+[
+  {
+    "asset_id": "7hELKX2uQQzAMjvmsbie4T",
+    "url": "https://aptoscan.com/account/0x54ad3d30af77b60d939ae356e6606de9a4da67583f02b962d2d3f2e481484e90",
+    "description": "Endpoint (Aptos)"
+  },
+  {
+    "asset_id": "4dhDu7eD44fZOPAUuiJT8B",
+    "url": "https://explorer.solana.com/address/6doghB248px58JSSwG4qejQ46kFMW4AMj7vzJnWZHNZn",
+    "description": "SendULN302 (Solana)"
+  },
+  {
+    "asset_id": "5wKvMXcRSj44t16OphKoPB",
+    "url": "https://explorer.solana.com/address/7a4WjyR8VZ7yZz5XJAKm39BUGn5iT9CKcv2pmG9tdXVH",
+    "description": "ReceiveULN302 (Solana)"
+  },
+  {
+    "asset_id": "3lZ2f8YqtQwEe5ds0xRQVu",
+    "url": "https://explorer.solana.com/address/76y77prsiCMvXMjuoZ5VRrhG5qYBrUMYTE5WgHqgjEn6",
+    "description": "EndpointV2 (Solana)"
+  },
+  {
+    "asset_id": "MFubTqaCBhTMChd0CGl4l",
+    "url": "https://explorer.solana.com/address/4VDjp6XQaxoZf5RGwiPU9NR1EXSZn2TP4ATMmiSzLfhb",
+    "description": "DVN (Solana)"
+  },
+  {
+    "asset_id": "2vw89vfXrWz6hlzx22YokT",
+    "url": "https://tonviewer.com/0:1eb2bbea3d8c0d42ff7fd60f0264c866c934bbff727526ca759e7374cae0c166",
+    "description": "Controller (TON)"
+  },
+  {
+    "asset_id": "4efqenGLEmbiVxNEVM0xXC",
+    "url": "https://tonviewer.com/0:150645746e25be5486eb3b2f5d98b44c6b324697c48d495d059f96fc9d3ec368",
+    "description": "ULNManager (TON)"
+  },
+  {
+    "asset_id": "4KLM0tcNJ1RN2voy642jCE",
+    "url": "https://tonviewer.com/0:0d122dec4ec8bd66c68344faf0dd471d727a7d57a21b62051705bbe2e4c272a7",
+    "description": "DVNProxy (TON)"
+  },
+  {
+    "asset_id": "6dHbnS8CIh77iim2v7SzrO",
+    "url": "https://immunefi.com",
+    "description": "Primacy of Impact"
+  }
+]

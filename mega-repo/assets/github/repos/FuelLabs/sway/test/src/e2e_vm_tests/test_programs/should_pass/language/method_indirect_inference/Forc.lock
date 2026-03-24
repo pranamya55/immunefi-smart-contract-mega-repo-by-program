@@ -1,8 +1,0 @@
-[[package]]
-name = "method_indirect_inference"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-8A4F7B6E8B2D2456"

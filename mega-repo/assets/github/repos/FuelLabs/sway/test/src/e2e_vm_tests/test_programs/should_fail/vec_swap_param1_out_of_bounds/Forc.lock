@@ -1,8 +1,0 @@
-[[package]]
-name = "std"
-source = "path+from-root-F443649679DC6856"
-
-[[package]]
-name = "vec_swap_param1_out_of_bounds"
-source = "member"
-dependencies = ["std"]

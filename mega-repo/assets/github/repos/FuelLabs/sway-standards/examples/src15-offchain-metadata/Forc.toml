@@ -1,2 +1,0 @@
-[workspace]
-members = ["single_asset", "multi_asset", "global"]

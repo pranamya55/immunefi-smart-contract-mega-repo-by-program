@@ -1,8 +1,0 @@
-[[package]]
-name = "multiple_fns_same_name"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-C9DD79609E6C93BA"

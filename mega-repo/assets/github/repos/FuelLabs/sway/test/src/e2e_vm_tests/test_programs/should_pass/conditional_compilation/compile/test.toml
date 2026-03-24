@@ -1,3 +1,0 @@
-category = "compile"
-supported_targets = ["evm"]
-expected_warnings = 6

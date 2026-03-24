@@ -1,0 +1,27 @@
+[
+  {
+    "asset_id": "3xonwpwfPiqt9YDPYHMw2A",
+    "url": "https://voyager.prod.paradex.trade/contract/0x03ca9388f8d4e04adecbd7b06b9b24a33030a593522248a7bddd87afc0b61a0c",
+    "description": "Paraclear Contract"
+  },
+  {
+    "asset_id": "460VivMwY0dyDDGTyJjxDe",
+    "url": "https://voyager.prod.paradex.trade/contract/0x0662d75749ee4b4afa63f891308cb0bae63ce10999d1c332d92b53eb9ac0a0d3",
+    "description": "Oracle Contract"
+  },
+  {
+    "asset_id": "Y0Y0nPg0jxznlS1MNq1s4",
+    "url": "https://voyager.prod.paradex.trade/contract/0x0355b9f48262d37607098294a37aea883cf34cb81458039e8c0d0871a4f4e4e8",
+    "description": "Registry Contract"
+  },
+  {
+    "asset_id": "vKQMiNUwPGAU8sxPaUrH6",
+    "url": "https://voyager.prod.paradex.trade/contract/0x071408d2903ac0876602f105a198c17028519d7f48f318adb94a0650c686dfc3",
+    "description": "Vault Factory Contract"
+  },
+  {
+    "asset_id": "98735",
+    "url": "https://immunefi.com/",
+    "description": "Primacy of Impact"
+  }
+]

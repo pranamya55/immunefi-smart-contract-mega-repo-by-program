@@ -1,8 +1,0 @@
-[[package]]
-name = "predicate_multi_test"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-FEF54F47A769A309"

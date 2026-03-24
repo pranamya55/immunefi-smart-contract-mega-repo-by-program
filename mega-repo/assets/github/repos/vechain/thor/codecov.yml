@@ -1,4 +1,0 @@
-ignore:
-  - "builtin/gen/bindata.go"
-  - "tracers/**/gen_*.go"
-  - "test/**"

@@ -1,8 +1,0 @@
-[[package]]
-name = "resolve_local_items_that_shadow_imports"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-8AA4CB15A1A05A28"

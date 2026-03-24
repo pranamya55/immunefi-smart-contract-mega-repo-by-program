@@ -19,9 +19,12 @@
     "now_date_utc": "2026-03-24"
   },
   "totals": {
-    "manifest_linked": 4874,
-    "github_repo_linked": 153,
+    "unresolved": 980,
+    "github_repo_linked": 183,
+    "manifest_linked": 3894,
+    "onchain_missing": 705,
     "github_gist_linked": 5,
-    "github_blob_linked": 936
+    "github_blob_linked": 906,
+    "github_blob_missing": 30
   }
 }

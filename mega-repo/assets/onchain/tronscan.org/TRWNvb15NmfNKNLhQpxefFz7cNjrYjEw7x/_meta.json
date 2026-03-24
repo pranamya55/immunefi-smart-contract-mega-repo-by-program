@@ -1,8 +1,0 @@
-{
-  "url_host": "tronscan.org",
-  "address": "TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x",
-  "chain_kind": "tron",
-  "mode": "tronscan-contract-detail",
-  "verified_status": 2,
-  "name": "Timelock"
-}

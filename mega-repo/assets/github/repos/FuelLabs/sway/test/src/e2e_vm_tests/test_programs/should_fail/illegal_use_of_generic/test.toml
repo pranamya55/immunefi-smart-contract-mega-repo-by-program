@@ -1,9 +1,0 @@
-category = "fail"
-
-# check: $()Associated function or method is not found
-# check: $()T::new(); // 1.
-# nextln: $()"new()" is not found for type "T".
-
-# check: $()Associated function or method is not found
-# check: $()T::new(); // 2.
-# nextln: $()"new()" is not found for type "T".

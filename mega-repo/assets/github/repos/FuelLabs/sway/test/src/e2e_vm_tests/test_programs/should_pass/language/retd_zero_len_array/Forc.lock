@@ -1,8 +1,0 @@
-[[package]]
-name = "retd_zero_len_array"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-50944FCCF39703ED"

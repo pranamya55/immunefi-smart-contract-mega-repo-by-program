@@ -1,0 +1,37 @@
+[
+  {
+    "asset_id": "64U96dqwUHfTVGAJPmyPN0",
+    "url": "https://basescan.org/address/0xa1A32FC1573B8D0532845c833cF4e8eA205345f1",
+    "description": "Yelay V3 Aave Adapter"
+  },
+  {
+    "asset_id": "QhevoRrfcH9Ufj8Wke9Du",
+    "url": "https://basescan.org/address/0x94cec01bCed84022c91Cd5bf4f424A5CC781deE3",
+    "description": "Yelay V3 Clients Facet"
+  },
+  {
+    "asset_id": "3II18flUEyjpMzvrgJX8V8",
+    "url": "https://basescan.org/address/0x56A0B723939dFB43A4D4a86822A023dFeA87cad3",
+    "description": "Yelay V3 Funds Facet"
+  },
+  {
+    "asset_id": "7iV2DM2eitGTpCYr5jVQ7D",
+    "url": "https://basescan.org/address/0x5982506084271f49c48E809dB1893312D4915490",
+    "description": "Yelay V3 Access Facet"
+  },
+  {
+    "asset_id": "57CHWyuZNFWbtQOcsaHweR",
+    "url": "https://basescan.org/address/0xf0533A9eb11b144aC3B9BbE134728D0F7F547c52",
+    "description": "Yelay V3 WETH Vault"
+  },
+  {
+    "asset_id": "76X9hnuIEhhnRWFkftkA4Y",
+    "url": "https://basescan.org/address/0x7Cdd48a57AD24BcE6195234B153b0b8a0ee3974",
+    "description": "Yelay V3 Morpho Adapter"
+  },
+  {
+    "asset_id": "18o05f4jKMde9bINLlhLMM",
+    "url": "https://www.immunefi.com",
+    "description": "Primacy of Impact"
+  }
+]

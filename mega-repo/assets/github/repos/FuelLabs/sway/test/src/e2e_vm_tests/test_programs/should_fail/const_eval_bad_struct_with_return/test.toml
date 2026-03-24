@@ -1,4 +1,0 @@
-category = "fail"
-
-# check: $()const B
-# check: $()Could not evaluate initializer to a const declaration.

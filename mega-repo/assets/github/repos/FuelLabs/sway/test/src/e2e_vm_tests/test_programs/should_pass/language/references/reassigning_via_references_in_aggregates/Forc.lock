@@ -1,8 +1,0 @@
-[[package]]
-name = "reassigning_via_references_in_aggregates"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-05D2D390AACBA529"

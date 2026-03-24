@@ -1,8 +1,0 @@
-[[package]]
-name = "generic_type_inference"
-source = "member"
-dependencies = ["std"]
-
-[[package]]
-name = "std"
-source = "path+from-root-846924BE01AC096F"
