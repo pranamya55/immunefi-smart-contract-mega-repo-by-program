@@ -1,0 +1,1052 @@
+{
+  "contractName": "ISupporters",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "distribute",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "isReadyToDistribute",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "mocToken",
+      "outputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "period",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalMoc",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalToken",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"distribute\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"isReadyToDistribute\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"mocToken\",\"outputs\":[{\"internalType\":\"contract IERC20\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"period\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalMoc\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalToken\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"distribute()\":{\"details\":\"Earnings will be credited periodically through several blocks.\"},\"isReadyToDistribute()\":{\"returns\":{\"_0\":\"true if ready\"}},\"period()\":{\"details\":\"During each round rewards are collected and distributed during next round.\",\"returns\":{\"_0\":\"Number of blocks to distribute earnings\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"distribute()\":{\"notice\":\"Deposit earnings that will be credited to supporters.\"},\"isReadyToDistribute()\":{\"notice\":\"Return true if is ready to do a distribute call\"},\"mocToken()\":{\"notice\":\"The moc token address\"},\"period()\":{\"notice\":\"Return the round length in blocks .\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/jbokser/work2/OMoC-SC-Shared/contracts/ISupporters.sol\":\"ISupporters\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/jbokser/work2/OMoC-SC-Shared/contracts/ISupporters.sol\":{\"keccak256\":\"0x1382bcdbe877a6bf1227b0d9406d0315969cce1b5965ceeaeae4934fe4c44d90\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://6500589cef9b6d2f94b3fccb44a550697672ffb719374bd6b60503a8539a3879\",\"dweb:/ipfs/QmQ1DHJuX91TVDzQjpQMBCEko8zknzVVFGLJAoVtFqB14S\"]},\"@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x6cc1cb934a3ac2137a7dcaed018af9e235392236ceecfd3687259702b9c767ad\",\"urls\":[\"bzz-raw://0055fa88138cd1c3c6440370f8580f85857f8fe9dec41c99af9eafbeb8d9c3ce\",\"dweb:/ipfs/QmX1xDh8vwGLLCH8ti45eXjQ7Wcxv1FEGTR3jkFnd5Nv6F\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: UNLICENSED\npragma solidity ^0.6.0;\n\nimport {IERC20} from \"@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/IERC20.sol\";\n\n/*\n    Basic public interface for the supporters smart contract.\n    The facade for this contract is the StakingMachine, this interface is specifically for the scheduler\n    that needs to call distribute() to distribute the rewards.\n*/\ninterface ISupporters {\n    /**\n      @notice Deposit earnings that will be credited to supporters.\n      @dev Earnings will be credited periodically through several blocks.\n    */\n    function distribute() external;\n\n    /**\n      @notice Return true if is ready to do a distribute call\n\n      @return true if ready\n    */\n    function isReadyToDistribute() external view returns (bool);\n\n    /// @notice The moc token address\n    function mocToken() external view returns (IERC20);\n\n    /**\n     @notice Return the round length in blocks .\n     @dev During each round rewards are collected and distributed during next round.\n\n     @return Number of blocks to distribute earnings\n    */\n    function period() external view returns (uint256);\n\n    // @notice total amount of mocs inside the supporters contract\n    function totalMoc() external view returns (uint256);\n\n    // @notice total amount of tokens inside the supporters contect.\n    function totalToken() external view returns (uint256);\n}\n",
+  "sourcePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/ISupporters.sol",
+  "ast": {
+    "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/ISupporters.sol",
+    "exportedSymbols": {
+      "ISupporters": [
+        2130
+      ]
+    },
+    "id": 2131,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2095,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:23:12"
+      },
+      {
+        "absolutePath": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/IERC20.sol",
+        "file": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/IERC20.sol",
+        "id": 2097,
+        "nodeType": "ImportDirective",
+        "scope": 2131,
+        "sourceUnit": 6353,
+        "src": "64:97:12",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "argumentTypes": null,
+              "id": 2096,
+              "name": "IERC20",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": null,
+              "src": "72:6:12",
+              "typeDescriptions": {
+                "typeIdentifier": null,
+                "typeString": null
+              }
+            },
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 2130,
+        "linearizedBaseContracts": [
+          2130
+        ],
+        "name": "ISupporters",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": {
+              "id": 2098,
+              "nodeType": "StructuredDocumentation",
+              "src": "427:152:12",
+              "text": "@notice Deposit earnings that will be credited to supporters.\n@dev Earnings will be credited periodically through several blocks."
+            },
+            "functionSelector": "e4fc6b6d",
+            "id": 2101,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "distribute",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2099,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "603:2:12"
+            },
+            "returnParameters": {
+              "id": 2100,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "614:0:12"
+            },
+            "scope": 2130,
+            "src": "584:31:12",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2102,
+              "nodeType": "StructuredDocumentation",
+              "src": "621:101:12",
+              "text": "@notice Return true if is ready to do a distribute call\n@return true if ready"
+            },
+            "functionSelector": "0480a2e4",
+            "id": 2107,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isReadyToDistribute",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2103,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "755:2:12"
+            },
+            "returnParameters": {
+              "id": 2106,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2105,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2107,
+                  "src": "781:4:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 2104,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "781:4:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "780:6:12"
+            },
+            "scope": 2130,
+            "src": "727:60:12",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2108,
+              "nodeType": "StructuredDocumentation",
+              "src": "793:33:12",
+              "text": "@notice The moc token address"
+            },
+            "functionSelector": "72015d1a",
+            "id": 2113,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mocToken",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2109,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "848:2:12"
+            },
+            "returnParameters": {
+              "id": 2112,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2111,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2113,
+                  "src": "874:6:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IERC20_$6352",
+                    "typeString": "contract IERC20"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 2110,
+                    "name": "IERC20",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 6352,
+                    "src": "874:6:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IERC20_$6352",
+                      "typeString": "contract IERC20"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "873:8:12"
+            },
+            "scope": 2130,
+            "src": "831:51:12",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2114,
+              "nodeType": "StructuredDocumentation",
+              "src": "888:198:12",
+              "text": "@notice Return the round length in blocks .\n@dev During each round rewards are collected and distributed during next round.\n@return Number of blocks to distribute earnings"
+            },
+            "functionSelector": "ef78d4fd",
+            "id": 2119,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "period",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2115,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1106:2:12"
+            },
+            "returnParameters": {
+              "id": 2118,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2117,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2119,
+                  "src": "1132:7:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2116,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1132:7:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1131:9:12"
+            },
+            "scope": 2130,
+            "src": "1091:50:12",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "2ff2ae53",
+            "id": 2124,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "totalMoc",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2120,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1231:2:12"
+            },
+            "returnParameters": {
+              "id": 2123,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2122,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2124,
+                  "src": "1257:7:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2121,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1257:7:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1256:9:12"
+            },
+            "scope": 2130,
+            "src": "1214:52:12",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "626be567",
+            "id": 2129,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "totalToken",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2125,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1360:2:12"
+            },
+            "returnParameters": {
+              "id": 2128,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2127,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2129,
+                  "src": "1386:7:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2126,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1386:7:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1385:9:12"
+            },
+            "scope": 2130,
+            "src": "1341:54:12",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2131,
+        "src": "399:998:12"
+      }
+    ],
+    "src": "39:1359:12"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/ISupporters.sol",
+      "exportedSymbols": {
+        "ISupporters": [
+          2130
+        ]
+      },
+      "license": "UNLICENSED"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.6",
+            ".0"
+          ]
+        },
+        "id": 2095,
+        "name": "PragmaDirective",
+        "src": "39:23:12"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 6353,
+          "absolutePath": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/IERC20.sol",
+          "file": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/IERC20.sol",
+          "scope": 2131,
+          "symbolAliases": [
+            {
+              "foreign": {
+                "attributes": {
+                  "argumentTypes": null,
+                  "overloadedDeclarations": [
+                    null
+                  ],
+                  "referencedDeclaration": null,
+                  "type": null,
+                  "value": "IERC20"
+                },
+                "id": 2096,
+                "name": "Identifier",
+                "src": "72:6:12"
+              },
+              "local": null
+            }
+          ],
+          "unitAlias": ""
+        },
+        "id": 2097,
+        "name": "ImportDirective",
+        "src": "64:97:12"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            2130
+          ],
+          "name": "ISupporters",
+          "scope": 2131
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "e4fc6b6d",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "distribute",
+              "overrides": null,
+              "scope": 2130,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Deposit earnings that will be credited to supporters.\n@dev Earnings will be credited periodically through several blocks."
+                },
+                "id": 2098,
+                "name": "StructuredDocumentation",
+                "src": "427:152:12"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2099,
+                "name": "ParameterList",
+                "src": "603:2:12"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2100,
+                "name": "ParameterList",
+                "src": "614:0:12"
+              }
+            ],
+            "id": 2101,
+            "name": "FunctionDefinition",
+            "src": "584:31:12"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "0480a2e4",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "isReadyToDistribute",
+              "overrides": null,
+              "scope": 2130,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Return true if is ready to do a distribute call\n@return true if ready"
+                },
+                "id": 2102,
+                "name": "StructuredDocumentation",
+                "src": "621:101:12"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2103,
+                "name": "ParameterList",
+                "src": "755:2:12"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2107,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 2104,
+                        "name": "ElementaryTypeName",
+                        "src": "781:4:12"
+                      }
+                    ],
+                    "id": 2105,
+                    "name": "VariableDeclaration",
+                    "src": "781:4:12"
+                  }
+                ],
+                "id": 2106,
+                "name": "ParameterList",
+                "src": "780:6:12"
+              }
+            ],
+            "id": 2107,
+            "name": "FunctionDefinition",
+            "src": "727:60:12"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "72015d1a",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "mocToken",
+              "overrides": null,
+              "scope": 2130,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice The moc token address"
+                },
+                "id": 2108,
+                "name": "StructuredDocumentation",
+                "src": "793:33:12"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2109,
+                "name": "ParameterList",
+                "src": "848:2:12"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2113,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IERC20",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IERC20",
+                          "referencedDeclaration": 6352,
+                          "type": "contract IERC20"
+                        },
+                        "id": 2110,
+                        "name": "UserDefinedTypeName",
+                        "src": "874:6:12"
+                      }
+                    ],
+                    "id": 2111,
+                    "name": "VariableDeclaration",
+                    "src": "874:6:12"
+                  }
+                ],
+                "id": 2112,
+                "name": "ParameterList",
+                "src": "873:8:12"
+              }
+            ],
+            "id": 2113,
+            "name": "FunctionDefinition",
+            "src": "831:51:12"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "ef78d4fd",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "period",
+              "overrides": null,
+              "scope": 2130,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Return the round length in blocks .\n@dev During each round rewards are collected and distributed during next round.\n@return Number of blocks to distribute earnings"
+                },
+                "id": 2114,
+                "name": "StructuredDocumentation",
+                "src": "888:198:12"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2115,
+                "name": "ParameterList",
+                "src": "1106:2:12"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2119,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2116,
+                        "name": "ElementaryTypeName",
+                        "src": "1132:7:12"
+                      }
+                    ],
+                    "id": 2117,
+                    "name": "VariableDeclaration",
+                    "src": "1132:7:12"
+                  }
+                ],
+                "id": 2118,
+                "name": "ParameterList",
+                "src": "1131:9:12"
+              }
+            ],
+            "id": 2119,
+            "name": "FunctionDefinition",
+            "src": "1091:50:12"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "2ff2ae53",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "totalMoc",
+              "overrides": null,
+              "scope": 2130,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2120,
+                "name": "ParameterList",
+                "src": "1231:2:12"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2124,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2121,
+                        "name": "ElementaryTypeName",
+                        "src": "1257:7:12"
+                      }
+                    ],
+                    "id": 2122,
+                    "name": "VariableDeclaration",
+                    "src": "1257:7:12"
+                  }
+                ],
+                "id": 2123,
+                "name": "ParameterList",
+                "src": "1256:9:12"
+              }
+            ],
+            "id": 2124,
+            "name": "FunctionDefinition",
+            "src": "1214:52:12"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "626be567",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "totalToken",
+              "overrides": null,
+              "scope": 2130,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2125,
+                "name": "ParameterList",
+                "src": "1360:2:12"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2129,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2126,
+                        "name": "ElementaryTypeName",
+                        "src": "1386:7:12"
+                      }
+                    ],
+                    "id": 2127,
+                    "name": "VariableDeclaration",
+                    "src": "1386:7:12"
+                  }
+                ],
+                "id": 2128,
+                "name": "ParameterList",
+                "src": "1385:9:12"
+              }
+            ],
+            "id": 2129,
+            "name": "FunctionDefinition",
+            "src": "1341:54:12"
+          }
+        ],
+        "id": 2130,
+        "name": "ContractDefinition",
+        "src": "399:998:12"
+      }
+    ],
+    "id": 2131,
+    "name": "SourceUnit",
+    "src": "39:1359:12"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-02-04T20:51:03.356Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "distribute()": {
+        "details": "Earnings will be credited periodically through several blocks."
+      },
+      "isReadyToDistribute()": {
+        "returns": {
+          "_0": "true if ready"
+        }
+      },
+      "period()": {
+        "details": "During each round rewards are collected and distributed during next round.",
+        "returns": {
+          "_0": "Number of blocks to distribute earnings"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "distribute()": {
+        "notice": "Deposit earnings that will be credited to supporters."
+      },
+      "isReadyToDistribute()": {
+        "notice": "Return true if is ready to do a distribute call"
+      },
+      "mocToken()": {
+        "notice": "The moc token address"
+      },
+      "period()": {
+        "notice": "Return the round length in blocks ."
+      }
+    },
+    "version": 1
+  }
+}

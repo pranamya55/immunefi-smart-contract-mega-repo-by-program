@@ -1,0 +1,25 @@
+{
+  "url": "https://unichain.blockscout.com/address/0x9B1BEB11CFE05117029a30eb799B6586125321FF",
+  "host": "unichain.blockscout.com",
+  "address": "0x9B1BEB11CFE05117029a30eb799B6586125321FF",
+  "chainid": null,
+  "project_slug": "sparklend",
+  "asset_id": "4tpqLktgO4VhvBQXjTVLGP",
+  "contract_name": "ForeignController",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": "000000000000000000000000b037c43b433964a2017cd689f535beb6b0531473000000000000000000000000345e368fccd62266b3f5f37c9a131fd1c39f58690000000000000000000000005a1a44d2192dd1e21efb9caa50e32d0716b355350000000000000000000000007b42ed932f26509465f7ce3faf76ffce1275312f000000000000000000000000078d782b760474a361dda0af3839290b0ef57ad60000000000000000000000004e744b28e787c3ad0e810ed65a24461d4ac5a762",
+  "evm_version": "cancun",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:missing-chainid",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

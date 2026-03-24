@@ -1,0 +1,25 @@
+{
+  "url": "https://explorer.inkonchain.com/address/0xc46f2443b3521632E2E2a903D6da8f965B46f6a0",
+  "host": "explorer.inkonchain.com",
+  "address": "0xc46f2443b3521632E2E2a903D6da8f965B46f6a0",
+  "chainid": 57073,
+  "project_slug": "veda",
+  "asset_id": "2eMZujAV41L9l4UQXYtGOl",
+  "contract_name": "TellerWithYieldStreaming",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": null,
+  "evm_version": "shanghai",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:unexpected-response",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

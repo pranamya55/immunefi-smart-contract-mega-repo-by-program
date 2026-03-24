@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x20d0b31c2620c28d22489babfef9445c7d952921",
+  "host": "etherscan.io",
+  "address": "0x20d0b31c2620c28d22489babfef9445c7d952921",
+  "chainid": 1,
+  "project_slug": "maple",
+  "asset_id": "2R5lWAmysmgok0bdoKjx5i",
+  "contract_name": "LoanManagerInitializer",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 5,
+  "mode": "json-sources"
+}

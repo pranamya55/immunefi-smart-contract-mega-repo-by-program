@@ -1,0 +1,8 @@
+[[package]]
+name = "asm_uninitialized_register_shadows_item"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-B978682C941EBFB4"

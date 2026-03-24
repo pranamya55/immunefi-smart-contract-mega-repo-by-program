@@ -1,0 +1,8 @@
+[[package]]
+name = "multi_item_import"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-0840D11631A9C24C"

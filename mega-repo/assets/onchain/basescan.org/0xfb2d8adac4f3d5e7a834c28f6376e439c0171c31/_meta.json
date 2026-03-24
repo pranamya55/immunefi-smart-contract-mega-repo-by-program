@@ -1,0 +1,24 @@
+{
+  "url": "https://basescan.org/address/0xFb2d8aDac4f3D5e7A834C28F6376E439c0171C31",
+  "host": "basescan.org",
+  "address": "0xFb2d8aDac4f3D5e7A834C28F6376E439c0171C31",
+  "chainid": 8453,
+  "project_slug": "impossible-cloud-network",
+  "asset_id": "6UJswS0bqym1c3TqEk77QQ",
+  "contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "shanghai",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "1",
+  "implementation": "0x31fb85fd348f2f14ab70e7e41e7c3df30a8c417d",
+  "swarm_source": "none",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 46,
+  "mode": "json-sources"
+}

@@ -1,0 +1,250 @@
+[
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "2lFJWE0nlcGqlOlIn9vl36",
+    "url": "https://bscscan.com/address/0x4DCdeBc14c8e3A1dc499976fe57a16162045eFBd",
+    "description": "IndexSwapLibrary",
+    "added_at": "2023-12-13T20:15:00.762Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "2KHQulJyT0m2unHguu9K6L",
+    "url": "https://bscscan.com/address/0x0Fb11066768e7775e1b9dAC3C6022F17D893853f",
+    "description": "FeeLibrary",
+    "added_at": "2023-12-13T20:15:15.187Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "5T4skalGfgJC01glDJ8W0r",
+    "url": "https://bscscan.com/address/0x2606ac7e68044245282643202A391d82D6650b3B",
+    "description": "RebalanceLibrary",
+    "added_at": "2023-12-13T20:15:31.752Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "7xBhmEnKf5yKsc9ejzokDn",
+    "url": "https://bscscan.com/address/0x1d2bA92e2227377fCD3c047CCdF1D4389c98f29B",
+    "description": "OffChainRebalance",
+    "added_at": "2023-12-13T20:15:51.953Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "7M10WgJ0ORJP0B0S9QuY0A",
+    "url": "https://bscscan.com/address/0x8133c0f5414950e3ecd3870732A38D4c3510BdeE",
+    "description": "RebalanceAggregator",
+    "added_at": "2023-12-13T20:16:39.698Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "3VxM3YL203gqv31DKZJSlZ",
+    "url": "https://bscscan.com/address/0xA1c283f1C9C3A70378160434B37e79635aAB52Bf",
+    "description": "Exchange",
+    "added_at": "2023-12-13T20:16:55.301Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "4PjPZf9DmCPDCOBHriBQ2o",
+    "url": "https://bscscan.com/address/0x80EF871da875Bebe6D9F04aEb9eA883d00192636",
+    "description": "IndexSwap",
+    "added_at": "2023-12-13T20:17:20.260Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "6P65iyd7O2NBswx1t9dDTI",
+    "url": "https://bscscan.com/address/0xdbA97FF0dc7ddDB8c42Dc50DCD151F2E95978ae6",
+    "description": "Rebalancing",
+    "added_at": "2023-12-13T20:17:33.079Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "cSdlS3B5CZlOaCKK1ZTug",
+    "url": "https://bscscan.com/address/0x433879587EC11845ACE71C9c4061DeDa7a6d17Be",
+    "description": "AssetManagerConfig",
+    "added_at": "2023-12-13T20:17:46.427Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "4ZUEdBiXCq55g4XHf5VeRy",
+    "url": "https://bscscan.com/address/0x3bD9A49283F059b3faa7DdBD7515e2E82dce02b1",
+    "description": "FeeModule",
+    "added_at": "2023-12-13T20:17:59.625Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "3vu9buZvxFi4tB4s15I9EF",
+    "url": "https://bscscan.com/address/0x577d56b755f5904184abE5792477a57f9CE37463",
+    "description": "OffChainIndexSwap",
+    "added_at": "2023-12-13T20:18:12.657Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "2E2ty5hyCny0qFvzZNPwmV",
+    "url": "https://bscscan.com/address/0xf68e38906DD101f0617A6fB4A0FA25694620C013",
+    "description": "VelvetSafeModule",
+    "added_at": "2023-12-13T20:18:25.229Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "YEylFDrAIM8mFN42EqNSc",
+    "url": "https://bscscan.com/address/0xC2f2Bf0c228714d038c2495343224c0d9199cC82",
+    "description": "PriceOracle",
+    "added_at": "2023-12-13T20:18:41.146Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "7gYTY9jMli0adZPrWEOCRo",
+    "url": "https://bscscan.com/address/0x5c2Cd133c766ea78F7BEA635fcfFff3191bD5F56",
+    "description": "PancakeSwapHandler",
+    "added_at": "2023-12-13T20:18:52.891Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "2t6Jtrwq5DQ1YiSU6pboSx",
+    "url": "https://bscscan.com/address/0x74003BD2bDB88EE4D6b55F88FB88616686a6f214",
+    "description": "BaseHandler",
+    "added_at": "2023-12-13T20:19:08.653Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "3tXuUMxJYaEJO6xV90KBrH",
+    "url": "https://bscscan.com/address/0x9AFC0716beAEe8a7632df4bdbE14C27055145aC7",
+    "description": "VenusHandler",
+    "added_at": "2023-12-13T20:19:22.255Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "67z30GokiHMYYg8T1rfs2s",
+    "url": "https://bscscan.com/address/0x26Ae500eDcE7c7a9F00007fCeF026062E10E9FE1",
+    "description": "PancakeSwapLPHandler",
+    "added_at": "2023-12-13T20:19:39.363Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "2KXq1BjciGCXDaN9UoZq8e",
+    "url": "https://bscscan.com/address/0x9B85c8D03E082365AB48230761BFaD28D4e45B37",
+    "description": "BiSwapLPHandler",
+    "added_at": "2023-12-13T20:19:55.169Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "5Hg2FwE5Asyy8tKDNp1QxJ",
+    "url": "https://bscscan.com/address/0xb0a7f3da89634F31E904a369F83241744B5c2a7d",
+    "description": "ApeSwapLPHandler",
+    "added_at": "2023-12-13T20:20:07.858Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "1Kdo05v68XiIcAhvpBTh4j",
+    "url": "https://bscscan.com/address/0xD9528E3Ca04A9dd0cC6515Af69B7958eB3b6E248",
+    "description": "WombatHandler",
+    "added_at": "2023-12-13T20:20:24.599Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "1LdNdoi1mBiPpSEX6yrYYw",
+    "url": "https://bscscan.com/address/0x8DF80904404010a5B8C767236f2d8671e1d5250D",
+    "description": "ApeSwapLendingHandler",
+    "added_at": "2023-12-13T20:20:41.746Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "3tSHxSYrsQY3BQIB2drrGT",
+    "url": "https://bscscan.com/address/0x5Dec110904701E1888ff740362231f735b4D0487",
+    "description": "BeefyLPHandler",
+    "added_at": "2023-12-13T20:20:59.791Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "49Q3beJ3Jdp8fPW7Qe8eUH",
+    "url": "https://bscscan.com/address/0x87279059F6c600D894579A6EF6B87e8Df14E4779",
+    "description": "BeefyHandler",
+    "added_at": "2023-12-13T20:21:14.669Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "542XO5g4iv2MSbIqP0TC7N",
+    "url": "https://bscscan.com/address/0x5d3405Db3A16Cd9C545DBac651ab5D9456C14B73",
+    "description": "ZeroExHandler",
+    "added_at": "2023-12-13T20:21:30.114Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "6OCXiZQr0hdhRtXFPxHcV",
+    "url": "https://bscscan.com/address/0xe776BAa635d7FA9D2a62371A180895F016eD4045",
+    "description": "OneInchHandler",
+    "added_at": "2023-12-13T20:21:48.623Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "1H0JvNUGCE9sFiN1bMD0Nw",
+    "url": "https://bscscan.com/address/0x4Dc08588a95244DF46ADd6b274079d99Bf521d57",
+    "description": "ParaswapHandler",
+    "added_at": "2023-12-13T20:22:05.686Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "B336c0vp4I8m7I3yQHbZd",
+    "url": "https://bscscan.com/address/0xB9669646EBb93A03dB67CC05f2894487C9923775",
+    "description": "ERC1967Proxy",
+    "added_at": "2023-12-13T20:22:17.479Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "5VsHXYfiI0RHp594nnFRsJ",
+    "url": "https://bscscan.com/address/0xE61472Ce45e559830ECF12F6a215Cd732F4D798B",
+    "description": "ERC1967Proxy",
+    "added_at": "2023-12-13T20:22:30.602Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "6IZCPr4OCuz2fKcGqCCFwR",
+    "url": "https://bscscan.com/address/0xb0e7a890ae4351bd0bc8e3e6ebec4525f3edf171#code",
+    "description": "New IndexSwap",
+    "added_at": "2024-01-30T14:13:44.808Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "ia66tMarqGAqoXx8KqBX7",
+    "url": "https://bscscan.com/address/0xd21d51E9BB8aF5De3dbacc519dc73DCD95a7c036",
+    "description": "New OffChainRebalance",
+    "added_at": "2024-01-30T14:13:56.626Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "velvetcapital",
+    "asset_id": "98719",
+    "url": "https://immunefi.com/",
+    "description": "Primacy of Impact",
+    "added_at": "2026-02-06T15:58:36.804Z",
+    "revision": 0
+  }
+]

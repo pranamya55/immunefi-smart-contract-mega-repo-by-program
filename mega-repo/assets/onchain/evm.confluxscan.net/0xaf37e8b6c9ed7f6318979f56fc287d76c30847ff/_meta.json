@@ -1,0 +1,7 @@
+{
+  "url": "https://evm.confluxscan.net/address/0xaf37e8b6c9ed7f6318979f56fc287d76c30847ff",
+  "host": "evm.confluxscan.net",
+  "address": "0xaf37e8b6c9ed7f6318979f56fc287d76c30847ff",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:Expecting value: line 1 column 1 (char 0)"
+}

@@ -1,0 +1,1278 @@
+package chainreader_test
+
+import (
+	"context"
+	go_binary "encoding/binary"
+	"encoding/json"
+	"fmt"
+	"math/big"
+	"os"
+	"strconv"
+	"strings"
+	"sync"
+	"testing"
+	"time"
+
+	"github.com/cometbft/cometbft/libs/service"
+	"github.com/gagliardetto/solana-go"
+	"github.com/gagliardetto/solana-go/rpc"
+	"github.com/google/uuid"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/mock"
+	"github.com/stretchr/testify/require"
+
+	"github.com/smartcontractkit/chainlink-common/pkg/sqlutil/sqltest"
+
+	"github.com/smartcontractkit/libocr/commontypes"
+
+	codeccommon "github.com/smartcontractkit/chainlink-common/pkg/codec"
+	"github.com/smartcontractkit/chainlink-common/pkg/codec/encodings/binary"
+	"github.com/smartcontractkit/chainlink-common/pkg/logger"
+	commontestutils "github.com/smartcontractkit/chainlink-common/pkg/loop/testutils"
+	"github.com/smartcontractkit/chainlink-common/pkg/types"
+	. "github.com/smartcontractkit/chainlink-common/pkg/types/interfacetests" //nolint common practice to import test mods with .
+	"github.com/smartcontractkit/chainlink-common/pkg/types/query"
+	"github.com/smartcontractkit/chainlink-common/pkg/types/query/primitives"
+
+	"github.com/smartcontractkit/chainlink-solana/pkg/solana/chainreader"
+	"github.com/smartcontractkit/chainlink-solana/pkg/solana/chainreader/mocks"
+	codecv1 "github.com/smartcontractkit/chainlink-solana/pkg/solana/codec/v1"
+	"github.com/smartcontractkit/chainlink-solana/pkg/solana/codec/v1/testutils"
+	"github.com/smartcontractkit/chainlink-solana/pkg/solana/config"
+	"github.com/smartcontractkit/chainlink-solana/pkg/solana/logpoller"
+	lpmocks "github.com/smartcontractkit/chainlink-solana/pkg/solana/logpoller/mocks"
+)
+
+const (
+	Namespace   = "NameSpace"
+	NamedMethod = "NamedMethod1"
+	PDAAccount  = "PDAAccount1"
+)
+
+func TestSolanaChainReaderService_ReaderInterface(t *testing.T) {
+	t.Parallel()
+
+	it := &chainReaderInterfaceTester{}
+	it.DisableTests([]string{
+		ContractReaderQueryKeysReturnsDataTwoEventTypes,
+		ContractReaderQueryKeysNotFound,
+		ContractReaderQueryKeysReturnsData,
+		ContractReaderQueryKeysReturnsDataAsValuesDotValue,
+		ContractReaderQueryKeysCanFilterWithValueComparator,
+		ContractReaderQueryKeysCanLimitResultsWithCursor,
+	})
+
+	RunContractReaderInterfaceTests(t, it, true, false)
+
+	lsIt := &skipEventsChainReaderTester{ChainComponentsInterfaceTester: commontestutils.WrapContractReaderTesterForLoop(it)}
+	RunContractReaderInterfaceTests(t, lsIt, true, false)
+}
+
+func TestSolanaContractReaderService_ServiceCtx(t *testing.T) {
+	t.Parallel()
+
+	ctx := t.Context()
+	svc, err := chainreader.NewContractReaderService(logger.Test(t), new(mockedMultipleAccountGetter), config.ContractReader{}, nil)
+
+	require.NoError(t, err)
+	require.NotNil(t, svc)
+
+	require.Error(t, svc.Ready())
+	require.Len(t, svc.HealthReport(), 1)
+	require.Contains(t, svc.HealthReport(), chainreader.ServiceName)
+	require.Error(t, svc.HealthReport()[chainreader.ServiceName])
+
+	require.NoError(t, svc.Start(ctx))
+	require.NoError(t, svc.Ready())
+	require.Equal(t, map[string]error{chainreader.ServiceName: nil}, svc.HealthReport())
+
+	require.Error(t, svc.Start(ctx))
+
+	require.NoError(t, svc.Close())
+	require.Error(t, svc.Ready())
+	require.Error(t, svc.Close())
+}
+
+func TestSolanaChainReaderService_Start(t *testing.T) {
+	t.Parallel()
+
+	ctx := t.Context()
+	lggr := logger.Test(t)
+	rpcClient := lpmocks.NewRPCClient(t)
+	pk := solana.NewWallet().PublicKey()
+
+	dbx := sqltest.NewDB(t, sqltest.TestURL(t))
+	chainID := uuid.NewString()
+	orm := logpoller.NewORM(chainID, dbx, lggr)
+	lp, err := logpoller.New(logger.Sugared(lggr), orm, rpcClient, config.NewDefault(), chainID)
+	require.NoError(t, err)
+	err = lp.Start(ctx)
+	require.NoError(t, err)
+	alreadyStartedErr := lp.Start(ctx)
+	require.Error(t, alreadyStartedErr)
+	require.NoError(t, lp.Close())
+
+	accountReadDef := config.ReadDefinition{
+		ChainSpecificName: "myAccount",
+		ReadType:          config.Account,
+	}
+	eventReadDef := config.ReadDefinition{
+		ChainSpecificName: "myEvent",
+		ReadType:          config.Event,
+		EventDefinitions: &config.EventDefinitions{
+			IndexedField0: &config.IndexedField{
+				OffChainPath: "A.B",
+				OnChainPath:  "A.B",
+			},
+			PollingFilter: &config.PollingFilter{},
+		},
+	}
+
+	testCases := []struct {
+		Name                string
+		ReadDef             config.ReadDefinition
+		StartError          error
+		RegisterFilterError error
+		ExpectError         bool
+	}{
+		{Name: "no event reads", ReadDef: accountReadDef},
+		{Name: "already started", ReadDef: eventReadDef},
+		{Name: "successful start", ReadDef: eventReadDef},
+		{Name: "unsuccessful start", ReadDef: eventReadDef, StartError: fmt.Errorf("failed to start event reader"), ExpectError: true},
+		{Name: "already starting", ReadDef: eventReadDef, StartError: alreadyStartedErr},
+		{Name: "failed to register filter", ReadDef: eventReadDef, RegisterFilterError: fmt.Errorf("failed to register filter"), ExpectError: true},
+	}
+
+	boolType := codecv1.IdlType{}
+	require.NoError(t, boolType.UnmarshalJSON([]byte("\"bool\"")))
+
+	for _, tt := range testCases {
+		t.Run(tt.Name, func(t *testing.T) {
+			cfg := config.ContractReader{
+				Namespaces: map[string]config.ChainContractReader{
+					"myChainReader": {
+						IDL: codecv1.IDL{
+							Accounts: []codecv1.IdlTypeDef{{Name: "myAccount",
+								Type: codecv1.IdlTypeDefTy{
+									Kind:   codecv1.IdlTypeDefTyKindStruct,
+									Fields: &[]codecv1.IdlField{}}}},
+							Events: []codecv1.IdlEvent{{Name: "myEvent", Fields: []codecv1.IdlEventField{{Name: "a", Type: boolType}}}},
+						},
+						Reads: map[string]config.ReadDefinition{
+							"myRead": tt.ReadDef},
+					},
+				},
+				AddressShareGroups: nil,
+			}
+
+			mockedMultipleAccountGetter := new(mockedMultipleAccountGetter)
+			er := mocks.NewEventsReader(t)
+			svc, err := chainreader.NewContractReaderService(
+				lggr,
+				mockedMultipleAccountGetter,
+				cfg, er,
+			)
+			require.NoError(t, err)
+
+			er.On("Ready").Maybe().Return(func() error {
+				if tt.Name == "already started" {
+					return nil
+				}
+				return service.ErrNotStarted
+			}())
+			er.On("Start", mock.Anything).Maybe().Return(tt.StartError)
+			er.On("HasFilter", mock.Anything, mock.Anything).Return(false).Maybe()
+			er.On("RegisterFilter", mock.Anything, mock.Anything).Maybe().Return(tt.RegisterFilterError)
+
+			require.NoError(t, svc.Bind(ctx, []types.BoundContract{{Address: pk.String(), Name: "myChainReader"}}))
+
+			err = svc.Start(ctx)
+			if tt.ExpectError {
+				assert.Error(t, err)
+			} else {
+				assert.NoError(t, err)
+			}
+
+			var expectedReadyCalls, expectedStartCalls, expectedRegisterFilterCalls int
+			if tt.ReadDef.ReadType == config.Event {
+				expectedStartCalls = 1
+				expectedReadyCalls = 1
+				expectedRegisterFilterCalls = 1
+			}
+			er.AssertNumberOfCalls(t, "Ready", expectedReadyCalls)
+			if tt.Name == "already started" {
+				expectedStartCalls = 0
+			}
+			er.AssertNumberOfCalls(t, "Start", expectedStartCalls)
+			if tt.Name == "unsuccessful start" {
+				expectedRegisterFilterCalls = 0
+			}
+			er.AssertNumberOfCalls(t, "RegisterFilter", expectedRegisterFilterCalls)
+		})
+	}
+}
+
+func TestSolanaChainReaderService_GetLatestValue(t *testing.T) {
+	ctx := t.Context()
+
+	// encode values from unmodified test struct to be read and decoded
+	expected := testutils.DefaultTestStruct
+
+	t.Run("Success", func(t *testing.T) {
+		t.Parallel()
+
+		testCodec, conf := newTestConfAndCodec(t)
+		encoded, err := testCodec.Encode(ctx, expected, testutils.TestStructWithNestedStruct)
+
+		require.NoError(t, err)
+
+		client := new(mockedMultipleAccountGetter)
+		svc, err := chainreader.NewContractReaderService(logger.Test(t), client, conf, nil)
+
+		require.NoError(t, err)
+		require.NotNil(t, svc)
+		require.NoError(t, svc.Start(ctx))
+
+		t.Cleanup(func() {
+			require.NoError(t, svc.Close())
+		})
+
+		pk := solana.NewWallet().PublicKey()
+
+		client.SetForAddress(pk, encoded, nil, 0)
+
+		var result modifiedStructWithNestedStruct
+
+		binding := types.BoundContract{
+			Name:    Namespace,
+			Address: pk.String(),
+		}
+
+		require.NoError(t, svc.Bind(ctx, []types.BoundContract{binding}))
+		require.NoError(t, svc.GetLatestValue(ctx, binding.ReadIdentifier(NamedMethod), primitives.Unconfirmed, nil, &result))
+
+		assert.Equal(t, expected.InnerStruct, result.InnerStruct)
+		assert.Equal(t, expected.Value, result.V)
+		assert.Equal(t, expected.TimeVal, result.TimeVal)
+		assert.Equal(t, expected.DurationVal, result.DurationVal)
+	})
+
+	t.Run("Error Returned From Account Reader", func(t *testing.T) {
+		t.Parallel()
+
+		_, conf := newTestConfAndCodec(t)
+
+		client := new(mockedMultipleAccountGetter)
+		expectedErr := fmt.Errorf("expected error")
+		svc, err := chainreader.NewContractReaderService(logger.Test(t), client, conf, nil)
+
+		require.NoError(t, err)
+		require.NotNil(t, svc)
+		require.NoError(t, svc.Start(ctx))
+
+		t.Cleanup(func() {
+			require.NoError(t, svc.Close())
+		})
+
+		client.SetNext(nil, expectedErr, 0)
+
+		var result modifiedStructWithNestedStruct
+
+		pubKey := solana.NewWallet().PublicKey()
+		binding := types.BoundContract{
+			Name:    Namespace,
+			Address: pubKey.String(),
+		}
+
+		assert.NoError(t, svc.Bind(ctx, []types.BoundContract{binding}))
+
+		err = svc.GetLatestValue(ctx, binding.ReadIdentifier(NamedMethod), primitives.Unconfirmed, nil, &result)
+
+		assert.Contains(t, err.Error(), chainreader.ErrMissingAccountData.Error())
+		assert.ErrorIs(t, err, types.ErrInternal)
+	})
+
+	t.Run("Method Not Found", func(t *testing.T) {
+		t.Parallel()
+
+		_, conf := newTestConfAndCodec(t)
+
+		client := new(mockedMultipleAccountGetter)
+		svc, err := chainreader.NewContractReaderService(logger.Test(t), client, conf, nil)
+
+		require.NoError(t, err)
+		require.NotNil(t, svc)
+		require.NoError(t, svc.Start(ctx))
+
+		t.Cleanup(func() {
+			require.NoError(t, svc.Close())
+		})
+
+		var result modifiedStructWithNestedStruct
+
+		assert.NotNil(t, svc.GetLatestValue(ctx, types.BoundContract{Name: Namespace}.ReadIdentifier("Unknown"), primitives.Unconfirmed, nil, &result))
+	})
+
+	t.Run("Namespace Not Found", func(t *testing.T) {
+		t.Parallel()
+
+		_, conf := newTestConfAndCodec(t)
+
+		client := new(mockedMultipleAccountGetter)
+		svc, err := chainreader.NewContractReaderService(logger.Test(t), client, conf, nil)
+
+		require.NoError(t, err)
+		require.NotNil(t, svc)
+		require.NoError(t, svc.Start(ctx))
+
+		t.Cleanup(func() {
+			require.NoError(t, svc.Close())
+		})
+
+		var result modifiedStructWithNestedStruct
+
+		assert.NotNil(t, svc.GetLatestValue(ctx, types.BoundContract{Name: "Unknown"}.ReadIdentifier("Unknown"), primitives.Unconfirmed, nil, &result))
+	})
+
+	t.Run("Bind Errors", func(t *testing.T) {
+		t.Parallel()
+
+		_, conf := newTestConfAndCodec(t)
+
+		client := new(mockedMultipleAccountGetter)
+		svc, err := chainreader.NewContractReaderService(logger.Test(t), client, conf, nil)
+
+		require.NoError(t, err)
+		require.NotNil(t, svc)
+		require.NoError(t, svc.Start(ctx))
+
+		t.Cleanup(func() {
+			require.NoError(t, svc.Close())
+		})
+
+		pk := solana.NewWallet().PublicKey()
+
+		require.NotNil(t, svc.Bind(ctx, []types.BoundContract{
+			{
+				Address: pk.String(),
+				Name:    "incorrect format",
+			},
+		}))
+
+		require.NotNil(t, svc.Bind(ctx, []types.BoundContract{
+			{
+				Address: pk.String(),
+				Name:    fmt.Sprintf("%s.%s.%d", "Unknown", "Unknown", 0),
+			},
+		}))
+
+		require.NotNil(t, svc.Bind(ctx, []types.BoundContract{
+			{
+				Address: pk.String(),
+				Name:    fmt.Sprintf("%s.%s.%d", Namespace, "Unknown", 0),
+			},
+		}))
+
+		require.NotNil(t, svc.Bind(ctx, []types.BoundContract{
+			{
+				Address: pk.String(),
+				Name:    fmt.Sprintf("%s.%s.%d", Namespace, NamedMethod, 1),
+			},
+		}))
+
+		require.NotNil(t, svc.Bind(ctx, []types.BoundContract{
+			{
+				Address: pk.String(),
+				Name:    fmt.Sprintf("%s.%s.o", Namespace, NamedMethod),
+			},
+		}))
+
+		require.NotNil(t, svc.Bind(ctx, []types.BoundContract{
+			{
+				Address: "invalid",
+				Name:    fmt.Sprintf("%s.%s.%d", Namespace, NamedMethod, 0),
+			},
+		}))
+	})
+
+	t.Run("PDA account read success", func(t *testing.T) {
+		t.Parallel()
+
+		programID := solana.NewWallet().PublicKey()
+		pubKey := solana.NewWallet().PublicKey()
+		uint64Seed := uint64(5)
+		prefixBytes := []byte("Prefix")
+
+		readDef := config.ReadDefinition{
+			ChainSpecificName: testutils.TestStructWithNestedStruct,
+			ReadType:          config.Account,
+			OutputModifications: codeccommon.ModifiersConfig{
+				&codeccommon.RenameModifierConfig{Fields: map[string]string{"Value": "V"}},
+			},
+		}
+
+		testCases := []struct {
+			name          string
+			pdaDefinition codecv1.PDATypeDef
+			inputModifier codeccommon.ModifiersConfig
+			expected      solana.PublicKey
+			params        map[string]any
+		}{
+			{
+				name: "happy path",
+				pdaDefinition: codecv1.PDATypeDef{
+					Prefix: prefixBytes,
+					Seeds: []codecv1.PDASeed{
+						{
+							Name: "PubKey",
+							Type: codecv1.IdlType{AsString: codecv1.IdlTypePublicKey},
+						},
+						{
+							Name: "Uint64Seed",
+							Type: codecv1.IdlType{AsString: codecv1.IdlTypeU64},
+						},
+					},
+				},
+				expected: mustFindProgramAddress(t, programID, [][]byte{prefixBytes, pubKey.Bytes(), go_binary.LittleEndian.AppendUint64([]byte{}, uint64Seed)}),
+				params: map[string]any{
+					"PubKey":     pubKey,
+					"Uint64Seed": uint64Seed,
+				},
+			},
+			{
+				name: "with modifier and random field",
+				pdaDefinition: codecv1.PDATypeDef{
+					Prefix: prefixBytes,
+					Seeds: []codecv1.PDASeed{
+						{
+							Name: "PubKey",
+							Type: codecv1.IdlType{AsString: codecv1.IdlTypePublicKey},
+						},
+						{
+							Name: "Uint64Seed",
+							Type: codecv1.IdlType{AsString: codecv1.IdlTypeU64},
+						},
+					},
+				},
+				inputModifier: codeccommon.ModifiersConfig{
+					&codeccommon.RenameModifierConfig{Fields: map[string]string{"PubKey": "PublicKey"}},
+				},
+				expected: mustFindProgramAddress(t, programID, [][]byte{prefixBytes, pubKey.Bytes(), go_binary.LittleEndian.AppendUint64([]byte{}, uint64Seed)}),
+				params: map[string]any{
+					"PublicKey":   pubKey,
+					"randomField": "randomValue", // unused field should be ignored by the codec
+					"Uint64Seed":  uint64Seed,
+				},
+			},
+			{
+				name: "only prefix",
+				pdaDefinition: codecv1.PDATypeDef{
+					Prefix: prefixBytes,
+				},
+				expected: mustFindProgramAddress(t, programID, [][]byte{prefixBytes}),
+				params:   nil,
+			},
+			{
+				name: "no prefix",
+				pdaDefinition: codecv1.PDATypeDef{
+					Prefix: nil,
+					Seeds: []codecv1.PDASeed{
+						{
+							Name: "PubKey",
+							Type: codecv1.IdlType{AsString: codecv1.IdlTypePublicKey},
+						},
+						{
+							Name: "Uint64Seed",
+							Type: codecv1.IdlType{AsString: codecv1.IdlTypeU64},
+						},
+					},
+				},
+				expected: mustFindProgramAddress(t, programID, [][]byte{pubKey.Bytes(), go_binary.LittleEndian.AppendUint64([]byte{}, uint64Seed)}),
+				params: map[string]any{
+					"PubKey":     pubKey,
+					"Uint64Seed": uint64Seed,
+				},
+			},
+			{
+				name: "public key seed provided as bytes",
+				pdaDefinition: codecv1.PDATypeDef{
+					Prefix: prefixBytes,
+					Seeds: []codecv1.PDASeed{
+						{
+							Name: "PubKey",
+							Type: codecv1.IdlType{AsString: codecv1.IdlTypePublicKey},
+						},
+					},
+				},
+				expected: mustFindProgramAddress(t, programID, [][]byte{prefixBytes, pubKey.Bytes()}),
+				params: map[string]any{
+					"PubKey": pubKey.Bytes(),
+				},
+			},
+		}
+
+		for _, testCase := range testCases {
+			t.Run(testCase.name, func(t *testing.T) {
+				testReadDef := readDef
+				testReadDef.PDADefinition = testCase.pdaDefinition
+				testReadDef.InputModifications = testCase.inputModifier
+				testCodec, conf := newTestConfAndCodecWithInjectibleReadDef(t, PDAAccount, testReadDef)
+				encoded, err := testCodec.Encode(ctx, expected, testutils.TestStructWithNestedStruct)
+				require.NoError(t, err)
+
+				client := new(mockedMultipleAccountGetter)
+				svc, err := chainreader.NewContractReaderService(logger.Test(t), client, conf, nil)
+				require.NoError(t, err)
+				require.NotNil(t, svc)
+				require.NoError(t, svc.Start(ctx))
+
+				t.Cleanup(func() {
+					require.NoError(t, svc.Close())
+				})
+
+				binding := types.BoundContract{
+					Name:    Namespace,
+					Address: programID.String(), // Set the program ID used to calculate the PDA
+				}
+
+				client.SetForAddress(testCase.expected, encoded, nil, 0)
+
+				require.NoError(t, svc.Bind(ctx, []types.BoundContract{binding}))
+
+				var result modifiedStructWithNestedStruct
+				require.NoError(t, svc.GetLatestValue(ctx, binding.ReadIdentifier(PDAAccount), primitives.Unconfirmed, testCase.params, &result))
+
+				assert.Equal(t, expected.InnerStruct, result.InnerStruct)
+				assert.Equal(t, expected.Value, result.V)
+				assert.Equal(t, expected.TimeVal, result.TimeVal)
+				assert.Equal(t, expected.DurationVal, result.DurationVal)
+			})
+		}
+	})
+
+	t.Run("PDA account read errors if missing param", func(t *testing.T) {
+		prefixBytes := []byte("Prefix")
+		readDef := config.ReadDefinition{
+			ChainSpecificName: testutils.TestStructWithNestedStruct,
+			ReadType:          config.Account,
+			PDADefinition: codecv1.PDATypeDef{
+				Prefix: prefixBytes,
+				Seeds: []codecv1.PDASeed{
+					{
+						Name: "PubKey",
+						Type: codecv1.IdlType{AsString: codecv1.IdlTypePublicKey},
+					},
+				},
+			},
+			OutputModifications: codeccommon.ModifiersConfig{
+				&codeccommon.RenameModifierConfig{Fields: map[string]string{"Value": "V"}},
+			},
+		}
+		_, conf := newTestConfAndCodecWithInjectibleReadDef(t, PDAAccount, readDef)
+
+		client := new(mockedMultipleAccountGetter)
+		svc, err := chainreader.NewContractReaderService(logger.Test(t), client, conf, nil)
+		require.NoError(t, err)
+		require.NotNil(t, svc)
+		require.NoError(t, svc.Start(ctx))
+
+		t.Cleanup(func() {
+			require.NoError(t, svc.Close())
+		})
+
+		binding := types.BoundContract{
+			Name:    Namespace,
+			Address: solana.NewWallet().PublicKey().String(), // Set the program ID used to calculate the PDA
+		}
+
+		require.NoError(t, svc.Bind(ctx, []types.BoundContract{binding}))
+
+		var result modifiedStructWithNestedStruct
+		require.Error(t, svc.GetLatestValue(ctx, binding.ReadIdentifier(PDAAccount), primitives.Unconfirmed, map[string]any{
+			"randomField": "randomValue", // unused field should be ignored by the codec
+		}, &result))
+	})
+}
+
+func newTestIDLAndCodec(t *testing.T) (string, codecv1.IDL, types.RemoteCodec) {
+	t.Helper()
+
+	var idl codecv1.IDL
+	if err := json.Unmarshal([]byte(testutils.JSONIDLWithAllTypes), &idl); err != nil {
+		t.Logf("failed to unmarshal test IDL: %s", err.Error())
+		t.FailNow()
+	}
+
+	entry, err := codecv1.NewIDLAccountCodec(idl, binary.LittleEndian())
+	if err != nil {
+		t.Logf("failed to create new codec from test IDL: %s", err.Error())
+		t.FailNow()
+	}
+
+	require.NotNil(t, entry)
+
+	return testutils.JSONIDLWithAllTypes, idl, entry
+}
+
+func newTestConfAndCodec(t *testing.T) (types.RemoteCodec, config.ContractReader) {
+	t.Helper()
+	rawIDL, _, testCodec := newTestIDLAndCodec(t)
+	conf := config.ContractReader{
+		Namespaces: map[string]config.ChainContractReader{
+			Namespace: {
+				IDL: mustUnmarshalIDL(t, rawIDL),
+				Reads: map[string]config.ReadDefinition{
+					NamedMethod: {
+						ChainSpecificName:       testutils.TestStructWithNestedStruct,
+						ReadType:                config.Account,
+						ErrOnMissingAccountData: true,
+						OutputModifications: codeccommon.ModifiersConfig{
+							&codeccommon.RenameModifierConfig{Fields: map[string]string{"Value": "V"}},
+						},
+					},
+				},
+			},
+		},
+	}
+
+	return testCodec, conf
+}
+
+func newTestConfAndCodecWithInjectibleReadDef(t *testing.T, readDefName string, readDef config.ReadDefinition) (types.RemoteCodec, config.ContractReader) {
+	t.Helper()
+	rawIDL, _, testCodec := newTestIDLAndCodec(t)
+	conf := config.ContractReader{
+		Namespaces: map[string]config.ChainContractReader{
+			Namespace: {
+				IDL: mustUnmarshalIDL(t, rawIDL),
+				Reads: map[string]config.ReadDefinition{
+					readDefName: readDef,
+				},
+			},
+		},
+	}
+
+	return testCodec, conf
+}
+
+type modifiedStructWithNestedStruct struct {
+	V                uint8
+	InnerStruct      testutils.ObjectRef1
+	BasicNestedArray [][]uint32
+	Option           *string
+	DefinedArray     []testutils.ObjectRef2
+	BasicVector      []string
+	TimeVal          int64
+	DurationVal      time.Duration
+	PublicKey        solana.PublicKey
+	EnumVal          uint8
+}
+
+type mockedRPCCall struct {
+	bts   []byte
+	err   error
+	delay time.Duration
+}
+
+// TODO BCI-3156 use a localnet for testing instead of a mock.
+type mockedMultipleAccountGetter struct {
+	mu                sync.Mutex
+	responseByAddress map[string]mockedRPCCall
+	sequence          []mockedRPCCall
+}
+
+func (_m *mockedMultipleAccountGetter) GetMultipleAccountData(_ context.Context, keys ...solana.PublicKey) ([]*rpc.Account, error) {
+	result := make([]*rpc.Account, len(keys))
+
+	for idx, key := range keys {
+		call, ok := _m.responseByAddress[key.String()]
+		if !ok || call.err != nil {
+			result[idx] = nil
+
+			continue
+		}
+
+		result[idx] = &rpc.Account{Data: rpc.DataBytesOrJSONFromBytes(call.bts)}
+	}
+
+	return result, nil
+}
+
+func (_m *mockedMultipleAccountGetter) SetNext(bts []byte, err error, delay time.Duration) {
+	_m.mu.Lock()
+	defer _m.mu.Unlock()
+
+	_m.sequence = append(_m.sequence, mockedRPCCall{
+		bts:   bts,
+		err:   err,
+		delay: delay,
+	})
+}
+
+func (_m *mockedMultipleAccountGetter) SetForAddress(pk solana.PublicKey, bts []byte, err error, delay time.Duration) {
+	_m.mu.Lock()
+	defer _m.mu.Unlock()
+
+	if _m.responseByAddress == nil {
+		_m.responseByAddress = make(map[string]mockedRPCCall)
+	}
+
+	_m.responseByAddress[pk.String()] = mockedRPCCall{
+		bts:   bts,
+		err:   err,
+		delay: delay,
+	}
+}
+
+type chainReaderInterfaceTester struct {
+	TestSelectionSupport
+	conf        config.ContractReader
+	address     []string
+	reader      *wrappedTestChainReader
+	eventSource chainreader.EventsReader
+}
+
+func (r *chainReaderInterfaceTester) GetAccountBytes(i int) []byte {
+	account := [32]byte{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2}
+
+	account[i%32] += byte(i)
+	account[(i+3)%32] += byte(i + 3)
+
+	pk := solana.PublicKeyFromBytes(account[:])
+
+	return pk.Bytes()
+}
+
+func (r *chainReaderInterfaceTester) GetAccountString(i int) string {
+	return solana.PublicKeyFromBytes(r.GetAccountBytes(i)).String()
+}
+
+func (r *chainReaderInterfaceTester) Name() string {
+	return "Solana"
+}
+
+func (r *chainReaderInterfaceTester) Setup(t *testing.T) {
+	r.address = make([]string, 7)
+	for idx := range r.address {
+		r.address[idx] = solana.NewWallet().PublicKey().String()
+	}
+
+	r.conf = config.ContractReader{
+		Namespaces: map[string]config.ChainContractReader{
+			AnyContractName: {
+				IDL: mustUnmarshalIDL(t, fullTestIDL(t)),
+				Reads: map[string]config.ReadDefinition{
+					MethodTakingLatestParamsReturningTestStruct: {
+						ReadType:          config.Account,
+						ChainSpecificName: "TestStruct",
+					},
+					MethodReturningUint64: {
+						ReadType:          config.Account,
+						ChainSpecificName: "SimpleUint64Value",
+						OutputModifications: codeccommon.ModifiersConfig{
+							&codeccommon.PropertyExtractorConfig{FieldName: "I"},
+						},
+					},
+					MethodReturningUint64Slice: {
+						ChainSpecificName: "Uint64Slice",
+						ReadType:          config.Account,
+						OutputModifications: codeccommon.ModifiersConfig{
+							&codeccommon.PropertyExtractorConfig{FieldName: "Vals"},
+						},
+					},
+					MethodReturningSeenStruct: {
+						ChainSpecificName: "TestStruct",
+						ReadType:          config.Account,
+						OutputModifications: codeccommon.ModifiersConfig{
+							&codeccommon.AddressBytesToStringModifierConfig{
+								Fields: []string{"AccountStruct.AccountStr"},
+							},
+							&codeccommon.HardCodeModifierConfig{OffChainValues: map[string]any{"ExtraField": AnyExtraValue}},
+						},
+					},
+				},
+			},
+			AnySecondContractName: {
+				IDL: mustUnmarshalIDL(t, fmt.Sprintf(baseIDL, uint64BaseTypeIDL, "")),
+				Reads: map[string]config.ReadDefinition{
+					MethodReturningUint64: {
+						ChainSpecificName: "SimpleUint64Value",
+						ReadType:          config.Account,
+						OutputModifications: codeccommon.ModifiersConfig{
+							&codeccommon.PropertyExtractorConfig{FieldName: "I"},
+						},
+					},
+				},
+			},
+		},
+	}
+}
+
+func (r *chainReaderInterfaceTester) GetContractReader(t *testing.T) types.ContractReader {
+	client := new(mockedMultipleAccountGetter)
+	svc, err := chainreader.NewContractReaderService(logger.Test(t), client, r.conf, r.eventSource)
+	if err != nil {
+		t.Logf("chain reader service was not able to start: %s", err.Error())
+		t.FailNow()
+	}
+
+	require.NoError(t, svc.Start(context.Background()))
+	t.Cleanup(func() {
+		require.NoError(t, svc.Close())
+	})
+
+	if r.reader == nil {
+		r.reader = &wrappedTestChainReader{tester: r}
+	}
+
+	r.reader.test = t
+	r.reader.service = svc
+	r.reader.client = client
+
+	return r.reader
+}
+
+type wrappedTestChainReader struct {
+	types.UnimplementedContractReader
+
+	test            *testing.T
+	service         *chainreader.ContractReaderService
+	client          *mockedMultipleAccountGetter
+	tester          ChainComponentsInterfaceTester[*testing.T]
+	testStructQueue []*TestStruct
+}
+
+func (r *wrappedTestChainReader) Start(ctx context.Context) error {
+	return nil
+}
+
+func (r *wrappedTestChainReader) Close() error {
+	return nil
+}
+
+func (r *wrappedTestChainReader) Ready() error {
+	return nil
+}
+
+func (r *wrappedTestChainReader) HealthReport() map[string]error {
+	return nil
+}
+
+func (r *chainReaderInterfaceTester) GetContractWriter(t *testing.T) types.ContractWriter {
+	t.Skip("ContractWriter is not yet supported on Solana")
+	return nil
+}
+
+func (r *wrappedTestChainReader) Name() string {
+	return "wrappedTestChainReader"
+}
+
+func (r *wrappedTestChainReader) GetLatestValue(ctx context.Context, readIdentifier string, confidenceLevel primitives.ConfidenceLevel, params, returnVal any) error {
+	var (
+		bts  []byte
+		acct int
+		err  error
+	)
+
+	parts := strings.Split(readIdentifier, "-")
+	if len(parts) < 3 {
+		panic("unexpected readIdentifier length")
+	}
+
+	contractName := parts[1]
+	method := parts[2]
+
+	if contractName == AnySecondContractName {
+		acct = 1
+	}
+
+	switch contractName + method {
+	case AnyContractName + EventName:
+		r.test.Skip("Events are not yet supported in Solana")
+	case AnyContractName + MethodReturningUint64:
+		cdc := makeTestCodec(r.test, fmt.Sprintf(baseIDL, uint64BaseTypeIDL, ""))
+		onChainStruct := struct {
+			I uint64
+		}{
+			I: AnyValueToReadWithoutAnArgument,
+		}
+
+		bts, err = cdc.Encode(ctx, onChainStruct, "SimpleUint64Value")
+		if err != nil {
+			r.test.Log(err.Error())
+			r.test.FailNow()
+		}
+	case AnyContractName + MethodReturningUint64Slice:
+		cdc := makeTestCodec(r.test, fmt.Sprintf(baseIDL, uint64SliceBaseTypeIDL, ""))
+		onChainStruct := struct {
+			Vals []uint64
+		}{
+			Vals: AnySliceToReadWithoutAnArgument,
+		}
+
+		bts, err = cdc.Encode(ctx, onChainStruct, "Uint64Slice")
+		if err != nil {
+			r.test.FailNow()
+		}
+	case AnySecondContractName + MethodReturningUint64, AnyContractName:
+		cdc := makeTestCodec(r.test, fmt.Sprintf(baseIDL, uint64BaseTypeIDL, ""))
+		onChainStruct := struct {
+			I uint64
+		}{
+			I: AnyDifferentValueToReadWithoutAnArgument,
+		}
+
+		bts, err = cdc.Encode(ctx, onChainStruct, "SimpleUint64Value")
+		if err != nil {
+			r.test.FailNow()
+		}
+	case AnyContractName + MethodReturningSeenStruct:
+		nextStruct := CreateTestStruct[*testing.T](0, r.tester)
+		r.testStructQueue = append(r.testStructQueue, &nextStruct)
+
+		fallthrough
+	default:
+		if len(r.testStructQueue) == 0 {
+			r.test.FailNow()
+		}
+
+		nextTestStruct := r.testStructQueue[0]
+		r.testStructQueue = r.testStructQueue[1:len(r.testStructQueue)]
+
+		// split into two encoded parts to test the preloading function
+		cdc := makeTestCodec(r.test, fullStructIDL(r.test))
+
+		if strings.Contains(r.test.Name(), "wraps_config_with_modifiers_using_its_own_mapstructure_overrides") {
+			// TODO: This is a temporary solution. We are manually retyping this struct to avoid breaking unrelated tests.
+			// Once input modifiers are fully implemented, revisit this code and remove this manual struct conversion
+			tempStruct := struct {
+				Field         *int32
+				OracleID      commontypes.OracleID
+				OracleIDs     [32]commontypes.OracleID
+				AccountStruct struct {
+					Account    []byte
+					AccountStr []byte
+				}
+				Accounts            [][]byte
+				DifferentField      string
+				BigField            *big.Int
+				NestedDynamicStruct MidLevelDynamicTestStruct
+				NestedStaticStruct  MidLevelStaticTestStruct
+			}{
+				Field:     nextTestStruct.Field,
+				OracleID:  nextTestStruct.OracleID,
+				OracleIDs: nextTestStruct.OracleIDs,
+				AccountStruct: struct {
+					Account    []byte
+					AccountStr []byte
+				}{
+					Account:    nextTestStruct.AccountStruct.Account,
+					AccountStr: nextTestStruct.AccountStruct.Account,
+				},
+				Accounts:            nextTestStruct.Accounts,
+				DifferentField:      nextTestStruct.DifferentField,
+				BigField:            nextTestStruct.BigField,
+				NestedDynamicStruct: nextTestStruct.NestedDynamicStruct,
+				NestedStaticStruct:  nextTestStruct.NestedStaticStruct,
+			}
+
+			bts, err = cdc.Encode(ctx, tempStruct, "TestStruct")
+			if err != nil {
+				r.test.FailNow()
+			}
+		} else {
+			bts, err = cdc.Encode(ctx, nextTestStruct, "TestStruct")
+			if err != nil {
+				r.test.FailNow()
+			}
+		}
+	}
+
+	r.client.SetForAddress(solana.PublicKey(r.tester.GetAccountBytes(acct)), bts, nil, 0)
+
+	return r.service.GetLatestValue(ctx, readIdentifier, confidenceLevel, params, returnVal)
+}
+
+// BatchGetLatestValues implements the types.ContractReader interface.
+func (r *wrappedTestChainReader) BatchGetLatestValues(_ context.Context, _ types.BatchGetLatestValuesRequest) (types.BatchGetLatestValuesResult, error) {
+	r.test.Skip("BatchGetLatestValues is not yet supported in Solana")
+	return nil, nil
+}
+
+// QueryKey implements the types.ContractReader interface.
+func (r *wrappedTestChainReader) QueryKey(_ context.Context, _ types.BoundContract, _ query.KeyFilter, _ query.LimitAndSort, _ any) ([]types.Sequence, error) {
+	r.test.Skip("QueryKey is not yet supported in Solana")
+	return nil, nil
+}
+
+func (r *wrappedTestChainReader) Bind(ctx context.Context, bindings []types.BoundContract) error {
+	return r.service.Bind(ctx, bindings)
+}
+
+func (r *wrappedTestChainReader) Unbind(ctx context.Context, bindings []types.BoundContract) error {
+	return r.service.Unbind(ctx, bindings)
+}
+
+func (r *wrappedTestChainReader) CreateContractType(readIdentifier string, forEncoding bool) (any, error) {
+	if strings.HasSuffix(readIdentifier, AnyContractName+EventName) {
+		r.test.Skip("Events are not yet supported in Solana")
+	}
+
+	return r.service.CreateContractType(readIdentifier, forEncoding)
+}
+
+func (r *chainReaderInterfaceTester) SetUintLatestValue(t *testing.T, _ uint64, _ ExpectedGetLatestValueArgs) {
+	t.Skip("SetUintLatestValue is not yet supported in Solana")
+}
+
+func (r *chainReaderInterfaceTester) GenerateBlocksTillConfidenceLevel(t *testing.T, _, _ string, _ primitives.ConfidenceLevel) {
+	t.Skip("GenerateBlocksTillConfidenceLevel is not yet supported in Solana")
+}
+
+func (r *chainReaderInterfaceTester) DirtyContracts() {
+}
+
+// SetTestStructLatestValue is expected to return the same bound contract and method in the same test
+// Any setup required for this should be done in Setup.
+// The contract should take a LatestParams as the params and return the nth TestStruct set
+func (r *chainReaderInterfaceTester) SetTestStructLatestValue(t *testing.T, testStruct *TestStruct) {
+	if r.reader == nil {
+		r.reader = &wrappedTestChainReader{
+			test:   t,
+			tester: r,
+		}
+	}
+
+	r.reader.testStructQueue = append(r.reader.testStructQueue, testStruct)
+}
+
+func (r *chainReaderInterfaceTester) SetBatchLatestValues(t *testing.T, _ BatchCallEntry) {
+	t.Skip("GetBatchLatestValues is not yet supported in Solana")
+}
+
+func (r *chainReaderInterfaceTester) TriggerEvent(t *testing.T, testStruct *TestStruct) {
+	t.Skip("Events are not yet supported in Solana")
+}
+
+func (r *chainReaderInterfaceTester) GetBindings(t *testing.T) []types.BoundContract {
+	return []types.BoundContract{
+		{Name: AnyContractName, Address: solana.PublicKeyFromBytes(r.GetAccountBytes(0)).String()},
+		{Name: AnySecondContractName, Address: solana.PublicKeyFromBytes(r.GetAccountBytes(1)).String()},
+	}
+}
+
+func (r *chainReaderInterfaceTester) MaxWaitTimeForEvents() time.Duration {
+	// From trial and error, when running on CI, sometimes the boxes get slow
+	maxWaitTime := time.Second
+	maxWaitTimeStr, ok := os.LookupEnv("MAX_WAIT_TIME_FOR_EVENTS_S")
+	if ok {
+		wiatS, err := strconv.ParseInt(maxWaitTimeStr, 10, 64)
+		if err != nil {
+			fmt.Printf("Error parsing MAX_WAIT_TIME_FOR_EVENTS_S: %v, defaulting to %v\n", err, maxWaitTime)
+		}
+		maxWaitTime = time.Second * time.Duration(wiatS)
+	}
+
+	return maxWaitTime
+}
+
+func makeTestCodec(t *testing.T, rawIDL string) types.RemoteCodec {
+	t.Helper()
+
+	testCodec, err := codecv1.NewIDLAccountCodec(mustUnmarshalIDL(t, rawIDL), binary.LittleEndian())
+	if err != nil {
+		t.Logf("failed to create new codec from test IDL: %s", err.Error())
+		t.FailNow()
+	}
+
+	return testCodec
+}
+
+func fullStructIDL(t *testing.T) string {
+	t.Helper()
+
+	return fmt.Sprintf(
+		baseIDL,
+		testStructIDL,
+		strings.Join([]string{midLevelDynamicStructIDL, midLevelStaticStructIDL, innerDynamicStructIDL, innerStaticStructIDL, accountStructIDL}, ","),
+	)
+}
+
+func fullTestIDL(t *testing.T) string {
+	t.Helper()
+
+	// Combine all of the type definitions into one comma-separated string.
+	allTypes := strings.Join([]string{
+		testStructIDL,
+		uint64BaseTypeIDL,
+		uint64SliceBaseTypeIDL,
+	}, ",")
+
+	return fmt.Sprintf(
+		baseIDL,
+		allTypes,
+		strings.Join([]string{midLevelDynamicStructIDL, midLevelStaticStructIDL, innerDynamicStructIDL, innerStaticStructIDL, accountStructIDL}, ","),
+	)
+}
+
+const (
+	baseIDL = `{
+		"version": "0.1.0",
+		"name": "some_test_idl",
+		"accounts": [%s],
+		"types": [%s]
+	}`
+
+	testStructIDL = `{
+		"name": "TestStruct",
+		"type": {
+			"kind": "struct",
+			"fields": [
+				{"name": "field","type": {"option": "i32"}},
+				{"name": "differentField","type": "string"},
+				{"name": "bigField","type": "i128"},
+				{"name": "nestedDynamicStruct","type": {"defined": "MidLevelDynamicStruct"}},
+				{"name": "nestedStaticStruct","type": {"defined": "MidLevelStaticStruct"}},
+				{"name": "oracleID","type": "u8"},
+				{"name": "oracleIDs","type": {"array": ["u8",32]}},
+				{"name": "accountStruct","type": {"defined": "accountStruct"}},
+				{"name": "accounts","type": {"vec": "bytes"}}
+
+			]
+		}
+	}`
+
+	accountStructIDL = `{
+		"name": "accountStruct",
+		"type": {
+			"kind": "struct",
+			"fields": [
+				{"name": "account", "type": "bytes"},
+				{"name": "accountStr", "type": {"array": ["u8",32]}}
+			]
+		}
+	}`
+
+	midLevelDynamicStructIDL = `{
+		"name": "MidLevelDynamicStruct",
+		"type": {
+			"kind": "struct",
+			"fields": [
+				{"name": "fixedBytes", "type": {"array": ["u8",2]}},
+				{"name": "inner", "type": {"defined": "InnerDynamicTestStruct"}}
+			]
+		}
+	}`
+
+	midLevelStaticStructIDL = `{
+		"name": "MidLevelStaticStruct",
+		"type": {
+			"kind": "struct",
+			"fields": [
+				{"name": "fixedBytes", "type": {"array": ["u8",2]}},
+				{"name": "inner", "type": {"defined": "InnerStaticTestStruct"}}
+			]
+		}
+	}`
+
+	innerDynamicStructIDL = `{
+		"name": "InnerDynamicTestStruct",
+		"type": {
+			"kind": "struct",
+			"fields": [
+				{"name": "i", "type": "i32"},
+				{"name": "s", "type": "string"}
+			]
+		}
+	}`
+
+	innerStaticStructIDL = `{
+		"name": "InnerStaticTestStruct",
+		"type": {
+			"kind": "struct",
+			"fields": [
+				{"name": "i", "type": "i32"},
+				{"name": "a", "type": "bytes"}
+			]
+		}
+	}`
+
+	uint64BaseTypeIDL = `{
+		"name": "SimpleUint64Value",
+		"type": {
+			"kind": "struct",
+			"fields": [
+				{"name": "i", "type": "u64"}
+			]
+		}
+	}`
+
+	uint64SliceBaseTypeIDL = `{
+		"name": "Uint64Slice",
+		"type": {
+			"kind": "struct",
+			"fields": [
+				{"name": "vals", "type": {"vec": "u64"}}
+			]
+		}
+	}`
+)
+
+// Required to allow test skipping to be on the same goroutine
+type skipEventsChainReaderTester struct {
+	ChainComponentsInterfaceTester[*testing.T]
+}
+
+func (s *skipEventsChainReaderTester) GetContractReader(t *testing.T) types.ContractReader {
+	return &skipEventsChainReader{
+		ContractReader: s.ChainComponentsInterfaceTester.GetContractReader(t),
+		t:              t,
+	}
+}
+
+type skipEventsChainReader struct {
+	types.ContractReader
+	t *testing.T
+}
+
+func (s *skipEventsChainReader) GetLatestValue(ctx context.Context, readIdentifier string, confidenceLevel primitives.ConfidenceLevel, params, returnVal any) error {
+	parts := strings.Split(readIdentifier, "-")
+	if len(parts) < 3 {
+		panic("unexpected readIdentifier length")
+	}
+
+	contractName := parts[1]
+	method := parts[2]
+
+	if contractName == AnyContractName && method == EventName {
+		s.t.Skip("Events are not yet supported in Solana")
+	}
+
+	return s.ContractReader.GetLatestValue(ctx, readIdentifier, confidenceLevel, params, returnVal)
+}
+
+func (s *skipEventsChainReader) BatchGetLatestValues(_ context.Context, _ types.BatchGetLatestValuesRequest) (types.BatchGetLatestValuesResult, error) {
+	s.t.Skip("BatchGetLatestValues is not yet supported in Solana")
+	return nil, nil
+}
+
+func (s *skipEventsChainReader) QueryKey(_ context.Context, _ types.BoundContract, _ query.KeyFilter, _ query.LimitAndSort, _ any) ([]types.Sequence, error) {
+	s.t.Skip("QueryKey is not yet supported in Solana")
+	return nil, nil
+}
+
+func mustUnmarshalIDL(t *testing.T, rawIDL string) codecv1.IDL {
+	var idl codecv1.IDL
+	if err := json.Unmarshal([]byte(rawIDL), &idl); err != nil {
+		t.Logf("failed to unmarshal test IDL: %s", err.Error())
+		t.FailNow()
+	}
+
+	return idl
+}
+
+func mustFindProgramAddress(t *testing.T, programID solana.PublicKey, seeds [][]byte) solana.PublicKey {
+	key, _, err := solana.FindProgramAddress(seeds, programID)
+	require.NoError(t, err)
+	return key
+}

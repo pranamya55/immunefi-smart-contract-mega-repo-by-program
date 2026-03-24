@@ -1,0 +1,154 @@
+[
+  {
+    "project_slug": "cowprotocol",
+    "asset_id": "7IDVgk3ey1KEfAzGbvEqhz",
+    "url": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/GPv2AllowListAuthentication.sol",
+    "description": "GPv2AllowListAuthentication",
+    "added_at": "2022-02-18T12:41:39.708Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "cowprotocol",
+    "asset_id": "C1sbsgXSSEakKevP2zp4p",
+    "url": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2EIP1967.sol",
+    "description": "GPv2EIP1967",
+    "added_at": "2022-02-18T12:41:42.556Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "cowprotocol",
+    "asset_id": "6pFCPVxUXKTRcwKC0pXVNz",
+    "url": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/GPv2Settlement.sol",
+    "description": "GPv2Settlement",
+    "added_at": "2022-02-18T12:41:45.679Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "cowprotocol",
+    "asset_id": "1dqxOYJ0E2mYeEi9i1KOdT",
+    "url": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/GPv2Signing.sol",
+    "description": "GPv2Signing.sol",
+    "added_at": "2022-02-18T12:41:47.929Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "cowprotocol",
+    "asset_id": "eieGGfuIG4mo01lrbBy69",
+    "url": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/StorageAccessible.sol",
+    "description": "StorageAccessible.sol",
+    "added_at": "2022-02-18T12:41:50.167Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "cowprotocol",
+    "asset_id": "2P61aZoKBQLSljHvSaOpF9",
+    "url": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Interaction.sol",
+    "description": "GPv2Interaction.sol",
+    "added_at": "2022-02-18T12:41:52.410Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "cowprotocol",
+    "asset_id": "6wXVh6YCK8iormAFIWvlf0",
+    "url": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Order.sol",
+    "description": "GPv2Order.sol",
+    "added_at": "2022-02-18T12:41:54.518Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "cowprotocol",
+    "asset_id": "4LZPwYXeFUqBmb5I2IlGXd",
+    "url": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Trade.sol",
+    "description": "GPv2Trade.sol",
+    "added_at": "2022-02-18T12:41:56.952Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "cowprotocol",
+    "asset_id": "6aFcLI516TUcWk3NcDWftl",
+    "url": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Transfer.sol",
+    "description": "GPv2Transfer.sol",
+    "added_at": "2022-02-18T12:41:59.002Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "cowprotocol",
+    "asset_id": "UWpnNoGWKzdGpPB0kNkuJ",
+    "url": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2SafeERC20.sol",
+    "description": "GPv2SafeERC20.sol",
+    "added_at": "2022-02-18T12:42:01.215Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "cowprotocol",
+    "asset_id": "FFpDPF6pNigXS1aQwLZVT",
+    "url": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/GPv2Authentication.sol",
+    "description": "GPv2Authentication.sol",
+    "added_at": "2022-02-18T12:42:03.465Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "cowprotocol",
+    "asset_id": "1ehUC75nOi26X0LLewTjyM",
+    "url": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/GPv2EIP1271.sol",
+    "description": "GPv2EIP1271.sol",
+    "added_at": "2022-02-18T12:42:06.729Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "cowprotocol",
+    "asset_id": "5cLG8LL6drGflG6ZOf0h9V",
+    "url": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/GPv2VaultRelayer.sol",
+    "description": "GPv2VaultRelayer.sol",
+    "added_at": "2022-02-18T12:42:09.583Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "cowprotocol",
+    "asset_id": "49XeDkiTg7p4gPiZdXOYRA",
+    "url": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/Initializable.sol",
+    "description": "Initializable.sol",
+    "added_at": "2022-02-18T12:42:11.344Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "cowprotocol",
+    "asset_id": "6xpqTZ1Ms8y5SNaLtjdtc9",
+    "url": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/ReentrancyGuard.sol",
+    "description": "ReentrancyGuard.sol",
+    "added_at": "2022-02-18T12:42:12.919Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "cowprotocol",
+    "asset_id": "5zLXpxZpaTTtkwl4ndMjzS",
+    "url": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/SafeCast.sol",
+    "description": "SafeCast.sol",
+    "added_at": "2022-02-18T12:42:15.268Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "cowprotocol",
+    "asset_id": "7069ZHbdqxv89QwHGtOyLQ",
+    "url": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/SafeMath.sol",
+    "description": "SafeMath.sol",
+    "added_at": "2022-02-18T12:42:17.885Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "cowprotocol",
+    "asset_id": "4CzqqbTzHD96QWlVwWfUa1",
+    "url": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/IERC20.sol",
+    "description": "IERC20.sol",
+    "added_at": "2022-02-18T12:42:21.671Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "cowprotocol",
+    "asset_id": "42VjcyHurEdBA0pYWhQ5z5",
+    "url": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/IVault.sol",
+    "description": "IVault.sol",
+    "added_at": "2022-02-18T12:42:40.025Z",
+    "revision": 2
+  }
+]

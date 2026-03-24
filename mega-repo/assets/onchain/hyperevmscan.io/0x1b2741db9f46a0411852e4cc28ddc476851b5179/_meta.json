@@ -1,0 +1,24 @@
+{
+  "url": "https://hyperevmscan.io/address/0x1b2741dB9F46a0411852e4cC28dDC476851b5179#code",
+  "host": "hyperevmscan.io",
+  "address": "0x1b2741dB9F46a0411852e4cC28dDC476851b5179",
+  "chainid": 999,
+  "project_slug": "parallel",
+  "asset_id": "2KQOPJ6L4RvaIQmvKivYku",
+  "contract_name": "Swapper",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "1000",
+  "constructor_arguments": "",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 38,
+  "mode": "json-sources"
+}

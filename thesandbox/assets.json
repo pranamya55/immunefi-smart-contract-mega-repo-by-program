@@ -1,0 +1,218 @@
+[
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "6OpJsebyaFzjVVFnkqrZcW",
+    "url": "https://polygonscan.com/address/0xDbc52cd5b8EdA1A7BCBABb838ca927d23E3673e5",
+    "description": "ASSET (Polygon)",
+    "added_at": "2023-12-13T10:56:13.693Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "1pY0WVgnig33eMNNN8oeVF",
+    "url": "https://polygonscan.com/address/0x58E0e4b0C6D99bEbC95a2be635a677D947b5C912",
+    "description": "ASSETCreate",
+    "added_at": "2023-12-13T10:56:16.706Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "1qNszSoDSxSxJZsEWrG298",
+    "url": "https://polygonscan.com/address/0x1f980CFDf257792f2D85523094cD6B7210CAb509",
+    "description": "CATALYST",
+    "added_at": "2023-12-13T10:56:18.460Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "434tQANEAd8C8vMryuEdvG",
+    "url": "https://polygonscan.com/address/0x687B573233791b96b51a47B6FCB8D7D9eceF118e",
+    "description": "Marketplace",
+    "added_at": "2023-12-13T10:56:20.528Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "7ljICAoH8IfRmCm7GQ8R2w",
+    "url": "https://polygonscan.com/address/0x4063c6Ccd3D9541E53A514E83fba3843A7848E2F",
+    "description": "RoyaltyManager",
+    "added_at": "2023-12-13T10:56:22.212Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "7t1kdos08im7tY8HbFrJhx",
+    "url": "https://polygonscan.com/address/0xafd5f5c6e72f0f6441e4abf2ae8ff23dee21a87a",
+    "description": "RoyaltySplitter",
+    "added_at": "2023-12-13T10:56:24.038Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "2Cotw4ZmNuNMZZ5JgiEz57",
+    "url": "https://etherscan.io/address/0x5CC5B05a8A13E3fBDB0BB9FcCd98D38e50F90c38",
+    "description": "LAND",
+    "added_at": "2022-07-05T15:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "7z5QusHIMumrprepeQgPDv",
+    "url": "https://etherscan.io/address/0x6cE82874EAf6E7602fD21Cf8bBDEd82705680A99",
+    "description": "LAND Tunnel",
+    "added_at": "2022-07-05T15:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "65aZLyhZQEYXPWAF8oeCQF",
+    "url": "https://etherscan.io/address/0x3845badade8e6dff049820680d1f14bd3903a5d0",
+    "description": "SAND",
+    "added_at": "2022-07-05T15:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "5tuxb9WsPQ7KSLrPvbGnUr",
+    "url": "https://etherscan.io/address/0x942DaEbbec2ab2307223E58E2C4360d4EBf88FA4",
+    "description": "EstateSalesWithAuth",
+    "added_at": "2022-07-05T15:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "nMmlM6PBe3zy94uybxzb4",
+    "url": "https://polygonscan.com/address/0xa6e383bda26e4c52a3a3a3463552c42494669abd",
+    "description": "SAND Staking Pool",
+    "added_at": "2022-07-05T15:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "5U2FZ0iPA87MR4g4vDRGgU",
+    "url": "https://polygonscan.com/address/0x7695b9ac52e49f1a8c4c554a072edb225eebfe70",
+    "description": "SAND Staking Pool Contribution Calculator",
+    "added_at": "2022-07-05T15:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "QzeODKkw8UFTCSGJocaDY",
+    "url": "https://polygonscan.com/address/0xbbba073c31bf03b8acf7c28ef0738decf3695683",
+    "description": "SAND",
+    "added_at": "2022-07-05T15:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "nDzDxhXMIYJQyabZtm2ej",
+    "url": "https://polygonscan.com/address/0x9d305a42a3975ee4c1c57555bed5919889dce63f",
+    "description": "LAND",
+    "added_at": "2022-07-05T15:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "75jUwSK3DmrEDwOSwqdZy0",
+    "url": "https://polygonscan.com/address/0x21B083e128fa7BcC31214a0c000B56Fd4372EEa8",
+    "description": "LAND Tunnel",
+    "added_at": "2022-07-05T15:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "3peFa2ygqBjUvG854xCUeN",
+    "url": "https://polygonscan.com/address/0xc3f3ef3929392fdc697c5800d6cd18af73377a8f",
+    "description": "Avatar collections",
+    "added_at": "2023-03-16T15:12:00.882Z",
+    "revision": 4
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "2OUsfwmQhmNFEKvrvQ87pZ",
+    "url": "https://polygonscan.com/address/0x5cd67Daa17F708d6489E7Bb7648b7D0B823eA7bF",
+    "description": "Staking v4 - SAND Staking pool Rewards Calculator",
+    "added_at": "2023-03-16T22:11:07.619Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "2hv2kynEtpq0g3KgVunC4v",
+    "url": "https://polygonscan.com/address/0x6b4831e24F0cd73d4150EF4694aA87d6c104A774",
+    "description": "Staking v4 - SAND Staking pool Contribution Rules",
+    "added_at": "2023-03-16T22:11:21.165Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "2WfbiPuLeHcUOvBfMpi8ZH",
+    "url": "https://polygonscan.com/address/0xD3A9CAa25393765c05ce9f332B5E33b5E33D8B8F",
+    "description": "Staking v4 - SAND Staking pool",
+    "added_at": "2023-03-16T22:11:56.201Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "7gxHhoecDdfoA1QGaBs4IJ",
+    "url": "https://polygonscan.com/address/0x3eF580A4A6B862183558625126bcC186436bfF4a",
+    "description": "Collection Factory",
+    "added_at": "2023-07-05T13:57:36.233Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "VElFYNVtFxQUJzt30nWVd",
+    "url": "https://polygonscan.com/address/0x90262e888bbf1f5f375a9286da324f2aeeeebec2",
+    "description": "Avatar collections v2",
+    "added_at": "2023-07-05T13:57:33.256Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "3vVgG6QQTz61fg7zeKlfQe",
+    "url": "https://etherscan.io/address/0xa342f5d851e866e18ff98f351f2c6637f4478db5",
+    "description": "ASSET (Ethereum) ",
+    "added_at": "2023-12-13T10:56:28.489Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "ltpohmVrayaXGvfBd5GiA",
+    "url": "https://bscscan.com/address/0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF",
+    "description": "SAND on BSC",
+    "added_at": "2024-09-27T07:22:52.300Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "4LEX6TnPmCl126lHSO5fRP",
+    "url": "https://basescan.org/address/0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF",
+    "description": "SAND on BASE",
+    "added_at": "2024-09-27T07:23:06.615Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "4ntZa6HfH6IEqQosRgxEb0",
+    "url": "https://etherscan.io/address/0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF",
+    "description": "OFTAdapterForSand",
+    "added_at": "2024-09-27T07:23:21.134Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "4eIXMGQgVbIwZkEguTH4N1",
+    "url": "https://polygonscan.com/address/0x214d52880b1e4E17d020908cd8EAa988FfDD4020",
+    "description": "MultiGiveaway",
+    "added_at": "2024-11-15T14:25:41.925Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "thesandbox",
+    "asset_id": "2bbGVhRuwXRMr7ctxwiazJ",
+    "url": "https://polygonscan.com/address/0x3d49b60783dB5FA4341355f31e4D9CBa63E53035",
+    "description": "InstantGiveaway",
+    "added_at": "2024-11-18T12:23:57.470Z",
+    "revision": 1
+  }
+]

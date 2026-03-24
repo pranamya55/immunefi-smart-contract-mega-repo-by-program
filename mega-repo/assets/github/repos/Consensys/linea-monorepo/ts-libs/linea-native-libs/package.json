@@ -1,0 +1,46 @@
+{
+  "name": "@consensys/linea-native-libs",
+  "version": "1.2.0",
+  "description": "Linea native libs",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "postbuild": "bash ./src/scripts/build.sh",
+    "build": "tsup --tsconfig tsconfig.build.json",
+    "clean": "rimraf dist build coverage node_modules",
+    "test": "jest --bail --detectOpenHandles --forceExit && jest-it-up",
+    "lint:ts": "eslint '**/*.ts'",
+    "lint:ts:fix": "eslint --fix '**/*.ts'",
+    "prettier": "prettier -c '**/*.ts'",
+    "prettier:fix": "prettier -w '**/*.ts'",
+    "lint:fix": "pnpm run lint:ts:fix && pnpm run prettier:fix"
+  },
+  "author": "",
+  "license": "(MIT OR Apache-2.0)",
+  "devDependencies": {
+    "@consensys/eslint-config": "workspace:*",
+    "@jest/globals": "catalog:",
+    "@types/jest": "catalog:",
+    "@types/unzipper": "0.10.11",
+    "dotenv": "catalog:",
+    "jest": "catalog:",
+    "jest-it-up": "4.0.1",
+    "ts-jest": "catalog:",
+    "tsup": "catalog:",
+    "unzipper": "0.12.3",
+    "viem": "2.47.5"
+  },
+  "dependencies": {
+    "koffi": "2.15.2"
+  }
+}

@@ -1,0 +1,16 @@
+[[package]]
+name = "same_const_name"
+source = "member"
+dependencies = [
+    "same_const_name_lib",
+    "std",
+]
+
+[[package]]
+name = "same_const_name_lib"
+source = "path+from-root-D6F3B8407FD848BE"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-D6F3B8407FD848BE"

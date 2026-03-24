@@ -1,0 +1,24 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0xABF27B8e4dA617Fff2e666F71C137D71cf75b5F6",
+  "host": "optimistic.etherscan.io",
+  "address": "0xABF27B8e4dA617Fff2e666F71C137D71cf75b5F6",
+  "chainid": 10,
+  "project_slug": "metronome",
+  "asset_id": "6wGwG07izcXVfYYRCXzdzx",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "1",
+  "runs": "999999",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "1",
+  "implementation": "0xdce663bf14e025f7164d992fe455e6fa88f34a91",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 8,
+  "mode": "json-sources"
+}

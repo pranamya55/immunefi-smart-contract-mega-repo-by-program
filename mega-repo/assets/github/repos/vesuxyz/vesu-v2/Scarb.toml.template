@@ -1,0 +1,47 @@
+[package]
+name = "vesu"
+version = "0.1.0"
+cairo-version = "=2.11.4"
+edition = "2024_07"
+license = "BUSL-1.1"
+
+[lib]
+
+[[target.starknet-contract]]
+casm = true
+sierra = true
+
+[dependencies]
+starknet = "2.11.4"
+alexandria_math = { git = "https://github.com/keep-starknet-strange/alexandria.git", rev = "c804e98" }
+openzeppelin = "2.0.0"
+
+[dev-dependencies]
+snforge_std = { git = "https://github.com/foundry-rs/starknet-foundry", tag = "v0.46.0" }
+
+[tool.fmt]
+max-line-length = 120
+sort-module-level-items = true
+
+[[tool.snforge.fork]]
+name = "Mainnet"
+url = "MAINNET_RPC_URL"
+block_id.number = "1565065"
+
+[tool.voyager]
+oracle = { path = "src/oracle.cairo" }
+pool = { path = "src/pool.cairo" }
+pool-factory = { path = "src/pool-factory.cairo" }
+
+[scripts]
+buildRelease = "scarb --profile release build"
+format = "scarb fmt && yarn prettier --write ."
+checkFormat = "scarb fmt --check && yarn prettier --check ."
+createPool = "node --loader ts-node/esm ./scripts/createPool.ts"
+createPosition = "node --loader ts-node/esm ./scripts/createPosition.ts"
+checkSecurityInvariants = "node --loader ts-node/esm ./scripts/checkSecurityInvariants.ts"
+deployMainnet = "scarb --profile release build && node --loader ts-node/esm ./scripts/deployMainnet.ts"
+printContractSize = "&& node --loader ts-node/esm ./scripts/printContractSize.ts"
+printPoolParams = "node --loader ts-node/esm ./scripts/printPoolParams.ts"
+verifyPool = "node --loader ts-node/esm ./scripts/verifyPool.ts"
+test = "snforge test --max-n-steps 100000000"

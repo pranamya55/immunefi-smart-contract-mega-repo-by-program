@@ -1,0 +1,35 @@
+{
+  "name": "limonade",
+  "version": "0.4.0",
+  "description": "This script is used to submit new opportunities fetched from the limo program to the express relay.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest src/ --passWithNoTests",
+    "limonade": "pnpm build && node dist/index.js",
+    "lint": "eslint src",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "APACHE-2.0",
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "@types/yargs": "catalog:",
+    "jest": "catalog:",
+    "typescript": "catalog:"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "catalog:",
+    "@coral-xyz/anchor-cli": "catalog:",
+    "@kamino-finance/limo-sdk": "catalog:",
+    "@pythnetwork/express-relay-js": "workspace:*",
+    "@pythnetwork/hermes-client": "^1.2.0",
+    "@solana/spl-token": "^0.4.9",
+    "@solana/web3.js": "catalog:",
+    "axios": "^1.7.3",
+    "bs58": "catalog:",
+    "yaml": "^2.6.1",
+    "yargs": "catalog:"
+  }
+}

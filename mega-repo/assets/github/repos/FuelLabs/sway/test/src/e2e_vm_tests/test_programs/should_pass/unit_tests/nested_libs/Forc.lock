@@ -1,0 +1,8 @@
+[[package]]
+name = "nested_libs"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-6E8361428B3F8FCA"

@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x8bE3460A480c80728a8C4D7a5D5303c85ba7B3b9#code",
+  "host": "etherscan.io",
+  "address": "0x8bE3460A480c80728a8C4D7a5D5303c85ba7B3b9",
+  "chainid": 1,
+  "project_slug": "ethena",
+  "asset_id": "1rwKRZ9HBT8ud99W7WgzL2",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "20000",
+  "constructor_arguments": "0000000000000000000000007fd57b46ae1a7b14f6940508381877ee03e1018b000000000000000000000000f849d7792ff9b30a57656ee10a2776bcb49f4fe400000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000064c0c53b8b00000000000000000000000057e114b691db790c35207b2e685d4a43181e606100000000000000000000000071e4f98e8f20c88112489de3dded4489802a3a870000000000000000000000003b0aaf6e6fcd4a7ceef8c92c32dfea9e64dc186200000000000000000000000000000000000000000000000000000000",
+  "evm_version": "shanghai",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x7fd57b46ae1a7b14f6940508381877ee03e1018b",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "project_slug": "kiln-on-chain-v1",
+    "asset_id": "5VQ2qXQ8ROQZNTGO5ogvzU",
+    "url": "https://etherscan.io/address/0x462Dd07A79e5DDfBe0C171449C5c01788d5d03C3",
+    "description": "Consensus Layer Fee Dispatcher",
+    "added_at": "2024-10-01T15:17:47.602Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kiln-on-chain-v1",
+    "asset_id": "5GpwQUSWM7eELtHDyXOi0w",
+    "url": "https://goerli.etherscan.io/address/0xD36B422a7EE65219732724d849B8b6BceD6155Fe",
+    "description": "Consensus Layer Fee Dispatcher (testnet)",
+    "added_at": "2024-10-01T15:18:03.017Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kiln-on-chain-v1",
+    "asset_id": "6gRsd3Kz2G4PWQjaq8TIjd",
+    "url": "https://etherscan.io/address/0xE8EC6F702D68ded71112031D78bBFf959c7234C7",
+    "description": "Consensus Layer Fee Dispatcher Proxy",
+    "added_at": "2024-10-01T15:18:16.353Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kiln-on-chain-v1",
+    "asset_id": "1uAckEZfyGjHSKCEx2kwZU",
+    "url": "https://goerli.etherscan.io/address/0x50Dba42662FD69f5Fd9236540aaD9f99f7F6b3b2",
+    "description": "Consensus Layer Fee Dispatcher Proxy (testnet)",
+    "added_at": "2024-10-01T15:18:29.739Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kiln-on-chain-v1",
+    "asset_id": "HT2VbBeovVklks8jUBGMw",
+    "url": "https://etherscan.io/address/0xca4DD914fA713214844c84F153A5e1627536a7fC",
+    "description": "Execution Layer Fee Dispatcher",
+    "added_at": "2024-10-01T15:18:42.765Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kiln-on-chain-v1",
+    "asset_id": "9HrhiKTY7DIYEk6c6cO96",
+    "url": "https://goerli.etherscan.io/address/0xa69dDEBd0B6893A6F3d34A5df610d0E2ED433D18",
+    "description": "Execution Layer Fee Dispatcher (testnet)",
+    "added_at": "2024-10-01T15:18:57.194Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kiln-on-chain-v1",
+    "asset_id": "d1eINxqWBX1bNvOumPNxm",
+    "url": "https://etherscan.io/address/0x72b4C52f18f52EbA3E4290a002dF7c387427b058",
+    "description": "Execution Layer Fee Dispatcher Proxy",
+    "added_at": "2024-10-01T15:19:12.128Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kiln-on-chain-v1",
+    "asset_id": "6xU2HowYjg61HBNFo9wbrd",
+    "url": "https://goerli.etherscan.io/address/0x639d818639B85a1892Bfbb40Bd724b4Ddea43C0C",
+    "description": "Execution Layer Fee Dispatcher Proxy (testnet)",
+    "added_at": "2024-10-01T15:19:32.637Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kiln-on-chain-v1",
+    "asset_id": "66O1OQmXgxsdoIZsJNxQ6U",
+    "url": "https://etherscan.io/address/0x933fBfeb4Ed1F111D12A39c2aB48657e6fc875C6",
+    "description": "Fee Recipient",
+    "added_at": "2024-10-01T15:20:42.855Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kiln-on-chain-v1",
+    "asset_id": "2zerwJPCbDUS8ot3a0Qhhj",
+    "url": "https://goerli.etherscan.io/address/0x1AcD717aDF8A3A1e4c23C6510cfbE76834E3f1bf",
+    "description": "Fee Recipient (testnet)",
+    "added_at": "2024-10-01T15:21:03.133Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kiln-on-chain-v1",
+    "asset_id": "3CVh9nM4ZusjhU06yfCqAd",
+    "url": "https://etherscan.io/address/0x0A7272e8573aea8359FEC143ac02AED90F822bD0",
+    "description": "Staking Contract",
+    "added_at": "2024-10-01T15:21:20.079Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kiln-on-chain-v1",
+    "asset_id": "5h5VLKpEikaWsfNGPwndqG",
+    "url": "https://goerli.etherscan.io/address/0xcd01846F1b37aCE16916969989C136e3c52ef7d2",
+    "description": "Staking Contract (testnet)",
+    "added_at": "2024-10-01T15:21:36.924Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kiln-on-chain-v1",
+    "asset_id": "5498bFa2QZM9Y7uIxiNH8D",
+    "url": "https://etherscan.io/address/0x1e68238ce926dec62b3fbc99ab06eb1d85ce0270",
+    "description": "Staking Contract Proxy",
+    "added_at": "2024-10-01T15:21:53.870Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kiln-on-chain-v1",
+    "asset_id": "3CvSKYIs1JRZkgjfTzaQlc",
+    "url": "https://goerli.etherscan.io/address/0xe8Ff2a04837aac535199eEcB5ecE52b2735b3543",
+    "description": "Staking Contract Proxy (testnet)",
+    "added_at": "2024-10-01T15:22:13.549Z",
+    "revision": 1
+  }
+]

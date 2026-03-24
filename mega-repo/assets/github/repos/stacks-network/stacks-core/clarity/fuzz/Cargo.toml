@@ -1,0 +1,46 @@
+[package]
+name = "clarity-fuzz"
+version = "0.0.0"
+publish = false
+edition = "2021"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+# clarity_2_1 = { git = "https://github.com/stacks-network/stacks-blockchain.git", tag = "2.1.0.0.0", package="clarity"}
+
+[dependencies.clarity]
+path = ".."
+features = ["testing"]
+
+[dependencies.stacks-common]
+path = "../../stacks-common"
+features = ["testing"]
+
+# Prevent this from interfering with workspaces
+[workspace]
+members = ["."]
+
+[profile.release]
+debug = 1
+
+[[bin]]
+name = "fuzz_sanitize"
+path = "fuzz_targets/fuzz_sanitize.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "fuzz_value_sanitize"
+path = "fuzz_targets/fuzz_value_sanitize.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "execute_v2_raw"
+path = "fuzz_targets/execute_v2_raw.rs"
+test = false
+doc = false
+bench = false

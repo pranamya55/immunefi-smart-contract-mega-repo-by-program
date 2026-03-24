@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x1B0e765F6224C21223AeA2af16c1C46E38885a40",
+  "host": "etherscan.io",
+  "address": "0x1B0e765F6224C21223AeA2af16c1C46E38885a40",
+  "chainid": 1,
+  "project_slug": "compoundfinance",
+  "asset_id": "6Fj0ev85CexpCpAtn534n4",
+  "contract_name": "CometRewards",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "000000000000000000000000343715fa797b8e9fe48b9efab4b54f01ca860e78",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 10,
+  "mode": "json-sources"
+}

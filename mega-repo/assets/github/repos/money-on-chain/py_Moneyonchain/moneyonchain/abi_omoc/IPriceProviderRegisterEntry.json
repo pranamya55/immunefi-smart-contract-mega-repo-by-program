@@ -1,0 +1,360 @@
+{
+  "contractName": "IPriceProviderRegisterEntry",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getPriceProviderType",
+      "outputs": [
+        {
+          "internalType": "enum IPriceProviderRegisterEntry.IPriceProviderType",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getPriceProviderType\",\"outputs\":[{\"internalType\":\"enum IPriceProviderRegisterEntry.IPriceProviderType\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"title\":\"PPrice\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getPriceProviderType()\":{\"notice\":\"return the type of provider\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/jbokser/work2/OMoC-SC-Shared/contracts/IPriceProviderRegisterEntry.sol\":\"IPriceProviderRegisterEntry\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/jbokser/work2/OMoC-SC-Shared/contracts/IPriceProviderRegisterEntry.sol\":{\"keccak256\":\"0x224dc253c7d3dcd60e27617780cd9c656203e8632d67699f4cda4dc51c7f5e14\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://7e91997efaf82d34c4df20fcfbaae754a8c45f875a71767c3a1b5f6b3881b142\",\"dweb:/ipfs/Qme6rjQN9RAXYoWr52QERnTtGHPfB25qu6K4KaBQzNKog5\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: UNLICENSED\npragma solidity 0.6.12;\n\n/// @title PPrice\ninterface IPriceProviderRegisterEntry {\n    enum IPriceProviderType {None, Published, Calculated}\n\n    /// @notice return the type of provider\n    function getPriceProviderType() external pure returns (IPriceProviderType);\n}\n",
+  "sourcePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/IPriceProviderRegisterEntry.sol",
+  "ast": {
+    "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/IPriceProviderRegisterEntry.sol",
+    "exportedSymbols": {
+      "IPriceProviderRegisterEntry": [
+        1688
+      ]
+    },
+    "id": 1689,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1676,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:23:9"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 1677,
+          "nodeType": "StructuredDocumentation",
+          "src": "64:18:9",
+          "text": "@title PPrice"
+        },
+        "fullyImplemented": false,
+        "id": 1688,
+        "linearizedBaseContracts": [
+          1688
+        ],
+        "name": "IPriceProviderRegisterEntry",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "IPriceProviderRegisterEntry.IPriceProviderType",
+            "id": 1681,
+            "members": [
+              {
+                "id": 1678,
+                "name": "None",
+                "nodeType": "EnumValue",
+                "src": "151:4:9"
+              },
+              {
+                "id": 1679,
+                "name": "Published",
+                "nodeType": "EnumValue",
+                "src": "157:9:9"
+              },
+              {
+                "id": 1680,
+                "name": "Calculated",
+                "nodeType": "EnumValue",
+                "src": "168:10:9"
+              }
+            ],
+            "name": "IPriceProviderType",
+            "nodeType": "EnumDefinition",
+            "src": "126:53:9"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 1682,
+              "nodeType": "StructuredDocumentation",
+              "src": "185:39:9",
+              "text": "@notice return the type of provider"
+            },
+            "functionSelector": "f375b47f",
+            "id": 1687,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPriceProviderType",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1683,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "258:2:9"
+            },
+            "returnParameters": {
+              "id": 1686,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1685,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1687,
+                  "src": "284:18:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_IPriceProviderType_$1681",
+                    "typeString": "enum IPriceProviderRegisterEntry.IPriceProviderType"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 1684,
+                    "name": "IPriceProviderType",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1681,
+                    "src": "284:18:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_IPriceProviderType_$1681",
+                      "typeString": "enum IPriceProviderRegisterEntry.IPriceProviderType"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "283:20:9"
+            },
+            "scope": 1688,
+            "src": "229:75:9",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1689,
+        "src": "82:224:9"
+      }
+    ],
+    "src": "39:268:9"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/IPriceProviderRegisterEntry.sol",
+      "exportedSymbols": {
+        "IPriceProviderRegisterEntry": [
+          1688
+        ]
+      },
+      "license": "UNLICENSED"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 1676,
+        "name": "PragmaDirective",
+        "src": "39:23:9"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            1688
+          ],
+          "name": "IPriceProviderRegisterEntry",
+          "scope": 1689
+        },
+        "children": [
+          {
+            "attributes": {
+              "text": "@title PPrice"
+            },
+            "id": 1677,
+            "name": "StructuredDocumentation",
+            "src": "64:18:9"
+          },
+          {
+            "attributes": {
+              "canonicalName": "IPriceProviderRegisterEntry.IPriceProviderType",
+              "name": "IPriceProviderType"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "None"
+                },
+                "id": 1678,
+                "name": "EnumValue",
+                "src": "151:4:9"
+              },
+              {
+                "attributes": {
+                  "name": "Published"
+                },
+                "id": 1679,
+                "name": "EnumValue",
+                "src": "157:9:9"
+              },
+              {
+                "attributes": {
+                  "name": "Calculated"
+                },
+                "id": 1680,
+                "name": "EnumValue",
+                "src": "168:10:9"
+              }
+            ],
+            "id": 1681,
+            "name": "EnumDefinition",
+            "src": "126:53:9"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "f375b47f",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getPriceProviderType",
+              "overrides": null,
+              "scope": 1688,
+              "stateMutability": "pure",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice return the type of provider"
+                },
+                "id": 1682,
+                "name": "StructuredDocumentation",
+                "src": "185:39:9"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1683,
+                "name": "ParameterList",
+                "src": "258:2:9"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 1687,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "enum IPriceProviderRegisterEntry.IPriceProviderType",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IPriceProviderType",
+                          "referencedDeclaration": 1681,
+                          "type": "enum IPriceProviderRegisterEntry.IPriceProviderType"
+                        },
+                        "id": 1684,
+                        "name": "UserDefinedTypeName",
+                        "src": "284:18:9"
+                      }
+                    ],
+                    "id": 1685,
+                    "name": "VariableDeclaration",
+                    "src": "284:18:9"
+                  }
+                ],
+                "id": 1686,
+                "name": "ParameterList",
+                "src": "283:20:9"
+              }
+            ],
+            "id": 1687,
+            "name": "FunctionDefinition",
+            "src": "229:75:9"
+          }
+        ],
+        "id": 1688,
+        "name": "ContractDefinition",
+        "src": "82:224:9"
+      }
+    ],
+    "id": 1689,
+    "name": "SourceUnit",
+    "src": "39:268:9"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-02-04T20:51:03.348Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "title": "PPrice",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "getPriceProviderType()": {
+        "notice": "return the type of provider"
+      }
+    },
+    "version": 1
+  }
+}

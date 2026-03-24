@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xb287a1964AEE422911c7b8409f5E5A273c1412fA#code",
+  "host": "etherscan.io",
+  "address": "0xb287a1964AEE422911c7b8409f5E5A273c1412fA",
+  "chainid": 1,
+  "project_slug": "yearnfinance",
+  "asset_id": "3Gm9nMhD0Nqcov6DbEg1OJ",
+  "contract_name": "Vyper_contract",
+  "compiler_version": "vyper:0.3.7",
+  "optimization_used": "0",
+  "runs": "0",
+  "constructor_arguments": "00000000000000000000000090c1f9220d90d3966fbee24045edd73e1d588ad500000000000000000000000000000000000000000000000000000000637c9935",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

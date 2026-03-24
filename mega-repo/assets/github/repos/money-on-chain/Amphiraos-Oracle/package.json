@@ -1,0 +1,38 @@
+{
+  "name": "moc-oracle",
+  "version": "1.0.1",
+  "private": true,
+  "description": "MoC Medianizer",
+  "main": "/contracts/MocMedianizer.sol",
+  "scripts": {
+    "test": "truffle test",
+    "truffle-compile": "truffle compile --all",
+    "deploy-eth-testnet": "rm zos.dev-*.json; rm -r build/contracts; truffle migrate --network ethTestnet --reset",
+    "deploy-eth-mainnet": "rm zos.dev-*.json; rm -r build/contracts; truffle migrate --network ethMainnet --reset",
+    "deploy-tether-testnet": "rm zos.dev-*.json; rm -r build/contracts; truffle migrate --network tetherTestnet --reset",
+    "deploy-tether-mainnet": "rm zos.dev-*.json; rm -r build/contracts; truffle migrate --network tetherMainnet --reset",
+    "deploy-moc-testnet": "rm zos.dev-*.json; rm -r build/contracts; truffle migrate --network mocTestnet --reset",
+    "deploy-moc-mainnet": "rm zos.dev-*.json; rm -r build/contracts; truffle migrate --network mocMainnet --reset",
+    "deploy-rdoc-testnet": "rm zos.dev-*.json; rm -r build/contracts; truffle migrate --network rdocTestnet --reset",
+    "deploy-rdoc-mainnet": "rm zos.dev-*.json; rm -r build/contracts; truffle migrate --network rdocMainnet --reset",
+    "flatten-contracts": "bash scripts/contract_flattener.sh"
+  },
+  "devDependencies": {
+    "truffle": "5.0.28",
+    "chai": "4.2.0",
+    "truffle-hdwallet-provider": "1.0.14",
+    "ganache-cli": "6.4.4-beta.0",
+    "bignumber.js": "9.0.0",
+    "eslint": "5.16.0",
+    "openzeppelin-test-helpers": "0.4.0",
+    "@zemse/solidity-flattener": "1.5.1"
+  },
+  "keywords": [
+    "oracle",
+    "solidity",
+    "priceFeed",
+    "medianizer"
+  ],
+  "author": "MakerDao",
+  "license": "GPL"
+}

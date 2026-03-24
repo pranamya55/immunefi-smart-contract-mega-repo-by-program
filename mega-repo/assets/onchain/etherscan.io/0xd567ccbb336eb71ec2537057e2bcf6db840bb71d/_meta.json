@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xD567cCbb336Eb71eC2537057E2bCF6DB840bB71d",
+  "host": "etherscan.io",
+  "address": "0xD567cCbb336Eb71eC2537057E2bCF6DB840bB71d",
+  "chainid": 1,
+  "project_slug": "royco",
+  "asset_id": "db_6d92499b-3892-4390-85db-5e0e09097382",
+  "contract_name": "RoycoFactory",
+  "compiler_version": "v0.8.33+commit.64118f21",
+  "optimization_used": "1",
+  "runs": "3000",
+  "constructor_arguments": "00000000000000000000000035518d5e1fd8105fc325c5c171c329c3b10b254c00000000000000000000000035518d5e1fd8105fc325c5c171c329c3b10b254c",
+  "evm_version": "prague",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 37,
+  "mode": "json-sources"
+}

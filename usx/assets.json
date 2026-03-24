@@ -1,0 +1,50 @@
+[
+  {
+    "project_slug": "usx",
+    "asset_id": "4RGyCkYmTZPl211a19u33l",
+    "url": "https://github.com/scroll-tech/usx-contracts/tree/main/src",
+    "description": "",
+    "added_at": "2025-10-24T09:47:25.564Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usx",
+    "asset_id": "4jwzzenNJaLiBiM3pwxCpo",
+    "url": "https://scrollscan.com/address/0xcb14bcdf6cd483665d10dfd6f87d908996c7f922",
+    "description": "StakedUSX",
+    "added_at": "2025-11-14T19:39:36.158Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usx",
+    "asset_id": "suNaU6wnbDAZbpbFgcoFF",
+    "url": "https://scrollscan.com/address/0xd16909ecc9c71d481ee3b2cb1968c0dadcf0d300",
+    "description": "AssetManager",
+    "added_at": "2025-11-14T19:39:53.580Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usx",
+    "asset_id": "5N5anvm6YFm0IZMMimrGrr",
+    "url": "https://scrollscan.com/address/0x3b005fefc63ca7c8d25ee21fba3787229ba4cf03",
+    "description": "USX",
+    "added_at": "2025-11-14T19:40:07.133Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usx",
+    "asset_id": "5YcVT7iTw27zu1ybsScdhx",
+    "url": "https://scrollscan.com/address/0x9f3d4b0c9e930ca3957ecd3dedb7417f8e0e4c35",
+    "description": "TreasuryDiamond",
+    "added_at": "2025-11-14T19:40:24.425Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usx",
+    "asset_id": "98743",
+    "url": "https://immunefi.com/",
+    "description": "Primacy of Impact",
+    "added_at": "2026-02-06T15:58:36.804Z",
+    "revision": 0
+  }
+]

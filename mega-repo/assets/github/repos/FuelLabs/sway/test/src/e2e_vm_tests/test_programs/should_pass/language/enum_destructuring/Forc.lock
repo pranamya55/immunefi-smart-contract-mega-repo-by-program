@@ -1,0 +1,8 @@
+[[package]]
+name = "enum_destructuring"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-4F875AA377BDB49F"

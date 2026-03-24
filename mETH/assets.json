@@ -1,0 +1,82 @@
+[
+  {
+    "project_slug": "mETH",
+    "asset_id": "49OY3hUekSvHIJapGx7UKv",
+    "url": "https://etherscan.io/address/0xd5F7838F5C461fefF7FE49ea5ebaF7728bB0ADfa",
+    "description": "mETH Token L1",
+    "added_at": "2023-11-28T14:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "mETH",
+    "asset_id": "37m98keRlNBTDXKyHueDfE",
+    "url": "https://etherscan.io/address/0xe3cBd06D7dadB3F4e6557bAb7EdD924CD1489E8f",
+    "description": "Staking",
+    "added_at": "2023-11-28T14:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "mETH",
+    "asset_id": "4sRLIVbU6rER35yGjrd7Jt",
+    "url": "https://etherscan.io/address/0x38fDF7b489316e03eD8754ad339cb5c4483FDcf9",
+    "description": "UnstakeRequestsManager",
+    "added_at": "2023-11-28T14:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "mETH",
+    "asset_id": "7JqZIEPDoK0coggJOZasoE",
+    "url": "https://etherscan.io/address/0x8735049F496727f824Cc0f2B174d826f5c408192",
+    "description": "Oracle",
+    "added_at": "2023-11-28T14:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "mETH",
+    "asset_id": "gYpPymDelDthKYa0SpJBf",
+    "url": "https://etherscan.io/address/0x92e56d2146D54d5AEcB25CA36c89D027a6ea0D90",
+    "description": "OracleQuorumManager",
+    "added_at": "2023-11-28T14:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "mETH",
+    "asset_id": "6Qt22htDNfYHPB0nH2Uqig",
+    "url": "https://etherscan.io/address/0x1766be66fBb0a1883d41B4cfB0a533c5249D3b82",
+    "description": "ReturnsAggregator",
+    "added_at": "2023-11-28T14:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "mETH",
+    "asset_id": "EpkmvStN6u4CT2Cdb4GFx",
+    "url": "https://etherscan.io/address/0xD4e11C28E04c0c2bf370b7a9989498B7eA02493f",
+    "description": "ConsensusLayerReceiver",
+    "added_at": "2023-11-28T14:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "mETH",
+    "asset_id": "5nKV3q03XTMkh84CuUM6Ho",
+    "url": "https://etherscan.io/address/0xD6E4aA932147A3FE5311dA1b67D9e73da06F9cEf",
+    "description": "ExecutionLayerReceiver",
+    "added_at": "2023-11-28T14:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "mETH",
+    "asset_id": "4rfw9HXMp3IjbTp3dphBl8",
+    "url": "https://etherscan.io/address/0x29Ab878aEd032e2e2c86FF4A9a9B05e3276cf1f8",
+    "description": "Pauser",
+    "added_at": "2023-11-28T14:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "mETH",
+    "asset_id": "6QXO4Eph31e37Ox1pvNMMR",
+    "url": "https://explorer.mantle.xyz/address/0xcDA86A272531e8640cD7F1a92c01839911B90bb0",
+    "description": "mETH Token L2",
+    "added_at": "2023-11-28T14:00:00.000Z",
+    "revision": 1
+  }
+]

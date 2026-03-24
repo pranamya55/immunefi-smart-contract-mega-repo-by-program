@@ -1,0 +1,24 @@
+{
+  "url": "https://sonicscan.org/address/0x31a91336414d3b955e494e7d485a6b06b55fc8fb#code",
+  "host": "sonicscan.org",
+  "address": "0x31a91336414d3b955e494e7d485a6b06b55fc8fb",
+  "chainid": 146,
+  "project_slug": "originprotocol",
+  "asset_id": "2GIC5GHuzSgttXqWwg6NT3",
+  "contract_name": "Timelock",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "0",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000000000000000000000000000000000000000003c000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000001000000000000000000000000addea7933db7d83855786eb43a238111c69b00b60000000000000000000000000000000000000000000000000000000000000001000000000000000000000000addea7933db7d83855786eb43a238111c69b00b6",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://a79547a2cff00ab3e9747373ebd172133df6ff2641f204dd67b41b4c9855e9d7",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

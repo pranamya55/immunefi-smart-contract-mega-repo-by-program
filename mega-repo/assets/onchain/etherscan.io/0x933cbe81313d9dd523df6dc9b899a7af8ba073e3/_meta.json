@@ -1,0 +1,19 @@
+{
+  "url": "https://etherscan.io/address/0x933cbe81313d9dd523df6dc9b899a7af8ba073e3",
+  "host": "etherscan.io",
+  "address": "0x933cbe81313d9dd523df6dc9b899a7af8ba073e3",
+  "chainid": 1,
+  "contract_name": "Auction",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000926df14a23be491164dcf93f4c468a50ef659d5b0000000000000000000000008f97cca30dbe80e7a8b462f1dd1a51c32accdfc8000000000000000000000000ad038eb671c44b853887a7e32528fab35dc5d710000000000000000000000000865377367054516e17014ccded1e7d814edc9ce4000000000000000000000000b4497a7351e4915182b3e577b3a2f411fa66b27f0000000000000000000000000000000000000000000069e10de76676d08000000000000000000000000000000000000000000000000211654585005212800000",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 1,
+  "mode": "recover-json-sources"
+}

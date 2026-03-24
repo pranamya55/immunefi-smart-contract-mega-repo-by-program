@@ -1,0 +1,114 @@
+[
+  {
+    "project_slug": "stakewise",
+    "asset_id": "7dvyIqMe1AnZBftHYD8yUx",
+    "url": "https://etherscan.io/address/0xC874b064f465bdD6411D45734b56fac750Cda29A",
+    "description": "Pool",
+    "added_at": "2022-05-24T15:25:50.833Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "stakewise",
+    "asset_id": "62UrtC5GZ8sgNEtdWW9OCO",
+    "url": "https://etherscan.io/address/0x2296e122c1a20Fca3CAc3371357BdAd3be0dF079",
+    "description": "PoolEscrow",
+    "added_at": "2022-05-24T15:26:08.556Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "stakewise",
+    "asset_id": "2wrAeU1HHlq7TmjeG5v4dU",
+    "url": "https://etherscan.io/address/0x002932e11E95DC84C17ed5f94a0439645D8a97BC",
+    "description": "PoolValidators",
+    "added_at": "2022-05-24T15:26:20.795Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "stakewise",
+    "asset_id": "3Oh9YJ9iYhGYIR0q5470ut",
+    "url": "https://etherscan.io/address/0xFe2e637202056d30016725477c5da089Ab0A043A",
+    "description": "StakedEthToken",
+    "added_at": "2022-05-24T15:26:35.971Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "stakewise",
+    "asset_id": "1KHHImkOXm4hSYJX77OzVD",
+    "url": "https://etherscan.io/address/0x20BC832ca081b91433ff6c17f85701B6e92486c5",
+    "description": "RewardEthToken",
+    "added_at": "2022-05-24T15:26:56.101Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "stakewise",
+    "asset_id": "1TQG7lHo583jWkhrbLW1XS",
+    "url": "https://etherscan.io/address/0x48C3399719B582dD63eB5AADf12A40B4C3f52FA2",
+    "description": "StakeWiseToken",
+    "added_at": "2022-05-24T15:27:10.365Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "stakewise",
+    "asset_id": "4sKClCFhpl8GsqzCXtkdn0",
+    "url": "https://etherscan.io/address/0x8a887282E67ff41d36C0b7537eAB035291461AcD",
+    "description": "Oracles",
+    "added_at": "2022-05-24T15:27:26.542Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "stakewise",
+    "asset_id": "0dEpSvBt997gKmk1GMkf2",
+    "url": "https://etherscan.io/address/0xaE678D2A911400a55e06f4A1F0C0B363F3eE2e42",
+    "description": "VestingEscrow",
+    "added_at": "2022-05-24T15:27:41.463Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "stakewise",
+    "asset_id": "OYFfkajF7tyQHBNrBJnXc",
+    "url": "https://etherscan.io/address/0x7B910cc3D4B42FEFF056218bD56d7700E4ea7dD5",
+    "description": "VestingEscrowFactory",
+    "added_at": "2022-05-24T15:27:57.227Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "stakewise",
+    "asset_id": "6o3R7foItq6Mocn4ZGcujJ",
+    "url": "https://etherscan.io/address/0xA3F21010e8b9a3930996C8849Df38f9Ca3647c20",
+    "description": "MerkleDistributor",
+    "added_at": "2022-05-24T15:28:13.896Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "stakewise",
+    "asset_id": "5DR0NBqbNPZyArG13A9Paz",
+    "url": "https://etherscan.io/address/0xC486c10e3611565F5b38b50ad68277b11C889623",
+    "description": "Roles",
+    "added_at": "2022-05-24T15:28:27.321Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "stakewise",
+    "asset_id": "5wz8eZAA66JdvhfhqkUGI1",
+    "url": "https://etherscan.io/address/0x3EB0175dcD67d3AB139aA03165e24AA2188A4C22",
+    "description": "Proxy Admin",
+    "added_at": "2022-05-24T15:28:42.241Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "stakewise",
+    "asset_id": "6l8wM7POrHP08KNaryBdMk",
+    "url": "https://etherscan.io/address/0x144a98cb1CdBb23610501fE6108858D9B7D24934",
+    "description": "Gnosis Safe",
+    "added_at": "2022-05-24T15:28:58.357Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "stakewise",
+    "asset_id": "4ySEI3tYBSiXoGugVR3VHg",
+    "url": "https://etherscan.io/address/0xb5cf5363c3e766e64b37b2fb9554bfe8d48ed1a0",
+    "description": "DAO Module",
+    "added_at": "2022-05-31T16:47:21.950Z",
+    "revision": 0
+  }
+]

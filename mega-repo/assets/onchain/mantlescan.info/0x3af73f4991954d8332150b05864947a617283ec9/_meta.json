@@ -1,0 +1,24 @@
+{
+  "url": "https://mantlescan.info/address/0x3Af73F4991954d8332150B05864947A617283Ec9",
+  "host": "mantlescan.info",
+  "address": "0x3Af73F4991954d8332150B05864947A617283Ec9",
+  "chainid": 5000,
+  "project_slug": "teahousefinance",
+  "asset_id": "1MaKTU0k01wFAr0NwBPMb2",
+  "contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://hoodi.etherscan.io/address/0x7D25D43D5a69ae0521440211C655C11840aF0FD6",
+  "host": "hoodi.etherscan.io",
+  "address": "0x7D25D43D5a69ae0521440211C655C11840aF0FD6",
+  "chainid": 560048,
+  "project_slug": "lido-v3-bug-bounty-competition",
+  "asset_id": "1QgvBEBhZxlTUIvhNxGZ7f",
+  "contract_name": "Dashboard",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "0000000000000000000000003508a952176b3c15387c97be809eaffb1982176a0000000000000000000000007e99ee3c66636de415d2d7c880938f2f40f94de40000000000000000000000004c9ffc325392090f789255b9948ab1659b797964000000000000000000000000e2ef9536daaaebff5b1c130957ab3e80056b06d8",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 50,
+  "mode": "json-sources"
+}

@@ -1,0 +1,4 @@
+category = "fail"
+
+# check: $()Imported symbol "Foo" shadows another symbol of the same name.
+# check: $()Imported symbol "Bar2" shadows another symbol of the same name.

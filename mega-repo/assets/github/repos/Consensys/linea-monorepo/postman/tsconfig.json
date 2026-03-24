@@ -1,0 +1,20 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": false,
+    "exactOptionalPropertyTypes": false
+  },
+  "references": [
+    {
+      "path": "../ts-libs/linea-native-libs"
+    },
+    {
+      "path": "../ts-libs/linea-shared-utils"
+    },
+    {
+      "path": "../sdk/sdk-ethers"
+    }
+  ]
+}

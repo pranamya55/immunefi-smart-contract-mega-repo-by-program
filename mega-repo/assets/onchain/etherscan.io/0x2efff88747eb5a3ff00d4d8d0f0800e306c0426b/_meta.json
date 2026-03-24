@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x2eFFf88747EB5a3FF00d4d8d0f0800E306C0426b",
+  "host": "etherscan.io",
+  "address": "0x2eFFf88747EB5a3FF00d4d8d0f0800E306C0426b",
+  "chainid": 1,
+  "project_slug": "maple",
+  "asset_id": "5eKZwqD12kewqXK4Dx3wFz",
+  "contract_name": "GovernorTimelock",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000d6d4bcde6c816f17889f1dd3000af0261b03a196000000000000000000000000d6d4bcde6c816f17889f1dd3000af0261b03a196000000000000000000000000ce1ce7c7f436dcc4e28bc8bf86115514d3dc34e80000000000000000000000006b1a78c1943b03086f7ee53360f9b0672bd60818000000000000000000000000d6d4bcde6c816f17889f1dd3000af0261b03a196",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 4,
+  "mode": "json-sources"
+}

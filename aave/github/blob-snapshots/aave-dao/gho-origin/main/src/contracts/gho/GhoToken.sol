@@ -1,0 +1,1 @@
+../../../../../../../../../../mega-repo/assets/github/blob-snapshots/aave-dao/gho-origin/main/src/contracts/gho/GhoToken.sol

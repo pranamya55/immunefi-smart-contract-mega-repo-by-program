@@ -1,0 +1,122 @@
+[
+  {
+    "project_slug": "notional-exponent",
+    "asset_id": "njmWVml2QuVUBVaj2uAQN",
+    "url": "https://etherscan.io/address/0xe335d314BD4eF7DD44F103dC124FEFb7Ce63eC95",
+    "description": "Address Registry",
+    "added_at": "2025-12-04T06:58:56.989Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "notional-exponent",
+    "asset_id": "1FoDqtweWi1oAb6aPugiRH",
+    "url": "https://etherscan.io/address/0x9a0c630c310030c4602d1a76583a3b16972ecaa0",
+    "description": "Morpho Lending Router",
+    "added_at": "2026-01-16T02:21:42.373Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "notional-exponent",
+    "asset_id": "7qfQWpFzD7KJrfZldZkKUX",
+    "url": "https://etherscan.io/address/0xaf14d06a65c91541a5b2db627ecd1c92d7d9c48b",
+    "description": "sUSDe Staking Vault",
+    "added_at": "2026-01-16T02:21:50.339Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "notional-exponent",
+    "asset_id": "3wCYAB1xEDjI7qaQjOy8Uc",
+    "url": "https://etherscan.io/address/0x7f723fee1e65a7d26be51a05af0b5efee4a7d5ae",
+    "description": "weETH Staking Vault",
+    "added_at": "2026-01-16T02:22:17.745Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "notional-exponent",
+    "asset_id": "3okQDRZ7wnCBNsYzHapxMG",
+    "url": "https://etherscan.io/address/0x2716561755154eef59bc48eb13712510b27f167f",
+    "description": "Convex OETH/ETH Liquidity Vault",
+    "added_at": "2026-01-16T02:22:31.758Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "notional-exponent",
+    "asset_id": "5LVtOHPjUrRwKFPTHg4niD",
+    "url": "https://etherscan.io/address/0x0e61e810f0918081cbfd2ac8c97e5866daf3f622",
+    "description": "sUSDe NOV 27 2025 PT Vault",
+    "added_at": "2026-01-16T02:22:44.692Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "notional-exponent",
+    "asset_id": "7pzCHM9aZ396UOYmnxeeA7",
+    "url": "https://etherscan.io/address/0x71ba37c7c0eab9f86de6d8745771c66fd3962f20",
+    "description": "weETH Withdraw Request Manager",
+    "added_at": "2026-01-16T02:23:00.853Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "notional-exponent",
+    "asset_id": "fzlLKeNkyVKq2voTLjV3s",
+    "url": "https://etherscan.io/address/0x8c7c9a45916550c6fe04cdaa139672a1b5803c9f",
+    "description": "sUSDe Withdraw Request Manager",
+    "added_at": "2026-01-16T02:23:13.686Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "notional-exponent",
+    "asset_id": "53qpILIWPKtnl6nRF2bw9Y",
+    "url": "https://etherscan.io/address/0x59aa04b190ec76c95a1eb02d9a184b7fdd64b9fb",
+    "description": "OETH Withdraw Request Manager",
+    "added_at": "2026-01-16T02:23:25.949Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "notional-exponent",
+    "asset_id": "Tt8kufQkRcgAkki7enXJB",
+    "url": "https://etherscan.io/address/0xe854ceb7e57988b083b93195d092d289fed1d0ff",
+    "description": "WETH Withdraw Request Manager",
+    "added_at": "2026-01-16T02:23:42.744Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "notional-exponent",
+    "asset_id": "6yOkBBQgmdEMJGYGZ4HNoC",
+    "url": "https://etherscan.io/address/0x091356e6793a0d960174eaab4d470e39a99dd673",
+    "description": "",
+    "added_at": "2026-01-16T03:19:42.064Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "notional-exponent",
+    "asset_id": "3mTZEptsBz9dXzRvIya7J4",
+    "url": "https://etherscan.io/address/0x94f6cb4fae0eb3fa74e9847dff2ff52fd5ec7e6e",
+    "description": "",
+    "added_at": "2026-01-16T03:20:01.894Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "notional-exponent",
+    "asset_id": "1jezgm16t9EtnDdRMtlhRB",
+    "url": "https://etherscan.io/address/0xe4ebb6ea270a70491c3af06376a5862a0fda7268",
+    "description": "",
+    "added_at": "2026-01-16T03:20:27.091Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "notional-exponent",
+    "asset_id": "4FYc7DZsN0KySHhQkoJG0S",
+    "url": "https://etherscan.io/address/0x18f86644781fc9f7b4641d371f377c96744ec10f",
+    "description": "",
+    "added_at": "2026-01-16T03:21:20.853Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "notional-exponent",
+    "asset_id": "98772",
+    "url": "https://immunefi.com/",
+    "description": "Primacy of Impact",
+    "added_at": "2026-02-06T15:58:36.804Z",
+    "revision": 0
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0xdad2dFE1450618e1C90c86bdb0895BcFCaDD4Df5#readProxyContract",
+  "host": "polygonscan.com",
+  "address": "0xdad2dFE1450618e1C90c86bdb0895BcFCaDD4Df5",
+  "chainid": 137,
+  "project_slug": "ensuro",
+  "asset_id": "1FfFnt4nxb6x40SSwllE0N",
+  "contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x303fe729656ce9901953fe085fb414770c8c32fd",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 14,
+  "mode": "json-sources"
+}

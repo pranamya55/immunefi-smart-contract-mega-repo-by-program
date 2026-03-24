@@ -1,0 +1,24 @@
+{
+  "url": "https://lineascan.build/address/0xCa10E8825FA9F1dB0651Cd48A9097997DBf7615d#code",
+  "host": "lineascan.build",
+  "address": "0xCa10E8825FA9F1dB0651Cd48A9097997DBf7615d",
+  "chainid": 59144,
+  "project_slug": "woofi",
+  "asset_id": "3rfiKmKGhWobQQI3M0SAh5",
+  "contract_name": "WooCrossChainRouterV4",
+  "compiler_version": "v0.8.14+commit.80d49f37",
+  "optimization_used": "1",
+  "runs": "20000",
+  "constructor_arguments": "000000000000000000000000e5d7c2a44ffddf6b295a15c148167daaaf5cf34f00000000000000000000000039d361e66798155813b907a70d6c2e3fdafb0877000000000000000000000000be07e5eb5e4b6ca700586b41e4ecab614ad3a05b",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 16,
+  "mode": "json-sources"
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x0d2dBb28B1c7d225132722FAdb2402E93A35c1Be",
+  "host": "etherscan.io",
+  "address": "0x0d2dBb28B1c7d225132722FAdb2402E93A35c1Be",
+  "chainid": 1,
+  "project_slug": "maple",
+  "asset_id": "6KP8Jd5yV3YkjD0MfrzUVO",
+  "contract_name": "MapleAaveStrategyInitializer",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 8,
+  "mode": "json-sources"
+}

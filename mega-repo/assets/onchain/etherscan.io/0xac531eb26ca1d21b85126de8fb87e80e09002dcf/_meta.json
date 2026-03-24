@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF",
+  "host": "etherscan.io",
+  "address": "0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF",
+  "chainid": 1,
+  "project_slug": "thesandbox",
+  "asset_id": "4ntZa6HfH6IEqQosRgxEb0",
+  "contract_name": "OFTAdapterForSand",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": "1",
+  "runs": "2000",
+  "constructor_arguments": "0000000000000000000000003845badade8e6dff049820680d1f14bd3903a5d00000000000000000000000001a44076050125825900e736c501f859c50fe728c000000000000000000000000cba49d154b4bb9a9ad7f5dad396cb9a0a3a62abc00000000000000000000000084a0856b038eaad1cc7e297cf34a7e72685a86930000000000000000000000006ec4090d0f3cb76d9f3d8c4d5bb058a225e560a1",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 41,
+  "mode": "json-sources"
+}

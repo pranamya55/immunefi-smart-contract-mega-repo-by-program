@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0xBA150002660BbCA20675D1C1535Cd76C98A95b13",
+  "host": "arbiscan.io",
+  "address": "0xBA150002660BbCA20675D1C1535Cd76C98A95b13",
+  "chainid": 42161,
+  "project_slug": "beanstalk",
+  "asset_id": "1yuFQd1D7WnppOWTv6iHYz",
+  "contract_name": "MultiFlowPump",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 15,
+  "mode": "json-sources"
+}

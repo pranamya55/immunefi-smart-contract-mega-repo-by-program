@@ -1,0 +1,19 @@
+{
+  "url": "https://basescan.org/address/0xa32d9085c8c56515a1a03648b5c417badbe7732d",
+  "host": "basescan.org",
+  "address": "0xa32d9085c8c56515a1a03648b5c417badbe7732d",
+  "chainid": 8453,
+  "contract_name": "MinSharesSupplyFee",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000a9928195a36ef1c238b1b8b5912b9fbce7554f73",
+  "evm_version": "istanbul",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 5,
+  "mode": "recover-json-sources"
+}

@@ -1,0 +1,25 @@
+{
+  "url": "https://explorer.lyra.finance/address/0xDBa83C0C654DB1cd914FA2710bA743e925B53086",
+  "host": "explorer.lyra.finance",
+  "address": "0xDBa83C0C654DB1cd914FA2710bA743e925B53086",
+  "chainid": null,
+  "project_slug": "derive",
+  "asset_id": "7k0Nq0wOffasQi4S0t18vW",
+  "contract_name": "PerpAsset",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": "0x000000000000000000000000e7603df191d699d8bd9891b821347dbab889e5a5",
+  "evm_version": "paris",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:missing-chainid",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

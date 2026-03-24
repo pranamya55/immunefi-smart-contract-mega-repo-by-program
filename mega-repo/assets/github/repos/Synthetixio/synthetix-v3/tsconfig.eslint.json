@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "./utils/**/*.ts",
+    "./utils/**/*.js",
+    "./protocol/**/*.ts",
+    "./protocol/**/*.js",
+    "./markets/**/*.ts",
+    "./markets/**/*.js",
+    "./auxiliary/**/*.js",
+    "./auxiliary/**/*.ts"
+  ]
+}

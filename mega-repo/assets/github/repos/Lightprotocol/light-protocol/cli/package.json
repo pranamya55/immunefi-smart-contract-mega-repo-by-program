@@ -1,0 +1,133 @@
+{
+  "name": "@lightprotocol/zk-compression-cli",
+  "version": "0.28.0",
+  "description": "ZK Compression: Secure Scaling on Solana",
+  "maintainers": [
+    {
+      "name": "Light Protocol maintainers",
+      "email": "friends@lightprotocol.com"
+    }
+  ],
+  "bin": {
+    "light": "./test_bin/run"
+  },
+  "license": "Apache-2.0",
+  "main": "dist/index.js",
+  "files": [
+    "/accounts",
+    "/bin",
+    "!bin/cargo-generate",
+    "!/bin/**/*.vkey",
+    "!/bin/proving-keys",
+    "!/bin/prover-*",
+    "/dist",
+    "/test_bin",
+    "./config.json",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.29.0",
+    "@lightprotocol/compressed-token": "workspace:*",
+    "@lightprotocol/hasher.rs": "0.2.1",
+    "@lightprotocol/stateless.js": "workspace:*",
+    "@oclif/core": "^4.5.4",
+    "@oclif/plugin-autocomplete": "^3.2.34",
+    "@oclif/plugin-help": "^6.2.33",
+    "@oclif/plugin-not-found": "^3.2.68",
+    "@oclif/plugin-plugins": "^5.4.47",
+    "@oclif/table": "^0.4.14",
+    "@solana/web3.js": "1.98.4",
+    "axios": "1.12.2",
+    "case-anything": "^2.1.13",
+    "cli-progress": "^3.12.0",
+    "cli-spinners": "^2.9.2",
+    "dotenv": "^16.4.7",
+    "ffjavascript": "^0.3.1",
+    "find-process": "^1.4.7",
+    "node-fetch": "^3.3.2",
+    "snake-case": "^3.0.4",
+    "tar": "^7.4.3",
+    "tweetnacl": "^1.0.3",
+    "wait-on": "^7.2.0",
+    "which": "^5.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.36.0",
+    "@oclif/test": "^4.1.14",
+    "@solana/spl-token": "^0.3.11",
+    "@types/bn.js": "^5.1.5",
+    "@types/chai": "^5.2.2",
+    "@types/cli-progress": "^3.11.6",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22",
+    "@types/tar": "^6.1.13",
+    "@types/wait-on": "^5.3.4",
+    "@types/which": "^3.0.4",
+    "@typescript-eslint/eslint-plugin": "^8.44.0",
+    "@typescript-eslint/parser": "^8.44.0",
+    "chai": "^6.0.1",
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "mocha": "^11.7.2",
+    "oclif": "^4.22.22",
+    "prettier": "^3.3.3",
+    "shx": "^0.3.4",
+    "ts-mocha": "^10.0.0",
+    "tslib": "^2.8.1",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  },
+  "oclif": {
+    "bin": "light",
+    "dirname": "light",
+    "commands": "./dist/commands",
+    "plugins": [
+      "@oclif/plugin-help",
+      "@oclif/plugin-plugins",
+      "@oclif/plugin-autocomplete",
+      "@oclif/plugin-not-found"
+    ],
+    "topicSeparator": ""
+  },
+  "scripts": {
+    "postinstall": "[ -d ./bin ] && find ./bin -type f -exec chmod +x {} + || echo 'No bin directory found, skipping chmod'",
+    "sync-prover-version": "./scripts/syncProverVersion.sh",
+    "sync-photon-version": "./scripts/syncPhotonVersion.sh",
+    "build": "shx rm -rf dist && pnpm sync-prover-version && pnpm sync-photon-version && pnpm tsc -p tsconfig.json && pnpm tsc -p tsconfig.test.json",
+    "build-release": "shx rm -rf dist && pnpm sync-prover-version && pnpm sync-photon-version && pnpm tsc -p tsconfig.json && pnpm tsc -p tsconfig.test.json",
+    "format": "pnpm prettier --write \"src/**/*.{ts,js}\" \"test/**/*.{ts,js}\" -w",
+    "format:check": "pnpm prettier \"src/**/*{ts,js}\"  \"test/**/*.{ts,js}\" --check",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "postpack": "shx rm -f oclif.manifest.json",
+    "prepack": "pnpm build-release && oclif manifest && oclif readme",
+    "test-utils": "mocha ./test/utils/index.test.ts -t 10000000 --exit",
+    "test-config": "mocha ./test/commands/config/index.test.ts -t 10000000 --exit",
+    "test-create-mint": "mocha ./test/commands/create-mint/index.test.ts -t 10000000 --exit",
+    "test-merge-token-accounts": "mocha ./test/commands/merge-token-accounts/index.test.ts -t 10000000 --exit",
+    "test-create-token-pool": "mocha ./test/commands/create-token-pool/index.test.ts -t 10000000 --exit",
+    "test-approve-and-mint-to": "mocha ./test/commands/approve-and-mint-to/index.test.ts -t 10000000 --exit",
+    "test-mint-to": "mocha ./test/commands/mint-to/index.test.ts -t 10000000 --exit",
+    "test-transfer": "mocha ./test/commands/transfer/index.test.ts -t 10000000 --exit",
+    "test-token-balance": "mocha test/commands/token-balance/index.test.ts -t 10000000 --exit",
+    "test-compress-sol": "mocha ./test/commands/compress-sol/index.test.ts -t 10000000 --exit",
+    "test-balance": "mocha ./test/commands/balance/index.test.ts -t 10000000 --exit",
+    "test-decompress-sol": "mocha ./test/commands/decompress-sol/index.test.ts -t 10000000 --exit",
+    "test-compress-spl": "mocha ./test/commands/compress-spl/index.test.ts -t 10000000 --exit",
+    "test-decompress-spl": "mocha ./test/commands/decompress-spl/index.test.ts -t 10000000 --exit",
+    "test-test-validator": "mocha ./test/commands/test-validator/index.test.ts -t 10000000 --exit",
+    "kill": "killall solana-test-validator || true && killall solana-test-val || true && sleep 1",
+    "test-cli": "pnpm test-config && pnpm kill",
+    "test": "pnpm kill && pnpm test-cli && pnpm test-utils && pnpm test-create-mint && pnpm test-mint-to && pnpm test-transfer && pnpm test-merge-token-accounts && pnpm test-create-token-pool && pnpm test-compress-spl && pnpm test-decompress-spl && pnpm test-token-balance && pnpm test-compress-sol && pnpm test-balance && pnpm test-decompress-sol && pnpm test-approve-and-mint-to && pnpm test-test-validator",
+    "install-local": "pnpm build && pnpm global remove @lightprotocol/zk-compression-cli || true && pnpm global add $PWD",
+    "version": "oclif readme && git add README.md"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "oclif"
+  ],
+  "types": "dist/index.d.ts"
+}

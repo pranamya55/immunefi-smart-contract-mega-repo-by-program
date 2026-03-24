@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xD5dBE903F5382B052317D326FA1a7B63710C6a5b#code",
+  "host": "etherscan.io",
+  "address": "0xD5dBE903F5382B052317D326FA1a7B63710C6a5b",
+  "chainid": 1,
+  "project_slug": "zksyncera",
+  "asset_id": "763kZLNTXippImzoqealr5",
+  "contract_name": "L1VerifierFflonk",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "9999999",
+  "constructor_arguments": "",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 2,
+  "mode": "json-sources"
+}

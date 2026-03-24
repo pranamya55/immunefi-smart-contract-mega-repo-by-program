@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xc20dB8e8a23F5Ec02126617C4B76f6092A27Ce4b",
+  "host": "etherscan.io",
+  "address": "0xc20dB8e8a23F5Ec02126617C4B76f6092A27Ce4b",
+  "chainid": 1,
+  "project_slug": "stakestone",
+  "asset_id": "6cVmv3peO5NFtLazqyuknV",
+  "contract_name": "SymbioticDepositWstETHStrategy",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": "1",
+  "runs": "10",
+  "constructor_arguments": "000000000000000000000000396abf9ff46e21694f4ef01ca77c6d7893a017b20000000000000000000000007f39c581f595b53c5cb19bd0b3f8da6c935e2ca0000000000000000000000000889edc2edab5f40e902b864ad4d7ade8e412f9b1000000000000000000000000c329400492c6ff2438472d4651ad17389fcb843a00000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000002f57726170706564204c6971756964205374616b6564204574686572c2a028777374455448295f53796d62696f7469630000000000000000000000000000000000",
+  "evm_version": "shanghai",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 15,
+  "mode": "json-sources"
+}

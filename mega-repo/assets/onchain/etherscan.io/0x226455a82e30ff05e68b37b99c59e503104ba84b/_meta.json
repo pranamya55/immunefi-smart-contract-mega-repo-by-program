@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x226455A82E30Ff05E68B37b99C59e503104bA84B",
+  "host": "etherscan.io",
+  "address": "0x226455A82E30Ff05E68B37b99C59e503104bA84B",
+  "chainid": 1,
+  "project_slug": "ern",
+  "asset_id": "db_13bb580b-b65c-440c-b34a-9bab8abee51a",
+  "contract_name": "Ern",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": "0",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb480000000000000000000000002260fac5e5542a773aa44fbcfedf7c193bc2c5990000000000000000000000002f39d218133afab8f2b819b1066c7e434ad94e9e000000000000000000000000e592427a0aece92de3edee1f18e0157c05861564",
+  "evm_version": "prague",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 16,
+  "mode": "json-sources"
+}

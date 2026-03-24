@@ -1,0 +1,19 @@
+{
+  "url": "https://etherscan.io/address/0xbad003da1e107f537ae2f687f5fe7a7affe9b241",
+  "host": "etherscan.io",
+  "address": "0xbad003da1e107f537ae2f687f5fe7a7affe9b241",
+  "chainid": 1,
+  "contract_name": "LoanManager",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 14,
+  "mode": "recover-json-sources"
+}

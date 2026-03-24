@@ -1,0 +1,8 @@
+[[package]]
+name = "mutability_of_references"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-3010732701006D5E"

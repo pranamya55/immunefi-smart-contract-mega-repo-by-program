@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x49affbe9326f2a5e5bf91dd77152a7b04601b2f4",
+  "host": "etherscan.io",
+  "address": "0x49affbe9326f2a5e5bf91dd77152a7b04601b2f4",
+  "chainid": 1,
+  "project_slug": "enzymefinance",
+  "asset_id": "0BiYVMrhTcZlY3BXtMXLY",
+  "contract_name": "ZeroExV4Adapter",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "00000000000000000000000031329024f1a3e4a4b3336e0b1dfa74cc3fec633e000000000000000000000000def1c0ded9bec7f1a1670819833240f027b25eff0000000000000000000000004eb4c7babfb5d54ab4857265b482fb6512d22dff0000000000000000000000000000000000000000000000000000000000000000",
+  "evm_version": "istanbul",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 17,
+  "mode": "json-sources"
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0xC7d91A130ad0521E212f04c2CFA2aDAf926df6AE",
+  "host": "polygonscan.com",
+  "address": "0xC7d91A130ad0521E212f04c2CFA2aDAf926df6AE",
+  "chainid": 137,
+  "project_slug": "gainsnetwork",
+  "asset_id": "6xMNlE9moIJ8oK8zGjhHjy",
+  "contract_name": "GNSCompensationHandlerV6_4_1",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "125",
+  "constructor_arguments": "000000000000000000000000e5417af564e4bfda1c483642db720078713978960000000000000000000000008c74b2256ffb6705f14ada8e86fbd654e0e2beca000000000000000000000000f9a4c522e327935bd1f5a338c121e14e4cc1f89800000000000000000000000077cd42b925e1a82f41d852d6be727cfc88fddbbc0000000000000000000000003378ad81d09de23725ee9b9270635c97ed60192100000000000000000000000002e2c5825c1a3b69c0417706dbe1327c2af3e6c20000000000000000000000002d266a94469d05c9e06d52a4d0d9c23b157767c2",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 4,
+  "mode": "json-sources"
+}

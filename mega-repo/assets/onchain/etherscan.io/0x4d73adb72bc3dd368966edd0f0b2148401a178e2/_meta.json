@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x4d73adb72bc3dd368966edd0f0b2148401a178e2#code",
+  "host": "etherscan.io",
+  "address": "0x4d73adb72bc3dd368966edd0f0b2148401a178e2",
+  "chainid": 1,
+  "project_slug": "layerzero",
+  "asset_id": "1AvnTSvbtUxxvYcp9OfsJr",
+  "contract_name": "UltraLightNodeV2",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": "1",
+  "runs": "30000",
+  "constructor_arguments": "00000000000000000000000066a71dcef29a0ffbdbe3c6a460a3b5bc225cd6750000000000000000000000005b905fe05f81f3a8ad8b28c6e17779cfabf760680000000000000000000000000000000000000000000000000000000000000065",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "None",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://fec2950ded16215c7cfa48e61f5136dfa2770dd4f696d7deb0a7a636056c3509",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

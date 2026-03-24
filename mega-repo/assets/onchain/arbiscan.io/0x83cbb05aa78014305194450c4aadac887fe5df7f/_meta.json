@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x83cBb05AA78014305194450c4AADAc887fe5DF7F",
+  "host": "arbiscan.io",
+  "address": "0x83cBb05AA78014305194450c4AADAc887fe5DF7F",
+  "chainid": 42161,
+  "project_slug": "gmx",
+  "asset_id": "cdQbMu5gk4WjjkIVil8kh",
+  "contract_name": "ChainlinkDataStreamProvider",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": "1",
+  "runs": "10",
+  "constructor_arguments": "000000000000000000000000fd70de6b91282d8017aa4e741e9ae325cab992d8000000000000000000000000b8fc96d7a413c462f611a7ac0c912c2fe26eabc4000000000000000000000000478aa2ac9f6d65f84e09d9185d126c3a17c2a93c",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 27,
+  "mode": "json-sources"
+}

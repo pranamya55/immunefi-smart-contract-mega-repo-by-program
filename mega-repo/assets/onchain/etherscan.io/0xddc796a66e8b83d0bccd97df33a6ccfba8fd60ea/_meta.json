@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xDdC796a66E8b83d0BcCD97dF33A6CcFBA8fd60eA",
+  "host": "etherscan.io",
+  "address": "0xDdC796a66E8b83d0BcCD97dF33A6CcFBA8fd60eA",
+  "chainid": 1,
+  "project_slug": "stakelink",
+  "asset_id": "3pflFBcwjxRuILV6OieMnw",
+  "contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x6fb9cc7d10a5286a864e760c2756e7f6d44d4d26",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 14,
+  "mode": "json-sources"
+}

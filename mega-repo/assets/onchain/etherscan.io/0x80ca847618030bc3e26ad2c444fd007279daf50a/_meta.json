@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x80CA847618030Bc3e26aD2c444FD007279DaF50A",
+  "host": "etherscan.io",
+  "address": "0x80CA847618030Bc3e26aD2c444FD007279DaF50A",
+  "chainid": 1,
+  "project_slug": "resonate",
+  "asset_id": "4PDg2uMK7TPHi7bdXZ4ixk",
+  "contract_name": "Resonate",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": "1",
+  "runs": "100",
+  "constructor_arguments": "000000000000000000000000d2c6eb7527ab1e188638b86f2c14bbad5a431d780000000000000000000000008f74c989252b94fd2d08a668884d303d57c91422000000000000000000000000bfacb56e0ab0dc99e80a95b0412c8dc9c035cd2d000000000000000000000000ebb1185f41a2347dd77b45e1f5e068f1e84f536a000000000000000000000000492cbb6217d34d68f0abb77a9d9781c8ccbfdfe80000000000000000000000000f89ba3f140ea9370ab05d434b8e32fdf41a609300000000000000000000000000fd2c29cf3aa4880a4c05e7ca1382bf987b3495",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 19,
+  "mode": "json-sources"
+}

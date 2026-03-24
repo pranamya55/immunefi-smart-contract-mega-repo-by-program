@@ -1,0 +1,24 @@
+{
+  "url": "https://bscscan.com/address/0x05AC03faeB31c8102A29Dc1Fa4365Dc9e18A4c9C",
+  "host": "bscscan.com",
+  "address": "0x05AC03faeB31c8102A29Dc1Fa4365Dc9e18A4c9C",
+  "chainid": 56,
+  "project_slug": "listadao",
+  "asset_id": "7m3EXuGLTPiGkE01vFIKmH",
+  "contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0xbc380e5542ce7be7418deb88c3d3e80efe570b82",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

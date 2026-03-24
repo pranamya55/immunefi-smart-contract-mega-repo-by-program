@@ -1,0 +1,24 @@
+{
+  "url": "https://berascan.com/address/0x3Dc96399109df5ceb2C226664A086140bD0379cB",
+  "host": "berascan.com",
+  "address": "0x3Dc96399109df5ceb2C226664A086140bD0379cB",
+  "chainid": 80094,
+  "project_slug": "usdt0",
+  "asset_id": "5JARn5d14N4X9UNqWbOofe",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "1",
+  "runs": "999999",
+  "constructor_arguments": "",
+  "evm_version": "london",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "1",
+  "implementation": "0xdc40337cd1f01505ef39d4f30dab6c9b7f16babf",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 8,
+  "mode": "json-sources"
+}

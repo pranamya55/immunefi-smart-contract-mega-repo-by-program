@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x1bB46FC55E3fd91Ca0F162DCC0B3ef574C8ff97E#code",
+  "host": "etherscan.io",
+  "address": "0x1bB46FC55E3fd91Ca0F162DCC0B3ef574C8ff97E",
+  "chainid": 1,
+  "project_slug": "parallel",
+  "asset_id": "6yzMVQSFym1qt7I7TDlXV4",
+  "contract_name": "Redeemer",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "1000",
+  "constructor_arguments": "",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "BSL 1.1",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 36,
+  "mode": "json-sources"
+}

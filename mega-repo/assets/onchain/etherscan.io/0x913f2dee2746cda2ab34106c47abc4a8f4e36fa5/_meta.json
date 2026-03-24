@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x913F2DEe2746CdA2ab34106c47aBC4a8f4e36fa5",
+  "host": "etherscan.io",
+  "address": "0x913F2DEe2746CdA2ab34106c47aBC4a8f4e36fa5",
+  "chainid": 1,
+  "project_slug": "bifi",
+  "asset_id": "2cloFwtW0mH6DKf4lWWquj",
+  "contract_name": "TokenManager",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "00000000000000000000000034e45203669aadd0d6ac342538aa7b62c9128f4a0000000000000000000000006ba1ddd63a5680b7c666b74a50be28b24d507beb000000000000000000000000cd9632707ec422759be2a5b348f8178ff280a45300000000000000000000000054b932b5512d984ac6c02ebe4f32ad032c41b1b5000000000000000000000000e2f26b242107f4c6ee48039555d7211d018ace37000000000000000000000000d297c9a45ac9851003448c52c2b2b72c116884650000000000000000000000002791bfd60d232150bff86b39b7146c0eaaa2ba81",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "BSD-3-Clause",
+  "proxy": "1",
+  "implementation": "0xfed2eddbdf201d6b5469cbd6866d19808d8879fb",
+  "swarm_source": "ipfs://9c27d725402a01cdac29142126c54e32700ba307fb85f2df74cabc8b0ee048c6",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

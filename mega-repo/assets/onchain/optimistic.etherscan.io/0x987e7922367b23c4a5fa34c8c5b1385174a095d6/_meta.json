@@ -1,0 +1,24 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0x987E7922367B23C4A5fa34C8C5B1385174A095d6",
+  "host": "optimistic.etherscan.io",
+  "address": "0x987E7922367B23C4A5fa34C8C5B1385174A095d6",
+  "chainid": 10,
+  "project_slug": "velodromefinance",
+  "asset_id": "YqCvamfhaoBBZN4QHBmtA",
+  "contract_name": "Gauge",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://9cbd20125a25a94a5234f0308c21588b2e92d8d0a2106edd5a30cc6f6565597a",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

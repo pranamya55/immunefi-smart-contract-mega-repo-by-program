@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xA81bd16Aa6F6B25e66965A2f842e9C806c0AA11F",
+  "host": "etherscan.io",
+  "address": "0xA81bd16Aa6F6B25e66965A2f842e9C806c0AA11F",
+  "chainid": 1,
+  "project_slug": "revest",
+  "asset_id": "dW8gb7KEJhRp288ePGv26",
+  "contract_name": "TokenVault",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": "1",
+  "runs": "10000",
+  "constructor_arguments": "000000000000000000000000d721a90dd7e010c8c5e022cc0100c55ac78e0fc4",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 29,
+  "mode": "json-sources"
+}

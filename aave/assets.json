@@ -1,0 +1,666 @@
+[
+  {
+    "project_slug": "aave",
+    "asset_id": "5KJOScaF9U9sKtOv0c2aow",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/configuration/PoolAddressesProvider.sol",
+    "description": "Aave v3 PoolAddressesProvider",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "7C7Tx0LZl2fS0E5TnNvl3x",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/configuration/ACLManager.sol",
+    "description": "Aave v3 ACLManager",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "3zSvc3bdXmifUEB66gLg3v",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/pool/Pool.sol",
+    "description": "Aave v3 Pool",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "7bEH2IORpyDaAXu5LaYHne",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/pool/L2Pool.sol",
+    "description": "Aave v3 L2Pool",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "7jau9Wg6rEYaOswetYslEL",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/pool/PoolConfigurator.sol",
+    "description": "Aave v3 Pool Configurator",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "4QB2VJgVn9bgu29mPFyqEH",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/DefaultReserveInterestRateStrategyV2.sol",
+    "description": "Aave v3 DefaultReserveInterestRateStrategyV2",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "b0V8XxttfTko28vx5PSTz",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/aave-upgradeability/BaseImmutableAdminUpgradeabilityProxy.sol",
+    "description": "Aave v3 Upgradability - BaseImmutableAdminUpgradeabilityProxy",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "3AwPSQP5UavowY5aBSLqsC",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/aave-upgradeability/InitializableImmutableAdminUpgradeabilityProxy.sol",
+    "description": "Aave v3 Upgradability - InitializableImmutableAdminUpgradabilityProxy",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "065ikuVi98NYBNmNjVPiR",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/aave-upgradeability/VersionedInitializable.sol",
+    "description": "Aave v3 Upgradability - VersionedInitializable",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "48zJoas3yZJ0snRjwujB1U",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/configuration/ReserveConfiguration.sol",
+    "description": "Aave v3 Global configurations - Reserve Configuration",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "58O0qviI8bfTozeTmCgiv6",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/configuration/UserConfiguration.sol",
+    "description": "Aave v3 Global configurations - User Configuration",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "tCx9ZFRByi1TqnQYtsKl6",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/BorrowLogic.sol",
+    "description": "Aave v3 Logic Libraries - Borrow Logic",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "6Fjq7oVvLjChNCcAlClXZM",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/BridgeLogic.sol",
+    "description": "Aave v3 Logic Libraries - Bridge Logic",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "4u1rb7Xjixg8hywhmWdFUn",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/CalldataLogic.sol",
+    "description": "Aave v3 Logic Libraries - Calldata Logic",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "zyJ3XGj7nzzLx5h35Y7sa",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/ConfiguratorLogic.sol",
+    "description": "Aave v3 Logic Libraries - Configurator Logic",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "50AsYdYZHPSHXW1RUbHa3I",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/EModeLogic.sol",
+    "description": "Aave v3 Logic Libraries - EMode Logic",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 4
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "3UalWfobegKE9Jx9Hajxrz",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/FlashLoanLogic.sol",
+    "description": "Aave v3 Logic Libraries - Flash Loan Logic",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "4otorlK5RWdqYuJyG7Tv3p",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/GenericLogic.sol",
+    "description": "Aave v3 Logic Libraries - Generic Logic",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "6xGsYNIMVow7boonhacqNx",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/IsolationModeLogic.sol",
+    "description": "Aave v3 Logic Libraries - Isolation Mode Logic",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "6zGSJMMBthxQZ745hRRuTF",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/LiquidationLogic.sol",
+    "description": "Aave v3 Logic Libraries - Liquidation Logic",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "46Zwo7MkNnfKd2BL7XsTKa",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/PoolLogic.sol",
+    "description": "Aave v3 Logic Libraries - Pool Logic",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "5yveXiwjC2AmcpLLhRj3OV",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/ReserveLogic.sol",
+    "description": "Aave v3 Logic Libraries - Reserve Logic",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "VNwFp1vd9zM1pgghQDakF",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/SupplyLogic.sol",
+    "description": "Aave v3 Logic Libraries - Supply Logic",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "1AEY1z2CurBaeLHJQL928f",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/ValidationLogic.sol",
+    "description": "Aave v3 Logic Libraries - Validation Logic",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "4pnglDiFQCR0iDES4vkVCQ",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/math/MathUtils.sol",
+    "description": "Aave v3 Math Libraries - Math Utils",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 4
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "28yf4HxCAXBxiHUg1LpPwp",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/math/PercentageMath.sol",
+    "description": "Aave v3 Math Libraries - Percentage Math",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "77vIabnp2SUqwbRSzocywC",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/math/WadRayMath.sol",
+    "description": "Aave v3 Math Libraries - WadRayMath",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "3Md7NGVfqmi1zVclyZA9HJ",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/tokenization/AToken.sol",
+    "description": "Aave v3 AToken",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "1pfwjuuEby68gQE3ScfvpT",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/tokenization/VariableDebtToken.sol",
+    "description": "Aave v3 VariableDebtToken",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "38u34pEuBWLTLr0slsDHEN",
+    "url": "https://github.com/aave/aave-v3-core/blob/master/contracts/protocol/tokenization/StableDebtToken.sol",
+    "description": "Aave v3 StableDebtToken",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "4jOdLziVxkRfKfXYF0HhUQ",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/AaveOracle.sol",
+    "description": "Aave v3 AaveOracle",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "7A9JqxqbH1wmdzOMpF7tdr",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/helpers/L2Encoder.sol",
+    "description": "Aave v3 L2Encoder",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "2nZFCI3WVL0R5Qfv4kFrGi",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/PriceOracleSentinel.sol",
+    "description": "Aave v3 Price Oracle Sentinel",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "4sXaClhMCWvye1nCU0vfzr",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/rewards/RewardsController.sol",
+    "description": "Aave v3 Periphery - Rewards Controller",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "2fTCm6RYDwG9bx4vaGz7gK",
+    "url": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/rewards/EmissionManager.sol",
+    "description": "Aave v3 Emission Manager",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "7K1DUX29MnJWnySxU0pK5C",
+    "url": "https://github.com/bgd-labs/aave-collector-unification/blob/main/src/contracts/Collector.sol",
+    "description": "Aave v3 Collector",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "3hVFELi4qLw4Ng7VbwsRhs",
+    "url": "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/aave/oracle/GhoOracle.so",
+    "description": "Aave v3 GhoOracle",
+    "added_at": "2023-11-14T17:43:19.746Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "TwSC45c6uzcv7pQqLl1NX",
+    "url": "https://github.com/bgd-labs/aave-stk-gov-v3/blob/main/src/contracts/StakedAaveV3.sol",
+    "description": "Aave Safety Module Staked Aave v3",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "2y8d3Iu4AvnZcni2LGjZdj",
+    "url": "https://github.com/bgd-labs/stake-token/blob/main/src/contracts/StakeToken.sol",
+    "description": "new Aave Safety Module (stkABPT and stkGHO)",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "1maRxpJ2DeRidTYcKzlsr7",
+    "url": "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/configuration/LendingPoolAddressesProvider.sol",
+    "description": "Aave v2 LendingPoolAddressProvider",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "2g1MWMuIJ8d51NxHIPgB5R",
+    "url": "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/lendingpool/LendingPool.sol",
+    "description": "Aave v2 LendingPool",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "7sw6PZ2NRsZHfUtAU3rwXv",
+    "url": "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/lendingpool/LendingPoolCollateralManager.sol",
+    "description": "Aave v2 LendingPoolCollateralManager",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "3pjZLUjkhgKSapHBdrhGMp",
+    "url": "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/lendingpool/DefaultReserveInterestRateStrategy.sol",
+    "description": "Aave v2 DefaultReserveInterestRateStrategy",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "fr9Zk8OQ4ZQkL6H3TTHu4",
+    "url": "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/lendingpool/LendingPoolConfigurator.sol",
+    "description": "Aave v2 LendingPoolConfigurator",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "419D5u1xKmoyix3nqZwYlC",
+    "url": "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/aave-upgradeability/BaseImmutableAdminUpgradeabilityProxy.sol",
+    "description": "Aave v2 BaseImmutableAdminUpgradeabilityProxy",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "7uaTlly0VCPgbgN7pCmFpr",
+    "url": "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/aave-upgradeability/InitializableImmutableAdminUpgradeabilityProxy.sol",
+    "description": "Aave v2 InitializableImmutableAdminUpgradeabilityProxy",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "7G3rAN61rJ3TVSmTUDgvlC",
+    "url": "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/aave-upgradeability/VersionedInitializable.sol",
+    "description": "Aave v2 VersionedInitializable",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "vf0lpx6s64XzSp0RPIE7I",
+    "url": "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/configuration/ReserveConfiguration.sol",
+    "description": "Aave v2 Global configurations - Reserve Configuration",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "4t0seArMMKgqwdKwe73WYO",
+    "url": "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/configuration/UserConfiguration.sol",
+    "description": "Aave v2 Global configurations - User Configuration",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "7dbuwCGIWqnH8NRh40zNWt",
+    "url": "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/logic/GenericLogic.sol",
+    "description": "Aave v2 Logic libraries - GenericLogic",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "4FQJ1K6DvxcLOh3fYuLcnC",
+    "url": "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/logic/ReserveLogic.sol",
+    "description": "Aave v2 Logic libraries - ReserveLogic",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "2oPe4jt6YfnebLd4rdUWSA",
+    "url": "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/logic/ValidationLogic.sol",
+    "description": "Aave v2 Logic libraries - ValidationLogic",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "6Rspci0pLb6zrY6NergPwI",
+    "url": "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/math/MathUtils.sol",
+    "description": "Aave v2 Math libraries - MathUtils",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "lKROVIALhq6xog9RiTElN",
+    "url": "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/math/PercentageMath.sol",
+    "description": "Aave v2 Math libraries - PercentageMath",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "2dAJHoDNfFVCEgIXdeZA1n",
+    "url": "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/math/WadRayMath.sol",
+    "description": "Aave v2 Math libraries - WadRayMath",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "3WejBAJvuAW5jYCSwivm1Z",
+    "url": "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/tokenization/AToken.sol",
+    "description": "Aave v2 AToken",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "3cVQTpSDLcIWOkh3QCLxlX",
+    "url": "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/tokenization/VariableDebtToken.sol",
+    "description": "Aave v2 VariableDebtToken",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "1X5OxFE0QP324fyw29yaUQ",
+    "url": "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/tokenization/StableDebtToken.sol",
+    "description": "Aave v2 StableDebtToken",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "571JVtmYGqdesgqrsBOVBq",
+    "url": "https://github.com/aave/protocol-v2/blob/master/contracts/misc/AaveOracle.sol",
+    "description": "Aave v2 Aave Oracle",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "1PKUGjSt8kyC7Kr1SSKX1G",
+    "url": "https://etherscan.io/address/0x8A32f49FFbA88aba6EFF96F45D8BD1D4b3f35c7D",
+    "description": "Aave v2 Lending Rate Oracle",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "2ndMW0az4P4qzsD6aSfwiR",
+    "url": "https://etherscan.io/address/0xEFFC18fC3b7eb8E676dac549E0c693ad50D1Ce31",
+    "description": "Aave v2 WrappedTokenGatewayV2",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "lfAMZH4yoMseurXJ6erRy",
+    "url": "https://etherscan.io/address/0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c",
+    "description": "Aave v2 Collector",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "6bLG6CLsuHHqPxYFETo1X2",
+    "url": "https://github.com/aave/",
+    "description": "Primacy of Impact Placeholder",
+    "added_at": "2023-10-18T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "3QyQ2cTrZm37OGedmcK6t8",
+    "url": "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/gsm/Gsm.sol",
+    "description": "GSM",
+    "added_at": "2024-02-08T13:54:19.068Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "2IKmmA1tq98gq1I8paikwI",
+    "url": "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/gsm/priceStrategy/FixedPriceStrategy.sol",
+    "description": "FixedPriceStrategy",
+    "added_at": "2024-02-08T13:54:16.697Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "2ovENtMB652Xw6bF3uyOaw",
+    "url": "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/gsm/feeStrategy/FixedFeeStrategy.sol",
+    "description": "FixedFeeStrategy",
+    "added_at": "2024-02-08T13:54:14.373Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "ZupJdaEvSeRVl9woU4g4E",
+    "url": "https://github.com/bgd-labs/solidity-utils/blob/7a7548c1d01f011febdb1c0d47e52c7ec6c30f9d/src/contracts/transparent-proxy/TransparentUpgradeableProxy.sol",
+    "description": "TransparentUpgradeableProxy",
+    "added_at": "2024-02-08T13:54:12.368Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "4pRObNANN7umiful4xhFBW",
+    "url": "https://github.com/bgd-labs/aave-governance-v3/blob/main/src/contracts/Governance.sol",
+    "description": "Governance",
+    "added_at": "2024-03-11T17:42:27.462Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "4LB6gYGY9kRfrPV5c0vJgf",
+    "url": "https://github.com/bgd-labs/aave-governance-v3/blob/main/src/contracts/voting/VotingStrategy.sol",
+    "description": "VotingStrategy",
+    "added_at": "2024-03-11T17:42:44.848Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "4QCdgeuuyGW2MxwDHFJUbO",
+    "url": "https://github.com/bgd-labs/aave-governance-v3/blob/main/src/contracts/GovernancePowerStrategy.sol",
+    "description": "GovernancePowerStrategy",
+    "added_at": "2024-03-11T17:43:00.305Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "52MpUc847COKlWmQh9Q656",
+    "url": "https://github.com/bgd-labs/aave-governance-v3/blob/main/src/contracts/voting/VotingMachine.sol",
+    "description": "VotingMachine",
+    "added_at": "2024-03-11T17:43:15.202Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "6ymG4yBsmWMdmlfbzyqspE",
+    "url": "https://github.com/bgd-labs/aave-governance-v3/blob/main/src/contracts/voting/DataWarehouse.sol",
+    "description": "DataWarehouse",
+    "added_at": "2024-03-11T17:43:29.915Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "1MRymBH8PVpQWBnAsImJ0y",
+    "url": "https://github.com/bgd-labs/aave-governance-v3/blob/main/src/contracts/payloads/Executor.sol",
+    "description": "Executor",
+    "added_at": "2024-03-11T17:43:43.827Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "60jJ6k00ziD4l7Qdr6l6Uw",
+    "url": "https://github.com/bgd-labs/aave-governance-v3/blob/main/src/contracts/payloads/PayloadsController.sol",
+    "description": "PayloadsController",
+    "added_at": "2024-03-11T17:43:57.769Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "6F8N0uk8jg4s8TOdqlcO8S",
+    "url": "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/gho/UpgradeableGhoToken.sol",
+    "description": "UpgradeableGhoToken",
+    "added_at": "2024-09-09T09:16:52.033Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "7GJvCoGUKQHBeSvEgWcEWM",
+    "url": "https://github.com/aave/ccip/blob/d5c6cedde6fbca9890a92a55f2db80e94793d0ec/contracts/src/v0.8/ccip/pools/GHO/UpgradeableLockReleaseTokenPool.sol",
+    "description": "UpgradeableLockReleaseTokenPool",
+    "added_at": "2024-09-09T09:38:00.647Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "4lIvvl6RLZoqJDE0wIDh7J",
+    "url": "https://github.com/aave/ccip/blob/d5c6cedde6fbca9890a92a55f2db80e94793d0ec/contracts/src/v0.8/ccip/pools/GHO/UpgradeableBurnMintTokenPool.sol",
+    "description": "UpgradeableBurnMintTokenPool",
+    "added_at": "2024-09-09T09:38:18.362Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "1zOz5JTci5wGYwCVlZCpOy",
+    "url": "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/gho/GhoToken.sol",
+    "description": "GhoToken",
+    "added_at": "2025-09-05T06:59:06.800Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "7gdYLmNdsrRXacJJTj1uBp",
+    "url": "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/flashMinter/GhoFlashMinter.sol",
+    "description": "GhoFlashMinter",
+    "added_at": "2025-09-05T07:00:03.472Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "4LRy8ODtyfhylBTBW7Qekc",
+    "url": "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/gsm/Gsm4626.sol",
+    "description": "GSM4626",
+    "added_at": "2025-09-05T07:02:17.980Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "4DYOMhhnlzWOhM5j6eSG4n",
+    "url": "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/gsm/priceStrategy/FixedPriceStrategy4626.sol",
+    "description": "FixedPriceStrategy4626",
+    "added_at": "2025-09-05T07:02:33.447Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "35CraxY2DjuqK1K9VQZq75",
+    "url": "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/gsm/GhoReserve.sol",
+    "description": "GhoReserve",
+    "added_at": "2025-09-05T07:02:46.653Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aave",
+    "asset_id": "1Pb2eGWCsyDNA5w7JMgMCx",
+    "url": "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/gsm/OwnableFacilitator.sol",
+    "description": "OwnableFacilitator",
+    "added_at": "2025-09-05T07:02:59.331Z",
+    "revision": 1
+  }
+]

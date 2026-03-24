@@ -1,0 +1,42 @@
+[
+  {
+    "project_slug": "dhedge",
+    "asset_id": "98981",
+    "url": "https://polygonscan.com/address/0xfdc7b8bFe0DD3513Cc669bB8d601Cb83e2F69cB0",
+    "description": "PoolFactory and linked contracts",
+    "added_at": "2026-02-17T15:53:24.620Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "dhedge",
+    "asset_id": "98982",
+    "url": "https://optimistic.etherscan.io/address/0x5e61a079A178f0E5784107a4963baAe0c5a680c6",
+    "description": "PoolFactory and linked contracts",
+    "added_at": "2026-02-17T15:53:24.620Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "dhedge",
+    "asset_id": "98983",
+    "url": "https://etherscan.io/address/0x96D33bCF84DdE326014248E2896F79bbb9c13D6d",
+    "description": "PoolFactory and linked contracts",
+    "added_at": "2026-02-17T15:53:24.620Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "dhedge",
+    "asset_id": "98984",
+    "url": "https://basescan.org/address/0x49Afe3abCf66CF09Fab86cb1139D8811C8afe56F",
+    "description": "PoolFactory and linked contracts",
+    "added_at": "2026-02-17T15:53:24.620Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "dhedge",
+    "asset_id": "98985",
+    "url": "https://arbiscan.io/address/0xffFb5fB14606EB3a548C113026355020dDF27535",
+    "description": "PoolFactory and linked contracts",
+    "added_at": "2026-02-17T15:53:24.620Z",
+    "revision": 0
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0xDDb3781Fff645325C8896AA1F067bAa381607ecc",
+  "host": "polygonscan.com",
+  "address": "0xDDb3781Fff645325C8896AA1F067bAa381607ecc",
+  "chainid": 137,
+  "project_slug": "decentraland",
+  "asset_id": "629B0N2Ps9cCrpoE1SA6tb",
+  "contract_name": "UpgradeableBeacon",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "000000000000000000000000006080c6061c4af79b39da0842a3a22a7b3f185e",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 5,
+  "mode": "json-sources"
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x75df468D9Aa3438cd12d98606Bb71B73145e9972",
+  "host": "arbiscan.io",
+  "address": "0x75df468D9Aa3438cd12d98606Bb71B73145e9972",
+  "chainid": 42161,
+  "project_slug": "kiln-defi",
+  "asset_id": "3w0CKWVGZD7admqeVYknsc",
+  "contract_name": "ConnectorRegistry",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "0000000000000000000000009776c9ce42e5d567e0290a44c983ec499754037d000000000000000000000000c974b40ba580e49c33c7933b70710f50f1decf250000000000000000000000009776c9ce42e5d567e0290a44c983ec499754037d000000000000000000000000e4801be4b9ff101df4a0c21bbe857dad8ead1be20000000000000000000000009776c9ce42e5d567e0290a44c983ec499754037d0000000000000000000000000000000000000000000000000000000000015180",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

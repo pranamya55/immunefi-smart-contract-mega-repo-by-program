@@ -1,0 +1,24 @@
+{
+  "url": "https://seitrace.com/token/0x56Fe74A2e3b484b921c447357203431a3485CC60?chain=pacific-1",
+  "host": "seitrace.com",
+  "address": "0x56Fe74A2e3b484b921c447357203431a3485CC60",
+  "chainid": 1329,
+  "project_slug": "usdt0",
+  "asset_id": "2AWQYK9UJGYZNbE03FNoY5",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "1",
+  "runs": "999999",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "None",
+  "proxy": "1",
+  "implementation": "0x0d6d408b88cb2498e27fd1d0a2132c337946b577",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 16,
+  "mode": "json-sources"
+}

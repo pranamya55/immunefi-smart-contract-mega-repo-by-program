@@ -1,0 +1,9 @@
+[project]
+authors = ["Fuel Labs <contact@fuel.sh>"]
+entry = "main.sw"
+license = "Apache-2.0"
+name = "setting_src7_attributes"
+
+[dependencies]
+src7 = "0.8.2"
+asset = { path = "../../../libs/asset" }

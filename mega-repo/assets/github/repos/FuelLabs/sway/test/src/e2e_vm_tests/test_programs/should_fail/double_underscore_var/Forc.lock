@@ -1,0 +1,8 @@
+[[package]]
+name = "double_underscore_var"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-053B1C8DE611E923"

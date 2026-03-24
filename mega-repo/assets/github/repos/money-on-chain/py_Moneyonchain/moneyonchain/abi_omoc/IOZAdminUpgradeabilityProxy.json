@@ -1,0 +1,1324 @@
+{
+  "contractName": "IOZAdminUpgradeabilityProxy",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "previousAdmin",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "newAdmin",
+          "type": "address"
+        }
+      ],
+      "name": "AdminChanged",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "implementation",
+          "type": "address"
+        }
+      ],
+      "name": "Upgraded",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "admin",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "implementation",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newAdmin",
+          "type": "address"
+        }
+      ],
+      "name": "changeAdmin",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newImplementation",
+          "type": "address"
+        }
+      ],
+      "name": "upgradeTo",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newImplementation",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "upgradeToAndCall",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"previousAdmin\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"newAdmin\",\"type\":\"address\"}],\"name\":\"AdminChanged\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"implementation\",\"type\":\"address\"}],\"name\":\"Upgraded\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"admin\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newAdmin\",\"type\":\"address\"}],\"name\":\"changeAdmin\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"implementation\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newImplementation\",\"type\":\"address\"}],\"name\":\"upgradeTo\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newImplementation\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"upgradeToAndCall\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Interface of the openzeppeling AdminUpgradeabilityProxy\",\"events\":{\"AdminChanged(address,address)\":{\"details\":\"Emitted when the administration has been transferred.\",\"params\":{\"newAdmin\":\"Address of the new admin.\",\"previousAdmin\":\"Address of the previous admin.\"}},\"Upgraded(address)\":{\"details\":\"Emitted when the implementation is upgraded.\",\"params\":{\"implementation\":\"Address of the new implementation.\"}}},\"kind\":\"dev\",\"methods\":{\"admin()\":{\"returns\":{\"_0\":\"The address of the proxy admin.\"}},\"changeAdmin(address)\":{\"details\":\"Changes the admin of the proxy. Only the current admin can call this function.\",\"params\":{\"newAdmin\":\"Address to transfer proxy administration to.\"}},\"implementation()\":{\"returns\":{\"_0\":\"The address of the implementation.\"}},\"upgradeTo(address)\":{\"details\":\"Upgrade the backing implementation of the proxy. Only the admin can call this function.\",\"params\":{\"newImplementation\":\"Address of the new implementation.\"}},\"upgradeToAndCall(address,bytes)\":{\"details\":\"Upgrade the backing implementation of the proxy and call a function on the new implementation. This is useful to initialize the proxied contract.\",\"params\":{\"data\":\"Data to send as msg.data in the low level call. It should include the signature and the parameters of the function to be called, as described in https://solidity.readthedocs.io/en/v0.4.24/abi-spec.html#function-selector-and-argument-encoding.\",\"newImplementation\":\"Address of the new implementation.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/jbokser/work2/OMoC-SC-Shared/contracts/moc-governance/IOZAdminUpgradeabilityProxy.sol\":\"IOZAdminUpgradeabilityProxy\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/jbokser/work2/OMoC-SC-Shared/contracts/moc-governance/IOZAdminUpgradeabilityProxy.sol\":{\"keccak256\":\"0x3e3e138c6b913f1f21c083680bba50bef5377c7bcdb082ab025d8e285ee2c445\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://8fbec08a47400f965188c9aac17783d9771f1a751d1d19acfd63d39310d6a714\",\"dweb:/ipfs/QmceyPCbC6tpm5U1JezAkLunkn6jQMNwHZeKXZkUZeAQLB\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: UNLICENSED\npragma solidity ^0.6.0;\n\n/**\n * @dev Interface of the openzeppeling AdminUpgradeabilityProxy\n */\ninterface IOZAdminUpgradeabilityProxy {\n    /**\n     * @dev Emitted when the administration has been transferred.\n     * @param previousAdmin Address of the previous admin.\n     * @param newAdmin Address of the new admin.\n     */\n    event AdminChanged(address previousAdmin, address newAdmin);\n\n    /**\n     * @return The address of the proxy admin.\n     */\n    function admin() external returns (address);\n\n    /**\n     * @return The address of the implementation.\n     */\n    function implementation() external returns (address);\n\n    /**\n     * @dev Changes the admin of the proxy.\n     * Only the current admin can call this function.\n     * @param newAdmin Address to transfer proxy administration to.\n     */\n    function changeAdmin(address newAdmin) external;\n\n    /**\n     * @dev Upgrade the backing implementation of the proxy.\n     * Only the admin can call this function.\n     * @param newImplementation Address of the new implementation.\n     */\n    function upgradeTo(address newImplementation) external;\n\n    /**\n     * @dev Upgrade the backing implementation of the proxy and call a function\n     * on the new implementation.\n     * This is useful to initialize the proxied contract.\n     * @param newImplementation Address of the new implementation.\n     * @param data Data to send as msg.data in the low level call.\n     * It should include the signature and the parameters of the function to be called, as described in\n     * https://solidity.readthedocs.io/en/v0.4.24/abi-spec.html#function-selector-and-argument-encoding.\n     */\n    function upgradeToAndCall(address newImplementation, bytes calldata data) external payable;\n\n    /**\n     * @dev Emitted when the implementation is upgraded.\n     * @param implementation Address of the new implementation.\n     */\n    event Upgraded(address indexed implementation);\n}\n",
+  "sourcePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/moc-governance/IOZAdminUpgradeabilityProxy.sol",
+  "ast": {
+    "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/moc-governance/IOZAdminUpgradeabilityProxy.sol",
+    "exportedSymbols": {
+      "IOZAdminUpgradeabilityProxy": [
+        4844
+      ]
+    },
+    "id": 4845,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4798,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:23:34"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 4799,
+          "nodeType": "StructuredDocumentation",
+          "src": "64:71:34",
+          "text": " @dev Interface of the openzeppeling AdminUpgradeabilityProxy"
+        },
+        "fullyImplemented": false,
+        "id": 4844,
+        "linearizedBaseContracts": [
+          4844
+        ],
+        "name": "IOZAdminUpgradeabilityProxy",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": {
+              "id": 4800,
+              "nodeType": "StructuredDocumentation",
+              "src": "180:185:34",
+              "text": " @dev Emitted when the administration has been transferred.\n @param previousAdmin Address of the previous admin.\n @param newAdmin Address of the new admin."
+            },
+            "id": 4806,
+            "name": "AdminChanged",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 4805,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4802,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "previousAdmin",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4806,
+                  "src": "389:21:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4801,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "389:7:34",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4804,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "newAdmin",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4806,
+                  "src": "412:16:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4803,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "412:7:34",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "388:41:34"
+            },
+            "src": "370:60:34"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 4807,
+              "nodeType": "StructuredDocumentation",
+              "src": "436:58:34",
+              "text": " @return The address of the proxy admin."
+            },
+            "functionSelector": "f851a440",
+            "id": 4812,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "admin",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 4808,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "513:2:34"
+            },
+            "returnParameters": {
+              "id": 4811,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4810,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4812,
+                  "src": "534:7:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4809,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "534:7:34",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "533:9:34"
+            },
+            "scope": 4844,
+            "src": "499:44:34",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 4813,
+              "nodeType": "StructuredDocumentation",
+              "src": "549:61:34",
+              "text": " @return The address of the implementation."
+            },
+            "functionSelector": "5c60da1b",
+            "id": 4818,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "implementation",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 4814,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "638:2:34"
+            },
+            "returnParameters": {
+              "id": 4817,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4816,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4818,
+                  "src": "659:7:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4815,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "659:7:34",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "658:9:34"
+            },
+            "scope": 4844,
+            "src": "615:53:34",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 4819,
+              "nodeType": "StructuredDocumentation",
+              "src": "674:177:34",
+              "text": " @dev Changes the admin of the proxy.\n Only the current admin can call this function.\n @param newAdmin Address to transfer proxy administration to."
+            },
+            "functionSelector": "8f283970",
+            "id": 4824,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "changeAdmin",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 4822,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4821,
+                  "mutability": "mutable",
+                  "name": "newAdmin",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4824,
+                  "src": "877:16:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4820,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "877:7:34",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "876:18:34"
+            },
+            "returnParameters": {
+              "id": 4823,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "903:0:34"
+            },
+            "scope": 4844,
+            "src": "856:48:34",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 4825,
+              "nodeType": "StructuredDocumentation",
+              "src": "910:185:34",
+              "text": " @dev Upgrade the backing implementation of the proxy.\n Only the admin can call this function.\n @param newImplementation Address of the new implementation."
+            },
+            "functionSelector": "3659cfe6",
+            "id": 4830,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "upgradeTo",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 4828,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4827,
+                  "mutability": "mutable",
+                  "name": "newImplementation",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4830,
+                  "src": "1119:25:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4826,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1119:7:34",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1118:27:34"
+            },
+            "returnParameters": {
+              "id": 4829,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1154:0:34"
+            },
+            "scope": 4844,
+            "src": "1100:55:34",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 4831,
+              "nodeType": "StructuredDocumentation",
+              "src": "1161:526:34",
+              "text": " @dev Upgrade the backing implementation of the proxy and call a function\n on the new implementation.\n This is useful to initialize the proxied contract.\n @param newImplementation Address of the new implementation.\n @param data Data to send as msg.data in the low level call.\n It should include the signature and the parameters of the function to be called, as described in\n https://solidity.readthedocs.io/en/v0.4.24/abi-spec.html#function-selector-and-argument-encoding."
+            },
+            "functionSelector": "4f1ef286",
+            "id": 4838,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "upgradeToAndCall",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 4836,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4833,
+                  "mutability": "mutable",
+                  "name": "newImplementation",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4838,
+                  "src": "1718:25:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4832,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1718:7:34",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4835,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4838,
+                  "src": "1745:19:34",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 4834,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1745:5:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1717:48:34"
+            },
+            "returnParameters": {
+              "id": 4837,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1782:0:34"
+            },
+            "scope": 4844,
+            "src": "1692:91:34",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "anonymous": false,
+            "documentation": {
+              "id": 4839,
+              "nodeType": "StructuredDocumentation",
+              "src": "1789:132:34",
+              "text": " @dev Emitted when the implementation is upgraded.\n @param implementation Address of the new implementation."
+            },
+            "id": 4843,
+            "name": "Upgraded",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 4842,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4841,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "implementation",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4843,
+                  "src": "1941:30:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4840,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1941:7:34",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1940:32:34"
+            },
+            "src": "1926:47:34"
+          }
+        ],
+        "scope": 4845,
+        "src": "136:1839:34"
+      }
+    ],
+    "src": "39:1937:34"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/moc-governance/IOZAdminUpgradeabilityProxy.sol",
+      "exportedSymbols": {
+        "IOZAdminUpgradeabilityProxy": [
+          4844
+        ]
+      },
+      "license": "UNLICENSED"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.6",
+            ".0"
+          ]
+        },
+        "id": 4798,
+        "name": "PragmaDirective",
+        "src": "39:23:34"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            4844
+          ],
+          "name": "IOZAdminUpgradeabilityProxy",
+          "scope": 4845
+        },
+        "children": [
+          {
+            "attributes": {
+              "text": " @dev Interface of the openzeppeling AdminUpgradeabilityProxy"
+            },
+            "id": 4799,
+            "name": "StructuredDocumentation",
+            "src": "64:71:34"
+          },
+          {
+            "attributes": {
+              "anonymous": false,
+              "name": "AdminChanged"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev Emitted when the administration has been transferred.\n @param previousAdmin Address of the previous admin.\n @param newAdmin Address of the new admin."
+                },
+                "id": 4800,
+                "name": "StructuredDocumentation",
+                "src": "180:185:34"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "previousAdmin",
+                      "overrides": null,
+                      "scope": 4806,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 4801,
+                        "name": "ElementaryTypeName",
+                        "src": "389:7:34"
+                      }
+                    ],
+                    "id": 4802,
+                    "name": "VariableDeclaration",
+                    "src": "389:21:34"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "newAdmin",
+                      "overrides": null,
+                      "scope": 4806,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 4803,
+                        "name": "ElementaryTypeName",
+                        "src": "412:7:34"
+                      }
+                    ],
+                    "id": 4804,
+                    "name": "VariableDeclaration",
+                    "src": "412:16:34"
+                  }
+                ],
+                "id": 4805,
+                "name": "ParameterList",
+                "src": "388:41:34"
+              }
+            ],
+            "id": 4806,
+            "name": "EventDefinition",
+            "src": "370:60:34"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "f851a440",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "admin",
+              "overrides": null,
+              "scope": 4844,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @return The address of the proxy admin."
+                },
+                "id": 4807,
+                "name": "StructuredDocumentation",
+                "src": "436:58:34"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4808,
+                "name": "ParameterList",
+                "src": "513:2:34"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 4812,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 4809,
+                        "name": "ElementaryTypeName",
+                        "src": "534:7:34"
+                      }
+                    ],
+                    "id": 4810,
+                    "name": "VariableDeclaration",
+                    "src": "534:7:34"
+                  }
+                ],
+                "id": 4811,
+                "name": "ParameterList",
+                "src": "533:9:34"
+              }
+            ],
+            "id": 4812,
+            "name": "FunctionDefinition",
+            "src": "499:44:34"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "5c60da1b",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "implementation",
+              "overrides": null,
+              "scope": 4844,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @return The address of the implementation."
+                },
+                "id": 4813,
+                "name": "StructuredDocumentation",
+                "src": "549:61:34"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4814,
+                "name": "ParameterList",
+                "src": "638:2:34"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 4818,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 4815,
+                        "name": "ElementaryTypeName",
+                        "src": "659:7:34"
+                      }
+                    ],
+                    "id": 4816,
+                    "name": "VariableDeclaration",
+                    "src": "659:7:34"
+                  }
+                ],
+                "id": 4817,
+                "name": "ParameterList",
+                "src": "658:9:34"
+              }
+            ],
+            "id": 4818,
+            "name": "FunctionDefinition",
+            "src": "615:53:34"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "8f283970",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "changeAdmin",
+              "overrides": null,
+              "scope": 4844,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev Changes the admin of the proxy.\n Only the current admin can call this function.\n @param newAdmin Address to transfer proxy administration to."
+                },
+                "id": 4819,
+                "name": "StructuredDocumentation",
+                "src": "674:177:34"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "newAdmin",
+                      "overrides": null,
+                      "scope": 4824,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 4820,
+                        "name": "ElementaryTypeName",
+                        "src": "877:7:34"
+                      }
+                    ],
+                    "id": 4821,
+                    "name": "VariableDeclaration",
+                    "src": "877:16:34"
+                  }
+                ],
+                "id": 4822,
+                "name": "ParameterList",
+                "src": "876:18:34"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4823,
+                "name": "ParameterList",
+                "src": "903:0:34"
+              }
+            ],
+            "id": 4824,
+            "name": "FunctionDefinition",
+            "src": "856:48:34"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "3659cfe6",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "upgradeTo",
+              "overrides": null,
+              "scope": 4844,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev Upgrade the backing implementation of the proxy.\n Only the admin can call this function.\n @param newImplementation Address of the new implementation."
+                },
+                "id": 4825,
+                "name": "StructuredDocumentation",
+                "src": "910:185:34"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "newImplementation",
+                      "overrides": null,
+                      "scope": 4830,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 4826,
+                        "name": "ElementaryTypeName",
+                        "src": "1119:7:34"
+                      }
+                    ],
+                    "id": 4827,
+                    "name": "VariableDeclaration",
+                    "src": "1119:25:34"
+                  }
+                ],
+                "id": 4828,
+                "name": "ParameterList",
+                "src": "1118:27:34"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4829,
+                "name": "ParameterList",
+                "src": "1154:0:34"
+              }
+            ],
+            "id": 4830,
+            "name": "FunctionDefinition",
+            "src": "1100:55:34"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "4f1ef286",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "upgradeToAndCall",
+              "overrides": null,
+              "scope": 4844,
+              "stateMutability": "payable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev Upgrade the backing implementation of the proxy and call a function\n on the new implementation.\n This is useful to initialize the proxied contract.\n @param newImplementation Address of the new implementation.\n @param data Data to send as msg.data in the low level call.\n It should include the signature and the parameters of the function to be called, as described in\n https://solidity.readthedocs.io/en/v0.4.24/abi-spec.html#function-selector-and-argument-encoding."
+                },
+                "id": 4831,
+                "name": "StructuredDocumentation",
+                "src": "1161:526:34"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "newImplementation",
+                      "overrides": null,
+                      "scope": 4838,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 4832,
+                        "name": "ElementaryTypeName",
+                        "src": "1718:7:34"
+                      }
+                    ],
+                    "id": 4833,
+                    "name": "VariableDeclaration",
+                    "src": "1718:25:34"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "data",
+                      "overrides": null,
+                      "scope": 4838,
+                      "stateVariable": false,
+                      "storageLocation": "calldata",
+                      "type": "bytes",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes",
+                          "type": "bytes"
+                        },
+                        "id": 4834,
+                        "name": "ElementaryTypeName",
+                        "src": "1745:5:34"
+                      }
+                    ],
+                    "id": 4835,
+                    "name": "VariableDeclaration",
+                    "src": "1745:19:34"
+                  }
+                ],
+                "id": 4836,
+                "name": "ParameterList",
+                "src": "1717:48:34"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4837,
+                "name": "ParameterList",
+                "src": "1782:0:34"
+              }
+            ],
+            "id": 4838,
+            "name": "FunctionDefinition",
+            "src": "1692:91:34"
+          },
+          {
+            "attributes": {
+              "anonymous": false,
+              "name": "Upgraded"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev Emitted when the implementation is upgraded.\n @param implementation Address of the new implementation."
+                },
+                "id": 4839,
+                "name": "StructuredDocumentation",
+                "src": "1789:132:34"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": true,
+                      "mutability": "mutable",
+                      "name": "implementation",
+                      "overrides": null,
+                      "scope": 4843,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 4840,
+                        "name": "ElementaryTypeName",
+                        "src": "1941:7:34"
+                      }
+                    ],
+                    "id": 4841,
+                    "name": "VariableDeclaration",
+                    "src": "1941:30:34"
+                  }
+                ],
+                "id": 4842,
+                "name": "ParameterList",
+                "src": "1940:32:34"
+              }
+            ],
+            "id": 4843,
+            "name": "EventDefinition",
+            "src": "1926:47:34"
+          }
+        ],
+        "id": 4844,
+        "name": "ContractDefinition",
+        "src": "136:1839:34"
+      }
+    ],
+    "id": 4845,
+    "name": "SourceUnit",
+    "src": "39:1937:34"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-02-04T20:51:03.402Z",
+  "devdoc": {
+    "details": "Interface of the openzeppeling AdminUpgradeabilityProxy",
+    "events": {
+      "AdminChanged(address,address)": {
+        "details": "Emitted when the administration has been transferred.",
+        "params": {
+          "newAdmin": "Address of the new admin.",
+          "previousAdmin": "Address of the previous admin."
+        }
+      },
+      "Upgraded(address)": {
+        "details": "Emitted when the implementation is upgraded.",
+        "params": {
+          "implementation": "Address of the new implementation."
+        }
+      }
+    },
+    "kind": "dev",
+    "methods": {
+      "admin()": {
+        "returns": {
+          "_0": "The address of the proxy admin."
+        }
+      },
+      "changeAdmin(address)": {
+        "details": "Changes the admin of the proxy. Only the current admin can call this function.",
+        "params": {
+          "newAdmin": "Address to transfer proxy administration to."
+        }
+      },
+      "implementation()": {
+        "returns": {
+          "_0": "The address of the implementation."
+        }
+      },
+      "upgradeTo(address)": {
+        "details": "Upgrade the backing implementation of the proxy. Only the admin can call this function.",
+        "params": {
+          "newImplementation": "Address of the new implementation."
+        }
+      },
+      "upgradeToAndCall(address,bytes)": {
+        "details": "Upgrade the backing implementation of the proxy and call a function on the new implementation. This is useful to initialize the proxied contract.",
+        "params": {
+          "data": "Data to send as msg.data in the low level call. It should include the signature and the parameters of the function to be called, as described in https://solidity.readthedocs.io/en/v0.4.24/abi-spec.html#function-selector-and-argument-encoding.",
+          "newImplementation": "Address of the new implementation."
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

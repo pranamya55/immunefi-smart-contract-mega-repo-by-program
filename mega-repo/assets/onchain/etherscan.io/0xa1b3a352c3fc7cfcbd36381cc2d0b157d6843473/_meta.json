@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xA1b3a352c3fC7cfcBD36381CC2D0b157d6843473",
+  "host": "etherscan.io",
+  "address": "0xA1b3a352c3fC7cfcBD36381CC2D0b157d6843473",
+  "chainid": 1,
+  "project_slug": "boost-lido",
+  "asset_id": "12VlLYmWIdBgnvqA69I3ko",
+  "contract_name": "ManagedValidator",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

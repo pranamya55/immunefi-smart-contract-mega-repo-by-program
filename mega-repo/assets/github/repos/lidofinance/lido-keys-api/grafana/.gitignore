@@ -1,0 +1,9 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!keys_api.json
+!datasources.yml
+!nodejs.json
+!k6.json

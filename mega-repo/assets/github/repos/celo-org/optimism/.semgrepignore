@@ -1,0 +1,22 @@
+# Common large paths
+node_modules/
+build/
+dist/
+vendor/
+.env/
+.venv/
+.tox/
+*.min.js
+
+# Semgrep rules folder
+.semgrep/
+
+# Semgrep-action log folder
+.semgrep_logs/
+
+# Test contracts the scripts folder
+op-chain-ops/script/testdata/scripts/
+
+# Celo contracts follow different conventions
+packages/contracts-bedrock/src/celo/
+op-e2e/celo/

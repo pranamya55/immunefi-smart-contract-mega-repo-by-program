@@ -1,0 +1,589 @@
+{
+  "contractName": "IGovernor",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract ChangeContract",
+          "name": "changeContract",
+          "type": "address"
+        }
+      ],
+      "name": "executeChange",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_changer",
+          "type": "address"
+        }
+      ],
+      "name": "isAuthorizedChanger",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract ChangeContract\",\"name\":\"changeContract\",\"type\":\"address\"}],\"name\":\"executeChange\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_changer\",\"type\":\"address\"}],\"name\":\"isAuthorizedChanger\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"executeChange(address)\":{\"details\":\"This function should be protected somehow to only execute changes that benefit the system. This decision process is independent of this architechture therefore is independent of this interface too\",\"params\":{\"changeContract\":\"Address of the contract that will execute the changes\"}},\"isAuthorizedChanger(address)\":{\"params\":{\"_changer\":\"Address of the contract that will execute the changes\"}}},\"title\":\"Governor\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"executeChange(address)\":{\"notice\":\"Function to be called to make the changes in changeContract\"},\"isAuthorizedChanger(address)\":{\"notice\":\"Function to be called to make the changes in changeContract\"}},\"notice\":\"Governor interface. This functions should be overwritten to enable the comunnication with the rest of the system\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/jbokser/work2/OMoC-SC-Shared/contracts/moc-governance/Governance/IGovernor.sol\":\"IGovernor\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/jbokser/work2/OMoC-SC-Shared/contracts/moc-governance/Governance/ChangeContract.sol\":{\"keccak256\":\"0x6c786977acab4c076087e4569b2fd423e2c3a7e45150353c18de328b7e114843\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://cbdaaed4b97fc67586f6f20f185d6227dd4a1d0896bd6db20ee06744cca2eaa6\",\"dweb:/ipfs/QmbZrRtxMdebQa1dHfTdC1pPA48ZvzSopcc2pLmmJ7XJ9X\"]},\"/home/jbokser/work2/OMoC-SC-Shared/contracts/moc-governance/Governance/IGovernor.sol\":{\"keccak256\":\"0xed68469a6e1759efc5dece43aaf7fdf25e39163626df454bd9f9662ca8e9df61\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://a615e8209f9f332ed8d16452fd83c412f44162bd6fb8af6a1556bdc033a36735\",\"dweb:/ipfs/Qmda7FzLXHG9WZSTVBXwGCjLT7xU5Ugh287jQ4qafAr5WX\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: UNLICENSED\npragma solidity ^0.6.0;\n\nimport {ChangeContract} from \"./ChangeContract.sol\";\n\n/**\n  @title Governor\n  @notice Governor interface. This functions should be overwritten to\n  enable the comunnication with the rest of the system\n  */\ninterface IGovernor {\n    /**\n      @notice Function to be called to make the changes in changeContract\n      @dev This function should be protected somehow to only execute changes that\n      benefit the system. This decision process is independent of this architechture\n      therefore is independent of this interface too\n      @param changeContract Address of the contract that will execute the changes\n     */\n    function executeChange(ChangeContract changeContract) external;\n\n    /**\n      @notice Function to be called to make the changes in changeContract\n      @param _changer Address of the contract that will execute the changes\n     */\n    function isAuthorizedChanger(address _changer) external view returns (bool);\n}\n",
+  "sourcePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/moc-governance/Governance/IGovernor.sol",
+  "ast": {
+    "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/moc-governance/Governance/IGovernor.sol",
+    "exportedSymbols": {
+      "IGovernor": [
+        4620
+      ]
+    },
+    "id": 4621,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4602,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:23:31"
+      },
+      {
+        "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/moc-governance/Governance/ChangeContract.sol",
+        "file": "./ChangeContract.sol",
+        "id": 4604,
+        "nodeType": "ImportDirective",
+        "scope": 4621,
+        "sourceUnit": 4399,
+        "src": "64:52:31",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "argumentTypes": null,
+              "id": 4603,
+              "name": "ChangeContract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": null,
+              "src": "72:14:31",
+              "typeDescriptions": {
+                "typeIdentifier": null,
+                "typeString": null
+              }
+            },
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 4605,
+          "nodeType": "StructuredDocumentation",
+          "src": "118:151:31",
+          "text": "@title Governor\n@notice Governor interface. This functions should be overwritten to\nenable the comunnication with the rest of the system"
+        },
+        "fullyImplemented": false,
+        "id": 4620,
+        "linearizedBaseContracts": [
+          4620
+        ],
+        "name": "IGovernor",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": {
+              "id": 4606,
+              "nodeType": "StructuredDocumentation",
+              "src": "296:387:31",
+              "text": "@notice Function to be called to make the changes in changeContract\n@dev This function should be protected somehow to only execute changes that\nbenefit the system. This decision process is independent of this architechture\ntherefore is independent of this interface too\n@param changeContract Address of the contract that will execute the changes"
+            },
+            "functionSelector": "8c777e82",
+            "id": 4611,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "executeChange",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 4609,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4608,
+                  "mutability": "mutable",
+                  "name": "changeContract",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4611,
+                  "src": "711:29:31",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ChangeContract_$4398",
+                    "typeString": "contract ChangeContract"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 4607,
+                    "name": "ChangeContract",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 4398,
+                    "src": "711:14:31",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ChangeContract_$4398",
+                      "typeString": "contract ChangeContract"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "710:31:31"
+            },
+            "returnParameters": {
+              "id": 4610,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "750:0:31"
+            },
+            "scope": 4620,
+            "src": "688:63:31",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 4612,
+              "nodeType": "StructuredDocumentation",
+              "src": "757:161:31",
+              "text": "@notice Function to be called to make the changes in changeContract\n@param _changer Address of the contract that will execute the changes"
+            },
+            "functionSelector": "d994d6d5",
+            "id": 4619,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isAuthorizedChanger",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 4615,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4614,
+                  "mutability": "mutable",
+                  "name": "_changer",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4619,
+                  "src": "952:16:31",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4613,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "952:7:31",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "951:18:31"
+            },
+            "returnParameters": {
+              "id": 4618,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4617,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4619,
+                  "src": "993:4:31",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 4616,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "993:4:31",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "992:6:31"
+            },
+            "scope": 4620,
+            "src": "923:76:31",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 4621,
+        "src": "270:731:31"
+      }
+    ],
+    "src": "39:963:31"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/moc-governance/Governance/IGovernor.sol",
+      "exportedSymbols": {
+        "IGovernor": [
+          4620
+        ]
+      },
+      "license": "UNLICENSED"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.6",
+            ".0"
+          ]
+        },
+        "id": 4602,
+        "name": "PragmaDirective",
+        "src": "39:23:31"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 4399,
+          "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/moc-governance/Governance/ChangeContract.sol",
+          "file": "./ChangeContract.sol",
+          "scope": 4621,
+          "symbolAliases": [
+            {
+              "foreign": {
+                "attributes": {
+                  "argumentTypes": null,
+                  "overloadedDeclarations": [
+                    null
+                  ],
+                  "referencedDeclaration": null,
+                  "type": null,
+                  "value": "ChangeContract"
+                },
+                "id": 4603,
+                "name": "Identifier",
+                "src": "72:14:31"
+              },
+              "local": null
+            }
+          ],
+          "unitAlias": ""
+        },
+        "id": 4604,
+        "name": "ImportDirective",
+        "src": "64:52:31"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            4620
+          ],
+          "name": "IGovernor",
+          "scope": 4621
+        },
+        "children": [
+          {
+            "attributes": {
+              "text": "@title Governor\n@notice Governor interface. This functions should be overwritten to\nenable the comunnication with the rest of the system"
+            },
+            "id": 4605,
+            "name": "StructuredDocumentation",
+            "src": "118:151:31"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "8c777e82",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "executeChange",
+              "overrides": null,
+              "scope": 4620,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Function to be called to make the changes in changeContract\n@dev This function should be protected somehow to only execute changes that\nbenefit the system. This decision process is independent of this architechture\ntherefore is independent of this interface too\n@param changeContract Address of the contract that will execute the changes"
+                },
+                "id": 4606,
+                "name": "StructuredDocumentation",
+                "src": "296:387:31"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "changeContract",
+                      "overrides": null,
+                      "scope": 4611,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract ChangeContract",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "ChangeContract",
+                          "referencedDeclaration": 4398,
+                          "type": "contract ChangeContract"
+                        },
+                        "id": 4607,
+                        "name": "UserDefinedTypeName",
+                        "src": "711:14:31"
+                      }
+                    ],
+                    "id": 4608,
+                    "name": "VariableDeclaration",
+                    "src": "711:29:31"
+                  }
+                ],
+                "id": 4609,
+                "name": "ParameterList",
+                "src": "710:31:31"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4610,
+                "name": "ParameterList",
+                "src": "750:0:31"
+              }
+            ],
+            "id": 4611,
+            "name": "FunctionDefinition",
+            "src": "688:63:31"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "d994d6d5",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "isAuthorizedChanger",
+              "overrides": null,
+              "scope": 4620,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Function to be called to make the changes in changeContract\n@param _changer Address of the contract that will execute the changes"
+                },
+                "id": 4612,
+                "name": "StructuredDocumentation",
+                "src": "757:161:31"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_changer",
+                      "overrides": null,
+                      "scope": 4619,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 4613,
+                        "name": "ElementaryTypeName",
+                        "src": "952:7:31"
+                      }
+                    ],
+                    "id": 4614,
+                    "name": "VariableDeclaration",
+                    "src": "952:16:31"
+                  }
+                ],
+                "id": 4615,
+                "name": "ParameterList",
+                "src": "951:18:31"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 4619,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 4616,
+                        "name": "ElementaryTypeName",
+                        "src": "993:4:31"
+                      }
+                    ],
+                    "id": 4617,
+                    "name": "VariableDeclaration",
+                    "src": "993:4:31"
+                  }
+                ],
+                "id": 4618,
+                "name": "ParameterList",
+                "src": "992:6:31"
+              }
+            ],
+            "id": 4619,
+            "name": "FunctionDefinition",
+            "src": "923:76:31"
+          }
+        ],
+        "id": 4620,
+        "name": "ContractDefinition",
+        "src": "270:731:31"
+      }
+    ],
+    "id": 4621,
+    "name": "SourceUnit",
+    "src": "39:963:31"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-02-04T20:51:03.400Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "executeChange(address)": {
+        "details": "This function should be protected somehow to only execute changes that benefit the system. This decision process is independent of this architechture therefore is independent of this interface too",
+        "params": {
+          "changeContract": "Address of the contract that will execute the changes"
+        }
+      },
+      "isAuthorizedChanger(address)": {
+        "params": {
+          "_changer": "Address of the contract that will execute the changes"
+        }
+      }
+    },
+    "title": "Governor",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "executeChange(address)": {
+        "notice": "Function to be called to make the changes in changeContract"
+      },
+      "isAuthorizedChanger(address)": {
+        "notice": "Function to be called to make the changes in changeContract"
+      }
+    },
+    "notice": "Governor interface. This functions should be overwritten to enable the comunnication with the rest of the system",
+    "version": 1
+  }
+}

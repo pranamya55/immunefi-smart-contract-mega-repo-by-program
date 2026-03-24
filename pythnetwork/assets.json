@@ -1,0 +1,114 @@
+[
+  {
+    "project_slug": "pythnetwork",
+    "asset_id": "nBQq3ROzT4iQtYIFfpDj7",
+    "url": "https://github.com/pyth-network/pyth-client/tree/main/program",
+    "description": "Pyth Oracle",
+    "added_at": "2024-06-24T16:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "pythnetwork",
+    "asset_id": "10WrThz2qw1T2sqDGv9wLY",
+    "url": "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/ethereum/contracts/contracts/pyth",
+    "description": "Pyth Crosschain: Ethereum",
+    "added_at": "2024-06-24T16:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "pythnetwork",
+    "asset_id": "7GiUjjaafbPgw5Wct76nHt",
+    "url": "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/aptos/contracts/sources",
+    "description": "Pyth Crosschain: Aptos",
+    "added_at": "2024-06-24T16:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "pythnetwork",
+    "asset_id": "64ZeZd96GW0YKHsm9BspF9",
+    "url": "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/cosmwasm/contracts/pyth/src",
+    "description": "Pyth Crosschain: Cosmwasm",
+    "added_at": "2024-06-24T16:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "pythnetwork",
+    "asset_id": "11nhxtfAziTZdftTvvFMek",
+    "url": "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/near/receiver",
+    "description": "Pyth Crosschain: NEAR",
+    "added_at": "2024-06-24T16:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "pythnetwork",
+    "asset_id": "18Ezc3oBWgMNfyEk794pzR",
+    "url": "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/solana",
+    "description": "Pyth Crosschain: Solana",
+    "added_at": "2024-06-24T16:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "pythnetwork",
+    "asset_id": "6HWdfAYenNIXYv94Pq8LCA",
+    "url": "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/sui/contracts",
+    "description": "Pyth Crosschain: Sui",
+    "added_at": "2024-06-24T16:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "pythnetwork",
+    "asset_id": "zQ4Mqu2QZzsvSotG0VOTw",
+    "url": "https://github.com/pyth-network/governance/tree/main/staking/programs/staking",
+    "description": "Pyth Governance",
+    "added_at": "2024-06-24T16:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "pythnetwork",
+    "asset_id": "7xuZPkwmRFWYt0ONsF0B5T",
+    "url": "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/aptos/contracts",
+    "description": "Pyth Crosschain Aptos",
+    "added_at": "2024-06-24T16:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "pythnetwork",
+    "asset_id": "2ZmAnjSoaYsdEuF4y8v9aj",
+    "url": "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/ethereum/contracts/contracts/entropy",
+    "description": "Pyth Entropy",
+    "added_at": "2024-06-24T16:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "pythnetwork",
+    "asset_id": "3LTpKrSh0ifOiSTWrN0bG5",
+    "url": "https://github.com/pyth-network/per/tree/main/contracts/src",
+    "description": "Pyth Express Relay",
+    "added_at": "2024-08-30T16:52:13.796Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "pythnetwork",
+    "asset_id": "2PH2bozA5PSBaCsWe6dLje",
+    "url": "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/ton/contracts",
+    "description": "Pyth Crosschain: TON",
+    "added_at": "2025-02-20T08:29:39.955Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "pythnetwork",
+    "asset_id": "7wnLORK7eDrrNr3O8TWroE",
+    "url": "https://github.com/pyth-network/pyth-crosschain/tree/main/lazer/contracts/evm",
+    "description": "Pyth Lazer: EVM",
+    "added_at": "2025-04-08T08:29:45.303Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "pythnetwork",
+    "asset_id": "23jParzkoY3eGBnkDLEf8i",
+    "url": "https://github.com/pyth-network/pyth-crosschain/tree/main/lazer/contracts/solana",
+    "description": "Pyth Lazer: Solana",
+    "added_at": "2025-04-08T08:30:02.504Z",
+    "revision": 1
+  }
+]

@@ -1,0 +1,1 @@
+../../../../../../../../../../../../mega-repo/assets/github/blob-snapshots/Synthetixio/synthetix-v3/main/protocol/synthetix/contracts/modules/account/AccountTokenModule.sol

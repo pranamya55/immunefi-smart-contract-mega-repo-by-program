@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xD0D87Cd79965841780022419bF3b8e0BeC0e0500",
+  "host": "etherscan.io",
+  "address": "0xD0D87Cd79965841780022419bF3b8e0BeC0e0500",
+  "chainid": 1,
+  "project_slug": "bifi",
+  "asset_id": "5w6E8dHnYrnfORoETLkahR",
+  "contract_name": "marketSIHandlerDataStorage",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000128647690c7733593aa3dd149eebc5e256e79217",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "BSD-3-Clause",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://158db3f7324511dec764a5b0616ac9a1baa17cf5ceec10454d076f36279efe02",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0xF03b4d9AC1D5d1E7c4cEf54C2A313b9fe051A0aD",
+  "host": "optimistic.etherscan.io",
+  "address": "0xF03b4d9AC1D5d1E7c4cEf54C2A313b9fe051A0aD",
+  "chainid": 10,
+  "project_slug": "usdt0",
+  "asset_id": "1GW6N7B8lVrbUAhtZU2P3c",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "1",
+  "runs": "999999",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "1",
+  "implementation": "0xe549d79883d8d242c5efbe30c26aa2371c67a023",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 8,
+  "mode": "json-sources"
+}

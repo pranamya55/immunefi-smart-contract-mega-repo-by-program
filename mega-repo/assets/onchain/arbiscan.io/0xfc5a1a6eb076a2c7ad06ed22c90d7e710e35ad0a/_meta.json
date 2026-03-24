@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a",
+  "host": "arbiscan.io",
+  "address": "0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a",
+  "chainid": 42161,
+  "project_slug": "compoundfinance",
+  "asset_id": "7wSjUPmZOi1lOdopUfM1P8",
+  "contract_name": "GMX",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://a40877a8fc44c99bdd078958776ed84ac70e68fcadbdc5261074c19720a2e256",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

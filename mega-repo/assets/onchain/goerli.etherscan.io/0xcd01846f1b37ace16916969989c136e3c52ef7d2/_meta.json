@@ -1,0 +1,7 @@
+{
+  "url": "https://goerli.etherscan.io/address/0xcd01846F1b37aCE16916969989C136e3c52ef7d2",
+  "host": "goerli.etherscan.io",
+  "address": "0xcd01846F1b37aCE16916969989C136e3c52ef7d2",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:unexpected-response; scan-host-no-key:http 403"
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://explorer.mantle.xyz/address/0x4697F9b54Bf24776b81f42A5E2Da81FBA3763bA4?tab=contract",
+  "host": "explorer.mantle.xyz",
+  "address": "0x4697F9b54Bf24776b81f42A5E2Da81FBA3763bA4",
+  "chainid": 5000,
+  "project_slug": "fbtc",
+  "asset_id": "74KhaGuoVFR8kZn8EPknwn",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "20000",
+  "constructor_arguments": "000000000000000000000000afad0a8e1b452e90ab350fcb94a8e03f8c48f092000000000000000000000000ef555a9db40d735d49ee4bab8f7e248e19b63ac000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000000",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x9cdc53dbca3a2862708a12dcf8e311a8387b7f13",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

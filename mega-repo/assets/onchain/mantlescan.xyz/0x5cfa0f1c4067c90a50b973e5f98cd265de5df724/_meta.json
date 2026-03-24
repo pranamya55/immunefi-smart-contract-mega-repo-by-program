@@ -1,0 +1,24 @@
+{
+  "url": "https://mantlescan.xyz/address/0x5cfa0f1c4067C90a50B973e5F98CD265de5Df724",
+  "host": "mantlescan.xyz",
+  "address": "0x5cfa0f1c4067C90a50B973e5F98CD265de5Df724",
+  "chainid": 5000,
+  "project_slug": "agni",
+  "asset_id": "db_9a73563e-b243-4d96-93ef-5fd226d92f6f",
+  "contract_name": "OutputCodeHash",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 32,
+  "mode": "json-sources"
+}

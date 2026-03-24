@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x14e2f9B0381Af4227D26BEE7d8E4D424466A7F3F",
+  "host": "etherscan.io",
+  "address": "0x14e2f9B0381Af4227D26BEE7d8E4D424466A7F3F",
+  "chainid": 1,
+  "project_slug": "gainsnetwork",
+  "asset_id": "3MC0xqRu8S9UaeZ2Dpx5i9",
+  "contract_name": "GFarmNftSwap",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": "1",
+  "runs": "1500",
+  "constructor_arguments": "00000000000000000000000043ccd9ea8f64b8918267f7ee4a071d3e9168f9cd",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "None",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://d7b14ee9177a1a8cb3bbc60e9d04f36d7230ca4f98128aae160fb802511dfa91",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

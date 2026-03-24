@@ -1,0 +1,95 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+        exclude: "^sdk/rust/abi/.*"
+      - id: check-added-large-files
+        exclude: package-lock.json
+  # Hook to format many type of files in the repo
+  # including solidity contracts.
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: "v3.1.0"
+    hooks:
+      - id: prettier
+        additional_dependencies:
+          - "prettier@3.1.0"
+          - "prettier-plugin-solidity@1.0.0-rc.1"
+        exclude: "^sdk/rust/abi/.*"
+  - repo: local
+    hooks:
+      # Hooks for workspace
+      - id: cargo-fmt-workspace
+        name: Cargo format for workspace
+        language: "rust"
+        entry: cargo +nightly-2024-12-03 fmt --manifest-path ./Cargo.toml --all -- --config-path rustfmt.toml
+        pass_filenames: false
+        types_or: ["rust", "cargo", "cargo-lock"]
+        files: .
+      - id: cargo-clippy-workspace
+        name: Cargo clippy for workspace
+        language: "rust"
+        entry: cargo +1.85.1 clippy --manifest-path ./Cargo.toml --tests -- -D warnings
+        pass_filenames: false
+        types_or: ["rust", "cargo", "cargo-lock"]
+        files: .
+      - id: cargo-test-workspace
+        name: Cargo test for workspace
+        language: "rust"
+        entry: cargo +1.85.1 test --manifest-path ./Cargo.toml
+        pass_filenames: false
+        types_or: ["rust", "cargo", "cargo-lock"]
+        files: .
+      # Hooks for contracts-svm
+      - id: cargo-fmt-contracts-svm
+        name: Cargo format for svm contracts
+        language: "rust"
+        entry: cargo +nightly-2024-12-03 fmt --manifest-path ./contracts/svm/Cargo.toml --all -- --config-path rustfmt.toml
+        pass_filenames: false
+        files: contracts/svm
+      - id: cargo-clippy-contracts-svm
+        name: Cargo clippy for svm contracts
+        language: "rust"
+        entry: cargo +1.85.1 clippy --manifest-path ./contracts/svm/Cargo.toml --tests -- -D warnings
+        pass_filenames: false
+        files: contracts/svm
+      # EsLint hooks
+      - id: eslint
+        name: eslint
+        entry: pnpm -r lint
+        pass_filenames: false
+        language: system
+        files: .
+      # For python tilt scripts
+      - id: isort
+        name: isort
+        entry: poetry -C tilt-scripts run isort --profile=black tilt-scripts
+        pass_filenames: false
+        language: system
+      - id: black
+        name: black
+        entry: poetry -C tilt-scripts run black tilt-scripts
+        pass_filenames: false
+        language: system
+      - id: pyflakes
+        name: pyflakes
+        entry: poetry -C tilt-scripts run pyflakes tilt-scripts
+        pass_filenames: false
+        language: system
+      # For python sdk
+      - id: isort
+        name: isort
+        entry: poetry -C sdk/python run isort --profile=black --skip-glob sdk/python/express_relay/svm/generated sdk/python
+        pass_filenames: false
+        language: system
+      - id: black
+        name: black
+        entry: poetry -C sdk/python run black sdk/python
+        pass_filenames: false
+        language: system
+      - id: flake8
+        name: flake8
+        entry: poetry -C sdk/python run flake8 --config sdk/python/.flake8 sdk/python
+        pass_filenames: false
+        language: system

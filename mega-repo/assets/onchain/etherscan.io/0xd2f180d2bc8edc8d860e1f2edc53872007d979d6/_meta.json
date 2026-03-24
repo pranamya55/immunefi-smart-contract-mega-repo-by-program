@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xd2f180d2bc8edc8d860e1f2edc53872007d979d6",
+  "host": "etherscan.io",
+  "address": "0xd2f180d2bc8edc8d860e1f2edc53872007d979d6",
+  "chainid": 1,
+  "project_slug": "inversefinance",
+  "asset_id": "4CjP7CCRJ3kiNKTq6KUQ4E",
+  "contract_name": "CurveLPPessimisticFeed",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "10000",
+  "constructor_arguments": "000000000000000000000000744793b5110f6ca9cc7cdfe1ce16677c3eb192ef0000000000000000000000006277cb27232f35c75d3d908b26f3670e7d1674000000000000000000000000005cb542eb054f81b8fa1760c077f44aa80271c75d0000000000000000000000000000000000000000000000000000000000000000",
+  "evm_version": "shanghai",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 4,
+  "mode": "json-sources"
+}

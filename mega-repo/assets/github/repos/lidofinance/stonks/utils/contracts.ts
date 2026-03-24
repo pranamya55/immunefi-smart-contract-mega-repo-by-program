@@ -1,0 +1,55 @@
+import { network, ethers } from 'hardhat'
+
+export type Contracts = {
+  CHAINLINK_PRICE_FEED_REGISTRY: string
+  CHAINLINK_USD_QUOTE: string
+  STETH: string
+  DAI: string
+  USDT: string
+  USDC: string
+  LDO: string
+  AGENT: string
+  SETTLEMENT: string
+  VAULT_RELAYER: string
+  DOMAIN_SEPARATOR: string
+  MANAGER: string
+}
+
+export const mainnet: Contracts = {
+  CHAINLINK_PRICE_FEED_REGISTRY: '0x47Fb2585D2C56Fe188D0E6ec628a38b74fCeeeDf',
+  // Conversion targets: https://github.com/smartcontractkit/chainlink/blob/develop/contracts/src/v0.8/Denominations.sol
+  CHAINLINK_USD_QUOTE: '0x0000000000000000000000000000000000000348',
+  STETH: '0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84',
+  DAI: '0x6B175474E89094C44Da98b954EedeAC495271d0F',
+  USDT: '0xdAC17F958D2ee523a2206206994597C13D831ec7',
+  USDC: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+  LDO: '0x5A98FcBEA516Cf06857215779Fd812CA3beF1B32',
+  AGENT: '0x3e40D73EB977Dc6a537aF587D48316feE66E9C8c',
+  SETTLEMENT: '0x9008D19f58AAbD9eD0D60971565AA8510560ab41',
+  VAULT_RELAYER: '0xC92E8bdf79f0507f65a392b0ab4667716BFE0110',
+  DOMAIN_SEPARATOR: '0xc078f884a2676e1345748b1feace7b0abee5d00ecadb6e574dcdd109a63e8943',
+  MANAGER: '0xa02FC823cCE0D016bD7e17ac684c9abAb2d6D647',
+}
+
+export const holesky: Contracts = {
+  AGENT: '0xE92329EC7ddB11D25e25b3c21eeBf11f15eB325d',
+  CHAINLINK_USD_QUOTE: '0x0000000000000000000000000000000000000348',
+  LDO: '0x14ae7daeecdf57034f3E9db8564e46Dba8D97344',
+  STETH: '0x3F1c547b21f65e10480dE3ad8E19fAAC46C95034',
+  DAI: '0x2eb8e9198e647f80ccf62a5e291bcd4a5a3ca68c',
+  USDT: '0x86f6c353a0965eb069cd7f4f91c1afef8c725551',
+  USDC: '0x9715b2786f1053294fc8952df923b95cab9aac42',
+  CHAINLINK_PRICE_FEED_REGISTRY: '0xe1806817EfdD5ae5a7cDb1dc2371c26BFBAA283A', // Stub
+  SETTLEMENT: '0x4f5db3A496A0fA5D8F0Bee0ced7526d678790De1', // Stub
+  VAULT_RELAYER: '0x9AC20ac486D37b6E4248Fe94B0ea4F4697Ad1396', // Stub
+  // https://holesky.etherscan.io/address/0x4f5db3A496A0fA5D8F0Bee0ced7526d678790De1
+  DOMAIN_SEPARATOR: '0x90b97fde628a8331305c021e506ae0ad8664dc2a4be80f63dff923b7173d9479',
+  MANAGER: '0x96d2Ff1C4D30f592B91fd731E218247689a76915',
+}
+
+export const getContracts = () => {
+  if (network.name === 'holesky') return holesky
+  else if (['hardhat', 'mainnet', 'localhost'].includes(network.name)) return mainnet
+
+  throw new Error('Unknown Network')
+}

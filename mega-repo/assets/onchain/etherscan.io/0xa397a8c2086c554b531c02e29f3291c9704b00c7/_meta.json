@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xa397a8C2086C554B531c02E29f3291c9704B00c7",
+  "host": "etherscan.io",
+  "address": "0xa397a8C2086C554B531c02E29f3291c9704B00c7",
+  "chainid": 1,
+  "project_slug": "compoundfinance",
+  "asset_id": "3UI0yT4e4ytE8joVKsZlXx",
+  "contract_name": "MainnetBulker",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "0000000000000000000000006d903f6003cca6255d85cca4d3b5e5146dc33925000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc20000000000000000000000007f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

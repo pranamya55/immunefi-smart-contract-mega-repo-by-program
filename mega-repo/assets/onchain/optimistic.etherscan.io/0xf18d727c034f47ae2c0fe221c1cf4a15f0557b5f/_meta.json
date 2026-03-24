@@ -1,0 +1,24 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0xf18D727C034f47AE2C0FE221C1cf4A15f0557b5F",
+  "host": "optimistic.etherscan.io",
+  "address": "0xf18D727C034f47AE2C0FE221C1cf4A15f0557b5F",
+  "chainid": 10,
+  "project_slug": "wepiggy",
+  "asset_id": "6dFFLGCzWdkXURP1ARKRzC",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000209ee6f924a39bddc9a57c0e263dd5e29ceac78a0000000000000000000000001fe0f15546858d9a1e84ce2e7908b160608267c5000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000048129fc1c00000000000000000000000000000000000000000000000000000000",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "1",
+  "implementation": "0x209ee6f924a39bddc9a57c0e263dd5e29ceac78a",
+  "swarm_source": "ipfs://93f028255035b61df476b13b9dba3c4f06f60e51b9b4caee31680b389aef327f",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

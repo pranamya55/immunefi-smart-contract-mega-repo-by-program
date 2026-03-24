@@ -1,0 +1,24 @@
+{
+  "url": "https://explorer.mantle.xyz/address/0xcDA86A272531e8640cD7F1a92c01839911B90bb0",
+  "host": "explorer.mantle.xyz",
+  "address": "0xcDA86A272531e8640cD7F1a92c01839911B90bb0",
+  "chainid": 5000,
+  "project_slug": "mETH",
+  "asset_id": "6QXO4Eph31e37Ox1pvNMMR",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "1000000",
+  "constructor_arguments": "000000000000000000000000a1f06b96f082c470e9759d1090d281b2493c6a2c00000000000000000000000091a19402818ec3da51ead9db15a4776827ec65e500000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000064c0c53b8b0000000000000000000000004200000000000000000000000000000000000010000000000000000000000000d5f7838f5c461feff7fe49ea5ebaf7728bb0adfa00000000000000000000000009734bb3980906bb217305ea6bd34256feeab10500000000000000000000000000000000000000000000000000000000",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x47501ddd1f8023da2b29e45f5d41299f819cdcc5",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

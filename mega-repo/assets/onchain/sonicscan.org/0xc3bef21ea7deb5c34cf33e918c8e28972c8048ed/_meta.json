@@ -1,0 +1,24 @@
+{
+  "url": "https://sonicscan.org/address/0xC3BEF21Ea7dEB5C34CF33E918c8e28972C8048eD#code",
+  "host": "sonicscan.org",
+  "address": "0xC3BEF21Ea7dEB5C34CF33E918c8e28972C8048eD",
+  "chainid": 146,
+  "project_slug": "parallel",
+  "asset_id": "62ibMhlM0ooH1IBd4a1WPF",
+  "contract_name": "SettersGovernor",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "1000",
+  "constructor_arguments": "",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "BSL 1.1",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 36,
+  "mode": "json-sources"
+}

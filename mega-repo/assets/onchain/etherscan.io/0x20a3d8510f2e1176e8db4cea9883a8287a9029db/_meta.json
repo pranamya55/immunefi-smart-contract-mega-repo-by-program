@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x20a3d8510f2e1176E8Db4CeA9883a8287a9029Db",
+  "host": "etherscan.io",
+  "address": "0x20a3d8510f2e1176E8Db4CeA9883a8287a9029Db",
+  "chainid": 1,
+  "project_slug": "olympus",
+  "asset_id": "99075",
+  "contract_name": "DepositRedemptionVault",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": "1",
+  "runs": "10000",
+  "constructor_arguments": "0000000000000000000000002286d7f9639e8158fad1169e76d1fbc38247f54b000000000000000000000000cb4e21eb404d80f3e1db781aad9ad6a1217fbbf2",
+  "evm_version": "prague",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 35,
+  "mode": "json-sources"
+}

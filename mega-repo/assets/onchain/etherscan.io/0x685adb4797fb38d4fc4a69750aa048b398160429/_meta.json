@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x685aDb4797fb38D4Fc4a69750aa048B398160429",
+  "host": "etherscan.io",
+  "address": "0x685aDb4797fb38D4Fc4a69750aa048B398160429",
+  "chainid": 1,
+  "project_slug": "nucleus",
+  "asset_id": "35f52v65aTGZecQ0rl1Vpw",
+  "contract_name": "TellerWithMultiAssetSupport",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "shanghai",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 19,
+  "mode": "json-sources"
+}

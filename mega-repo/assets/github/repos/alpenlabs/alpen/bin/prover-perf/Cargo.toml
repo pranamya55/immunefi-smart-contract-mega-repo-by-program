@@ -1,0 +1,48 @@
+[package]
+edition = "2021"
+name = "strata-provers-perf"
+version = "0.3.0-alpha.1"
+
+[lints]
+workspace = true
+
+[dependencies]
+zkaleido.workspace = true
+
+# proof programs
+strata-checkpoint-types.workspace = true
+strata-proofimpl-checkpoint.workspace = true
+strata-proofimpl-checkpoint-new.workspace = true
+strata-proofimpl-evm-ee-stf.workspace = true
+
+strata-codec.workspace = true
+strata-da-framework.workspace = true
+strata-identifiers.workspace = true
+strata-ledger-types.workspace = true
+strata-ol-chain-types-new.workspace = true
+strata-ol-da.workspace = true
+strata-ol-stf = { workspace = true, features = ["test-utils"] }
+strata-test-utils-evm-ee.workspace = true
+strata-zkvm-hosts.workspace = true
+
+# sp1
+sp1-sdk.workspace = true
+strata-sp1-guest-builder = { path = "../../provers/sp1", optional = true }
+zkaleido-sp1-host = { git = "https://github.com/alpenlabs/zkaleido", tag = "v0.1.0-alpha-rc20", optional = true }
+
+anyhow.workspace = true
+argh.workspace = true
+num-format = "0.4.4"
+reqwest.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+
+[features]
+default = ["sp1"]
+sp1 = [
+  "zkaleido-sp1-host/perf",
+  "strata-zkvm-hosts/sp1-builder",
+  "dep:zkaleido-sp1-host",
+  "dep:strata-sp1-guest-builder",
+]

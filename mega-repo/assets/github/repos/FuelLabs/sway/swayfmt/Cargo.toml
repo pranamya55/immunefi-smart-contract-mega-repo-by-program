@@ -1,0 +1,34 @@
+[package]
+name = "swayfmt"
+version.workspace = true
+description = "Sway language formatter."
+authors.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+forc-tracing.workspace = true
+indoc.workspace = true
+ropey.workspace = true
+serde = { workspace = true, features = ["derive"] }
+serde_ignored.workspace = true
+sway-ast.workspace = true
+sway-error.workspace = true
+sway-features.workspace = true
+sway-parse.workspace = true
+sway-types.workspace = true
+sway-utils.workspace = true
+thiserror.workspace = true
+toml = { workspace = true, features = ["parse"] }
+
+[dev-dependencies]
+paste.workspace = true
+prettydiff.workspace = true
+similar.workspace = true
+test-macros = { path = "test_macros" }
+
+[lints]
+workspace = true

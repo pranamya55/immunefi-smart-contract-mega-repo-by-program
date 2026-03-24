@@ -1,0 +1,24 @@
+{
+  "url": "https://bscscan.com/address/0x311aEA58Ca127B955890647413846E351df32554",
+  "host": "bscscan.com",
+  "address": "0x311aEA58Ca127B955890647413846E351df32554",
+  "chainid": 56,
+  "project_slug": "wepiggy",
+  "asset_id": "3hqS1Jla7MlXNDbM0REki3",
+  "contract_name": "AdminUpgradeabilityProxy",
+  "compiler_version": "v0.5.3+commit.10d17f24",
+  "optimization_used": "0",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "constantinople",
+  "library": "",
+  "license_type": "None",
+  "proxy": "1",
+  "implementation": "0x75dcd2536a5f414b8f90bb7f2f3c015a26dc8c79",
+  "swarm_source": "bzzr://3a61cbfff803b053d8f397cf95cfa0c8c53ef12ce921c5d484b275b58be38897",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

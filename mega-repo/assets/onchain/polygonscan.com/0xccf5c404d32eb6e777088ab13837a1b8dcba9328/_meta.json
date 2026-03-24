@@ -1,0 +1,8 @@
+{
+  "url": "https://polygonscan.com/address/0xccf5c404d32eb6e777088ab13837a1b8dcba9328",
+  "host": "polygonscan.com",
+  "address": "0xccf5c404d32eb6e777088ab13837a1b8dcba9328",
+  "chainid": 137,
+  "mode": "bytecode-v2-proxy",
+  "bytecode_length_hex_chars": 1360
+}

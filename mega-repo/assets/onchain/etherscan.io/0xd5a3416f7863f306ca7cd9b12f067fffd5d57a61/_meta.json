@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xd5A3416f7863f306Ca7CD9B12f067FFFd5D57a61",
+  "host": "etherscan.io",
+  "address": "0xd5A3416f7863f306Ca7CD9B12f067FFFd5D57a61",
+  "chainid": 1,
+  "project_slug": "inversefinance",
+  "asset_id": "1ltr1qXbk6bm9qnL5OeDFw",
+  "contract_name": "ExchangeRateUpdater",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "00000000000000000000000080226fc0ee2b096224eeac085bb9a8cba1146f7d000000000000000000000000514910771af9ca656af840dff83e8264ecf986ca0000000000000000000000009063007b3d024fb24c31ea9b6c29ac6cd41c707f0000000000000000000000000000000000000000000000000000000000000001",
+  "evm_version": "shanghai",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 12,
+  "mode": "json-sources"
+}

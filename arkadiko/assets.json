@@ -1,0 +1,98 @@
+[
+  {
+    "project_slug": "arkadiko",
+    "asset_id": "4qZ7w9kPd6Avqh6goz5mzw",
+    "url": "https://explorer.hiro.so/txid/SP2C2YFP12AJZB4MABJBAJ55XECVS7E4PMMZ89YZR.arkadiko-vaults-manager-v1-2?chain=mainnet",
+    "description": "Vaults Manager",
+    "added_at": "2026-01-15T15:57:41.160Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "arkadiko",
+    "asset_id": "34lR4pbQ7QVcjt3FXxmiHY",
+    "url": "https://explorer.hiro.so/txid/SP2C2YFP12AJZB4MABJBAJ55XECVS7E4PMMZ89YZR.arkadiko-vaults-pool-active-v1-1?chain=mainnet",
+    "description": "Vaults Pool Active",
+    "added_at": "2024-06-03T02:44:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "arkadiko",
+    "asset_id": "3bEVChlkzdUq8CibGvYLI3",
+    "url": "https://explorer.hiro.so/txid/SP2C2YFP12AJZB4MABJBAJ55XECVS7E4PMMZ89YZR.usda-token?chain=mainnet",
+    "description": "USDA",
+    "added_at": "2024-06-03T02:44:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "arkadiko",
+    "asset_id": "5X40ykHEE8p6Xe7lDNMtJh",
+    "url": "https://explorer.hiro.so/txid/SP2C2YFP12AJZB4MABJBAJ55XECVS7E4PMMZ89YZR.arkadiko-token?chain=mainnet",
+    "description": "DIKO",
+    "added_at": "2024-06-03T02:44:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "arkadiko",
+    "asset_id": "5shtYXhYBvwBwLaDTKquAZ",
+    "url": "https://explorer.hiro.so/txid/SP2C2YFP12AJZB4MABJBAJ55XECVS7E4PMMZ89YZR.arkadiko-vaults-helpers-v1-1?chain=mainnet",
+    "description": "Vaults Helpers",
+    "added_at": "2024-06-03T02:44:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "arkadiko",
+    "asset_id": "5wAMtZMh6xHvhzQCJ0XbXR",
+    "url": "https://explorer.hiro.so/txid/SP2C2YFP12AJZB4MABJBAJ55XECVS7E4PMMZ89YZR.arkadiko-vaults-tokens-v1-1?chain=mainnet",
+    "description": "Vaults Token",
+    "added_at": "2024-06-03T02:44:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "arkadiko",
+    "asset_id": "6CTBPRdGr3joW5BwLocfaV",
+    "url": "https://explorer.hiro.so/txid/SP2C2YFP12AJZB4MABJBAJ55XECVS7E4PMMZ89YZR.arkadiko-vaults-pool-liq-v1-2?chain=mainnet",
+    "description": "Vaults Pool Liq",
+    "added_at": "2024-06-03T02:44:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "arkadiko",
+    "asset_id": "6icpdu7e54Fe9XczAtrEiC",
+    "url": "https://explorer.hiro.so/txid/SP2C2YFP12AJZB4MABJBAJ55XECVS7E4PMMZ89YZR.arkadiko-vaults-pool-fees-v1-1?chain=mainnet",
+    "description": "Vaults Pool Fees",
+    "added_at": "2024-06-03T02:44:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "arkadiko",
+    "asset_id": "6yx7YMJYB2UaLadySrFr1h",
+    "url": "https://explorer.hiro.so/txid/SP2C2YFP12AJZB4MABJBAJ55XECVS7E4PMMZ89YZR.arkadiko-vaults-operations-v1-3?chain=mainnet",
+    "description": "Vaults Operations",
+    "added_at": "2024-06-03T02:44:00.000Z",
+    "revision": 4
+  },
+  {
+    "project_slug": "arkadiko",
+    "asset_id": "7LSwPeW5RLWZlUFtaCM7dG",
+    "url": "https://explorer.hiro.so/txid/SP2C2YFP12AJZB4MABJBAJ55XECVS7E4PMMZ89YZR.wstx-token?chain=mainnet",
+    "description": "WSTX",
+    "added_at": "2024-06-03T02:44:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "arkadiko",
+    "asset_id": "oREL8KvyT9ReyXV3657NG",
+    "url": "https://explorer.hiro.so/txid/SP2C2YFP12AJZB4MABJBAJ55XECVS7E4PMMZ89YZR.arkadiko-vaults-data-v1-1?chain=mainnet",
+    "description": "Vaults data",
+    "added_at": "2024-06-03T02:44:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "arkadiko",
+    "asset_id": "ysNZG8P8srAD9SgbZKqhr",
+    "url": "https://explorer.hiro.so/txid/SP2C2YFP12AJZB4MABJBAJ55XECVS7E4PMMZ89YZR.arkadiko-vaults-sorted-v1-1?chain=mainnet",
+    "description": "Vaults Sorted",
+    "added_at": "2024-06-03T02:44:00.000Z",
+    "revision": 2
+  }
+]

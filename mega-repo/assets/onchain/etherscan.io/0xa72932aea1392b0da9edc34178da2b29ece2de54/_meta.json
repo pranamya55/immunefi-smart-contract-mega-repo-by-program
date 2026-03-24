@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xa72932Aea1392b0Da9eDc34178dA2B29EcE2de54#code",
+  "host": "etherscan.io",
+  "address": "0xa72932Aea1392b0Da9eDc34178dA2B29EcE2de54",
+  "chainid": 1,
+  "project_slug": "aurafinance",
+  "asset_id": "4VlY16OyhGUrPG8y8UtrVE",
+  "contract_name": "PoolManagerSecondaryProxy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000c128468b7ce63ea702c1f104d55a2566b13d3abd0000000000000000000000002c809ec701c088099c911af9ddfa4a1db6110f3c000000000000000000000000a57b8d98dae62b26ec3bcc4a365338157060b2340000000000000000000000000b7918e20479ef0ad21a302e463dc7624bddc740",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 34,
+  "mode": "json-sources"
+}

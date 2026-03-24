@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x00000000219ab540356cBB839Cbe05303d7705Fa#code",
+  "host": "etherscan.io",
+  "address": "0x00000000219ab540356cBB839Cbe05303d7705Fa",
+  "chainid": 1,
+  "project_slug": "ethereum-protocol-attackathon",
+  "asset_id": "7KUEbgJx3RhMK6RIsDh3IF",
+  "contract_name": "DepositContract",
+  "compiler_version": "v0.6.11+commit.5ef660b1",
+  "optimization_used": "1",
+  "runs": "5000000",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "Unlicense",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://dceca8706b29e917dacf25fceef95acac8d90d765ac926663ce4096195952b61",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

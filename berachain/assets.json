@@ -1,0 +1,18 @@
+[
+  {
+    "project_slug": "berachain",
+    "asset_id": "5ah23IiGzOIsWSO5Ic8jPx",
+    "url": "https://github.com/berachain/contracts",
+    "description": "Berachain Smart Contracts",
+    "added_at": "2025-01-18T08:36:32.148Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "berachain",
+    "asset_id": "1kmK3F3vjT0hHvvdYfY3fc",
+    "url": "https://github.com/berachain/airdrop-contracts",
+    "description": "Berachain Airdrop Contracts",
+    "added_at": "2025-02-19T14:00:53.407Z",
+    "revision": 0
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "url": "https://bscscan.com/address/0xB0b84D294e0C75A6abe60171b70edEb2EFd14A1B",
+  "host": "bscscan.com",
+  "address": "0xB0b84D294e0C75A6abe60171b70edEb2EFd14A1B",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:unexpected-response; scan-host-no-key:unexpected-response"
+}

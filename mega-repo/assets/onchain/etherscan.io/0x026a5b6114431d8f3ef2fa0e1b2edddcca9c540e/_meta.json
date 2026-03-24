@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x026a5B6114431d8F3eF2fA0E1B2EDdDccA9c540E#code",
+  "host": "etherscan.io",
+  "address": "0x026a5B6114431d8F3eF2fA0E1B2EDdDccA9c540E",
+  "chainid": 1,
+  "project_slug": "sparklend",
+  "asset_id": "4HT6CgorXjnEcyBaW80rKj",
+  "contract_name": "StableDebtToken",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "1",
+  "runs": "100000",
+  "constructor_arguments": "000000000000000000000000c13e21b648a5ee794902342038ff3adab66be987",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 20,
+  "mode": "json-sources"
+}

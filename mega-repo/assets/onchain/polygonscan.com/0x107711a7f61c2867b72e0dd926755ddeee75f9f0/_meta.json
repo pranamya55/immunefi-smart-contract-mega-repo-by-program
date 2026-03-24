@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0x107711a7f61c2867B72E0Dd926755dDeEe75F9f0",
+  "host": "polygonscan.com",
+  "address": "0x107711a7f61c2867B72E0Dd926755dDeEe75F9f0",
+  "chainid": 137,
+  "project_slug": "beefyfinance",
+  "asset_id": "5C63AlEs2EkDz3e1bAavYB",
+  "contract_name": "StrategyWexPolyLP",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://737cc63810b7b72398447a01e5473498aaec18d8520320787e17f49836e18523",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

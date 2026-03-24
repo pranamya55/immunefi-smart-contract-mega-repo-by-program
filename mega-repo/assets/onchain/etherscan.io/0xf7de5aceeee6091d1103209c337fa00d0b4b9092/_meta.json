@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xf7DE5aCeEeE6091d1103209C337fA00D0B4b9092",
+  "host": "etherscan.io",
+  "address": "0xf7DE5aCeEeE6091d1103209C337fA00D0B4b9092",
+  "chainid": 1,
+  "project_slug": "connext",
+  "asset_id": "4CeOutHSNVTekoVFozBJtX",
+  "contract_name": "LPToken",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "Unlicense",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

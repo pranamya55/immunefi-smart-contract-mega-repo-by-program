@@ -1,0 +1,117 @@
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "program-libs/**"
+      - "programs/**"
+      - "sdk-tests/**"
+      - "sdk-libs/**"
+  pull_request:
+    branches:
+      - "*"
+    paths:
+      - "programs/**"
+      - "program-libs/**"
+      - "sdk-tests/**"
+      - "sdk-libs/**"
+    types: [opened, synchronize, reopened, ready_for_review]
+
+name: examples-tests
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  system-programs:
+    name: system-programs
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    services:
+      redis:
+        image: redis:8.0.1
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    env:
+      REDIS_URL: redis://localhost:6379
+      CARGO_INCREMENTAL: "0"
+
+    strategy:
+      matrix:
+        include:
+          - program: native
+            sub-tests: '["cargo-test-sbf -p sdk-native-test", "cargo-test-sbf -p sdk-v1-native-test", "cargo-test-sbf -p sdk-light-token-test", "cargo-test-sbf -p client-test"]'
+          - program: anchor & pinocchio
+            sub-tests: '["cargo-test-sbf -p sdk-anchor-test", "cargo-test-sbf -p sdk-compressible-test", "cargo-test-sbf -p sdk-pinocchio-v1-test", "cargo-test-sbf -p sdk-pinocchio-v2-test", "cargo-test-sbf -p pinocchio-nostd-test", "cargo-test-sbf -p sdk-light-token-pinocchio-test"]'
+          - program: light-account
+            sub-tests: '["cargo-test-sbf -p csdk-anchor-derived-test", "cargo-test-sbf -p csdk-anchor-full-derived-test", "cargo-test-sbf -p single-mint-test", "cargo-test-sbf -p single-pda-test", "cargo-test-sbf -p single-ata-test", "cargo-test-sbf -p single-token-test", "cargo-test-sbf -p single-account-loader-test", "cargo-test-sbf -p anchor-manual-test", "cargo-test-sbf -p anchor-semi-manual-test", "cargo-test-sbf -p pinocchio-manual-test", "cargo-test-sbf -p pinocchio-light-program-test"]'
+          - program: token test
+            sub-tests: '["cargo-test-sbf -p sdk-token-test", "cargo-test-sbf -p token-client-test"]'
+          - program: sdk-libs
+            test_cmd: just sdk-libs test
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v6
+        with:
+          submodules: true
+
+      - name: Setup and build
+        uses: ./.github/actions/setup-and-build
+        with:
+          skip-components: "redis,disk-cleanup,go"
+          cache-key: "rust"
+
+      - name: Build CLI
+        run: |
+          just cli build
+
+      - name: Install bun
+        if: matrix.program == 'sdk-libs'
+        run: npm install -g bun
+
+      - name: Install CLI globally (npm, bun, yarn)
+        if: matrix.program == 'sdk-libs'
+        run: |
+          npm install -g @lightprotocol/zk-compression-cli
+          bun install -g @lightprotocol/zk-compression-cli
+          cd /tmp && yarn global add @lightprotocol/zk-compression-cli
+
+      - name: Test find_light_bin with npm
+        if: matrix.program == 'sdk-libs'
+        run: |
+          cargo test -p light-program-test --lib -- test_find_light_bin --nocapture
+
+      - name: Test find_light_bin with bun
+        if: matrix.program == 'sdk-libs'
+        run: |
+          PATH="$HOME/.bun/bin:$PATH" cargo test -p light-program-test --lib -- test_find_light_bin --nocapture
+
+      - name: Test find_light_bin with yarn
+        if: matrix.program == 'sdk-libs'
+        run: |
+          PATH="$(yarn global bin):$PATH" cargo test -p light-program-test --lib -- test_find_light_bin --nocapture
+
+      - name: Run sub-tests for ${{ matrix.program }}
+        if: matrix.sub-tests != null
+        run: |
+
+          IFS=',' read -r -a sub_tests <<< "${{ join(fromJSON(matrix.sub-tests), ', ') }}"
+          for subtest in "${sub_tests[@]}"
+          do
+            echo "$subtest"
+            eval "RUSTFLAGS=\"-D warnings\" $subtest"
+          done
+
+      - name: Run tests for ${{ matrix.program }}
+        if: matrix.test_cmd != null
+        run: |
+          ${{ matrix.test_cmd }}

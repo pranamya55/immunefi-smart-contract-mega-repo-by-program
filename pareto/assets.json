@@ -1,0 +1,18 @@
+[
+  {
+    "project_slug": "pareto",
+    "asset_id": "2J91J0Fz7AlXeSylq0C4EL",
+    "url": "https://docs.pareto.credit/developers/addresses/product/credit-vaults",
+    "description": "",
+    "added_at": "2024-12-12T11:36:22.094Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "pareto",
+    "asset_id": "78BeyyEf1qYkMkTl8yAl4N",
+    "url": "https://docs.pareto.credit/developers/addresses/product/usp",
+    "description": "",
+    "added_at": "2024-12-12T11:36:31.719Z",
+    "revision": 2
+  }
+]

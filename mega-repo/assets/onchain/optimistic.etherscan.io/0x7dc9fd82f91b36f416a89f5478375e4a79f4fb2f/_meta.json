@@ -1,0 +1,24 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0x7dc9fd82f91B36F416A89f5478375e4a79f4Fb2F#code",
+  "host": "optimistic.etherscan.io",
+  "address": "0x7dc9fd82f91B36F416A89f5478375e4a79f4Fb2F",
+  "chainid": 10,
+  "project_slug": "velodromefinance",
+  "asset_id": "1OwzIb8oXJ6uy8hBUInUZK",
+  "contract_name": "RootVotingRewardsFactory",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 14,
+  "mode": "json-sources"
+}

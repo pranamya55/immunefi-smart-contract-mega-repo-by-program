@@ -1,0 +1,8 @@
+{
+  "url": "https://celoscan.io/address/0x299a3bfeca0ebecb2114881da39c3c303c318cac",
+  "host": "celoscan.io",
+  "address": "0x299a3bfeca0ebecb2114881da39c3c303c318cac",
+  "chainid": 42220,
+  "mode": "bytecode-v2-proxy",
+  "bytecode_length_hex_chars": 556
+}

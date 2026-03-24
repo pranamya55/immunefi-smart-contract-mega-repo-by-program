@@ -1,0 +1,25 @@
+{
+  "url": "https://explorer.lyra.finance/address/0xa364498b361d563921C9A144264205CdaAF1B5E0",
+  "host": "explorer.lyra.finance",
+  "address": "0xa364498b361d563921C9A144264205CdaAF1B5E0",
+  "chainid": null,
+  "project_slug": "derive",
+  "asset_id": "xvzStiLaCcNbBnEWOiw07",
+  "contract_name": "BasePortfolioViewer",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": "0x000000000000000000000000e7603df191d699d8bd9891b821347dbab889e5a500000000000000000000000057b03e14d409adc7fab6cfc44b5886cad2d5f02b",
+  "evm_version": "paris",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:missing-chainid",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://basescan.org/address/0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF",
+  "host": "basescan.org",
+  "address": "0xac531Eb26Ca1d21b85126De8FB87E80E09002DcF",
+  "chainid": 8453,
+  "project_slug": "thesandbox",
+  "asset_id": "4LEX6TnPmCl126lHSO5fRP",
+  "contract_name": "OFTSand",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": "1",
+  "runs": "2000",
+  "constructor_arguments": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018987794f808ee72ae9127058f1c7d079736ca4500000000000000000000000018987794f808ee72ae9127058f1c7d079736ca450000000000000000000000001a44076050125825900e736c501f859c50fe728c000000000000000000000000cba49d154b4bb9a9ad7f5dad396cb9a0a3a62abc",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 48,
+  "mode": "json-sources"
+}

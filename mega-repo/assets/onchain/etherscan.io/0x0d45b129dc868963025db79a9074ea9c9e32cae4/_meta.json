@@ -1,0 +1,19 @@
+{
+  "url": "https://etherscan.io/address/0x0d45b129dc868963025db79a9074ea9c9e32cae4",
+  "host": "etherscan.io",
+  "address": "0x0d45b129dc868963025db79a9074ea9c9e32cae4",
+  "chainid": 1,
+  "contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "1",
+  "runs": "999999",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "1",
+  "implementation": "0x41d58951cbd12d4ef49b0437897677bbf5547c80",
+  "swarm_source": "",
+  "files_written": 7,
+  "mode": "recover-json-sources"
+}

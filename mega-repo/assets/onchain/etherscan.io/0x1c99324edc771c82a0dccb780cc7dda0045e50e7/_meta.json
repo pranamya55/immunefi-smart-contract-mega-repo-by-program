@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x1c99324EDC771c82A0DCCB780CC7DDA0045E50e7",
+  "host": "etherscan.io",
+  "address": "0x1c99324EDC771c82A0DCCB780CC7DDA0045E50e7",
+  "chainid": 1,
+  "project_slug": "balancer",
+  "asset_id": "5tXZeU6Z17Esn1s7fO8ExA",
+  "contract_name": "ArbitrumRootGaugeFactory",
+  "compiler_version": "v0.7.1+commit.f4a555be",
+  "optimization_used": "1",
+  "runs": "9999",
+  "constructor_arguments": "000000000000000000000000ba12222222228d8ba445958a75a0704d566bf2c8000000000000000000000000239e55f427d44c3cc793f49bfb507ebe76638a2b00000000000000000000000072ce9c846789fdb6fc1f34ac4ad25dd9ef7031ef00000000000000000000000000000000000000000000000000000000000f424000000000000000000000000000000000000000000000000000000000769cfd80000000000000000000000000000000000000000000000000000009184e72a000",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 32,
+  "mode": "json-sources"
+}

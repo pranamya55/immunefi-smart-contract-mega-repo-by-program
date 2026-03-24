@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xF95E5722226a1018d058CD757B75F1D10289e967",
+  "host": "etherscan.io",
+  "address": "0xF95E5722226a1018d058CD757B75F1D10289e967",
+  "chainid": 1,
+  "project_slug": "maple",
+  "asset_id": "6v9IrgadrFJ9WbVRc6oQIv",
+  "contract_name": "MapleWithdrawalManager",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "BSL 1.1",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://f4a1d1a48fbc0a68c216553480b062eb59bd06e80bd67259694bdacc86949695",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

@@ -1,0 +1,1 @@
+../../../../../../../../mega-repo/assets/github/blob-snapshots/sky-ecosystem/ilk-registry/master/src/IlkRegistry.sol

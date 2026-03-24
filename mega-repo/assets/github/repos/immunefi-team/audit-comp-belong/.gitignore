@@ -1,0 +1,16 @@
+node_modules
+.env
+coverage
+coverage.json
+typechain
+target
+
+#Hardhat files
+cache
+artifacts
+
+contracts/.DS_Store
+.DS_Store
+typechain-types
+
+.snfoundry*

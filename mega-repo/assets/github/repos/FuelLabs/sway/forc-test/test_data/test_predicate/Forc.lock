@@ -1,0 +1,8 @@
+[[package]]
+name = "std"
+source = "path+from-root-0F8F2B0C982FD479"
+
+[[package]]
+name = "test_predicate"
+source = "member"
+dependencies = ["std"]

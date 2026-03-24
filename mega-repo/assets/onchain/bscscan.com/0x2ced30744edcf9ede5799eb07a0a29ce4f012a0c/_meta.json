@@ -1,0 +1,24 @@
+{
+  "url": "https://bscscan.com/address/0x2ced30744edcF9eDe5799eb07a0A29CE4f012a0c",
+  "host": "bscscan.com",
+  "address": "0x2ced30744edcF9eDe5799eb07a0A29CE4f012a0c",
+  "chainid": 56,
+  "project_slug": "ondofinance",
+  "asset_id": "4sLrsVaMrjZFzyKaA6hf5t",
+  "contract_name": "RateLimiter",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "00000000000000000000000054b5aae5bda007db744ea762460a96f24bc1f4ad",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 4,
+  "mode": "json-sources"
+}

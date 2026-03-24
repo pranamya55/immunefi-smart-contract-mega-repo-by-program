@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x9C07A72177c5A05410cA338823e790876E79D73B#code",
+  "host": "etherscan.io",
+  "address": "0x9C07A72177c5A05410cA338823e790876E79D73B",
+  "chainid": 1,
+  "project_slug": "boosteddegatebugbounty",
+  "asset_id": "3t1bnnf9qptsJycPUjn4nk",
+  "contract_name": "OwnedUpgradabilityProxy",
+  "compiler_version": "v0.7.0+commit.9e61f92b",
+  "optimization_used": "1",
+  "runs": "1000000",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "Apache-2.0",
+  "proxy": "1",
+  "implementation": "0xc56c1dfe64d21a345e3a3c715ffca1c6450b964b",
+  "swarm_source": "ipfs://0c9fc8478fd91331601c64de52fb0ed597ba0206dce6d50bcd4f8494df215536",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 95,
+  "mode": "json-sources"
+}

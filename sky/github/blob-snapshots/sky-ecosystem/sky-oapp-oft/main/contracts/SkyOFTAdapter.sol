@@ -1,0 +1,1 @@
+../../../../../../../../mega-repo/assets/github/blob-snapshots/sky-ecosystem/sky-oapp-oft/main/contracts/SkyOFTAdapter.sol

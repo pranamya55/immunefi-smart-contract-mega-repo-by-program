@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xcf9c49B0962EDb01Cdaa5326299ba85D72405258",
+  "host": "etherscan.io",
+  "address": "0xcf9c49B0962EDb01Cdaa5326299ba85D72405258",
+  "chainid": 1,
+  "project_slug": "drips",
+  "asset_id": "3uh0tmvHQIya2u0GIXGtIi",
+  "contract_name": "ManagedProxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "7700",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x566ecff89fd28b374f40e64d0b838fa2175fc99e",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 11,
+  "mode": "json-sources"
+}

@@ -1,0 +1,8 @@
+[[package]]
+name = "std"
+source = "path+from-root-F5066E46095A1823"
+
+[[package]]
+name = "struct_instantiation"
+source = "member"
+dependencies = ["std"]

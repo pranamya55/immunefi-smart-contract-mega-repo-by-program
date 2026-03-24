@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x0d2ec0a5858730e7d49f5b4ae6f2c665e46c1d9d#code",
+  "host": "etherscan.io",
+  "address": "0x0d2ec0a5858730e7d49f5b4ae6f2c665e46c1d9d",
+  "chainid": 1,
+  "project_slug": "boosteddegatebugbounty",
+  "asset_id": "05o5wmKiDXx1laZpssx8j",
+  "contract_name": "Timelock",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": "0",
+  "runs": "200",
+  "constructor_arguments": "0000000000000000000000002028834b2c0a36a918c10937eea71be4f932da5200000000000000000000000000000000000000000000000000000000003b5380",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "BSD-3-Clause",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://64dc20bce16e0211f92271b7b58329a95213c7db804c91a3eb66dec3ec1e4aea",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "json-sources"
+}

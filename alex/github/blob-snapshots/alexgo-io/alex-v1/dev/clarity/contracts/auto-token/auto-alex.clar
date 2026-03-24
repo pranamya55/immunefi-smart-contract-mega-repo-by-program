@@ -1,0 +1,1 @@
+../../../../../../../../../../mega-repo/assets/github/blob-snapshots/alexgo-io/alex-v1/dev/clarity/contracts/auto-token/auto-alex.clar

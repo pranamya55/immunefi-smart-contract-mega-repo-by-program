@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0xa2931C37957f3079d3B21b877d56E1db930e02a5",
+  "host": "arbiscan.io",
+  "address": "0xa2931C37957f3079d3B21b877d56E1db930e02a5",
+  "chainid": 42161,
+  "project_slug": "hyperlane",
+  "asset_id": "3Ta5epGhhIyUz0lOr8BNh4",
+  "contract_name": "DomainRoutingIsmFactory",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": "1",
+  "runs": "999999",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://f0cc32ae1934429dd420659050d8028483b5aae93f12f681c739b29d820898b6",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

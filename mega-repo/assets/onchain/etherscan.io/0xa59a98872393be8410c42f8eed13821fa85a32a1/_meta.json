@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xA59a98872393BE8410C42f8EED13821fa85A32a1",
+  "host": "etherscan.io",
+  "address": "0xA59a98872393BE8410C42f8EED13821fa85A32a1",
+  "chainid": 1,
+  "project_slug": "kiln-defi",
+  "asset_id": "2pq5Xy8L2rOfheYk6JpHIt",
+  "contract_name": "VaultFactory",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "00000000000000000000000060cfac5cd4aeed165023a81f57a0bc92d7cfeb6e000000000000000000000000c1caf43fb9ac723fef07ea94a1c423880cdf5301000000000000000000000000000000000000000000000000000000000001518000000000000000000000000015f7f910e5a8c86e609fd11c58f7342d86d3a25c000000000000000000000000eeebc7537717a39b747015feae221c1f069dae0b",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 41,
+  "mode": "json-sources"
+}

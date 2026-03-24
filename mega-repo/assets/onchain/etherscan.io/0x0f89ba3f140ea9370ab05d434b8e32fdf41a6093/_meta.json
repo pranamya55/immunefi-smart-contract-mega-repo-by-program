@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x0F89ba3F140Ea9370aB05d434B8e32fDf41a6093",
+  "host": "etherscan.io",
+  "address": "0x0F89ba3F140Ea9370aB05d434B8e32fDf41a6093",
+  "chainid": 1,
+  "project_slug": "resonate",
+  "asset_id": "LaHTBVRcEtE3e76EVOZuH",
+  "contract_name": "PriceProvider",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": "1",
+  "runs": "100",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 6,
+  "mode": "json-sources"
+}

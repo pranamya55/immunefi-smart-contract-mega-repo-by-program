@@ -1,0 +1,9 @@
+{
+  "url_host": "solscan.io",
+  "address": "2YNj4egax5WV1zSgq9hwJFNzHSYZo2rU7S8BZuMdQMKW",
+  "chain_kind": "solana",
+  "mode": "alchemy-solana-getAccountInfo",
+  "executable": false,
+  "owner": "RBN2XNc6JQU6ewFp9TyPq6WznsvNuumzSJkor1nJFcz",
+  "space": 353
+}

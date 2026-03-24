@@ -1,0 +1,19 @@
+{
+  "url": "https://etherscan.io/address/0xaf52695e1bb01a16d33d7194c28c42b10e0dbec2",
+  "host": "etherscan.io",
+  "address": "0xaf52695e1bb01a16d33d7194c28c42b10e0dbec2",
+  "chainid": 1,
+  "contract_name": "VoterProxy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000239e55f427d44c3cc793f49bfb507ebe76638a2b000000000000000000000000ba100000625a3754423978a60c9317c58a424e3d0000000000000000000000005c6ee304399dbdb9c8ef030ab642b10820db8f56000000000000000000000000c128a9954e6c874ea3d62ce62b468ba073093f25000000000000000000000000c128468b7ce63ea702c1f104d55a2566b13d3abd",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://c40c14ea957b7b5ff51a15d6baa80b178285f132a6989469675f1ac358bb089b",
+  "files_written": 1,
+  "mode": "recover-single-file"
+}

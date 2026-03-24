@@ -1,0 +1,8 @@
+[[package]]
+name = "generics_multiple_type_arguments"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-BCE7F945AE139141"

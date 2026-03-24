@@ -1,0 +1,24 @@
+{
+  "url": "https://hyperevmscan.io/address/0x769f533139eb1723c41cadec243ce10bc4d400fd#code",
+  "host": "hyperevmscan.io",
+  "address": "0x769f533139eb1723c41cadec243ce10bc4d400fd",
+  "chainid": 999,
+  "project_slug": "parallel",
+  "asset_id": "6EXeHU6qMsWNdsNGkhLsKS",
+  "contract_name": "SavingsNameable",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "1000",
+  "constructor_arguments": "",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 40,
+  "mode": "json-sources"
+}

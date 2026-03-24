@@ -1,0 +1,31 @@
+[client]
+rpc_port = 8432
+l2_blocks_fetch_limit = 1_000
+datadir = "/path/to/data/directory"
+# sequencer_key = "/path/to/data/directory/"
+# sequencer_bitcoin_address = ""
+db_retry_count = 5
+
+[bitcoind]
+rpc_url = "localhost:18332"
+rpc_user = "alpen"
+rpc_password = "alpen"
+network = "regtest"
+
+[sync]
+l1_follow_distance = 6
+client_checkpoint_interval = 10
+
+[btcio.reader]
+client_poll_dur_ms = 200
+
+[btcio.writer]
+write_poll_dur_ms = 200
+fee_policy = "smart"
+reveal_amount = 100
+
+[exec.reth]
+# reth {authrpc.address}:{authrpc.port}
+rpc_url = "localhost:8551"
+# reth authrpc.jwtsecret path
+secret = "/path/to/jwt.hex"

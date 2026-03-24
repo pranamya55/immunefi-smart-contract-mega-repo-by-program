@@ -1,0 +1,24 @@
+{
+  "url": "https://lineascan.build/address/0xeb564d2a33661b0bb18e5ca64d00ce54c1830959",
+  "host": "lineascan.build",
+  "address": "0xeb564d2a33661b0bb18e5ca64d00ce54c1830959",
+  "chainid": 59144,
+  "project_slug": "teahousefinance",
+  "asset_id": "4KUuGzk5CAjaS4x96kfbDE",
+  "contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0xde3693d33e594404aa1df704b6ad9dbbf7fe062f",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

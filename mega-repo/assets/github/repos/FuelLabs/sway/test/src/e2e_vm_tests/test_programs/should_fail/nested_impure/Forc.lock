@@ -1,0 +1,8 @@
+[[package]]
+name = "nested_impure"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-817B68A1DC27AFAA"

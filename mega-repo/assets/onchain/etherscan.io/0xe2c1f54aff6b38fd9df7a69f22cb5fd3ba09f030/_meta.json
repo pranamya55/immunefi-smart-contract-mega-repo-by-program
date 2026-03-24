@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xe2C1F54aFF6b38fD9DF7a69F22cB5fd3ba09F030",
+  "host": "etherscan.io",
+  "address": "0xe2C1F54aFF6b38fD9DF7a69F22cB5fd3ba09F030",
+  "chainid": 1,
+  "project_slug": "compoundfinance",
+  "asset_id": "wbZW66jN9uuQWjFQm26pH",
+  "contract_name": "CometExt",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "436f6d706f756e642057455448000000000000000000000000000000000000006357455448763300000000000000000000000000000000000000000000000000",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 6,
+  "mode": "json-sources"
+}

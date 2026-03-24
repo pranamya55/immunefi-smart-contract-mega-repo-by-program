@@ -1,0 +1,25 @@
+{
+  "url": "https://pacific-explorer.manta.network/address/0xD2a2a567674E85Bedab9dcC402bCae6C4E0aaBb8",
+  "host": "pacific-explorer.manta.network",
+  "address": "0xD2a2a567674E85Bedab9dcC402bCae6C4E0aaBb8",
+  "chainid": 169,
+  "project_slug": "zerolend-boost",
+  "asset_id": "1kooLpCNRPgUfLvdl85jfz",
+  "contract_name": "AToken",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": "0000000000000000000000002f9bb73a8e98793e26cb2f6c4ad037bdf1c6b269",
+  "evm_version": "berlin",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:unexpected-response",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

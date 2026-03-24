@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x5427FEFA711Eff984124bFBB1AB6fbf5E3DA1820",
+  "host": "etherscan.io",
+  "address": "0x5427FEFA711Eff984124bFBB1AB6fbf5E3DA1820",
+  "chainid": 1,
+  "project_slug": "celer",
+  "asset_id": "3qVHMCLQ3kr9uxHLc7h9vR",
+  "contract_name": "Bridge",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "800",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "GNU GPLv3",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 20,
+  "mode": "json-sources"
+}

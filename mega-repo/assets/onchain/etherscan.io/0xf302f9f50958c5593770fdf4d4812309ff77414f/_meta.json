@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xf302f9F50958c5593770FDf4d4812309fF77414f#code",
+  "host": "etherscan.io",
+  "address": "0xf302f9F50958c5593770FDf4d4812309fF77414f",
+  "chainid": 1,
+  "project_slug": "balancer",
+  "asset_id": "5H6X04FiqVx6Ffu0StT7sj",
+  "contract_name": "BalancerTokenAdmin",
+  "compiler_version": "v0.7.1+commit.f4a555be",
+  "optimization_used": "1",
+  "runs": "9999",
+  "constructor_arguments": "000000000000000000000000ba12222222228d8ba445958a75a0704d566bf2c8000000000000000000000000ba100000625a3754423978a60c9317c58a424e3d",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 17,
+  "mode": "json-sources"
+}

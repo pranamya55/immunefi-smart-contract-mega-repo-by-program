@@ -1,0 +1,9 @@
+node_modules/
+.vscode
+.idea/
+cache/
+artifacts/
+.env
+coverage/
+coverage.json
+deployments/

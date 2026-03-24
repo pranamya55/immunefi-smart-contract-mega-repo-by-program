@@ -1,0 +1,42 @@
+[
+  {
+    "project_slug": "StaderforPolygon",
+    "asset_id": "7LdYMynq3mpNEr1xtwwKTX",
+    "url": "https://etherscan.io/address/0xf03A7Eb46d01d9EcAA104558C732Cf82f6B6B645",
+    "description": "MaticX token ERC20 - Stader for Polygon",
+    "added_at": "2022-04-25T17:30:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "StaderforPolygon",
+    "asset_id": "7ekZ0EOZpzmr4ycNi89h0C",
+    "url": "https://etherscan.io/address/0xf556442d5b77a4b0252630e15d8bbe2160870d77",
+    "description": "ValidatorRegistry - Stader for Polygon",
+    "added_at": "2022-04-25T17:30:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "StaderforPolygon",
+    "asset_id": "6rP3loetR2aFbQT7kmOCh",
+    "url": "https://finder.terra.money/mainnet/address/terra1xacqx447msqp46qmv8k2sq6v5jh9fdj37az898",
+    "description": "Staking",
+    "added_at": "2024-12-17T09:39:33.350Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "StaderforPolygon",
+    "asset_id": "6fTzhdCZH3mJ4jwNMPh6W0",
+    "url": "https://finder.terra.money/mainnet/address/terra1d8cjkwxvrw8cmpyja3p8luag2hxsktersc0wez",
+    "description": "Reward",
+    "added_at": "2024-12-17T09:39:43.659Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "StaderforPolygon",
+    "asset_id": "oZs4iBs2UPCCHNRxAWi9T",
+    "url": "https://finder.terra.money/mainnet/address/terra1vq83s69rykjypyqcqhc7hsqzups6p9fwzu0wre",
+    "description": "Airdrops Registry",
+    "added_at": "2024-12-17T09:39:58.259Z",
+    "revision": 1
+  }
+]

@@ -1,0 +1,1 @@
+../../../../../../../../../../mega-repo/assets/github/blob-snapshots/cowprotocol/contracts/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/IVault.sol

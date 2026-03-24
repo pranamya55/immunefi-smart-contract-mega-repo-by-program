@@ -1,0 +1,24 @@
+{
+  "url": "https://snowtrace.io/address/0xd586e7f844cea2f87f50152665bcbc2c279d8d70",
+  "host": "snowtrace.io",
+  "address": "0xd586e7f844cea2f87f50152665bcbc2c279d8d70",
+  "chainid": 43114,
+  "project_slug": "avalanche",
+  "asset_id": "1HWax05ZGVCUGhWL0sNHQM",
+  "contract_name": "BridgeToken",
+  "compiler_version": "v0.8.0+commit.c7dfd78e",
+  "optimization_used": "0",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "BSD-3-Clause",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://2ab4841bcf4eb823d45f827375baa924736f218471e23a6df9be265590a460d7",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

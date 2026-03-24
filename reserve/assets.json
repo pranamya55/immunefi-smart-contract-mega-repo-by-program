@@ -1,0 +1,842 @@
+[
+  {
+    "project_slug": "reserve",
+    "asset_id": "31EheL01spMd6jThd0tZeN",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/libraries/Allowance.sol",
+    "description": "Allowance.sol (3.4.0)",
+    "added_at": "2023-04-27T09:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "5VUMlqFyROGsWTSgogRRBI",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/libraries/Array.sol",
+    "description": "Array.sol (3.4.0)",
+    "added_at": "2023-04-27T09:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "3WgMG6UObNd7g2S0SrVeEa",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/libraries/Fixed.sol",
+    "description": "Fixed.sol (3.4.0)",
+    "added_at": "2025-03-17T07:55:29.081Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "6X4QIXkgIMC7V36TxZCjrz",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/libraries/Permit.sol",
+    "description": "Permit.sol (3.4.0)",
+    "added_at": "2025-03-17T07:55:46.109Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "gqxBPQ0w76DBFiCgmLRln",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/libraries/String.sol",
+    "description": "String.sol (3.4.0)",
+    "added_at": "2025-03-17T07:56:11.202Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "2EOYSOzCauvt6Q6aetgDe8",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/libraries/Throttle.sol",
+    "description": "Throttle.sol (3.4.0)",
+    "added_at": "2025-03-17T07:58:21.514Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "5cyYSbPQgxFq4i6rHzuwzO",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/mixins/Auth.sol",
+    "description": "Auth.sol (3.4.0)",
+    "added_at": "2025-03-17T07:58:38.537Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "34KoOlsOWk1YJnnwfrttVT",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/mixins/ComponentRegistry.sol",
+    "description": "ComponentRegistry.sol (3.4.0)",
+    "added_at": "2025-03-17T07:58:56.675Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "2B5GuBzrZujNKrhSuK4pVu",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/mixins/Versioned.sol",
+    "description": "Versioned.sol (3.4.0)",
+    "added_at": "2025-03-17T07:59:11.708Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "6b7bDyDUeAnEqgPxQU0riG",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/p1/AssetRegistry.sol",
+    "description": "AssetRegistry.sol (3.4.0)",
+    "added_at": "2025-03-17T08:14:35.901Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "2lUhUqVOmakBpZ54dwXQxY",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/p1/BackingManager.sol",
+    "description": "BackingManager.sol (3.4.0)",
+    "added_at": "2025-03-17T08:14:53.972Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "13IyXfaqIQcOKqqi20hozA",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/p1/BasketHandler.sol",
+    "description": "BasketHandler.sol (3.4.0)",
+    "added_at": "2025-03-17T08:15:16.042Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "71toLWtN3x2BoGBWfQ617o",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/p1/Broker.sol",
+    "description": "Broker.sol (3.4.0)",
+    "added_at": "2025-03-17T08:15:31.782Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "2ELlELx5p9gPHrTOrILQKs",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/p1/Deployer.sol",
+    "description": "Deployer.sol (3.4.0)",
+    "added_at": "2025-03-17T08:15:46.419Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "4XUoFbEZnoEkGQuU8orHmg",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/p1/Distributor.sol",
+    "description": "Distributor.sol (3.4.0)",
+    "added_at": "2025-03-17T08:16:00.995Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "1U5st4goBchuaVhtN5nhPG",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/p1/Furnace.sol",
+    "description": "Furnace.sol (3.4.0)",
+    "added_at": "2025-03-17T08:16:17.673Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "5a8SseAtHJO2HoTcVUtkfJ",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/p1/Main.sol",
+    "description": "Main.sol (3.4.0)",
+    "added_at": "2025-03-17T08:16:30.192Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "4colYSjrHqIDVTiZU0vWaS",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/p1/RToken.sol",
+    "description": "RToken.sol (3.4.0)",
+    "added_at": "2025-03-17T08:23:55.267Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "1v7LiDs9yZcswCvllIhg0b",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/p1/RevenueTrader.sol",
+    "description": "RevenueTrader.sol (3.4.0)",
+    "added_at": "2025-03-17T08:24:23.677Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "620yXTGXPQ61efoksAfUgP",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/p1/StRSR.sol",
+    "description": "StRSR.sol (3.4.0)",
+    "added_at": "2025-03-17T08:24:43.475Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "FyEGO49gm3sDsKAvbXG8a",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/p1/StRSRVotes.sol",
+    "description": "StRSRVotes.sol (3.4.0)",
+    "added_at": "2025-03-17T08:24:59.595Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "62YWMS37ujQSPA5Jx5QCkd",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/p1/mixins/BasketLib.sol",
+    "description": "BasketLib.sol (3.4.0)",
+    "added_at": "2025-03-17T08:25:20.555Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "5xKR7CaMm6PVjPrfyuMd1v",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/p1/mixins/Component.sol",
+    "description": "Component.sol (3.4.0)",
+    "added_at": "2025-03-17T08:25:35.444Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "iOnYdbn3WVMfMPna1PhHm",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/p1/mixins/RecollateralizationLib.sol",
+    "description": "RecollateralizationLib.sol (3.4.0)",
+    "added_at": "2025-03-17T08:25:51.880Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "5eG2IldohGHRh30fYvH8dF",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/p1/mixins/RewardableLib.sol",
+    "description": "RewardableLib.sol (3.4.0)",
+    "added_at": "2025-03-17T08:26:11.888Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "62Opax65VEt6XBrEkl2WUG",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/p1/mixins/TradeLib.sol",
+    "description": "TradeLib.sol (3.4.0)",
+    "added_at": "2025-03-17T08:26:26.872Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "4qy4QRLVtILY4JmhaqFOzL",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/p1/mixins/Trading.sol",
+    "description": "Trading.sol (3.4.0)",
+    "added_at": "2025-03-17T08:26:41.864Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "6Gs32nKjA1XzTBIjTI4XoY",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/AppreciatingFiatCollateral.sol",
+    "description": "AppreciatingFiatCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:26:57.033Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "6gwn80Y79xzPPX1Hqsi9Lx",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/Asset.sol",
+    "description": "Asset.sol (3.4.0)",
+    "added_at": "2025-03-17T08:28:28.864Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "5gCEUCzJxZBzjvbi84E0Hx",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/ERC4626FiatCollateral.sol",
+    "description": "ERC4626FiatCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:28:52.373Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "2sRm2ZpZeBa1cV4SotAKZo",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/EURFiatCollateral.sol",
+    "description": "EURFiatCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:29:07.331Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "6qvT4Y65nk7N3DNwuBNYZT",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/FiatCollateral.sol",
+    "description": "FiatCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:39:18.375Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "2llUyjxCWf7LeUTXQlefcC",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/L2LSDCollateral.sol",
+    "description": "L2LSDCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:39:31.907Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "32CSByopXLjZsoaeiZBVpH",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/NonFiatCollateral.sol",
+    "description": "NonFiatCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:39:45.391Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "1xT6AB2Agp7U1dacBhhbRY",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/OracleErrors.sol",
+    "description": "OracleErrors.sol (3.4.0)",
+    "added_at": "2025-03-17T08:39:58.931Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "1fZB8N3QbXye9rgUCEiStT",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/OracleLib.sol",
+    "description": "OracleLib.sol (3.4.0)",
+    "added_at": "2025-03-17T08:40:14.263Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "QWY9xv4qJ0tkGrDXzC2eq",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/RTokenAsset.sol",
+    "description": "RTokenAsset.sol (3.4.0)",
+    "added_at": "2025-03-17T08:40:31.291Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "6DVHUNjJcX6tbEg4lLMrri",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/SelfReferentialCollateral.sol",
+    "description": "SelfReferentialCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:41:58.662Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "4vOb9OijafyYYV6jATY7iv",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/VersionedAsset.sol",
+    "description": "VersionedAsset.sol (3.4.0)",
+    "added_at": "2025-03-17T08:42:10.084Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "7mFIdu3QS4haeOQTXPXxLI",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/aave/ATokenFiatCollateral.sol",
+    "description": "ATokenFiatCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:42:25.240Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "2PY7ZSWOxZjWuOd6K8zZJl",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/aave/IStaticATokenLM.sol",
+    "description": "IStaticATokenLM.sol (3.4.0)",
+    "added_at": "2025-03-17T08:42:38.906Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "2FHSuTG11MOmYdtjzTENI6",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/aave/StaticATokenErrors.sol",
+    "description": "StaticATokenErrors.sol (3.4.0)",
+    "added_at": "2025-03-17T08:43:22.851Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "5oKyypwfsiblrLL3lCLbtk",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/aave/StaticATokenLM.sol",
+    "description": "StaticATokenLM.sol (3.4.0)",
+    "added_at": "2025-03-17T08:43:38.966Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "52DDwl9PQxyGxuYSQmdQUP",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/aave-v3/AaveV3FiatCollateral.sol",
+    "description": "AaveV3FiatCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:43:51.872Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "470Ew8QrOcb8hiWGS5rWfX",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/aave-v3/mock/MockStaticATokenV3.sol",
+    "description": "MockStaticATokenV3.sol (3.4.0)",
+    "added_at": "2025-03-17T08:44:07.673Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "12bzLJCBKNiyTVF8Q6sm9Z",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/ankr/AnkrStakedEthCollateral.sol",
+    "description": "AnkrStakedEthCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:44:22.898Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "4ezaN5yG8rC2X3wJrzm2wR",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/cbeth/CBETHCollateral.sol",
+    "description": "CBETHCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:44:38.169Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "327tWwUNHzz9o7Bd7oeH2L",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/cbeth/CBETHCollateralL2.sol",
+    "description": "CBETHCollateralL2.sol (3.4.0)",
+    "added_at": "2025-03-17T08:44:57.620Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "38L2bK2yxXQDg3mKGkWlhM",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/compoundv2/CTokenFiatCollateral.sol",
+    "description": "CTokenFiatCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:45:12.950Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "2OxBCHKRanPnSLbFXxOYvi",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/compoundv2/CTokenNonFiatCollateral.sol",
+    "description": "CTokenNonFiatCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:45:40.642Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "27A6lsEsgOnWhi6HzSBY7E",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/compoundv2/CTokenSelfReferentialCollateral.sol",
+    "description": "CTokenSelfReferentialCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:45:52.906Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "2jpjdSXlHHuR0zVKurR94Z",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/compoundv2/ICToken.sol",
+    "description": "ICToken.sol (3.4.0)",
+    "added_at": "2025-03-17T08:46:19.998Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "61ZdriT6cVfRe93P44SY1O",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/compoundv3/CTokenV3Collateral.sol",
+    "description": "CTokenV3Collateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:46:31.733Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "3DvAdFA8YYLMGPRu4ENRYT",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/compoundv3/CometHelpers.sol",
+    "description": "CometHelpers.sol (3.4.0)",
+    "added_at": "2025-03-17T08:46:43.206Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "6NbRPjgqaIwcW9E4UtUfAD",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/compoundv3/CusdcV3Wrapper.sol",
+    "description": "CusdcV3Wrapper.sol (3.4.0)",
+    "added_at": "2025-03-17T08:46:54.168Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "1V8SgaF6gIVr8gqT4Whz3g",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/compoundv3/ICusdcV3Wrapper.sol",
+    "description": "ICusdcV3Wrapper.sol (3.4.0)",
+    "added_at": "2025-03-17T08:47:09.112Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "4BpXLNsq8VzoYpzuADdb2I",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/compoundv3/IWrappedERC20.sol",
+    "description": "IWrappedERC20.sol (3.4.0)",
+    "added_at": "2025-03-17T08:47:27.162Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "3J7U9KSUQCzkFnWJcV5q4v",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/compoundv3/WrappedERC20.sol",
+    "description": "WrappedERC20.sol (3.4.0)",
+    "added_at": "2025-03-17T08:47:39.429Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "5Q4Gm401YcTxukzmhAMndT",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/curve/CurveAppreciatingRTokenFiatCollateral.sol",
+    "description": "CurveAppreciatingRTokenFiatCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:48:45.317Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "3CUha7Solek3WqYxedAzM9",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/curve/CurveAppreciatingRTokenSelfReferentialCollateral.sol",
+    "description": "CurveAppreciatingRTokenSelfReferentialCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:48:59.396Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "1BZzVGQb84jhZI8Vrz4DYf",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/curve/CurveRecursiveCollateral.sol",
+    "description": "CurveRecursiveCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:49:15.243Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "5mo6Q12g41CA08pEE1IzqI",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/curve/CurveStableCollateral.sol",
+    "description": "CurveStableCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:49:32.040Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "RRE61HocrVhNvZg8Mv4Sb",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/curve/CurveStableMetapoolCollateral.sol",
+    "description": "CurveStableMetapoolCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:49:55.423Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "aeaJlzSF6caJC1maJvbq9",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/curve/CurveStableRTokenMetapoolCollateral.sol",
+    "description": "CurveStableRTokenMetapoolCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:50:18.741Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "qusC3lLNQHghJiRrrFFkE",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/curve/L2ConvexStableCollateral.sol",
+    "description": "L2ConvexStableCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:50:31.685Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "6vRosTvBceucHVPCVDe8xa",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/curve/PoolTokens.sol",
+    "description": "PoolTokens.sol (3.4.0)",
+    "added_at": "2025-03-17T08:51:19.953Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "kdclUzX6FKAxXsuNp5bit",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/curve/crv/CurveGaugeWrapper.sol",
+    "description": "CurveGaugeWrapper.sol (3.4.0)",
+    "added_at": "2025-03-17T08:51:32.156Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "5jmhgqnVO5prkwWt3oua1P",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/curve/stakedao/StakeDAORecursiveCollateral.sol",
+    "description": "StakeDAORecursiveCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:51:48.222Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "4NffwHlNdDtdc7dB1FFpmz",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/dsr/SDaiCollateral.sol",
+    "description": "SDaiCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:52:01.499Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "5uMEAXqJM4OWCdCtybloa7",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/erc20/RewardableERC20.sol",
+    "description": "RewardableERC20.sol (3.4.0)",
+    "added_at": "2025-03-17T08:52:14.444Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "2gKE7EPkosbZnRaL5gvMud",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/erc20/RewardableERC20Wrapper.sol",
+    "description": "RewardableERC20Wrapper.sol (3.4.0)",
+    "added_at": "2025-03-17T08:52:28.724Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "6APxuG6PavwBC8k8rliBx1",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/erc20/RewardableERC4626Vault.sol",
+    "description": "RewardableERC4626Vault.sol (3.4.0)",
+    "added_at": "2025-03-17T08:52:43.425Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "5GxS3xIR2NWPpW8JLOo2ma",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/ethena/USDeFiatCollateral.sol",
+    "description": "USDeFiatCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:52:57.226Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "3Kz4lIgR6QO1uVwKcgqNxe",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/frax/SFraxCollateral.sol",
+    "description": "SFraxCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:53:13.314Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "6V7T4V2eKC1GfhHMgOHavT",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/frax-eth/SFraxEthCollateral.sol",
+    "description": "SFraxEthCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:53:26.639Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "1SBe1aHWEx6FRrCjJKEIZ3",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/lido/L2LidoStakedEthCollateral.sol",
+    "description": "L2LidoStakedEthCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:53:38.017Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "3EvdpTbd9hM42EVrxbtbsm",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/lido/LidoStakedEthCollateral.sol",
+    "description": "LidoStakedEthCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:53:52.987Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "3YdFxrl847oz6AsTaXNEdg",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/meta-morpho/MetaMorphoFiatCollateral.sol",
+    "description": "MetaMorphoFiatCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:54:06.109Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "7BKbsNXHoUSo6AUvDHOCLj",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/meta-morpho/MetaMorphoSelfReferentialCollateral.sol",
+    "description": "MetaMorphoSelfReferentialCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:54:20.695Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "5XCmbjsQcs6FViiCxeJUlZ",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/morpho-aave/IMorpho.sol",
+    "description": "IMorpho.sol (3.4.0)",
+    "added_at": "2025-03-17T08:56:20.606Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "jUbhOGmGc29nyePL7nzE3",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/morpho-aave/MorphoAaveV2TokenisedDeposit.sol",
+    "description": "MorphoAaveV2TokenisedDeposit.sol (3.4.0)",
+    "added_at": "2025-03-17T08:56:42.542Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "4diiEPGtZ4mYnG3gNB8irG",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/morpho-aave/MorphoFiatCollateral.sol",
+    "description": "MorphoFiatCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:56:57.516Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "62NxsI1ZZLI4U1ZBMMwBo4",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/morpho-aave/MorphoNonFiatCollateral.sol",
+    "description": "MorphoNonFiatCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:57:10.183Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "7olez6SMiA5btRWVbmxgs2",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/morpho-aave/MorphoSelfReferentialCollateral.sol",
+    "description": "MorphoSelfReferentialCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T08:57:23.983Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "7B5ijZO1FqTkN62DB9gqrV",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/morpho-aave/MorphoTokenisedDeposit.sol",
+    "description": "MorphoTokenisedDeposit.sol (3.4.0)",
+    "added_at": "2025-03-17T08:59:52.265Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "5lvhELzX12kkcyJWBe8Kp4",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/mountain/USDMCollateral.sol",
+    "description": "USDMCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T09:00:05.520Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "71FKzFIroxyeStCX2eWXtb",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/pirex-eth/ApxEthCollateral.sol",
+    "description": "ApxEthCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T09:00:19.565Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "2U51g6W8wRC6Vun1kVFHVa",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/rocket-eth/RethCollateral.sol",
+    "description": "RethCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T09:00:46.944Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "6AdT1yUaOlB9uWkW4gmHP3",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/stargate/StargatePoolFiatCollateral.sol",
+    "description": "StargatePoolFiatCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T09:00:59.576Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "1wqMcm8hP06vTNxYUZDZiG",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/stargate/StargateRewardableWrapper.sol",
+    "description": "StargateRewardableWrapper.sol (3.4.0)",
+    "added_at": "2025-03-17T09:01:18.888Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "4eRsf0TurO2PzMZYMwnC9Y",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/assets/yearnv2/YearnV2CurveFiatCollateral.sol",
+    "description": "YearnV2CurveFiatCollateral.sol (3.4.0)",
+    "added_at": "2025-03-17T09:01:30.968Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "5fxrYmI7tuMr2LAqS5k5RK",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/governance/Governance.sol",
+    "description": "Governance.sol (3.4.0)",
+    "added_at": "2025-03-17T09:01:45.238Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "1htqEwYP23po171oAw6RLS",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/trading/DutchTrade.sol",
+    "description": "DutchTrade.sol (3.4.0)",
+    "added_at": "2025-03-17T09:02:00.544Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "4TmaU051Ai4JjmVC1m8UmD",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/plugins/trading/GnosisTrade.sol",
+    "description": "GnosisTrade.sol (3.4.0)",
+    "added_at": "2025-03-17T09:02:16.653Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "3Fp5llnIYUNArV88m20nk3",
+    "url": "https://github.com/reserve-protocol/protocol/blob/master/contracts/spells/3_4_0.sol",
+    "description": "3_4_0.sol (3.4.0)",
+    "added_at": "2025-03-17T09:04:18.580Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "21n13mn3P8esiFKwaBh4fM",
+    "url": "https://github.com/reserve-protocol/reserve-index-dtf/blob/main/contracts/Folio.sol",
+    "description": "Folio.sol",
+    "added_at": "2025-03-17T09:04:32.395Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "Wyp4ro1CD8zNK44Gt8lIz",
+    "url": "https://github.com/reserve-protocol/reserve-index-dtf/blob/main/contracts/folio/FolioDAOFeeRegistry.sol",
+    "description": "FolioDAOFeeRegistry.sol",
+    "added_at": "2025-03-17T09:04:46.601Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "2FNgaYmzboicKdc70xxwPv",
+    "url": "https://github.com/reserve-protocol/reserve-index-dtf/blob/main/contracts/folio/FolioDeployer.sol",
+    "description": "FolioDeployer.sol",
+    "added_at": "2025-03-17T09:05:03.444Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "7s9rwxSY153hqUKBsYKnWx",
+    "url": "https://github.com/reserve-protocol/reserve-index-dtf/blob/main/contracts/folio/FolioProxy.sol",
+    "description": "FolioProxy.sol",
+    "added_at": "2025-03-17T09:05:15.301Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "38HPQ8XMeayk7TU9F31KQe",
+    "url": "https://github.com/reserve-protocol/reserve-index-dtf/blob/main/contracts/folio/FolioVersionRegistry.sol",
+    "description": "FolioVersionRegistry.sol",
+    "added_at": "2025-03-17T09:05:29.366Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "4VOellU6gmQVy2Na4DNOAa",
+    "url": "https://github.com/reserve-protocol/reserve-index-dtf/blob/main/contracts/governance/FolioGovernor.sol",
+    "description": "FolioGovernor.sol",
+    "added_at": "2025-03-17T09:05:41.491Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "35BIKu8bFvro1fEufjv3jh",
+    "url": "https://github.com/reserve-protocol/reserve-index-dtf/blob/main/contracts/governance/GovernanceDeployer.sol",
+    "description": "GovernanceDeployer.sol",
+    "added_at": "2025-03-17T09:05:53.114Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "6CePVRYxT1lHs5QCu38XuD",
+    "url": "https://github.com/reserve-protocol/reserve-index-dtf/blob/main/contracts/staking/StakingVault.sol",
+    "description": "StakingVault.sol",
+    "added_at": "2025-03-17T09:06:04.122Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "3pqF5e5MKh5mndTQCKv40O",
+    "url": "https://github.com/reserve-protocol/reserve-index-dtf/blob/main/contracts/staking/UnstakingManager.sol",
+    "description": "UnstakingManager.sol",
+    "added_at": "2025-03-17T09:06:16.525Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "reserve",
+    "asset_id": "6mC0ArtCzcA1Gaa5EQaCfW",
+    "url": "https://github.com/reserve-protocol/reserve-index-dtf/blob/main/contracts/utils/Versioned.sol",
+    "description": "Versioned.sol",
+    "added_at": "2025-03-17T09:06:28.297Z",
+    "revision": 1
+  }
+]

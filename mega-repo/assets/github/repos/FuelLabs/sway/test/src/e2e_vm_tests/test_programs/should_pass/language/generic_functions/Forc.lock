@@ -1,0 +1,8 @@
+[[package]]
+name = "generic_functions"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-41715E5E6E7DF930"

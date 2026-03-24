@@ -1,0 +1,24 @@
+{
+  "url": "https://bscscan.com/address/0xC2f2Bf0c228714d038c2495343224c0d9199cC82",
+  "host": "bscscan.com",
+  "address": "0xC2f2Bf0c228714d038c2495343224c0d9199cC82",
+  "chainid": 56,
+  "project_slug": "velvetcapital",
+  "asset_id": "YEylFDrAIM8mFN42EqNSc",
+  "contract_name": "PriceOracle",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 10,
+  "mode": "json-sources"
+}

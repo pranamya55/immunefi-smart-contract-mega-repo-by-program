@@ -1,0 +1,42 @@
+[
+  {
+    "project_slug": "bobanetwork",
+    "asset_id": "2ono3wv4gAACXJFYQhsBm8",
+    "url": "https://etherscan.io/address/0x2dE73Bd1660Fbf4D521a52Ec2a91CCc106113801",
+    "description": "Proxy_LightBridge",
+    "added_at": "2024-08-14T08:24:49.763Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "bobanetwork",
+    "asset_id": "3BMLoUBjqC0uoezrCdNgvx",
+    "url": "https://arbiscan.io/address/0x2dE73Bd1660Fbf4D521a52Ec2a91CCc106113801",
+    "description": "Proxy__LightBridge (Arb)",
+    "added_at": "2024-08-14T09:31:00.642Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "bobanetwork",
+    "asset_id": "4KRYNAni0FwyNmAUb4hL1L",
+    "url": "https://optimistic.etherscan.io/address/0x2dE73Bd1660Fbf4D521a52Ec2a91CCc106113801",
+    "description": "Proxy__LightBridge (Op)",
+    "added_at": "2024-08-14T09:30:45.907Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "bobanetwork",
+    "asset_id": "4fyNLY3rtehYuskuzmslUQ",
+    "url": "https://bobascan.com/address/0x670b130112C6f03E17192e63c67866e67D77c3ee",
+    "description": "Proxy__LightBridge",
+    "added_at": "2024-08-14T09:30:23.193Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "bobanetwork",
+    "asset_id": "5ylUdfeIvqvXwZILmX1wv7",
+    "url": "https://bobascan.com/address/0x0dfFd3Efe9c3237Ad7bf94252296272c96237FF5",
+    "description": "Proxy__LightBridge",
+    "added_at": "2024-08-14T09:28:25.191Z",
+    "revision": 0
+  }
+]

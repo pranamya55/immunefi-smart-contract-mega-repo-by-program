@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0x214d52880b1e4E17d020908cd8EAa988FfDD4020",
+  "host": "polygonscan.com",
+  "address": "0x214d52880b1e4E17d020908cd8EAa988FfDD4020",
+  "chainid": 137,
+  "project_slug": "thesandbox",
+  "asset_id": "4eIXMGQgVbIwZkEguTH4N1",
+  "contract_name": "MultiGiveaway",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": "1",
+  "runs": "2000",
+  "constructor_arguments": "0000000000000000000000007074bb056c53acc0b6091dd3fae591aa3a4acc8800000000000000000000000086c80a8aa58e0a4fa09a69624c31ab2a6cad56b8",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 17,
+  "mode": "json-sources"
+}

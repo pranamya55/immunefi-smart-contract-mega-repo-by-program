@@ -1,0 +1,28 @@
+[package]
+name = "stake-deposit-interceptor-cranker"
+version.workspace = true
+edition = "2021"
+
+[dependencies]
+bytemuck = { version = "1.13", features = ["derive"] }  # Add this line
+clap = { version = "4.4", features = ["derive"] }
+config = "0.13"
+dotenv = "0.15"
+jito-bytemuck.workspace = true
+log = "0.4.22"
+metrics = "0.21"
+serde = { version = "1.0", features = ["derive"] }
+solana-account-decoder.workspace = true
+solana-client.workspace = true
+solana-commitment-config.workspace = true
+solana-metrics = "2.0.14"
+solana-program.workspace = true
+solana-sdk.workspace = true
+spl-associated-token-account-interface.workspace = true
+spl-stake-pool.workspace = true
+spl-token-interface.workspace = true
+stake-deposit-interceptor = { path = "../stake_deposit_interceptor" }
+thiserror = "1.0.65"
+tokio = { version = "1.41.0", features = ["full"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }  # Add env-filter feature

@@ -1,0 +1,25 @@
+{
+  "url": "https://explorer.lyra.finance/address/0xe7cD9370CdE6C9b5eAbCe8f86d01822d3de205A0",
+  "host": "explorer.lyra.finance",
+  "address": "0xe7cD9370CdE6C9b5eAbCe8f86d01822d3de205A0",
+  "chainid": null,
+  "project_slug": "derive",
+  "asset_id": "38Bn2FZ6eHeL1slTiIa08D",
+  "contract_name": "PMRM",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": "0x000000000000000000000000e7603df191d699d8bd9891b821347dbab889e5a500000000000000000000000057b03e14d409adc7fab6cfc44b5886cad2d5f02b0000000000000000000000004bb4c3cdc7562f08e9910a0c7d8bb7e108861eb4000000000000000000000000af65752c4643e25c02f693f9d4fe19cf23a095e3000000000000000000000000cfe8bc6297e693cbb58ad93a361e64a6d0e7cdee000000000000000000000000c51e95b72e116020b138cd5d97ed4a72de8dc48b000000000000000000000000727ad65db6ae99db5dbee8f202846dd6009bf6d50000000000000000000000009c61888497d716f5bbd93d5e13d443cc375f1424000000000000000000000000791a570f5785fbdb02ea5c7a794c43111ae2f94800000000000000000000000030a6e6a3851c18aa67429acc8a1dfafe20a29feb000000000000000000000000b27cb6b08e6c298c8634d73d5f6649665e90d160000000000000000000000000cae44c93f7b3b519fc28f9d4f7ae22de770a907b00000000000000000000000081ed5dc90f708dd908dccffd5128b5c3405f74c5",
+  "evm_version": "paris",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:missing-chainid",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

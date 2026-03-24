@@ -1,0 +1,86 @@
+[
+  {
+    "network": "fantom",
+    "pool": "scream-dai",
+    "protocol": "scream",
+    "decimals": 18
+  },
+  {
+    "network": "fantom",
+    "pool": "scream-usdc",
+    "protocol": "scream",
+    "decimals": 6
+  },
+  {
+    "network": "fantom",
+    "pool": "scream-usdt",
+    "protocol": "scream",
+    "decimals": 6
+  },
+  {
+    "network": "fantom",
+    "pool": "scream-wbtc",
+    "protocol": "scream",
+    "decimals": 8
+  },
+  {
+    "network": "fantom",
+    "pool": "scream-weth",
+    "protocol": "scream",
+    "decimals": 18
+  },
+  {
+    "network": "fantom",
+    "pool": "scream-link",
+    "protocol": "scream",
+    "decimals": 18
+  },
+  {
+    "network": "fantom",
+    "pool": "scream-fusd",
+    "protocol": "scream",
+    "decimals": 18
+  },
+  {
+    "network": "fantom",
+    "pool": "scream-wftm",
+    "protocol": "scream",
+    "decimals": 18
+  },
+  {
+    "network": "fantom",
+    "pool": "geist-dai",
+    "protocol": "geist",
+    "decimals": 18
+  },
+  {
+    "network": "fantom",
+    "pool": "geist-usdc",
+    "protocol": "geist",
+    "decimals": 6
+  },
+  {
+    "network": "fantom",
+    "pool": "geist-usdt",
+    "protocol": "geist",
+    "decimals": 6
+  },
+  {
+    "network": "fantom",
+    "pool": "geist-wbtc",
+    "protocol": "geist",
+    "decimals": 8
+  },
+  {
+    "network": "fantom",
+    "pool": "geist-weth",
+    "protocol": "geist",
+    "decimals": 18
+  },
+  {
+    "network": "fantom",
+    "pool": "geist-wftm",
+    "protocol": "geist",
+    "decimals": 18
+  }
+]

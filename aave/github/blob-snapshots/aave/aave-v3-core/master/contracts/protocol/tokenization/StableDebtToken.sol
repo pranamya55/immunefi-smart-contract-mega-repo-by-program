@@ -1,0 +1,1 @@
+../../../../../../../../../../mega-repo/assets/github/blob-snapshots/aave/aave-v3-core/master/contracts/protocol/tokenization/StableDebtToken.sol

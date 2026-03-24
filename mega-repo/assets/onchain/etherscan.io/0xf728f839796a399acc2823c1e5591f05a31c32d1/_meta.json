@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xF728f839796a399ACc2823c1e5591F05a31c32d1",
+  "host": "etherscan.io",
+  "address": "0xF728f839796a399ACc2823c1e5591F05a31c32d1",
+  "chainid": 1,
+  "project_slug": "yearnfinance",
+  "asset_id": "46Pa6a7yOLCN83C9SQyMEe",
+  "contract_name": "AccountantFactory",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "GNU AGPLv3",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://9134ad57d395c94cb5c63b11e677080c61911221bb3a7546ea26947365584ba2",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

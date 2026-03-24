@@ -1,0 +1,25 @@
+{
+  "url": "https://explorer.inkonchain.com/address/0x3C72F147CA6200dfAFe6d8D4e808ccC4bB612C54",
+  "host": "explorer.inkonchain.com",
+  "address": "0x3C72F147CA6200dfAFe6d8D4e808ccC4bB612C54",
+  "chainid": 57073,
+  "project_slug": "veda",
+  "asset_id": "53pwcL713ft6XEty59wTL6",
+  "contract_name": "Pauser",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": "0x000000000000000000000000f8553c8552f906c19286f21711721e206ee4909e0000000000000000000000003e8b0ee1d05267fe9f8d2b1f8cb48f2e23d69c6b000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000040000000000000000000000001d8016aede8bd0143c311bb28ccdd8af8a245df9000000000000000000000000f13d0670ad2fd78e404a52da45c6af1df7ad33dd000000000000000000000000727929af06fa4f6e96cbc3ff7f4b60a65e168e23000000000000000000000000a0e501f98a1b5d3d8e6ffd161c76f92570e42931",
+  "evm_version": "shanghai",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:unexpected-response",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "project_slug": "wormhole",
+    "asset_id": "1yZpRPgmxpIsD7R94LwfhK",
+    "url": "https://wormhole.com/docs/build/reference/contract-addresses",
+    "description": "Mainnet",
+    "added_at": "2022-04-04T13:13:57.592Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "wormhole",
+    "asset_id": "15lZskZNdRHr2BRkLyVg16",
+    "url": "https://github.com/wormhole-foundation/wormhole/tree/main/ethereum",
+    "description": "Ethereum",
+    "added_at": "2022-04-04T13:14:13.071Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "wormhole",
+    "asset_id": "6ohex8lqEFUM6FnLN1CopP",
+    "url": "https://github.com/wormhole-foundation/wormhole/tree/main/solana",
+    "description": "Solana",
+    "added_at": "2022-04-04T13:14:40.038Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "wormhole",
+    "asset_id": "1ljL4kZzXP4cQMegkehoqN",
+    "url": "https://github.com/wormhole-foundation/wormhole/tree/main/cosmwasm",
+    "description": " CosmWasm",
+    "added_at": "2022-04-04T13:15:29.664Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "wormhole",
+    "asset_id": "21nGpPqgTGUtrm8hJuxB9g",
+    "url": "https://github.com/wormhole-foundation/wormhole/tree/main/algorand",
+    "description": "Algorand",
+    "added_at": "2022-09-26T23:11:27.479Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "wormhole",
+    "asset_id": "17oT1ffcaJcOyrUlPSwVO4",
+    "url": "https://github.com/wormhole-foundation/wormhole/tree/main/aptos",
+    "description": "Aptos",
+    "added_at": "2022-09-26T23:11:41.829Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "wormhole",
+    "asset_id": "5Vbs1weSp9OYGDGVzMvrQ5",
+    "url": "https://github.com/wormhole-foundation/wormhole/tree/main/sui",
+    "description": "Sui",
+    "added_at": "2023-05-05T04:26:33.803Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "wormhole",
+    "asset_id": "40iH19IxzYX3Ig4faFUhpn",
+    "url": "https://github.com/wormhole-foundation/wormhole/tree/main/near",
+    "description": "Near",
+    "added_at": "2023-12-17T19:16:57.066Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "wormhole",
+    "asset_id": "2BUsPc3whgrJXqRawcO95I",
+    "url": "https://github.com/wormhole-foundation/wormhole-circle-integration",
+    "description": "EVM, excluding the Circle Bridge",
+    "added_at": "2023-02-28T18:36:52.330Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "wormhole",
+    "asset_id": "2Dv2xmXvf67HSJKrLjBRJb",
+    "url": "https://github.com/wormhole-foundation/native-token-transfers",
+    "description": "Native Token Transfers",
+    "added_at": "2025-02-05T16:34:26.326Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "wormhole",
+    "asset_id": "53UYtlK9FGUQObxSIYT51j",
+    "url": "https://github.com/wormhole-foundation/multigov/tree/main",
+    "description": "MultiGov",
+    "added_at": "2025-03-12T03:44:50.570Z",
+    "revision": 0
+  }
+]

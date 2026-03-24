@@ -1,0 +1,24 @@
+{
+  "url": "https://snowtrace.io/address/0xE4427af3555CD9303D728C491364FAdFDD7494Fe",
+  "host": "snowtrace.io",
+  "address": "0xE4427af3555CD9303D728C491364FAdFDD7494Fe",
+  "chainid": 43114,
+  "project_slug": "debridge",
+  "asset_id": "Xr7aW80u5JRMIOQ9ZweCK",
+  "contract_name": "ProxyAdmin",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://d849f96f3086b9f82cdcf665adb8c697ace05638da1c7c16ab2d26293717af67",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

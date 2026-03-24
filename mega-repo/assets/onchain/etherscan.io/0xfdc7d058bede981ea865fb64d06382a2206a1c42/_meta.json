@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xfdc7d058bede981ea865fb64d06382a2206a1c42",
+  "host": "etherscan.io",
+  "address": "0xfdc7d058bede981ea865fb64d06382a2206a1c42",
+  "chainid": 1,
+  "project_slug": "bifi",
+  "asset_id": "5PsFFef0i08XNoMOumzqR6",
+  "contract_name": "UsdtHandlerDataStorage",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "00000000000000000000000000000000000000000000000006f05b59d3b200000000000000000000000000000000000000000000000000000ce80612991d00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008e1bc9bf040000",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "BSD-3-Clause",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://231c27320d7240d7267740f1e19bb5d887bdab179a66611a6bba7d69af857930",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

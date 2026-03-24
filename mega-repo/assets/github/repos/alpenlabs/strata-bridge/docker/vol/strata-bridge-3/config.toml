@@ -1,0 +1,59 @@
+nag_interval = { secs = 30, nanos = 0 }
+retry_interval = { secs = 1, nanos = 0 }
+min_withdrawal_fulfillment_window = 144
+shutdown_timeout = { secs = 30, nanos = 0 }
+cooperative_payout_timeout = 144
+max_fee_rate = 10
+
+[secret_service_client]
+server_addr = "secret-service-3:69"
+server_hostname = "secret-service"
+timeout = 1000
+cert = "/app/tls/cert.pem"
+key = "/app/tls/key.pem"
+service_ca = "/app/tls/s2.ca.pem"
+
+[btc_client]
+url = "http://host.docker.internal:18443"
+user = "user"
+pass = "password"
+retry_count = 3
+retry_interval = 1000
+
+[db]
+cluster_file_path = "/var/fdb/fdb.cluster"
+root_directory = "strata-bridge-node-2"
+retry = { retry_limit = 5, timeout = { secs = 5, nanos = 0 } }
+
+[p2p]
+idle_connection_timeout = { secs = 1000, nanos = 0 }
+listening_addr = "/ip4/0.0.0.0/tcp/5679"
+connect_to = ["/dns4/bridge-1/tcp/5679", "/dns4/bridge-2/tcp/5679"]
+num_threads = 4
+dial_timeout = { secs = 0, nanos = 250_000_000 }
+general_timeout = { secs = 0, nanos = 250_000_000 }
+connection_check_interval = { secs = 0, nanos = 500_000_000 }
+gossipsub_scoring_preset = "permissive"
+
+[rpc]
+rpc_addr = "0.0.0.0:5678"
+refresh_interval = { secs = 600, nanos = 0 }
+
+[asm_rpc]
+rpc_url = "http://asm-runner:9010"
+request_timeout = { secs = 2, nanos = 0 }
+max_retries = 10
+retry_initial_delay = { secs = 1, nanos = 0 }
+retry_max_delay = { secs = 60, nanos = 0 }
+retry_multiplier = 2
+
+[btc_zmq]
+bury_depth = 2
+hashblock_connection_string = "tcp://host.docker.internal:28332"
+hashtx_connection_string = "tcp://host.docker.internal:28333"
+rawblock_connection_string = "tcp://host.docker.internal:28334"
+rawtx_connection_string = "tcp://host.docker.internal:28335"
+sequence_connection_string = "tcp://host.docker.internal:28336"
+
+[operator_wallet]
+claim_funding_pool_size = 32

@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xc57185366bcda81cde363380e2099758712038d0",
+  "host": "etherscan.io",
+  "address": "0xc57185366bcda81cde363380e2099758712038d0",
+  "chainid": 1,
+  "project_slug": "decentraland",
+  "asset_id": "4Pp6X027Q2116bwXOBy0qL",
+  "contract_name": "BatchVestings",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": "0",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "None",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://aa71d3bdbbe36c777f8934de70a32dcdf143400b9239ee475f1f6a50a1cc2066",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://etherscan.io/address/0x25e821b7197b146f7713c3b89b6a4d83516b912d",
+  "host": "etherscan.io",
+  "address": "0x25e821b7197b146f7713c3b89b6a4d83516b912d",
+  "chainid": 1,
+  "contract_name": "UUPSProxy",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": "1",
+  "runs": "20000",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0xd3985048bf1cb613f5e199713a86b2ad3954f82a",
+  "swarm_source": "",
+  "files_written": 8,
+  "mode": "recover-json-sources"
+}

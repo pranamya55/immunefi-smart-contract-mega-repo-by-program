@@ -1,0 +1,19 @@
+{
+  "url": "https://mantlescan.xyz/address/0x25780dc8fc3cfbd75f33bfdab65e969b603b2035",
+  "host": "mantlescan.xyz",
+  "address": "0x25780dc8fc3cfbd75f33bfdab65e969b603b2035",
+  "chainid": 5000,
+  "contract_name": "AgniFactory",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000e9827b4ebeb9ae41fc57efdddd79edddc2ea4d03",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 10,
+  "mode": "recover-json-sources"
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x425b0de240b4c2DC45979DB782A355D090Dc4d37#code",
+  "host": "etherscan.io",
+  "address": "0x425b0de240b4c2DC45979DB782A355D090Dc4d37",
+  "chainid": 1,
+  "project_slug": "sparklend",
+  "asset_id": "3mzTWkEli4zKibjo6GiC2W",
+  "contract_name": "EmergencySpell_SparkLend_PauseAllAssets",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 3,
+  "mode": "json-sources"
+}

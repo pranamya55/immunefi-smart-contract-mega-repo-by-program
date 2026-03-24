@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xA360E5aD9F17caff53715346888aA0d13541c2F5#code",
+  "host": "etherscan.io",
+  "address": "0xA360E5aD9F17caff53715346888aA0d13541c2F5",
+  "chainid": 1,
+  "project_slug": "parallel",
+  "asset_id": "3NpAw8J9qj6fq4imRglMrr",
+  "contract_name": "DiamondLoupe",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "1000",
+  "constructor_arguments": "",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 16,
+  "mode": "json-sources"
+}

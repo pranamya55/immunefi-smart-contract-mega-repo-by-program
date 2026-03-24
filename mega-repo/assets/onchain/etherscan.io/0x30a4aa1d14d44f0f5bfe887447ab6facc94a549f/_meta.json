@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x30a4aa1d14d44f0f5bfe887447ab6facc94a549f",
+  "host": "etherscan.io",
+  "address": "0x30a4aa1d14d44f0f5bfe887447ab6facc94a549f",
+  "chainid": 1,
+  "project_slug": "kiln",
+  "asset_id": "3qiQwMS9Jdy9AVGllGcrOE",
+  "contract_name": "TUPProxy",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "london",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x0843359cae1187b432eeb26e1b40c3a2b2374d7e",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 11,
+  "mode": "json-sources"
+}

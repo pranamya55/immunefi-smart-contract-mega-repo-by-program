@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xb3D9cf8E163bbc840195a97E81F8A34E295B8f39",
+  "host": "etherscan.io",
+  "address": "0xb3D9cf8E163bbc840195a97E81F8A34E295B8f39",
+  "chainid": 1,
+  "project_slug": "swell",
+  "asset_id": "2znmRZdlub13dj4b8IzBE2",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0xeee6207d514c2845394b5f4b9f12b6d155f4524b",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

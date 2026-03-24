@@ -1,0 +1,28 @@
+# `TokenBridge`
+
+Contract to manage cross-chain ERC-20 bridging.
+
+### constructor
+
+```solidity
+constructor() public
+```
+
+_Disable constructor for safety_
+
+### initialize
+
+```solidity
+function initialize(struct ITokenBridge.InitializationData _initializationData) external
+```
+
+Initializes TokenBridge and underlying service dependencies - used for new networks only.
+
+_Contract will be used as proxy implementation._
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| _initializationData | struct ITokenBridge.InitializationData | The initial data used for initializing the TokenBridge contract. |
+

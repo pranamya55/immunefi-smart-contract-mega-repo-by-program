@@ -1,0 +1,5 @@
+category = "fail"
+
+#check: $()Trait is already implemented for type
+#check: $()Trait "trait_impl_constraint_overlap3::S" is already implemented for type "trait_impl_constraint_overlap3::S<u32, u64>".
+#check: $()Trait "trait_impl_constraint_overlap3::S" is already implemented for type "trait_impl_constraint_overlap3::S<Z, Y>".

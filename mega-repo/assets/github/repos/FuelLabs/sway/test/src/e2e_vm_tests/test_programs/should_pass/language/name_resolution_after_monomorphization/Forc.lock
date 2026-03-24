@@ -1,0 +1,8 @@
+[[package]]
+name = "name_resolution_after_monomorphization"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-4813C991FC8A1BEB"

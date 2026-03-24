@@ -1,0 +1,8 @@
+[[package]]
+name = "numeric_type_propagation"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-A2943394F152C9BB"

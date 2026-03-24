@@ -1,0 +1,14 @@
+/out
+
+# forge
+cache/
+
+# echidna
+crytic-export/
+corpus/
+
+# certora
+.*certora*
+.last_confs/
+resource_errors.json
+.zip-output-url.txt

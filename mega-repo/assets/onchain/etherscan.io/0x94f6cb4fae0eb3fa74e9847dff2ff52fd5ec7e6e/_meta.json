@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x94f6cb4fae0eb3fa74e9847dff2ff52fd5ec7e6e",
+  "host": "etherscan.io",
+  "address": "0x94f6cb4fae0eb3fa74e9847dff2ff52fd5ec7e6e",
+  "chainid": 1,
+  "project_slug": "notional-exponent",
+  "asset_id": "3mTZEptsBz9dXzRvIya7J4",
+  "contract_name": "TimelockUpgradeableProxy",
+  "compiler_version": "v0.8.29+commit.ab55807c",
+  "optimization_used": "1",
+  "runs": "10000",
+  "constructor_arguments": "",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x7697202a29acd384c889f879dfbffb6dcab17fa4",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 19,
+  "mode": "json-sources"
+}

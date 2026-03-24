@@ -1,0 +1,17 @@
+[toolchain]
+
+[features]
+seeds = false
+skip-lint = false
+
+
+[registry]
+url = "https://api.apr.dev"
+
+[programs.localnet]
+sdk_anchor_test = "2tzfijPBGbrR5PboyFUFKzfEoLTwdDSHUjANCw929wyt"
+
+
+[provider]
+cluster = "Localnet"
+wallet = "~/.config/solana/id.json"

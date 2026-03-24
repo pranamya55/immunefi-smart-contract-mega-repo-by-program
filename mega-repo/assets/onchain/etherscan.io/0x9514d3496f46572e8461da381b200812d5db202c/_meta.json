@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x9514D3496F46572e8461da381B200812D5Db202C",
+  "host": "etherscan.io",
+  "address": "0x9514D3496F46572e8461da381B200812D5Db202C",
+  "chainid": 1,
+  "project_slug": "usdn",
+  "asset_id": "6sMPCODNhog7LZ2w0EXCdj",
+  "contract_name": "LiquidationRewardsManager",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "20000",
+  "constructor_arguments": "0000000000000000000000007f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 25,
+  "mode": "json-sources"
+}

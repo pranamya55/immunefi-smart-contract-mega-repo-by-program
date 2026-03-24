@@ -1,0 +1,24 @@
+{
+  "url": "https://sepolia.etherscan.io/address/0xBeF7aB7C5e6CeFF384cde460dd20C862047CDFa5",
+  "host": "sepolia.etherscan.io",
+  "address": "0xBeF7aB7C5e6CeFF384cde460dd20C862047CDFa5",
+  "chainid": 11155111,
+  "project_slug": "folksfinance-boost",
+  "asset_id": "398YEe4Dv46eDgA6gINVOt",
+  "contract_name": "BridgeRouterSpoke",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "00000000000000000000000016870a6a85cd152229b97d018194d66740f932d6",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 18,
+  "mode": "json-sources"
+}

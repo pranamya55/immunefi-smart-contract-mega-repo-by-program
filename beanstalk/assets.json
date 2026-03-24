@@ -1,0 +1,162 @@
+[
+  {
+    "project_slug": "beanstalk",
+    "asset_id": "4KSLqQPjXhl3cyKd3TsBro",
+    "url": "https://etherscan.io/address/0xC1E088fC1323b20BCBee9bd1B9fC9546db5624C5",
+    "description": "L1 Beanstalk",
+    "added_at": "2022-10-07T16:50:18.352Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "beanstalk",
+    "asset_id": "4YBp4ml5Zp2O7RMrMif5Hj",
+    "url": "https://arbiscan.io/address/0xD1A0060ba708BC4BCD3DA6C37EFa8deDF015FB70",
+    "description": "L2 Beanstalk",
+    "added_at": "2022-10-07T16:49:10.580Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "beanstalk",
+    "asset_id": "34Ud9zeoCSHbhD74qBbS9t",
+    "url": "https://arbiscan.io/address/0xBEA0005B8599265D41256905A9B3073D397812E4",
+    "description": "Bean ERC-20 token",
+    "added_at": "2022-10-07T16:49:30.841Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "beanstalk",
+    "asset_id": "2LPAlfkL0PC3bz3gu0ctwa",
+    "url": "https://arbiscan.io/address/0x1BEA054dddBca12889e07B3E076f511Bf1d27543",
+    "description": "Unripe Bean ERC-20 token",
+    "added_at": "2022-10-07T16:49:44.248Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "beanstalk",
+    "asset_id": "1kdyZcXvWSxyPOAscboo7C",
+    "url": "https://arbiscan.io/address/0x1BEA059c3Ea15F6C10be1c53d70C75fD1266D788",
+    "description": "Unripe LP ERC-20 token",
+    "added_at": "2022-10-07T16:50:00.382Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "beanstalk",
+    "asset_id": "1huzfDmoAA9QwReApnO5LM",
+    "url": "https://arbiscan.io/address/0xFEFEFECA5375630d6950F40e564A27f6074845B5",
+    "description": "Fertilizer ERC-1155 token",
+    "added_at": "2023-08-23T14:34:02.140Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "beanstalk",
+    "asset_id": "7FYqW68BIsnwFMkfAXZLrt",
+    "url": "https://arbiscan.io/address/0xFEFEFE2cfb089aEF0b0578573eF3CFAbC15f1490",
+    "description": "Fertilizer Implementation",
+    "added_at": "2023-08-23T14:35:30.964Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "beanstalk",
+    "asset_id": "4MwUSIrJ79aveCct0dXmhz",
+    "url": "https://arbiscan.io/address/0xCCCCCC35b53c8a16404Ae414AFa31F30A5B35626",
+    "description": "LSD Chainlink Oracle",
+    "added_at": "2023-08-23T14:36:00.493Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "beanstalk",
+    "asset_id": "69OveamruG3LZjyS5wrCLa",
+    "url": "https://arbiscan.io/address/0x555555987d98079b9f43CDcDBD52DbB24FfEEef5",
+    "description": "Shipment Planner",
+    "added_at": "2023-08-23T14:36:26.431Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "beanstalk",
+    "asset_id": "384xMyeMKSA2CY3Irj6wKF",
+    "url": "https://arbiscan.io/address/0x5A5A5ADe4C9713172a5228703213d4D39608E2cD",
+    "description": "Junctions",
+    "added_at": "2023-08-23T14:37:16.535Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "beanstalk",
+    "asset_id": "4O7EGxvLfwTuXW5lwNPGkX",
+    "url": "https://arbiscan.io/address/0xD6Fc4a63d7E93267c3007eA176081052369A4749",
+    "description": "Unwrap and Send ETH",
+    "added_at": "2023-07-17T20:22:13.251Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "beanstalk",
+    "asset_id": "7KTe6cMNwsUl9IKNEvfjXp",
+    "url": "https://arbiscan.io/address/0xBA51AAAa8C2f911AE672e783707Ceb2dA6E97521",
+    "description": "Aquifer",
+    "added_at": "2023-07-17T20:22:26.643Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "beanstalk",
+    "asset_id": "5tm4LMpCiOlbDfLkqqAuiR",
+    "url": "https://arbiscan.io/address/0xBA15000450Bf6d48ec50BD6327A9403E401b72b4",
+    "description": "Constant Product 2 Well Function",
+    "added_at": "2024-08-14T07:36:51.011Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "beanstalk",
+    "asset_id": "4UWJPWZhEKIT0p4FjYP2Is",
+    "url": "https://arbiscan.io/address/0xba150052e11591D0648b17A0E608511874921CBC",
+    "description": "Stable 2 Well Function",
+    "added_at": "2024-10-15T04:42:26.020Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "beanstalk",
+    "asset_id": "4wD7yseY6hAHcXlAzVyzJ3",
+    "url": "https://arbiscan.io/address/0xBA51055dAD14d3920e1798D2e8A152d91CaDb461",
+    "description": "Stable 2 Well Function, Lookup Table with A = 1",
+    "added_at": "2024-08-14T07:37:40.942Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "beanstalk",
+    "asset_id": "1yuFQd1D7WnppOWTv6iHYz",
+    "url": "https://arbiscan.io/address/0xBA150002660BbCA20675D1C1535Cd76C98A95b13",
+    "description": "Multi Flow Pump",
+    "added_at": "2024-10-15T04:38:49.621Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "beanstalk",
+    "asset_id": "26lza6G3J8LyD4nPv8fm4s",
+    "url": "https://arbiscan.io/address/0xBA5106bd62b342afAcB93f1078fe60177A62d1a9",
+    "description": "Well Implementation",
+    "added_at": "2024-10-15T04:39:25.081Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "beanstalk",
+    "asset_id": "4df7kxOfJ3euX3IMjTarPz",
+    "url": "https://arbiscan.io/address/0xBA510995783111be5301d93CCfD5dE4e3B28e50B",
+    "description": "Upgradable Well Implementation",
+    "added_at": "2024-10-15T04:39:41.830Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "beanstalk",
+    "asset_id": "4lcLbE1zOoSztqpHRuGCFa",
+    "url": "https://arbiscan.io/address/0xb1bE000644bD25996b0d9C2F7a6D6BA3954c91B0",
+    "description": "Pipeline",
+    "added_at": "2024-10-15T04:39:55.488Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "beanstalk",
+    "asset_id": "4fAUUgPNEjQl140QbPTTv4",
+    "url": "https://arbiscan.io/address/0xdeb0f082ed3b0efe9257aea9f2e6e974aa4120c3",
+    "description": "Depot",
+    "added_at": "2024-10-15T04:40:09.935Z",
+    "revision": 0
+  }
+]

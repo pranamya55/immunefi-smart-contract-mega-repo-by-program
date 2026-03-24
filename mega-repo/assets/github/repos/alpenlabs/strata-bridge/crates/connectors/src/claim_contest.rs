@@ -1,0 +1,260 @@
+//! This module contains the claim contest connector.
+
+use bitcoin::{opcodes, relative, script, Amount, Network, ScriptBuf, Sequence};
+use secp256k1::{schnorr, XOnlyPublicKey};
+
+use crate::{Connector, TaprootWitness};
+
+/// Index of the counterproof output of watchtower 0 in the contest transaction.
+const CONTEST_WATCHTOWER_0_VOUT: u32 = 3;
+
+/// Connector output between `Claim` and:
+/// 1. `Contest`
+/// 2. `Uncontested Payout`.
+#[derive(Debug, Clone, PartialEq, Eq, Hash)]
+pub struct ClaimContestConnector {
+    network: Network,
+    n_of_n_pubkey: XOnlyPublicKey,
+    // invariant: watchtower_pubkeys.len() <= u32::MAX
+    watchtower_pubkeys: Vec<XOnlyPublicKey>,
+    contest_timelock: relative::Height,
+}
+
+impl ClaimContestConnector {
+    /// Creates a new connector.
+    ///
+    /// # Panics
+    ///
+    /// This method panics if the number of watchtowers is larger than [`u32::MAX`].
+    pub const fn new(
+        network: Network,
+        n_of_n_pubkey: XOnlyPublicKey,
+        watchtower_pubkeys: Vec<XOnlyPublicKey>,
+        contest_timelock: relative::Height,
+    ) -> Self {
+        assert!(
+            watchtower_pubkeys.len() <= u32::MAX as usize,
+            "too many watchtowers"
+        );
+
+        Self {
+            network,
+            n_of_n_pubkey,
+            watchtower_pubkeys,
+            contest_timelock,
+        }
+    }
+
+    /// Returns the number of watchtowers for the connector.
+    pub const fn n_watchtowers(&self) -> u32 {
+        // cast safety: watchtower_pubkeys.len() <= u32::MAX
+        self.watchtower_pubkeys.len() as u32
+    }
+
+    /// Returns the relative contest timelock of the connector.
+    pub const fn contest_timelock(&self) -> relative::Height {
+        self.contest_timelock
+    }
+}
+
+impl Connector for ClaimContestConnector {
+    type SpendPath = ClaimContestSpendPath;
+    type Witness = ClaimContestWitness;
+
+    fn network(&self) -> Network {
+        self.network
+    }
+
+    fn leaf_scripts(&self) -> Vec<ScriptBuf> {
+        let mut scripts = Vec::new();
+
+        for watchtower_pubkey in &self.watchtower_pubkeys {
+            let contest_script = script::Builder::new()
+                .push_slice(self.n_of_n_pubkey.serialize())
+                .push_opcode(opcodes::all::OP_CHECKSIGVERIFY)
+                .push_slice(watchtower_pubkey.serialize())
+                .push_opcode(opcodes::all::OP_CHECKSIG)
+                .into_script();
+            scripts.push(contest_script);
+        }
+
+        let uncontested_payout_script = script::Builder::new()
+            .push_slice(self.n_of_n_pubkey.serialize())
+            .push_opcode(opcodes::all::OP_CHECKSIGVERIFY)
+            .push_sequence(Sequence::from_height(self.contest_timelock.value()))
+            .push_opcode(opcodes::all::OP_CSV)
+            .into_script();
+        scripts.push(uncontested_payout_script);
+
+        scripts
+    }
+
+    fn value(&self) -> Amount {
+        let minimal_non_dust = self.script_pubkey().minimal_non_dust();
+        // NOTE: (@uncomputable) correctness is asserted in tx-graph crate:
+        // presigned transactions pay zero fees
+        minimal_non_dust * u64::from(CONTEST_WATCHTOWER_0_VOUT + self.n_watchtowers())
+    }
+
+    fn to_leaf_index(&self, spend_path: Self::SpendPath) -> Option<usize> {
+        // cast safety: 32-bit machine or higher
+        match spend_path {
+            ClaimContestSpendPath::Contested { watchtower_index } => {
+                assert!(
+                    watchtower_index < self.n_watchtowers(),
+                    "Watchtower index is out of bounds"
+                );
+                Some(watchtower_index as usize)
+            }
+            ClaimContestSpendPath::Uncontested => Some(self.n_watchtowers() as usize),
+        }
+    }
+
+    fn sequence(&self, spend_path: Self::SpendPath) -> Sequence {
+        match spend_path {
+            ClaimContestSpendPath::Uncontested => {
+                Sequence::from_height(self.contest_timelock.value())
+            }
+            _ => Sequence::MAX,
+        }
+    }
+
+    fn get_taproot_witness(&self, witness: &Self::Witness) -> TaprootWitness {
+        match witness {
+            ClaimContestWitness::Contested {
+                n_of_n_signature,
+                watchtower_index,
+                watchtower_signature,
+            } => TaprootWitness::Script {
+                leaf_index: *watchtower_index as usize,
+                script_inputs: vec![
+                    watchtower_signature.serialize().to_vec(),
+                    n_of_n_signature.serialize().to_vec(),
+                ],
+            },
+            ClaimContestWitness::Uncontested { n_of_n_signature } => TaprootWitness::Script {
+                leaf_index: self.n_watchtowers() as usize,
+                script_inputs: vec![n_of_n_signature.serialize().to_vec()],
+            },
+        }
+    }
+}
+
+/// Available spending paths for a [`ClaimContestConnector`].
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum ClaimContestSpendPath {
+    /// The connector is spent in the `Contest` transaction.
+    Contested {
+        /// Index of the spending watchtower.
+        watchtower_index: u32,
+    },
+    /// The connector is spent in the `UncontestedPayout` transaction.
+    Uncontested,
+}
+
+// NOTE: (@uncomputable) I understand that this is not the highest form of data normalization,
+// since `n_of_n_signature` is replicated across all enum variants. However, since this is the
+// only part in the code where this happens, it seems fine. Introducing a separate inner type
+// seems complicated. For example, we cannot name the inner type `ClaimContestSpendPath`,
+// because that name is already taken.
+/// Witness data to spend a [`ClaimContestConnector`].
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+pub enum ClaimContestWitness {
+    /// The connector is spent in the `Contest` transaction.
+    Contested {
+        /// N/N signature.
+        n_of_n_signature: schnorr::Signature,
+        /// Index of the spending watchtower.
+        watchtower_index: u32,
+        /// Signature of the spending watchtower.
+        watchtower_signature: schnorr::Signature,
+    },
+    /// The connector is spent in the `UncontestedPayout` transaction.
+    ///
+    /// # Warning
+    ///
+    /// The sequence number of the transaction input needs to be large enough to cover
+    /// [`ClaimContestConnector::contest_timelock()`].
+    Uncontested {
+        /// N/N signature.
+        n_of_n_signature: schnorr::Signature,
+    },
+}
+
+#[cfg(test)]
+mod tests {
+    use secp256k1::Keypair;
+    use strata_bridge_test_utils::prelude::generate_keypair;
+
+    use super::*;
+    use crate::{test_utils::Signer, SigningInfo};
+
+    const N_WATCHTOWERS: usize = 10;
+    const DELTA_CONTEST: relative::Height = relative::Height::from_height(10);
+
+    struct ClaimContestSigner {
+        n_of_n_keypair: Keypair,
+        watchtower_keypairs: Vec<Keypair>,
+    }
+
+    impl Signer for ClaimContestSigner {
+        type Connector = ClaimContestConnector;
+
+        fn generate() -> Self {
+            Self {
+                n_of_n_keypair: generate_keypair(),
+                watchtower_keypairs: (0..N_WATCHTOWERS).map(|_| generate_keypair()).collect(),
+            }
+        }
+
+        fn get_connector(&self) -> Self::Connector {
+            ClaimContestConnector::new(
+                Network::Regtest,
+                self.n_of_n_keypair.x_only_public_key().0,
+                self.watchtower_keypairs
+                    .iter()
+                    .map(|key| key.x_only_public_key().0)
+                    .collect(),
+                DELTA_CONTEST,
+            )
+        }
+
+        fn get_connector_name(&self) -> &'static str {
+            "claim-contest"
+        }
+
+        fn sign_leaf(
+            &self,
+            spend_path: <Self::Connector as Connector>::SpendPath,
+            signing_info: SigningInfo,
+        ) -> <Self::Connector as Connector>::Witness {
+            let n_of_n_signature = signing_info.sign(&self.n_of_n_keypair);
+
+            match spend_path {
+                ClaimContestSpendPath::Contested { watchtower_index } => {
+                    ClaimContestWitness::Contested {
+                        n_of_n_signature,
+                        watchtower_index,
+                        watchtower_signature: signing_info
+                            .sign(&self.watchtower_keypairs[watchtower_index as usize]),
+                    }
+                }
+                ClaimContestSpendPath::Uncontested => {
+                    ClaimContestWitness::Uncontested { n_of_n_signature }
+                }
+            }
+        }
+    }
+
+    #[test]
+    fn contested_spend() {
+        ClaimContestSigner::assert_connector_is_spendable(ClaimContestSpendPath::Contested {
+            watchtower_index: 0,
+        });
+    }
+
+    #[test]
+    fn uncontested_spend() {
+        ClaimContestSigner::assert_connector_is_spendable(ClaimContestSpendPath::Uncontested);
+    }
+}

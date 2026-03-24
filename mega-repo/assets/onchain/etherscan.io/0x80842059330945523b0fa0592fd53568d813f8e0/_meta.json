@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x80842059330945523B0Fa0592FD53568D813F8E0",
+  "host": "etherscan.io",
+  "address": "0x80842059330945523B0Fa0592FD53568D813F8E0",
+  "chainid": 1,
+  "project_slug": "inversefinance",
+  "asset_id": "1DvI6bwMWbe1Svh8iMspyR",
+  "contract_name": "CurveDolaLPHelper",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "10000",
+  "constructor_arguments": "000000000000000000000000926df14a23be491164dcf93f4c468a50ef659d5b000000000000000000000000e3ed95e130ad9e15643f5a5f232a3dae980784cd000000000000000000000000865377367054516e17014ccded1e7d814edc9ce4",
+  "evm_version": "shanghai",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 17,
+  "mode": "json-sources"
+}

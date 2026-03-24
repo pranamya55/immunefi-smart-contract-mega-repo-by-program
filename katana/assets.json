@@ -1,0 +1,154 @@
+[
+  {
+    "project_slug": "katana",
+    "asset_id": "db_5ce349e5-9313-4776-9b9a-35a32054657b",
+    "url": "https://katanascan.com/address/0x7f1f4b4b29f5058fa32cc7a97141b8d7e5abdc2d",
+    "description": "KAT",
+    "added_at": "2026-02-11T09:06:08.748Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "katana",
+    "asset_id": "db_157c6a86-4590-46b0-8dff-b2e1e5529b4d",
+    "url": "https://katanascan.com/address/0xEE7D8BCFb72bC1880D0Cf19822eB0A2e6577aB62",
+    "description": "WETH (aka vbETH)",
+    "added_at": "2026-02-11T09:06:23.440Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "katana",
+    "asset_id": "db_16151d33-2ced-4a6d-bbb6-015395e5b04e",
+    "url": "https://katanascan.com/address/0x0913DA6Da4b42f538B445599b46Bb4622342Cf52",
+    "description": "WBTC (aka vbWBTC)",
+    "added_at": "2026-02-11T09:06:38.318Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "katana",
+    "asset_id": "db_612a2640-8632-41df-a1ce-3439211bbed3",
+    "url": "https://katanascan.com/address/0x203A662b0BD271A6ed5a60EdFbd04bFce608FD36",
+    "description": "USDC (aka vbUSDC)",
+    "added_at": "2026-02-11T09:06:54.660Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "katana",
+    "asset_id": "db_b939507d-582c-4887-b56c-b1d16a86c95d",
+    "url": "https://katanascan.com/address/0x2DCa96907fde857dd3D816880A0df407eeB2D2F2",
+    "description": "USDT (aka vbUSDT)",
+    "added_at": "2026-02-11T09:07:11.610Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "katana",
+    "asset_id": "db_cd10b2e1-ac3c-47ac-95c0-fead8c7c143e",
+    "url": "https://katanascan.com/address/0x62D6A123E8D19d06d68cf0d2294F9A3A0362c6b3",
+    "description": "USDS (aka vbUSDS)",
+    "added_at": "2026-02-11T09:07:31.739Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "katana",
+    "asset_id": "db_e5ed9cdd-e447-440c-89e3-880c43f36945",
+    "url": "https://katanascan.com/address/0xE007CA01894c863d7898045ed5A3B4Abf0b18f37",
+    "description": "yvvbETH",
+    "added_at": "2026-02-11T09:07:47.877Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "katana",
+    "asset_id": "db_60aea89f-7046-4328-9b57-c9be93c22d99",
+    "url": "https://katanascan.com/address/0x80c34BD3A3569E126e7055831036aa7b212cB159",
+    "description": "yvvbUSDC",
+    "added_at": "2026-02-11T09:08:04.878Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "katana",
+    "asset_id": "db_8e612b95-afef-4877-853d-66ac4eea990e",
+    "url": "https://katanascan.com/address/0x9A6bd7B6Fd5C4F87eb66356441502fc7dCdd185B",
+    "description": "yvvbUSDT",
+    "added_at": "2026-02-11T09:08:19.922Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "katana",
+    "asset_id": "db_0cbf8d9e-0cc3-40d3-84f9-01857b756567",
+    "url": "https://katanascan.com/address/0xAa0362eCC584B985056E47812931270b99C91f9d",
+    "description": "yvvbWBTC",
+    "added_at": "2026-02-11T09:08:45.599Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "katana",
+    "asset_id": "db_7ee7806a-153d-4eaf-a0cd-8f5f38c55d01",
+    "url": "https://katanascan.com/address/0x93Fec6639717b6215A48E5a72a162C50DCC40d68",
+    "description": "yvvbAUSD",
+    "added_at": "2026-02-11T09:08:59.198Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "katana",
+    "asset_id": "db_60869bf0-9ba8-4bed-a7d8-25ae9908526b",
+    "url": "https://katanascan.com/address/0x2a3DD3EB832aF982ec71669E178424b10Dca2EDe",
+    "description": "Agglayer Bridge",
+    "added_at": "2026-02-11T09:09:14.049Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "katana",
+    "asset_id": "db_04bb4fe2-0e95-4efe-a039-01f15a738cb4",
+    "url": "https://katanascan.com/address/0x7bAbf98Cb7cbD2C85F13813409f495B9cF0Dd7D0",
+    "description": "weETH",
+    "added_at": "2026-02-11T09:09:24.604Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "katana",
+    "asset_id": "db_192149a9-2333-4ad3-9b1b-47719512d6ea",
+    "url": "https://katanascan.com/address/0xa6b0db1293144ebe9478b6a84f75dd651e45914a",
+    "description": "NativeConverter vbETH",
+    "added_at": "2026-02-11T09:09:40.058Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "katana",
+    "asset_id": "db_e14b77c4-1240-497f-be0e-a9e20dd0cec4",
+    "url": "https://katanascan.com/address/0x97a3500083348A147F419b8a65717909762c389f",
+    "description": "NativeConverter vbUSDC",
+    "added_at": "2026-02-11T09:09:54.805Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "katana",
+    "asset_id": "db_9085002d-38fa-49b8-9b08-06e805f466a7",
+    "url": "https://katanascan.com/address/0x053FA9b934b83E1E0ffc7e98a41aAdc3640bB462",
+    "description": "NativeConverter vbUSDT",
+    "added_at": "2026-02-11T09:10:09.129Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "katana",
+    "asset_id": "db_c43a287c-8a77-4418-b9be-9669f06b453c",
+    "url": "https://katanascan.com/address/0xb00aa68b87256E2F22058fB2Ba3246EEc54A44fc",
+    "description": "NativeConverter vbWBTC",
+    "added_at": "2026-02-11T09:10:22.102Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "katana",
+    "asset_id": "db_a52bc139-a9fd-4633-9708-c5bcfb7d1557",
+    "url": "https://katanascan.com/address/0x639f13D5f30B47c792b6851238c05D0b623C77DE",
+    "description": "NativeConverter",
+    "added_at": "2026-02-11T09:10:40.696Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "katana",
+    "asset_id": "db_e257abdb-7f50-4b2e-83d1-c016f775a0e9",
+    "url": "https://immunefi.com/bug-bounty/katana/information/",
+    "description": "Primacy of Impact",
+    "added_at": "2026-02-11T17:00:18.715Z",
+    "revision": 0
+  }
+]

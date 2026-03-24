@@ -1,0 +1,74 @@
+[
+  {
+    "project_slug": "stellaswap",
+    "asset_id": "5uQVWTQNFf3E6GW4ceIIxc",
+    "url": "https://moonbeam.moonscan.io/address/0x68A384D826D3678f78BB9FB1533c7E9577dACc0E",
+    "description": "Factory",
+    "added_at": "2022-07-08T03:30:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "stellaswap",
+    "asset_id": "LTPnIO3ZeqDUOhOg9tVJq",
+    "url": "https://moonbeam.moonscan.io/address/0x70085a09D30D6f8C4ecF6eE10120d1847383BB57",
+    "description": "Router v2.1",
+    "added_at": "2022-07-08T03:30:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "stellaswap",
+    "asset_id": "1e8W7HYVUJxNNpZGpIOo3a",
+    "url": "https://moonbeam.moonscan.io/address/0xEDFB330F5FA216C9D2039B99C8cE9dA85Ea91c1E",
+    "description": "Farms v1",
+    "added_at": "2022-07-08T03:30:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "stellaswap",
+    "asset_id": "qQw00Bf2rsuybe05VrgG3",
+    "url": "https://moonbeam.moonscan.io/address/0xF3a5454496E26ac57da879bf3285Fa85DEBF0388",
+    "description": "Farms v2 - Dual",
+    "added_at": "2022-07-08T03:30:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "stellaswap",
+    "asset_id": "72XeqpIspxhfL14Vv6MhYK",
+    "url": "https://moonbeam.moonscan.io/address/0x06A3b410b681c82417A906993aCeFb91bAB6A080",
+    "description": "xStella",
+    "added_at": "2022-07-08T03:30:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "stellaswap",
+    "asset_id": "3dOJ0Jg2UcQBfe14LuAoqj",
+    "url": "https://moonbeam.moonscan.io/address/0x9A8693c6f7Bf0f44e885118f3F83E2CdB4e611b8",
+    "description": "Timelock Main",
+    "added_at": "2022-07-08T03:30:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "stellaswap",
+    "asset_id": "20dwvMvhlpIHiV5vCwUiLU",
+    "url": "https://moonbeam.moonscan.io/address/0x01834cf26717f0351d9762cc9cca7dc059d140df",
+    "description": "Zap",
+    "added_at": "2022-07-08T03:30:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "stellaswap",
+    "asset_id": "1qMscMVAcCxutZOlVhQrMX",
+    "url": "https://moonbeam.moonscan.io/address/0xb86271571c90ad4E0C9776228437340b42623402",
+    "description": "Dual ETH Stable Swap",
+    "added_at": "2022-07-08T03:30:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "stellaswap",
+    "asset_id": "6DHwb03viriF9focFePKSx",
+    "url": "https://moonbeam.moonscan.io/address/0x422b5b7A15FB12c518AA29f9def640b4773427f8",
+    "description": "4Pool Stable Swap",
+    "added_at": "2022-07-08T03:30:00.000Z",
+    "revision": 1
+  }
+]

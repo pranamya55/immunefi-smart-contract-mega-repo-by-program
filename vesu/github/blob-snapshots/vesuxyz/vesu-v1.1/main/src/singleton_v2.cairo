@@ -1,0 +1,1 @@
+../../../../../../../../mega-repo/assets/github/blob-snapshots/vesuxyz/vesu-v1.1/main/src/singleton_v2.cairo

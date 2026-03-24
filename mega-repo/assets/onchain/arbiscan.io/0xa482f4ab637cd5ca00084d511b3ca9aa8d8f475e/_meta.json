@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0xa482f4ab637cd5ca00084d511b3ca9aa8d8f475e",
+  "host": "arbiscan.io",
+  "address": "0xa482f4ab637cd5ca00084d511b3ca9aa8d8f475e",
+  "chainid": 42161,
+  "project_slug": "enzymefinance",
+  "asset_id": "5S5JMBf0nCIr5zY4iLFR3E",
+  "contract_name": "OnlyUntrackDustOrPricelessAssetsPolicy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000bde1e8c4a061cd28f4871860ddf22200b85ee9ec000000000000000000000000a2b4c827de13d4e9801ea1ca837524a1a148dec3000000000000000000000000dd5f18a52a63ececf502a165a459d33be5c0a06c00000000000000000000000082af49447d8a07e3bd95bd0d56f35241523fbab10000000000000000000000000000000000000000000000000000000000093a80000000000000000000000000000000000000000000000000000000000002a300",
+  "evm_version": "istanbul",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 21,
+  "mode": "json-sources"
+}

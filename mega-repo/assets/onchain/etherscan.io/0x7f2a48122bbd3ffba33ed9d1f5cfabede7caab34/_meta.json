@@ -1,0 +1,19 @@
+{
+  "url": "https://etherscan.io/address/0x7f2a48122bbd3ffba33ed9d1f5cfabede7caab34",
+  "host": "etherscan.io",
+  "address": "0x7f2a48122bbd3ffba33ed9d1f5cfabede7caab34",
+  "chainid": 1,
+  "contract_name": "ArbitraryLoanTotalNominalDeltaOracleModule",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "0",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "GNU GPLv3",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 5,
+  "mode": "recover-json-sources"
+}

@@ -1,0 +1,33 @@
+#!/bin/bash
+set -e
+
+export RUST_BACKTRACE=1
+export RUST_LOG="debug,sled=warn,hyper=warn,soketto=warn,jsonrpsee-server=warn,mio=warn"
+
+# Sets up PATH for built binaries.
+setup_path() {
+    if [ "$CARGO_RELEASE" = 1 ]; then
+      # shellcheck disable=2155
+      export PATH=$(realpath ../target/release/):$PATH
+    else
+      # shellcheck disable=2155
+      export PATH=$(realpath ../target/debug/):$PATH
+    fi
+}
+
+# Builds the binary.
+build() {
+    # TODO: add conditional builds as we go
+    # TODO: different binaries for sequencer and full nodes
+    cargo build  -F sequencer -F debug-utils -F test-mode --bin strata --bin alpen-client --bin strata-datatool --bin strata-test-cli
+}
+
+# Runs tests.
+run_tests() {
+    uv sync
+    uv run entry.py "$@"
+}
+
+setup_path
+build
+run_tests "$@"

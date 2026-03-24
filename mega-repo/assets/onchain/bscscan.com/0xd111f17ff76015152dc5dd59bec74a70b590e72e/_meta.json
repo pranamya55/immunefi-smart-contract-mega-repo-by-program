@@ -1,0 +1,24 @@
+{
+  "url": "https://bscscan.com/address/0xD111f17Ff76015152DC5Dd59bEC74A70B590e72E",
+  "host": "bscscan.com",
+  "address": "0xD111f17Ff76015152DC5Dd59bEC74A70B590e72E",
+  "chainid": 56,
+  "project_slug": "listadao",
+  "asset_id": "48u04rJqJh1WeimGgMgFlq",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x40d695986c4dd086c4e3a94392ab6c12781b39fa",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

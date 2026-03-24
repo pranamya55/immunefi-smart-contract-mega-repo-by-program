@@ -1,0 +1,322 @@
+[
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "1GUfhj5s71VqB9yyRp0PG2",
+    "url": "https://etherscan.io/address/0x1d02F6A86Ed5650f93E40FCD62fa5727c32ad746#code",
+    "description": "yYB Reward Distributor",
+    "added_at": "2026-01-05T10:45:54.410Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "1KjG6kdSc06HblkKE05yzG",
+    "url": "https://etherscan.io/address/0xca12459a931643BF28388c67639b3F352fe9e5Ce",
+    "description": "Role Manager Factory",
+    "added_at": "2025-11-06T10:55:32.699Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "1OsDuV2SKImZ46VGFuATUR",
+    "url": "https://etherscan.io/address/0x5A74Cb32D36f2f517DB6f7b0A0591e09b22cDE69#code",
+    "description": "Accountant",
+    "added_at": "2025-10-29T09:47:03.882Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "1fm1sW6IhGfbqrf1FnjoR4",
+    "url": "https://etherscan.io/address/0xbC587a495420aBB71Bbd40A0e291B64e80117526",
+    "description": "Auction Factory",
+    "added_at": "2025-10-29T09:47:03.693Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "1kyOC2q5S0v8r4XiEijG3z",
+    "url": "https://etherscan.io/address/0x7Fd8Af959B54A677a1D8F92265Bd0714274C56a3#code",
+    "description": "yGauge Curve YFI-ETH",
+    "added_at": "2023-12-02T10:38:53.612Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "1urST0jXHNv0KlP0BwCQ8b",
+    "url": "https://etherscan.io/address/0x22222222aEA0076fCA927a3f44dc0B4FdF9479D6#code",
+    "description": "yYB Token",
+    "added_at": "2026-01-05T10:45:54.423Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "27u4dT30F1aYwgnvcdiaYa",
+    "url": "https://etherscan.io/address/0xE9A115b77A1057C918F997c32663FdcE24FB873f#code",
+    "description": "yCRV Boosted Staker",
+    "added_at": "2024-10-22T13:42:37.699Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "2GQBau5qvXxg11ERrPRkkQ",
+    "url": "https://etherscan.io/address/0x770D0d1Fb036483Ed4AbB6d53c1C88fb277D812F",
+    "description": "3.0.4 Vault V3 Factory",
+    "added_at": "2025-11-06T10:55:32.703Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "2lq7hZfi5WOrzEHsc0TfjM",
+    "url": "https://etherscan.io/address/0xB226c52EB411326CdB54824a88aBaFDAAfF16D3d#code",
+    "description": "yCRV Boosted Staker Reward Distributor",
+    "added_at": "2024-10-22T13:42:52.806Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "2rszBurN4m8KUtN2ZLmBGO",
+    "url": "https://etherscan.io/address/0xFCc5c47bE19d06BF83eB04298b026F81069ff65b#code",
+    "description": "yCRV contract",
+    "added_at": "2022-02-17T14:10:51.087Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "2vIHBEiDfYoEbpEXv5ddLm",
+    "url": "https://etherscan.io/address/0x7dC3A74F0684fc026f9163C6D5c3C99fda2cf60a#code",
+    "description": "dYFI",
+    "added_at": "2023-12-02T10:40:06.181Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "315E3SyKgKgHPXV6uxZb5b",
+    "url": "https://etherscan.io/address/0x2fBa208E1B2106d40DaA472Cb7AE0c6C7EFc0224#code",
+    "description": "dYFI Redemption",
+    "added_at": "2023-12-02T10:38:31.239Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "31LeVuGMx8WP3MTAroXD7f",
+    "url": "https://etherscan.io/address/0xD377919FA87120584B21279a491F82D5265A139c",
+    "description": "3.0.4 Tokenized Strategy",
+    "added_at": "2025-11-06T10:55:32.624Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "39iAf3PdqZ8yl4fTOpBAB5",
+    "url": "https://etherscan.io/address/0x1111111Ecd5Ae05422aeCe517072ec33Dbf34af9#code",
+    "description": "yYB Operator",
+    "added_at": "2026-01-05T10:45:54.416Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "3Gm9nMhD0Nqcov6DbEg1OJ",
+    "url": "https://etherscan.io/address/0xb287a1964AEE422911c7b8409f5E5A273c1412fA#code",
+    "description": "YFI Reward Pool",
+    "added_at": "2023-12-02T10:39:11.540Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "3h1E0VNt3HpUbf1Wr0D9yX",
+    "url": "https://etherscan.io/address/0x46b38522422D597dDbAA2D6E98D6C9b397028d5B#code",
+    "description": "veYFI Gauge Controller",
+    "added_at": "2024-10-22T13:42:07.062Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "46Pa6a7yOLCN83C9SQyMEe",
+    "url": "https://etherscan.io/address/0xF728f839796a399ACc2823c1e5591F05a31c32d1",
+    "description": "Accountant Factory",
+    "added_at": "2025-11-06T10:55:32.299Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "4zrBrwqX0lJXwVmv3t9mS2",
+    "url": "https://etherscan.io/address/0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e#code",
+    "description": "YFI Token",
+    "added_at": "2023-06-06T03:21:27.367Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "5Q8enqva4hJLgR7DlxfGVp",
+    "url": "https://etherscan.io/address/0x2391Fc8f5E417526338F5aa3968b1851C16D894E#code",
+    "description": "dYFI Reward Pool",
+    "added_at": "2023-12-02T10:39:29.932Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "5ensJW9I1D8i4Wve2zXtby",
+    "url": "https://etherscan.io/address/0x03D43dF6FF894C848fC6F1A0a7E8a539Ef9A4C18",
+    "description": "Debt Allocator Factory",
+    "added_at": "2025-10-29T09:47:03.880Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "5zCFJTHH6vECdumiaVFiVm",
+    "url": "https://etherscan.io/address/0xd0660cd418a64a1d44e9214ad8e459324d8157f1#code",
+    "description": "Woofy Token",
+    "added_at": "2023-06-06T03:22:18.262Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "64NFdZgFR3JEdpSi8OaRQC",
+    "url": "https://etherscan.io/address/0x1D0fdCb628b2f8c0e22354d45B3B2D4cE9936F8B#code",
+    "description": "veYFI Gauge Registry",
+    "added_at": "2024-10-22T13:42:22.507Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "66XN7JAznpSMQDgI9KSoj1",
+    "url": "https://etherscan.io/address/0x5D2eA33449A60a70E8FCdc5251FDd86a030fAD91#code",
+    "description": "yYB Boosted Staker",
+    "added_at": "2026-01-05T10:45:54.408Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "6KNPAcb2KI95cyhy9sXrGp",
+    "url": "https://etherscan.io/address/0xf8dF17a35c88AbB25e83C92f9D293B4368b9D52D",
+    "description": "Common Report Trigger",
+    "added_at": "2025-11-06T10:55:32.318Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "7ASqGORjw2qbyMQkrAvCOy",
+    "url": "https://etherscan.io/address/0xe28fCC9FB2998ba57754789F6666DAa8C815614D#code",
+    "description": "Splitter Factory",
+    "added_at": "2025-11-06T10:55:32.324Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "IgvqO4CKk8jXloSZSjmLj",
+    "url": "https://etherscan.io/address/0xd8063123BBA3B480569244AE66BFE72B6c84b00d",
+    "description": "3.0.4 Vault V3 ",
+    "added_at": "2025-11-06T10:55:32.313Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "OFqCbZyKTUzq8253DLC0q",
+    "url": "https://etherscan.io/address/0x90c1f9220d90d3966FbeE24045EDd73E1d588aD5#code",
+    "description": "veYFI",
+    "added_at": "2023-12-02T10:40:21.388Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "sKSNChy1Gl6V31bcPjxjz",
+    "url": "https://etherscan.io/address/0x0000000C90799449af8eE0B240Da639144a36C6A",
+    "description": "yYB Locker",
+    "added_at": "2026-01-05T10:45:54.682Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "98857",
+    "url": "https://etherscan.io/address/0xd31911a33a5577Be233Dc096F6F5a7e496fF5934#code",
+    "description": "stYFI Main Reward Distributor",
+    "added_at": "2026-02-15T10:30:27.065Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "98858",
+    "url": "https://etherscan.io/address/0xc32bd1A70e831c43956Ff2f5F23f2Ee45a04C020",
+    "description": "stYFI Staking Middleware",
+    "added_at": "2026-02-15T10:30:27.065Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "98859",
+    "url": "https://etherscan.io/address/0xA82454009E01Ae697012a73cB232d85e61B05e50",
+    "description": "stYFI Reward Claimer",
+    "added_at": "2026-02-15T10:30:27.065Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "98860",
+    "url": "https://etherscan.io/address/0xA16F6FC7380300525C812ea2733Ad62DDA58143B",
+    "description": "stYFI Liquid Locker Depositor StakeDAO",
+    "added_at": "2026-02-15T10:30:27.065Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "98861",
+    "url": "https://etherscan.io/address/0x9C42461AA8422926e3AEF7B1C6e3743597149d79",
+    "description": "stYFIx",
+    "added_at": "2026-02-15T10:30:27.065Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "98862",
+    "url": "https://etherscan.io/address/0x95547ede56cf74b73dd78a37f547127dffda6113",
+    "description": "stYFI Reward Distributor",
+    "added_at": "2026-02-15T10:30:27.065Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "98863",
+    "url": "https://etherscan.io/address/0x952B31960C97E76362Ac340D07D183aDa15e3d6E",
+    "description": "stYFIx Reward Distributor",
+    "added_at": "2026-02-15T10:30:27.065Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "98864",
+    "url": "https://etherscan.io/address/0x7eFc3953Bed2fc20b9f825eBffaB1cC8B072a000",
+    "description": "stYFI Liquid Locker Reward Distributor",
+    "added_at": "2026-02-15T10:30:27.065Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "98865",
+    "url": "https://etherscan.io/address/0x52Aa16860E0D42B6a7b6ecC15688472eb20135c9",
+    "description": "stYFI Liquid Locker Depositor 1up",
+    "added_at": "2026-02-15T10:30:27.065Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "98866",
+    "url": "https://etherscan.io/address/0x42b25284E8ae427D79da78b65DFFC232aAECc016#code",
+    "description": "stYFI",
+    "added_at": "2026-02-15T10:30:27.065Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "98867",
+    "url": "https://etherscan.io/address/0x3d4Ced97ADb0ae3A53DA95a47fFc749aAd26BC8f#code",
+    "description": "stYFI Liquid Locker Depositor Cove",
+    "added_at": "2026-02-15T10:30:27.065Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "yearnfinance",
+    "asset_id": "98868",
+    "url": "https://etherscan.io/address/0x2548BF65916fdABB5A5673fC4225011FF29ee884",
+    "description": "stYFI veYFI Reward Distributor",
+    "added_at": "2026-02-15T10:30:27.065Z",
+    "revision": 0
+  }
+]

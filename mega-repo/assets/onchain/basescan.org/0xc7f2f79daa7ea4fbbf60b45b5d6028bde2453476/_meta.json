@@ -1,0 +1,24 @@
+{
+  "url": "https://basescan.org/address/0xC7F2f79Daa7Ea4FBbF60b45b5D6028BDE2453476",
+  "host": "basescan.org",
+  "address": "0xC7F2f79Daa7Ea4FBbF60b45b5D6028BDE2453476",
+  "chainid": 8453,
+  "project_slug": "metronome",
+  "asset_id": "uOB2CcAsRCXpLQzMHg0Dk",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "1",
+  "runs": "999999",
+  "constructor_arguments": "",
+  "evm_version": "london",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "1",
+  "implementation": "0xff7ad44c16cd9a758af57f2506d5a08af1188540",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 8,
+  "mode": "json-sources"
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://basescan.org/address/0x45939657d1CA34A8FA39A924B71D28Fe8431e581",
+  "host": "basescan.org",
+  "address": "0x45939657d1CA34A8FA39A924B71D28Fe8431e581",
+  "chainid": 8453,
+  "project_slug": "compoundfinance",
+  "asset_id": "4cjQqsVk2g8rfmisyq8QeH",
+  "contract_name": "ConfiguratorProxy",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "00000000000000000000000083e0f742cacbe66349e3701b171ee2487a26e738000000000000000000000000bde8f31d2ddda895264e27dd990fab3dc87b372d00000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000024c4d66de80000000000000000000000006103db328d4864dc16bd2f0ee1b9a92e3f87f91500000000000000000000000000000000000000000000000000000000",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x83e0f742cacbe66349e3701b171ee2487a26e738",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

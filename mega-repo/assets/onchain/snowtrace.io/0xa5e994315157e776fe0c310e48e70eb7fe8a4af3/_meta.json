@@ -1,0 +1,19 @@
+{
+  "url": "https://snowtrace.io/address/0xa5e994315157e776fe0c310e48e70eb7fe8a4af3",
+  "host": "snowtrace.io",
+  "address": "0xa5e994315157e776fe0c310e48e70eb7fe8a4af3",
+  "chainid": 43114,
+  "contract_name": "VoidStrategy",
+  "compiler_version": "v0.8.14+commit.80d49f37",
+  "optimization_used": "1",
+  "runs": "20000",
+  "constructor_arguments": "00000000000000000000000034c3847a9d8ff02cb50ce76d9ab6b51c610ebcde0000000000000000000000003f93eced5ad8185f1c197acd17f8a2eb06051365",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 17,
+  "mode": "recover-json-sources"
+}

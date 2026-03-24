@@ -1,0 +1,19 @@
+{
+  "url": "https://etherscan.io/address/0x6c5fdc0c53b122ae0f15a863c349f3a481de8f1f",
+  "host": "etherscan.io",
+  "address": "0x6c5fdc0c53b122ae0f15a863c349f3a481de8f1f",
+  "chainid": 1,
+  "contract_name": "MainnetDolaFlashMinter",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "10000",
+  "constructor_arguments": "",
+  "evm_version": "shanghai",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 9,
+  "mode": "recover-json-sources"
+}

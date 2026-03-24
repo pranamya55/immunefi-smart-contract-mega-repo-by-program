@@ -1,0 +1,74 @@
+[
+  {
+    "project_slug": "rhinofi",
+    "asset_id": "11kKQnvCt9ZZvI4YVSepkI",
+    "url": "https://zkevm.polygonscan.com/address/0x65A4b8A0927c7FD899aed24356BF83810f7b9A3f#code",
+    "description": "zkEVM Bridge",
+    "added_at": "2023-06-30T13:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "rhinofi",
+    "asset_id": "1c3z6QzY7kUACCIoLFzyHq",
+    "url": "https://optimistic.etherscan.io/address/0x0bCa65bf4b4c8803d2f0B49353ed57CAAF3d66Dc",
+    "description": "Smart-Contract Optimism Bridge",
+    "added_at": "2023-06-30T13:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "rhinofi",
+    "asset_id": "21DBbBcRNpBAmN64sFcBAE",
+    "url": "https://bscscan.com/address/0xB80A582fa430645A043bB4f6135321ee01005fEf#code",
+    "description": "BSC Bridge",
+    "added_at": "2023-06-30T13:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "rhinofi",
+    "asset_id": "3SIts2pddMPOuty6A2BLCu",
+    "url": "https://arbiscan.io/address/0x15ca1fC728Cce7cd06151C8007e89dEe70260228#code",
+    "description": "ARB MultiSig",
+    "added_at": "2023-06-30T13:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "rhinofi",
+    "asset_id": "3xJyY5g7IPtz3OpzdfD8OB",
+    "url": "https://polygonscan.com/address/0xba4eee20f434bc3908a0b18da496348657133a7e#code",
+    "description": "MATIC Bridge",
+    "added_at": "2023-06-30T13:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "rhinofi",
+    "asset_id": "4dtEb9jtLvGO8DLmAZW1Lx",
+    "url": "https://arbiscan.io/address/0x10417734001162ea139e8b044dfe28dbb8b28ad0#code",
+    "description": "ARB Bridge",
+    "added_at": "2023-06-30T13:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "rhinofi",
+    "asset_id": "5F7bhJfwUWWGlER4Ry9F3O",
+    "url": "https://explorer.zksync.io/address/0x1fa66e2B38d0cC496ec51F81c3e05E6A6708986F#contract",
+    "description": "zkSync Bridge",
+    "added_at": "2023-06-30T13:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "rhinofi",
+    "asset_id": "5gJATr8exUbC9z5V2FZo9T",
+    "url": "https://bscscan.com/address/0x7Af3828c0B061552AF3479806Add982eEf04f0c8#code",
+    "description": "BSC MultiSig",
+    "added_at": "2023-06-30T13:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "rhinofi",
+    "asset_id": "7wH8DkerwixlrxesBoqZnW",
+    "url": "https://polygonscan.com/address/0x249aAbb1d67A76404Cc1197fa37ADAf358B1E212#code",
+    "description": "MATIC MultiSig",
+    "added_at": "2023-06-30T13:00:00.000Z",
+    "revision": 2
+  }
+]

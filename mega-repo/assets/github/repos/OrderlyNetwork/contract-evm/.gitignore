@@ -1,0 +1,34 @@
+# Compiler files
+cache/
+out/
+
+# Ignores development broadcast logs
+!/broadcast
+/broadcast/*/31337/
+/broadcast/**/dry-run/
+
+# Docs
+docs/
+
+# Dotenv file
+.env
+.envrc
+
+# Node modules
+node_modules
+
+# artifacts
+src/**/artifacts/
+
+broadcast/
+
+*.zip
+
+.DS_Store
+
+# some time we have some standard json files, no need to commit them
+/*.json
+
+# Claude Code related files and directories
+.claude/
+CLAUDE.md

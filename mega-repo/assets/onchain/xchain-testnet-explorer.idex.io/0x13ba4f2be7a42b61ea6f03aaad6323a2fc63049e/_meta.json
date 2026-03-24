@@ -1,0 +1,7 @@
+{
+  "url": "https://xchain-testnet-explorer.idex.io/address/0x13bA4F2be7a42b61Ea6F03AaaD6323A2fc63049e",
+  "host": "xchain-testnet-explorer.idex.io",
+  "address": "0x13bA4F2be7a42b61Ea6F03AaaD6323A2fc63049e",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:http 404"
+}

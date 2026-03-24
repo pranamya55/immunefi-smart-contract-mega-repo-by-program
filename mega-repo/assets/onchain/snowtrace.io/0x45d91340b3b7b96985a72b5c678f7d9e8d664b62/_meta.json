@@ -1,0 +1,24 @@
+{
+  "url": "https://snowtrace.io/address/0x45d91340B3B7B96985A72b5c678F7D9e8D664b62#code",
+  "host": "snowtrace.io",
+  "address": "0x45d91340B3B7B96985A72b5c678F7D9e8D664b62",
+  "chainid": 43114,
+  "project_slug": "sparklend",
+  "asset_id": "6CMRz0151ivgUdSVUFoxO2",
+  "contract_name": "ALMProxyFreezable",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "0000000000000000000000007566debc906c17338524a414343fa61bca26a843",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

@@ -1,0 +1,1 @@
+export const MESSAGE_TOO_OLD_THRESHOLD_DAYS = 90;

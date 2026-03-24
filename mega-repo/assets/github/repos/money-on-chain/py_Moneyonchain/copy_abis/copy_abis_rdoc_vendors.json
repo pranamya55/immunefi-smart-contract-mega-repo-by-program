@@ -1,0 +1,16 @@
+{
+    "src": "/Users/shanshi/projects/RDOC-Contract/build/contracts",
+    "dest": "/Users/shanshi/projects/py_Moneyonchain/moneyonchain/rdoc_vendors/abi",
+    "include": [
+        "MoC.json",
+        "MoCConnector.json",
+        "MoCConverter.json",
+        "MoCExchange.json",
+        "MoCHelperLib.json",
+        "MoCInrate.json",
+        "MoCSettlement.json",
+        "MoCState.json",
+        "MoCVendors.json",
+        "MoCVendorsEvents.json"
+    ]
+}

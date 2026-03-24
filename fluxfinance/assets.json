@@ -1,0 +1,74 @@
+[
+  {
+    "project_slug": "fluxfinance",
+    "asset_id": "3srYKm8XLgdEAsejyAxPyf",
+    "url": "https://etherscan.io/address/0x95Af143a021DF745bc78e845b54591C53a8B3A51",
+    "description": "Unitroller",
+    "added_at": "2023-02-08T00:16:03.719Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "fluxfinance",
+    "asset_id": "7dPUcinfilyTTGaxp0nCkY",
+    "url": "https://etherscan.io/address/0x1dD7950c266fB1be96180a8FDb0591F70200E018",
+    "description": "fOUSG",
+    "added_at": "2023-02-08T00:16:18.028Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "fluxfinance",
+    "asset_id": "5m5sl5AJuhaU7DN1WKCG7r",
+    "url": "https://etherscan.io/address/0x465a5a630482f3abD6d3b84B39B29b07214d19e5",
+    "description": "fUSDC",
+    "added_at": "2023-02-08T00:16:31.803Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "fluxfinance",
+    "asset_id": "JlXtYANSMQq0V567TSqKL",
+    "url": "https://etherscan.io/address/0xe2bA8693cE7474900A045757fe0efCa900F6530b",
+    "description": "fDAI",
+    "added_at": "2023-02-08T00:16:44.600Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "fluxfinance",
+    "asset_id": "2b3nwNQptXOzbqdp7fAg9C",
+    "url": "https://etherscan.io/address/0x1C9A2d6b33B4826757273D47ebEe0e2DddcD978B",
+    "description": "fFRAX",
+    "added_at": "2023-03-21T16:58:19.845Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "fluxfinance",
+    "asset_id": "4DzKDgmfFOqEO7WRM9eNCh",
+    "url": "https://etherscan.io/address/0x81994b9607e06ab3d5cF3AffF9a67374f05F27d7",
+    "description": "fUSDT",
+    "added_at": "2023-03-21T16:58:44.469Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "fluxfinance",
+    "asset_id": "3cNNxtWHNFeHOy8N602BnX",
+    "url": "https://etherscan.io/address/0xba9b10f90b0ef26711373a0d8b6e7741866a7ef2",
+    "description": "OndoPriceOracle V2",
+    "added_at": "2023-02-08T00:16:59.877Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "fluxfinance",
+    "asset_id": "2JBMLU4aKBFWfDVEo9DCXB",
+    "url": "https://etherscan.io/address/0x336505EC1BcC1A020EeDe459f57581725D23465A",
+    "description": "GovernorBravoDelegator",
+    "added_at": "2023-02-08T00:17:14.556Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "fluxfinance",
+    "asset_id": "6uyvMFDV21FFpnskrUiH4c",
+    "url": "https://etherscan.io/address/0x2c5898da4DF1d45EAb2B7B192a361C3b9EB18d9c",
+    "description": "Timelock",
+    "added_at": "2023-02-08T00:17:27.375Z",
+    "revision": 0
+  }
+]

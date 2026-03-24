@@ -1,0 +1,24 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0x9560e827aF36c94D2Ac33a39bCE1Fe78631088Db",
+  "host": "optimistic.etherscan.io",
+  "address": "0x9560e827aF36c94D2Ac33a39bCE1Fe78631088Db",
+  "chainid": 10,
+  "project_slug": "velodromefinance",
+  "asset_id": "3J2RFbysnHIbnsPfHiCOik",
+  "contract_name": "Velo",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 17,
+  "mode": "json-sources"
+}

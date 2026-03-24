@@ -1,0 +1,25 @@
+{
+  "url": "https://pacific-explorer.manta.network/address/0x15785C5D383Fa33339CF5D5720546C24313BC66D",
+  "host": "pacific-explorer.manta.network",
+  "address": "0x15785C5D383Fa33339CF5D5720546C24313BC66D",
+  "chainid": 169,
+  "project_slug": "zerolend-boost",
+  "asset_id": "14of7dlVzK3YSbbYyzjTPY",
+  "contract_name": "SupplyLogic",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": null,
+  "evm_version": "berlin",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:unexpected-response",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

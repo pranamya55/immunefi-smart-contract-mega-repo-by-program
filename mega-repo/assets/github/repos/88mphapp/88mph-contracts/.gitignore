@@ -1,0 +1,17 @@
+#Buidler files
+cache
+artifacts
+
+node_modules
+secret.json
+
+#solidity-coverage files
+coverage
+coverage.json
+
+docgen
+crytic-export
+echidna-corpus
+.DS_Store
+docs
+typechain

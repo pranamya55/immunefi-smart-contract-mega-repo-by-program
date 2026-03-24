@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x4d268a7d4C16ceB5a606c173Bd974984343fea13",
+  "host": "arbiscan.io",
+  "address": "0x4d268a7d4C16ceB5a606c173Bd974984343fea13",
+  "chainid": 42161,
+  "project_slug": "gmx",
+  "asset_id": "3oQEEDDnfVSFo10IVVJMcK",
+  "contract_name": "RewardTracker",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "0000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000125374616b6564202b20426f6e757320474d58000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000057362474d58000000000000000000000000000000000000000000000000000000",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

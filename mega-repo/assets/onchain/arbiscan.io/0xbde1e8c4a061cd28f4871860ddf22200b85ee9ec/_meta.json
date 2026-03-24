@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0xbde1e8c4a061cd28f4871860ddf22200b85ee9ec",
+  "host": "arbiscan.io",
+  "address": "0xbde1e8c4a061cd28f4871860ddf22200b85ee9ec",
+  "chainid": 42161,
+  "project_slug": "enzymefinance",
+  "asset_id": "301nhoA36frMJ9DbvHOpVn",
+  "contract_name": "PolicyManager",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000a2b4c827de13d4e9801ea1ca837524a1a148dec3000000000000000000000000e922362aa3426bd683b63a8e5d13903a9cfc4cbb",
+  "evm_version": "istanbul",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 21,
+  "mode": "json-sources"
+}

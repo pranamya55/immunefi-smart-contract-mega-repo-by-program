@@ -1,0 +1,19 @@
+{
+  "url": "https://etherscan.io/address/0x6d5521f46b2cba9443fefc09cbac3b15ae0f73eb",
+  "host": "etherscan.io",
+  "address": "0x6d5521f46b2cba9443fefc09cbac3b15ae0f73eb",
+  "chainid": 1,
+  "contract_name": "FeeLibV1",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": "1",
+  "runs": "5000",
+  "constructor_arguments": "000000000000000000000000268ca24daeff1fac2ed883c598200ccbb79e931d",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "BSL 1.1",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 19,
+  "mode": "recover-json-sources"
+}

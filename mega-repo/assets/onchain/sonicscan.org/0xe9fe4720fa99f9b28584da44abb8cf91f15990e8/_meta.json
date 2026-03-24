@@ -1,0 +1,24 @@
+{
+  "url": "https://sonicscan.org/address/0xe9fe4720FA99f9b28584dA44ABB8cf91f15990e8#code",
+  "host": "sonicscan.org",
+  "address": "0xe9fe4720FA99f9b28584dA44ABB8cf91f15990e8",
+  "chainid": 146,
+  "project_slug": "parallel",
+  "asset_id": "5Gj965iBfw14u0qrbgANFL",
+  "contract_name": "DiamondCut",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "1000",
+  "constructor_arguments": "",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 21,
+  "mode": "json-sources"
+}

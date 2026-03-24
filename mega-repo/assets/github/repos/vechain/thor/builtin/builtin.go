@@ -1,0 +1,134 @@
+// Copyright (c) 2018 The VeChainThor developers
+
+// Distributed under the GNU Lesser General Public License v3.0 software license, see the accompanying
+// file LICENSE or <https://www.gnu.org/licenses/lgpl-3.0.html>
+
+package builtin
+
+import (
+	"github.com/pkg/errors"
+
+	"github.com/vechain/thor/v2/abi"
+	"github.com/vechain/thor/v2/builtin/authority"
+	"github.com/vechain/thor/v2/builtin/energy"
+	"github.com/vechain/thor/v2/builtin/gen"
+	"github.com/vechain/thor/v2/builtin/params"
+	"github.com/vechain/thor/v2/builtin/prototype"
+	"github.com/vechain/thor/v2/builtin/solidity"
+	"github.com/vechain/thor/v2/builtin/staker"
+	"github.com/vechain/thor/v2/state"
+	"github.com/vechain/thor/v2/thor"
+	"github.com/vechain/thor/v2/xenv"
+)
+
+// Builtin contracts binding.
+var (
+	Params    = &paramsContract{mustLoadContract("Params")}
+	Authority = &authorityContract{mustLoadContract("Authority")}
+	Energy    = &energyContract{mustLoadContract("Energy")}
+	Executor  = &executorContract{mustLoadContract("Executor")}
+	Prototype = &prototypeContract{mustLoadContract("Prototype")}
+	Extension = &extensionContract{
+		mustLoadContract("Extension"),
+		mustLoadContract("ExtensionV2"),
+		mustLoadContract("ExtensionV3"),
+	}
+	Staker  = &stakerContract{mustLoadContract("Staker")}
+	Measure = mustLoadContract("Measure")
+
+	// return gas map maintains the builtin contracts that can be made native call cheaper
+	// only the 0.4.24 compiled contracts are allowed to return gas, as the newer compiler
+	// versions have dynamic cost and pattern that is not predictable, any further added new
+	// builtin contract must not be added in this map.
+	returnGas = map[thor.Address]bool{
+		Params.Address:    true,
+		Authority.Address: true,
+		Energy.Address:    true,
+		Prototype.Address: true,
+		Extension.Address: true,
+	}
+)
+
+type (
+	paramsContract    struct{ *contract }
+	authorityContract struct{ *contract }
+	energyContract    struct{ *contract }
+	executorContract  struct{ *contract }
+	prototypeContract struct{ *contract }
+	extensionContract struct {
+		*contract
+		V2 *contract
+		V3 *contract
+	}
+	stakerContract struct{ *contract }
+)
+
+func (p *paramsContract) Native(state *state.State) *params.Params {
+	return params.New(p.Address, state)
+}
+
+func (a *authorityContract) Native(state *state.State) *authority.Authority {
+	return authority.New(a.Address, state)
+}
+
+func (e *energyContract) Native(state *state.State, blockTime uint64) *energy.Energy {
+	return energy.New(e.Address, state, blockTime, Params.Native(state))
+}
+
+func (p *prototypeContract) Native(state *state.State) *prototype.Prototype {
+	return prototype.New(p.Address, state)
+}
+
+func (p *prototypeContract) Events() *abi.ABI {
+	asset := "compiled/PrototypeEvent.abi"
+	data := gen.MustABI(asset)
+	abi, err := abi.New(data)
+	if err != nil {
+		panic(errors.Wrap(err, "load ABI for "+asset))
+	}
+	return abi
+}
+
+func (s *stakerContract) NativeMetered(state *state.State, charger solidity.UseGasFunc) *staker.Staker {
+	return staker.New(s.Address, state, Params.Native(state), charger)
+}
+
+func (s *stakerContract) Native(state *state.State) *staker.Staker {
+	return s.NativeMetered(state, func(_ uint64) {})
+}
+
+func (s *stakerContract) Events() *abi.ABI {
+	asset := "compiled/Staker.abi"
+	data := gen.MustABI(asset)
+	abi, err := abi.New(data)
+	if err != nil {
+		panic(errors.Wrap(err, "load ABI for "+asset))
+	}
+	return abi
+}
+
+type nativeMethod struct {
+	abi *abi.Method
+	run func(env *xenv.Environment) []any
+}
+
+type methodKey struct {
+	thor.Address
+	abi.MethodID
+}
+
+var nativeMethods = make(map[methodKey]*nativeMethod)
+
+// FindNativeCall find native calls.
+func FindNativeCall(to thor.Address, input []byte) (*abi.Method, func(*xenv.Environment) []any, bool, bool) {
+	methodID, err := abi.ExtractMethodID(input)
+	if err != nil {
+		return nil, nil, false, false
+	}
+
+	method := nativeMethods[methodKey{to, methodID}]
+	if method == nil {
+		return nil, nil, false, false
+	}
+	return method.abi, method.run, true, returnGas[to]
+}

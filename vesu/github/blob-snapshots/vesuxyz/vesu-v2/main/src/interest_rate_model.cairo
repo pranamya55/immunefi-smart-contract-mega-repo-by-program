@@ -1,0 +1,1 @@
+../../../../../../../../mega-repo/assets/github/blob-snapshots/vesuxyz/vesu-v2/main/src/interest_rate_model.cairo

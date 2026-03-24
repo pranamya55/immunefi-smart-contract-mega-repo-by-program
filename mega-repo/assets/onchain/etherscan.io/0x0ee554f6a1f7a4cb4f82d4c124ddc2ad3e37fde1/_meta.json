@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x0ee554F6A1f7a4Cb4f82D4C124DdC2AD3E37fde1#code",
+  "host": "etherscan.io",
+  "address": "0x0ee554F6A1f7a4Cb4f82D4C124DdC2AD3E37fde1",
+  "chainid": 1,
+  "project_slug": "sparklend",
+  "asset_id": "5HMtSBEILl0x4De0tbc7Gf",
+  "contract_name": "RewardsController",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "1",
+  "runs": "100000",
+  "constructor_arguments": "000000000000000000000000f09e48dd4ca8e76f63a57add428bb06fee7932a4",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 12,
+  "mode": "json-sources"
+}

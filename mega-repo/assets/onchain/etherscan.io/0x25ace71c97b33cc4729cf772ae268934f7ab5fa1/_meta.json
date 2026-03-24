@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x25ace71c97B33Cc4729CF772ae268934F7ab5fA1",
+  "host": "etherscan.io",
+  "address": "0x25ace71c97B33Cc4729CF772ae268934F7ab5fA1",
+  "chainid": 1,
+  "project_slug": "optimism",
+  "asset_id": "2tb8MvF8W3BR2WGxdYxESo",
+  "contract_name": "Lib_ResolvedDelegateProxy",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000de1fcfb0851916ca5101820a69b13a4e276bd81f0000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000001a4f564d5f4c3143726f7373446f6d61696e4d657373656e676572000000000000",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "1",
+  "implementation": "0x5d5a095665886119693f0b41d8dfee78da033e8b",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 4,
+  "mode": "json-sources"
+}

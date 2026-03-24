@@ -1,0 +1,19 @@
+{
+  "url": "https://snowtrace.io/address/0x305f06749b98d5aa5ae48b08395615ae9466de4d",
+  "host": "snowtrace.io",
+  "address": "0x305f06749b98d5aa5ae48b08395615ae9466de4d",
+  "chainid": 43114,
+  "contract_name": "WOOFiVaultV2",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000b31f66aa3c1e785363f0875a1b74e27b85fd66c7000000000000000000000000b97ef9ef8734c71904d8002f8b6bc66dd9c48a6e0000000000000000000000003f93eced5ad8185f1c197acd17f8a2eb06051365",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 14,
+  "mode": "recover-json-sources"
+}

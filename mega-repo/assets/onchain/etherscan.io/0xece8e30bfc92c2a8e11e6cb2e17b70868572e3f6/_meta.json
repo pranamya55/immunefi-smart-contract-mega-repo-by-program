@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xECE8e30bFc92c2A8e11e6cb2e17B70868572E3f6#code",
+  "host": "etherscan.io",
+  "address": "0xECE8e30bFc92c2A8e11e6cb2e17B70868572E3f6",
+  "chainid": 1,
+  "project_slug": "zksyncera",
+  "asset_id": "1fL1otq8zNcdnGdRpCDqAy",
+  "contract_name": "EmergencyUpgradeBoard",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000e30dca3047b37dc7d88849de4a4dc07937ad5ab300000000000000000000000066e4431266dc7e04e7d8b7fe9d2181253df7f410000000000000000000000000600da620ab29f41abc6596a15981e14ce58c86b8000000000000000000000000bc1653bd3829dfec575afc3816d4899cd103b51c",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

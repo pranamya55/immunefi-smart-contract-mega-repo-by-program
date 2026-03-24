@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x56A5D911052323D688C731d516530878557463e7",
+  "host": "etherscan.io",
+  "address": "0x56A5D911052323D688C731d516530878557463e7",
+  "chainid": 1,
+  "project_slug": "ondofinance",
+  "asset_id": "48Jwose3l9xfjauJHL44J7",
+  "contract_name": "OndoIDRegistryView",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000cf6958d69d535fd03bd6df3f4fe6cdcd127d97df",
+  "evm_version": "london",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 24,
+  "mode": "json-sources"
+}

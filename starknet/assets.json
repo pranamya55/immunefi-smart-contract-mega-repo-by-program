@@ -1,0 +1,18 @@
+[
+  {
+    "project_slug": "starknet",
+    "asset_id": "99231",
+    "url": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity",
+    "description": "StarkGate Solidity Contracts",
+    "added_at": "2026-03-16T12:32:56.457Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "starknet",
+    "asset_id": "99232",
+    "url": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
+    "description": "StarkGate Cairo Contracts",
+    "added_at": "2026-03-16T12:32:56.457Z",
+    "revision": 0
+  }
+]

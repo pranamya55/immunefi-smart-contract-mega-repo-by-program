@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0xffFb5fB14606EB3a548C113026355020dDF27535",
+  "host": "arbiscan.io",
+  "address": "0xffFb5fB14606EB3a548C113026355020dDF27535",
+  "chainid": 42161,
+  "project_slug": "dhedge",
+  "asset_id": "98985",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0xd35b69453677ce35015ecb9933fb8874bd01e977",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

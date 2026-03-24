@@ -1,0 +1,19 @@
+{
+  "url": "https://arbiscan.io/address/0x99c2901d2883f8d295a989544f118e31ec21823e",
+  "host": "arbiscan.io",
+  "address": "0x99c2901d2883f8d295a989544f118e31ec21823e",
+  "chainid": 42161,
+  "contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0xd2ca9a959268d2ec1f951a2f1691966f38a5a433",
+  "swarm_source": "",
+  "files_written": 27,
+  "mode": "recover-json-sources"
+}

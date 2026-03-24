@@ -1,0 +1,66 @@
+[
+  {
+    "project_slug": "renzoprotocol",
+    "asset_id": "4AGMaGNEuV2pRMGsiscGHf",
+    "url": "https://etherscan.io/address/0xf2F305D14DCD8aaef887E0428B3c9534795D0d60",
+    "description": "DepositQueue",
+    "added_at": "2023-12-14T21:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "renzoprotocol",
+    "asset_id": "4rQPaSuTMs0NYWIadfgl3R",
+    "url": "https://etherscan.io/address/0xbf5495Efe5DB9ce00f80364C8B423567e58d2110",
+    "description": "EzEthToken",
+    "added_at": "2023-12-14T21:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "renzoprotocol",
+    "asset_id": "7iyNZdHTsmKf85DKBNpvg8",
+    "url": "https://etherscan.io/address/0xbAf5f3A05BD7Af6f3a0BBA207803bf77e2657c8F",
+    "description": "OperatorDelegator1",
+    "added_at": "2023-12-14T21:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "renzoprotocol",
+    "asset_id": "5Bl0VAZXGvic1OELvNg4tb",
+    "url": "https://etherscan.io/address/0x5a12796f7e7EBbbc8a402667d266d2e65A814042",
+    "description": "RenzoOracle",
+    "added_at": "2023-12-14T21:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "renzoprotocol",
+    "asset_id": "2R5QKpTfIhzhOS2MW2p9N9",
+    "url": "https://etherscan.io/address/0x74a09653A083691711cF8215a6ab074BB4e99ef5",
+    "description": "RestakeManager",
+    "added_at": "2023-12-14T21:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "renzoprotocol",
+    "asset_id": "7EEhoxKdypaD7wQ9A00twX",
+    "url": "https://etherscan.io/address/0x22eEC85ba6a5cD97eAd4728eA1c69e1D9c6fa778",
+    "description": "RewardHandler",
+    "added_at": "2023-12-14T21:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "renzoprotocol",
+    "asset_id": "5HbID7g0TtvBj9okyvtBNf",
+    "url": "https://etherscan.io/address/0x4994EFc62101A9e3F885d872514c2dC7b3235849",
+    "description": "RoleManager",
+    "added_at": "2023-12-14T21:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "renzoprotocol",
+    "asset_id": "3ALAG0vSVedoODytUPN7N6",
+    "url": "https://etherscan.io/address/0x5efc9D10E42FB517456f4ac41EB5e2eBe42C8918",
+    "description": "WithdrawQueue",
+    "added_at": "2024-06-12T13:18:13.722Z",
+    "revision": 1
+  }
+]

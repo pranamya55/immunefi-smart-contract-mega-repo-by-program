@@ -1,0 +1,11 @@
+testgen!(
+    test_u16_vec,
+    "out/svec_u16-abi.json",
+    "u16",
+    u16,
+    1u16,
+    2u16,
+    3u16,
+    4u16,
+    5u16
+);

@@ -1,0 +1,24 @@
+{
+  "url": "https://moonriver.moonscan.io/address/0xFfceAcfD39117030314A07b2C86dA36E51787948",
+  "host": "moonriver.moonscan.io",
+  "address": "0xFfceAcfD39117030314A07b2C86dA36E51787948",
+  "chainid": 1285,
+  "project_slug": "wepiggy",
+  "asset_id": "1tQr837cDsamFHE70FcXtB",
+  "contract_name": "AdminUpgradeabilityProxy",
+  "compiler_version": "v0.5.3+commit.10d17f24",
+  "optimization_used": "0",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000d58fb16eace4693b2c641cae6850a82763c00a340000000000000000000000005ea2321abff78e81702ce877319cd775e0dc865b000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000048129fc1c00000000000000000000000000000000000000000000000000000000",
+  "evm_version": "constantinople",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "1",
+  "implementation": "0xd58fb16eace4693b2c641cae6850a82763c00a34",
+  "swarm_source": "bzzr://3a61cbfff803b053d8f397cf95cfa0c8c53ef12ce921c5d484b275b58be38897",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

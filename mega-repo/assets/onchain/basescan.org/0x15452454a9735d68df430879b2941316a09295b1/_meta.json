@@ -1,0 +1,24 @@
+{
+  "url": "https://basescan.org/address/0x15452454A9735D68df430879B2941316a09295B1#code",
+  "host": "basescan.org",
+  "address": "0x15452454A9735D68df430879B2941316a09295B1",
+  "chainid": 8453,
+  "project_slug": "parallel",
+  "asset_id": "44joNln4ZUHkrJyjq4e5Nx",
+  "contract_name": "DiamondCut",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "1000",
+  "constructor_arguments": "",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 21,
+  "mode": "json-sources"
+}

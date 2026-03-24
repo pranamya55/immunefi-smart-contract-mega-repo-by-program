@@ -1,0 +1,24 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0xd1db2c4A9d2BEBd56d42E59F2d90F4136164faD6",
+  "host": "optimistic.etherscan.io",
+  "address": "0xd1db2c4A9d2BEBd56d42E59F2d90F4136164faD6",
+  "chainid": 10,
+  "project_slug": "kleidi",
+  "asset_id": "db_225af58c-f63b-4236-ac7f-439cbbbdd2cd",
+  "contract_name": "AddressCalculation",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "1",
+  "runs": "300",
+  "constructor_arguments": "000000000000000000000000e138136bff8c6a9337805de19177e3b29fef2783",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 39,
+  "mode": "json-sources"
+}

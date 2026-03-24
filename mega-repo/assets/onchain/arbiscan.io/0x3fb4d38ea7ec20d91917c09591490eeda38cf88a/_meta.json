@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x3fB4d38ea7EC20D91917c09591490Eeda38Cf88A",
+  "host": "arbiscan.io",
+  "address": "0x3fB4d38ea7EC20D91917c09591490Eeda38Cf88A",
+  "chainid": 42161,
+  "project_slug": "compoundfinance",
+  "asset_id": "4sUG9JDo1r5nxEr8f5beez",
+  "contract_name": "Timelock",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "00000000000000000000000042480c37b249e33aabaf4c22b20235656bd3806800000000000000000000000000000000000000000000000000000000000151800000000000000000000000000000000000000000000000000000000000127500000000000000000000000000000000000000000000000000000000000000a8c00000000000000000000000000000000000000000000000000000000000278d00",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 2,
+  "mode": "json-sources"
+}

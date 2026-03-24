@@ -1,0 +1,19 @@
+{
+  "url": "https://arbiscan.io/address/0x489ee077994b6658eafa855c308275ead8097c4a",
+  "host": "arbiscan.io",
+  "address": "0x489ee077994b6658eafa855c308275ead8097c4a",
+  "chainid": 42161,
+  "contract_name": "Vault",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://df496c6eeb92de9645fec1d1f6921c61616068533eaff090b08dd5144dcbef9e",
+  "files_written": 1,
+  "mode": "recover-single-file"
+}

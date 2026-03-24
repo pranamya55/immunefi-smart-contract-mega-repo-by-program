@@ -1,0 +1,7 @@
+{
+  "url": "https://bnb.xterscan.io/address/0xFC1759E75180aeE982DC08D0d6D365ebFA0296a7",
+  "host": "bnb.xterscan.io",
+  "address": "0xFC1759E75180aeE982DC08D0d6D365ebFA0296a7",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:HTTPSConnectionPool(host='bnb.xterscan.io', port=443): Max retries exceeded with url: /api?module=contract&action=getsourcecode&address=0xFC1759E75180aeE982DC08D0d6D365ebFA0296a7 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1129)')))"
+}

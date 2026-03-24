@@ -1,0 +1,24 @@
+{
+  "url": "https://sepolia.etherscan.io/address/0x0100F7f027EC3B4B4Fd8bB739efd8BDDBa3bF847",
+  "host": "sepolia.etherscan.io",
+  "address": "0x0100F7f027EC3B4B4Fd8bB739efd8BDDBa3bF847",
+  "chainid": 11155111,
+  "project_slug": "folksfinance-boost",
+  "asset_id": "4vn3IClROOu9nUPZ5JgVLL",
+  "contract_name": "CCIPTokenAdapter",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "00000000000000000000000016870a6a85cd152229b97d018194d66740f932d60000000000000000000000000bf3de8c5d3e8a2b34d2beeb17abfcebaf363a59000000000000000000000000bef7ab7c5e6ceff384cde460dd20c862047cdfa5",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 26,
+  "mode": "json-sources"
+}

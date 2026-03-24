@@ -1,0 +1,24 @@
+{
+  "url": "https://bscscan.com/address/0xc0e62F863bbD9dab9d2F79e4EcC248e60c4fE3FA#code",
+  "host": "bscscan.com",
+  "address": "0xc0e62F863bbD9dab9d2F79e4EcC248e60c4fE3FA",
+  "chainid": 56,
+  "project_slug": "parallel",
+  "asset_id": "sMKyMvqJOBxjMW1qJPc7T",
+  "contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "1",
+  "runs": "999999",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "Unlicense",
+  "proxy": "1",
+  "implementation": "0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 7,
+  "mode": "json-sources"
+}

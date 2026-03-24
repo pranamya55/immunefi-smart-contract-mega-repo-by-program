@@ -1,0 +1,82 @@
+[
+  {
+    "project_slug": "immutable",
+    "asset_id": "929WlCBGIKfDp1Nw8RikS",
+    "url": "https://etherscan.io/address/0xBa5E35E26Ae59c7aea6F029B68c6460De2d13eB6",
+    "description": "L1 Ethereum Mainnet Chain ID 1 - Bridge Proxy",
+    "added_at": "2025-06-09T17:22:14.029Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "immutable",
+    "asset_id": "7lWPwL735YrjoAC1jdhPSL",
+    "url": "https://etherscan.io/address/0x177EaFe0f1F3359375B1728dae0530a75C83E154",
+    "description": "L1 Ethereum Mainnet Chain ID 1 - Bridge Implementation",
+    "added_at": "2025-06-09T17:22:27.347Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "immutable",
+    "asset_id": "7xQKZPqV2zZaKVOudph0qN",
+    "url": "https://etherscan.io/address/0x4f49b53928a71e553bb1b0f66a5bcb54fd4e8932",
+    "description": "L1 Ethereum Mainnet Chain ID 1 - Adapter Proxy",
+    "added_at": "2025-06-09T17:22:40.200Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "immutable",
+    "asset_id": "AxkEzrEois1971XaKwdcq",
+    "url": "https://etherscan.io/address/0xE2E91C1Ae2873720C3b975a8034e887A35323345",
+    "description": "L1 Ethereum Mainnet Chain ID 1 - Adapter Implementation",
+    "added_at": "2025-06-09T17:22:58.702Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "immutable",
+    "asset_id": "3pLE59cpPYLPmUMU1Cvuj2",
+    "url": "https://explorer.immutable.com/address/0xBa5E35E26Ae59c7aea6F029B68c6460De2d13eB6",
+    "description": "L2 zkEVM Chain ID 13371 - Bridge Proxy",
+    "added_at": "2025-06-09T17:24:06.679Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "immutable",
+    "asset_id": "6uO76lmxp86rMyBwTqfSQL",
+    "url": "https://explorer.immutable.com/address/0xb4c3597e6b090A2f6117780cEd103FB16B071A84",
+    "description": "L2 zkEVM Chain ID 13371 - Bridge Implementation",
+    "added_at": "2025-06-09T17:24:17.017Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "immutable",
+    "asset_id": "TL87Ggcxr7FtDOCDweFHv",
+    "url": "https://explorer.immutable.com/address/0x4f49B53928A71E553bB1B0F66a5BcB54Fd4E8932",
+    "description": "L2 zkEVM Chain ID 13371 - Adapter Proxy",
+    "added_at": "2025-06-09T17:24:29.028Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "immutable",
+    "asset_id": "3Y3gMJw8wAvoshdnbwIAlY",
+    "url": "https://explorer.immutable.com/address/0x1d49c44dc4BbDE68D8D51a9C5732f3a24e48EFA6",
+    "description": "L2 zkEVM Chain ID 13371 - Adapter Implementation",
+    "added_at": "2025-06-09T17:24:39.221Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "immutable",
+    "asset_id": "28TZvhCDwNl1jC2D3qyxET",
+    "url": "https://explorer.immutable.com/address/0x8804A8aA1F18f23aE8A456dD73806FdA3219FaD1",
+    "description": "L2 zkEVM Chain ID 13371 - ChildERC20 Token Template",
+    "added_at": "2025-06-09T17:24:50.237Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "immutable",
+    "asset_id": "98734",
+    "url": "https://immunefi.com/",
+    "description": "Primacy of Impact",
+    "added_at": "2026-02-06T15:58:36.804Z",
+    "revision": 0
+  }
+]

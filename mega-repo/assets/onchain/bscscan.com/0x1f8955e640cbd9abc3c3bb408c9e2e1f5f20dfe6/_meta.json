@@ -1,0 +1,24 @@
+{
+  "url": "https://bscscan.com/address/0x1f8955E640Cbd9abc3C3Bb408c9E2E1f5F20DfE6",
+  "host": "bscscan.com",
+  "address": "0x1f8955E640Cbd9abc3C3Bb408c9E2E1f5F20DfE6",
+  "chainid": 56,
+  "project_slug": "ondofinance",
+  "asset_id": "bTRUgA0m9itLvAfnj3I1R",
+  "contract_name": "TokenProxy",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "london",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x7655539c985743c3d29aff4c8ae2730f9360f7a6",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

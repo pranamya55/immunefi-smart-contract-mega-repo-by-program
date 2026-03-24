@@ -1,0 +1,8 @@
+[[package]]
+name = "referencing_local_vars_and_values"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-A0241DEA23965530"

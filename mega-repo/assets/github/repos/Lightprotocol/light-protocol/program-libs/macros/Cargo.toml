@@ -1,0 +1,22 @@
+[package]
+name = "light-macros"
+version = "2.2.0"
+description = "Macros used in Light Protocol on-chain programs"
+repository = "https://github.com/Lightprotocol/light-protocol"
+license = "Apache-2.0"
+edition = "2021"
+
+[features]
+default = ["solana"]
+solana = []
+pinocchio = []  # No-op feature for backward compatibility
+
+[dependencies]
+bs58 = "0.5"
+proc-macro2 = { workspace = true }
+quote = { workspace = true }
+syn = { workspace = true }
+solana-pubkey = { workspace = true, features = ["sha2", "curve25519"] }
+
+[lib]
+proc-macro = true

@@ -1,0 +1,19 @@
+{
+  "url": "https://polygonscan.com/address/0x52e83a4c9a123500e8324b9f489a681ffda92a17",
+  "host": "polygonscan.com",
+  "address": "0x52e83a4c9a123500e8324b9f489a681ffda92a17",
+  "chainid": 137,
+  "contract_name": "TransferAssetsAdapter",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "00000000000000000000000092fcde09790671cf085864182b9670c77da0884b",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 13,
+  "mode": "recover-json-sources"
+}

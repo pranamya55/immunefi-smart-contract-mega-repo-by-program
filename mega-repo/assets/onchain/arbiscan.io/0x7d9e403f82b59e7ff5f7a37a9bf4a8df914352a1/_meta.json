@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x7D9E403F82b59e7fF5F7A37a9bf4A8df914352A1",
+  "host": "arbiscan.io",
+  "address": "0x7D9E403F82b59e7fF5F7A37a9bf4A8df914352A1",
+  "chainid": 42161,
+  "project_slug": "gmx",
+  "asset_id": "32F0dR8xQdjjlZ0SwOSSx5",
+  "contract_name": "ReaderPricingUtils",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": "1",
+  "runs": "10",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 67,
+  "mode": "json-sources"
+}

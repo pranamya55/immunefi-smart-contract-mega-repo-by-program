@@ -1,0 +1,7 @@
+{
+  "url": "https://ftmscan.com/address/0xc2bac0db5b18b0c3225581ba14bd0b448c623636",
+  "host": "ftmscan.com",
+  "address": "0xc2bac0db5b18b0c3225581ba14bd0b448c623636",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:unexpected-response; scan-host-no-key:HTTPSConnectionPool(host='ftmscan.com', port=443): Max retries exceeded with url: /api?module=contract&action=getsourcecode&address=0xc2bac0db5b18b0c3225581ba14bd0b448c623636 (Caused by NameResolutionError(\"HTTPSConnection(host='ftmscan.com', port=443): Failed to resolve 'ftmscan.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+}

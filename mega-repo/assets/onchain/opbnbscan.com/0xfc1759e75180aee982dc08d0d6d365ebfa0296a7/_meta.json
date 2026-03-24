@@ -1,0 +1,24 @@
+{
+  "url": "https://opbnbscan.com/address/0xFC1759E75180aeE982DC08D0d6D365ebFA0296a7",
+  "host": "opbnbscan.com",
+  "address": "0xFC1759E75180aeE982DC08D0d6D365ebFA0296a7",
+  "chainid": 204,
+  "project_slug": "xterio",
+  "asset_id": "5z3LtZrQSWyJ9cburKJYbl",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://12bb4f564f73959a03513dc74fc3c6e40e8386e6f02c16b78d6db00ce0aa16af",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

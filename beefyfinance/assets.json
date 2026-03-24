@@ -1,0 +1,1946 @@
+[
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "19ihUll2hqTC4fg3x2qcbf",
+    "url": "https://polygonscan.com/address/0xD126BA764D2fA052Fc14Ae012Aef590Bc6aE0C4f#code",
+    "description": "polygon-bifi-maxi strategy",
+    "added_at": "2022-05-10T15:43:18.209Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "7nE7FmppVzybNDREnRNU9Z",
+    "url": "https://polygonscan.com/address/0xfEcf784F48125ccb7d8855cdda7C5ED6b5024Cb3#code",
+    "description": "polygon-bifi-maxi vault",
+    "added_at": "2022-05-10T15:43:19.163Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "tZNsCTIgcabQ6HVQEL52a",
+    "url": "https://polygonscan.com/address/0x0C0C75AF434519AB96E34EB3bbEea726324d6264#code",
+    "description": "curve-poly-atricrypto strategy",
+    "added_at": "2022-05-10T15:43:20.176Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2amQfBMHMYbdEsWx25fOfW",
+    "url": "https://polygonscan.com/address/0x3dab1aCB811dc4C8b2FdC77812552f4d4Efd0A8c#code",
+    "description": "curve-poly-atricrypto vault",
+    "added_at": "2022-05-10T15:43:21.256Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "3m2hwQ7jCmBU4KsHbm6COT",
+    "url": "https://polygonscan.com/address/0xAccf2f81F8c13e8D97ee272D141b6f4B613aB46D#code",
+    "description": "curve-poly-ren strategy",
+    "added_at": "2022-05-10T15:43:22.303Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2d5esccg8YoplejRvs2f6P",
+    "url": "https://polygonscan.com/address/0x8c9d3Bc4425773BD2F00C4a2aC105c5Ad73c8141#code",
+    "description": "curve-poly-ren vault",
+    "added_at": "2022-05-10T15:43:23.315Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4vw6Fztwj3PRpqhXlAYGKy",
+    "url": "https://polygonscan.com/address/0xC32CCCfF0777C145e7d658081D141ec8A38f8133#code",
+    "description": "boneswap-quick-wmatic-bone strategy",
+    "added_at": "2022-05-10T15:43:24.293Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "6m6gfOzaUjVfTasl14n4Zn",
+    "url": "https://polygonscan.com/address/0xe9CAf4DfeaB51114a619C8104C38a309ccA236E1#code",
+    "description": "boneswap-quick-wmatic-bone vault",
+    "added_at": "2022-05-10T15:43:25.263Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1juRnlUInHtUpWl9qJh6nq",
+    "url": "https://polygonscan.com/address/0x3dE892BBc1cC1D22F069a4A985F58052244Acc5e#code",
+    "description": "boneswap-sushi-wmatic-bone strategy",
+    "added_at": "2022-05-10T15:43:26.240Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1tgb6EITz5TeKpPm32SN9g",
+    "url": "https://polygonscan.com/address/0x9fc153db31a5CeF1Cd326De31FEb37C7499eebC8",
+    "description": "boneswap-sushi-wmatic-bone vault",
+    "added_at": "2022-05-10T15:43:27.221Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2dlP4eN0ALRfevGsuhy9AK",
+    "url": "https://polygonscan.com/address/0x5a2448b0306D24C2ed3AE3186f32bbB023B8dCf9",
+    "description": "boneswap-ape-wmatic-bone strategy",
+    "added_at": "2022-05-10T15:43:28.168Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "6U5C4M051D5YsvkBBGQtij",
+    "url": "https://polygonscan.com/address/0x7D59B0cAC35d431fe5B2F3aAED2FB70050B2113D",
+    "description": "boneswap-ape-wmatic-bone vault",
+    "added_at": "2022-05-10T15:43:29.348Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4F5PqX9qPgOxQuWmLRHI5u",
+    "url": "https://polygonscan.com/address/0x7207E31f503981DC0D57cC04AD4713DCBD5C0010",
+    "description": "boneswap-quick-usdc-bone strategy",
+    "added_at": "2022-05-10T15:43:30.331Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2fyboHodmQnQDCNX1B9u1d",
+    "url": "https://polygonscan.com/address/0x1001844Cb9Bc3B89a60ce4f4773dBa3B27115230",
+    "description": "boneswap-quick-usdc-bone vault",
+    "added_at": "2022-05-10T15:43:31.307Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "XoTbbjUH4sgwB2vDvgmoo",
+    "url": "https://polygonscan.com/address/0x1Fff1654DBE0aa26cbc0e754a7BA641B89B95910",
+    "description": "dfyn-route-dfyn strategy",
+    "added_at": "2022-05-10T15:43:32.302Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "55qW6kav5zJz9nvactxszK",
+    "url": "https://polygonscan.com/address/0xad88D6B731DCb567a3E13407f1E7B0649Bad82D2",
+    "description": "dfyn-route-dfyn vault",
+    "added_at": "2022-05-10T15:43:33.512Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "25vtmihphZ7rLwI9PzGoo4",
+    "url": "https://polygonscan.com/address/0x827D4f4f92281690aD0591aFa0F90450A785199F",
+    "description": "dfyn-sx-dfyn strategy",
+    "added_at": "2022-05-10T15:43:34.782Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2L6RauWJw80Z9Z2d88U3CP",
+    "url": "https://polygonscan.com/address/0x970283Df294f9cedD2187bf84782AB75617Be31c",
+    "description": "dfyn-sx-dfyn vault",
+    "added_at": "2022-05-10T15:43:35.869Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "6SnRVRsx4QabgZ9fKHFJvQ",
+    "url": "https://polygonscan.com/address/0xF68536DA80F58c3dEF57fB06ADA7998a1E2Cee97",
+    "description": "dfyn-ez-dfyn strategy",
+    "added_at": "2022-05-10T15:43:36.875Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1d8Qo2XF0hVV6vYMUnOmUt",
+    "url": "https://polygonscan.com/address/0x0E765383bea3a166A87a042132422f5F29fDb217",
+    "description": "dfyn-ez-dfyn vault",
+    "added_at": "2022-05-10T15:43:37.878Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "3VkCxnQvcAqCfz5halrtwP",
+    "url": "https://polygonscan.com/address/0x8c5E402F3F43958Ecb83b10aD9bE98Fd026C52c6",
+    "description": "dfyn-uft-dfyn strategy",
+    "added_at": "2022-05-10T15:43:38.894Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2EYzWXBiVoXE3Bnn51LwY5",
+    "url": "https://polygonscan.com/address/0xD239D193809b04fD24CB0Cd56A99A3F9dB069C9d",
+    "description": "dfyn-uft-dfyn vault",
+    "added_at": "2022-05-10T15:43:39.978Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "lN4VuSsa8ra7h9cE7CSUT",
+    "url": "https://polygonscan.com/address/0xcd170fa0C80Ea060a9Df6bf91BfF24cBDC4e0f30",
+    "description": "polycat-dfyn-fish-matic strategy",
+    "added_at": "2022-05-10T15:43:41.009Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "217DRTTPFjzqnLMDxxNBwi",
+    "url": "https://polygonscan.com/address/0x9f3B96a2Dd55aa904bC5476Ffe66E74a53f6b420",
+    "description": "polycat-dfyn-fish-matic vault",
+    "added_at": "2022-05-10T15:43:41.952Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1VmW2DotcDND9wellVfXGN",
+    "url": "https://polygonscan.com/address/0xf2F5C13686b79b92dC73F6Bb1D2663329658EC87",
+    "description": "polypup-bone strategy",
+    "added_at": "2022-05-10T15:43:43.176Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4kODRyM2kJd1DQ7HCD7QwK",
+    "url": "https://polygonscan.com/address/0x8Fa291074B9E28055fFdBCd4C1C1Dad67B9a130A",
+    "description": "polypup-bone vault",
+    "added_at": "2022-05-10T15:43:44.159Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "7hEJPsOPLOt63ClXC2QsiC",
+    "url": "https://polygonscan.com/address/0xE44D57D43478e50a7CE720a407Dc43fec9ADB584",
+    "description": "polypup-pup strategy",
+    "added_at": "2022-05-10T15:43:45.189Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "xDyAu0rrFrwxLZbrnjd3m",
+    "url": "https://polygonscan.com/address/0xBe1C35d3349555Ba9eEa38AB1A21a6Db0Bb0fCdD",
+    "description": "polypup-pup vault",
+    "added_at": "2022-05-10T15:43:46.196Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "tel2FpRUhkH8paJ9D2Ujs",
+    "url": "https://polygonscan.com/address/0x315324Bcd724b8CF01FfE6d04F029328f595e126",
+    "description": "polypup-usdc-bone strategy",
+    "added_at": "2022-05-10T15:43:47.184Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "3jH0qZeU5jRQ9ubhcjuVYl",
+    "url": "https://polygonscan.com/address/0x8Ce906F6f383c31b09B1D2A5f2c9f480b87ceb58",
+    "description": "polypup-usdc-bone vault",
+    "added_at": "2022-05-10T15:43:48.208Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2vfpfW4BVaOonbk72T9zH",
+    "url": "https://polygonscan.com/address/0xF8f071033bfF4100B4b010cE11F95c95950F69b6",
+    "description": "polypup-wmatic-bone strategy",
+    "added_at": "2022-05-10T15:43:49.194Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4cSH2owZEbQoKzWugzdKiz",
+    "url": "https://polygonscan.com/address/0x6C433f102A6b8582a43222e335C73873538161b7",
+    "description": "polypup-wmatic-bone vault",
+    "added_at": "2022-05-10T15:43:50.201Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "47Uv3CFI56cpFKPnp3oKLU",
+    "url": "https://polygonscan.com/address/0x0F5cdA7EaFC6dc0D10a131c9BD946C1F6634F9d0",
+    "description": "polypup-usdc-pup strategy",
+    "added_at": "2022-05-10T15:43:51.177Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2nZfLTlxcwQ1K5pGxKvO9z",
+    "url": "https://polygonscan.com/address/0xB1893a79fcCe73aEfc878e5AC918698Ee0110444",
+    "description": "polypup-usdc-pup vault",
+    "added_at": "2022-05-10T15:43:52.330Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2Jgwbr0kqK1pk88wvqnGVy",
+    "url": "https://polygonscan.com/address/0x1Fb8021FcAB1b54B3f2C6D9D8562DC16CF1fAe21",
+    "description": "polypup-wmatic-pup strategy",
+    "added_at": "2022-05-10T15:43:53.311Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2EDJ7GprEONZClm6CmqJ0f",
+    "url": "https://polygonscan.com/address/0x37884333d34eeE3EAe83439CE4608E69E7081116",
+    "description": "polypup-wmatic-pup vault",
+    "added_at": "2022-05-10T15:43:54.326Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "5CoYy7SSSK8CVTSDClLbKj",
+    "url": "https://polygonscan.com/address/0xB63e910A2DcD6362f7F631542a700C3139b6185a",
+    "description": "ape-matic-usdt strategy",
+    "added_at": "2022-05-10T15:43:55.327Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "36EqqdpKeFDuicu9IOOyaM",
+    "url": "https://polygonscan.com/address/0x1BE356364a1e849af2F7a513Fc46dAB6063Db485",
+    "description": "ape-matic-usdt vault",
+    "added_at": "2022-05-10T15:43:56.486Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "6pcr9zRm7ui3CDZZXDS2ht",
+    "url": "https://polygonscan.com/address/0x0603141F2D39264BCE263a2107fA2045cC435b47",
+    "description": "ape-matic-dai strategy",
+    "added_at": "2022-05-10T15:43:57.499Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1UJB2tmnqVOmNpHBKtvxq4",
+    "url": "https://polygonscan.com/address/0x584611DA226b4d4C0c4D880E6f1E0c0E8522f3AE",
+    "description": "ape-matic-dai vault",
+    "added_at": "2022-05-10T15:43:58.580Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1xK8GpkAb1P2jgQNzVigTb",
+    "url": "https://polygonscan.com/address/0xa7377CDb25BfA2889B6e4c9463Cd0858A57aB315",
+    "description": "quick-eth-ramp strategy",
+    "added_at": "2022-05-10T15:43:59.657Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "73xopBjOonQFxivQAbJWzI",
+    "url": "https://polygonscan.com/address/0x94242E121F056FA7F0892452e6a17678124981c1",
+    "description": "quick-eth-ramp vault",
+    "added_at": "2022-05-10T15:44:00.689Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "66jiPBAmiW6F9Xbi4i6YN8",
+    "url": "https://polygonscan.com/address/0x4F0b982A75C49E3652d98a2d00BC84CCa7532AfF",
+    "description": "quick-usdc-rusd strategy",
+    "added_at": "2022-05-10T15:44:01.701Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "19ImJbx3mo4QeNtxnvDBiv",
+    "url": "https://polygonscan.com/address/0x2b17aD11c5e9553c79a18F33Df4dE565eF0ad5b0",
+    "description": "quick-usdc-rusd vault",
+    "added_at": "2022-05-10T15:44:02.702Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "43eFKy1i5WPjeFYq64wvuw",
+    "url": "https://polygonscan.com/address/0xA82b0a53Dc044C7B885D32FA4EEaA4FeD7528773",
+    "description": "polyyeld-ape-wmatic-yeld strategy",
+    "added_at": "2022-05-10T15:44:03.716Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "6ltFzCwPs4iukW7ZMq7HIF",
+    "url": "https://polygonscan.com/address/0xd73AEF83c08264C5600C3a17f009B6f8c0226221",
+    "description": "polyyeld-ape-wmatic-yeld vault",
+    "added_at": "2022-05-10T15:44:04.744Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "16zFMUGf4931edEIJlHVuH",
+    "url": "https://polygonscan.com/address/0x46FfF3f004afeE180CF96cCa92560a94A696044B",
+    "description": "sushi-wbtc-ibbtc strategy",
+    "added_at": "2022-05-10T15:44:05.810Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1zz6i88PMUe9V3mLqZIuWk",
+    "url": "https://polygonscan.com/address/0xD35B3733c2ceaf3635bE246B2c6C42f10e5b6B78",
+    "description": "sushi-wbtc-ibbtc vault",
+    "added_at": "2022-05-10T15:44:06.925Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "7shu6ZKQzrNYx0XJxp9tpj",
+    "url": "https://polygonscan.com/address/0xebcAD445f52231887c493995F4413A57c09f5f00",
+    "description": "ape-eth-matic strategy",
+    "added_at": "2022-05-10T15:44:07.954Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "v7vobLsL6fSnf6WuWy74k",
+    "url": "https://polygonscan.com/address/0xc24Cf5fA29E619f2D5ccbEC46F2295876c3722ff",
+    "description": "ape-eth-matic vault",
+    "added_at": "2022-05-10T15:44:09.044Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1Vi0ljaZgbz8vJIqUcySke",
+    "url": "https://polygonscan.com/address/0xE81436bdf7162e46cac9D58CfAC5ec31e9475446",
+    "description": "ape-btc-matic strategy",
+    "added_at": "2022-05-10T15:44:10.239Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2Dt6SFlw78DotaZXn2MTiW",
+    "url": "https://polygonscan.com/address/0x76F0e4a08c1e85d020dfD7C66B991ecd4A7551AF",
+    "description": "ape-btc-matic vault",
+    "added_at": "2022-05-10T15:44:11.732Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "5ElYYrIULQgZ8eOcTTkffS",
+    "url": "https://polygonscan.com/address/0x35D578CBeFf8F7A4e1c3Beed0D8CC42D71A08A27",
+    "description": "ape-bnb-matic strategy",
+    "added_at": "2022-05-10T15:44:12.734Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "5cPsANzp2xktLz0Xi78r4G",
+    "url": "https://polygonscan.com/address/0x6888f67662d1f442C4428129e0Bdb27a275e0a65",
+    "description": "ape-bnb-matic vault",
+    "added_at": "2022-05-10T15:44:13.730Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "ZI01HCawZnXyQK3FlRSVK",
+    "url": "https://polygonscan.com/address/0x453054B9C2CD3dF1c57E0866241f460B78eE3ebB",
+    "description": "ape-banana-matic strategy",
+    "added_at": "2022-05-10T15:44:14.903Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "3Q9TG0oy5tPRlVYd0kLbRj",
+    "url": "https://polygonscan.com/address/0xADA7F98fb2594E76914EB593e74B348A498Ea5Bd",
+    "description": "ape-banana-matic vault",
+    "added_at": "2022-05-10T15:44:15.907Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1scP9VKcpv5D3UTLwRX1TI",
+    "url": "https://polygonscan.com/address/0x966fC9Ee8500b470C653c339c8fa0a68520CC3ea",
+    "description": "polyyeld-sushi-wmatic-yeld strategy",
+    "added_at": "2022-05-10T15:44:17.304Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2PxPiM5ucJHNYX5YSBtsH9",
+    "url": "https://polygonscan.com/address/0x0Ca850eEfE051ED244846A2939e218ec6D44a0b2",
+    "description": "polyyeld-sushi-wmatic-yeld vault",
+    "added_at": "2022-05-10T15:44:18.329Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4NFPzAfSrt7qYDh59thPw",
+    "url": "https://polygonscan.com/address/0x7593747a19a50451bBe6E0f1D427D4F80796f684",
+    "description": "polyyeld-quick-usdc-yeld strategy",
+    "added_at": "2022-05-10T15:44:19.336Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4r7rcH7TD7jHXQWYuPmLjW",
+    "url": "https://polygonscan.com/address/0x9a8390F3F74E7f367B5f948dd04495B67a54a5F4",
+    "description": "polyyeld-quick-usdc-yeld vault",
+    "added_at": "2022-05-10T15:44:20.371Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "3valDEYsjpch5z2i5TYgHn",
+    "url": "https://polygonscan.com/address/0x703372131e77aE0c69B51e41A901315087A314D2",
+    "description": "sushi-usdc-bifi strategy",
+    "added_at": "2022-05-10T15:44:21.424Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "12DsxsmxMcFnH6QX6FvUsJ",
+    "url": "https://polygonscan.com/address/0x03F69AAF4c8512f533Da46cC9eFd49C4969e3CB8",
+    "description": "sushi-usdc-bifi vault",
+    "added_at": "2022-05-10T15:44:22.416Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4N9BNp2zOgVDJEhB62sCR6",
+    "url": "https://polygonscan.com/address/0x1a09FD524D6a7c99903648Bfa8535D43B4F215c2",
+    "description": "quick-pbnb-quick strategy",
+    "added_at": "2022-05-10T15:44:23.413Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "417R4X3qLbY4O5g1EqwcZy",
+    "url": "https://polygonscan.com/address/0x1A90Ea15e00a6c647478e86e3A3DB1aC1eB23cE5",
+    "description": "quick-pbnb-quick vault",
+    "added_at": "2022-05-10T15:44:24.452Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "3eYWvAiaRV34SoQbpcADuf",
+    "url": "https://polygonscan.com/address/0x47c1772E850F627Bf41f52e44219d9bDab66D963",
+    "description": "quick-usdc-pbnb strategy",
+    "added_at": "2022-05-10T15:44:25.481Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "68yqVUNrm3Lbx2g1erTBe8",
+    "url": "https://polygonscan.com/address/0x61f55dc5243398D57acd5d6265e228da65C4Cb52",
+    "description": "quick-usdc-pbnb vault",
+    "added_at": "2022-05-10T15:44:26.508Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4XMqwLSlWoDGBTNhcToAaX",
+    "url": "https://polygonscan.com/address/0x4ee0f311b55Dd983FBe82A0EEEa06429726Da932",
+    "description": "quick-dai-usdt strategy",
+    "added_at": "2022-05-10T15:44:27.521Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "7e8n60QqJXJ8fcGp0eheIN",
+    "url": "https://polygonscan.com/address/0x8F1F1FB23A208041e1f4Bf4A3b4E165bcCA25Bbb",
+    "description": "quick-dai-usdt vault",
+    "added_at": "2022-05-10T15:44:28.507Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "3Ic0xeCvEm6aZqDocPDWgc",
+    "url": "https://polygonscan.com/address/0x401Fa12777e303CBbFa0Ce8c95014d3CA1ee02c0",
+    "description": "quick-eth-fff strategy",
+    "added_at": "2022-05-10T15:44:29.664Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2qKT7IlIR3WOZjjByuqQGh",
+    "url": "https://polygonscan.com/address/0xa5b0E0f38BC86723a9893B828a4B9595ecb22F42",
+    "description": "quick-eth-fff vault",
+    "added_at": "2022-05-10T15:44:30.678Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "7DMJhzPBoZcQtlL5O2SH1B",
+    "url": "https://polygonscan.com/address/0xaf9DD4c1d755402868fFE2A0B7C0E8a6664a0f2F",
+    "description": "wexpoly-wbtc-usdc strategy",
+    "added_at": "2022-05-10T15:44:31.693Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1J9Bwfib7Yg9DPna3k9PeE",
+    "url": "https://polygonscan.com/address/0x5c7fd860fC0072cFef2Cc4aB17CC7fF25B639d8b",
+    "description": "wexpoly-wbtc-usdc vault",
+    "added_at": "2022-05-10T15:44:32.980Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1XEMjSoAFrs3KNH1cqW7YO",
+    "url": "https://polygonscan.com/address/0x8E82b1A03698d0597D3414F6CC5C57005480DEf4",
+    "description": "wexpoly-wbtc-eth strategy",
+    "added_at": "2022-05-10T15:44:33.971Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1XWWzMmKjMMkGUv8ltEnrL",
+    "url": "https://polygonscan.com/address/0x75A59e8d6611e90e7A8e439Cb59D9f78e738d16F",
+    "description": "wexpoly-wbtc-eth vault",
+    "added_at": "2022-05-10T15:44:35.027Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4MibqbXKuqvYTCWTYdHNtC",
+    "url": "https://polygonscan.com/address/0xE91262c6Cf7B28948EF6f8a6B554758791c31340",
+    "description": "wexpoly-matic-eth strategy",
+    "added_at": "2022-05-10T15:44:36.175Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4CxrIPpH77kqWFZ7Rf9gCz",
+    "url": "https://polygonscan.com/address/0xCB171DF46CA6FF7AfEF6c4935128204435E4F05C",
+    "description": "wexpoly-matic-eth vault",
+    "added_at": "2022-05-10T15:44:37.258Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "6B3qB7RqfOlkigNFL68h5w",
+    "url": "https://polygonscan.com/address/0xC0F43f3d242fEDd9FD82e5a5856E577d908a083A",
+    "description": "wexpoly-polydoge-matic strategy",
+    "added_at": "2022-05-10T15:44:38.272Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "AcV0gNJWFFNtZjBlFvy0W",
+    "url": "https://polygonscan.com/address/0xdf4E615e05713f9Be712bb999B3190Fd238bb77A",
+    "description": "wexpoly-polydoge-matic vault",
+    "added_at": "2022-05-10T15:44:39.372Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "3yltx4Jj4XCdv6v8qWBXxS",
+    "url": "https://polygonscan.com/address/0x156463c7a644726994b658B5164edA0B6D68544E",
+    "description": "wexpoly-snx-eth strategy",
+    "added_at": "2022-05-10T15:44:40.551Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4v1hURwpKWWNWBOFX6HeLf",
+    "url": "https://polygonscan.com/address/0xf7e1226F6f98D1981e88Da328347F0E2131A2864",
+    "description": "wexpoly-snx-eth vault",
+    "added_at": "2022-05-10T15:44:42.338Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4ttzv13hbv53efAjRSpLG",
+    "url": "https://polygonscan.com/address/0x038A80FA19191FF6A1788cEb6f503FB0FDf83aE8",
+    "description": "wexpoly-link-eth strategy",
+    "added_at": "2022-05-10T15:44:43.370Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4soQewZT7OgblXddZb7S9Y",
+    "url": "https://polygonscan.com/address/0x23Ee6ED971ae7731F53913D9f8a45C7C1af3D6D5",
+    "description": "wexpoly-link-eth vault",
+    "added_at": "2022-05-10T15:44:44.375Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "5ZHHUzYHvxv80mTeiBjvTa",
+    "url": "https://polygonscan.com/address/0x038A80FA19191FF6A1788cEb6f503FB0FDf83aE8",
+    "description": "wexpoly-aave-eth strategy",
+    "added_at": "2022-05-10T15:44:45.417Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "5UMKD2E46rRQ3hi7KP0lKw",
+    "url": "https://polygonscan.com/address/0x23Ee6ED971ae7731F53913D9f8a45C7C1af3D6D5",
+    "description": "wexpoly-aave-eth vault",
+    "added_at": "2022-05-10T15:44:46.421Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1dxfmX0mIO8eXbTvRuNd8E",
+    "url": "https://polygonscan.com/address/0x23679B038eb6f090f9b0f121A1F29b7cA3993F77",
+    "description": "wexpoly-dai-eth strategy",
+    "added_at": "2022-05-10T15:44:47.490Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "z5ebugKRM97QORthlSPZh",
+    "url": "https://polygonscan.com/address/0xc4cC677bb8b7E6EEA6409Ee2af9F434BAB004192",
+    "description": "wexpoly-dai-eth vault",
+    "added_at": "2022-05-10T15:44:49.223Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2R94c7HBXELEAt8DshpeY8",
+    "url": "https://polygonscan.com/address/0x1C5e120604537B44B635f9c932A26Abf7bb97E4E",
+    "description": "wexpoly-usdc-dai strategy",
+    "added_at": "2022-05-10T15:44:50.313Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "5b1PDdxc83z875eXKBh3uZ",
+    "url": "https://polygonscan.com/address/0x3a3a9784Af130d692E19A3f1C1b13eF44301D0f7",
+    "description": "wexpoly-usdc-dai vault",
+    "added_at": "2022-05-10T15:44:51.335Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "5C63AlEs2EkDz3e1bAavYB",
+    "url": "https://polygonscan.com/address/0x107711a7f61c2867B72E0Dd926755dDeEe75F9f0",
+    "description": "wexpoly-matic-usdc strategy",
+    "added_at": "2022-05-10T15:44:52.794Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4Po1hzD57Ur1tXU1HqU30e",
+    "url": "https://polygonscan.com/address/0x5E7156F7c0B5E2005000C38beb38540ba9c283df",
+    "description": "wexpoly-matic-usdc vault",
+    "added_at": "2022-05-10T15:44:53.840Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "5g627MWwGszLJajG8Mj3ot",
+    "url": "https://polygonscan.com/address/0xea025B73A536F876d63022629B1d4a2271556056",
+    "description": "quick-usdc-mimatic strategy",
+    "added_at": "2022-05-10T15:44:54.809Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4XXxv0I2deidNCtG9xWzDz",
+    "url": "https://polygonscan.com/address/0xeCBb84E73760d0E22BDBeE79490c691386B5008F",
+    "description": "quick-usdc-mimatic vault",
+    "added_at": "2022-05-10T15:44:55.828Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "5GFlBvYlX4rBDsaDqHN218",
+    "url": "https://polygonscan.com/address/0x9ED77C14DE83a24c9E1Ca97472a22a86d90EEA0c",
+    "description": "quick-usdc-mimatic strategy",
+    "added_at": "2022-05-10T15:44:56.910Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "6y3f5691ra4CGpAL2jHUL3",
+    "url": "https://polygonscan.com/address/0x0B7FEA4506006f1bA0718585cFAb638424A86d94",
+    "description": "wexpoly-usdc-usdt strategy",
+    "added_at": "2022-05-10T15:44:57.920Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1GPrW8U0kG57xijlytejmg",
+    "url": "https://polygonscan.com/address/0x58C55B5675B106b440635E2c550A771f4E256D35",
+    "description": "wexpoly-usdc-usdt vault",
+    "added_at": "2022-05-10T15:44:59.083Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "un35KurPJDHfCJuTC9lbC",
+    "url": "https://polygonscan.com/address/0x6a440102015bf4D81D56fBc2fd4F27797D183931",
+    "description": "wexpoly-wex-usdc strategy",
+    "added_at": "2022-05-10T15:45:00.112Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "FSUF7Ff22jl5ynKj4p90m",
+    "url": "https://polygonscan.com/address/0xe3B5a0d5dFDCD6dE7e22a5c2B6b957aB76d2A085",
+    "description": "wexpoly-wex-usdc vault",
+    "added_at": "2022-05-10T15:45:01.130Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "6P9rIFyUy7UTxypHAVErbl",
+    "url": "https://polygonscan.com/address/0xcb6e386Ad643a6D77C940BF69303cEBD34c04757",
+    "description": "wexpoly-wex strategy",
+    "added_at": "2022-05-10T15:45:02.152Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "6BP2937L4iWtL6gNx9k8B",
+    "url": "https://polygonscan.com/address/0xcb6e386Ad643a6D77C940BF69303cEBD34c04757",
+    "description": "wexpoly-wex vault",
+    "added_at": "2022-05-10T15:45:03.275Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1tx6eH41Xd5c00hOQQi7z3",
+    "url": "https://polygonscan.com/address/0x0D62f1b1BF511E155e357184dcfC1e8D54B41a5f",
+    "description": "wexpoly-wex-matic strategy",
+    "added_at": "2022-05-10T15:45:04.295Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "43hzg50eahvV7KGDaCWAk",
+    "url": "https://polygonscan.com/address/0xe09888EEab19bce85e67eDC59521F3f290B1BCcE",
+    "description": "wexpoly-wex-matic vault",
+    "added_at": "2022-05-10T15:45:05.468Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "6Z2QGHCnIou0iVILizYIEs",
+    "url": "https://polygonscan.com/address/0xb15B8E50b79b4D6723DC297aD6313B9Dc3c51Db3",
+    "description": "wexpoly-bifi-matic strategy",
+    "added_at": "2022-05-10T15:45:06.438Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "7iEZ0etj6sGx1MBw1b6RbU",
+    "url": "https://polygonscan.com/address/0x247303D4Be227Aa87Bd52F05aDDAD772794DE394",
+    "description": "wexpoly-bifi-matic vault",
+    "added_at": "2022-05-10T15:45:07.504Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "3QxbIaR7GLDIXeiFVn2ytX",
+    "url": "https://polygonscan.com/address/0x12B5EC1cFa07732540F3d9D4eCF040328bc1EEdC",
+    "description": "sushi-eth-wfil strategy",
+    "added_at": "2022-05-10T15:45:08.515Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2CGDGaVlxVCUsbWXlNNZqU",
+    "url": "https://polygonscan.com/address/0xA4fB94990f99A8C1290e83d40DB9C648fD868D14",
+    "description": "sushi-eth-wfil vault",
+    "added_at": "2022-05-10T15:45:09.486Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "IhQiH5tqoJPDerzS3CO1C",
+    "url": "https://polygonscan.com/address/0x197c055e30c2e882A1BE6822480c688100658BEd",
+    "description": "quick-usdc-dai strategy",
+    "added_at": "2022-05-10T15:45:10.521Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "35hKO0MDZTynQ1KYXCL7oN",
+    "url": "https://polygonscan.com/address/0x0dFd8c4dd493d8f87Be362878E41537Ca7Ee4d9e",
+    "description": "quick-usdc-dai vault",
+    "added_at": "2022-05-10T15:45:12.007Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4MVxXqGm8c7UJgzhn5vgC1",
+    "url": "https://polygonscan.com/address/0x4b0e4CDEA00C90F786bd817751159f46EA38A58D",
+    "description": "quick-quick-uni strategy",
+    "added_at": "2022-05-10T15:45:13.049Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2wCzRb5K2Q9i36NzYU323a",
+    "url": "https://polygonscan.com/address/0xaF34573353aBd160889889D52d7841B2bBCE7Cf9",
+    "description": "quick-quick-uni vault",
+    "added_at": "2022-05-10T15:45:14.216Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "M7jQ9hINnCASMN5Uz9L31",
+    "url": "https://polygonscan.com/address/0xD208C42cd08a5CaD8C53add2365153e8e24EbdF9",
+    "description": "quick-link-quick strategy",
+    "added_at": "2022-05-10T15:45:15.229Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "7oZtlT9akCxfLtpoaLRsZh",
+    "url": "https://polygonscan.com/address/0xdD32ca42a5bab4073D319BC26bb4e951e767Ba6E",
+    "description": "quick-link-quick vault",
+    "added_at": "2022-05-10T15:45:16.268Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "3TuLwYdkXobdwx5Islwi2R",
+    "url": "https://polygonscan.com/address/0x53F816063523D9883C83863CbD5D8EAF9Ffc4641",
+    "description": "polycat-fish strategy",
+    "added_at": "2022-05-10T15:45:17.304Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "DdgxXmYLRHTFx5FMtA3o0",
+    "url": "https://polygonscan.com/address/0xcC16BbE4987920a17F5C4a92C1Ab4dbDfB0B9790",
+    "description": "polycat-fish vault",
+    "added_at": "2022-05-10T15:45:18.332Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "xiVfPqvH43eCIx67488lV",
+    "url": "https://polygonscan.com/address/0x2F6Ebc03469De09FE6D933e4FA56772dF400BfA6",
+    "description": "quick-usdc-eth strategy",
+    "added_at": "2022-05-10T15:45:19.309Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "74tNLzxugrOkNOMKfDjRGF",
+    "url": "https://polygonscan.com/address/0x5d4B83B3011B1E14e55185c5D432987e76f6DE3C",
+    "description": "quick-usdc-eth vault",
+    "added_at": "2022-05-10T15:45:20.297Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "6KGRzpbziQy8poLVrGXqOi",
+    "url": "https://polygonscan.com/address/0x9B14a16609b0Bf5DA858115b4537e2CD01B3133C",
+    "description": "quick-dai-eth strategy",
+    "added_at": "2022-05-10T15:45:21.338Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4aBZ980SBlFsIxj1kgoJ7w",
+    "url": "https://polygonscan.com/address/0x9DA4048550C1a73686E594f726310F0b0585fBA3",
+    "description": "quick-dai-eth vault",
+    "added_at": "2022-05-10T15:45:22.965Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "VLvy6HR8Z8zxWno0UTtSe",
+    "url": "https://polygonscan.com/address/0x4E0e85692b239e57128103b4Ad6f39Ac3BBE0c15",
+    "description": "quick-fff-quick strategy",
+    "added_at": "2022-05-10T15:45:24.048Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4JhJ5Mi2CKWlXwKY3UzM4W",
+    "url": "https://polygonscan.com/address/0x2D4cf116A59e24Dd0aB8821c93AE87658a9483b6",
+    "description": "quick-fff-quick vault",
+    "added_at": "2022-05-10T15:45:25.003Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4C5eb5hzBFXeWLOccFmJIz",
+    "url": "https://polygonscan.com/address/0x3777a06B71B2Aaf105e855693C56768117712B6F",
+    "description": "aave-wbtc strategy",
+    "added_at": "2022-05-10T15:45:25.993Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4dYB7jclnADq2YBsCVSKB",
+    "url": "https://polygonscan.com/address/0xD3395577febc6AdaB25490a69955ebC47040766C",
+    "description": "aave-wbtc vault",
+    "added_at": "2022-05-10T15:45:27.065Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "5QAfeF8jwAFCHO8CyDe6Jw",
+    "url": "https://polygonscan.com/address/0x55a10618c7E9489ceE047705cD003df6d9e09195",
+    "description": "aave-eth strategy",
+    "added_at": "2022-05-10T15:45:28.113Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "SRg1QK7BxEXlDMdoQc6Wb",
+    "url": "https://polygonscan.com/address/0x77276a7c9Ff3a6cbD334524d6F1f6219D039ac0E",
+    "description": "aave-eth vault",
+    "added_at": "2022-05-10T15:45:29.193Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4JXbqXJnWHWT2TB0mqjpJt",
+    "url": "https://polygonscan.com/address/0x2ABB0ea3A5C038f60E677Bf14d2F6095786650Ae",
+    "description": "polycat-sushi-fish-matic strategy",
+    "added_at": "2022-05-10T15:45:30.174Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4RJIpy5rVdm6CN4tf315Gx",
+    "url": "https://polygonscan.com/address/0xefA8E30cE4cc433cEA1B3b6006D69731A4FBd485",
+    "description": "polycat-sushi-fish-matic vault",
+    "added_at": "2022-05-10T15:45:31.184Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1TZdVTLCRAqJM74x8IpNY2",
+    "url": "https://polygonscan.com/address/0x92E586d7dB14483C103c2e0FE6A596F8b55DA752",
+    "description": "polycat-quick-fish-matic strategy",
+    "added_at": "2022-05-10T15:45:32.215Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "5tWQ0TjvJS2l1lj0YtZVte",
+    "url": "https://polygonscan.com/address/0x7eE71053102d54Fc843BaEBaf07277C2b6dB64f1",
+    "description": "polycat-quick-fish-matic vault",
+    "added_at": "2022-05-10T15:45:33.484Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "6CoGF4lyIIipXUq9ZsVJcb",
+    "url": "https://polygonscan.com/address/0x441b8Ad6Cfa6707E7A8F1398c2067996611fbc66",
+    "description": "sushi-grt-eth strategy",
+    "added_at": "2022-05-10T15:45:34.481Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1XD038MZ6ax8lF2JDUIzNs",
+    "url": "https://polygonscan.com/address/0x8efCf419813F9E018cCaCda36151e5079c274fa4",
+    "description": "sushi-grt-eth vault",
+    "added_at": "2022-05-10T15:45:35.510Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "3dxjl3iLtrwwWTa2tmpGUN",
+    "url": "https://polygonscan.com/address/0x3bb6D727622A35816916C3e04920ADd7800BAB0E",
+    "description": "sushi-frax-fxs strategy",
+    "added_at": "2022-05-10T15:45:36.506Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1TKNeN9tzuL6KtOIntIckB",
+    "url": "https://polygonscan.com/address/0xddD5F39d044Dbaeef7b348cf04C3628acd3F1D8f",
+    "description": "sushi-frax-fxs vault",
+    "added_at": "2022-05-10T15:45:37.537Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "7thjViKjUrQ6IXUhEghuD3",
+    "url": "https://polygonscan.com/address/0xE4cd42e17bbc54455c5855eCF4Bd46D51dA5133C",
+    "description": "sushi-frax-usdc strategy",
+    "added_at": "2022-05-10T15:45:38.557Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4FttmfKASumOSE5P3dNAIG",
+    "url": "https://polygonscan.com/address/0x5B19A2e8E5878cF2b1E9b1AC7CEA50346671B2Fc",
+    "description": "sushi-frax-usdc vault",
+    "added_at": "2022-05-10T15:45:39.744Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1Vi2CkhmYpQ67NIPbogGxb",
+    "url": "https://polygonscan.com/address/0x7fB420eB7D5B19131f40E8D0422202cF0B46d458",
+    "description": "sushi-wmatic-woofy strategy",
+    "added_at": "2022-05-10T15:45:40.809Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2xYzlkJjBt2WjpG1as2SX6",
+    "url": "https://polygonscan.com/address/0x544551E4E7D7bDd1CfbD55F07e304F5C9fD514Dd",
+    "description": "sushi-wmatic-woofy vault",
+    "added_at": "2022-05-10T15:45:41.970Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "7EjFhCaMefjTVv81j16hHF",
+    "url": "https://polygonscan.com/address/0xeb38761E6b58Bb9acB4F52077d9eEbFf7D0248Bd",
+    "description": "sushi-usdc-dai strategy",
+    "added_at": "2022-05-10T15:45:43.135Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2GkfjdAF0yn8Q6zD9w2GEw",
+    "url": "https://polygonscan.com/address/0x75424BE5378621AeC2eEF25965f40FeB59039B52",
+    "description": "sushi-usdc-dai vault",
+    "added_at": "2022-05-10T15:45:44.414Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "64cV4XVYgM2Ky4CRbt6BfX",
+    "url": "https://polygonscan.com/address/0x98F332EC4D39fB943080813B381b88D57b432124",
+    "description": "sushi-snx-eth strategy",
+    "added_at": "2022-05-10T15:45:45.499Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "7e3bdWli83sbRuN0c7SRsd",
+    "url": "https://polygonscan.com/address/0x3AD9cd8d75f7a711Caea58e725425A9dC0D249c4",
+    "description": "sushi-snx-eth vault",
+    "added_at": "2022-05-10T15:45:46.729Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2vrqmPBuNrkjLtQaOYrlGU",
+    "url": "https://polygonscan.com/address/0xa425DeadFf443f3574F02585CE5154BBd5D14213",
+    "description": "quick-bifi-eth strategy",
+    "added_at": "2022-05-10T15:45:47.852Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "15QkWiwAdGmemWhEBvurcJ",
+    "url": "https://polygonscan.com/address/0x21bA98fCb000dFeD8eC3B94cB41BeA51A601A94c",
+    "description": "quick-bifi-eth vault",
+    "added_at": "2022-05-10T15:45:48.845Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "3w8GOi0d4OvexUL5adWBTq",
+    "url": "https://polygonscan.com/address/0xA9319b8F327dBB744c63e6b9FfaDf9A93C30687c",
+    "description": "quick-bifi-quick strategy",
+    "added_at": "2022-05-10T15:45:49.865Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "3sNsXU1aZnxQQNyFLUHLIw",
+    "url": "https://polygonscan.com/address/0xCC2755476B0573F0ee0D5a754Bb6fE720c3641Bb",
+    "description": "quick-bifi-quick vault",
+    "added_at": "2022-05-10T15:45:50.835Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "54VAfsTgyJvMEYK34M0Fni",
+    "url": "https://polygonscan.com/address/0x658F5577b5a161A4aC2F0bb513af49ece812f077",
+    "description": "quick-degen-quick strategy",
+    "added_at": "2022-05-10T15:45:51.881Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "65W0jadyv60DDXqt6vYF44",
+    "url": "https://polygonscan.com/address/0xe942A8Ef245EAC3CEa951486e3Df5764C79b9621",
+    "description": "quick-degen-quick vault",
+    "added_at": "2022-05-10T15:45:52.849Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4fywIRJpltL5J3eFKJBWGx",
+    "url": "https://polygonscan.com/address/0x05b6e52227985C401eDd5d1635DcEa204857a81d",
+    "description": "quick-cc10-quick strategy",
+    "added_at": "2022-05-10T15:45:53.839Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "24LNguMuntLpun4zttP7HT",
+    "url": "https://polygonscan.com/address/0x226a18Fb5eb7d9d1c4Eb1b5Cff957E0F1e3fd9Ed",
+    "description": "quick-cc10-quick vault",
+    "added_at": "2022-05-10T15:45:54.853Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "55RcB4k5alBgfOJ9Nbgm14",
+    "url": "https://polygonscan.com/address/0x1848FBA9Ac7B4783F513d336171037941a637c55",
+    "description": "quick-defi5-quick strategy",
+    "added_at": "2022-05-10T15:45:55.881Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "iL3PIUjLHbWT3hT1a6Es5",
+    "url": "https://polygonscan.com/address/0x191E0b3B023fd8911c1D7632086A46C0D2dB39ed",
+    "description": "quick-defi5-quick vault",
+    "added_at": "2022-05-10T15:45:56.914Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2B34sYAPpEkhxdabe2Tc2I",
+    "url": "https://polygonscan.com/address/0x15b0A1c6463261Ef4941b9212F09d54f2CD51899",
+    "description": "quick-btc-usdc strategy",
+    "added_at": "2022-05-10T15:45:57.941Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "5KTwi2BDQ9xiS6EoKb6ipc",
+    "url": "https://polygonscan.com/address/0x91a55E4b057119e20334258f7C5EAB8822491CEb",
+    "description": "quick-btc-usdc vault",
+    "added_at": "2022-05-10T15:45:58.993Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "6CSHVfhOMY8LQ7RK5gyjYp",
+    "url": "https://polygonscan.com/address/0x75bC3FC2Cd3756f0dC7dc5211CE44fAcDd9B005E",
+    "description": "quick-matic-usdc strategy",
+    "added_at": "2022-05-10T15:46:00.020Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "569BjyqAIhf871YpuhO9pw",
+    "url": "https://polygonscan.com/address/0xC1A2e8274D390b67A7136708203D71BF3877f158",
+    "description": "quick-matic-usdc vault",
+    "added_at": "2022-05-10T15:46:01.154Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "JSifkU161IGilQOgqKZnl",
+    "url": "https://polygonscan.com/address/0xB682a2F1e6C87819e9aDEdBe366548B59Ab122E8",
+    "description": "quick-vision-eth strategy",
+    "added_at": "2022-05-10T15:46:02.229Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2V0cbBFTZ9yh6uAmQ2KWlH",
+    "url": "https://polygonscan.com/address/0xAbA81D550C326DFf2cE0D31bC7Aa6289d576591E",
+    "description": "quick-vision-eth vault",
+    "added_at": "2022-05-10T15:46:03.284Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2F6oTkgR1Bim76zLqWb3To",
+    "url": "https://polygonscan.com/address/0x748f243931b841F2C4d6f298abB85d7A23FE7c2a",
+    "description": "curve-am3crv strategy",
+    "added_at": "2022-05-10T15:46:04.243Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "7MNK1QDRy2iifJ0qeP9oke",
+    "url": "https://polygonscan.com/address/0xAA7C2879DaF8034722A0977f13c343aF0883E92e",
+    "description": "curve-am3crv vault",
+    "added_at": "2022-05-10T15:46:05.616Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "3h9KsNuJWOLIg4c9cPMkcU",
+    "url": "https://polygonscan.com/address/0xaEaF5294Cc6FAcB023c0999A0b1786C4C0b3d520",
+    "description": "quick-degen-eth strategy",
+    "added_at": "2022-05-10T15:46:06.803Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4hSoJvgMJaCszw5oyor82r",
+    "url": "https://polygonscan.com/address/0xF7A5eC9168B4C5688b3ad599Aa5c8E1922fEacAE",
+    "description": "quick-degen-eth vault",
+    "added_at": "2022-05-10T15:46:08.552Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "5mQXAaSaYwNzhXSsMxORI3",
+    "url": "https://polygonscan.com/address/0x9e6d524b000066e60284E2Ee14437d071B6b498F",
+    "description": "quick-cc10-eth strategy",
+    "added_at": "2022-05-10T15:46:09.555Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "YfjkOhxtzw3hgsTEx2JX7",
+    "url": "https://polygonscan.com/address/0x6F6bbbCA49b4b2cE0E27eb0156977048AC3434B9",
+    "description": "quick-cc10-eth vault",
+    "added_at": "2022-05-10T15:46:10.572Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "5EZ1I3nDum0aAohCBPtOhu",
+    "url": "https://polygonscan.com/address/0x9E75f8298e458B76382870982788988A0799195b",
+    "description": "pzap-pzap-usdc strategy",
+    "added_at": "2022-05-10T15:46:11.632Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "65qDCsHetirtp40tmQEOYh",
+    "url": "https://polygonscan.com/address/0xBA4FA9A5e1e573fA5267970238af5Edf40727315",
+    "description": "pzap-pzap-usdc vault",
+    "added_at": "2022-05-10T15:46:12.731Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "51fIlrTFYjhwMeULL8CcVV",
+    "url": "https://polygonscan.com/address/0x6677c03B2c7Da09dfbD869daeec3ccFd4eCC4B5F",
+    "description": "pzap-pzap-matic strategy",
+    "added_at": "2022-05-10T15:46:13.831Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "5KfuM9eYcSFustzyT40b6w",
+    "url": "https://polygonscan.com/address/0xf2984c27B963A14F9f3B7326096c54fb05d5b9AF",
+    "description": "pzap-pzap-matic vault",
+    "added_at": "2022-05-10T15:46:14.917Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2HaFxgcyHAPfalFqAFDHFK",
+    "url": "https://polygonscan.com/address/0xc7506185DD847346B34e495C3Ffd8F9d34824F5F",
+    "description": "cometh-bifi-eth strategy",
+    "added_at": "2022-05-10T15:46:15.924Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "7zgnitUgly6ff8jnAPhlTR",
+    "url": "https://polygonscan.com/address/0x9649e6E5c689f21BC27B47CE4177f7c5f7281E20",
+    "description": "cometh-bifi-eth vault",
+    "added_at": "2022-05-10T15:46:16.975Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "7x10jKC3iOw8s1Ou6kEKWH",
+    "url": "https://polygonscan.com/address/0xd8d7DB8272C02fcf784a6794b4e51647258c0660",
+    "description": "cometh-bifi-must strategy",
+    "added_at": "2022-05-10T15:46:18.045Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "6ZWD5oqONXGDREQ6emQGen",
+    "url": "https://polygonscan.com/address/0x66b3d910c30f2305EA0078E06DF65e0c1745ceF0",
+    "description": "cometh-bifi-must vault",
+    "added_at": "2022-05-10T15:46:19.044Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2v6lE0JUQ87cWa5C8jYWSb",
+    "url": "https://polygonscan.com/address/0x57FdEB65b71e6aD212088E63E85825e314F2Ea62",
+    "description": "aave-matic strategy",
+    "added_at": "2022-05-10T15:46:20.141Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4L5gluSwz92zsQ670qaswM",
+    "url": "https://polygonscan.com/address/0x1d23ecC0645B07791b7D99349e253ECEbe43f614",
+    "description": "aave-matic vault",
+    "added_at": "2022-05-10T15:46:21.329Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "5fFDehwAE6HQ12DztwNdTc",
+    "url": "https://polygonscan.com/address/0x8F755873546F4D0EDf7d41fF8604C8A632113eB7",
+    "description": "aave-aave strategy",
+    "added_at": "2022-05-10T15:46:22.350Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "19vQN2UiO9NGG9NkXi8SLR",
+    "url": "https://polygonscan.com/address/0xe4b3CCbB1E48c579Ea3D764Fb258Bc908e46487E",
+    "description": "aave-aave vault",
+    "added_at": "2022-05-10T15:46:23.345Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "HK7qmGQryvgogllvAvFnt",
+    "url": "https://polygonscan.com/address/0xb29cCE04365400409d476e95410547275D1F86Cf",
+    "description": "aave-dai strategy",
+    "added_at": "2022-05-10T15:46:24.740Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "3h9dEePelcz2K2gqFQ8Hcb",
+    "url": "https://polygonscan.com/address/0x9B36ECeaC46B70ACfB7C2D6F3FD51aEa87C31018",
+    "description": "aave-dai vault",
+    "added_at": "2022-05-10T15:46:25.817Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "3jUxuwMKTe4NFWbqKIX7dD",
+    "url": "https://polygonscan.com/address/0x4Dcbd7A18d04343aFa534f945ad13E096ebd9Ae1",
+    "description": "aave-usdc strategy",
+    "added_at": "2022-05-10T15:46:27.264Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "5VMJiBRB5OQBkSRPnujrMK",
+    "url": "https://polygonscan.com/address/0xE71f3C11D4535a7F8c5FB03FDA57899B2C9c721F",
+    "description": "aave-usdc vault",
+    "added_at": "2022-05-10T15:46:28.262Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2cKZwXTTLDZNSE2VgNxxhk",
+    "url": "https://polygonscan.com/address/0xCF0354f8dAB741b889e753cCe1656327fe6ce474",
+    "description": "sushi-crv-eth strategy",
+    "added_at": "2022-05-10T15:46:29.286Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "oX76PEipYeuFJ1eFYMwb3",
+    "url": "https://polygonscan.com/address/0xE695fCeD8fD93eeE54204a7fC33323a60d41865A",
+    "description": "sushi-crv-eth vault",
+    "added_at": "2022-05-10T15:46:30.377Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1S55twOAC1b434zrFwna1L",
+    "url": "https://polygonscan.com/address/0x5FCcFcd07D03FfdDa3A560d3af15d2bd7AaeE21d",
+    "description": "sushi-usdc-usdt strategy",
+    "added_at": "2022-05-10T15:46:31.649Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4CKvc0S5w0XnJqere0yKBl",
+    "url": "https://polygonscan.com/address/0xB6B89a05ad8228b98d0D8a77e1a695c54500db3b",
+    "description": "sushi-usdc-usdt vault",
+    "added_at": "2022-05-10T15:46:32.689Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "7b9xY7eeVNApkr9d3WcNYu",
+    "url": "https://polygonscan.com/address/0x0536984a70BE296A35feD83DC8fF5d30338AbeA1",
+    "description": "sushi-link-eth strategy",
+    "added_at": "2022-05-10T15:46:33.748Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "qX63auWCIFF2nEzObXVyJ",
+    "url": "https://polygonscan.com/address/0xaE65a66B3c7f8cc1ba71cEA740C953aBa0F3Ce8b",
+    "description": "sushi-link-eth vault",
+    "added_at": "2022-05-10T15:46:34.801Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "6Tc433usKkcmtMoFTjoVEk",
+    "url": "https://polygonscan.com/address/0xe1B9EB8eAf3F278800AcE13a815DDdc24673F0C6",
+    "description": "quick-mocean-matic strategy",
+    "added_at": "2022-05-10T15:46:35.840Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "6VtK7UXbbVSXesddtonQcq",
+    "url": "https://polygonscan.com/address/0x82303a4b2c821204A84AB2a068eC8EDf3Bc23061",
+    "description": "quick-mocean-matic vault",
+    "added_at": "2022-05-10T15:46:36.838Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "10IN9Kpd3ZPb5qdFJkqNmz",
+    "url": "https://polygonscan.com/address/0x5E70Ad3438Fe87e0ec89CF15a53aFb2caC39cC6C",
+    "description": "quick-any-quick strategy",
+    "added_at": "2022-05-10T15:46:37.870Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "5i9NlN681zTcMYjx8t86dC",
+    "url": "https://polygonscan.com/address/0x2849095eE44eCd5f60Ed04f94e5BB45623A8e75a",
+    "description": "quick-any-quick vault",
+    "added_at": "2022-05-10T15:46:38.906Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "e06JbOQZBugXsyktjZhFw",
+    "url": "https://polygonscan.com/address/0x57b3D28fe4824d42c1F8d2786B89bC89e8c68d66",
+    "description": "quick-frax-quick strategy",
+    "added_at": "2022-05-10T15:46:40.231Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2EP801PxJn25ES7Nhu6C1F",
+    "url": "https://polygonscan.com/address/0x442ca31De7E6732455e60e3641Ac076fa7a0905f",
+    "description": "quick-frax-quick vault",
+    "added_at": "2022-05-10T15:46:41.220Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "72fARTgE7ApuAxShyImqBF",
+    "url": "https://polygonscan.com/address/0x71e2c040F3B9670C693215509A0c0846D221756a",
+    "description": "sushi-aave-eth strategy",
+    "added_at": "2022-05-10T15:46:42.380Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "3IVuq75xpwCEy5pyKT4SVD",
+    "url": "https://polygonscan.com/address/0x866a910F3375d0dEBDdD904A36B3940aFcD29900",
+    "description": "sushi-aave-eth vault",
+    "added_at": "2022-05-10T15:46:43.397Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "5aqztia2y441MeHYusK2ls",
+    "url": "https://polygonscan.com/address/0xB982421883c5c022181b67cBC6b4709A564A6728",
+    "description": "sushi-eth-dai strategy",
+    "added_at": "2022-05-10T15:46:44.447Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4BszJnlAAEqttFmigzw5nR",
+    "url": "https://polygonscan.com/address/0x6b6ca47520dDC9333B8bD09a1e64204648B63274",
+    "description": "sushi-eth-dai vault",
+    "added_at": "2022-05-10T15:46:45.719Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "53dsqotVoNNTH1rbudtfZu",
+    "url": "https://polygonscan.com/address/0x170712B04A24FdBCC021Dd461Afd048c8cF2348d",
+    "description": "sushi-btc-eth strategy",
+    "added_at": "2022-05-10T15:46:46.733Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "6m6uaCitiJ4Xp9f2D6nc1d",
+    "url": "https://polygonscan.com/address/0x6530E351074f1f9fdf254dC7d7d8A44324E158a4",
+    "description": "sushi-btc-eth vault",
+    "added_at": "2022-05-10T15:46:47.727Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "PSU6XuYdigqMAR6zmf746",
+    "url": "https://polygonscan.com/address/0xc4cb1Dc51eAD37fD19d0C24EC6136Dbb639789cA",
+    "description": "sushi-eth-usdt strategy",
+    "added_at": "2022-05-10T15:46:48.804Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4dg76Ru5UVP8E36BVl0AOK",
+    "url": "https://polygonscan.com/address/0xE8417099971151CD5CfAE264e25634Fac05cA2b3",
+    "description": "sushi-eth-usdt vault",
+    "added_at": "2022-05-10T15:46:49.968Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "3aVU0mAM2jxl2uIR17wAV",
+    "url": "https://polygonscan.com/address/0xB4cc236af16e8FBEf8600C2D482901E84AB723c4",
+    "description": "sushi-usdc-eth strategy",
+    "added_at": "2022-05-10T15:46:51.032Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "35u4yHXcPLD6De8gRlodOu",
+    "url": "https://polygonscan.com/address/0xE4DB97A2AAFbfef40D1a4AE8B709f61d6756F8e1",
+    "description": "sushi-usdc-eth vault",
+    "added_at": "2022-05-10T15:46:52.146Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1EBZxzVzgDRoiYsbSO1lZa",
+    "url": "https://polygonscan.com/address/0x8A8E3aBAb418671bdb7A47E45d2Fcd7726e46D74",
+    "description": "sushi-matic-eth strategy",
+    "added_at": "2022-05-10T15:46:53.218Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "cNAE1p7MsqdRmK7frBTyv",
+    "url": "https://polygonscan.com/address/0xC8e809a9180d637Cc23dAf60b41B70CA1ad5Fc08",
+    "description": "sushi-matic-eth vault",
+    "added_at": "2022-05-10T15:46:54.348Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "Zam8cUFi8wpd8XvwyIwdf",
+    "url": "https://polygonscan.com/address/0xa54e6dc91FCb22a24437e8650266BfE9590a2820",
+    "description": "cometh-azuki-eth strategy",
+    "added_at": "2022-05-10T15:46:55.378Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "35Z8xIeclqpuoiGM62agkj",
+    "url": "https://polygonscan.com/address/0xe95d14D09a8F6034C582bd993A2F2aA8ecEC72f0",
+    "description": "cometh-azuki-eth vault",
+    "added_at": "2022-05-10T15:46:56.400Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "36AqpVl7no81dbZt9PZevl",
+    "url": "https://polygonscan.com/address/0xfb7344a4cF25CDe5aaF6415107a8deF769FC200B",
+    "description": "cometh-doki-eth strategy",
+    "added_at": "2022-05-10T15:46:57.500Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "71YlhKFoxlf2fZby4nZBDN",
+    "url": "https://polygonscan.com/address/0x383489a0A5deA3f1499c638e0258F7e6a68a253f",
+    "description": "cometh-doki-eth vault",
+    "added_at": "2022-05-10T15:46:59.073Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2Yzs9VlhJbPkq06HNJf3lJ",
+    "url": "https://polygonscan.com/address/0xdd3E5c7787eB38a362bBF3D395FC9f27924B7317",
+    "description": "quick-usdc-usdt strategy",
+    "added_at": "2022-05-10T15:47:00.244Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2t4XYnU0ZeMA1bQpecrCMv",
+    "url": "https://polygonscan.com/address/0x4462817b53E76b722c2D174D0148ddb81452f1dE",
+    "description": "quick-usdc-usdt vault",
+    "added_at": "2022-05-10T15:47:01.436Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "6Zjgip8ekiYvZN7Gjarl4c",
+    "url": "https://polygonscan.com/address/0x0BF58A328C7739D8b097B1d4199f48AA3F1b2788",
+    "description": "cometh-must-eth strategy",
+    "added_at": "2022-05-10T15:47:02.503Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "3VDEjyHLDMduem2dL8N0mZ",
+    "url": "https://polygonscan.com/address/0x7CE2332fAF6328986C75e3A8fCc1CB79621aeB1F",
+    "description": "cometh-must-eth vault",
+    "added_at": "2022-05-10T15:47:03.687Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "7hU7MJQngOtAF99rUFlEVw",
+    "url": "https://polygonscan.com/address/0x481E3e463a78eC1DC6f02e664491C7d94F6d82a5",
+    "description": "quick-eth-btc strategy",
+    "added_at": "2022-05-10T15:47:04.686Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "5ERB1um39ZFhB0spLnMmsC",
+    "url": "https://polygonscan.com/address/0xf26607237355D7c6183ea66EC908729E9c6eEB6b",
+    "description": "quick-eth-btc vault",
+    "added_at": "2022-05-10T15:47:05.679Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "3XyAZL4LhjtzQd06ly30rY",
+    "url": "https://polygonscan.com/address/0x470052FEd23A2887e3e679c3D8544529DA8B272f",
+    "description": "quick-ubt-eth strategy",
+    "added_at": "2022-05-10T15:47:06.734Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "GaIzu7pwl6nBgzbVS2PSs",
+    "url": "https://polygonscan.com/address/0x942aa6324E5D0C102d3Ad6607495ac5e798a991a",
+    "description": "quick-ubt-eth vault",
+    "added_at": "2022-05-10T15:47:07.857Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "ksdDekjOuh155ZR1jmyqm",
+    "url": "https://polygonscan.com/address/0xc1C1eB984218B9570beA53C0Dad14283a6E9E81C",
+    "description": "quick-defi5-eth strategy",
+    "added_at": "2022-05-10T15:47:08.858Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2xjSX0pYoFsUGXi1Ty1Oiv",
+    "url": "https://polygonscan.com/address/0x53e674D5cC969930420d73E4b79Ee0D46cCdf6c4",
+    "description": "quick-defi5-eth vault",
+    "added_at": "2022-05-10T15:47:09.836Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1Ojelt6T74eVQpBpZdazIv",
+    "url": "https://polygonscan.com/address/0x88F2ADA49F24fF14005633e66050f763b2E07b7f",
+    "description": "quick-wise-eth strategy",
+    "added_at": "2022-05-10T15:47:10.890Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "7jxTKH8D5YObiqarmGR2bJ",
+    "url": "https://polygonscan.com/address/0x76cE86B1e1b7a3983B26F7E57B2A0C8896f7eB0D",
+    "description": "quick-wise-eth vault",
+    "added_at": "2022-05-10T15:47:11.915Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "6u4KehjDWsKcwnQ9Z6s5XZ",
+    "url": "https://polygonscan.com/address/0x06A1f520555222758eaE4dA0573351FdaD1e7843",
+    "description": "quick-cel-eth strategy",
+    "added_at": "2022-05-10T15:47:12.927Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "6188ygRIzvtg8k4gvZdMEm",
+    "url": "https://polygonscan.com/address/0xeF1870FddC25586636bf8a3d7cCf4d298f6E072e",
+    "description": "quick-cel-eth vault",
+    "added_at": "2022-05-10T15:47:14.036Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4ziJReWSsXvmnfHNRpPDCc",
+    "url": "https://polygonscan.com/address/0x3177389Fa69a226f52A079FDd0a564C813baB53B",
+    "description": "quick-quick-eth strategy",
+    "added_at": "2022-05-10T15:47:15.146Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "44ol7GxWGgL6GIiRjKz3qU",
+    "url": "https://polygonscan.com/address/0x66df1B2d22759D03A9f37BAaAc826089e56a5936",
+    "description": "quick-quick-eth vault",
+    "added_at": "2022-05-10T15:47:16.164Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "5KPhxt2OBvWJWobnAySr0f",
+    "url": "https://polygonscan.com/address/0x1F38c4b1D4990652FC5E433583e81f4F828988a0",
+    "description": "quick-aave-eth strategy",
+    "added_at": "2022-05-10T15:47:17.192Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1IwISVfCE4c1kmU91fWY93",
+    "url": "https://polygonscan.com/address/0x752948B4493d2Ee09c95F944A76005aEBF410087",
+    "description": "quick-aave-eth vault",
+    "added_at": "2022-05-10T15:47:18.186Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2v6ya8sIqrKo3MYrSIjOcD",
+    "url": "https://polygonscan.com/address/0x9C50880a547A7a247E2C8cA5b444624D3A2AB81B",
+    "description": "quick-link-eth strategy",
+    "added_at": "2022-05-10T15:47:19.348Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2pF1cAyqvOAdBj3riby9yT",
+    "url": "https://polygonscan.com/address/0xaB4105375FbE5F502B0da986F46ADf7a21762e52",
+    "description": "quick-link-eth vault",
+    "added_at": "2022-05-10T15:47:20.509Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "2loOZfwA7S7Ke9UzRvdqJo",
+    "url": "https://polygonscan.com/address/0x2C3d263b560b2700fcf19e78f2EBD4d59EB7b3c5",
+    "description": "quick-eth-usdt strategy",
+    "added_at": "2022-05-10T15:47:21.541Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "37VdDodb88hWQ0uFmbEol4",
+    "url": "https://polygonscan.com/address/0xC422261EdC5dB679CAd9BC403e886351De540e77",
+    "description": "quick-eth-usdt vault",
+    "added_at": "2022-05-10T15:47:23.085Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "UQMORyjLO6vD2fyEqtjA8",
+    "url": "https://polygonscan.com/address/0x46CB7f33E4cc10B34c0d0fece66fd4830B869B46",
+    "description": "quick-eth-matic strategy",
+    "added_at": "2022-05-10T15:47:24.076Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1MR05EPtNaiBwtCTGsuy6B",
+    "url": "https://polygonscan.com/address/0x8b89477dFde285849E1B07947E25012206F4D674",
+    "description": "quick-eth-matic vault",
+    "added_at": "2022-05-10T15:47:25.396Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "3RNufSjvHeygjIbtpr0JTN",
+    "url": "https://polygonscan.com/address/0x79807CCE3e75dcDb8641C834e8065dD1Cee12a2A",
+    "description": "quick-quick-matic strategy",
+    "added_at": "2022-05-10T15:47:26.526Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "62mEeF1dYBWJUXNouCuD1k",
+    "url": "https://polygonscan.com/address/0xa008B727ddBa283Ddb178b47BB227Cdbea5C1bfD",
+    "description": "quick-quick-matic vault",
+    "added_at": "2022-05-10T15:47:27.766Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4Q3pZRIMyfPZInaioQ7PxM",
+    "url": "https://polygonscan.com/address/0xb0F9c6FBcfE226EEAD3AE8b019ce4666cE223a78",
+    "description": "cometh-eth-matic strategy",
+    "added_at": "2022-05-10T15:47:29.584Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "7H3zmOOiM4O4nldCcM68JT",
+    "url": "https://polygonscan.com/address/0xa5aaE3a55cA356C62b5425AA4bFC212542B17777",
+    "description": "cometh-eth-matic vault",
+    "added_at": "2022-05-10T15:47:30.636Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "3Fschx6KwUwp26TYWvxAIX",
+    "url": "https://polygonscan.com/address/0xA338D34c5de06B88197609956a2dEAAfF7Af46c8",
+    "description": "cometh-matic-must strategy",
+    "added_at": "2022-05-10T15:47:31.634Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "5plP6Y1hunlNDCiesMStHA",
+    "url": "https://polygonscan.com/address/0x7f6fE34C51d5352A0CF375C0Fbe03bD19eCD8460",
+    "description": "cometh-matic-must vault",
+    "added_at": "2022-05-10T15:47:32.669Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "15Q10kGB6MgF78L9O9cb9i",
+    "url": "https://polygonscan.com/address/0xf6fD90FE8f057a63F0368B0B551D5e52C7Ae821F",
+    "description": "cometh-usdc-must strategy",
+    "added_at": "2022-05-10T15:47:33.804Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1YMyLmWeH92QvyB6PT1FD7",
+    "url": "https://polygonscan.com/address/0x8a198BCbF313A5565c64A7Ed61FaA413eB4E0931",
+    "description": "cometh-usdc-must vault",
+    "added_at": "2022-05-10T15:47:34.948Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "69OefgQ4IQ2SvfsNGYPHmY",
+    "url": "https://polygonscan.com/address/0x540A9f99bB730631BF243a34B19fd00BA8CF315C",
+    "description": "Zap QuickSwap",
+    "added_at": "2022-05-10T15:47:35.996Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "1tTeHwdFWWXZ3zFRdFUIG0",
+    "url": "https://polygonscan.com/address/0x872c9DCE4B107042933AFD51E8A704631f7EE076",
+    "description": "Zap Cometh",
+    "added_at": "2022-05-10T15:47:37.055Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "5ZDdfbUU1x6fXJz30l2FHo",
+    "url": "https://polygonscan.com/address/0xf039fe26456901F863c873556f40fb207C6c9C18",
+    "description": "Zap Sushi",
+    "added_at": "2022-05-10T15:47:38.061Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "53HJolYS1v0LDVBKMQLdt0",
+    "url": "https://polygonscan.com/address/0x0EA7b115D96C4dF61B3e7d6757f0050F23492929",
+    "description": "Zap Wault",
+    "added_at": "2022-05-10T15:47:39.206Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "4zqiP9PM080G5hx48ctyfK",
+    "url": "https://polygonscan.com/address/0xaAa3477c6b326e2E416Af7506A30F4519bC9960F",
+    "description": "Zap ApeSwap",
+    "added_at": "2022-05-10T15:47:40.219Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beefyfinance",
+    "asset_id": "7fIz6v8L3nKdNddR5BvYck",
+    "url": "https://polygonscan.com/address/0x1A53c6FCa349c23f573CEdd3F8AFE70c02CcEC39",
+    "description": "Zap DYFN",
+    "added_at": "2022-05-10T15:47:41.333Z",
+    "revision": 1
+  }
+]

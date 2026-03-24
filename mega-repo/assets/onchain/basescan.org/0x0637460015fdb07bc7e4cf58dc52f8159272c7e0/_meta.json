@@ -1,0 +1,24 @@
+{
+  "url": "https://basescan.org/address/0x0637460015fdb07bc7e4cf58dc52f8159272c7e0",
+  "host": "basescan.org",
+  "address": "0x0637460015fdb07bc7e4cf58dc52f8159272c7e0",
+  "chainid": 8453,
+  "project_slug": "enzymefinance",
+  "asset_id": "5lDlymb8LvHQs7nlpF5pMN",
+  "contract_name": "AllowedAssetsForRedemptionPolicy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "0000000000000000000000007d1a8314c6a56a8312053bfd5a3b9e4c768e8d2400000000000000000000000042232ff4f38639ed942e0c76723e76e1a0588899",
+  "evm_version": "istanbul",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 12,
+  "mode": "json-sources"
+}

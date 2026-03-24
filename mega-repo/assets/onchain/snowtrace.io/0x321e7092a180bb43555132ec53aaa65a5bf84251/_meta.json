@@ -1,0 +1,7 @@
+{
+  "url": "https://snowtrace.io/token/0x321e7092a180bb43555132ec53aaa65a5bf84251?utm_source=immunefi",
+  "host": "snowtrace.io",
+  "address": "0x321e7092a180bb43555132ec53aaa65a5bf84251",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:unexpected-response; scan-host-no-key:http 403"
+}

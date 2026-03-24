@@ -1,0 +1,9 @@
+category = "fail"
+
+# check: $()let _v1 = 42.method();
+# nextln: $()Multiple applicable items in scope.
+# nextln: $()Disambiguate the associated function for candidate #0
+# nextln: $()<u64 as Trait<trait_method_generic_ambiguous::S1>>::method
+# nextln: $()Disambiguate the associated function for candidate #1
+# nextln: $()<u64 as Trait<trait_method_generic_ambiguous::S2>>::method
+

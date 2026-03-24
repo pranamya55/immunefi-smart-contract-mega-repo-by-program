@@ -1,0 +1,147 @@
+import {
+  Controller,
+  Get,
+  Version,
+  Param,
+  Query,
+  Body,
+  Post,
+  NotFoundException,
+  HttpStatus,
+  Res,
+  HttpCode,
+  LoggerService,
+  Inject,
+} from '@nestjs/common';
+import { LOGGER_PROVIDER } from '@lido-nestjs/logger';
+import { ApiOperation, ApiParam, ApiResponse, ApiTags } from '@nestjs/swagger';
+import { SRModuleKeyListResponse, GroupedByModuleKeyListResponse } from './entities';
+import { SRModulesKeysService } from './sr-modules-keys.service';
+import { KeyQuery, Key } from '../common/entities/';
+import { KeysFindBody } from '../common/entities/pubkeys';
+import { TooEarlyResponse } from '../common/entities/http-exceptions';
+import { IsolationLevel } from '@mikro-orm/core';
+import { EntityManager } from '@mikro-orm/knex';
+import * as JSONStream from 'jsonstream';
+import type { FastifyReply } from 'fastify';
+import { ModuleIdPipe } from '../common/pipeline/module-id-pipe';
+import { SkipCache } from 'common/decorators/skipCache';
+
+@Controller('modules')
+@ApiTags('sr-module-keys')
+export class SRModulesKeysController {
+  constructor(
+    @Inject(LOGGER_PROVIDER) protected logger: LoggerService,
+    protected readonly srModulesKeysService: SRModulesKeysService,
+    protected readonly entityManager: EntityManager,
+  ) {}
+
+  @Version('1')
+  @ApiOperation({ summary: 'Get keys for all modules grouped by staking router module' })
+  @ApiResponse({
+    status: HttpStatus.OK,
+    description:
+      'Keys for all modules are grouped by the staking router module. Receiving results from this endpoint may take some time, so please use it carefully.',
+    type: GroupedByModuleKeyListResponse,
+  })
+  @ApiResponse({
+    status: 425,
+    description: "Meta is null, maybe data hasn't been written in db yet",
+    type: TooEarlyResponse,
+  })
+  @Get('keys')
+  getGroupedByModuleKeys(@Query() filters: KeyQuery) {
+    return this.srModulesKeysService.getGroupedByModuleKeys(filters);
+  }
+
+  @Version('1')
+  @ApiOperation({ summary: 'Staking router module keys' })
+  @SkipCache()
+  @ApiResponse({
+    status: HttpStatus.OK,
+    description: 'List of all modules supported in API',
+    type: SRModuleKeyListResponse,
+  })
+  @ApiResponse({
+    status: 425,
+    description: "Meta is null, maybe data hasn't been written in db yet",
+    type: TooEarlyResponse,
+  })
+  @ApiResponse({
+    status: HttpStatus.NOT_FOUND,
+    description: 'Provided module is not supported',
+    type: NotFoundException,
+  })
+  @ApiParam({
+    name: 'module_id',
+    type: String,
+    description: 'Staking router module_id or contract address',
+  })
+  @Get(':module_id/keys')
+  async getModuleKeys(
+    @Param('module_id', ModuleIdPipe) module_id: string | number,
+    @Query() filters: KeyQuery,
+    @Res() reply: FastifyReply,
+  ) {
+    await this.entityManager.transactional(
+      async () => {
+        const {
+          keysGenerator,
+          module: srModule,
+          meta,
+        } = await this.srModulesKeysService.getModuleKeys(module_id, filters);
+        const jsonStream = JSONStream.stringify(
+          '{ "meta": ' + JSON.stringify(meta) + ', "data": { "module": ' + JSON.stringify(srModule) + ', "keys": [',
+          ',',
+          ']}}',
+        );
+
+        reply.type('application/json').send(jsonStream);
+
+        try {
+          for await (const key of keysGenerator) {
+            const keyReponse = new Key(key);
+            jsonStream.write(keyReponse);
+          }
+
+          jsonStream.end();
+        } catch (streamError) {
+          // Handle the error during streaming.
+          this.logger.error('module-keys streaming error', streamError);
+          // destroy method closes the stream without ']' and corrupt the result
+          // https://github.com/dominictarr/through/blob/master/index.js#L78
+          jsonStream.destroy();
+        }
+      },
+      { isolationLevel: IsolationLevel.REPEATABLE_READ },
+    );
+  }
+
+  @Version('1')
+  @Post(':module_id/keys/find')
+  @HttpCode(HttpStatus.OK)
+  @ApiOperation({ summary: 'Get list of found staking router module keys in db from pubkey list' })
+  @ApiResponse({
+    status: HttpStatus.OK,
+    description: 'Staking Router module keys',
+    type: SRModuleKeyListResponse,
+  })
+  @ApiResponse({
+    status: 425,
+    description: "Meta is null, maybe data hasn't been written in db yet",
+    type: TooEarlyResponse,
+  })
+  @ApiResponse({
+    status: HttpStatus.NOT_FOUND,
+    description: 'Provided module is not supported',
+    type: NotFoundException,
+  })
+  @ApiParam({
+    name: 'module_id',
+    type: String,
+    description: 'Staking router module_id or contract address',
+  })
+  getModuleKeysByPubkeys(@Param('module_id', ModuleIdPipe) module_id: string | number, @Body() keys: KeysFindBody) {
+    return this.srModulesKeysService.getModuleKeysByPubKeys(module_id, keys.pubkeys);
+  }
+}

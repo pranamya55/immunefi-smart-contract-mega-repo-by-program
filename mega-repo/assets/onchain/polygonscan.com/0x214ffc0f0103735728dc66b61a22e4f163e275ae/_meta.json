@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0x214ffC0f0103735728dc66b61A22e4F163e275ae",
+  "host": "polygonscan.com",
+  "address": "0x214ffC0f0103735728dc66b61A22e4F163e275ae",
+  "chainid": 137,
+  "project_slug": "decentraland",
+  "asset_id": "4hzHx6R0ul7PZ6zMDojJQa",
+  "contract_name": "CollectionStore",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "0000000000000000000000000e659a116e161d8e502f9036babda51334f2667e000000000000000000000000a1c57f48f0deb89f569dfbe6e2b7f46d33606fd40000000000000000000000000e659a116e161d8e502f9036babda51334f2667e00000000000000000000000000000000000000000000000000000000000061a8",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://dbed089cb70c48b92c39e3e9b1e266083fafde5e140e3a3b9d803c2437a6fcb1",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 37,
+  "mode": "json-sources"
+}

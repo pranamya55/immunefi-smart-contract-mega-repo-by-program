@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xdbc3363de051550d122d9c623cbaff441afb477c",
+  "host": "etherscan.io",
+  "address": "0xdbc3363de051550d122d9c623cbaff441afb477c",
+  "chainid": 1,
+  "project_slug": "kelp-dao",
+  "asset_id": "6U8JUrQrXCK0CyZJx9JR1C",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": "1",
+  "runs": "10000",
+  "constructor_arguments": "",
+  "evm_version": "shanghai",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x868cef33e29bf3037b5d4cf5c408eaef29d96b33",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

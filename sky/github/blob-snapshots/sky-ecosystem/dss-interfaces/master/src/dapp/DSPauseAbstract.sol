@@ -1,0 +1,1 @@
+../../../../../../../../../mega-repo/assets/github/blob-snapshots/sky-ecosystem/dss-interfaces/master/src/dapp/DSPauseAbstract.sol

@@ -1,0 +1,19 @@
+{
+  "url": "https://etherscan.io/address/0x25567603eb61a4a49f27e433652b5b8940d10682",
+  "host": "etherscan.io",
+  "address": "0x25567603eb61a4a49f27e433652b5b8940d10682",
+  "chainid": 1,
+  "contract_name": "LinkHandlerProxy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "BSD-3-Clause",
+  "proxy": "1",
+  "implementation": "0x47be3d1def039bd85e7570864bb5148e7491a65f",
+  "swarm_source": "ipfs://cd806fde29f7ab507cee4a2850a3f6a9404c9060167681fabbc94e99a2224fe7",
+  "files_written": 1,
+  "mode": "recover-single-file"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://arbiscan.io/address/0xf42ae1d54fd613c9bb14810b0588faaa09a426ca",
+  "host": "arbiscan.io",
+  "address": "0xf42ae1d54fd613c9bb14810b0588faaa09a426ca",
+  "chainid": 42161,
+  "contract_name": "EsGMX",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://d53d71d443c974727ec5aefa79f2cfb3b6fda7d12df17ec4bef373886c5e1a03",
+  "files_written": 1,
+  "mode": "recover-single-file"
+}

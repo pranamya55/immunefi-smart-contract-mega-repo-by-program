@@ -1,0 +1,1367 @@
+//! Implementation of the [`BridgeDb`] trait for FdbClient.
+
+use bitcoin::{OutPoint, Txid};
+use foundationdb::{FdbBindingError, options::TransactionOption};
+use secp256k1::schnorr::Signature;
+use strata_bridge_primitives::types::{DepositIdx, GraphIdx, OperatorIdx};
+use strata_bridge_sm::{deposit::machine::DepositSM, graph::machine::GraphSM};
+use terrors::OneOf;
+
+use crate::{
+    fdb::{
+        client::FdbClient,
+        errors::LayerError,
+        row_spec::{
+            deposits::{DepositStateKey, DepositStateRowSpec},
+            funds::{
+                ClaimFundingKey, ClaimFundingRowSpec, ClaimFundingValue, WithdrawalFundingKey,
+                WithdrawalFundingRowSpec, WithdrawalFundingValue,
+            },
+            graphs::GraphStateRowSpec,
+            signatures::{SignatureKey, SignatureRowSpec},
+        },
+    },
+    traits::BridgeDb,
+    types::WriteBatch,
+};
+
+impl BridgeDb for FdbClient {
+    type Error = OneOf<(FdbBindingError, LayerError)>;
+
+    async fn get_signature(
+        &self,
+        operator_idx: OperatorIdx,
+        txid: Txid,
+        input_index: u32,
+    ) -> Result<Option<Signature>, Self::Error> {
+        self.basic_get::<SignatureRowSpec>(SignatureKey {
+            operator_idx,
+            txid,
+            input_index,
+        })
+        .await
+    }
+
+    async fn set_signature(
+        &self,
+        operator_idx: OperatorIdx,
+        txid: Txid,
+        input_index: u32,
+        signature: Signature,
+    ) -> Result<(), Self::Error> {
+        self.basic_set::<SignatureRowSpec>(
+            SignatureKey {
+                operator_idx,
+                txid,
+                input_index,
+            },
+            signature,
+        )
+        .await
+    }
+
+    // ── Deposit States ───────────────────────────────────────────────
+
+    async fn get_deposit_state(
+        &self,
+        deposit_idx: DepositIdx,
+    ) -> Result<Option<DepositSM>, Self::Error> {
+        self.basic_get::<DepositStateRowSpec>(DepositStateKey { deposit_idx })
+            .await
+    }
+
+    async fn set_deposit_state(
+        &self,
+        deposit_idx: DepositIdx,
+        state: DepositSM,
+    ) -> Result<(), Self::Error> {
+        self.basic_set::<DepositStateRowSpec>(DepositStateKey { deposit_idx }, state)
+            .await
+    }
+
+    async fn get_all_deposit_states(&self) -> Result<Vec<(DepositIdx, DepositSM)>, Self::Error> {
+        let pairs = self
+            .basic_get_all::<DepositStateRowSpec>(|dirs| &dirs.deposits)
+            .await?;
+        Ok(pairs.into_iter().map(|(k, v)| (k.deposit_idx, v)).collect())
+    }
+
+    async fn delete_deposit_state(&self, deposit_idx: DepositIdx) -> Result<(), Self::Error> {
+        self.basic_delete::<DepositStateRowSpec>(DepositStateKey { deposit_idx })
+            .await
+    }
+
+    // ── Graph States ─────────────────────────────────────────────────
+
+    async fn get_graph_state(&self, graph_idx: GraphIdx) -> Result<Option<GraphSM>, Self::Error> {
+        self.basic_get::<GraphStateRowSpec>(graph_idx.into()).await
+    }
+
+    async fn set_graph_state(
+        &self,
+        graph_idx: GraphIdx,
+        state: GraphSM,
+    ) -> Result<(), Self::Error> {
+        self.basic_set::<GraphStateRowSpec>(graph_idx.into(), state)
+            .await
+    }
+
+    async fn get_all_graph_states(&self) -> Result<Vec<(GraphIdx, GraphSM)>, Self::Error> {
+        let pairs = self
+            .basic_get_all::<GraphStateRowSpec>(|dirs| &dirs.graphs)
+            .await?;
+
+        Ok(pairs.into_iter().map(|(k, v)| (k.into(), v)).collect())
+    }
+
+    async fn delete_graph_state(&self, graph_idx: GraphIdx) -> Result<(), Self::Error> {
+        self.basic_delete::<GraphStateRowSpec>(graph_idx.into())
+            .await
+    }
+
+    // ── Funds ─────────────────────────────────────────────────────────
+
+    async fn get_claim_funding_outpoint(
+        &self,
+        graph_idx: GraphIdx,
+    ) -> Result<Option<OutPoint>, Self::Error> {
+        let result = self
+            .basic_get::<ClaimFundingRowSpec>(ClaimFundingKey {
+                deposit_idx: graph_idx.deposit,
+                operator_idx: graph_idx.operator,
+            })
+            .await?;
+        Ok(result.map(|v| v.0))
+    }
+
+    async fn set_claim_funding_outpoint(
+        &self,
+        graph_idx: GraphIdx,
+        outpoint: OutPoint,
+    ) -> Result<(), Self::Error> {
+        self.basic_set::<ClaimFundingRowSpec>(
+            ClaimFundingKey {
+                deposit_idx: graph_idx.deposit,
+                operator_idx: graph_idx.operator,
+            },
+            ClaimFundingValue(outpoint),
+        )
+        .await
+    }
+
+    async fn get_withdrawal_funding_outpoints(
+        &self,
+        deposit_idx: DepositIdx,
+    ) -> Result<Option<Vec<OutPoint>>, Self::Error> {
+        let result = self
+            .basic_get::<WithdrawalFundingRowSpec>(WithdrawalFundingKey { deposit_idx })
+            .await?;
+        Ok(result.map(|v| v.0))
+    }
+
+    async fn set_withdrawal_funding_outpoints(
+        &self,
+        deposit_idx: DepositIdx,
+        outpoints: Vec<OutPoint>,
+    ) -> Result<(), Self::Error> {
+        self.basic_set::<WithdrawalFundingRowSpec>(
+            WithdrawalFundingKey { deposit_idx },
+            WithdrawalFundingValue(outpoints),
+        )
+        .await
+    }
+
+    async fn get_all_funds(&self) -> Result<Vec<OutPoint>, Self::Error> {
+        let claim_pairs = self
+            .basic_get_all::<ClaimFundingRowSpec>(|dirs| &dirs.claim_funds)
+            .await?;
+        let withdrawal_pairs = self
+            .basic_get_all::<WithdrawalFundingRowSpec>(|dirs| &dirs.fulfillment_funds)
+            .await?;
+
+        let mut funds = Vec::with_capacity(
+            claim_pairs.len()
+                + withdrawal_pairs
+                    .iter()
+                    .map(|(_, v)| v.0.len())
+                    .sum::<usize>(),
+        );
+        funds.extend(claim_pairs.into_iter().map(|(_, v)| v.0));
+        funds.extend(withdrawal_pairs.into_iter().flat_map(|(_, v)| v.0));
+        Ok(funds)
+    }
+
+    async fn delete_claim_funding_outpoint(&self, graph_idx: GraphIdx) -> Result<(), Self::Error> {
+        self.basic_delete::<ClaimFundingRowSpec>(ClaimFundingKey {
+            deposit_idx: graph_idx.deposit,
+            operator_idx: graph_idx.operator,
+        })
+        .await
+    }
+
+    async fn delete_withdrawal_funding_outpoints(
+        &self,
+        graph_idx: GraphIdx,
+    ) -> Result<(), Self::Error> {
+        self.basic_delete::<WithdrawalFundingRowSpec>(WithdrawalFundingKey {
+            deposit_idx: graph_idx.deposit,
+        })
+        .await
+    }
+
+    // ── Batch Persistence ─────────────────────────────────────────
+
+    async fn persist_batch(&self, batch: &WriteBatch) -> Result<(), Self::Error> {
+        let mut trx = self
+            .create_transaction()
+            .map_err(|e| OneOf::new(FdbBindingError::from(e)))?;
+
+        let opts = self.transact_options();
+        if let Some(limit) = opts.retry_limit {
+            trx.set_option(TransactionOption::RetryLimit(limit as i32))
+                .map_err(|e| OneOf::new(FdbBindingError::from(e)))?;
+        }
+        if let Some(timeout) = &opts.time_out {
+            trx.set_option(TransactionOption::Timeout(timeout.as_millis() as i32))
+                .map_err(|e| OneOf::new(FdbBindingError::from(e)))?;
+        }
+
+        loop {
+            for sm in batch.deposits() {
+                self.basic_set_in::<DepositStateRowSpec>(
+                    &trx,
+                    DepositStateKey {
+                        deposit_idx: sm.context.deposit_idx,
+                    },
+                    sm.clone(),
+                )
+                .map_err(OneOf::new)?;
+            }
+            for sm in batch.graphs() {
+                self.basic_set_in::<GraphStateRowSpec>(
+                    &trx,
+                    GraphIdx {
+                        deposit: sm.context.graph_idx.deposit,
+                        operator: sm.context.graph_idx.operator,
+                    }
+                    .into(),
+                    sm.clone(),
+                )
+                .map_err(OneOf::new)?;
+            }
+
+            match trx.commit().await {
+                Ok(_committed) => return Ok(()),
+                Err(commit_err) => {
+                    // on_error() resets the transaction to its initial state
+                    // (mutations cleared, read version cleared) and applies
+                    // exponential backoff. The loop re-applies all writes on
+                    // the now-empty transaction.
+                    trx = commit_err
+                        .on_error()
+                        .await
+                        .map_err(|e| OneOf::new(FdbBindingError::from(e)))?;
+                }
+            }
+        }
+    }
+
+    // ── Cascade Deletes ─────────────────────────────────────────────
+
+    async fn delete_deposit(&self, deposit_idx: DepositIdx) -> Result<(), Self::Error> {
+        self.delete_deposit_cascade(deposit_idx).await
+    }
+
+    async fn delete_operator(&self, operator_idx: OperatorIdx) -> Result<(), Self::Error> {
+        self.delete_operator_cascade(operator_idx).await
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use std::{collections::BTreeMap, num::NonZero, sync::OnceLock};
+
+    use bitcoin::{
+        TapSighashType,
+        hashes::{Hash, sha256},
+        taproot,
+    };
+    use proptest::{prelude::*, strategy::ValueTree};
+    use secp256k1::{
+        Keypair, Message, SECP256K1,
+        rand::{random, thread_rng},
+    };
+    use strata_bridge_primitives::{
+        operator_table::{OperatorTable, prop_test_generators::arb_operator_table},
+        types::{DepositIdx, OperatorIdx},
+    };
+    use strata_bridge_sm::{
+        deposit::{context::DepositSMCtx, state::DepositState},
+        graph::{context::GraphSMCtx, state::GraphState},
+    };
+    use strata_bridge_test_utils::arbitrary_generator::{arb_outpoint, arb_outpoints, arb_txid};
+    use strata_bridge_tx_graph::game_graph::{
+        CounterproofGraphSummary, DepositParams, GameGraphSummary,
+    };
+
+    use super::*;
+    use crate::fdb::{cfg::Config, client::MustDrop};
+
+    static TEST_RUNTIME: OnceLock<tokio::runtime::Runtime> = OnceLock::new();
+    static FDB_CLIENT: OnceLock<(FdbClient, MustDrop)> = OnceLock::new();
+
+    fn get_runtime() -> &'static tokio::runtime::Runtime {
+        TEST_RUNTIME.get_or_init(|| {
+            tokio::runtime::Builder::new_multi_thread()
+                .enable_all()
+                .build()
+                .unwrap()
+        })
+    }
+
+    /// Runs a future to completion, handling the case where we're already inside a runtime.
+    fn block_on<F: std::future::Future>(f: F) -> F::Output {
+        if let Ok(handle) = tokio::runtime::Handle::try_current() {
+            // We're inside a runtime, use block_in_place to avoid nested runtime error
+            tokio::task::block_in_place(|| handle.block_on(f))
+        } else {
+            // We're not in a runtime, use our static runtime
+            get_runtime().block_on(f)
+        }
+    }
+
+    fn get_client() -> &'static FdbClient {
+        &FDB_CLIENT
+            .get_or_init(|| {
+                block_on(async {
+                    // Use a random root directory name for test isolation
+                    let random_suffix: u64 = random();
+                    let fdb_config = Config {
+                        root_directory: format!("test-{random_suffix}"),
+                        ..Default::default()
+                    };
+                    FdbClient::setup(fdb_config).await.unwrap()
+                })
+            })
+            .0
+    }
+
+    /// Generates an arbitrary valid Schnorr signature.
+    fn arb_signature() -> impl Strategy<Value = Signature> {
+        any::<[u8; 32]>().prop_map(|msg_bytes| {
+            let (secret_key, _) = SECP256K1.generate_keypair(&mut thread_rng());
+            let keypair = Keypair::from_secret_key(SECP256K1, &secret_key);
+            keypair.sign_schnorr(Message::from_digest(msg_bytes))
+        })
+    }
+
+    /// Builds a [`DepositSM`] from the given components.
+    fn make_deposit_sm(
+        deposit_idx: DepositIdx,
+        outpoint: OutPoint,
+        operator_table: OperatorTable,
+        state: DepositState,
+    ) -> DepositSM {
+        DepositSM {
+            context: DepositSMCtx {
+                deposit_idx,
+                deposit_request_outpoint: outpoint,
+                deposit_outpoint: outpoint,
+                operator_table,
+            },
+            state,
+        }
+    }
+
+    /// Builds a [`GraphSM`] from the given components.
+    ///
+    /// Derives `stake_outpoint` (vout + 1) and `unstaking_image` (from outpoint txid bytes)
+    /// automatically.
+    fn make_graph_sm(
+        graph_idx: GraphIdx,
+        outpoint: OutPoint,
+        operator_table: OperatorTable,
+        state: GraphState,
+    ) -> GraphSM {
+        let GraphIdx {
+            deposit: deposit_idx,
+            operator: operator_idx,
+        } = graph_idx;
+
+        GraphSM {
+            context: GraphSMCtx {
+                graph_idx: GraphIdx {
+                    deposit: deposit_idx,
+                    operator: operator_idx,
+                },
+                deposit_outpoint: outpoint,
+                stake_outpoint: OutPoint {
+                    txid: outpoint.txid,
+                    vout: outpoint.vout + 1,
+                },
+                unstaking_image: sha256::Hash::from_slice(outpoint.txid.as_ref()).unwrap(),
+                operator_table,
+            },
+            state,
+        }
+    }
+
+    proptest! {
+        #![proptest_config(ProptestConfig::with_cases(50))]
+
+        /// Property: any signature stored in the database can be retrieved with the same key.
+        #[test]
+        fn signature_roundtrip(
+            operator_idx in any::<OperatorIdx>(),
+            txid in arb_txid(),
+            input_index in any::<u32>(),
+            signature in arb_signature(),
+        ) {
+            block_on(async {
+                let client = get_client();
+
+                client
+                    .set_signature(operator_idx, txid, input_index, signature)
+                    .await
+                    .unwrap();
+
+                let retrieved_signature = client
+                    .get_signature(operator_idx, txid, input_index)
+                    .await
+                    .unwrap();
+
+                prop_assert_eq!(Some(signature), retrieved_signature);
+
+                Ok(())
+            })?;
+        }
+
+        /// Property: any deposit SM stored can be retrieved with the same key.
+        #[test]
+        fn deposit_state_roundtrip(
+            deposit_idx in any::<DepositIdx>(),
+            last_block_height in any::<u64>(),
+            variant_selector in 0u8..4,
+            outpoint in arb_outpoint(),
+            operator_table in arb_operator_table(),
+        ) {
+            // only uses simple variants for testing, as the more complex ones would require constructing valid DepositSMs.
+            // TODO: <https://atlassian.alpenlabs.net/browse/STR-2696>
+            // Implement `Arbitrary` for `DepositSM` to allow testing of all variants.
+            let state = match variant_selector {
+                0 => DepositState::Deposited { last_block_height },
+                1 => DepositState::CooperativePathFailed { last_block_height },
+                2 => DepositState::Spent,
+                _ => DepositState::Aborted,
+            };
+
+            let deposit_sm = make_deposit_sm(deposit_idx, outpoint, operator_table, state);
+
+            block_on(async {
+                let client = get_client();
+
+                client
+                    .set_deposit_state(deposit_idx, deposit_sm.clone())
+                    .await
+                    .unwrap();
+
+                let retrieved = client
+                    .get_deposit_state(deposit_idx)
+                    .await
+                    .unwrap();
+
+                prop_assert_eq!(Some(deposit_sm), retrieved);
+
+                Ok(())
+            })?;
+        }
+
+        /// Property: `get_all_deposit_states` returns all previously stored deposits.
+        #[test]
+        fn get_all_deposit_states_test(
+            deposit_idx_a in any::<DepositIdx>(),
+            deposit_idx_b in any::<DepositIdx>(),
+            last_block_height in any::<u64>(),
+            outpoint in arb_outpoint(),
+            operator_table in arb_operator_table(),
+        ) {
+            prop_assume!(deposit_idx_a != deposit_idx_b);
+
+            let state = DepositState::Deposited { last_block_height };
+            let sm_a = make_deposit_sm(deposit_idx_a, outpoint, operator_table.clone(), state.clone());
+            let sm_b = make_deposit_sm(deposit_idx_b, outpoint, operator_table, state);
+
+            block_on(async {
+                let client = get_client();
+
+                client.set_deposit_state(deposit_idx_a, sm_a.clone()).await.unwrap();
+                client.set_deposit_state(deposit_idx_b, sm_b.clone()).await.unwrap();
+
+                let all = client.get_all_deposit_states().await.unwrap();
+
+                let found_a = all.iter().any(|(idx, sm)| *idx == deposit_idx_a && *sm == sm_a);
+                let found_b = all.iter().any(|(idx, sm)| *idx == deposit_idx_b && *sm == sm_b);
+
+                prop_assert!(found_a, "deposit_idx_a not found in get_all_deposit_states");
+                prop_assert!(found_b, "deposit_idx_b not found in get_all_deposit_states");
+
+                Ok(())
+            })?;
+        }
+
+        /// Property: deleting a deposit state makes it unreadable.
+        #[test]
+        fn delete_deposit_state_roundtrip(
+            deposit_idx in any::<DepositIdx>(),
+            last_block_height in any::<u64>(),
+            outpoint in arb_outpoint(),
+            operator_table in arb_operator_table(),
+        ) {
+            let deposit_sm = make_deposit_sm(
+                deposit_idx,
+                outpoint,
+                operator_table,
+                DepositState::Deposited { last_block_height },
+            );
+
+            block_on(async {
+                let client = get_client();
+
+                client
+                    .set_deposit_state(deposit_idx, deposit_sm)
+                    .await
+                    .unwrap();
+
+                client.delete_deposit_state(deposit_idx).await.unwrap();
+
+                let retrieved = client.get_deposit_state(deposit_idx).await.unwrap();
+                prop_assert_eq!(None, retrieved);
+
+                Ok(())
+            })?;
+        }
+
+        /// Property: any graph state stored can be retrieved with the same key.
+        #[test]
+        fn graph_state_roundtrip(
+            deposit_idx in any::<DepositIdx>(),
+            operator_idx in any::<OperatorIdx>(),
+            block_height in any::<u64>(),
+            txid in arb_txid(),
+            variant_selector in 0u8..4,
+            operator_table in arb_operator_table(),
+        ) {
+            // Only includes simple variants for testing, as the more complex ones would require constructing valid GraphSMs.
+            // TODO: <https://atlassian.alpenlabs.net/browse/STR-2697>
+            // Implement `Arbitrary` for `GraphSM` to allow testing of all variants.
+            let state = match variant_selector {
+                0 => GraphState::Created { last_block_height: block_height },
+                1 => GraphState::Withdrawn { payout_txid: txid },
+                2 => GraphState::Aborted { payout_connector_spend_txid: txid, reason: "test".to_string() },
+                _ => GraphState::AllNackd { last_block_height: block_height, contest_block_height: block_height, expected_payout_txid: txid, possible_slash_txid: txid },
+            };
+
+            let outpoint = OutPoint { txid, vout: 0 };
+            let graph_sm = make_graph_sm(GraphIdx { deposit: deposit_idx, operator: operator_idx }, outpoint, operator_table, state);
+
+            block_on(async {
+                let client = get_client();
+
+                client
+                    .set_graph_state(GraphIdx { deposit: deposit_idx, operator: operator_idx }, graph_sm.clone())
+                    .await
+                    .unwrap();
+
+                let retrieved = client
+                    .get_graph_state(GraphIdx { deposit: deposit_idx, operator: operator_idx })
+                    .await
+                    .unwrap();
+
+                prop_assert_eq!(Some(graph_sm), retrieved);
+
+                Ok(())
+            })?;
+        }
+
+        /// Property: `get_all_graph_states` returns all previously stored graph states.
+        #[test]
+        fn get_all_graph_states_test(
+            deposit_idx in any::<DepositIdx>(),
+            operator_a in any::<OperatorIdx>(),
+            operator_b in any::<OperatorIdx>(),
+            last_block_height in any::<u64>(),
+            outpoint in arb_outpoint(),
+            operator_table in arb_operator_table(),
+        ) {
+            prop_assume!(operator_a != operator_b);
+
+            let state = GraphState::Created { last_block_height };
+            let gs_a = make_graph_sm(GraphIdx { deposit: deposit_idx, operator: operator_a }, outpoint, operator_table.clone(), state.clone());
+
+            let gs_b = make_graph_sm(GraphIdx { deposit: deposit_idx, operator: operator_b }, outpoint, operator_table, state);
+
+            block_on(async {
+                let client = get_client();
+
+                client.set_graph_state(GraphIdx { deposit: deposit_idx, operator: operator_a }, gs_a.clone()).await.unwrap();
+                client.set_graph_state(GraphIdx{ deposit: deposit_idx, operator: operator_b }, gs_b.clone()).await.unwrap();
+
+                let all = client.get_all_graph_states().await.unwrap();
+
+                let found_a = all.iter().any(|(idx, gs)| idx.deposit == deposit_idx && idx.operator == operator_a && *gs == gs_a);
+                let found_b = all.iter().any(|(idx, gs)| idx.deposit == deposit_idx && idx.operator == operator_b && *gs == gs_b);
+
+                prop_assert!(found_a, "graph state A not found in get_all_graph_states");
+                prop_assert!(found_b, "graph state B not found in get_all_graph_states");
+
+                Ok(())
+            })?;
+        }
+
+        /// Property: deleting a graph state makes it unreadable.
+        #[test]
+        fn delete_graph_state_roundtrip(
+            deposit_idx in any::<DepositIdx>(),
+            operator_idx in any::<OperatorIdx>(),
+            last_block_height in any::<u64>(),
+            outpoint in arb_outpoint(),
+            operator_table in arb_operator_table(),
+        ) {
+            let graph_sm = make_graph_sm(
+                GraphIdx { deposit: deposit_idx,
+                operator: operator_idx},
+                outpoint,
+                operator_table,
+                GraphState::Created { last_block_height },
+            );
+
+            block_on(async {
+                let client = get_client();
+
+                client
+                    .set_graph_state(GraphIdx { deposit: deposit_idx, operator: operator_idx }, graph_sm)
+                    .await
+                    .unwrap();
+
+                client
+                    .delete_graph_state(GraphIdx { deposit: deposit_idx, operator: operator_idx })
+                    .await
+                    .unwrap();
+
+                let retrieved = client
+                    .get_graph_state(GraphIdx { deposit: deposit_idx, operator: operator_idx })
+                    .await
+                    .unwrap();
+                prop_assert_eq!(None, retrieved);
+
+                Ok(())
+            })?;
+        }
+
+        /// Property: claim funding outpoint can be stored/retrieved with the same graph key.
+        #[test]
+        fn claim_funding_outpoint_roundtrip(
+            deposit_idx in any::<DepositIdx>(),
+            operator_idx in any::<OperatorIdx>(),
+            outpoint in arb_outpoint(),
+        ) {
+            let graph_idx = GraphIdx { deposit: deposit_idx, operator: operator_idx };
+
+            block_on(async {
+                let client = get_client();
+
+                client
+                    .set_claim_funding_outpoint(graph_idx, outpoint)
+                    .await
+                    .unwrap();
+
+                let retrieved = client
+                    .get_claim_funding_outpoint(graph_idx)
+                    .await
+                    .unwrap();
+
+                prop_assert_eq!(Some(outpoint), retrieved);
+
+                Ok(())
+            })?;
+        }
+
+        /// Property: withdrawal funding outpoints can be stored/retrieved with the same deposit key.
+        #[test]
+        fn withdrawal_funding_outpoints_roundtrip(
+            deposit_idx in any::<DepositIdx>(),
+            outpoints in arb_outpoints(),
+        ) {
+            block_on(async {
+                let client = get_client();
+
+                client
+                    .set_withdrawal_funding_outpoints(deposit_idx, outpoints.clone())
+                    .await
+                    .unwrap();
+
+                let retrieved = client
+                    .get_withdrawal_funding_outpoints(deposit_idx)
+                    .await
+                    .unwrap();
+
+                prop_assert_eq!(Some(outpoints), retrieved);
+
+                Ok(())
+            })?;
+        }
+
+        /// Property: `get_all_funds` returns both claim and withdrawal funding entries.
+        #[test]
+        fn get_all_funds_test(
+            deposit_idx in any::<DepositIdx>(),
+            operator_idx in any::<OperatorIdx>(),
+            outpoint_claim in arb_outpoint(),
+            outpoints_wf in arb_outpoints(),
+        ) {
+            let graph_idx = GraphIdx { deposit: deposit_idx, operator: operator_idx };
+
+            block_on(async {
+                let client = get_client();
+
+                client
+                    .set_claim_funding_outpoint(graph_idx, outpoint_claim)
+                    .await
+                    .unwrap();
+                client
+                    .set_withdrawal_funding_outpoints(deposit_idx, outpoints_wf.clone())
+                    .await
+                    .unwrap();
+
+                let all = client.get_all_funds().await.unwrap();
+
+                prop_assert!(all.contains(&outpoint_claim), "get_all_funds missing claim outpoint: {outpoint_claim}");
+                for op in outpoints_wf {
+                    prop_assert!(all.contains(&op), "get_all_funds missing withdrawal outpoint: {op}");
+                }
+
+                Ok(())
+            })?;
+        }
+
+        /// Property: deleting claim funding outpoint makes it unreadable.
+        #[test]
+        fn delete_claim_funding_outpoint_roundtrip(
+            deposit_idx in any::<DepositIdx>(),
+            operator_idx in any::<OperatorIdx>(),
+            outpoint in arb_outpoint(),
+        ) {
+            let graph_idx = GraphIdx { deposit: deposit_idx, operator: operator_idx };
+
+            block_on(async {
+                let client = get_client();
+
+                client
+                    .set_claim_funding_outpoint(graph_idx, outpoint)
+                    .await
+                    .unwrap();
+
+                client
+                    .delete_claim_funding_outpoint(graph_idx)
+                    .await
+                    .unwrap();
+
+                let retrieved = client
+                    .get_claim_funding_outpoint(graph_idx)
+                    .await
+                    .unwrap();
+                prop_assert_eq!(None, retrieved);
+
+                Ok(())
+            })?;
+        }
+
+        /// Property: deleting withdrawal funding outpoints makes them unreadable.
+        #[test]
+        fn delete_withdrawal_funding_outpoints_roundtrip(
+            deposit_idx in any::<DepositIdx>(),
+            operator_idx in any::<OperatorIdx>(),
+            outpoints in arb_outpoints(),
+        ) {
+            let graph_idx = GraphIdx { deposit: deposit_idx, operator: operator_idx };
+
+            block_on(async {
+                let client = get_client();
+
+                client
+                    .set_withdrawal_funding_outpoints(deposit_idx, outpoints)
+                    .await
+                    .unwrap();
+
+                client
+                    .delete_withdrawal_funding_outpoints(graph_idx)
+                    .await
+                    .unwrap();
+
+                let retrieved = client
+                    .get_withdrawal_funding_outpoints(deposit_idx)
+                    .await
+                    .unwrap();
+                prop_assert_eq!(None, retrieved);
+
+                Ok(())
+            })?;
+        }
+
+        /// Property: cascade delete removes deposit state and all graph states for
+        /// that deposit, but leaves graph states for other deposits untouched.
+        #[test]
+        fn delete_deposit_cascade_test(
+            deposit_idx in any::<DepositIdx>(),
+            // Use a different deposit_idx for the "survivor" entry.
+            survivor_deposit_idx in any::<DepositIdx>(),
+            operator_a in any::<OperatorIdx>(),
+            operator_b in any::<OperatorIdx>(),
+            last_block_height in any::<u64>(),
+            outpoint in arb_outpoint(),
+            operator_table in arb_operator_table(),
+        ) {
+            // Ensure the two deposit indices differ.
+            prop_assume!(deposit_idx != survivor_deposit_idx);
+
+            let state = DepositState::Deposited { last_block_height };
+            let deposit_sm = make_deposit_sm(deposit_idx, outpoint, operator_table.clone(), state);
+
+            let graph_state = GraphState::Created { last_block_height };
+            let graph_sm_a = make_graph_sm(GraphIdx{ deposit: deposit_idx, operator: operator_a }, outpoint, operator_table, graph_state);
+
+            let mut graph_sm_b = graph_sm_a.clone();
+            graph_sm_b.context.graph_idx.operator = operator_b;
+
+            let mut survivor_state = graph_sm_a.clone();
+            survivor_state.context.graph_idx.deposit = survivor_deposit_idx;
+
+            block_on(async {
+                let client = get_client();
+
+                // Set deposit state + two graph states for the target deposit.
+                client
+                    .set_deposit_state(deposit_idx, deposit_sm)
+                    .await
+                    .unwrap();
+                client
+                    .set_graph_state(GraphIdx{deposit: deposit_idx, operator: operator_a }, graph_sm_a)
+                    .await
+                    .unwrap();
+                client
+                    .set_graph_state(GraphIdx{deposit: deposit_idx, operator: operator_b }, graph_sm_b)
+                    .await
+                    .unwrap();
+
+                // Set a graph state for a different deposit (the "survivor").
+                client
+                    .set_graph_state(GraphIdx{ deposit: survivor_deposit_idx, operator: operator_a }, survivor_state.clone())
+                    .await
+                    .unwrap();
+
+                // Cascade delete the target deposit.
+                client.delete_deposit(deposit_idx).await.unwrap();
+
+                // All target data should be gone.
+                let dep = client.get_deposit_state(deposit_idx).await.unwrap();
+                prop_assert_eq!(None, dep);
+
+                let gs_a = client
+                    .get_graph_state(GraphIdx{deposit: deposit_idx, operator: operator_a }).await.unwrap();
+                prop_assert_eq!(None, gs_a);
+
+                let gs_b = client
+                    .get_graph_state(GraphIdx{deposit: deposit_idx, operator: operator_b }).await.unwrap();
+                prop_assert_eq!(None, gs_b);
+
+                // Survivor should still be present.
+                let survivor = client
+                    .get_graph_state(GraphIdx{deposit: survivor_deposit_idx, operator: operator_a })
+                    .await
+                    .unwrap();
+                prop_assert_eq!(Some(survivor_state), survivor);
+
+                Ok(())
+            })?;
+        }
+
+        /// Property: operator cascade delete removes all graph states for a given
+        /// operator across multiple deposits, but leaves other operators' data.
+        #[test]
+        fn delete_operator_cascade_test(
+            deposit_a in any::<DepositIdx>(),
+            deposit_b in any::<DepositIdx>(),
+            target_op in any::<OperatorIdx>(),
+            survivor_op in any::<OperatorIdx>(),
+            last_block_height in any::<u64>(),
+            outpoint in arb_outpoint(),
+            operator_table in arb_operator_table(),
+        ) {
+            prop_assume!(target_op != survivor_op);
+
+            let state = GraphState::Created { last_block_height };
+            let graph_sm_a = make_graph_sm(GraphIdx{deposit: deposit_a, operator: target_op }, outpoint, operator_table, state);
+
+            let mut graph_sm_b = graph_sm_a.clone();
+            graph_sm_b.context.graph_idx.deposit = deposit_b;
+
+            let mut survivor_state = graph_sm_a.clone();
+            survivor_state.context.graph_idx.operator = survivor_op;
+
+            block_on(async {
+                let client = get_client();
+
+                // Set graph states for the target operator under two deposits.
+                client
+                    .set_graph_state(GraphIdx{ deposit: deposit_a, operator: target_op }, graph_sm_a)
+                    .await
+                    .unwrap();
+                client
+                    .set_graph_state(GraphIdx{deposit: deposit_b, operator: target_op }, graph_sm_b)
+                    .await
+                    .unwrap();
+
+                // Set a graph state for a different operator (the "survivor").
+                client
+                    .set_graph_state(GraphIdx{deposit: deposit_a, operator: survivor_op }, survivor_state.clone())
+                    .await
+                    .unwrap();
+
+                // Cascade delete the target operator.
+                client.delete_operator(target_op).await.unwrap();
+
+                // All target operator data should be gone.
+                let gs_a = client
+                    .get_graph_state(GraphIdx{deposit: deposit_a, operator: target_op }).await.unwrap();
+                prop_assert_eq!(None, gs_a);
+
+                let gs_b = client
+                    .get_graph_state(GraphIdx{deposit: deposit_b, operator: target_op })
+                    .await
+                    .unwrap();
+                prop_assert_eq!(None, gs_b);
+
+                // Survivor operator's data should still be present.
+                let survivor = client
+                    .get_graph_state(GraphIdx{deposit: deposit_a, operator: survivor_op })
+                    .await
+                    .unwrap();
+                prop_assert_eq!(Some(survivor_state), survivor);
+
+                Ok(())
+            })?;
+        }
+
+        /// Property: `persist_batch` atomically writes deposit and
+        /// graph SMs that can be read back individually.
+        #[test]
+        fn persist_batch_test(
+            deposit_idx in any::<DepositIdx>(),
+            operator_idx in any::<OperatorIdx>(),
+            last_block_height in any::<u64>(),
+            outpoint in arb_outpoint(),
+            operator_table in arb_operator_table(),
+        ) {
+            let deposit_sm = make_deposit_sm(
+                deposit_idx,
+                outpoint,
+                operator_table.clone(),
+                DepositState::Deposited { last_block_height },
+            );
+
+            let graph_sm = make_graph_sm(
+                GraphIdx { deposit: deposit_idx,
+                operator: operator_idx},
+                outpoint,
+                operator_table,
+                GraphState::Created { last_block_height },
+            );
+
+            block_on(async {
+                let client = get_client();
+
+                let mut batch = WriteBatch::new();
+                batch.add_deposit(deposit_sm.clone());
+                batch.add_graph(graph_sm.clone());
+
+                client.persist_batch(&batch).await.unwrap();
+
+                let retrieved_deposit = client
+                    .get_deposit_state(deposit_idx)
+                    .await
+                    .unwrap();
+                prop_assert_eq!(Some(deposit_sm), retrieved_deposit);
+
+                let retrieved_graph = client
+                    .get_graph_state(GraphIdx { deposit: deposit_idx, operator: operator_idx })
+                    .await
+                    .unwrap();
+                prop_assert_eq!(Some(graph_sm), retrieved_graph);
+
+                Ok(())
+            })?;
+        }
+
+        /// Property: `persist_batch` correctly writes multiple deposits and
+        /// multiple graphs in a single atomic batch.
+        #[test]
+        fn persist_batch_multi_entry_test(
+            deposit_idx_a in any::<DepositIdx>(),
+            deposit_idx_b in any::<DepositIdx>(),
+            operator_idx_a in any::<OperatorIdx>(),
+            operator_idx_b in any::<OperatorIdx>(),
+            last_block_height in any::<u64>(),
+            outpoint in arb_outpoint(),
+            operator_table in arb_operator_table(),
+        ) {
+            prop_assume!(deposit_idx_a != deposit_idx_b);
+
+            let dep_a = make_deposit_sm(
+                deposit_idx_a, outpoint, operator_table.clone(),
+                DepositState::Deposited { last_block_height },
+            );
+            let dep_b = make_deposit_sm(
+                deposit_idx_b, outpoint, operator_table.clone(),
+                DepositState::Deposited { last_block_height },
+            );
+            let graph_a = make_graph_sm(
+                GraphIdx { deposit: deposit_idx_a, operator:  operator_idx_a}, outpoint, operator_table.clone(),
+                GraphState::Created { last_block_height },
+            );
+            let graph_b = make_graph_sm(
+                GraphIdx { deposit: deposit_idx_b, operator:  operator_idx_b}, outpoint, operator_table,
+                GraphState::Created { last_block_height },
+            );
+
+            block_on(async {
+                let client = get_client();
+
+                let mut batch = WriteBatch::new();
+                batch.add_deposit(dep_a.clone());
+                batch.add_deposit(dep_b.clone());
+                batch.add_graph(graph_a.clone());
+                batch.add_graph(graph_b.clone());
+
+                client.persist_batch(&batch).await.unwrap();
+
+                let ret_dep_a = client.get_deposit_state(deposit_idx_a).await.unwrap();
+                prop_assert_eq!(Some(dep_a), ret_dep_a);
+
+                let ret_dep_b = client.get_deposit_state(deposit_idx_b).await.unwrap();
+                prop_assert_eq!(Some(dep_b), ret_dep_b);
+
+                let ret_graph_a = client.get_graph_state(GraphIdx{deposit: deposit_idx_a, operator: operator_idx_a }).await.unwrap();
+                prop_assert_eq!(Some(graph_a), ret_graph_a);
+
+                let ret_graph_b = client.get_graph_state(GraphIdx{deposit: deposit_idx_b, operator: operator_idx_b }).await.unwrap();
+                prop_assert_eq!(Some(graph_b), ret_graph_b);
+
+                Ok(())
+            })?;
+        }
+
+        /// Property: `persist_batch` overwrites previously stored state.
+        #[test]
+        fn persist_batch_overwrite_test(
+            deposit_idx in any::<DepositIdx>(),
+            operator_idx in any::<OperatorIdx>(),
+            old_height in any::<u64>(),
+            new_height in any::<u64>(),
+            outpoint in arb_outpoint(),
+            operator_table in arb_operator_table(),
+        ) {
+            prop_assume!(old_height != new_height);
+
+            let old_deposit = make_deposit_sm(
+                deposit_idx, outpoint, operator_table.clone(),
+                DepositState::Deposited { last_block_height: old_height },
+            );
+            let old_graph = make_graph_sm(
+                GraphIdx { deposit: deposit_idx, operator: operator_idx }, outpoint, operator_table.clone(),
+                GraphState::Created { last_block_height: old_height },
+            );
+            let new_deposit = make_deposit_sm(
+                deposit_idx, outpoint, operator_table.clone(),
+                DepositState::Deposited { last_block_height: new_height },
+            );
+            let new_graph = make_graph_sm(
+                GraphIdx { deposit: deposit_idx, operator: operator_idx }, outpoint, operator_table,
+                GraphState::Created { last_block_height: new_height },
+            );
+
+            block_on(async {
+                let client = get_client();
+
+                // Pre-seed with old state.
+                client.set_deposit_state(deposit_idx, old_deposit).await.unwrap();
+                client.set_graph_state(GraphIdx { deposit: deposit_idx, operator: operator_idx }, old_graph).await.unwrap();
+
+                // Overwrite via batch.
+                let mut batch = WriteBatch::new();
+                batch.add_deposit(new_deposit.clone());
+                batch.add_graph(new_graph.clone());
+                client.persist_batch(&batch).await.unwrap();
+
+                let ret_dep = client.get_deposit_state(deposit_idx).await.unwrap();
+                prop_assert_eq!(Some(new_deposit), ret_dep);
+
+                let ret_graph = client.get_graph_state(GraphIdx { deposit: deposit_idx, operator: operator_idx }).await.unwrap();
+                prop_assert_eq!(Some(new_graph), ret_graph);
+
+                Ok(())
+            })?;
+        }
+
+        /// Property: `persist_batch` with only deposits (no graphs) succeeds.
+        #[test]
+        fn persist_batch_deposit_only_test(
+            deposit_idx in any::<DepositIdx>(),
+            last_block_height in any::<u64>(),
+            outpoint in arb_outpoint(),
+            operator_table in arb_operator_table(),
+        ) {
+            let deposit_sm = make_deposit_sm(
+                deposit_idx, outpoint, operator_table,
+                DepositState::Deposited { last_block_height },
+            );
+
+            block_on(async {
+                let client = get_client();
+
+                let mut batch = WriteBatch::new();
+                batch.add_deposit(deposit_sm.clone());
+
+                client.persist_batch(&batch).await.unwrap();
+
+                let retrieved = client.get_deposit_state(deposit_idx).await.unwrap();
+                prop_assert_eq!(Some(deposit_sm), retrieved);
+
+                Ok(())
+            })?;
+        }
+
+        /// Property: `persist_batch` with only graphs (no deposits) succeeds.
+        #[test]
+        fn persist_batch_graph_only_test(
+            deposit_idx in any::<DepositIdx>(),
+            operator_idx in any::<OperatorIdx>(),
+            last_block_height in any::<u64>(),
+            outpoint in arb_outpoint(),
+            operator_table in arb_operator_table(),
+        ) {
+            let graph_sm = make_graph_sm(
+                GraphIdx { deposit: deposit_idx, operator: operator_idx }, outpoint, operator_table,
+                GraphState::Created { last_block_height },
+            );
+
+            block_on(async {
+                let client = get_client();
+
+                let mut batch = WriteBatch::new();
+                batch.add_graph(graph_sm.clone());
+
+                client.persist_batch(&batch).await.unwrap();
+
+                let retrieved = client.get_graph_state(GraphIdx { deposit: deposit_idx, operator: operator_idx }).await.unwrap();
+                prop_assert_eq!(Some(graph_sm), retrieved);
+
+                Ok(())
+            })?;
+        }
+
+        /// Property: after a multi-entry `persist_batch`, `get_all_deposit_states`
+        /// and `get_all_graph_states` contain every batched entry.
+        #[test]
+        fn persist_batch_get_all_consistency_test(
+            deposit_idx_a in any::<DepositIdx>(),
+            deposit_idx_b in any::<DepositIdx>(),
+            operator_idx in any::<OperatorIdx>(),
+            last_block_height in any::<u64>(),
+            outpoint in arb_outpoint(),
+            operator_table in arb_operator_table(),
+        ) {
+            prop_assume!(deposit_idx_a != deposit_idx_b);
+
+            let dep_a = make_deposit_sm(
+                deposit_idx_a, outpoint, operator_table.clone(),
+                DepositState::Deposited { last_block_height },
+            );
+            let dep_b = make_deposit_sm(
+                deposit_idx_b, outpoint, operator_table.clone(),
+                DepositState::Deposited { last_block_height },
+            );
+            let graph_a = make_graph_sm(
+                GraphIdx{ deposit:deposit_idx_a, operator: operator_idx}, outpoint, operator_table.clone(),
+                GraphState::Created { last_block_height },
+            );
+            let graph_b = make_graph_sm(
+                GraphIdx { deposit: deposit_idx_b, operator: operator_idx}, outpoint, operator_table,
+                GraphState::Created { last_block_height },
+            );
+
+            block_on(async {
+                let client = get_client();
+
+                let mut batch = WriteBatch::new();
+                batch.add_deposit(dep_a.clone());
+                batch.add_deposit(dep_b.clone());
+                batch.add_graph(graph_a.clone());
+                batch.add_graph(graph_b.clone());
+
+                client.persist_batch(&batch).await.unwrap();
+
+                let all_deps = client.get_all_deposit_states().await.unwrap();
+                let found_dep_a = all_deps.iter().any(|(idx, sm)| *idx == deposit_idx_a && *sm == dep_a);
+                let found_dep_b = all_deps.iter().any(|(idx, sm)| *idx == deposit_idx_b && *sm == dep_b);
+                prop_assert!(found_dep_a, "deposit A not found in get_all_deposit_states after batch persist");
+                prop_assert!(found_dep_b, "deposit B not found in get_all_deposit_states after batch persist");
+
+                let all_graphs = client.get_all_graph_states().await.unwrap();
+                let found_graph_a = all_graphs.iter().any(|(idx, gs)| idx.deposit == deposit_idx_a && idx.operator == operator_idx && *gs == graph_a);
+                let found_graph_b = all_graphs.iter().any(|(idx, gs)| idx.deposit == deposit_idx_b && idx.operator == operator_idx && *gs == graph_b);
+                prop_assert!(found_graph_a, "graph A not found in get_all_graph_states after batch persist");
+                prop_assert!(found_graph_b, "graph B not found in get_all_graph_states after batch persist");
+
+                Ok(())
+            })?;
+        }
+
+    }
+
+    /// An empty `WriteBatch` should persist without error.
+    #[test]
+    fn persist_batch_empty_test() {
+        block_on(async {
+            let client = get_client();
+            let batch = WriteBatch::new();
+            client.persist_batch(&batch).await.unwrap();
+        });
+    }
+
+    /// Property: `persist_batch` handles a realistic `NoncesCollected` graph
+    /// state with 10 operator entries and a `GameGraphSummary` sized for 10
+    /// watchtowers. Verifies the full FDB write-read roundtrip.
+    #[test]
+    fn persist_batch_realistic_state_test() {
+        let mut runner = proptest::test_runner::TestRunner::default();
+        let operator_table = arb_operator_table()
+            .new_tree(&mut runner)
+            .unwrap()
+            .current();
+        let outpoint = arb_outpoint().new_tree(&mut runner).unwrap().current();
+        let deposit_idx: DepositIdx = random();
+
+        const N_OPERATORS: usize = 10;
+        const N_WATCHTOWERS: usize = 10;
+
+        // get random operator index within bounds for the graph state context.
+        let operator_idx: OperatorIdx = random::<u32>() % N_OPERATORS as u32;
+
+        // generate random Txids for the graph summary by XORing the base Txid with different salts.
+        let derive_txid = |salt: u8| {
+            let base: &[u8] = outpoint.txid.as_ref();
+            let mut bytes = [0u8; 32];
+            for (i, b) in base.iter().enumerate() {
+                bytes[i] = b ^ salt;
+            }
+            Txid::from_slice(&bytes).unwrap()
+        };
+
+        let _partial_signatures: BTreeMap<OperatorIdx, taproot::Signature> = (0..N_OPERATORS
+            as u32)
+            .map(|i| {
+                let (secret_key, _) = SECP256K1.generate_keypair(&mut thread_rng());
+                let keypair = Keypair::from_secret_key(SECP256K1, &secret_key);
+                let sig = keypair.sign_schnorr(Message::from_digest([i as u8; 32]));
+                (
+                    i,
+                    taproot::Signature {
+                        signature: sig,
+                        sighash_type: TapSighashType::Default,
+                    },
+                )
+            })
+            .collect();
+
+        let nonces_collected = GraphState::NoncesCollected {
+            last_block_height: 100,
+            graph_data: DepositParams {
+                game_index: NonZero::new(1).unwrap(),
+                claim_funds: OutPoint {
+                    txid: outpoint.txid,
+                    vout: outpoint.vout.wrapping_add(2),
+                },
+                deposit_outpoint: outpoint,
+            },
+            graph_summary: GameGraphSummary {
+                claim: derive_txid(0x01),
+                contest: derive_txid(0x02),
+                bridge_proof_timeout: derive_txid(0x03),
+                counterproofs: (0..N_WATCHTOWERS)
+                    .map(|i| CounterproofGraphSummary {
+                        counterproof: derive_txid((i + 0x10) as u8),
+                        counterproof_ack: derive_txid((i + 0x20) as u8),
+                    })
+                    .collect(),
+                slash: derive_txid(0x04),
+                uncontested_payout: derive_txid(0x05),
+                contested_payout: derive_txid(0x06),
+            },
+            pubnonces: Default::default(),
+            agg_nonces: Default::default(),
+            partial_signatures: Default::default(),
+        };
+
+        let deposit_sm = make_deposit_sm(
+            deposit_idx,
+            outpoint,
+            operator_table.clone(),
+            DepositState::Deposited {
+                last_block_height: 100,
+            },
+        );
+
+        let graph_sm = make_graph_sm(
+            GraphIdx {
+                deposit: deposit_idx,
+                operator: operator_idx,
+            },
+            outpoint,
+            operator_table,
+            nonces_collected,
+        );
+
+        let graph_sms = (0..N_OPERATORS as u32)
+            .map(|op_idx| {
+                let mut sm = graph_sm.clone();
+                sm.context.graph_idx.operator = op_idx;
+
+                sm
+            })
+            .collect::<Vec<_>>();
+
+        block_on(async {
+            let client = get_client();
+
+            let mut batch = WriteBatch::new();
+            batch.add_deposit(deposit_sm.clone());
+            graph_sms
+                .into_iter()
+                .for_each(|graph_sm| batch.add_graph(graph_sm));
+
+            client.persist_batch(&batch).await.unwrap();
+
+            let retrieved_deposit = client.get_deposit_state(deposit_idx).await.unwrap();
+            assert_eq!(Some(deposit_sm), retrieved_deposit);
+
+            let retrieved_graph = client
+                .get_graph_state(GraphIdx {
+                    deposit: deposit_idx,
+                    operator: operator_idx,
+                })
+                .await
+                .unwrap();
+            assert_eq!(Some(graph_sm), retrieved_graph);
+        });
+    }
+}

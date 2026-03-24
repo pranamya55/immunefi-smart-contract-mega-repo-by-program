@@ -1,0 +1,19 @@
+{
+  "url": "https://polygonscan.com/address/0xcd170fa0c80ea060a9df6bf91bff24cbdc4e0f30",
+  "host": "polygonscan.com",
+  "address": "0xcd170fa0c80ea060a9df6bf91bff24cbdc4e0f30",
+  "chainid": 137,
+  "contract_name": "StrategyPolyCatDyfnLP",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "0000000000000000000000009e2fbb31fbd68472f6cd54a1635b8cd64d78fc1c00000000000000000000000000000000000000000000000000000000000000150000000000000000000000009f3b96a2dd55aa904bc5476ffe66e74a53f6b420000000000000000000000000a102072a4c07f06ec3b4900fdc4c7b80b6c5742900000000000000000000000010aee6b5594942433e7fc2783598c979b030ef3d000000000000000000000000010da5ff62b6e45f89fa7b2d8ced5a8b5754ec1b000000000000000000000000b66ca5319efc42fd1462693bab51ee0c9e452745",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://14b828925810e9a1843984c7c0977aedcf3cd65c57b00ab53a9c3b61a4ed05c6",
+  "files_written": 1,
+  "mode": "recover-single-file"
+}

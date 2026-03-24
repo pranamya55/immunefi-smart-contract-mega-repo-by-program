@@ -1,0 +1,202 @@
+[
+  {
+    "project_slug": "layerzero",
+    "asset_id": "1AvnTSvbtUxxvYcp9OfsJr",
+    "url": "https://etherscan.io/address/0x4d73adb72bc3dd368966edd0f0b2148401a178e2#code",
+    "description": "UltraLightNodeV2.sol",
+    "added_at": "2023-05-17T17:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "layerzero",
+    "asset_id": "3jRvKowncWDepaN7o3VSLK",
+    "url": "https://etherscan.io/address/0x07245eEa05826F5984c7c3C8F478b04892e4df89",
+    "description": "FPValidator.sol",
+    "added_at": "2023-05-17T17:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "layerzero",
+    "asset_id": "6Itr1QUL53zDVYAvPk96O4",
+    "url": "https://etherscan.io/address/0x66A71Dcef29A0fFBDBE3c6a460a3B5BC225Cd675#code",
+    "description": "Endpoint (EVM)",
+    "added_at": "2023-05-17T17:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "layerzero",
+    "asset_id": "7hELKX2uQQzAMjvmsbie4T",
+    "url": "https://aptoscan.com/account/0x54ad3d30af77b60d939ae356e6606de9a4da67583f02b962d2d3f2e481484e90",
+    "description": "Endpoint (Aptos)",
+    "added_at": "2024-10-29T17:50:35.573Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "layerzero",
+    "asset_id": "7FeS0awcjrIfyzba238uEv",
+    "url": "https://github.com/LayerZero-Labs/solidity-examples/blob/main/contracts/token/oft/v1/OFT.sol",
+    "description": "OFT (EVM)",
+    "added_at": "2023-05-17T17:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "layerzero",
+    "asset_id": "16ifjbsTu7mBK21fEUgze7",
+    "url": "https://github.com/LayerZero-Labs/solidity-examples/blob/main/contracts/token/oft/v2/OFTV2.sol",
+    "description": "OFTv1.2 (EVM)",
+    "added_at": "2023-05-17T17:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "layerzero",
+    "asset_id": "53l6TK3bLcSHYiovX9S7sB",
+    "url": "https://github.com/LayerZero-Labs/solidity-examples/blob/main/contracts/token/onft721/ONFT721.sol",
+    "description": "ONFT721 (EVM)",
+    "added_at": "2023-05-17T17:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "layerzero",
+    "asset_id": "6x2Vg1PG1pkdiij36fU1E",
+    "url": "https://github.com/LayerZero-Labs/solidity-examples/blob/main/contracts/token/onft1155/ONFT1155.sol",
+    "description": "ONFT1155 (EVM)",
+    "added_at": "2023-05-17T17:00:00.000Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "layerzero",
+    "asset_id": "39mhMVaavajninZUnYIsWt",
+    "url": "https://etherscan.io/address/0x1a44076050125825900e736c501f859c50fe728c#code",
+    "description": "EndpointV2 (EVM)",
+    "added_at": "2024-02-13T14:18:59.415Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "layerzero",
+    "asset_id": "4qHzyZk8pdkDrHnXabgZOA",
+    "url": "https://etherscan.io/address/0xD231084BfB234C107D3eE2b22F97F3346fDAF705#code",
+    "description": "SendULN301 (EVM)",
+    "added_at": "2024-02-13T14:18:56.439Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "layerzero",
+    "asset_id": "5NL1BFF6ZBHCKCwWENtxsf",
+    "url": "https://etherscan.io/address/0x245b6e8ffe9ea5fc301e32d16f66bd4c2123eefc#code",
+    "description": "ReceiveULN301 (EVM)",
+    "added_at": "2024-02-13T14:18:54.282Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "layerzero",
+    "asset_id": "73gh3Q3hRSDfgDW3V6LSsv",
+    "url": "https://etherscan.io/address/0xbb2ea70c9e858123480642cf96acbcce1372dce1#code",
+    "description": "SendULN302 (EVM)",
+    "added_at": "2024-02-13T14:18:51.689Z",
+    "revision": 4
+  },
+  {
+    "project_slug": "layerzero",
+    "asset_id": "4dhDu7eD44fZOPAUuiJT8B",
+    "url": "https://explorer.solana.com/address/6doghB248px58JSSwG4qejQ46kFMW4AMj7vzJnWZHNZn",
+    "description": "SendULN302 (Solana)",
+    "added_at": "2024-10-29T17:58:09.748Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "layerzero",
+    "asset_id": "7wsMXOnjGGFwLAwT2eaT93",
+    "url": "https://etherscan.io/address/0xc02ab410f0734efa3f14628780e6e695156024c2#code",
+    "description": "ReceiveULN302 (EVM)",
+    "added_at": "2024-02-13T14:18:49.342Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "layerzero",
+    "asset_id": "5wKvMXcRSj44t16OphKoPB",
+    "url": "https://explorer.solana.com/address/7a4WjyR8VZ7yZz5XJAKm39BUGn5iT9CKcv2pmG9tdXVH",
+    "description": "ReceiveULN302 (Solana)",
+    "added_at": "2024-10-29T17:59:29.233Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "layerzero",
+    "asset_id": "67VGceeWmaO3RcsGxclNMq",
+    "url": "https://etherscan.io/address/0x589dedbd617e0cbcb916a9223f4d1300c294236b#code",
+    "description": "DVN (EVM)",
+    "added_at": "2024-02-13T14:18:47.416Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "layerzero",
+    "asset_id": "3lZ2f8YqtQwEe5ds0xRQVu",
+    "url": "https://explorer.solana.com/address/76y77prsiCMvXMjuoZ5VRrhG5qYBrUMYTE5WgHqgjEn6",
+    "description": "EndpointV2 (Solana)",
+    "added_at": "2024-10-29T17:53:30.105Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "layerzero",
+    "asset_id": "MFubTqaCBhTMChd0CGl4l",
+    "url": "https://explorer.solana.com/address/4VDjp6XQaxoZf5RGwiPU9NR1EXSZn2TP4ATMmiSzLfhb",
+    "description": "DVN (Solana)",
+    "added_at": "2024-10-29T18:00:29.218Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "layerzero",
+    "asset_id": "5fPFIFy9loK7maViGCvECQ",
+    "url": "https://github.com/LayerZero-Labs/devtools/tree/main/packages/oapp-evm/contracts/oapp",
+    "description": "OApp (EVM)",
+    "added_at": "2024-10-29T18:00:56.043Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "layerzero",
+    "asset_id": "7uML0p7A3oVKrzVhZjVfFc",
+    "url": "https://github.com/LayerZero-Labs/devtools/tree/main/packages/oft-evm/contracts",
+    "description": "OFT (EVM)",
+    "added_at": "2024-10-29T18:01:14.662Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "layerzero",
+    "asset_id": "5uOaRHMVp3PJ8pZLkYelXc",
+    "url": "https://github.com/LayerZero-Labs/devtools/tree/main/examples/oft-solana",
+    "description": "OFT (Solana)",
+    "added_at": "2024-10-29T18:01:32.797Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "layerzero",
+    "asset_id": "2vw89vfXrWz6hlzx22YokT",
+    "url": "https://tonviewer.com/0:1eb2bbea3d8c0d42ff7fd60f0264c866c934bbff727526ca759e7374cae0c166",
+    "description": "Controller (TON)",
+    "added_at": "2025-02-12T08:46:05.702Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "layerzero",
+    "asset_id": "4efqenGLEmbiVxNEVM0xXC",
+    "url": "https://tonviewer.com/0:150645746e25be5486eb3b2f5d98b44c6b324697c48d495d059f96fc9d3ec368",
+    "description": "ULNManager (TON)",
+    "added_at": "2025-02-12T08:47:25.348Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "layerzero",
+    "asset_id": "4KLM0tcNJ1RN2voy642jCE",
+    "url": "https://tonviewer.com/0:0d122dec4ec8bd66c68344faf0dd471d727a7d57a21b62051705bbe2e4c272a7",
+    "description": "DVNProxy (TON)",
+    "added_at": "2025-02-12T08:47:46.149Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "layerzero",
+    "asset_id": "6dHbnS8CIh77iim2v7SzrO",
+    "url": "https://immunefi.com",
+    "description": "Primacy of Impact",
+    "added_at": "2025-11-11T09:37:09.759Z",
+    "revision": 1
+  }
+]

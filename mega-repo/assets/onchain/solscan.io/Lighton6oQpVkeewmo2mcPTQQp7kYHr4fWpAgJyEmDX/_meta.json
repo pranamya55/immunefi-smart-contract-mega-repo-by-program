@@ -1,0 +1,9 @@
+{
+  "url_host": "solscan.io",
+  "address": "Lighton6oQpVkeewmo2mcPTQQp7kYHr4fWpAgJyEmDX",
+  "chain_kind": "solana",
+  "mode": "alchemy-solana-getAccountInfo",
+  "executable": true,
+  "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "space": 36
+}

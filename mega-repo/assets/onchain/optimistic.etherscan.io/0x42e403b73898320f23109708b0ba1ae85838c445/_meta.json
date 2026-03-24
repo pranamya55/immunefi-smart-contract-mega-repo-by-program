@@ -1,0 +1,24 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0x42e403b73898320f23109708b0ba1ae85838c445#code",
+  "host": "optimistic.etherscan.io",
+  "address": "0x42e403b73898320f23109708b0ba1ae85838c445",
+  "chainid": 10,
+  "project_slug": "velodromefinance",
+  "asset_id": "3aHUqOAESbDPfdNAvcTOLw",
+  "contract_name": "RootGaugeFactory",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "00000000000000000000000041c914ee0c7e1a5edcd0295623e6dc557b5abf3c0000000000000000000000007f9adfbd38b669f03d1d11000bc76b9aaea28a8100000000000000000000000012b64df29590b4f0934070fac96e82e580d60232000000000000000000000000f278761576f45472bdd721eaca19317ce159c01100000000000000000000000031832f2a97fd20664d76cc421207669b55ce4bc00000000000000000000000007dc9fd82f91b36f416a89f5478375e4a79f4fb2f000000000000000000000000ba4bb89f4d1e66aa86b60696534892ae0ccf91f5000000000000000000000000ba4bb89f4d1e66aa86b60696534892ae0ccf91f50000000000000000000000000000000000000000000000000000000000000096",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 29,
+  "mode": "json-sources"
+}

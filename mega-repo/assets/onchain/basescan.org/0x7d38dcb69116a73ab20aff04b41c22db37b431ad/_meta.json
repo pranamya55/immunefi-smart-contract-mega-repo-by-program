@@ -1,0 +1,24 @@
+{
+  "url": "https://basescan.org/address/0x7d38dcb69116a73ab20aff04b41c22db37b431ad",
+  "host": "basescan.org",
+  "address": "0x7d38dcb69116a73ab20aff04b41c22db37b431ad",
+  "chainid": 8453,
+  "project_slug": "enzymefinance",
+  "asset_id": "99154",
+  "contract_name": "SharesSplitterFactory",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "00000000000000000000000065b8f1f82ce8a6b72db0937c522a52af5693d4d3",
+  "evm_version": "istanbul",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 12,
+  "mode": "json-sources"
+}

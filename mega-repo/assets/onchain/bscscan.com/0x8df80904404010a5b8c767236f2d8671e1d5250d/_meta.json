@@ -1,0 +1,19 @@
+{
+  "url": "https://bscscan.com/address/0x8df80904404010a5b8c767236f2d8671e1d5250d",
+  "host": "bscscan.com",
+  "address": "0x8df80904404010a5b8c767236f2d8671e1d5250d",
+  "chainid": 56,
+  "contract_name": "ApeSwapLendingHandler",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000c2f2bf0c228714d038c2495343224c0d9199cc82",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 15,
+  "mode": "recover-json-sources"
+}

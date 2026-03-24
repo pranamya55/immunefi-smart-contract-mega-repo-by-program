@@ -1,0 +1,19 @@
+{
+  "url": "https://basescan.org/address/0x09959798b95d00a3183d20fac298e4594e599eab",
+  "host": "basescan.org",
+  "address": "0x09959798b95d00a3183d20fac298e4594e599eab",
+  "chainid": 8453,
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x40fa0a360818b04b9975680746dc0b7092105a0c",
+  "swarm_source": "",
+  "files_written": 14,
+  "mode": "recover-json-sources"
+}

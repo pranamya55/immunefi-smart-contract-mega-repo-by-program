@@ -1,0 +1,1 @@
+../../../../../../../../../../mega-repo/assets/github/blob-snapshots/Synthetixio/synthetix-v3/main/markets/legacy-market/contracts/LegacyMarket.sol

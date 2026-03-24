@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0x8Ec402bD731AB88928104ccF8ee5bb41d5FEC784#code",
+  "host": "polygonscan.com",
+  "address": "0x8Ec402bD731AB88928104ccF8ee5bb41d5FEC784",
+  "chainid": 137,
+  "project_slug": "woofi",
+  "asset_id": "60N7pXo6m8TlEzd1K39eWy",
+  "contract_name": "WooSimpleRewarder",
+  "compiler_version": "v0.8.14+commit.80d49f37",
+  "optimization_used": "1",
+  "runs": "20000",
+  "constructor_arguments": "0000000000000000000000001b815d120b3ef02039ee11dc2d33de7aa4a8c6030000000000000000000000001109e03516eb25eab2150d0b274b8d4f5f3cf549000000000000000000000000c0f8c29e3a9a7650a3f642e467d70087819926d60000000000000000000000000000000000000000000000000000000000000001",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 11,
+  "mode": "json-sources"
+}

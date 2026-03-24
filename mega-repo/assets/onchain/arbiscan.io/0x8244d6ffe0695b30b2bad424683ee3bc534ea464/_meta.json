@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x8244d6Ffe0695B30b2bAD424683Ee3bc534Ea464",
+  "host": "arbiscan.io",
+  "address": "0x8244d6Ffe0695B30b2bAD424683Ee3bc534Ea464",
+  "chainid": 42161,
+  "project_slug": "debridge",
+  "asset_id": "5AG6K4AVXwM079VsdjXePj",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "1",
+  "implementation": "0x4c7ca8fcffe77281a8b81d4580cff8257d785491",
+  "swarm_source": "ipfs://93f028255035b61df476b13b9dba3c4f06f60e51b9b4caee31680b389aef327f",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

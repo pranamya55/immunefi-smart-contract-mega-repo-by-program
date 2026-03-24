@@ -1,0 +1,25 @@
+{
+  "url": "https://explorer.orderly.network/address/0x343Ca787e960cB2cCA0ce8cfB2f38c3739E28a1E",
+  "host": "explorer.orderly.network",
+  "address": "0x343Ca787e960cB2cCA0ce8cfB2f38c3739E28a1E",
+  "chainid": null,
+  "project_slug": "orderlynetwork",
+  "asset_id": "71M9dZskApwNknw7ccSlj2",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": "000000000000000000000000101d0bb7b6c5e5f0c3d8ace2272f4253c6c3528f000000000000000000000000a2ea0a58b083c492adc91a687fac8b53adb7c0fd000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000048129fc1c00000000000000000000000000000000000000000000000000000000",
+  "evm_version": "default",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:missing-chainid",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

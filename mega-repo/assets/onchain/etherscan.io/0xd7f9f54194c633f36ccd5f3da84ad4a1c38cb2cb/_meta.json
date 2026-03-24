@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xD7f9f54194C633F36CCD5F3da84ad4a1c38cB2cB#code",
+  "host": "etherscan.io",
+  "address": "0xD7f9f54194C633F36CCD5F3da84ad4a1c38cB2cB",
+  "chainid": 1,
+  "project_slug": "zksyncera",
+  "asset_id": "5rLKAOZDL1NusNiQlPluuo",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": "1",
+  "runs": "9999999",
+  "constructor_arguments": "",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x71759c4ea628293f5a99aab1585df1c8da4718e0",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

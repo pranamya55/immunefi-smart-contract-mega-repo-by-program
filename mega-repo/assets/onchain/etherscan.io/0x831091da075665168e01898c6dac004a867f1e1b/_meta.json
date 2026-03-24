@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x831091da075665168e01898c6dac004a867f1e1b",
+  "host": "etherscan.io",
+  "address": "0x831091da075665168e01898c6dac004a867f1e1b",
+  "chainid": 1,
+  "project_slug": "gainsnetwork",
+  "asset_id": "7KFWks7gaIU1E2MwE4k0Sa",
+  "contract_name": "GFarmToken",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": "1",
+  "runs": "1000",
+  "constructor_arguments": "000000000000000000000000c66fbe50dd33c9aadd65707f7088d597c86fe00f0000000000000000000000001e887e7115321b4ee5d58dd446ec09e12b45d81b0000000000000000000000006e626a14316b142d785aa71e251547f703197847",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "None",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://0ff3615418146d20394f068e6ce49194bcb55b7faf18d6aa9dd40e0decb94272",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

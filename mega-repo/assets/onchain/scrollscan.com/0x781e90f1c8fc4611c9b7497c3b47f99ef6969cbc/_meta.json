@@ -1,0 +1,24 @@
+{
+  "url": "https://scrollscan.com/address/0x781e90f1c8Fc4611c9b7497C3B47F99Ef6969CbC",
+  "host": "scrollscan.com",
+  "address": "0x781e90f1c8Fc4611c9b7497C3B47F99Ef6969CbC",
+  "chainid": 534352,
+  "project_slug": "scroll",
+  "asset_id": "4CjT30E0K3AfBAAOIS42tV",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000485149079c421f9e4c465276bbabb2fe0748d138000000000000000000000000a76acf000c890b0dd7aeef57627d9899f955d02600000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000000",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x6fa66eed8e8086f4c77204b5484d26f4e9ab7772",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

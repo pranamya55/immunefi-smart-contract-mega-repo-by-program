@@ -1,0 +1,24 @@
+[package]
+name = "light-hash-set"
+version = "4.0.0"
+description = "Hash set which can be stored on a Solana account"
+readme = "README.md"
+repository = "https://github.com/Lightprotocol/light-protocol"
+license = "Apache-2.0"
+edition = "2021"
+
+[features]
+solana = ["solana-program-error"]
+
+[dependencies]
+num-bigint = { workspace = true }
+num-traits = { workspace = true }
+solana-program-error = { workspace = true, optional = true }
+thiserror = { workspace = true }
+light-hasher = { workspace = true }
+
+[dev-dependencies]
+ark-bn254 = { workspace = true }
+ark-ff = { workspace = true }
+light-hasher = { workspace = true, features = ["keccak", "sha256", "poseidon"] }
+rand = { workspace = true }

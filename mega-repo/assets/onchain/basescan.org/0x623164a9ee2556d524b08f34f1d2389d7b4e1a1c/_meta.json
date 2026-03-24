@@ -1,0 +1,19 @@
+{
+  "url": "https://basescan.org/address/0x623164a9ee2556d524b08f34f1d2389d7b4e1a1c",
+  "host": "basescan.org",
+  "address": "0x623164a9ee2556d524b08f34f1d2389d7b4e1a1c",
+  "chainid": 8453,
+  "contract_name": "OlympusMinter",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": "1",
+  "runs": "10",
+  "constructor_arguments": "00000000000000000000000018878df23e2a36f81e820e4b47b4a40576d3159c000000000000000000000000060cb087a9730e13aa191f31a6d86bff8dfcdcc0",
+  "evm_version": "london",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 4,
+  "mode": "recover-json-sources"
+}

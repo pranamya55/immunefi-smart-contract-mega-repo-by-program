@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0x91993f2101cc758D0dEB7279d41e880F7dEFe827",
+  "host": "polygonscan.com",
+  "address": "0x91993f2101cc758D0dEB7279d41e880F7dEFe827",
+  "chainid": 137,
+  "project_slug": "gainsnetwork",
+  "asset_id": "3KjWOSvlizntaA8N1q1Vj4",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0xc9f972fc319fd7321a4a89462181a2f3162a5a00",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

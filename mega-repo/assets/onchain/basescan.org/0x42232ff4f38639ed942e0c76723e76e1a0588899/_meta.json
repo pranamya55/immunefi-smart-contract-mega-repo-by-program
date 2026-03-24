@@ -1,0 +1,19 @@
+{
+  "url": "https://basescan.org/address/0x42232ff4f38639ed942e0c76723e76e1a0588899",
+  "host": "basescan.org",
+  "address": "0x42232ff4f38639ed942e0c76723e76e1a0588899",
+  "chainid": 8453,
+  "contract_name": "AddressListRegistry",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000d79fcd6eb56115f9757ec4c90fc2c5d143f83c16",
+  "evm_version": "istanbul",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 3,
+  "mode": "recover-json-sources"
+}

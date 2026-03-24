@@ -1,0 +1,25 @@
+{
+  "url": "https://explorer.inkonchain.com/address/0xcB3e564293393E0d4F43305a250d4e1716dE600b?tab=contract",
+  "host": "explorer.inkonchain.com",
+  "address": "0xcB3e564293393E0d4F43305a250d4e1716dE600b",
+  "chainid": 57073,
+  "project_slug": "parallel",
+  "asset_id": "21CIvhOngRMNxcaYA3yUoU",
+  "contract_name": "TokenP",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": null,
+  "evm_version": "cancun",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:unexpected-response",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

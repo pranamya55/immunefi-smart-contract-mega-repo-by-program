@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x6d903f6003cca6255D85CcA4D3B5E5146dC33925",
+  "host": "etherscan.io",
+  "address": "0x6d903f6003cca6255D85CcA4D3B5E5146dC33925",
+  "chainid": 1,
+  "project_slug": "compoundfinance",
+  "asset_id": "7JrnVHmzzfFEF1a60FoOGz",
+  "contract_name": "Timelock",
+  "compiler_version": "v0.5.8+commit.23d335f2",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "0000000000000000000000008b8592e9570e96166336603a1b4bd1e8db20fa20000000000000000000000000000000000000000000000000000000000002a300",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "bzzr://66c588fea727d4a4b3eb2554087a21c0403f86249bc84e2b3d386fdbfdd7056c",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

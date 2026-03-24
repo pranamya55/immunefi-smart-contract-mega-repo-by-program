@@ -1,0 +1,7 @@
+{
+  "url": "https://www.oklink.com/xlayer/address/0x5903E2Be82832c42a868A4748B64b5c401DE91Eb/contract#category=read",
+  "host": "www.oklink.com",
+  "address": "0x5903E2Be82832c42a868A4748B64b5c401DE91Eb",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:http 404"
+}

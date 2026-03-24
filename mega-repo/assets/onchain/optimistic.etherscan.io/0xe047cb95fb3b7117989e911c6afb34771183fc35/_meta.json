@@ -1,0 +1,24 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0xE047cb95FB3b7117989e911c6afb34771183fC35",
+  "host": "optimistic.etherscan.io",
+  "address": "0xE047cb95FB3b7117989e911c6afb34771183fC35",
+  "chainid": 10,
+  "project_slug": "hyperlane",
+  "asset_id": "qpNB2WMaHPxPyXaTBVtKy",
+  "contract_name": "ProxyAdmin",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "999999",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

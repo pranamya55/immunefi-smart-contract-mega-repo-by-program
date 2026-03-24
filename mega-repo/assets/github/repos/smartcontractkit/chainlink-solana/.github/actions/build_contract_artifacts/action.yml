@@ -1,0 +1,80 @@
+name: Build Contract Artifacts
+description: Common builder for test contracts for automated tests
+inputs:
+  ref:
+    required: false
+    description: The chainlink-solana ref to use
+  image:
+    required: false
+    description: docker image to use to build
+  image-version:
+    required: false
+    description: docker image version/tag to use for build
+  runner-os:
+    description: the operating system
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Checkout solana
+      uses: actions/checkout@v4
+      with:
+        repository: smartcontractkit/chainlink-solana
+        ref: ${{ inputs.ref }}
+
+    - name: Get ProjectSerum Version
+      shell: bash
+      id: get-version
+      run: |
+        PSVERSION=$(make projectserum_version)
+        echo "projectserum_version=${PSVERSION}" >> $GITHUB_OUTPUT
+
+    - name: cache docker build image
+      id: cache-image
+      uses: actions/cache@v4
+      with:
+        path: contracts/docker-build.tar
+        key: ${{ inputs.runner-os }}-docker-pnpm-build-${{ steps.get-version.outputs.projectserum_version }}-${{ hashFiles('contracts/**/Cargo.lock') }}
+
+    - name: build & save image
+      if: steps.cache-image.outputs.cache-hit != 'true'
+      shell: bash
+      run: |
+        cd contracts
+        docker buildx build . -t chainlink-solana:build --build-arg ANCHOR_CLI=${{ steps.get-version.outputs.projectserum_version }}
+        docker save chainlink-solana > docker-build.tar
+        cd ../
+
+    - name: load cached image
+      shell: bash
+      run: |
+        docker load --input contracts/docker-build.tar
+
+    - name: Build Artifacts
+      shell: bash
+      run: |
+        # start container
+        docker run -d -v $(pwd):/repo --name build-container chainlink-solana:build tail -f /dev/null
+        # generate go bindings
+        docker exec build-container bash -c "/repo/scripts/build-contract-artifacts-action.sh"
+        # check go bindings
+        git diff --stat --exit-code
+        # build with keys
+        docker exec build-container bash -c "\
+        export RUSTUP_HOME=\"/root/.rustup\" &&\
+        cd /repo &&\
+        ./scripts/programs-keys-gen.sh &&\
+        cd ./contracts &&\
+        anchor build &&\
+        chown -R $(id -u):$(id -g) /repo"
+        # clean up the container
+        docker stop build-container
+        docker rm build-container
+
+    #save the contracts artifacts
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: artifacts
+        path: contracts/target/deploy

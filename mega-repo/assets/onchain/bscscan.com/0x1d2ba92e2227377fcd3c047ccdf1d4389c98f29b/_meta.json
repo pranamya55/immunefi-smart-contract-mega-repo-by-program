@@ -1,0 +1,24 @@
+{
+  "url": "https://bscscan.com/address/0x1d2bA92e2227377fCD3c047CCdF1D4389c98f29B",
+  "host": "bscscan.com",
+  "address": "0x1d2bA92e2227377fCD3c047CCdF1D4389c98f29B",
+  "chainid": 56,
+  "project_slug": "velvetcapital",
+  "asset_id": "7xBhmEnKf5yKsc9ejzokDn",
+  "contract_name": "OffChainRebalance",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 43,
+  "mode": "json-sources"
+}

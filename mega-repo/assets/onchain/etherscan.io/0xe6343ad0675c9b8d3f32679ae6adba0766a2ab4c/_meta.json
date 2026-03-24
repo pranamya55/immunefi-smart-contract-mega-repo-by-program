@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xE6343ad0675C9b8D3f32679ae6aDbA0766A2ab4c",
+  "host": "etherscan.io",
+  "address": "0xE6343ad0675C9b8D3f32679ae6aDbA0766A2ab4c",
+  "chainid": 1,
+  "project_slug": "olympus",
+  "asset_id": "5c7BpMfhc7RY0FJYWhm0IW",
+  "contract_name": "Clearinghouse",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": "1",
+  "runs": "10",
+  "constructor_arguments": "00000000000000000000000064aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d50000000000000000000000000ab87046fbb341d058f17cbc4c1133f25a20a52f000000000000000000000000b63cac384247597756545b500253ff8e607a802000000000000000000000000083f20f44975d03b1b09e64809b757c47f942beea00000000000000000000000030ce56e80aa96ebba1e1a74bc5c0feb5b0db42160000000000000000000000002286d7f9639e8158fad1169e76d1fbc38247f54b",
+  "evm_version": "london",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 17,
+  "mode": "json-sources"
+}

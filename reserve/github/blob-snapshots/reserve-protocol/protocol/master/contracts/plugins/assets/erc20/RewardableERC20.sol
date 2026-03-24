@@ -1,0 +1,1 @@
+../../../../../../../../../../../mega-repo/assets/github/blob-snapshots/reserve-protocol/protocol/master/contracts/plugins/assets/erc20/RewardableERC20.sol

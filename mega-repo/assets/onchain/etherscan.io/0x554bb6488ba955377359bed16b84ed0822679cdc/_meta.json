@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x554bb6488ba955377359bed16b84ed0822679cdc#code",
+  "host": "etherscan.io",
+  "address": "0x554bb6488ba955377359bed16b84ed0822679cdc",
+  "chainid": 1,
+  "project_slug": "decentraland",
+  "asset_id": "7leZYHyojQnoUXqujksBi3",
+  "contract_name": "LANDRegistry",
+  "compiler_version": "v0.4.24+commit.e67f0147",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "None",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "bzzr://6ab39f1a5d267cd91b1dae3ef03da0d790274146df0a14b43f2124d59df3a436",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

@@ -1,0 +1,25 @@
+{
+  "url": "https://explorer.lyra.finance/address/0x6FEf1bb8Ade9A836663d4c15AFd5985Fb545004f",
+  "host": "explorer.lyra.finance",
+  "address": "0x6FEf1bb8Ade9A836663d4c15AFd5985Fb545004f",
+  "chainid": null,
+  "project_slug": "derive",
+  "asset_id": "1f3MSY4TFMLXqMHLCHAf94",
+  "contract_name": "LyraRateFeedStatic",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": null,
+  "evm_version": "paris",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:missing-chainid",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

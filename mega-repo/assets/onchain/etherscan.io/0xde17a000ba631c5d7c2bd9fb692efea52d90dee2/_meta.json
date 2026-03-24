@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xde17a000ba631c5d7c2bd9fb692efea52d90dee2",
+  "host": "etherscan.io",
+  "address": "0xde17a000ba631c5d7c2bd9fb692efea52d90dee2",
+  "chainid": 1,
+  "project_slug": "usdn",
+  "asset_id": "b6h4v8JIdgaK5LaTGtv9m",
+  "contract_name": "Usdn",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "20000",
+  "constructor_arguments": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 30,
+  "mode": "json-sources"
+}

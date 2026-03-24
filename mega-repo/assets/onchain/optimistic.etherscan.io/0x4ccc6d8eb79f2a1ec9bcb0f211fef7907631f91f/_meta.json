@@ -1,0 +1,24 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0x4ccC6d8eB79f2a1EC9bcb0f211fef7907631F91f",
+  "host": "optimistic.etherscan.io",
+  "address": "0x4ccC6d8eB79f2a1EC9bcb0f211fef7907631F91f",
+  "chainid": 10,
+  "project_slug": "hyperlane",
+  "asset_id": "3NmrH2EyGge9p1JSfgxZAM",
+  "contract_name": "StaticAggregationHook",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": "1",
+  "runs": "999999",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 5,
+  "mode": "json-sources"
+}

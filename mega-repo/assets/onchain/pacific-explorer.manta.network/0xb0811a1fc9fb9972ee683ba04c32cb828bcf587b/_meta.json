@@ -1,0 +1,7 @@
+{
+  "url": "https://pacific-explorer.manta.network/address/0xb0811a1FC9Fb9972ee683Ba04c32Cb828Bcf587B",
+  "host": "pacific-explorer.manta.network",
+  "address": "0xb0811a1FC9Fb9972ee683Ba04c32Cb828Bcf587B",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:unexpected-response; scan-host-no-key:empty-source"
+}

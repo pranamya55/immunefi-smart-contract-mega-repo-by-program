@@ -1,0 +1,44 @@
+[package]
+name = "price_aggregator"
+version = "0.59.0"
+authors = [
+    "Claudiu-Marcel Bruda <claudiu.bruda@multiversx.com>",
+    "MultiversX <contact@multiversx.com>",
+    "XOXNO <contact@xoxno.com>",
+]
+license = "GPL-3.0-only"
+readme = "README.md"
+repository = "https://github.com/multiversx/mx-sdk-rs"
+homepage = "https://multiversx.com/"
+documentation = "https://docs.multiversx.com/"
+description = "MultiversX Price aggregator Smart Contract"
+keywords = [
+    "multiversx",
+    "wasm",
+    "webassembly",
+    "blockchain",
+    "contract",
+]
+categories = [
+    "no-std",
+    "wasm",
+    "cryptography::cryptocurrencies",
+]
+edition = "2021"
+
+[lib]
+path = "src/lib.rs"
+doctest = false
+
+[dev-dependencies.multiversx-sc-scenario]
+version = "0.59.0"
+
+[dependencies.multiversx-sc]
+version = "0.59.0"
+
+[dependencies.multiversx-sc-modules]
+version = "0.59.0"
+
+[dependencies.arrayvec]
+version = "0.7.1"
+default-features = false

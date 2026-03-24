@@ -1,0 +1,76 @@
+[package]
+name = "sway-lsp"
+version.workspace = true
+description = "LSP server for Sway."
+authors.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[lib]
+bench = false
+
+[dependencies]
+anyhow.workspace = true
+crossbeam-channel.workspace = true
+dashmap.workspace = true
+fd-lock.workspace = true
+forc-pkg.workspace = true
+forc-tracing.workspace = true
+forc-util.workspace = true
+lsp-types = { workspace = true, features = ["proposed"] }
+parking_lot.workspace = true
+proc-macro2.workspace = true
+quote.workspace = true
+rayon.workspace = true
+rayon-cond.workspace = true
+serde = { workspace = true, features = ["derive"] }
+serde_json.workspace = true
+sway-ast.workspace = true
+sway-core.workspace = true
+sway-error.workspace = true
+sway-features.workspace = true
+sway-parse.workspace = true
+sway-types.workspace = true
+sway-utils.workspace = true
+swayfmt.workspace = true
+syn = { workspace = true, features = ["full"] }
+tempfile.workspace = true
+thiserror.workspace = true
+tokio = { workspace = true, features = [
+    "fs",
+    "io-std",
+    "io-util",
+    "macros",
+    "net",
+    "rt-multi-thread",
+    "sync",
+    "time",
+] }
+toml_edit.workspace = true
+tower-lsp = { workspace = true, features = ["proposed"] }
+tracing.workspace = true
+urlencoding.workspace = true
+
+[dev-dependencies]
+assert-json-diff.workspace = true
+codspeed-criterion-compat.workspace = true
+dirs.workspace = true
+futures = { workspace = true, default-features = false, features = [
+    "std",
+    "async-await",
+] }
+pretty_assertions.workspace = true
+rand.workspace = true
+regex.workspace = true
+sway-lsp-test-utils = { path = "tests/utils" }
+tikv-jemallocator.workspace = true
+tower = { workspace = true, default-features = false, features = ["util"] }
+
+[[bench]]
+name = "bench_main"
+harness = false
+
+[lints]
+workspace = true

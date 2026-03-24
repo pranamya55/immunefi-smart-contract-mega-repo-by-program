@@ -1,0 +1,24 @@
+{
+  "url": "https://basescan.org/address/0x2Dd2a2Fe346B5704380EfbF6Bd522042eC3E8FAe",
+  "host": "basescan.org",
+  "address": "0x2Dd2a2Fe346B5704380EfbF6Bd522042eC3E8FAe",
+  "chainid": 8453,
+  "project_slug": "sparklend",
+  "asset_id": "27dMBVeWuj5coh1BIuZLHV",
+  "contract_name": "DSRAuthOracle",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "100000",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

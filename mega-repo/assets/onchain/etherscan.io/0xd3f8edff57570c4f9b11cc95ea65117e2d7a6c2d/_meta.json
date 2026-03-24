@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xd3F8Edff57570c4F9B11CC95eA65117e2D7A6C2D",
+  "host": "etherscan.io",
+  "address": "0xd3F8Edff57570c4F9B11CC95eA65117e2D7A6C2D",
+  "chainid": 1,
+  "project_slug": "royco",
+  "asset_id": "db_5311d96c-40df-43b0-9c1b-965289eb1fdc",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": "1",
+  "runs": "190",
+  "constructor_arguments": "",
+  "evm_version": "prague",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0xb417a7c43a7a8aa27bba2b2bb4639878532f9d0c",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 12,
+  "mode": "json-sources"
+}

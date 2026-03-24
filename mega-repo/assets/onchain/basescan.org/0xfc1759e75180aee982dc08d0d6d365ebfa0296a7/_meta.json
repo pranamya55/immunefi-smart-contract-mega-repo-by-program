@@ -1,0 +1,24 @@
+{
+  "url": "https://basescan.org/address/0xFC1759E75180aeE982DC08D0d6D365ebFA0296a7",
+  "host": "basescan.org",
+  "address": "0xFC1759E75180aeE982DC08D0d6D365ebFA0296a7",
+  "chainid": 8453,
+  "project_slug": "xterio",
+  "asset_id": "2OrnBv1r3TUdgSjatQsa0y",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000e56343b7d4423d44effcd043cb63fd44fd2414000000000000000000000000004e5e2d9f5c9f773077a3db392468859a1e8f34f900000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000044485cc9550000000000000000000000007127f0feaef8143241a5fac62ac5b7be02ef26a9000000000000000000000000538e023fe7de49bcc7feb3ba2a4223efd095978b00000000000000000000000000000000000000000000000000000000",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x4b6224425a698c0a0e10e4e3ed82259ea977d402",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

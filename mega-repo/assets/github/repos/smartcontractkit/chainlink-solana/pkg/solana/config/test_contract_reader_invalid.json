@@ -1,0 +1,16 @@
+{
+  "namespaces": {
+    "Contract": {
+      "anchorIDL": {
+        "version": "0.1.0",
+        "name": "myProgram"
+      },
+      "OtherContract": {
+        "anchorIDL": {
+          "version": "0.1.0",
+          "name": "myProgram"
+        }
+      }
+    }
+  }
+}

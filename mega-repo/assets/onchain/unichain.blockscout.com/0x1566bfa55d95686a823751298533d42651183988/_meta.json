@@ -1,0 +1,25 @@
+{
+  "url": "https://unichain.blockscout.com/address/0x1566BFA55D95686a823751298533D42651183988",
+  "host": "unichain.blockscout.com",
+  "address": "0x1566BFA55D95686a823751298533D42651183988",
+  "chainid": null,
+  "project_slug": "sparklend",
+  "asset_id": "VniZPlPw2Jw61ne5iRZIv",
+  "contract_name": "SSRAuthOracle",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": null,
+  "evm_version": "shanghai",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:missing-chainid",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

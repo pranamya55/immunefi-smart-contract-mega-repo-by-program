@@ -1,0 +1,50 @@
+[
+  {
+    "project_slug": "polygon",
+    "asset_id": "2HT9dALIL6oTLqweUUCFd2",
+    "url": "https://etherscan.io/address/0x046Bb8bb98Db4ceCbB2929542686B74b516274b3",
+    "description": "LXLY AggLayer Gateway",
+    "added_at": "2025-08-04T15:56:00.537Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "polygon",
+    "asset_id": "4tLiq2UkbOtVm8YaBIKL0D",
+    "url": "https://static.polygon.technology/network/mainnet/v1/index.json",
+    "description": "Polygon Smart Contracts (only)",
+    "added_at": "2025-07-23T08:24:16.883Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "polygon",
+    "asset_id": "73nEWN6d8HvJpY5dfkDJ69",
+    "url": "https://etherscan.io/address/0x5132A183E9F3CB7C848b0AAC5Ae0c4f0491B7aB2",
+    "description": "LXLY Agglayer PolygonRollupManager",
+    "added_at": "2025-07-29T16:10:08.782Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "polygon",
+    "asset_id": "QzBMvyjr3gFvMdro6bN1u",
+    "url": "https://etherscan.io/address/0x2a3DD3EB832aF982ec71669E178424b10Dca2EDe",
+    "description": "LXLY AggLayer PolygonBridgeV2",
+    "added_at": "2025-07-29T16:10:08.787Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "polygon",
+    "asset_id": "RnODLzId0buBMw7v1DTLO",
+    "url": "https://etherscan.io/address/0x580bda1e7a0cfae92fa7f6c20a3794f169ce3cfb",
+    "description": "LXLY Agglayer PolygonGlobalExitRoot",
+    "added_at": "2025-07-29T16:10:08.778Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "polygon",
+    "asset_id": "98748",
+    "url": "https://immunefi.com/",
+    "description": "Primacy of Impact",
+    "added_at": "2026-02-06T15:58:36.804Z",
+    "revision": 0
+  }
+]

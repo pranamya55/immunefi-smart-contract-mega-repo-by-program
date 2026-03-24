@@ -1,0 +1,9 @@
+[project]
+authors = ["Fuel Labs <contact@fuel.sh>"]
+entry = "main.sw"
+license = "Apache-2.0"
+name = "sparse_merkle_proof"
+
+[dependencies]
+src17 = { path = "../../../standards/src17" }
+merkle = "0.26.0"

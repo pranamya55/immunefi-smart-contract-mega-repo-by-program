@@ -1,0 +1,82 @@
+[
+  {
+    "project_slug": "chainlink",
+    "asset_id": "IKCjI3yX5Twme2cgGHDyw",
+    "url": "https://github.com/smartcontractkit/chainlink-ccip/tree/main/chains/evm/contracts",
+    "description": "CCIP EVM",
+    "added_at": "2025-08-12T09:06:01.734Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "chainlink",
+    "asset_id": "6B7nrAxhjV2TuYqMpnT11P",
+    "url": "https://github.com/smartcontractkit/chainlink-ccip/tree/main/chains/solana/contracts",
+    "description": "CCIP Solana",
+    "added_at": "2025-08-12T09:06:01.718Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "chainlink",
+    "asset_id": "1Wbnz8N7jAKeL96vAwt22G",
+    "url": "https://github.com/smartcontractkit/chainlink-evm/tree/develop/contracts",
+    "description": "Chainlink EVM Contracts",
+    "added_at": "2025-05-02T07:22:40.540Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "chainlink",
+    "asset_id": "1ayIto05eO0PKlYpbJ9I8Z",
+    "url": "https://github.com/smartcontractkit/chainlink-solana/tree/develop/contracts",
+    "description": "Solana programs",
+    "added_at": "2022-02-12T11:02:58.477Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "chainlink",
+    "asset_id": "2zRHBhOyGw8wmpyRvpfXVp",
+    "url": "https://immunefi.com",
+    "description": "Primacy of Impact",
+    "added_at": "2024-03-27T10:55:32.480Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "chainlink",
+    "asset_id": "4BHmbpPhI9nz7ZG0w3mwAV",
+    "url": "https://github.com/smartcontractkit/ccip-owner-contracts/tree/main",
+    "description": "CCIP Owner",
+    "added_at": "2024-03-27T10:26:34.622Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "chainlink",
+    "asset_id": "99143",
+    "url": "https://github.com/smartcontractkit/chainlink-sui/tree/develop/contracts/mcms/mcms",
+    "description": "Sui MCMS",
+    "added_at": "2026-03-06T07:31:19.239Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "chainlink",
+    "asset_id": "99144",
+    "url": "https://github.com/smartcontractkit/chainlink-sui/tree/develop/contracts/link",
+    "description": "Sui LINK",
+    "added_at": "2026-03-06T07:31:19.239Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "chainlink",
+    "asset_id": "99145",
+    "url": "https://github.com/smartcontractkit/chainlink-sui/tree/develop/contracts/ccip",
+    "description": "Sui CCIP",
+    "added_at": "2026-03-06T07:31:19.239Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "chainlink",
+    "asset_id": "99149",
+    "url": "https://github.com/smartcontractkit/chainlink-aptos/tree/develop/contracts",
+    "description": "Aptos",
+    "added_at": "2026-03-06T07:31:19.239Z",
+    "revision": 0
+  }
+]

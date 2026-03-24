@@ -1,0 +1,24 @@
+{
+  "url": "https://hoodi.etherscan.io/address/0xb2c99cd38a2636a6281a849C8de938B3eF4A7C3D",
+  "host": "hoodi.etherscan.io",
+  "address": "0xb2c99cd38a2636a6281a849C8de938B3eF4A7C3D",
+  "chainid": 560048,
+  "project_slug": "lido-v3-bug-bounty-competition",
+  "asset_id": "223rpTNqXhHrYT4g1BHk0M",
+  "contract_name": "OssifiableProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "istanbul",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0xbb77f95a29d1cce1a54f6ed9144d48be38d43dbc",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 7,
+  "mode": "json-sources"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://etherscan.io/address/0x86533352bdd201c89f184f7ebbfebea3e31c8bb3",
+  "host": "etherscan.io",
+  "address": "0x86533352bdd201c89f184f7ebbfebea3e31c8bb3",
+  "chainid": 1,
+  "contract_name": "PeggedDerivativesPriceFeed",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "0",
+  "runs": "200",
+  "constructor_arguments": "0000000000000000000000004f1c53f096533c04d8157efb6bca3eb22ddc6360",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "GNU GPLv3",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 10,
+  "mode": "recover-json-sources"
+}

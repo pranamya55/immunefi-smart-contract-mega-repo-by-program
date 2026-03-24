@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x1d02F6A86Ed5650f93E40FCD62fa5727c32ad746#code",
+  "host": "etherscan.io",
+  "address": "0x1d02F6A86Ed5650f93E40FCD62fa5727c32ad746",
+  "chainid": 1,
+  "project_slug": "yearnfinance",
+  "asset_id": "1GUfhj5s71VqB9yyRp0PG2",
+  "contract_name": "SingleTokenRewardDistributor",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "GNU AGPLv3",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://bcb8e98f1a28212e899dc28c15606fa365b931d68b349e2ffcb80ecf9fe9f678",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

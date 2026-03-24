@@ -1,0 +1,178 @@
+[
+  {
+    "project_slug": "orderlynetwork",
+    "asset_id": "7dt8oOpBNUe2nJJRV4oWlP",
+    "url": "https://github.com/OrderlyNetwork/evm-cross-chain/tree/main/contracts",
+    "description": "All files under /contracts/ folder except contracts/test, and contracts/layerzero/mocks",
+    "added_at": "2024-02-27T00:05:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "orderlynetwork",
+    "asset_id": "5pBr5AVXQ6QGdnbDCYsvLF",
+    "url": "https://github.com/OrderlyNetwork/contract-evm/tree/main/src",
+    "description": "All files under /main/src except tUSDC.sol contract",
+    "added_at": "2024-02-27T00:05:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "orderlynetwork",
+    "asset_id": "6hbA11Sqwb9o9SCI2KuUfV",
+    "url": "https://arbiscan.io/address/0x816f722424b49cf1275cc86da9840fbd5a6167e9",
+    "description": "Vault Arb",
+    "added_at": "2024-02-27T00:05:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "orderlynetwork",
+    "asset_id": "54BIeRPVQZHJYqBE0exFla",
+    "url": "https://optimistic.etherscan.io/address/0x816f722424b49cf1275cc86da9840fbd5a6167e9",
+    "description": "Vault OP",
+    "added_at": "2024-02-27T00:05:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "orderlynetwork",
+    "asset_id": "B0MGbCAgv4nQTv6AzOHzl",
+    "url": "https://polygonscan.com/address/0x816f722424b49cf1275cc86da9840fbd5a6167e9",
+    "description": "Vault Polygon PoS",
+    "added_at": "2024-02-27T00:05:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "orderlynetwork",
+    "asset_id": "6Wneq49gjtujWWi5KqNFkE",
+    "url": "https://arbiscan.io/address/0xa0a07a78c7d31E6f8698F48Fc9219f9a3030f38C",
+    "description": "Vault cross-chain manager ARB",
+    "added_at": "2024-02-27T00:05:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "orderlynetwork",
+    "asset_id": "3DiWlNLN25Dtsk8nG744e",
+    "url": "https://optimistic.etherscan.io/address/0xa0a07a78c7d31E6f8698F48Fc9219f9a3030f38C",
+    "description": "Vault cross-chain manager OP",
+    "added_at": "2024-02-27T00:05:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "orderlynetwork",
+    "asset_id": "5CcIOTUUW442ZieIJW2S9N",
+    "url": "https://polygonscan.com/address/0xa0a07a78c7d31E6f8698F48Fc9219f9a3030f38C",
+    "description": "Vault cross-chain manager polygon",
+    "added_at": "2024-02-27T00:05:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "orderlynetwork",
+    "asset_id": "6y0uk1Gg6c2sRZzpquAjxV",
+    "url": "https://arbiscan.io/address/0x173B47eDBeCa665125edc24C509bfE545CDA60a9",
+    "description": "Crosschain relay ARB",
+    "added_at": "2024-02-27T00:05:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "orderlynetwork",
+    "asset_id": "5e4EeKAEC4snmzETDWCzyI",
+    "url": "https://optimistic.etherscan.io/address/0x173B47eDBeCa665125edc24C509bfE545CDA60a9",
+    "description": "Crosschain relay OP",
+    "added_at": "2024-02-27T00:05:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "orderlynetwork",
+    "asset_id": "3sI0dkVESIQThmyRdVtoXL",
+    "url": "https://polygonscan.com/address/0x173B47eDBeCa665125edc24C509bfE545CDA60a9",
+    "description": "Crosschain relay Polygon",
+    "added_at": "2024-02-27T00:05:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "orderlynetwork",
+    "asset_id": "1xmvVtaw45wY3F1a2uRym6",
+    "url": "https://arbiscan.io/address/0xA2eA0a58b083c492AdC91A687FAc8B53AdB7c0Fd",
+    "description": "Vault Admin ARB",
+    "added_at": "2024-02-27T00:05:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "orderlynetwork",
+    "asset_id": "7I7Oeqp3UqrbyVzC7iH3EV",
+    "url": "https://optimistic.etherscan.io/address/0xA2eA0a58b083c492AdC91A687FAc8B53AdB7c0Fd",
+    "description": "Vault Admin OP",
+    "added_at": "2024-02-27T00:05:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "orderlynetwork",
+    "asset_id": "1bfIfS2N0KwrswhFUyaq2u",
+    "url": "https://polygonscan.com/address/0xa2ea0a58b083c492adc91a687fac8b53adb7c0fd",
+    "description": "Vault Admin Polygon PoS",
+    "added_at": "2024-02-27T00:05:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "orderlynetwork",
+    "asset_id": "4OxvN6ttGgisiSTfQTqZ9w",
+    "url": "https://explorer.orderly.network/address/0x173B47eDBeCa665125edc24C509bfE545CDA60a9",
+    "description": "Crosschain relay",
+    "added_at": "2024-02-27T00:05:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "orderlynetwork",
+    "asset_id": "3urk7cTI9PBMRxgTnVnO3X",
+    "url": "https://explorer.orderly.network/address/0x6F7a338F2aA472838dEFD3283eB360d4Dff5D203",
+    "description": "Ledger contract (Verifying Contract for  EIP712 Withdraw Msg)",
+    "added_at": "2024-02-27T00:05:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "orderlynetwork",
+    "asset_id": "5Ww3eOrKAwACtK4dtnOubg",
+    "url": "https://explorer.orderly.network/address/0x7CC5B6433eb33164c88F6512f56C566CFC3420BF",
+    "description": "Operator manager",
+    "added_at": "2024-02-27T00:05:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "orderlynetwork",
+    "asset_id": "6KVWolW6pdnhDLjTSFfcnn",
+    "url": "https://explorer.orderly.network/address/0x14a6342A8C1Ef9856898F510FcCE377e46668F33",
+    "description": "Vault manager",
+    "added_at": "2024-02-27T00:05:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "orderlynetwork",
+    "asset_id": "4QoRC3DavV1ArmZUO8qcA1",
+    "url": "https://explorer.orderly.network/address/0xa0a07a78c7d31E6f8698F48Fc9219f9a3030f38C",
+    "description": "Ledger crosschain manager",
+    "added_at": "2024-02-27T00:05:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "orderlynetwork",
+    "asset_id": "yKCHGjqME8D3KkzrR5wE0",
+    "url": "https://explorer.orderly.network/address/0x173B47eDBeCa665125edc24C509bfE545CDA60a9",
+    "description": "Crosschain relay",
+    "added_at": "2024-02-27T00:05:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "orderlynetwork",
+    "asset_id": "71M9dZskApwNknw7ccSlj2",
+    "url": "https://explorer.orderly.network/address/0x343Ca787e960cB2cCA0ce8cfB2f38c3739E28a1E",
+    "description": "Fee manager",
+    "added_at": "2024-02-27T00:05:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "orderlynetwork",
+    "asset_id": "1rptwHSUUm15ZtdsYqu7Kh",
+    "url": "https://explorer.orderly.network/address/0x9281CBc1e37d3bcDB8BAddFa4302B6eb5DAd2672",
+    "description": "Market manager",
+    "added_at": "2024-02-27T00:05:00.000Z",
+    "revision": 1
+  }
+]

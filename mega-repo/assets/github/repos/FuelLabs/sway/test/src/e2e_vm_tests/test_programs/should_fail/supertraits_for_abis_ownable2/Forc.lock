@@ -1,0 +1,8 @@
+[[package]]
+name = "std"
+source = "path+from-root-230EA52AB8EA913A"
+
+[[package]]
+name = "supertraits_for_abis_ownable2"
+source = "member"
+dependencies = ["std"]

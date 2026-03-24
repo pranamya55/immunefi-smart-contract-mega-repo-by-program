@@ -1,0 +1,7 @@
+{
+  "url": "https://uniscan.xyz/address/0x7ac96180C4d6b2A328D3a19ac059D0E7Fc3C6d41#code",
+  "host": "uniscan.xyz",
+  "address": "0x7ac96180C4d6b2A328D3a19ac059D0E7Fc3C6d41",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:unexpected-response"
+}

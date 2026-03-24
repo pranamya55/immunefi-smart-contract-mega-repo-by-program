@@ -1,0 +1,8 @@
+{
+  "url_host": "tronscan.org",
+  "address": "TCiQTkxhzwSeXhRsNdHCvrxHRAvpjQn5Dt",
+  "chain_kind": "tron",
+  "mode": "tronscan-contract-detail",
+  "verified_status": 2,
+  "name": "GovernorBravoDelegate"
+}

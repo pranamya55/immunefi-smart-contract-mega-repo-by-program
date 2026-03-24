@@ -1,0 +1,98 @@
+[
+  {
+    "project_slug": "drips",
+    "asset_id": "3XV8hLBZinuHUVb97Rel11",
+    "url": "https://etherscan.io/address/0xd0Dd053392db676D57317CD4fe96Fc2cCf42D0b4",
+    "description": "Drips",
+    "added_at": "2023-12-01T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "drips",
+    "asset_id": "2e0qPZ88dRTzCStudQyBA3",
+    "url": "https://etherscan.io/address/0xb0C9B6D67608bE300398d0e4FB0cCa3891E1B33F",
+    "description": "Drips Logic",
+    "added_at": "2023-12-01T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "drips",
+    "asset_id": "2jmqfQqHDyPfedawwGaewO",
+    "url": "https://etherscan.io/address/0x60F25ac5F289Dc7F640f948521d486C964A248e5",
+    "description": "Caller",
+    "added_at": "2023-12-01T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "drips",
+    "asset_id": "4N5qgoFoziuWiB1tLKA8l5",
+    "url": "https://etherscan.io/address/0x1455d9bD6B98f95dd8FEB2b3D60ed825fcef0610",
+    "description": "AddressDriver",
+    "added_at": "2023-12-01T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "drips",
+    "asset_id": "2bCCtOTtcCJsEtnhrWFxve",
+    "url": "https://etherscan.io/address/0x3Ea1e774f98cc4C6359bbCB3238E3e60365Fa5c9",
+    "description": "AddressDriver Logic",
+    "added_at": "2023-12-01T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "drips",
+    "asset_id": "3uh0tmvHQIya2u0GIXGtIi",
+    "url": "https://etherscan.io/address/0xcf9c49B0962EDb01Cdaa5326299ba85D72405258",
+    "description": "NFTDriver",
+    "added_at": "2023-12-01T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "drips",
+    "asset_id": "1t3yU5tp0nfrVgAFaHresP",
+    "url": "https://etherscan.io/address/0x3B11537D0d4276Ba9e41FFe04e9034280bd7af50",
+    "description": "NFTDriver Logic",
+    "added_at": "2023-12-01T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "drips",
+    "asset_id": "2u8D6rN46lzEqPuOo466PG",
+    "url": "https://etherscan.io/address/0x1212975c0642B07F696080ec1916998441c2b774",
+    "description": "ImmutableSplitsDriver",
+    "added_at": "2023-12-01T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "drips",
+    "asset_id": "3iNprT3MK2Xtr6TEKTx8IG",
+    "url": "https://etherscan.io/address/0x2c338CDf00dFd5A9B3B6b0b78BB95352079AAF71",
+    "description": "ImmutableSplitsDriver Logic",
+    "added_at": "2023-12-01T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "drips",
+    "asset_id": "7eQ5hKYx5XZLUjRmisFcBK",
+    "url": "https://etherscan.io/address/0x770023d55D09A9C110694827F1a6B32D5c2b373E",
+    "description": "RepoDriver",
+    "added_at": "2023-12-01T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "drips",
+    "asset_id": "7BJgQkrTZ8yKuy9Nd12d9D",
+    "url": "https://etherscan.io/address/0xa928d4b087AD35C46BA83331d8eEddb83152319b",
+    "description": "RepoDriver AnyApi Operator",
+    "added_at": "2023-12-01T09:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "drips",
+    "asset_id": "nwoOX3mOB2X2HMEJGp0gB",
+    "url": "https://etherscan.io/address/0xfC446dB5E1255e837E95dB90c818C6fEb8e93ab0",
+    "description": "RepoDriver Logic",
+    "added_at": "2023-12-01T09:00:00.000Z",
+    "revision": 1
+  }
+]

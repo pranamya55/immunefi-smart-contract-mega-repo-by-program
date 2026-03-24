@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0xd712ACe4ca490D4F3E92992Ecf3DE12251b975F9",
+  "host": "polygonscan.com",
+  "address": "0xd712ACe4ca490D4F3E92992Ecf3DE12251b975F9",
+  "chainid": 137,
+  "project_slug": "compoundfinance",
+  "asset_id": "1dLxPC1yfYAn30296uU4ow",
+  "contract_name": "CometProxyAdmin",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 12,
+  "mode": "json-sources"
+}

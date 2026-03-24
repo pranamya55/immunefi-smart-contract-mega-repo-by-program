@@ -1,0 +1,8 @@
+[[package]]
+name = "chained_if_let"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-152613234D2C9EC5"

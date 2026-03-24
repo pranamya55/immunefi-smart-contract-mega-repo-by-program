@@ -1,0 +1,26 @@
+{
+  "name": "swap-beacon",
+  "version": "1.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest src/ --passWithNoTests",
+    "swap-beacon": "pnpm build && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "APACHE-2.0",
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "@types/yargs": "catalog:",
+    "typescript": "catalog:",
+    "jest": "catalog:"
+  },
+  "dependencies": {
+    "@pythnetwork/express-relay-evm-js": "^0.8.1",
+    "axios": "^1.7.3",
+    "viem": "catalog:",
+    "yargs": "catalog:"
+  }
+}

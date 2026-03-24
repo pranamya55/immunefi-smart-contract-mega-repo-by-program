@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x3d0b8A0A10835Ab9b0f0BeB54C5400B8aAcaa1D3",
+  "host": "etherscan.io",
+  "address": "0x3d0b8A0A10835Ab9b0f0BeB54C5400B8aAcaa1D3",
+  "chainid": 1,
+  "project_slug": "sherlock",
+  "asset_id": "2RIYo1h3P1jJ7wPMhIonfT",
+  "contract_name": "SherlockProtocolManager",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "1",
+  "runs": "20000",
+  "constructor_arguments": "000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 24,
+  "mode": "json-sources"
+}

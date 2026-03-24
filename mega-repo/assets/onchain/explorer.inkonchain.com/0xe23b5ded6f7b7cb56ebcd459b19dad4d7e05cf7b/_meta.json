@@ -1,0 +1,25 @@
+{
+  "url": "https://explorer.inkonchain.com/address/0xe23B5DED6f7B7cb56Ebcd459B19Dad4D7E05cF7b?tab=contract",
+  "host": "explorer.inkonchain.com",
+  "address": "0xe23B5DED6f7B7cb56Ebcd459B19Dad4D7E05cF7b",
+  "chainid": 57073,
+  "project_slug": "parallel",
+  "asset_id": "7aQh9oWZapvdWwf4t6XCYU",
+  "contract_name": "FlashParallelToken",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": null,
+  "evm_version": "cancun",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:unexpected-response",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

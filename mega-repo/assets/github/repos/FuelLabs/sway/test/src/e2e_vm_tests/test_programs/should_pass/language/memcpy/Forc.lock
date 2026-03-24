@@ -1,0 +1,8 @@
+[[package]]
+name = "memcpy"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-1621225C7A88836C"

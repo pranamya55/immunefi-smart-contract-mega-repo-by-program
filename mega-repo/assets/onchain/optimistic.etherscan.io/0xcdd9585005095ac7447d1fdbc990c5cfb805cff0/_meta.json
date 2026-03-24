@@ -1,0 +1,24 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0xcDd9585005095ac7447d1fDbC990C5CFB805cff0",
+  "host": "optimistic.etherscan.io",
+  "address": "0xcDd9585005095ac7447d1fDbC990C5CFB805cff0",
+  "chainid": 10,
+  "project_slug": "velodromefinance",
+  "asset_id": "5q2np0NgLw1UNY0fmLnZ22",
+  "contract_name": "ManagedRewardsFactory",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 25,
+  "mode": "json-sources"
+}

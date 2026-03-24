@@ -1,0 +1,10 @@
+[
+  {
+    "project_slug": "defisaver",
+    "asset_id": "5zR61b653pJR7WyQicLBmT",
+    "url": "https://github.com/defisaver/defisaver-v3-contracts/tree/main/contracts",
+    "description": "Defi Saver V3 (excluding the 'mocks' and 'views' folders)",
+    "added_at": "2025-09-24T09:27:08.031Z",
+    "revision": 1
+  }
+]

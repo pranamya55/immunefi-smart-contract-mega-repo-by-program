@@ -1,0 +1,154 @@
+[
+  {
+    "project_slug": "kleidi",
+    "asset_id": "db_3cbc6691-7236-4956-a828-ab3930fac20c",
+    "url": "https://etherscan.io/address/0xE138136bFF8c6A9337805DE19177E3b29fef2783",
+    "description": "InstanceDeployer",
+    "added_at": "2026-02-13T12:43:44.925Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "kleidi",
+    "asset_id": "db_a63f4260-9feb-424e-b1a1-bbacb395584e",
+    "url": "https://etherscan.io/address/0xCe90BA68BbcdCCe9aed1fCDDcb114d1DCdBc68C9",
+    "description": "TimelockFactory",
+    "added_at": "2026-02-13T12:43:55.340Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "kleidi",
+    "asset_id": "db_59d92e2a-c3fa-495f-9f81-e56551eec27a",
+    "url": "https://etherscan.io/address/0x56b6d03b995022A612aF6a212C74902f233F52Cc",
+    "description": "RecoverySpellFactory",
+    "added_at": "2026-02-13T12:44:06.128Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "kleidi",
+    "asset_id": "db_ffea289a-afb8-4ac7-bea6-ae8b15b2c4c5",
+    "url": "https://etherscan.io/address/0xFE49DD6d0CD41C4EC8F151C79f2d4019f5C5AD18",
+    "description": "Guard",
+    "added_at": "2026-02-13T12:44:16.721Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "kleidi",
+    "asset_id": "db_50c171a6-4369-4671-9bc0-9dc9134ad7b5",
+    "url": "https://etherscan.io/address/0xd1db2c4A9d2BEBd56d42E59F2d90F4136164faD6",
+    "description": "AddressCalculation",
+    "added_at": "2026-02-13T12:44:27.877Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "kleidi",
+    "asset_id": "db_7c0bc168-d430-4042-959d-a207d97b6f25",
+    "url": "https://etherscan.io/address/0x146dfd96Da039FDE3B58D5964feF8E8357df2028",
+    "description": "BytesHelper",
+    "added_at": "2026-02-13T12:44:37.184Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "kleidi",
+    "asset_id": "db_0c8247a7-a932-4e26-8806-be4f771a5d81",
+    "url": "https://basescan.org/address/0xE138136bFF8c6A9337805DE19177E3b29fef2783",
+    "description": "InstanceDeployer",
+    "added_at": "2026-02-13T12:44:50.744Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "kleidi",
+    "asset_id": "db_025ee04b-d8cb-4ba0-b255-fd654d07f5b3",
+    "url": "https://basescan.org/address/0xCe90BA68BbcdCCe9aed1fCDDcb114d1DCdBc68C9",
+    "description": "TimelockFactory",
+    "added_at": "2026-02-13T12:45:14.003Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "kleidi",
+    "asset_id": "db_a1dd9c28-787b-44c8-b33c-879e0af46cd3",
+    "url": "https://basescan.org/address/0x56b6d03b995022A612aF6a212C74902f233F52Cc",
+    "description": "RecoverySpellFactory",
+    "added_at": "2026-02-13T12:45:34.287Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "kleidi",
+    "asset_id": "db_6ccba168-22d5-4733-899c-086d23255073",
+    "url": "https://basescan.org/address/0xFE49DD6d0CD41C4EC8F151C79f2d4019f5C5AD18",
+    "description": "Guard",
+    "added_at": "2026-02-13T12:45:43.994Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "kleidi",
+    "asset_id": "db_df51a2e2-8bda-4bee-9aa7-301a37b63939",
+    "url": "https://basescan.org/address/0xd1db2c4A9d2BEBd56d42E59F2d90F4136164faD6",
+    "description": "AddressCalculation",
+    "added_at": "2026-02-13T12:46:33.905Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "kleidi",
+    "asset_id": "db_39c2c581-02b1-4398-aa48-7a14d593509e",
+    "url": "https://basescan.org/address/0x146dfd96Da039FDE3B58D5964feF8E8357df2028",
+    "description": "BytesHelper",
+    "added_at": "2026-02-13T12:46:43.407Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "kleidi",
+    "asset_id": "db_88b56f62-57f9-4245-a6c7-3ac832ab8824",
+    "url": "https://optimistic.etherscan.io/address/0xE138136bFF8c6A9337805DE19177E3b29fef2783",
+    "description": "InstanceDeployer",
+    "added_at": "2026-02-13T12:46:54.581Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "kleidi",
+    "asset_id": "db_369291ca-c8ed-4738-8ff0-47fc4bc3dcd5",
+    "url": "https://optimistic.etherscan.io/address/0xCe90BA68BbcdCCe9aed1fCDDcb114d1DCdBc68C9",
+    "description": "TimelockFactory",
+    "added_at": "2026-02-13T12:47:04.619Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "kleidi",
+    "asset_id": "db_6e5cb4bd-4386-4d14-b043-76e2a735a52e",
+    "url": "https://optimistic.etherscan.io/address/0x56b6d03b995022A612aF6a212C74902f233F52Cc",
+    "description": "RecoverySpellFactory",
+    "added_at": "2026-02-13T12:47:29.094Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "kleidi",
+    "asset_id": "db_4dc65581-4f68-4076-b028-fa7b2466a376",
+    "url": "https://optimistic.etherscan.io/address/0xFE49DD6d0CD41C4EC8F151C79f2d4019f5C5AD18",
+    "description": "Guard",
+    "added_at": "2026-02-13T12:47:41.401Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "kleidi",
+    "asset_id": "db_225af58c-f63b-4236-ac7f-439cbbbdd2cd",
+    "url": "https://optimistic.etherscan.io/address/0xd1db2c4A9d2BEBd56d42E59F2d90F4136164faD6",
+    "description": "AddressCalculation",
+    "added_at": "2026-02-13T12:47:51.402Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "kleidi",
+    "asset_id": "db_200a4399-c872-48ee-ac0b-be4c4ec14d4b",
+    "url": "https://optimistic.etherscan.io/address/0x146dfd96Da039FDE3B58D5964feF8E8357df2028",
+    "description": "BytesHelper",
+    "added_at": "2026-02-13T12:48:03.014Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "kleidi",
+    "asset_id": "db_7c775771-a320-4726-88b8-d0becc414c5e",
+    "url": "https://immunefi.com/bug-bounty/kleidi/information/",
+    "description": "Primacy of Impact",
+    "added_at": "2026-02-13T12:48:48.800Z",
+    "revision": 0
+  }
+]

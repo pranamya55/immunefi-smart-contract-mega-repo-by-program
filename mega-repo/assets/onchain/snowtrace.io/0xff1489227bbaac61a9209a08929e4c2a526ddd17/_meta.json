@@ -1,0 +1,24 @@
+{
+  "url": "https://snowtrace.io/address/0xFf1489227BbAAC61a9209A08929E4c2a526DdD17",
+  "host": "snowtrace.io",
+  "address": "0xFf1489227BbAAC61a9209A08929E4c2a526DdD17",
+  "chainid": 43114,
+  "project_slug": "gmx",
+  "asset_id": "4i0IlvalTu5A1rXLz2khAS",
+  "contract_name": "EsGMX",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 10,
+  "mode": "json-sources"
+}

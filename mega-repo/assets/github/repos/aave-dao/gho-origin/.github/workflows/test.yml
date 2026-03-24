@@ -1,0 +1,15 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+env:
+  FOUNDRY_PROFILE: ci
+
+jobs:
+  lint:
+    uses: bgd-labs/github-workflows/.github/workflows/foundry-lint-prettier.yml@main
+  test:
+    uses: bgd-labs/github-workflows/.github/workflows/foundry-test.yml@main

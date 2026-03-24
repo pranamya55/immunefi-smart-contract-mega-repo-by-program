@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x3f6dF0c3A7221BA1375E87e7097885a601B41Afc",
+  "host": "arbiscan.io",
+  "address": "0x3f6dF0c3A7221BA1375E87e7097885a601B41Afc",
+  "chainid": 42161,
+  "project_slug": "gmx",
+  "asset_id": "GfzMYvCxIE5PBDiFsAahH",
+  "contract_name": "GlvHandler",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": "1",
+  "runs": "10",
+  "constructor_arguments": "0000000000000000000000003c3d99fd298f679dbc2cecd132b4ec4d0f5e6e72000000000000000000000000fd70de6b91282d8017aa4e741e9ae325cab992d8000000000000000000000000c8ee91a54287db53897056e12d9819156d3822fb000000000000000000000000b8fc96d7a413c462f611a7ac0c912c2fe26eabc4000000000000000000000000393053b58f9678c9c28c2ce941ff6cac49c3f8f9000000000000000000000000fe99609c4aa83ff6816b64563bdffd7fa68753ab",
+  "evm_version": "Default",
+  "library": "GlvDepositStoreUtils:17fa5e5e5beeb8896e1be5f663aae1618f8b35e0;GlvDepositUtils:157e6bd60d71ad6202448bf85699fe2695f80b6f;GlvShiftStoreUtils:5453b265bb51162b16ee8d79039144deb5eb7256;GlvShiftUtils:c5be2e12166b36a15f2324b5a8ad13030a677507;GlvUtils:19254a4dfbd855e11cc9def57cc7844ff8fa4088;GlvWithdrawalStoreUtils:926d812d8fba03764cabd60a8dc09ecb2dfff44e;GlvWithdrawalUtils:65d5ed986fd27f427de0efa4cda558319a7f7c3d",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

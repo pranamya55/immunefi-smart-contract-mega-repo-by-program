@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x876D54DBF61473cA169b89B95344A14E81F37afe",
+  "host": "etherscan.io",
+  "address": "0x876D54DBF61473cA169b89B95344A14E81F37afe",
+  "chainid": 1,
+  "project_slug": "maple",
+  "asset_id": "1hFd476mncfyN0tCYnEICK",
+  "contract_name": "MapleStrategyFactory",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 11,
+  "mode": "json-sources"
+}

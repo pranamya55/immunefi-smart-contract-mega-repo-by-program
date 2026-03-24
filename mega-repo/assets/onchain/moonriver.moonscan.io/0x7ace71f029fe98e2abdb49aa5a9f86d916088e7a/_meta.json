@@ -1,0 +1,8 @@
+{
+  "url": "https://moonriver.moonscan.io/address/0x7ace71f029fe98e2abdb49aa5a9f86d916088e7a",
+  "host": "moonriver.moonscan.io",
+  "address": "0x7ace71f029fe98e2abdb49aa5a9f86d916088e7a",
+  "chainid": 1285,
+  "mode": "bytecode-v2-proxy",
+  "bytecode_length_hex_chars": 1670
+}

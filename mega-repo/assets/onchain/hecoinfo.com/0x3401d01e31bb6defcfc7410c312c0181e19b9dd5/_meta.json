@@ -1,0 +1,7 @@
+{
+  "url": "https://hecoinfo.com/address/0x3401D01E31BB6DefcFc7410c312C0181E19b9dd5",
+  "host": "hecoinfo.com",
+  "address": "0x3401D01E31BB6DefcFc7410c312C0181E19b9dd5",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:unexpected-response; scan-host-no-key:HTTPSConnectionPool(host='hecoinfo.com', port=443): Max retries exceeded with url: /api?module=contract&action=getsourcecode&address=0x3401D01E31BB6DefcFc7410c312C0181E19b9dd5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='hecoinfo.com', port=443) at 0x10d71e820>, 'Connection to hecoinfo.com timed out. (connect timeout=10)'))"
+}

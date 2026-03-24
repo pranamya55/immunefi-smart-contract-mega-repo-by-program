@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x55963de88267Aa3D1D995c359e8068D0Df34BEBb",
+  "host": "etherscan.io",
+  "address": "0x55963de88267Aa3D1D995c359e8068D0Df34BEBb",
+  "chainid": 1,
+  "project_slug": "etherfi",
+  "asset_id": "18JJ7f3vNjIsWfdWwsCjJx",
+  "contract_name": "UUPSProxy",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "100",
+  "constructor_arguments": "",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0xe0661a053a3eaea9d01f2de493ab54c69798affd",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

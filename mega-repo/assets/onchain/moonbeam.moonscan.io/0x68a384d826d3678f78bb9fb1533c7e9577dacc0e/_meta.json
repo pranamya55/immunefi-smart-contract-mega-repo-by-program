@@ -1,0 +1,24 @@
+{
+  "url": "https://moonbeam.moonscan.io/address/0x68A384D826D3678f78BB9FB1533c7E9577dACc0E",
+  "host": "moonbeam.moonscan.io",
+  "address": "0x68A384D826D3678f78BB9FB1533c7E9577dACc0E",
+  "chainid": 1284,
+  "project_slug": "stellaswap",
+  "asset_id": "5uQVWTQNFf3E6GW4ceIIxc",
+  "contract_name": "StellaSwapV2Factory",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "0",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000ea91b5e687a490380c52d264d5d36558d79f4188",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "None",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://edabe258761e7efc8e87275bc73691efbeb3151d48814889c9967789c3c2d846",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x5c04a12eb54a093c396f61355c6da0b15890150d",
+  "host": "arbiscan.io",
+  "address": "0x5c04a12eb54a093c396f61355c6da0b15890150d",
+  "chainid": 42161,
+  "project_slug": "gmx",
+  "asset_id": "4wQwmPTpCAicEMIRi6yzHN",
+  "contract_name": "RewardDistributor",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "00000000000000000000000082af49447d8a07e3bd95bd0d56f35241523fbab10000000000000000000000004e971a87900b931ff39d1aad67697f49835400b6",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

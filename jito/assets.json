@@ -1,0 +1,50 @@
+[
+  {
+    "project_slug": "jito",
+    "asset_id": "m1xM0rzWApxFmcIiBUVag",
+    "url": "https://github.com/jito-foundation/jito-programs/tree/master/mev-programs",
+    "description": "jito-programs",
+    "added_at": "2024-08-28T13:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "jito",
+    "asset_id": "2jPnpb64nNVdczc6zol1Cj",
+    "url": "https://github.com/jito-foundation/restaking/tree/master/restaking_core",
+    "description": "Restaking: restaking-core",
+    "added_at": "2025-01-21T14:48:19.694Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "jito",
+    "asset_id": "2EPC2hlQekOJ2cjWvz1e1y",
+    "url": "https://github.com/jito-foundation/restaking/tree/master/restaking_program",
+    "description": "Restaking: restaking-program",
+    "added_at": "2025-01-21T14:48:36.001Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "jito",
+    "asset_id": "6xDMjXnQ5jPAsXyrYoP86j",
+    "url": "https://github.com/jito-foundation/restaking/tree/master/vault_core",
+    "description": "Restaking: vault-core",
+    "added_at": "2025-01-21T14:48:49.288Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "jito",
+    "asset_id": "2uArh11Q2DqbyP9gRVJKvy",
+    "url": "https://github.com/jito-foundation/restaking/tree/master/vault_program",
+    "description": "Restaking: vault-program",
+    "added_at": "2025-01-21T14:49:05.958Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "jito",
+    "asset_id": "3xLNblrVm9l2uvYMLUc4tl",
+    "url": "https://github.com/jito-foundation/stake-deposit-interceptor",
+    "description": "Stake Deposit Interceptor",
+    "added_at": "2025-01-21T14:49:21.774Z",
+    "revision": 1
+  }
+]

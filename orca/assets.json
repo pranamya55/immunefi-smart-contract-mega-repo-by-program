@@ -1,0 +1,26 @@
+[
+  {
+    "project_slug": "orca",
+    "asset_id": "5GqtMqeW4q31b6gOZBfTrJ",
+    "url": "https://solscan.io/account/StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+    "description": "xORCA",
+    "added_at": "2026-01-08T09:23:34.322Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "orca",
+    "asset_id": "3eLgXbnQaKA6kNzm6CeYYJ",
+    "url": "https://solscan.io/account/whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+    "description": "Orca Whirlpools",
+    "added_at": "2025-08-12T07:01:19.077Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "orca",
+    "asset_id": "6hBuRvw4FZlEeUIqZLuDL5",
+    "url": "https://solscan.io/account/waveQX2yP3H1pVU8djGvEHmYg8uamQ84AuyGtpsrXTF",
+    "description": "Orca Wavebreak",
+    "added_at": "2025-08-12T07:01:19.086Z",
+    "revision": 1
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "url": "https://flarescan.com/address/0xe7cd86e13AC4309349F30B3435a9d337750fC82D",
+  "host": "flarescan.com",
+  "address": "0xe7cd86e13AC4309349F30B3435a9d337750fC82D",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:unexpected-response; scan-host-no-key:http 403"
+}

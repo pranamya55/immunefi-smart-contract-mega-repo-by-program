@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x760Fa0aB719c4067D3A8d4727Cf07E8f3Bf118db",
+  "host": "arbiscan.io",
+  "address": "0x760Fa0aB719c4067D3A8d4727Cf07E8f3Bf118db",
+  "chainid": 42161,
+  "project_slug": "ipor",
+  "asset_id": "4wjhQFO5icOAN2iwZeJG54",
+  "contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "1000000",
+  "constructor_arguments": "0000000000000000000000008bafe4611a084f8bff726243845aff4b70d6c52a00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000024d53a822f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "1",
+  "implementation": "0x8b1c1bfbdf347e5cdf5e5511d70211390ebebf08",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

@@ -1,0 +1,906 @@
+// SPDX-License-Identifier: LGPL-3.0-only
+pragma solidity 0.8.11;
+
+import "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
+import "@openzeppelin/contracts/utils/math/Math.sol";
+
+import "./common/UUPSOwnableUpgradeable.sol";
+import "./common/linkedlists/AddressSortedLinkedList.sol";
+import "./interfaces/IAccount.sol";
+import "./interfaces/IGroupHealth.sol";
+import "./interfaces/IManager.sol";
+import "./interfaces/ISpecificGroupStrategy.sol";
+import "./Managed.sol";
+import "./Pausable.sol";
+import "./common/Errors.sol";
+
+/**
+ * @title DefaultStrategy is responsible for handling any deposit/withdrawal
+ * for accounts without any specific strategy.
+ */
+contract DefaultStrategy is Errors, UUPSOwnableUpgradeable, Managed, Pausable {
+    using EnumerableSet for EnumerableSet.AddressSet;
+    using AddressSortedLinkedList for SortedLinkedList.List;
+
+    /**
+     * @notice Holds a group's address and votes.
+     * @param group The address of the group.
+     * @param votes The votes assigned to the group.
+     */
+    struct GroupWithVotes {
+        address group;
+        uint256 votes;
+    }
+
+    /**
+     * @notice The set of currently active groups that will be voted for with
+     * new deposits.
+     */
+    SortedLinkedList.List private activeGroups;
+
+    /**
+     * @notice An instance of the GroupHealth contract for the StakedCelo protocol.
+     */
+    IGroupHealth public groupHealth;
+
+    /**
+     * @notice An instance of the Account contract for the StakedCelo protocol.
+     */
+    IAccount public account;
+
+    /**
+     * @notice An instance of the SpecificGroupStrategy for the StakedCelo protocol.
+     */
+    ISpecificGroupStrategy public specificGroupStrategy;
+
+    /**
+     * @notice StCELO that was cast for default group strategy,
+     * strategy => stCELO amount.
+     */
+    mapping(address => uint256) public stCeloInGroup;
+
+    /**
+     * @notice Maximum number of groups to distribute votes to.
+     */
+    uint256 public maxGroupsToDistributeTo;
+
+    /**
+     * @notice Maximum number of groups to withdraw from.
+     */
+    uint256 public maxGroupsToWithdrawFrom;
+
+    /**
+     * @notice Total stCELO that was voted with on default strategy.
+     */
+    uint256 public totalStCeloInStrategy;
+
+    /**
+     * @notice Loop limit while sorting active groups on chain.
+     */
+    uint256 private sortingLoopLimit;
+
+    /**
+     * @notice Whether or not active groups are sorted.
+     * If active groups are not sorted it is neccessary to call updateActiveGroupOrder.
+     */
+    bool public sorted;
+
+    /**
+     * @notice Groups that need to be sorted.
+     */
+    EnumerableSet.AddressSet private unsortedGroups;
+
+    /**
+     * @notice Minimum count of active groups.
+     */
+    uint256 public minCountOfActiveGroups;
+
+    /**
+     * @notice Groups that wait to be activated.
+     */
+    EnumerableSet.AddressSet private activatableGroups;
+
+    /**
+     * @dev Reserved storage space to allow for layout changes in future upgrades.
+     */
+    uint256[50] private __gap;
+
+    /**
+     * @notice Emitted when a group is deactivated.
+     * @param group The group's address.
+     */
+    event GroupRemoved(address indexed group);
+
+    /**
+     * @notice Emitted when a new group is activated for voting.
+     * @param group The group's address.
+     */
+    event GroupActivated(address indexed group);
+
+    /**
+     * Emmited when sorted status of active groups was changed.
+     * @param update The new value.
+     */
+    event SortedFlagUpdated(bool update);
+
+    /**
+     * @notice Emitted when dependencies are set.
+     * @param account The Account contract address.
+     * @param groupHealth The GroupHealth contract address.
+     * @param specificGroupStrategy The SpecificGroupStrategy contract address.
+     */
+    event DependenciesSet(
+        address indexed account,
+        address indexed groupHealth,
+        address indexed specificGroupStrategy
+    );
+
+    /**
+     * @notice Emitted when sorting parameters are updated.
+     * @param maxGroupsToDistributeTo Maximum groups to distribute to.
+     * @param maxGroupsToWithdrawFrom Maximum groups to withdraw from.
+     * @param sortingLoopLimit The sorting loop limit.
+     */
+    event SortingParamsSet(
+        uint256 maxGroupsToDistributeTo,
+        uint256 maxGroupsToWithdrawFrom,
+        uint256 sortingLoopLimit
+    );
+
+    /**
+     * @notice Emitted when minimum count of active groups is set.
+     * @param minCount The minimum count.
+     */
+    event MinCountOfActiveGroupsSet(uint256 minCount);
+
+    /**
+     * @notice Emitted when a group is added to activatable groups.
+     * @param group The group's address.
+     */
+    event ActivatableGroupAdded(address indexed group);
+
+    /**
+     * @notice Emitted when group stCELO is updated.
+     * @param group The group's address.
+     * @param stCeloAmount The amount of stCELO.
+     * @param add Whether it was added or subtracted.
+     */
+    event GroupStCeloUpdated(address indexed group, uint256 stCeloAmount, bool add);
+
+    /**
+     * @notice Emitted when rebalance occurs between groups.
+     * @param fromGroup The group CELO is rebalanced from.
+     * @param toGroup The group CELO is rebalanced to.
+     * @param stCeloAmount The amount of stCELO moved.
+     */
+    event Rebalanced(address indexed fromGroup, address indexed toGroup, uint256 stCeloAmount);
+
+    /**
+     * @notice Emitted when deposit vote distribution is generated.
+     * @param groups The groups that were chosen for distribution.
+     * @param votes The votes for each group.
+     */
+    event DepositVoteDistributionGenerated(address[] groups, uint256[] votes);
+
+    /**
+     * @notice Emitted when withdrawal vote distribution is generated.
+     * @param groups The groups that were chosen for withdrawal.
+     * @param votes The votes for each group.
+     */
+    event WithdrawalVoteDistributionGenerated(address[] groups, uint256[] votes);
+
+    /**
+     * @notice Used when attempting to activate a group that is already active.
+     * @param group The group's address.
+     */
+    error GroupAlreadyAdded(address group);
+
+    /**
+     * @notice Used when a group does not meet the validator group health requirements.
+     * @param group The group's address.
+     */
+    error GroupNotEligible(address group);
+
+    /**
+     * @notice Used when attempting to deactivate a group that is not active.
+     * @param group The group's address.
+     */
+    error GroupNotActive(address group);
+
+    /**
+     * Used when attempting to deactivate a group when the minimum number of active groups reached.
+     */
+    error MinimumCountOfActiveGroupsReached();
+
+    /**
+     * @notice Used when attempting to activate a group that is not activatable.
+     */
+    error GroupNotActivatable(address group);
+
+    /**
+     * @notice Used when attempting to deactivate a healthy group using deactivateUnhealthyGroup().
+     * @param group The group's address.
+     */
+    error HealthyGroup(address group);
+
+    /**
+     * @notice Used when attempting to deposit when there are no active groups
+     * to vote for.
+     */
+    error NoActiveGroups();
+
+    /**
+     * @notice Used when atempting to distribute votes but validator group limit is reached.
+     */
+    error NotAbleToDistributeVotes();
+
+    /**
+     * @notice Used when attempting sort active groups when there are no unsorted group.
+     */
+    error NotUnsortedGroup();
+
+    /**
+     * @notice Used when rebalancing to a non-active group.
+     * @param group The group's address.
+     */
+    error InvalidToGroup(address group);
+
+    /**
+     * @notice Used when rebalancing from non-active group.
+     * @param group The group's address.
+     */
+    error InvalidFromGroup(address group);
+
+    /**
+     * @notice Used when rebalancing and `fromGroup` doesn't have any extra stCELO.
+     * @param group The group's address.
+     * @param actualCelo The actual stCELO value.
+     * @param expectedCelo The expected stCELO value.
+     */
+    error RebalanceNoExtraStCelo(address group, uint256 actualCelo, uint256 expectedCelo);
+
+    /**
+     * @notice Used when rebalancing and `toGroup` has enough stCELO.
+     * @param group The group's address.
+     * @param actualCelo The actual stCELO value.
+     * @param expectedCelo The expected stCELO value.
+     */
+    error RebalanceEnoughStCelo(address group, uint256 actualCelo, uint256 expectedCelo);
+
+    /**
+     *  @notice Used when a `managerOrStrategy` function is called
+     *  by a non-manager or non-strategy.
+     *  @param caller `msg.sender` that called the function.
+     */
+    error CallerNotManagerNorStrategy(address caller);
+
+    /**
+     * @notice Checks that only the manager or strategy contract can execute a function.
+     */
+    modifier managerOrStrategy() {
+        if (manager != msg.sender && address(specificGroupStrategy) != msg.sender) {
+            revert CallerNotManagerNorStrategy(msg.sender);
+        }
+        _;
+    }
+
+    /**
+     * @notice Empty constructor for proxy implementation, `initializer` modifer ensures the
+     * implementation gets initialized.
+     */
+    // solhint-disable-next-line no-empty-blocks
+    constructor() initializer {}
+
+    /**
+     * @notice Initialize the contract with registry and owner.
+     * @param _owner The address of the contract owner.
+     * @param _manager The address of the Manager contract.
+     */
+    function initialize(address _owner, address _manager) external initializer {
+        _transferOwnership(_owner);
+        __Managed_init(_manager);
+        maxGroupsToDistributeTo = 8;
+        maxGroupsToWithdrawFrom = 8;
+        sortingLoopLimit = 10;
+        sorted = true;
+        emit SortedFlagUpdated(sorted);
+    }
+
+    /**
+     * @notice Sets that address permissioned to pause/unpause this contract to
+     * the owner of this contract.
+     */
+    function setPauser() external onlyOwner {
+        _setPauser(owner());
+    }
+
+    /**
+     * @notice Set this contract's dependencies in the StakedCelo system.
+     * @param _account The address of the Account contract.
+     * @param _groupHealth The address of the GroupHealth contract.
+     * @param _specificGroupStrategy The address of the SpecificGroupStrategy contract.
+     */
+    function setDependencies(
+        address _account,
+        address _groupHealth,
+        address _specificGroupStrategy
+    ) external onlyOwner {
+        if (
+            _account == address(0) ||
+            _groupHealth == address(0) ||
+            _specificGroupStrategy == address(0)
+        ) {
+            revert AddressZeroNotAllowed();
+        }
+
+        groupHealth = IGroupHealth(_groupHealth);
+        specificGroupStrategy = ISpecificGroupStrategy(_specificGroupStrategy);
+        account = IAccount(_account);
+        emit DependenciesSet(_account, _groupHealth, _specificGroupStrategy);
+    }
+
+    /**
+     * @notice Set distribution/withdrawal algorithm parameters.
+     * @param distributeTo Maximum number of groups that can be distributed to.
+     * @param withdrawFrom Maximum number of groups that can be withdrawn from.
+     * @param loopLimit The sorting loop limit while sorting active groups on chain.
+     */
+    function setSortingParams(
+        uint256 distributeTo,
+        uint256 withdrawFrom,
+        uint256 loopLimit
+    ) external onlyOwner {
+        maxGroupsToDistributeTo = distributeTo;
+        maxGroupsToWithdrawFrom = withdrawFrom;
+        sortingLoopLimit = loopLimit;
+        emit SortingParamsSet(distributeTo, withdrawFrom, loopLimit);
+    }
+
+    /**
+     * @notice Distributes votes by computing the number of votes each active
+     * group should receive.
+     * @param celoAmount The amount of votes to distribute.
+     * @param depositGroupToIgnore The group that will not be used for deposit.
+     * @return finalGroups The groups that were chosen for distribution.
+     * @return finalVotes The votes of chosen finalGroups.
+     */
+    function generateDepositVoteDistribution(
+        uint256 celoAmount,
+        uint256 stCeloAmount,
+        address depositGroupToIgnore
+    )
+        external
+        managerOrStrategy
+        returns (address[] memory finalGroups, uint256[] memory finalVotes)
+    {
+        (finalGroups, finalVotes) = _generateDepositVoteDistribution(
+            celoAmount,
+            stCeloAmount,
+            depositGroupToIgnore
+        );
+        emit DepositVoteDistributionGenerated(finalGroups, finalVotes);
+        return (finalGroups, finalVotes);
+    }
+
+    /**
+     * @notice Updates group order of unsorted group. When there are no more unsorted groups
+     * it will mark active groups as sorted.
+     * @param group The group address.
+     * @param lesserKey The key of the group less than the group to update.
+     * @param greaterKey The key of the group greater than the group to update.
+     */
+    function updateActiveGroupOrder(
+        address group,
+        address lesserKey,
+        address greaterKey
+    ) external onlyWhenNotPaused {
+        if (!unsortedGroups.contains(group)) {
+            revert NotUnsortedGroup();
+        }
+
+        activeGroups.update(group, stCeloInGroup[group], lesserKey, greaterKey);
+        unsortedGroups.remove(group);
+        if (unsortedGroups.length() == 0) {
+            sorted = true;
+            emit SortedFlagUpdated(sorted);
+        }
+    }
+
+    /**
+     * @notice Marks a group as votable for default strategy.
+     * It is necessary to call `updateGroupHealth` in GroupHealth smart contract first.
+     * @param group The address of the group to add to the set of votable
+     * groups.
+     * @param lesser The group receiving fewer votes (in default strategy) than `group`,
+     * or 0 if `group` has the fewest votes of any validator group.
+     * @param greater The group receiving more votes (in default strategy) than `group`,
+     *  or 0 if `group` has the most votes of any validator group.
+     */
+    function activateGroup(
+        address group,
+        address lesser,
+        address greater
+    ) external {
+        if (!activatableGroups.contains(group)) {
+            revert GroupNotActivatable(group);
+        }
+
+        if (!groupHealth.isGroupValid(group)) {
+            revert GroupNotEligible(group);
+        }
+
+        if (activeGroups.contains(group)) {
+            revert GroupAlreadyAdded(group);
+        }
+
+        activeGroups.insert(group, 0, lesser, greater);
+        activatableGroups.remove(group);
+
+        emit GroupActivated(group);
+    }
+
+    /**
+     * @notice Rebalances CELO between groups that have an incorrect CELO-stCELO ratio.
+     * `fromGroup` is required to have more CELO than it should and `toGroup` needs
+     * to have less CELO than it should.
+     * @param fromGroup The from group.
+     * @param toGroup The to group.
+     */
+    function rebalance(address fromGroup, address toGroup) external onlyWhenNotPaused {
+        if (!activeGroups.contains(fromGroup)) {
+            revert InvalidFromGroup(fromGroup);
+        }
+
+        if (!activeGroups.contains(toGroup)) {
+            revert InvalidToGroup(toGroup);
+        }
+
+        (uint256 expectedFromStCelo, uint256 actualFromStCelo) = getExpectedAndActualStCeloForGroup(
+            fromGroup
+        );
+        if (actualFromStCelo <= expectedFromStCelo) {
+            // fromGroup needs to have more stCELO than it should
+            revert RebalanceNoExtraStCelo(fromGroup, actualFromStCelo, expectedFromStCelo);
+        }
+
+        (uint256 expectedToStCelo, uint256 actualToStCelo) = getExpectedAndActualStCeloForGroup(
+            toGroup
+        );
+
+        if (actualToStCelo >= expectedToStCelo) {
+            // toGroup needs to have less stCELO than it should
+            revert RebalanceEnoughStCelo(toGroup, actualToStCelo, expectedToStCelo);
+        }
+
+        uint256 toMove = Math.min(
+            actualFromStCelo - expectedFromStCelo,
+            expectedToStCelo - actualToStCelo
+        );
+
+        _updateGroupStCelo(fromGroup, toMove, false);
+        _updateGroupStCelo(toGroup, toMove, true);
+
+        trySort(fromGroup, stCeloInGroup[fromGroup], false);
+        trySort(toGroup, stCeloInGroup[toGroup], true);
+
+        emit Rebalanced(fromGroup, toGroup, toMove);
+    }
+
+    /**
+     * @notice Distributes votes by computing the number of votes to be subtracted
+     * from each active group.
+     * @param celoAmount The amount of votes to subtract.
+     * @return finalGroups The groups that were chosen for subtraction.
+     * @return finalVotes The votes of chosen finalGroups.
+     */
+    function generateWithdrawalVoteDistribution(uint256 celoAmount)
+        external
+        managerOrStrategy
+        returns (address[] memory finalGroups, uint256[] memory finalVotes)
+    {
+        if (activeGroups.getNumElements() == 0) {
+            revert NoActiveGroups();
+        }
+
+        uint256 maxGroupCount = Math.min(maxGroupsToWithdrawFrom, activeGroups.getNumElements());
+
+        address[] memory groups = new address[](maxGroupCount);
+        uint256[] memory votes = new uint256[](maxGroupCount);
+
+        address votedGroup = activeGroups.getHead();
+        uint256 groupsIndex;
+
+        while (groupsIndex < maxGroupCount && celoAmount != 0 && votedGroup != address(0)) {
+            votes[groupsIndex] = Math.min(
+                Math.min(
+                    account.getCeloForGroup(votedGroup),
+                    IManager(manager).toCelo(stCeloInGroup[votedGroup])
+                ),
+                celoAmount
+            );
+
+            groups[groupsIndex] = votedGroup;
+            celoAmount -= votes[groupsIndex];
+            _updateGroupStCelo(
+                votedGroup,
+                IManager(manager).toStakedCelo(votes[groupsIndex]),
+                false
+            );
+            trySort(votedGroup, stCeloInGroup[votedGroup], false);
+
+            if (sorted) {
+                votedGroup = activeGroups.getHead();
+            } else {
+                (, votedGroup, ) = activeGroups.get(votedGroup);
+            }
+
+            groupsIndex++;
+        }
+
+        if (celoAmount != 0) {
+            revert NotAbleToDistributeVotes();
+        }
+
+        finalGroups = new address[](groupsIndex);
+        finalVotes = new uint256[](groupsIndex);
+
+        for (uint256 i = 0; i < groupsIndex; i++) {
+            finalGroups[i] = groups[i];
+            finalVotes[i] = votes[i];
+        }
+
+        emit WithdrawalVoteDistributionGenerated(finalGroups, finalVotes);
+    }
+
+    /**
+     * @notice Deactivates group.
+     * @param group The group to deactivated.
+     */
+    function deactivateGroup(address group) external onlyOwner {
+        _deactivateGroup(group);
+    }
+
+    /**
+     * @notice Sets the minimum number of active groups.
+     * @param minCount The minimum number of active groups.
+     */
+    function setMinCountOfActiveGroups(uint256 minCount) external onlyOwner {
+        minCountOfActiveGroups = minCount;
+        emit MinCountOfActiveGroupsSet(minCount);
+    }
+
+    /**
+     * @notice Deactivates an unhealthy group.
+     * @param group The group to deactivate if unhealthy.
+     */
+    function deactivateUnhealthyGroup(address group) external onlyWhenNotPaused {
+        if (groupHealth.isGroupValid(group)) {
+            revert HealthyGroup(group);
+        }
+        _deactivateGroup((group));
+    }
+
+    /**
+     * @notice Adds group to activatable groups.
+     * @param group The group to add.
+     */
+    function addActivatableGroup(address group) external onlyOwner {
+        if (!groupHealth.isGroupValid(group)) {
+            revert GroupNotEligible(group);
+        }
+
+        if (activeGroups.contains(group) || activatableGroups.contains(group)) {
+            revert GroupAlreadyAdded(group);
+        }
+
+        activatableGroups.add(group);
+        emit ActivatableGroupAdded(group);
+    }
+
+    /**
+     * @notice Updates the total stCELO in default group strategy.
+     * @param group The group address.
+     * @param stCeloAmount The amount of stCELO.
+     * @param add Whether to add or subtract.
+     */
+    function updateGroupStCelo(
+        address group,
+        uint256 stCeloAmount,
+        bool add
+    ) external onlyOwner {
+        _updateGroupStCelo(group, stCeloAmount, add);
+        emit GroupStCeloUpdated(group, stCeloAmount, add);
+    }
+
+    /**
+     * @notice Returns the number of active groups.
+     * @return The number of active groups.
+     */
+    function getNumberOfGroups() external view returns (uint256) {
+        return activeGroups.getNumElements();
+    }
+
+    /**
+     * @notice Returns previous and next address of key.
+     * @param group The group address.
+     * @return previousAddress The previous address.
+     * @return nextAddress The next address.
+     */
+    function getGroupPreviousAndNext(address group)
+        external
+        view
+        returns (address previousAddress, address nextAddress)
+    {
+        (, previousAddress, nextAddress) = activeGroups.get(group);
+    }
+
+    /**
+     * @notice Returns head and previous address of head.
+     * @return head The address of the sorted group with most votes.
+     * @return previousAddress The previous address from head.
+     */
+    function getGroupsHead() external view returns (address head, address previousAddress) {
+        head = activeGroups.getHead();
+        (, previousAddress, ) = activeGroups.get(head);
+    }
+
+    /**
+     * @notice Returns tail and next address of tail.
+     * @return tail The address of the sorted group with least votes.
+     * @return nextAddress The next address after tail.
+     */
+    function getGroupsTail() external view returns (address tail, address nextAddress) {
+        tail = activeGroups.getTail();
+        (, , nextAddress) = activeGroups.get(tail);
+    }
+
+    /**
+     * @notice Returns whether active groups contain group.
+     * @return Whether or not the given group is active.
+     */
+    function isActive(address group) external view returns (bool) {
+        return activeGroups.contains(group);
+    }
+
+    /**
+     * @notice Returns the number of unsorted groups.
+     * @return The number of unsorted groups.
+     */
+    function getNumberOfUnsortedGroups() external view returns (uint256) {
+        return unsortedGroups.length();
+    }
+
+    /**
+     * @notice Returns the unsorted group at index.
+     * @param index The index to look up.
+     * @return The group.
+     */
+    function getUnsortedGroupAt(uint256 index) external view returns (address) {
+        return unsortedGroups.at(index);
+    }
+
+    /**
+     * @notice Returns the activatable group at index.
+     * @param index The index to look up.
+     * @return The group.
+     */
+    function getActivatableGroupAt(uint256 index) external view returns (address) {
+        return activatableGroups.at(index);
+    }
+
+    /**
+     * @notice Returns the number of activatable groups.
+     * @return The number of activatable groups.
+     */
+    function activatableGroupsCount() external view returns (uint256) {
+        return activatableGroups.length();
+    }
+
+    /**
+     * @notice Returns the storage, major, minor, and patch version of the contract.
+     * @return Storage version of the contract.
+     * @return Major version of the contract.
+     * @return Minor version of the contract.
+     * @return Patch version of the contract.
+     */
+    function getVersionNumber()
+        external
+        pure
+        returns (
+            uint256,
+            uint256,
+            uint256,
+            uint256
+        )
+    {
+        return (1, 3, 0, 0);
+    }
+
+    /**
+     * @notice Returns expected stCELO and actual stCELO for group.
+     * @param group The group.
+     * @return expectedStCelo The amount of stCELO that group should have.
+     * (The total amount of stCELO in the default strategy divided by the number of active groups.)
+     * @return actualStCelo The amount of stCELO which is currently
+     * assigned to group in the strategy.
+     */
+    function getExpectedAndActualStCeloForGroup(address group)
+        public
+        view
+        returns (uint256 expectedStCelo, uint256 actualStCelo)
+    {
+        address head = activeGroups.getHead();
+        uint256 numberOfActiveGroups = activeGroups.getNumElements();
+        expectedStCelo = totalStCeloInStrategy / numberOfActiveGroups;
+        if (group == head) {
+            uint256 divisionResidue = totalStCeloInStrategy -
+                (expectedStCelo * numberOfActiveGroups);
+            expectedStCelo += divisionResidue;
+        }
+
+        actualStCelo = stCeloInGroup[group];
+    }
+
+    /**
+     * @notice Disables renouncing ownership. Ownership should never be renounced.
+     */
+    function renounceOwnership() public pure override(Managed, OwnableUpgradeable) {
+        revert RenounceOwnershipDisabled();
+    }
+
+    /**
+     * @notice Adds/substracts value to totals of group and
+     * total stCELO in default strategy.
+     * @param group The validator group that we are updating.
+     * @param stCeloAmount The amount of stCELO.
+     * @param add Whether to add or substract.
+     */
+    function _updateGroupStCelo(
+        address group,
+        uint256 stCeloAmount,
+        bool add
+    ) internal {
+        if (add) {
+            stCeloInGroup[group] += stCeloAmount;
+            totalStCeloInStrategy += stCeloAmount;
+        } else {
+            stCeloInGroup[group] -= stCeloAmount;
+            totalStCeloInStrategy -= stCeloAmount;
+        }
+    }
+
+    /**
+     * @notice Deactivates group.
+     * @param group The group to deactivated.
+     */
+    function _deactivateGroup(address group) private {
+        if (!activeGroups.contains(group)) {
+            revert GroupNotActive(group);
+        }
+
+        if (activeGroups.getNumElements() <= minCountOfActiveGroups) {
+            revert MinimumCountOfActiveGroupsReached();
+        }
+
+        activeGroups.remove(group);
+        unsortedGroups.remove(group);
+
+        uint256 groupTotalStCeloVotes = stCeloInGroup[group];
+
+        if (groupTotalStCeloVotes > 0) {
+            _updateGroupStCelo(group, groupTotalStCeloVotes, false);
+            _generateDepositVoteDistribution(
+                IManager(manager).toCelo(groupTotalStCeloVotes),
+                groupTotalStCeloVotes,
+                address(0)
+            );
+        }
+
+        emit GroupRemoved(group);
+    }
+
+    /**
+     * @notice Distributes votes by computing the number of votes each active
+     * group should receive.
+     * @param celoAmount The amount of votes to distribute.
+     * @param depositGroupToIgnore The group that will not be used for deposit.
+     * @return finalGroups The groups that were chosen for distribution.
+     * @return finalVotes The votes of chosen finalGroups.
+     */
+    function _generateDepositVoteDistribution(
+        uint256 celoAmount,
+        uint256 stCeloAmount,
+        address depositGroupToIgnore
+    ) private returns (address[] memory finalGroups, uint256[] memory finalVotes) {
+        if (activeGroups.getNumElements() == 0) {
+            revert NoActiveGroups();
+        }
+
+        uint256 maxGroupCount = Math.min(maxGroupsToDistributeTo, activeGroups.getNumElements());
+
+        address[] memory groups = new address[](maxGroupCount);
+        uint256[] memory votes = new uint256[](maxGroupCount);
+
+        address votedGroup = activeGroups.getTail();
+        uint256 groupsIndex;
+
+        while (groupsIndex < maxGroupCount && celoAmount != 0 && votedGroup != address(0)) {
+            uint256 receivableVotes = IManager(manager).getReceivableVotesForGroup(votedGroup);
+            if (votedGroup == depositGroupToIgnore || receivableVotes == 0) {
+                (, , votedGroup) = activeGroups.get(votedGroup);
+                continue;
+            }
+
+            votes[groupsIndex] = Math.min(receivableVotes, celoAmount);
+            groups[groupsIndex] = votedGroup;
+            celoAmount -= votes[groupsIndex];
+            uint256 stCelo = IManager(manager).toStakedCelo(votes[groupsIndex]);
+            stCeloAmount = stCeloAmount >= stCelo ? stCeloAmount - stCelo : 0;
+            _updateGroupStCelo(votedGroup, stCelo, true);
+            trySort(votedGroup, stCeloInGroup[votedGroup], true);
+
+            if (sorted) {
+                votedGroup = activeGroups.getTail();
+            } else {
+                (, , votedGroup) = activeGroups.get(votedGroup);
+            }
+            groupsIndex++;
+        }
+
+        if (celoAmount != 0) {
+            revert NotAbleToDistributeVotes();
+        }
+
+        if (stCeloAmount != 0) {
+            if (votedGroup == address(0)) {
+                votedGroup = activeGroups.getTail();
+            }
+            _updateGroupStCelo(votedGroup, stCeloAmount, true);
+            trySort(votedGroup, stCeloInGroup[votedGroup], true);
+        }
+
+        finalGroups = new address[](groupsIndex);
+        finalVotes = new uint256[](groupsIndex);
+
+        for (uint256 i = 0; i < groupsIndex; i++) {
+            finalGroups[i] = groups[i];
+            finalVotes[i] = votes[i];
+        }
+    }
+
+    /**
+     * Try to sort group in active groups based on new value.
+     * @param group The group address.
+     * @param newValue The new value of group.
+     * @param valueIncreased Whether value increased/decreased compared to original value.
+     */
+    function trySort(
+        address group,
+        uint256 newValue,
+        bool valueIncreased
+    ) private {
+        if (unsortedGroups.contains(group)) {
+            return;
+        }
+
+        (address lesserKey, address greaterKey) = valueIncreased
+            ? activeGroups.getLesserAndGreaterOfAddressThatIncreasedValue(
+                group,
+                newValue,
+                sortingLoopLimit
+            )
+            : activeGroups.getLesserAndGreaterOfAddressThatDecreasedValue(
+                group,
+                newValue,
+                sortingLoopLimit
+            );
+        if (lesserKey != greaterKey || activeGroups.getNumElements() == 1) {
+            activeGroups.update(group, newValue, lesserKey, greaterKey);
+        } else {
+            if (sorted) {
+                sorted = false;
+            }
+            unsortedGroups.add(group);
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://scrollscan.com/address/0x3b005fefc63ca7c8d25ee21fba3787229ba4cf03",
+  "host": "scrollscan.com",
+  "address": "0x3b005fefc63ca7c8d25ee21fba3787229ba4cf03",
+  "chainid": 534352,
+  "project_slug": "usx",
+  "asset_id": "5N5anvm6YFm0IZMMimrGrr",
+  "contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000f5c3ebd1f58199a7d2e564acb30cd1174bd7a5b200000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000084f8c8765e00000000000000000000000006efdbff2a14a7c8e15944d1f4a48f9f95f663a40000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b6af812ee71acb24d3e2f978920517f4ae5f31b2000000000000000000000000b6af812ee71acb24d3e2f978920517f4ae5f31b200000000000000000000000000000000000000000000000000000000",
+  "evm_version": "prague",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0xf5c3ebd1f58199a7d2e564acb30cd1174bd7a5b2",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 8,
+  "mode": "json-sources"
+}

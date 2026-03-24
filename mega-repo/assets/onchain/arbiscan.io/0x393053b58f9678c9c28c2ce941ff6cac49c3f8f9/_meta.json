@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x393053B58f9678C9c28c2cE941fF6cac49C3F8f9",
+  "host": "arbiscan.io",
+  "address": "0x393053B58f9678C9c28c2cE941fF6cac49C3F8f9",
+  "chainid": 42161,
+  "project_slug": "gmx",
+  "asset_id": "4ogDOPvfnNfXbtwFtt8xdK",
+  "contract_name": "GlvVault",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": "1",
+  "runs": "10",
+  "constructor_arguments": "0000000000000000000000003c3d99fd298f679dbc2cecd132b4ec4d0f5e6e72000000000000000000000000fd70de6b91282d8017aa4e741e9ae325cab992d8",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 22,
+  "mode": "json-sources"
+}

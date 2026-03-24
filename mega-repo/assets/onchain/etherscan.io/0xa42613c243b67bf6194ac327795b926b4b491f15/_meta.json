@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xa42613C243b67BF6194Ac327795b926B4b491f15",
+  "host": "etherscan.io",
+  "address": "0xa42613C243b67BF6194Ac327795b926B4b491f15",
+  "chainid": 1,
+  "project_slug": "ondofinance",
+  "asset_id": "611CKJy19FdSgKs9bJUD5y",
+  "contract_name": "USDY_InstantManager",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "0000000000000000000000001dd6bcf6d188f11d8de64b5c8575fb86c4b3d9ff00000000000000000000000096f6ef951840721adbf46ac996b59e0235cb985c000000000000000000000000af37c1167910ebc994e266949387d2c7c326b8790000000000000000000000000000000000000000000000000de0b6b3a76400000000000000000000000000000000000000000000000000000de0b6b3a7640000",
+  "evm_version": "london",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 51,
+  "mode": "json-sources"
+}

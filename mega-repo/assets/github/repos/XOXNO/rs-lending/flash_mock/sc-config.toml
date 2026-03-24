@@ -1,0 +1,6 @@
+[contracts.main]
+name = "flash_mock"
+
+[[proxy]]
+path = "../controller/tests/proxys/proxy_flash_mock.rs"
+ 

@@ -1,0 +1,42 @@
+[package]
+edition = "2021"
+name = "strata-btcio"
+version = "0.3.0-alpha.1"
+
+[lints]
+workspace = true
+
+[dependencies]
+strata-btc-types.workspace = true
+strata-btc-verification.workspace = true
+strata-config.workspace = true
+strata-csm-types.workspace = true
+strata-db-types.workspace = true
+strata-identifiers.workspace = true
+strata-l1-envelope-fmt.workspace = true
+strata-l1-txfmt.workspace = true
+strata-primitives.workspace = true
+strata-state.workspace = true
+strata-status.workspace = true
+strata-storage.workspace = true
+strata-tasks.workspace = true
+
+anyhow.workspace = true
+bitcoin.workspace = true
+bitcoind-async-client.workspace = true
+hex.workspace = true
+rand.workspace = true
+reqwest.workspace = true
+thiserror.workspace = true
+threadpool.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+hex.workspace = true
+musig2 = { workspace = true, features = ["serde"] }
+strata-db-store-sled = { workspace = true, features = ["test_utils"] }
+strata-state = { workspace = true, features = ["test_utils"] }
+strata-status.workspace = true
+strata-test-utils.workspace = true
+strata-test-utils-btcio.workspace = true

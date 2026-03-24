@@ -1,0 +1,272 @@
+{
+	getters: `{
+		
+		$year = 31104000; // 360 * 24 * 3600;
+
+		$trade_merge_period = 1; // seconds
+
+		// increase the supply without changing the price
+		$increase_supply = ($state, $ds) => {
+			require($ds >= 0, "negative ds "||$ds);
+			$s = $state.supply;
+			$s0 = $state.s0;
+			$new_s = $s + $ds;
+			$new_s0 = $s0 * $new_s * $new_s / ($s0 * $ds + $s * $s);
+			$coef_multiplier = $s * $s / $new_s / $new_s; //   < 1
+
+			$state.supply = $new_s;
+			$state.s0 = $new_s0;
+			$state.coef = $state.coef * $coef_multiplier;
+		};
+
+		$subtract_grant = ($state, $dr) => {
+			$r = $state.reserve;
+			require($dr < $r, "proposal amount exceeds the reserve");
+			$s = $state.supply;
+			$s0 = $state.s0;
+			
+			$ro = $dr/$r;
+			$ro1 = 1 - $ro;
+
+			$new_s0 = 1 / ($ro/$s + $ro1/$s0);
+			$coef_multiplier = $ro1 * $ro1; //   < 1
+
+			$state.reserve = $r - $dr;
+			$state.s0 = $new_s0;
+			$state.coef = $state.coef * $coef_multiplier;
+		};
+
+		$update_total_emissions = ($state, $props) => {
+			$total_new_emissions = $state.total_normalized_vp 
+				? (timestamp - $state.last_emissions_ts)/$year * $props.inflation_rate * $state.supply
+				: 0;
+			$state.last_emissions_ts = timestamp;
+			$state.stakers_emissions = $state.stakers_emissions + $props.stakers_share * $total_new_emissions;
+			$state.lp_emissions = $state.lp_emissions + (1 - $props.stakers_share) * $total_new_emissions;
+		};
+
+		$distribute_stakers_emissions = ($state, $user, $props) => {
+			$update_total_emissions($state, $props);
+
+			$new_emissions_since_prev_visit = $state.stakers_emissions - $user.last_stakers_emissions;
+			$user.last_stakers_emissions = $state.stakers_emissions;
+			
+			if ($user.normalized_vp AND $state.total_normalized_vp){
+				$reward = $new_emissions_since_prev_visit * $user.normalized_vp/$state.total_normalized_vp;
+				$user.reward = $user.reward + $reward;
+				$increase_supply($state, $reward);
+			}
+		};
+
+		$distribute_lp_emissions = ($state, $lp, $pool, $pool_vps, $total_lp_balance, $props) => {
+			$update_total_emissions($state, $props);
+
+			if (!$state.total_normalized_vp)
+				return;
+
+			if (!$pool.blacklisted) {
+				$pool_share = $pool_vps[$pool.asset_key]/$state.total_normalized_vp;
+
+				$new_total_lp_emissions_since_prev_visit = $state.lp_emissions - $pool.last_lp_emissions;
+				$pool.last_lp_emissions = $state.lp_emissions; // that's total LP emissions to all the pools
+				$pool.received_emissions = $pool.received_emissions + $new_total_lp_emissions_since_prev_visit * $pool_share;
+			}
+
+			$new_emissions_since_prev_visit = $pool.received_emissions - $lp.last_pool_emissions;
+			$lp.last_pool_emissions = $pool.received_emissions;
+
+			// newly added deposit_aa-based pools have non-zero balances and receive a reward when withdraw_lp_reward is requested for the first time. In this case, $lp.last_pool_emissions = 0 and the $lp receives the rewards accrued since the pool was whitelisted. For non-depost_aa pools, the first action is a deposit, hence $lp.balance = 0 and we don't enter this block.
+			if ($lp.balance AND $total_lp_balance){
+				$reward = $new_emissions_since_prev_visit * $lp.balance/$total_lp_balance;
+				$lp.reward = $lp.reward + $reward;
+				$increase_supply($state, $reward);
+			}
+			$lp.last_distribution_ts = timestamp;
+		};
+
+
+		$distribute_new_vp = ($votes, $pool_vps, $delta_normalized_vp, $percentages) => {
+			$totals = {total: 0};
+			foreach($percentages, 20, ($pool_asset_key, $percentage) => {
+				require(+substring($pool_asset_key, 1) AND starts_with($pool_asset_key, 'a'), "invalid pool asset key "||$pool_asset_key);
+				require($percentage > 0, "invalid percentage "||$percentage);
+				require(exists($pool_vps[$pool_asset_key]), "pool asset key "||$pool_asset_key||" not found in this group");
+				$totals.total = $totals.total + $percentage;
+				$added_vp = $percentage/100 * $delta_normalized_vp;
+				$votes[$pool_asset_key] = $votes[$pool_asset_key] + $added_vp;
+				$pool_vps[$pool_asset_key] = $pool_vps[$pool_asset_key] + $added_vp;
+			});
+			require($totals.total == 100, "percentages sum to "||$totals.total);
+			require(length($votes) <= 30, "max total number of supported pools is 30");
+			$pool_vps.total = $pool_vps.total + $delta_normalized_vp;
+		};
+
+
+		$apply_vote = ($votes, $pool_vps, $group_key1, $group_key2, $group_vps, $changes) => {
+			$totals = {total: 0, max: 0};
+			foreach($changes, 20, ($pool_asset_key, $delta_vp) => {
+				require(+substring($pool_asset_key, 1) AND starts_with($pool_asset_key, 'a'), "invalid pool asset key "||$pool_asset_key);
+				$votes[$pool_asset_key] = $votes[$pool_asset_key] + $delta_vp;
+				$p = $votes[$pool_asset_key];
+				require($p >= 0, "would have negative votes for pool_asset_key "||$pool_asset_key);
+				if ($p == 0)
+					delete($votes, $pool_asset_key);
+				$totals.total = $totals.total + $delta_vp;
+				if (abs($delta_vp) > $totals.max)
+					$totals.max = abs($delta_vp);
+				if (exists($pool_vps[$group_key1][$pool_asset_key]))
+					$group_key = $group_key1;
+				else if ($group_key2 AND exists($pool_vps[$group_key2][$pool_asset_key]))
+					$group_key = $group_key2;
+				else
+					bounce("pool asset key "||$pool_asset_key||" not found in any of the two groups");
+				$pool_vps[$group_key][$pool_asset_key] = $pool_vps[$group_key][$pool_asset_key] + $delta_vp;
+				$pool_vps[$group_key].total = $pool_vps[$group_key].total + $delta_vp;
+				$group_vps[$group_key] = $group_vps[$group_key] + $delta_vp;
+			});
+			require(abs($totals.total) < $totals.max * 1e-15, "total votes changed by "||$totals.total); // allow some rounding error
+			require(length($votes) <= 30, "max total number of supported pools is 30");
+		};
+
+		$remove_votes = ($votes, $pool_vps) => {
+			foreach($votes, 30, ($pool_asset_key, $vp) => {
+				require(exists($pool_vps[$pool_asset_key]), "pool asset key "||$pool_asset_key||" not found in the indicated group");
+				$pool_vps[$pool_asset_key] = $pool_vps[$pool_asset_key] - $votes[$pool_asset_key];
+			});
+		};
+
+
+
+
+		$pow2 = $x => $x*$x;
+
+
+		$get_reserve_by_state = ($s, $state) => $state.coef * $s * $state.s0 / ($state.s0 - $s);
+		$get_tokens_by_state = ($r, $state) => 1 / (1/$state.s0 + $state.coef/$r);
+		$get_price_by_state = ($s, $state) => $state.coef * $pow2($state.s0 / ($state.s0 - $s)); // derivative
+
+
+		$get_appreciation_result = ($state, $appreciation_rate) => {
+			$elapsed_time = timestamp - $state.last_ts;
+		//	log('elapsed', $elapsed_time);
+			$r = $state.reserve;
+			$s = $state.supply;
+			$s0 = $state.s0;
+			if ($s == 0 OR $elapsed_time == 0)
+				return {new_s0: $s0, coef_multiplier: 1};
+			$p = $get_price_by_state($s, $state);
+			$new_p = $p * (1 +  $elapsed_time/$year * $appreciation_rate);
+			$new_s0 = $s + 1 / ($new_p/$r - 1/$s);
+			require($new_s0 > 0, "appreciation new s0 = "||$new_s0);
+			$coef_multiplier = $s0/$new_s0 * ($new_s0 - $s)/($s0 - $s); //   < 1
+			require($coef_multiplier > 0 AND $coef_multiplier <= 1, "invalid appreciation coef multiplier "||$coef_multiplier);
+			{
+				new_s0: $new_s0,
+				coef_multiplier: $coef_multiplier,
+			}
+		};
+
+		$apply_appreciation = ($state, $appreciation_rate) => {
+			$appr_res = $get_appreciation_result($state, $appreciation_rate);
+			$state.s0 = $appr_res.new_s0;
+			$state.coef = $state.coef * $appr_res.coef_multiplier;
+			$state.last_ts = timestamp;
+		};
+
+
+
+
+		$get_exchange_result_by_state = ($tokens, $delta_r, $trigger_initial_address, $state, $props) => {
+			require($tokens > 0 AND $delta_r == 0 OR $tokens == 0 AND $delta_r > 0, "invalid input");
+
+			$r = $state.reserve;
+			$s = $state.supply;
+			$p = $get_price_by_state($s, $state);
+		//	log('p = ', $p);
+
+			$swap_fee_rate = $props.swap_fee;
+			$arb_profit_tax_rate = $props.arb_profit_tax;
+
+			$key = $tokens ? 'last_sell' : 'last_buy';
+			$last_trade = $state[$key];
+			$bMerge = (timestamp <= $last_trade.ts + $trade_merge_period AND $trigger_initial_address == $last_trade.address);
+			$recent_tax = $bMerge ? $last_trade.tax : 0;
+			$recent_delta_s = $bMerge ? $last_trade.delta_s : 0;
+			$initial_p = $bMerge ? ($tokens ? max($p, $last_trade.initial_p) : min($p, $last_trade.initial_p)) : $p;
+
+			if ($tokens) { // selling tokens
+				$new_s = $s - $tokens;
+				$net_new_r = $get_reserve_by_state($new_s, $state);
+				$swap_fee = $swap_fee_rate * ($r - $net_new_r);
+				$delta_s = -$tokens;
+			}
+			else { // buying tokens
+				$gross_new_r = $r + $delta_r;
+				$swap_fee = $r ? $swap_fee_rate * $delta_r : 0;
+				$new_r1 = $r + $delta_r - $swap_fee;
+				$new_s1 = $get_tokens_by_state($new_r1, $state);
+			//	log('new_s1 = ', $new_s1);
+				$new_p1 = $get_price_by_state($new_s1, $state);
+			//	log('new_p1 = ', $new_p1);
+				$arb_profit_tax = $r ? $arb_profit_tax_rate * ($new_p1 - $initial_p) * ($new_s1 - $s + $recent_delta_s) / 2 - $recent_tax : 0;
+
+				$net_new_r = $new_r1 - $arb_profit_tax;
+				require($net_new_r >= $r, "net new r should grow, got "||$net_new_r);
+				$new_s = $get_tokens_by_state($net_new_r, $state);
+			//	log('new_s = ', $new_s);
+				$delta_s = $new_s - $s;
+			}
+
+			$new_p = $get_price_by_state($new_s, $state);
+		//	log('new_p = ', $new_p);
+			
+			if ($tokens)
+				$arb_profit_tax = $arb_profit_tax_rate * ($initial_p - $new_p) * ($tokens - $recent_delta_s) / 2 - $recent_tax;
+			
+			require($arb_profit_tax >= 0, "arb_profit_tax="||$arb_profit_tax);
+			$total_fee = $swap_fee + $arb_profit_tax;
+
+			if ($tokens){
+				$gross_new_r = ceil($net_new_r + $total_fee);
+				$payout = $r - $gross_new_r;
+				require($payout >= 0, "invalid payout "||$payout);
+				$fee_percent = $total_fee / ($r - $net_new_r) * 100;
+			}
+			else{ // buying
+				require($total_fee < $delta_r, "total fee would exceed the received amount "||$total_fee);
+				$fee_percent = $total_fee / $delta_r * 100;
+			}
+
+			$coef_multiplier = $gross_new_r / $net_new_r;
+			require($coef_multiplier >= 1, "invalid coef multiplier "||$coef_multiplier);
+
+			$state[$key].delta_s = ($bMerge ? $last_trade.delta_s : 0) + $delta_s;
+			$state[$key].initial_p = $initial_p;
+			$state[$key].tax = $arb_profit_tax;
+			$state[$key].ts = timestamp;
+			$state[$key].address = $trigger_initial_address;
+
+			{
+				payout: $payout,
+				delta_s: $delta_s, // negative for selling
+				old_reserve: $r,
+				new_reserve: $gross_new_r,
+				delta_reserve: $gross_new_r - $r,
+				old_price: $p,
+				new_price: $new_p,
+				swap_fee: $swap_fee,
+				arb_profit_tax: $arb_profit_tax,
+				total_fee: $total_fee,
+				fee_percent: $fee_percent,
+				coef_multiplier: $coef_multiplier,
+			}
+		};
+
+	}`,
+	messages: [{
+		app: 'state',
+		state: `{
+			bounce("library only");
+		}`
+	}]
+}

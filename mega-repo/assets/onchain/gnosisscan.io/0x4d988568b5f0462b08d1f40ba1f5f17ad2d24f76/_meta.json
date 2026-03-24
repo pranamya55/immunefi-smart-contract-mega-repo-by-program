@@ -1,0 +1,24 @@
+{
+  "url": "https://gnosisscan.io/address/0x4d988568b5f0462B08d1F40bA1F5f17ad2D24F76",
+  "host": "gnosisscan.io",
+  "address": "0x4d988568b5f0462B08d1F40bA1F5f17ad2D24F76",
+  "chainid": 100,
+  "project_slug": "sparklend",
+  "asset_id": "wzaK3ByMG9trXWhW2ubeY",
+  "contract_name": "EmissionManager",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "1",
+  "runs": "100000",
+  "constructor_arguments": "000000000000000000000000d1236a6a111879d9862f8374ba15344b6b233fbd",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

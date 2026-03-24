@@ -1,0 +1,19 @@
+{
+  "url": "https://polygonscan.com/address/0x1109e03516eb25eab2150d0b274b8d4f5f3cf549",
+  "host": "polygonscan.com",
+  "address": "0x1109e03516eb25eab2150d0b274b8d4f5f3cf549",
+  "chainid": 137,
+  "contract_name": "WooSuperChargerVaultV2",
+  "compiler_version": "v0.8.14+commit.80d49f37",
+  "optimization_used": "1",
+  "runs": "20000",
+  "constructor_arguments": "0000000000000000000000000d500b1d8e8ef31e21c99d1db9a6444d3adf12700000000000000000000000003c499c542cef5e3811e1192ce70d8cc03d5c3359000000000000000000000000af558f888e138ca9416111ec7ae8e28354cd9239",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 22,
+  "mode": "recover-json-sources"
+}

@@ -1,0 +1,8 @@
+[[package]]
+name = "shadowed_configurables"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-64A912F71AFE52EA"

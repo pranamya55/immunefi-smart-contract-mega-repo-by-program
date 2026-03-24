@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x80d40e32fad8be8da5c6a42b8af1e181984d137c",
+  "host": "arbiscan.io",
+  "address": "0x80d40e32fad8be8da5c6a42b8af1e181984d137c",
+  "chainid": 42161,
+  "project_slug": "Aevo",
+  "asset_id": "2kByIvctLMNAuAwWrRtuiG",
+  "contract_name": "Vault",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": "1",
+  "runs": "999999",
+  "constructor_arguments": "000000000000000000000000ff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 14,
+  "mode": "json-sources"
+}

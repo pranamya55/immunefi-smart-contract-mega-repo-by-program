@@ -1,0 +1,314 @@
+[
+  {
+    "project_slug": "derive",
+    "asset_id": "1t0nAXeHw1tEpoy3tu09tH",
+    "url": "https://explorer.lyra.finance/address/0x9B3FE5E5a3bcEa5df4E08c41Ce89C4e3Ff01Ace3",
+    "description": "DepositModule",
+    "added_at": "2024-01-11T08:51:20.074Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "wjz2OuICuYH8sENpSYMll",
+    "url": "https://explorer.lyra.finance/address/0xeB8d770ec18DB98Db922E9D83260A585b9F0DeAD",
+    "description": "Matching",
+    "added_at": "2024-01-11T08:51:36.920Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "2ij1ceIiGKxXw3uGqa7I6T",
+    "url": "https://explorer.lyra.finance/address/0xB8D20c2B7a1Ad2EE33Bc50eF10876eD3035b5e7b",
+    "description": "TradeModule",
+    "added_at": "2024-01-11T08:51:51.232Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "73nB71eGC9Zh7WjRaPvIXf",
+    "url": "https://explorer.lyra.finance/address/0x01259207A40925b794C8ac320456F7F6c8FE2636",
+    "description": "TransferModule",
+    "added_at": "2024-01-11T08:52:04.878Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "44RmXgrS2nyPUbGuerCWBB",
+    "url": "https://explorer.lyra.finance/address/0x9d0E8f5b25384C7310CB8C6aE32C8fbeb645d083",
+    "description": "WithdrawalModule",
+    "added_at": "2024-01-11T08:52:17.956Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "StmidN3FH28k2aBQZ42B8",
+    "url": "https://explorer.lyra.finance/address/0xC51E95b72e116020B138cd5D97Ed4A72DE8Dc48B",
+    "description": "DutchAuction",
+    "added_at": "2024-01-11T08:52:31.339Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "7A6c8upnFqxfBl4LO0RH4s",
+    "url": "https://explorer.lyra.finance/address/0x57B03E14d409ADC7fAb6CFc44b5886CAD2D5f02b",
+    "description": "CashAsset",
+    "added_at": "2024-01-11T08:52:43.822Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "6Vw2NgDlLM2n70ujvWmHYd",
+    "url": "https://explorer.lyra.finance/address/0x4e798659b9846F1da7B6D6B5d09d581270aB6FEC",
+    "description": "InterestRateModel",
+    "added_at": "2024-01-11T08:52:56.400Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "3s6TP7aCuTFnCcrqL0xQwa",
+    "url": "https://explorer.lyra.finance/address/0x8dC92fB0e1C1F1Def6e424E50aaA66dbB124eb54",
+    "description": "SecurityModule",
+    "added_at": "2024-01-11T08:53:09.104Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "adxWNafBQbnyAWcPam50w",
+    "url": "https://explorer.lyra.finance/address/0x28c9ddF9A3B29c2E6a561c1BC520954e5A33de5D",
+    "description": "StandardManager",
+    "added_at": "2024-01-11T08:53:22.502Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "79wPrKE3yHcXBym5I6Kbmp",
+    "url": "https://explorer.lyra.finance/address/0xAA8f9D05599F1a5d5929c40342c06a5Da063a4dE",
+    "description": "StandardManagerViewer",
+    "added_at": "2024-01-11T08:53:35.398Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "5UIo2BvV3wcSdwFQeOJpCo",
+    "url": "https://explorer.lyra.finance/address/0x9C61888497D716f5bBd93D5e13d443cC375f1424",
+    "description": "LyraSpotFeed",
+    "added_at": "2024-01-11T08:53:50.254Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "5o02DGu56nzpFWyFTka8UG",
+    "url": "https://explorer.lyra.finance/address/0xE7603DF191D699d8BD9891b821347dbAb889E5a5",
+    "description": "SubAccounts",
+    "added_at": "2024-01-11T08:54:03.291Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "4xfb9vzhEH8Wr29subCcdC",
+    "url": "https://explorer.lyra.finance/address/0xE201fCEfD4852f96810C069f66560dc25B2C7A55",
+    "description": "BaseAsset",
+    "added_at": "2024-01-11T08:54:16.901Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "7H3eSUdGUimzENz1VnP73N",
+    "url": "https://explorer.lyra.finance/address/0x791A570F5785FBdb02EA5C7a794c43111ae2f948",
+    "description": "ForwardFeed",
+    "added_at": "2024-01-11T08:54:29.857Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "4XIQco5NfCB1sOvhT4k9Da",
+    "url": "https://explorer.lyra.finance/address/0xd464170afe0eE2a4865B2ca6dBcc6dfB8f4Bf125",
+    "description": "LyraSpotDiffFeed",
+    "added_at": "2024-01-11T08:54:43.156Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "2AFkLviRAcZ4KxRpfurMKE",
+    "url": "https://explorer.lyra.finance/address/0xbfe7Cd69d3983299D3d18D1Ae5C411e1FF61A993",
+    "description": "LyraSpotDiffFeed",
+    "added_at": "2024-01-11T08:54:55.915Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "lHeiBHzK051vNjNzg0F1Y",
+    "url": "https://explorer.lyra.finance/address/0x4BB4C3CDc7562f08e9910A0C7D8bB7e108861eB4",
+    "description": "OptionAsset",
+    "added_at": "2024-01-11T08:55:09.586Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "3AhPAH4Jufpq04QcwyHFFs",
+    "url": "https://explorer.lyra.finance/address/0xAf65752C4643E25C02F693f9D4FE19cF23a095E3",
+    "description": "PerpAsset",
+    "added_at": "2024-01-11T08:55:22.578Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "2ZcNiimklfFfBTxf3VUh0v",
+    "url": "https://explorer.lyra.finance/address/0x33E18F4f508d7aD3e958aA2DCf4b3eCAec38D7c6",
+    "description": "LyraSpotDiffFeed",
+    "added_at": "2024-01-11T08:55:36.909Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "38Bn2FZ6eHeL1slTiIa08D",
+    "url": "https://explorer.lyra.finance/address/0xe7cD9370CdE6C9b5eAbCe8f86d01822d3de205A0",
+    "description": "PMRM",
+    "added_at": "2024-01-11T08:55:50.912Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "7AMtZhfOKivTmB8RQwpzie",
+    "url": "https://explorer.lyra.finance/address/0x81ed5Dc90F708Dd908DccFfd5128B5C3405f74c5",
+    "description": "PMRMLib",
+    "added_at": "2024-01-11T08:56:03.952Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "0ZlFLK2vuJ6XAdr4hoNqA",
+    "url": "https://explorer.lyra.finance/address/0xcAe44C93f7B3b519Fc28f9d4F7Ae22dE770a907b",
+    "description": "BasePortfolioViewer",
+    "added_at": "2024-01-11T08:56:17.863Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "5rJDSe8Okysqf1Lv60QMNj",
+    "url": "https://explorer.lyra.finance/address/0x30A6E6A3851c18aa67429ACC8a1DfAFE20A29FEb",
+    "description": "LyraRateFeedStatic",
+    "added_at": "2024-01-11T08:56:30.985Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "1GtWts9mp446fDjoYgA5tc",
+    "url": "https://explorer.lyra.finance/address/0x727aD65db6aE99DB5Dbee8F202846DD6009bf6D5",
+    "description": "LyraSpotFeed",
+    "added_at": "2024-01-11T08:56:44.302Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "3GS72VvbUUUgpFhAdbQIqc",
+    "url": "https://explorer.lyra.finance/address/0xb27cb6b08e6c298C8634D73D5F6649665e90d160",
+    "description": "LyraVolFeed",
+    "added_at": "2024-01-11T08:57:00.164Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "4r9jxxu8BvFcjOICTBK56J",
+    "url": "https://explorer.lyra.finance/address/0x7da2D398dddDfC946Efd2C758c4688D21887790d",
+    "description": "BaseAsset",
+    "added_at": "2024-01-11T08:57:15.212Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "4nhA5PjfnUKoblGoJ1qUM9",
+    "url": "https://explorer.lyra.finance/address/0x958c54bFACc0E2dee586564B31Bf3F171f256279",
+    "description": "ForwardFeed",
+    "added_at": "2024-01-11T08:57:28.509Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "44oVptEUcA2CB32lgfZizv",
+    "url": "https://explorer.lyra.finance/address/0x4d6e33bf88Ab44212B10bAc4DA448E41a191cb4C",
+    "description": "LyraSpotDiffFeed",
+    "added_at": "2024-01-11T08:57:41.660Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "soOMeMeQnmPOYZw9edWYL",
+    "url": "https://explorer.lyra.finance/address/0x35d4D9bc79B0a543934b1769304B90d752691caD",
+    "description": "LyraSpotDiffFeed",
+    "added_at": "2024-01-11T08:57:54.331Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "2CL5FDclGnUeAOlvLSTkiq",
+    "url": "https://explorer.lyra.finance/address/0xd0711b9eBE84b778483709CDe62BacFDBAE13623",
+    "description": "OptionAsset",
+    "added_at": "2024-01-11T08:58:07.408Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "7k0Nq0wOffasQi4S0t18vW",
+    "url": "https://explorer.lyra.finance/address/0xDBa83C0C654DB1cd914FA2710bA743e925B53086",
+    "description": "PerpAsset",
+    "added_at": "2024-01-11T08:58:19.473Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "2AqmpsaDegygVCGDHQKbR1",
+    "url": "https://explorer.lyra.finance/address/0x34BC7Fe1965B4E9f4071B69f2E60b8dC88f34475",
+    "description": "LyraSpotDiffFeed",
+    "added_at": "2024-01-11T08:58:32.273Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "48eSnqnMfILWJVkOnVLT1B",
+    "url": "https://explorer.lyra.finance/address/0x45DA02B9cCF384d7DbDD7b2b13e705BADB43Db0D",
+    "description": "PMRM",
+    "added_at": "2024-01-11T08:58:46.885Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "1S5C14NLjZqwB4kdsXnwXD",
+    "url": "https://explorer.lyra.finance/address/0xFa7f1a242b819A8EC97FD92674C3f0868395B0d3",
+    "description": "PMRMLib",
+    "added_at": "2024-01-11T08:58:59.952Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "xvzStiLaCcNbBnEWOiw07",
+    "url": "https://explorer.lyra.finance/address/0xa364498b361d563921C9A144264205CdaAF1B5E0",
+    "description": "BasePortfolioViewer",
+    "added_at": "2024-01-11T08:59:12.312Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "1f3MSY4TFMLXqMHLCHAf94",
+    "url": "https://explorer.lyra.finance/address/0x6FEf1bb8Ade9A836663d4c15AFd5985Fb545004f",
+    "description": "LyraRateFeedStatic",
+    "added_at": "2024-01-11T08:59:25.519Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "5JM7JnIHE1u8AC7q6HvsjD",
+    "url": "https://explorer.lyra.finance/address/0x5Eb59391e7870807aD2C8792E8c5e75838E0fdb0",
+    "description": "LyraSpotFeed",
+    "added_at": "2024-01-11T08:59:39.025Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "derive",
+    "asset_id": "5lddbKEYyBJxwRip4aSHDm",
+    "url": "https://explorer.lyra.finance/address/0x388341d9E5A7D7d5accD738B2a31b0622E0c1b87",
+    "description": "LyraVolFeed",
+    "added_at": "2024-01-11T08:59:50.859Z",
+    "revision": 1
+  }
+]

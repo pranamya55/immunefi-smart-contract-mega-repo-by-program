@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0x0c2a20338910ac902e109a939e58fd17b0402905",
+  "host": "polygonscan.com",
+  "address": "0x0c2a20338910ac902e109a939e58fd17b0402905",
+  "chainid": 137,
+  "project_slug": "connext",
+  "asset_id": "5ymSjQarMGZhJFbfErS2gV",
+  "contract_name": "LPToken",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "Unlicense",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

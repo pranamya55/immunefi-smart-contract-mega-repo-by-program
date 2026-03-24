@@ -1,0 +1,19 @@
+{
+  "url": "https://etherscan.io/address/0x3357d2db7763d6cd3a99f0763ebf87e0096d95f9",
+  "host": "etherscan.io",
+  "address": "0x3357d2db7763d6cd3a99f0763ebf87e0096d95f9",
+  "chainid": 1,
+  "contract_name": "InitializableImmutableAdminUpgradeabilityProxy",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "1",
+  "runs": "100000",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "GNU AGPLv3",
+  "proxy": "1",
+  "implementation": "0x86c71796ccdb31c3997f8ec5c2e3db3e9e40b985",
+  "swarm_source": "",
+  "files_written": 6,
+  "mode": "recover-json-sources"
+}

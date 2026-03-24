@@ -1,0 +1,62 @@
+[package]
+name    = "controller"
+version = "0.0.0"
+authors = ["Mihai Eremia <mihai@xoxno.com>"]
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+doctest = false
+
+[dependencies.multiversx-sc-modules]
+version = "0.59.0"
+
+[dependencies.multiversx-sc]
+version = "0.59.0"
+features = ["barnard"]
+
+[dependencies.multiversx-wegld-swap-sc]
+version = "0.59.0"
+
+[dependencies.liquidity_layer]
+path = "../liquidity_layer"
+
+[dependencies.common-structs]
+path = "../common/structs"
+
+[dependencies.common-rates]
+path = "../common/rates"
+
+[dependencies.common-math]
+path = "../common/math"
+
+[dependencies.common-events]
+path = "../common/events"
+
+[dependencies.common-constants]
+path = "../common/constants"
+
+[dependencies.common-errors]
+path = "../common/errors"
+
+[dependencies.common-proxies]
+path = "../common/proxies"
+
+[dependencies.price_aggregator]
+path = "../price_aggregator"
+
+[dependencies.flash-mock]
+path = "../flash_mock"
+
+[dependencies.swap-mock]
+path = "../swap_mock"
+
+[dev-dependencies]
+multiversx-sc-scenario = "0.59.0"
+rs-liquid-xoxno        = { git = "https://github.com/XOXNO/rs-liquid-xoxno" }
+accumulator         = { git = "https://github.com/XOXNO/rs-accumulator" }
+rs-liquid-staking-sc   = { git = "https://github.com/XOXNO/rs-liquid-staking-sc", package = "liquid-staking" }
+pair                   = { git = "https://github.com/mihaieremia/mx-exchange-sc", package = "pair" }
+rand                   = "0.9.1"
+rand_chacha            = "0.9.0"

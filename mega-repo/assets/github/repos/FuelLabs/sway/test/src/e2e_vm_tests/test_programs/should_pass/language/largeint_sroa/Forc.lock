@@ -1,0 +1,8 @@
+[[package]]
+name = "largeint_sroa"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-5C15EEA63C6F47D5"

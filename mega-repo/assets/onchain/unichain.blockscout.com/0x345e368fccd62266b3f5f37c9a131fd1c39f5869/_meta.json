@@ -1,0 +1,25 @@
+{
+  "url": "https://unichain.blockscout.com/address/0x345E368fcCd62266B3f5F37C9a131FD1c39f5869",
+  "host": "unichain.blockscout.com",
+  "address": "0x345E368fcCd62266B3f5F37C9a131FD1c39f5869",
+  "chainid": null,
+  "project_slug": "sparklend",
+  "asset_id": "3cZVPWnB1MxQV9VOHPfPtx",
+  "contract_name": "ALMProxy",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": "000000000000000000000000b037c43b433964a2017cd689f535beb6b0531473",
+  "evm_version": "cancun",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:missing-chainid",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

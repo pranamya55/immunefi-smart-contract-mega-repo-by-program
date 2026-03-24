@@ -1,0 +1,73 @@
+[package]
+name = "light-system-program-pinocchio"
+version = "1.2.0"
+description = "ZK Compression on Solana"
+repository = "https://github.com/Lightprotocol/light-protocol"
+license = "Apache-2.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "light_system_program_pinocchio"
+[features]
+no-entrypoint = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+mem-profiling = []
+# The reinit feature enables CPI context account migration from V1 to current version.
+# Deployment process:
+# 1. Deploy program WITH reinit feature enabled
+# 2. Execute all necessary CPI context account reinitializations
+# 3. Recompile program WITHOUT reinit feature
+# 4. Redeploy program to remove migration code
+reinit = []
+default = ["reinit"]
+test-sbf = []
+readonly = []
+profile-program = ["light-program-profiler/profile-program"]
+profile-heap = ["light-program-profiler/profile-heap", "dep:light-heap"]
+custom-heap = []
+
+[dependencies]
+light-concurrent-merkle-tree = { workspace = true, features = ["pinocchio"] }
+light-indexed-merkle-tree = { workspace = true, features = ["pinocchio"] }
+bytemuck = { workspace = true }
+thiserror = { workspace = true }
+aligned-sized = { workspace = true }
+borsh = { workspace = true }
+light-hasher = { workspace = true, features = ["pinocchio"] }
+light-macros = { workspace = true, features = ["pinocchio"] }
+light-merkle-tree-metadata = { workspace = true, features = ["pinocchio"] }
+
+light-compressed-account = { workspace = true, features = ["pinocchio"] }
+light-verifier = { workspace = true, features = ["pinocchio"] }
+solana-security-txt = "1.1.0"
+light-batched-merkle-tree = { workspace = true, features = ["pinocchio"] }
+light-zero-copy = { workspace = true, features = ["pinocchio"] }
+zerocopy = { workspace = true }
+light-account-checks = { workspace = true, features = ["pinocchio"] }
+pinocchio = { workspace = true }
+pinocchio-system = { version = "0.3.0" }
+solana-pubkey = { workspace = true, features = ["curve25519", "sha2"] }
+pinocchio-pubkey = { workspace = true }
+solana-msg = { workspace = true }
+light-program-profiler = { workspace = true }
+light-heap = { workspace = true, optional = true }
+[dev-dependencies]
+rand = { workspace = true }
+light-compressed-account = { workspace = true, features = [
+    "pinocchio",
+    "new-unique",
+] }
+light-account-checks = { workspace = true, features = [
+    "pinocchio",
+    "test-only",
+] }
+
+[lints.rust.unexpected_cfgs]
+level = "allow"
+check-cfg = [
+    'cfg(target_os, values("solana"))',
+    'cfg(feature, values("frozen-abi", "no-entrypoint"))',
+]

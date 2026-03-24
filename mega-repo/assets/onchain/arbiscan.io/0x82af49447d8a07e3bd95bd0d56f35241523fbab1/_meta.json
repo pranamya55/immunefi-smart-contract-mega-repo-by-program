@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+  "host": "arbiscan.io",
+  "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+  "chainid": 42161,
+  "project_slug": "compoundfinance",
+  "asset_id": "6mpp2asz5X4V4Cp9sE91iN",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "0000000000000000000000008b194beae1d3e0788a1a35173978001acdfba668000000000000000000000000d570ace65c43af47101fc6250fd6fc63d1c22a86000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000000000",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "None",
+  "proxy": "1",
+  "implementation": "0x8b194beae1d3e0788a1a35173978001acdfba668",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

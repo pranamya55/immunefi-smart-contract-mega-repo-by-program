@@ -1,0 +1,25 @@
+{
+  "url": "https://rootstock.blockscout.com/address/0x0123EF8aE46f9FcBF67c706F73d46bcCE3df44f7?tab=index",
+  "host": "rootstock.blockscout.com",
+  "address": "0x0123EF8aE46f9FcBF67c706F73d46bcCE3df44f7",
+  "chainid": null,
+  "project_slug": "rootstocklabs",
+  "asset_id": "db_dc4ef1b8-2802-4bf0-87e5-084c6aafad5c",
+  "contract_name": "QuotesV2",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": null,
+  "evm_version": "default",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:missing-chainid",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

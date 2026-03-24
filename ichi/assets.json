@@ -1,0 +1,42 @@
+[
+  {
+    "project_slug": "ichi",
+    "asset_id": "5HpruAcPsEvrnDh8tLbL1E",
+    "url": "https://etherscan.io/address/0xd0092632b9ac5a7856664eec1abb6e3403a6a36a",
+    "description": "OneTokenFactory",
+    "added_at": "2022-02-18T11:55:44.014Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "ichi",
+    "asset_id": "Lk2Gzhajg0HcQRqY2i4Vg",
+    "url": "https://etherscan.io/address/0x14356bf935d6a62f3b87ab89f729217599bc108d",
+    "description": "OneTokenV1",
+    "added_at": "2022-02-18T11:55:46.709Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "ichi",
+    "asset_id": "5BW8OE3kra1qBqo37ADe3v",
+    "url": "https://etherscan.io/address/0x81c9932bd9a87e454710ef83551ac32dd808630e",
+    "description": "Basic Null Controller",
+    "added_at": "2022-02-18T11:55:49.993Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "ichi",
+    "asset_id": "7iqVH0J9hdktWFk8G3h1ye",
+    "url": "https://etherscan.io/address/0x58254B405E85359Fc7Eb3b8856bA82A4dD7C82E2",
+    "description": "Incremental Mint Master",
+    "added_at": "2022-02-18T11:55:51.845Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "ichi",
+    "asset_id": "6sDBXwLpwggsNGOCi2ynyG",
+    "url": "https://github.com/ichifarm/ichi-oneToken",
+    "description": "",
+    "added_at": "2022-02-18T11:55:56.824Z",
+    "revision": 1
+  }
+]

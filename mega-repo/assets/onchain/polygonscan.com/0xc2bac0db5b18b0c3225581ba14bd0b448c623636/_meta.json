@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0xC2bAC0DB5B18B0c3225581Ba14BD0B448c623636",
+  "host": "polygonscan.com",
+  "address": "0xC2bAC0DB5B18B0c3225581Ba14BD0B448c623636",
+  "chainid": 137,
+  "project_slug": "debridge",
+  "asset_id": "yCUZEm6KYztVOJb4DI3XV",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "None",
+  "proxy": "1",
+  "implementation": "0x37a52ddb753c924f8c914de65ef00b5210caa83c",
+  "swarm_source": "ipfs://93f028255035b61df476b13b9dba3c4f06f60e51b9b4caee31680b389aef327f",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

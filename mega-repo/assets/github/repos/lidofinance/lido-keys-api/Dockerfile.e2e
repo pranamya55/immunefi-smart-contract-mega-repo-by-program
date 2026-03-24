@@ -1,0 +1,13 @@
+FROM  node:20.20-alpine3.23 AS building
+
+WORKDIR /app
+
+COPY package.json yarn.lock .env ./
+COPY jest* ./
+COPY ./tsconfig*.json ./
+
+RUN yarn install --frozen-lockfile --non-interactive && yarn cache clean
+COPY ./src ./src
+RUN yarn typechain
+
+CMD ["yarn", "test:e2e"]

@@ -1,0 +1,99 @@
+name: Unit Tests
+
+on:
+  # Should only be used by other workflows
+  workflow_call:
+    secrets:
+      CODECOV_TOKEN:
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  unit_tests:
+    strategy:
+      matrix:
+        go-version: [1.26.x]
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Install Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ matrix.go-version }}
+
+      - name: Make all
+        run: make all
+
+      - name: Make Test
+        id: unit-test
+        run: make test
+
+  test_coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Install Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: 1.26.x
+
+      - name: Make all
+        run: make all
+
+      - name: Make Coverage
+        run: make test-coverage
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@5a1091511ad55cbe89839c7260b706298ca349f7 # v5
+        if: ${{ github.repository == 'vechain/thor' }}
+        with:
+          fail_ci_if_error: true
+          files: ./coverage.out
+          token: ${{ secrets.CODECOV_TOKEN }}
+
+  solo-test:
+    strategy:
+        matrix:
+            args:
+              - 'solo'
+              - 'solo --on-demand'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Install Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: 1.26.x
+
+      - name: Make all
+        run: make thor
+
+      - name: Start Solo
+        run: bin/thor ${{matrix.args}} > thor-solo.log 2>&1 &
+
+      - name: Wait for block 1
+        run: |
+          for i in {1..30}; do
+            status=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:8669/blocks/1 || true)
+            if [ "$status" -eq 200 ]; then
+              echo "✅ Healthcheck passed"
+              exit 0
+            fi
+            echo "Healthcheck failed (status: $status). Retrying in 1s..."
+            sleep 1
+          done
+          echo "❌ Healthcheck failed after 30 attempts"
+          exit 1
+
+      - name: Print Logs
+        if: failure()
+        run: cat thor-solo.log

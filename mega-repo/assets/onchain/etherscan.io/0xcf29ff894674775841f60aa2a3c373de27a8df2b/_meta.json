@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xcF29Ff894674775841F60Aa2a3c373DE27A8df2b",
+  "host": "etherscan.io",
+  "address": "0xcF29Ff894674775841F60Aa2a3c373DE27A8df2b",
+  "chainid": 1,
+  "project_slug": "thresholdnetwork",
+  "asset_id": "2nvvPnesdcy5W9eaD22Pwf",
+  "contract_name": "MaintainerProxy",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "1000",
+  "constructor_arguments": "0000000000000000000000005e4861a80b55f035d899f66772117f00fa0e8e7b0000000000000000000000008adf3f35dbe4026112bcfc078872bcb967732ea8",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 54,
+  "mode": "json-sources"
+}

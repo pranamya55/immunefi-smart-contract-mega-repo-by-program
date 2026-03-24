@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xD691b1c47a578f51aDa825A8565cAfceB401EdaC",
+  "host": "etherscan.io",
+  "address": "0xD691b1c47a578f51aDa825A8565cAfceB401EdaC",
+  "chainid": 1,
+  "project_slug": "aspida",
+  "asset_id": "4flLE7mrcIgHARgsR8Oqy9",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0xd3afe58031998eaf2b0ccee76dbd8ca50b19dcca",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

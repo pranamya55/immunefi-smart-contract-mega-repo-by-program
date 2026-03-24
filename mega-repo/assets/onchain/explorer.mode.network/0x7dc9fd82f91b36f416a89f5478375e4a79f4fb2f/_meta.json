@@ -1,0 +1,25 @@
+{
+  "url": "https://explorer.mode.network/address/0x7dc9fd82f91B36F416A89f5478375e4a79f4Fb2F?tab=contract",
+  "host": "explorer.mode.network",
+  "address": "0x7dc9fd82f91B36F416A89f5478375e4a79f4Fb2F",
+  "chainid": 34443,
+  "project_slug": "velodromefinance",
+  "asset_id": "4hFEhuCnQ2Zcc1JqL22J3T",
+  "contract_name": "VotingRewardsFactory",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": "00000000000000000000000097cdbce21b6fd0585d29e539b1b99dad328a1123000000000000000000000000f278761576f45472bdd721eaca19317ce159c011",
+  "evm_version": "paris",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:unexpected-response",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

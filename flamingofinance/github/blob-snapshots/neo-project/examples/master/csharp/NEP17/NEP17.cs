@@ -1,0 +1,1 @@
+../../../../../../../../../mega-repo/assets/github/blob-snapshots/neo-project/examples/master/csharp/NEP17/NEP17.cs

@@ -1,0 +1,24 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0x33a3aB524A43E69f30bFd9Ae97d1Ec679FF00B64",
+  "host": "optimistic.etherscan.io",
+  "address": "0x33a3aB524A43E69f30bFd9Ae97d1Ec679FF00B64",
+  "chainid": 10,
+  "project_slug": "sparklend",
+  "asset_id": "5StDvcW5E59KM3T1FyrFEm",
+  "contract_name": "DSRAuthOracle",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "100000",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

@@ -1,0 +1,290 @@
+[
+  {
+    "project_slug": "fbtc",
+    "asset_id": "2tymwAGHt0tt4BBGvDPqJV",
+    "url": "https://explorer.mantle.xyz/address/0xbee335BB44e75C4794a0b9B54E8027b111395943",
+    "description": "FireBridge",
+    "added_at": "2024-12-20T14:29:38.122Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "47CHkxhQ7rwJeptcGXDauK",
+    "url": "https://explorer.mantle.xyz/address/0x80b534D4bB3D809FbDA809DCB26D3f220634AED7",
+    "description": "Minter",
+    "added_at": "2024-12-20T14:29:51.046Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "3GG9Y239IK92j27LdPlJhz",
+    "url": "https://explorer.mantle.xyz/address/0xC96dE26018A54D51c097160568752c4E3BD6C364",
+    "description": "FToken",
+    "added_at": "2024-12-20T14:30:02.841Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "2JlzFVSF5dRcFcuSlFmcdA",
+    "url": "https://explorer.mantle.xyz/address/0xd12D39E682715a40dbC860fa07F02bF48841294e",
+    "description": "FeeModel",
+    "added_at": "2024-12-20T14:30:13.630Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "46WuxgXxeFgze2EZ4h3Jep",
+    "url": "https://explorer.mantle.xyz/address/0x09e4c43eD89E5972df026d94FdA3a7680637c59A",
+    "description": "GovernorModule",
+    "added_at": "2024-12-20T14:30:24.986Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "74KhaGuoVFR8kZn8EPknwn",
+    "url": "https://explorer.mantle.xyz/address/0x4697F9b54Bf24776b81f42A5E2Da81FBA3763bA4?tab=contract",
+    "description": "Factory Contract",
+    "added_at": "2024-12-20T14:31:00.412Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "71WEoWX0vMox1dA7Jhz1kQ",
+    "url": "https://etherscan.io/address/0xbee335BB44e75C4794a0b9B54E8027b111395943",
+    "description": "FireBridge",
+    "added_at": "2024-12-20T14:31:11.706Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "4csGUqWhfr6LXj1qo8mYFK",
+    "url": "https://etherscan.io/address/0x80b534D4bB3D809FbDA809DCB26D3f220634AED7",
+    "description": "Minter",
+    "added_at": "2024-12-20T14:31:23.855Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "5kMgweah1dJ4Hi1IIeKjXS",
+    "url": "https://etherscan.io/address/0xC96dE26018A54D51c097160568752c4E3BD6C364",
+    "description": "FToken",
+    "added_at": "2024-12-20T14:31:35.126Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "4eddAgkXjrmkEwIhSpeUMk",
+    "url": "https://etherscan.io/address/0xd12D39E682715a40dbC860fa07F02bF48841294e",
+    "description": "FeeModel",
+    "added_at": "2024-12-20T14:31:49.380Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "2MiClQbKc0fIZRISGbS6fG",
+    "url": "https://etherscan.io/address/0x09e4c43eD89E5972df026d94FdA3a7680637c59A",
+    "description": "GovernorModule",
+    "added_at": "2024-12-20T14:32:09.175Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "6RyTtHKdWwGqCRpzsI7YiT",
+    "url": "https://etherscan.io/address/0x722b9348712418469DD6bb6c92C2560072537584",
+    "description": "Factory Contract",
+    "added_at": "2024-12-20T14:32:22.697Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "2OfVCJlW0aIyTlXGrEnbVp",
+    "url": "https://bscscan.com/address/0xbee335BB44e75C4794a0b9B54E8027b111395943",
+    "description": "FireBridge",
+    "added_at": "2024-12-20T14:32:34.519Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "1Pc2rz28wcPFISRiBCyBgk",
+    "url": "https://bscscan.com/address/0x80b534D4bB3D809FbDA809DCB26D3f220634AED7",
+    "description": "Minter",
+    "added_at": "2024-12-20T14:33:17.471Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "XitsR7wtEt3i000Pgvre0",
+    "url": "https://bscscan.com/address/0xC96dE26018A54D51c097160568752c4E3BD6C364",
+    "description": "FToken",
+    "added_at": "2024-12-20T14:33:28.564Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "7k3uHc3pVP4y2TybMVV9Re",
+    "url": "https://bscscan.com/address/0x84cFc251F9cC8B2cf9cc1D6EaB3D2bEAA2C128F5",
+    "description": "FeeModel",
+    "added_at": "2024-12-20T14:33:41.217Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "6evPVGYCOGEXbjB3xNu7mi",
+    "url": "https://bscscan.com/address/0x09e4c43eD89E5972df026d94FdA3a7680637c59A",
+    "description": "GovernorModule",
+    "added_at": "2024-12-20T14:33:55.078Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "6DqIU0MRlDiFf1o2GkVwhE",
+    "url": "https://bscscan.com/address/0x0Ed3bb37CD17d17bD18dB0D36558D57520D76292#code",
+    "description": "Factory Contract",
+    "added_at": "2024-12-20T14:34:08.629Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "1OMODP0lYbmDvyk0CTLalI",
+    "url": "https://arbiscan.io/address/0xbee335BB44e75C4794a0b9B54E8027b111395943#code",
+    "description": "FireBridge",
+    "added_at": "2024-12-20T14:34:22.563Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "2M2wtNnbC1BJDTYhssmAi2",
+    "url": "https://arbiscan.io/address/0x80b534D4bB3D809FbDA809DCB26D3f220634AED7",
+    "description": "Minter",
+    "added_at": "2024-12-20T14:34:54.026Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "1aj773bhN4vMhP7f5qVmRh",
+    "url": "https://arbiscan.io/address/0xC96dE26018A54D51c097160568752c4E3BD6C364",
+    "description": "FToken",
+    "added_at": "2024-12-20T14:35:05.864Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "4jKwOZRtbPqnyLvEAadDPI",
+    "url": "https://arbiscan.io/address/0x84cFc251F9cC8B2cf9cc1D6EaB3D2bEAA2C128F5",
+    "description": "FeeModel",
+    "added_at": "2024-12-20T14:35:17.432Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "6Kalg2vf09loBGc50AThVE",
+    "url": "https://arbiscan.io/address/0x0d771823c72CcCa4D74695934d5a346938914547",
+    "description": "GovernorModule",
+    "added_at": "2024-12-20T14:35:34.416Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "177YFdMvVjaz3P6nsvFOeI",
+    "url": "https://arbiscan.io/address/0x0Ed3bb37CD17d17bD18dB0D36558D57520D76292#code",
+    "description": "Factory Contract",
+    "added_at": "2024-12-20T14:36:55.709Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "5115IISXjHyamsnozOq7LY",
+    "url": "https://explorer.gobob.xyz/address/0xbee335BB44e75C4794a0b9B54E8027b111395943",
+    "description": "FireBridge",
+    "added_at": "2024-12-20T14:37:08.863Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "1fR5KFICFEXjf8t93u9uRL",
+    "url": "https://explorer.gobob.xyz/address/0x80b534D4bB3D809FbDA809DCB26D3f220634AED7",
+    "description": "Minter",
+    "added_at": "2024-12-20T14:37:20.633Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "6FBxnet3WgLj25DhaAUjQO",
+    "url": "https://explorer.gobob.xyz/address/0xC96dE26018A54D51c097160568752c4E3BD6C364",
+    "description": "FToken",
+    "added_at": "2024-12-20T14:37:32.774Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "6F6IOKW6yexT5OG4mUV8O1",
+    "url": "https://explorer.gobob.xyz/address/0x84cFc251F9cC8B2cf9cc1D6EaB3D2bEAA2C128F5",
+    "description": "FeeModel",
+    "added_at": "2024-12-20T14:37:45.646Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "bo7jcx9BSlBAvOZuvOETO",
+    "url": "https://explorer.gobob.xyz/address/0x0d771823c72CcCa4D74695934d5a346938914547",
+    "description": "GovernorModule",
+    "added_at": "2024-12-20T14:37:57.488Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "7Gl2YKMMTkVqDQy7wEnkvi",
+    "url": "https://explorer.gobob.xyz/address/0xdDf20C1A73A2bCa6ad4D877EFe7c9029Ff82a37B",
+    "description": "Factory Contract",
+    "added_at": "2024-12-20T14:38:11.012Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "4hywWwP0T6u0Eqzga2HTsd",
+    "url": "https://basescan.org/address/0x80b534d4bb3d809fbda809dcb26d3f220634aed7",
+    "description": "Minter",
+    "added_at": "2024-12-20T14:38:29.677Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "10bdhJgEMyiN1Va1PUh7yG",
+    "url": "https://basescan.org/address/0xc96de26018a54d51c097160568752c4e3bd6c364",
+    "description": "FToken",
+    "added_at": "2024-12-20T14:38:44.371Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "2xSOjB0SaEa7qtsF451Rgb",
+    "url": "https://basescan.org/address/0x84cFc251F9cC8B2cf9cc1D6EaB3D2bEAA2C128F5",
+    "description": "FeeModel",
+    "added_at": "2024-12-20T14:38:57.171Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "4UqJ88aKfxbW4c5jOSa3cV",
+    "url": "https://basescan.org/address/0x0d771823c72ccca4d74695934d5a346938914547",
+    "description": "GovernorModule",
+    "added_at": "2024-12-20T14:39:12.451Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "2cUs8mekVJuTDqL8AKbdtp",
+    "url": "https://basescan.org/address/0x26D4a08Ed364Cf07142127aeC202Df910aB33455",
+    "description": "Factory Contract",
+    "added_at": "2024-12-20T14:39:24.412Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "fbtc",
+    "asset_id": "6cCXwCGfy8s8qcw3GFlya5",
+    "url": "https://basescan.org/address/0xbee335bb44e75c4794a0b9b54e8027b111395943",
+    "description": "FireBridge",
+    "added_at": "2024-12-20T14:39:36.066Z",
+    "revision": 1
+  }
+]

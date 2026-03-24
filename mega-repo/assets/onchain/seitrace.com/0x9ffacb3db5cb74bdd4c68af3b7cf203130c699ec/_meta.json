@@ -1,0 +1,19 @@
+{
+  "url": "https://seitrace.com/address/0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec",
+  "host": "seitrace.com",
+  "address": "0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec",
+  "chainid": 1329,
+  "contract_name": "FlashParallelToken",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "10000",
+  "constructor_arguments": "",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 36,
+  "mode": "recover-json-sources"
+}

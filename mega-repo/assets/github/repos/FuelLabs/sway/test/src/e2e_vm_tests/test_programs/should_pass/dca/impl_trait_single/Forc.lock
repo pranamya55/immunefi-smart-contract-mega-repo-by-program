@@ -1,0 +1,8 @@
+[[package]]
+name = "impl_trait_single"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-A818362830D98604"

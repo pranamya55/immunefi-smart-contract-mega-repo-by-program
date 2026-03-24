@@ -1,0 +1,3195 @@
+{
+  "contractName": "IVotingMachine",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getState",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getVotingRound",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_proposal",
+          "type": "address"
+        }
+      ],
+      "name": "preVote",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bool",
+          "name": "_inFavorAgainst",
+          "type": "bool"
+        }
+      ],
+      "name": "vote",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "vetoCondition",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "veto",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "readyToPreVoteStep",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "preVoteStep",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "readyToVoteStep",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "voteStep",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "vetoStep",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "acceptedStep",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getProposalCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getProposalByIndex",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "proposalAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "proposalVotingRound",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "proposalVotes",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "proposalExpirationTimeStamp",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getVotingData",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "winnerProposal",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "inFavorVotes",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "againstVotes",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "votingExpirationTime",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getUserVote",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "voteAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "voteRound",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_proposal",
+          "type": "address"
+        }
+      ],
+      "name": "canUnregister",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_proposal",
+          "type": "address"
+        }
+      ],
+      "name": "unregister",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"acceptedStep\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_proposal\",\"type\":\"address\"}],\"name\":\"canUnregister\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_index\",\"type\":\"uint256\"}],\"name\":\"getProposalByIndex\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"proposalAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"proposalVotingRound\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"proposalVotes\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"proposalExpirationTimeStamp\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getProposalCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getState\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"name\":\"getUserVote\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"voteAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"voteRound\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getVotingData\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"winnerProposal\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"inFavorVotes\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"againstVotes\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"votingExpirationTime\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getVotingRound\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_proposal\",\"type\":\"address\"}],\"name\":\"preVote\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"preVoteStep\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"readyToPreVoteStep\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"readyToVoteStep\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_proposal\",\"type\":\"address\"}],\"name\":\"unregister\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"veto\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"vetoCondition\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"vetoStep\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bool\",\"name\":\"_inFavorAgainst\",\"type\":\"bool\"}],\"name\":\"vote\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"voteStep\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"canUnregister(address)\":{\"params\":{\"_proposal\":\"Address of the change contract that will be executed if this vote is successful\"}},\"getProposalByIndex(uint256)\":{\"params\":{\"_index\":\"Index of proposal to query.\"}},\"preVote(address)\":{\"params\":{\"_proposal\":\"Address of the change contract that will be executed if this vote is successful\"}},\"unregister(address)\":{\"params\":{\"_proposal\":\"Address of the change contract that will be executed if this vote is successful\"}},\"vote(bool)\":{\"params\":{\"_inFavorAgainst\":\"Type of vote\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"acceptedStep()\":{\"notice\":\"acceptedStep\"},\"canUnregister(address)\":{\"notice\":\"will the call to unregister be successfull?\"},\"getProposalByIndex(uint256)\":{\"notice\":\"Get pre-voting proposal address and information by index\"},\"getProposalCount()\":{\"notice\":\"Get the pre-voting registered proposal count.\"},\"getState()\":{\"notice\":\"get current contract state\"},\"getUserVote(address)\":{\"notice\":\"Get user vote\"},\"getVotingData()\":{\"notice\":\"Get voting data\"},\"getVotingRound()\":{\"notice\":\"return the current voting round\"},\"preVote(address)\":{\"notice\":\"Pre Vote a proposal\"},\"preVoteStep()\":{\"notice\":\"preVoteStep\"},\"unregister(address)\":{\"notice\":\"Unregister a proposal, free the assets it uses.\"},\"veto()\":{\"notice\":\"Veto\"},\"vetoCondition()\":{\"notice\":\"There is a veto Condition\"},\"vetoStep()\":{\"notice\":\"vetoStep\"},\"vote(bool)\":{\"notice\":\"Vote a proposal\"},\"voteStep()\":{\"notice\":\"voteStep\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/jbokser/work2/OMoC-SC-Shared/contracts/IVotingMachine.sol\":\"IVotingMachine\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/jbokser/work2/OMoC-SC-Shared/contracts/IVotingMachine.sol\":{\"keccak256\":\"0x1f9444f335b89d3efa1259f6da0fbe2977db4af4f0c13ed65bc68ae9ada1a0cd\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://b428224953aca56c927f7d97c8c961bcadbc6cc4a90ffd28fec0fd4214732242\",\"dweb:/ipfs/QmVRY7oYUJiJ94NWwFAdbq4jwPaRh3i3DjZmeWPgAZtL9d\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: UNLICENSED\npragma solidity ^0.6.0;\n\ninterface IVotingMachine {\n    /**\n        get current contract state\n        */\n    function getState() external view returns (uint256);\n\n    /**\n        return the current voting round\n        */\n    function getVotingRound() external view returns (uint256);\n\n    /**\n    Pre Vote a proposal\n\n    @param _proposal Address of the change contract that will be executed if this vote is successful\n    */\n    function preVote(address _proposal) external;\n\n    /**\n    Vote a proposal\n\n    @param _inFavorAgainst Type of vote\n    */\n    function vote(bool _inFavorAgainst) external;\n\n    /**\n    There is a veto Condition\n\n    */\n    function vetoCondition() external;\n\n    /**\n    Veto\n    */\n    function veto() external;\n\n    function readyToPreVoteStep() external view returns (bool);\n\n    /**\n    preVoteStep\n    */\n    function preVoteStep() external;\n\n    function readyToVoteStep() external view returns (bool);\n\n    /**\n    voteStep\n    */\n    function voteStep() external;\n\n    /**\n    vetoStep\n    */\n    function vetoStep() external;\n\n    /**\n    acceptedStep\n    */\n    function acceptedStep() external;\n\n    /**\n    Get the pre-voting registered proposal count.\n    */\n    function getProposalCount() external view returns (uint256);\n\n    /**\n    Get pre-voting proposal address and information by index\n\n    @param _index Index of proposal to query.\n    */\n    function getProposalByIndex(uint256 _index)\n        external\n        view\n        returns (\n            address proposalAddress,\n            uint256 proposalVotingRound,\n            uint256 proposalVotes,\n            uint256 proposalExpirationTimeStamp\n        );\n\n    /**\n    Get voting data\n    */\n    function getVotingData()\n        external\n        view\n        returns (\n            address winnerProposal,\n            uint256 inFavorVotes,\n            uint256 againstVotes,\n            uint256 votingExpirationTime\n        );\n\n    /**\n        Get user vote\n    */\n    function getUserVote(address user)\n        external\n        view\n        returns (address voteAddress, uint256 voteRound);\n\n    /**\n    will the call to unregister be successfull?\n\n    @param _proposal Address of the change contract that will be executed if this vote is successful\n    */\n    function canUnregister(address _proposal) external view returns (bool);\n\n    /**\n    Unregister a proposal, free the assets it uses.\n\n    @param _proposal Address of the change contract that will be executed if this vote is successful\n    */\n    function unregister(address _proposal) external;\n}\n",
+  "sourcePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/IVotingMachine.sol",
+  "ast": {
+    "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/IVotingMachine.sol",
+    "exportedSymbols": {
+      "IVotingMachine": [
+        2411
+      ]
+    },
+    "id": 2412,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2296,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:23:15"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 2411,
+        "linearizedBaseContracts": [
+          2411
+        ],
+        "name": "IVotingMachine",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": {
+              "id": 2297,
+              "nodeType": "StructuredDocumentation",
+              "src": "95:49:15",
+              "text": "get current contract state"
+            },
+            "functionSelector": "1865c57d",
+            "id": 2302,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getState",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2298,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "166:2:15"
+            },
+            "returnParameters": {
+              "id": 2301,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2300,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2302,
+                  "src": "192:7:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2299,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "192:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "191:9:15"
+            },
+            "scope": 2411,
+            "src": "149:52:15",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2303,
+              "nodeType": "StructuredDocumentation",
+              "src": "207:54:15",
+              "text": "return the current voting round"
+            },
+            "functionSelector": "8a365e59",
+            "id": 2308,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getVotingRound",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2304,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "289:2:15"
+            },
+            "returnParameters": {
+              "id": 2307,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2306,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2308,
+                  "src": "315:7:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2305,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "315:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "314:9:15"
+            },
+            "scope": 2411,
+            "src": "266:58:15",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2309,
+              "nodeType": "StructuredDocumentation",
+              "src": "330:136:15",
+              "text": "Pre Vote a proposal\n@param _proposal Address of the change contract that will be executed if this vote is successful"
+            },
+            "functionSelector": "4a78f3ce",
+            "id": 2314,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "preVote",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2312,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2311,
+                  "mutability": "mutable",
+                  "name": "_proposal",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2314,
+                  "src": "488:17:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2310,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "488:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "487:19:15"
+            },
+            "returnParameters": {
+              "id": 2313,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "515:0:15"
+            },
+            "scope": 2411,
+            "src": "471:45:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2315,
+              "nodeType": "StructuredDocumentation",
+              "src": "522:71:15",
+              "text": "Vote a proposal\n@param _inFavorAgainst Type of vote"
+            },
+            "functionSelector": "4b9f5c98",
+            "id": 2320,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "vote",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2318,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2317,
+                  "mutability": "mutable",
+                  "name": "_inFavorAgainst",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2320,
+                  "src": "612:20:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 2316,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "612:4:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "611:22:15"
+            },
+            "returnParameters": {
+              "id": 2319,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "642:0:15"
+            },
+            "scope": 2411,
+            "src": "598:45:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2321,
+              "nodeType": "StructuredDocumentation",
+              "src": "649:41:15",
+              "text": "There is a veto Condition"
+            },
+            "functionSelector": "bef3a4df",
+            "id": 2324,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "vetoCondition",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2322,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "717:2:15"
+            },
+            "returnParameters": {
+              "id": 2323,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "728:0:15"
+            },
+            "scope": 2411,
+            "src": "695:34:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2325,
+              "nodeType": "StructuredDocumentation",
+              "src": "735:19:15",
+              "text": "Veto"
+            },
+            "functionSelector": "ef9b78c6",
+            "id": 2328,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "veto",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2326,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "772:2:15"
+            },
+            "returnParameters": {
+              "id": 2327,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "783:0:15"
+            },
+            "scope": 2411,
+            "src": "759:25:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "e1a99419",
+            "id": 2333,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "readyToPreVoteStep",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2329,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "817:2:15"
+            },
+            "returnParameters": {
+              "id": 2332,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2331,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2333,
+                  "src": "843:4:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 2330,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "843:4:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "842:6:15"
+            },
+            "scope": 2411,
+            "src": "790:59:15",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2334,
+              "nodeType": "StructuredDocumentation",
+              "src": "855:26:15",
+              "text": "preVoteStep"
+            },
+            "functionSelector": "f63420ac",
+            "id": 2337,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "preVoteStep",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2335,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "906:2:15"
+            },
+            "returnParameters": {
+              "id": 2336,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "917:0:15"
+            },
+            "scope": 2411,
+            "src": "886:32:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "e362cb7c",
+            "id": 2342,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "readyToVoteStep",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2338,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "948:2:15"
+            },
+            "returnParameters": {
+              "id": 2341,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2340,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2342,
+                  "src": "974:4:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 2339,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "974:4:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "973:6:15"
+            },
+            "scope": 2411,
+            "src": "924:56:15",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2343,
+              "nodeType": "StructuredDocumentation",
+              "src": "986:23:15",
+              "text": "voteStep"
+            },
+            "functionSelector": "1f17a49e",
+            "id": 2346,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "voteStep",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2344,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1031:2:15"
+            },
+            "returnParameters": {
+              "id": 2345,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1042:0:15"
+            },
+            "scope": 2411,
+            "src": "1014:29:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2347,
+              "nodeType": "StructuredDocumentation",
+              "src": "1049:23:15",
+              "text": "vetoStep"
+            },
+            "functionSelector": "ec0e8bda",
+            "id": 2350,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "vetoStep",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2348,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1094:2:15"
+            },
+            "returnParameters": {
+              "id": 2349,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1105:0:15"
+            },
+            "scope": 2411,
+            "src": "1077:29:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2351,
+              "nodeType": "StructuredDocumentation",
+              "src": "1112:27:15",
+              "text": "acceptedStep"
+            },
+            "functionSelector": "2dae20f3",
+            "id": 2354,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "acceptedStep",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2352,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1165:2:15"
+            },
+            "returnParameters": {
+              "id": 2353,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1176:0:15"
+            },
+            "scope": 2411,
+            "src": "1144:33:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2355,
+              "nodeType": "StructuredDocumentation",
+              "src": "1183:60:15",
+              "text": "Get the pre-voting registered proposal count."
+            },
+            "functionSelector": "c08cc02d",
+            "id": 2360,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getProposalCount",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2356,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1273:2:15"
+            },
+            "returnParameters": {
+              "id": 2359,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2358,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2360,
+                  "src": "1299:7:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2357,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1299:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1298:9:15"
+            },
+            "scope": 2411,
+            "src": "1248:60:15",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2361,
+              "nodeType": "StructuredDocumentation",
+              "src": "1314:118:15",
+              "text": "Get pre-voting proposal address and information by index\n@param _index Index of proposal to query."
+            },
+            "functionSelector": "37d1d389",
+            "id": 2374,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getProposalByIndex",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2364,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2363,
+                  "mutability": "mutable",
+                  "name": "_index",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2374,
+                  "src": "1465:14:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2362,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1465:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1464:16:15"
+            },
+            "returnParameters": {
+              "id": 2373,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2366,
+                  "mutability": "mutable",
+                  "name": "proposalAddress",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2374,
+                  "src": "1541:23:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2365,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1541:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2368,
+                  "mutability": "mutable",
+                  "name": "proposalVotingRound",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2374,
+                  "src": "1578:27:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2367,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1578:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2370,
+                  "mutability": "mutable",
+                  "name": "proposalVotes",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2374,
+                  "src": "1619:21:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2369,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1619:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2372,
+                  "mutability": "mutable",
+                  "name": "proposalExpirationTimeStamp",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2374,
+                  "src": "1654:35:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2371,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1654:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1527:172:15"
+            },
+            "scope": 2411,
+            "src": "1437:263:15",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2375,
+              "nodeType": "StructuredDocumentation",
+              "src": "1706:30:15",
+              "text": "Get voting data"
+            },
+            "functionSelector": "b5b831e2",
+            "id": 2386,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getVotingData",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2376,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1763:2:15"
+            },
+            "returnParameters": {
+              "id": 2385,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2378,
+                  "mutability": "mutable",
+                  "name": "winnerProposal",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2386,
+                  "src": "1826:22:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2377,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1826:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2380,
+                  "mutability": "mutable",
+                  "name": "inFavorVotes",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2386,
+                  "src": "1862:20:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2379,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1862:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2382,
+                  "mutability": "mutable",
+                  "name": "againstVotes",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2386,
+                  "src": "1896:20:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2381,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1896:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2384,
+                  "mutability": "mutable",
+                  "name": "votingExpirationTime",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2386,
+                  "src": "1930:28:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2383,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1930:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1812:156:15"
+            },
+            "scope": 2411,
+            "src": "1741:228:15",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2387,
+              "nodeType": "StructuredDocumentation",
+              "src": "1975:32:15",
+              "text": "Get user vote"
+            },
+            "functionSelector": "d4923d4e",
+            "id": 2396,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getUserVote",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2390,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2389,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2396,
+                  "src": "2033:12:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2388,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2033:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2032:14:15"
+            },
+            "returnParameters": {
+              "id": 2395,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2392,
+                  "mutability": "mutable",
+                  "name": "voteAddress",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2396,
+                  "src": "2094:19:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2391,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2094:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2394,
+                  "mutability": "mutable",
+                  "name": "voteRound",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2396,
+                  "src": "2115:17:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2393,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2115:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2093:40:15"
+            },
+            "scope": 2411,
+            "src": "2012:122:15",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2397,
+              "nodeType": "StructuredDocumentation",
+              "src": "2140:160:15",
+              "text": "will the call to unregister be successfull?\n@param _proposal Address of the change contract that will be executed if this vote is successful"
+            },
+            "functionSelector": "10da5e4b",
+            "id": 2404,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "canUnregister",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2400,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2399,
+                  "mutability": "mutable",
+                  "name": "_proposal",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2404,
+                  "src": "2328:17:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2398,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2328:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2327:19:15"
+            },
+            "returnParameters": {
+              "id": 2403,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2402,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2404,
+                  "src": "2370:4:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 2401,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2370:4:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2369:6:15"
+            },
+            "scope": 2411,
+            "src": "2305:71:15",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2405,
+              "nodeType": "StructuredDocumentation",
+              "src": "2382:164:15",
+              "text": "Unregister a proposal, free the assets it uses.\n@param _proposal Address of the change contract that will be executed if this vote is successful"
+            },
+            "functionSelector": "2ec2c246",
+            "id": 2410,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "unregister",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2408,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2407,
+                  "mutability": "mutable",
+                  "name": "_proposal",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2410,
+                  "src": "2571:17:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2406,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2571:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2570:19:15"
+            },
+            "returnParameters": {
+              "id": 2409,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2598:0:15"
+            },
+            "scope": 2411,
+            "src": "2551:48:15",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2412,
+        "src": "64:2537:15"
+      }
+    ],
+    "src": "39:2563:15"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/IVotingMachine.sol",
+      "exportedSymbols": {
+        "IVotingMachine": [
+          2411
+        ]
+      },
+      "license": "UNLICENSED"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.6",
+            ".0"
+          ]
+        },
+        "id": 2296,
+        "name": "PragmaDirective",
+        "src": "39:23:15"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            2411
+          ],
+          "name": "IVotingMachine",
+          "scope": 2412
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "1865c57d",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getState",
+              "overrides": null,
+              "scope": 2411,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "get current contract state"
+                },
+                "id": 2297,
+                "name": "StructuredDocumentation",
+                "src": "95:49:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2298,
+                "name": "ParameterList",
+                "src": "166:2:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2302,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2299,
+                        "name": "ElementaryTypeName",
+                        "src": "192:7:15"
+                      }
+                    ],
+                    "id": 2300,
+                    "name": "VariableDeclaration",
+                    "src": "192:7:15"
+                  }
+                ],
+                "id": 2301,
+                "name": "ParameterList",
+                "src": "191:9:15"
+              }
+            ],
+            "id": 2302,
+            "name": "FunctionDefinition",
+            "src": "149:52:15"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "8a365e59",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getVotingRound",
+              "overrides": null,
+              "scope": 2411,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "return the current voting round"
+                },
+                "id": 2303,
+                "name": "StructuredDocumentation",
+                "src": "207:54:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2304,
+                "name": "ParameterList",
+                "src": "289:2:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2308,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2305,
+                        "name": "ElementaryTypeName",
+                        "src": "315:7:15"
+                      }
+                    ],
+                    "id": 2306,
+                    "name": "VariableDeclaration",
+                    "src": "315:7:15"
+                  }
+                ],
+                "id": 2307,
+                "name": "ParameterList",
+                "src": "314:9:15"
+              }
+            ],
+            "id": 2308,
+            "name": "FunctionDefinition",
+            "src": "266:58:15"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "4a78f3ce",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "preVote",
+              "overrides": null,
+              "scope": 2411,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "Pre Vote a proposal\n@param _proposal Address of the change contract that will be executed if this vote is successful"
+                },
+                "id": 2309,
+                "name": "StructuredDocumentation",
+                "src": "330:136:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_proposal",
+                      "overrides": null,
+                      "scope": 2314,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2310,
+                        "name": "ElementaryTypeName",
+                        "src": "488:7:15"
+                      }
+                    ],
+                    "id": 2311,
+                    "name": "VariableDeclaration",
+                    "src": "488:17:15"
+                  }
+                ],
+                "id": 2312,
+                "name": "ParameterList",
+                "src": "487:19:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2313,
+                "name": "ParameterList",
+                "src": "515:0:15"
+              }
+            ],
+            "id": 2314,
+            "name": "FunctionDefinition",
+            "src": "471:45:15"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "4b9f5c98",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "vote",
+              "overrides": null,
+              "scope": 2411,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "Vote a proposal\n@param _inFavorAgainst Type of vote"
+                },
+                "id": 2315,
+                "name": "StructuredDocumentation",
+                "src": "522:71:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_inFavorAgainst",
+                      "overrides": null,
+                      "scope": 2320,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 2316,
+                        "name": "ElementaryTypeName",
+                        "src": "612:4:15"
+                      }
+                    ],
+                    "id": 2317,
+                    "name": "VariableDeclaration",
+                    "src": "612:20:15"
+                  }
+                ],
+                "id": 2318,
+                "name": "ParameterList",
+                "src": "611:22:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2319,
+                "name": "ParameterList",
+                "src": "642:0:15"
+              }
+            ],
+            "id": 2320,
+            "name": "FunctionDefinition",
+            "src": "598:45:15"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "bef3a4df",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "vetoCondition",
+              "overrides": null,
+              "scope": 2411,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "There is a veto Condition"
+                },
+                "id": 2321,
+                "name": "StructuredDocumentation",
+                "src": "649:41:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2322,
+                "name": "ParameterList",
+                "src": "717:2:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2323,
+                "name": "ParameterList",
+                "src": "728:0:15"
+              }
+            ],
+            "id": 2324,
+            "name": "FunctionDefinition",
+            "src": "695:34:15"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "ef9b78c6",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "veto",
+              "overrides": null,
+              "scope": 2411,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "Veto"
+                },
+                "id": 2325,
+                "name": "StructuredDocumentation",
+                "src": "735:19:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2326,
+                "name": "ParameterList",
+                "src": "772:2:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2327,
+                "name": "ParameterList",
+                "src": "783:0:15"
+              }
+            ],
+            "id": 2328,
+            "name": "FunctionDefinition",
+            "src": "759:25:15"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "e1a99419",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "readyToPreVoteStep",
+              "overrides": null,
+              "scope": 2411,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2329,
+                "name": "ParameterList",
+                "src": "817:2:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2333,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 2330,
+                        "name": "ElementaryTypeName",
+                        "src": "843:4:15"
+                      }
+                    ],
+                    "id": 2331,
+                    "name": "VariableDeclaration",
+                    "src": "843:4:15"
+                  }
+                ],
+                "id": 2332,
+                "name": "ParameterList",
+                "src": "842:6:15"
+              }
+            ],
+            "id": 2333,
+            "name": "FunctionDefinition",
+            "src": "790:59:15"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "f63420ac",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "preVoteStep",
+              "overrides": null,
+              "scope": 2411,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "preVoteStep"
+                },
+                "id": 2334,
+                "name": "StructuredDocumentation",
+                "src": "855:26:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2335,
+                "name": "ParameterList",
+                "src": "906:2:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2336,
+                "name": "ParameterList",
+                "src": "917:0:15"
+              }
+            ],
+            "id": 2337,
+            "name": "FunctionDefinition",
+            "src": "886:32:15"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "e362cb7c",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "readyToVoteStep",
+              "overrides": null,
+              "scope": 2411,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2338,
+                "name": "ParameterList",
+                "src": "948:2:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2342,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 2339,
+                        "name": "ElementaryTypeName",
+                        "src": "974:4:15"
+                      }
+                    ],
+                    "id": 2340,
+                    "name": "VariableDeclaration",
+                    "src": "974:4:15"
+                  }
+                ],
+                "id": 2341,
+                "name": "ParameterList",
+                "src": "973:6:15"
+              }
+            ],
+            "id": 2342,
+            "name": "FunctionDefinition",
+            "src": "924:56:15"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "1f17a49e",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "voteStep",
+              "overrides": null,
+              "scope": 2411,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "voteStep"
+                },
+                "id": 2343,
+                "name": "StructuredDocumentation",
+                "src": "986:23:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2344,
+                "name": "ParameterList",
+                "src": "1031:2:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2345,
+                "name": "ParameterList",
+                "src": "1042:0:15"
+              }
+            ],
+            "id": 2346,
+            "name": "FunctionDefinition",
+            "src": "1014:29:15"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "ec0e8bda",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "vetoStep",
+              "overrides": null,
+              "scope": 2411,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "vetoStep"
+                },
+                "id": 2347,
+                "name": "StructuredDocumentation",
+                "src": "1049:23:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2348,
+                "name": "ParameterList",
+                "src": "1094:2:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2349,
+                "name": "ParameterList",
+                "src": "1105:0:15"
+              }
+            ],
+            "id": 2350,
+            "name": "FunctionDefinition",
+            "src": "1077:29:15"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "2dae20f3",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "acceptedStep",
+              "overrides": null,
+              "scope": 2411,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "acceptedStep"
+                },
+                "id": 2351,
+                "name": "StructuredDocumentation",
+                "src": "1112:27:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2352,
+                "name": "ParameterList",
+                "src": "1165:2:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2353,
+                "name": "ParameterList",
+                "src": "1176:0:15"
+              }
+            ],
+            "id": 2354,
+            "name": "FunctionDefinition",
+            "src": "1144:33:15"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "c08cc02d",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getProposalCount",
+              "overrides": null,
+              "scope": 2411,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "Get the pre-voting registered proposal count."
+                },
+                "id": 2355,
+                "name": "StructuredDocumentation",
+                "src": "1183:60:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2356,
+                "name": "ParameterList",
+                "src": "1273:2:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2360,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2357,
+                        "name": "ElementaryTypeName",
+                        "src": "1299:7:15"
+                      }
+                    ],
+                    "id": 2358,
+                    "name": "VariableDeclaration",
+                    "src": "1299:7:15"
+                  }
+                ],
+                "id": 2359,
+                "name": "ParameterList",
+                "src": "1298:9:15"
+              }
+            ],
+            "id": 2360,
+            "name": "FunctionDefinition",
+            "src": "1248:60:15"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "37d1d389",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getProposalByIndex",
+              "overrides": null,
+              "scope": 2411,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "Get pre-voting proposal address and information by index\n@param _index Index of proposal to query."
+                },
+                "id": 2361,
+                "name": "StructuredDocumentation",
+                "src": "1314:118:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_index",
+                      "overrides": null,
+                      "scope": 2374,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2362,
+                        "name": "ElementaryTypeName",
+                        "src": "1465:7:15"
+                      }
+                    ],
+                    "id": 2363,
+                    "name": "VariableDeclaration",
+                    "src": "1465:14:15"
+                  }
+                ],
+                "id": 2364,
+                "name": "ParameterList",
+                "src": "1464:16:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "proposalAddress",
+                      "overrides": null,
+                      "scope": 2374,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2365,
+                        "name": "ElementaryTypeName",
+                        "src": "1541:7:15"
+                      }
+                    ],
+                    "id": 2366,
+                    "name": "VariableDeclaration",
+                    "src": "1541:23:15"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "proposalVotingRound",
+                      "overrides": null,
+                      "scope": 2374,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2367,
+                        "name": "ElementaryTypeName",
+                        "src": "1578:7:15"
+                      }
+                    ],
+                    "id": 2368,
+                    "name": "VariableDeclaration",
+                    "src": "1578:27:15"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "proposalVotes",
+                      "overrides": null,
+                      "scope": 2374,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2369,
+                        "name": "ElementaryTypeName",
+                        "src": "1619:7:15"
+                      }
+                    ],
+                    "id": 2370,
+                    "name": "VariableDeclaration",
+                    "src": "1619:21:15"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "proposalExpirationTimeStamp",
+                      "overrides": null,
+                      "scope": 2374,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2371,
+                        "name": "ElementaryTypeName",
+                        "src": "1654:7:15"
+                      }
+                    ],
+                    "id": 2372,
+                    "name": "VariableDeclaration",
+                    "src": "1654:35:15"
+                  }
+                ],
+                "id": 2373,
+                "name": "ParameterList",
+                "src": "1527:172:15"
+              }
+            ],
+            "id": 2374,
+            "name": "FunctionDefinition",
+            "src": "1437:263:15"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "b5b831e2",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getVotingData",
+              "overrides": null,
+              "scope": 2411,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "Get voting data"
+                },
+                "id": 2375,
+                "name": "StructuredDocumentation",
+                "src": "1706:30:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2376,
+                "name": "ParameterList",
+                "src": "1763:2:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "winnerProposal",
+                      "overrides": null,
+                      "scope": 2386,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2377,
+                        "name": "ElementaryTypeName",
+                        "src": "1826:7:15"
+                      }
+                    ],
+                    "id": 2378,
+                    "name": "VariableDeclaration",
+                    "src": "1826:22:15"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "inFavorVotes",
+                      "overrides": null,
+                      "scope": 2386,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2379,
+                        "name": "ElementaryTypeName",
+                        "src": "1862:7:15"
+                      }
+                    ],
+                    "id": 2380,
+                    "name": "VariableDeclaration",
+                    "src": "1862:20:15"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "againstVotes",
+                      "overrides": null,
+                      "scope": 2386,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2381,
+                        "name": "ElementaryTypeName",
+                        "src": "1896:7:15"
+                      }
+                    ],
+                    "id": 2382,
+                    "name": "VariableDeclaration",
+                    "src": "1896:20:15"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "votingExpirationTime",
+                      "overrides": null,
+                      "scope": 2386,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2383,
+                        "name": "ElementaryTypeName",
+                        "src": "1930:7:15"
+                      }
+                    ],
+                    "id": 2384,
+                    "name": "VariableDeclaration",
+                    "src": "1930:28:15"
+                  }
+                ],
+                "id": 2385,
+                "name": "ParameterList",
+                "src": "1812:156:15"
+              }
+            ],
+            "id": 2386,
+            "name": "FunctionDefinition",
+            "src": "1741:228:15"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "d4923d4e",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getUserVote",
+              "overrides": null,
+              "scope": 2411,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "Get user vote"
+                },
+                "id": 2387,
+                "name": "StructuredDocumentation",
+                "src": "1975:32:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "user",
+                      "overrides": null,
+                      "scope": 2396,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2388,
+                        "name": "ElementaryTypeName",
+                        "src": "2033:7:15"
+                      }
+                    ],
+                    "id": 2389,
+                    "name": "VariableDeclaration",
+                    "src": "2033:12:15"
+                  }
+                ],
+                "id": 2390,
+                "name": "ParameterList",
+                "src": "2032:14:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "voteAddress",
+                      "overrides": null,
+                      "scope": 2396,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2391,
+                        "name": "ElementaryTypeName",
+                        "src": "2094:7:15"
+                      }
+                    ],
+                    "id": 2392,
+                    "name": "VariableDeclaration",
+                    "src": "2094:19:15"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "voteRound",
+                      "overrides": null,
+                      "scope": 2396,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2393,
+                        "name": "ElementaryTypeName",
+                        "src": "2115:7:15"
+                      }
+                    ],
+                    "id": 2394,
+                    "name": "VariableDeclaration",
+                    "src": "2115:17:15"
+                  }
+                ],
+                "id": 2395,
+                "name": "ParameterList",
+                "src": "2093:40:15"
+              }
+            ],
+            "id": 2396,
+            "name": "FunctionDefinition",
+            "src": "2012:122:15"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "10da5e4b",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "canUnregister",
+              "overrides": null,
+              "scope": 2411,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "will the call to unregister be successfull?\n@param _proposal Address of the change contract that will be executed if this vote is successful"
+                },
+                "id": 2397,
+                "name": "StructuredDocumentation",
+                "src": "2140:160:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_proposal",
+                      "overrides": null,
+                      "scope": 2404,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2398,
+                        "name": "ElementaryTypeName",
+                        "src": "2328:7:15"
+                      }
+                    ],
+                    "id": 2399,
+                    "name": "VariableDeclaration",
+                    "src": "2328:17:15"
+                  }
+                ],
+                "id": 2400,
+                "name": "ParameterList",
+                "src": "2327:19:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2404,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 2401,
+                        "name": "ElementaryTypeName",
+                        "src": "2370:4:15"
+                      }
+                    ],
+                    "id": 2402,
+                    "name": "VariableDeclaration",
+                    "src": "2370:4:15"
+                  }
+                ],
+                "id": 2403,
+                "name": "ParameterList",
+                "src": "2369:6:15"
+              }
+            ],
+            "id": 2404,
+            "name": "FunctionDefinition",
+            "src": "2305:71:15"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "2ec2c246",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "unregister",
+              "overrides": null,
+              "scope": 2411,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "Unregister a proposal, free the assets it uses.\n@param _proposal Address of the change contract that will be executed if this vote is successful"
+                },
+                "id": 2405,
+                "name": "StructuredDocumentation",
+                "src": "2382:164:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_proposal",
+                      "overrides": null,
+                      "scope": 2410,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2406,
+                        "name": "ElementaryTypeName",
+                        "src": "2571:7:15"
+                      }
+                    ],
+                    "id": 2407,
+                    "name": "VariableDeclaration",
+                    "src": "2571:17:15"
+                  }
+                ],
+                "id": 2408,
+                "name": "ParameterList",
+                "src": "2570:19:15"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2409,
+                "name": "ParameterList",
+                "src": "2598:0:15"
+              }
+            ],
+            "id": 2410,
+            "name": "FunctionDefinition",
+            "src": "2551:48:15"
+          }
+        ],
+        "id": 2411,
+        "name": "ContractDefinition",
+        "src": "64:2537:15"
+      }
+    ],
+    "id": 2412,
+    "name": "SourceUnit",
+    "src": "39:2563:15"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-02-04T20:51:03.358Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "canUnregister(address)": {
+        "params": {
+          "_proposal": "Address of the change contract that will be executed if this vote is successful"
+        }
+      },
+      "getProposalByIndex(uint256)": {
+        "params": {
+          "_index": "Index of proposal to query."
+        }
+      },
+      "preVote(address)": {
+        "params": {
+          "_proposal": "Address of the change contract that will be executed if this vote is successful"
+        }
+      },
+      "unregister(address)": {
+        "params": {
+          "_proposal": "Address of the change contract that will be executed if this vote is successful"
+        }
+      },
+      "vote(bool)": {
+        "params": {
+          "_inFavorAgainst": "Type of vote"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "acceptedStep()": {
+        "notice": "acceptedStep"
+      },
+      "canUnregister(address)": {
+        "notice": "will the call to unregister be successfull?"
+      },
+      "getProposalByIndex(uint256)": {
+        "notice": "Get pre-voting proposal address and information by index"
+      },
+      "getProposalCount()": {
+        "notice": "Get the pre-voting registered proposal count."
+      },
+      "getState()": {
+        "notice": "get current contract state"
+      },
+      "getUserVote(address)": {
+        "notice": "Get user vote"
+      },
+      "getVotingData()": {
+        "notice": "Get voting data"
+      },
+      "getVotingRound()": {
+        "notice": "return the current voting round"
+      },
+      "preVote(address)": {
+        "notice": "Pre Vote a proposal"
+      },
+      "preVoteStep()": {
+        "notice": "preVoteStep"
+      },
+      "unregister(address)": {
+        "notice": "Unregister a proposal, free the assets it uses."
+      },
+      "veto()": {
+        "notice": "Veto"
+      },
+      "vetoCondition()": {
+        "notice": "There is a veto Condition"
+      },
+      "vetoStep()": {
+        "notice": "vetoStep"
+      },
+      "vote(bool)": {
+        "notice": "Vote a proposal"
+      },
+      "voteStep()": {
+        "notice": "voteStep"
+      }
+    },
+    "version": 1
+  }
+}

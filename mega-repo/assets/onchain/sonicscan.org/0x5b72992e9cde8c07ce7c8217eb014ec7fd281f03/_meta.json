@@ -1,0 +1,19 @@
+{
+  "url": "https://sonicscan.org/address/0x5b72992e9cde8c07ce7c8217eb014ec7fd281f03",
+  "host": "sonicscan.org",
+  "address": "0x5b72992e9cde8c07ce7c8217eb014ec7fd281f03",
+  "chainid": 146,
+  "contract_name": "OSonicDripperProxy",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0xc5685a88569dca11f343db4db50c8e0a7ddad992",
+  "swarm_source": "",
+  "files_written": 4,
+  "mode": "recover-json-sources"
+}

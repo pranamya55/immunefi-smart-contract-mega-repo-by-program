@@ -1,0 +1,1 @@
+../../../../../../../../mega-repo/assets/github/blob-snapshots/sky-ecosystem/protego/master/src/Protego.sol

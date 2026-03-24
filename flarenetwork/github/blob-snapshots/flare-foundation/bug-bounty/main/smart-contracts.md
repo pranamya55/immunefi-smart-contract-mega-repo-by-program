@@ -1,0 +1,1 @@
+../../../../../../../mega-repo/assets/github/blob-snapshots/flare-foundation/bug-bounty/main/smart-contracts.md

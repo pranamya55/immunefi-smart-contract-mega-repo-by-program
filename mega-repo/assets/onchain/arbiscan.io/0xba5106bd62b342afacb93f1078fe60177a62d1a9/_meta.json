@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0xBA5106bd62b342afAcB93f1078fe60177A62d1a9",
+  "host": "arbiscan.io",
+  "address": "0xBA5106bd62b342afAcB93f1078fe60177A62d1a9",
+  "chainid": 42161,
+  "project_slug": "beanstalk",
+  "asset_id": "26lza6G3J8LyD4nPv8fm4s",
+  "contract_name": "Well",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "800",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 28,
+  "mode": "json-sources"
+}

@@ -1,0 +1,7 @@
+{
+  "url": "https://modescan.io/address/0x479Bec910d4025b4aC440ec27aCf28eac522242B/contract/34443/code",
+  "host": "modescan.io",
+  "address": "0x479Bec910d4025b4aC440ec27aCf28eac522242B",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:unexpected-response; scan-host-no-key:HTTPSConnectionPool(host='modescan.io', port=443): Max retries exceeded with url: /api?module=contract&action=getsourcecode&address=0x479Bec910d4025b4aC440ec27aCf28eac522242B (Caused by NameResolutionError(\"HTTPSConnection(host='modescan.io', port=443): Failed to resolve 'modescan.io' ([Errno 8] nodename nor servname provided, or not known)\"))"
+}

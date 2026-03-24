@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x165EDF07Bb61904f47800e13F5120E64C4B9A186",
+  "host": "etherscan.io",
+  "address": "0x165EDF07Bb61904f47800e13F5120E64C4B9A186",
+  "chainid": 1,
+  "project_slug": "indexcoop",
+  "asset_id": "225XOVthrijMK7Rd9uDm3o",
+  "contract_name": "StreamingFeeModule",
+  "compiler_version": "v0.6.10+commit.00c0fcaf",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 21,
+  "mode": "json-sources"
+}

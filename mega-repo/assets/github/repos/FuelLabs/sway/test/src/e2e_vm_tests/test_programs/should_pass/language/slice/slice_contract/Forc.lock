@@ -1,0 +1,8 @@
+[[package]]
+name = "slice_contract"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-FF18DE8D9DD80114"

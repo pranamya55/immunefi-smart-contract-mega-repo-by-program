@@ -1,0 +1,130 @@
+[
+  {
+    "project_slug": "kamino",
+    "asset_id": "1gwE8XXvB8kICxAu1LHghh",
+    "url": "https://github.com/Kamino-Finance/klend",
+    "description": "KLend - Kamino Lending Program",
+    "added_at": "2025-10-06T12:39:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kamino",
+    "asset_id": "4ujNYucn33A7ivPb3h39nh",
+    "url": "https://github.com/Kamino-Finance/kvault",
+    "description": "Kvault - Kamino Lending Vault Program",
+    "added_at": "2025-10-06T12:39:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kamino",
+    "asset_id": "21j9hGuHsG1olD49bKN3hh",
+    "url": "https://github.com/Kamino-Finance/scope",
+    "description": "Kamino's Price Oracle Aggregator",
+    "added_at": "2025-10-06T12:39:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kamino",
+    "asset_id": "6VnvBlNWpzq8QLCQtapXlY",
+    "url": "https://github.com/Kamino-Finance/kfarms",
+    "description": "KFarms - Kamino Farms Program",
+    "added_at": "2025-10-06T12:39:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kamino",
+    "asset_id": "3XOqamQgezE555UpiEbLch",
+    "url": "https://solscan.io/account/KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+    "description": "Kamino Lending Program - KLend",
+    "added_at": "2025-10-06T12:39:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kamino",
+    "asset_id": "7zbqHblMarIE5cqpztUnTU",
+    "url": "https://solscan.io/account/KvauGMspG5k6rtzrqqn7WNn3oZdyKqLKwK2XWQ8FLjd",
+    "description": "Kamino Lending Vault Program - KVault",
+    "added_at": "2025-10-06T12:39:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kamino",
+    "asset_id": "7Cb1pFQVPcNLrjxA3qHafl",
+    "url": "https://solscan.io/account/HFn8GnPADiny6XqUoWE8uRPPxb29ikn4yTuPa9MF2fWJ",
+    "description": "Kamino's Price Oracle Aggregator - Onchain program",
+    "added_at": "2025-10-06T12:39:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kamino",
+    "asset_id": "1JyZQ9vqkpcJ3UsZbAgCIL",
+    "url": "https://solscan.io/account/SBondMDrcV3K4kxZR1HNVT7osZxAHVHgYXL5Ze1oMUv",
+    "description": "Kamino's Price Oracle Aggregator - SBoD",
+    "added_at": "2025-10-06T12:39:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kamino",
+    "asset_id": "67GBSTzopY8qbkXWcAY9KH",
+    "url": "https://solscan.io/account/LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+    "description": "Kamino's Price Oracle Aggregator - Meteora's interface",
+    "added_at": "2025-10-06T12:39:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kamino",
+    "asset_id": "71AcE2aID8y5qxgcuu3IRC",
+    "url": "https://solscan.io/account/PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu",
+    "description": "Kamino's Price Oracle Aggregator - JUP's Perp Interface",
+    "added_at": "2025-10-06T12:39:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kamino",
+    "asset_id": "5Jd6M1z4UDZ67J93Ambl1Q",
+    "url": "https://solscan.io/account/REDSTBDUecGjwXd6YGPzHSvEUBHQqVRfCcjUVgPiHsr",
+    "description": "Kamino's Price Oracle Aggregator - RedStone's Interface",
+    "added_at": "2025-10-06T12:39:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kamino",
+    "asset_id": "71GrATbkxX12w1hNaC7mh1",
+    "url": "https://solscan.io/account/9N3yqarWXmXJ9NQBGgN47JXV82smby8nSMffkwetgYov",
+    "description": "Kamino's Price Oracle Aggregator - Securitize's Interface",
+    "added_at": "2025-10-06T12:39:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kamino",
+    "asset_id": "1lkv8bOJkT22Xp9hUcf5UQ",
+    "url": "https://solscan.io/account/SW1TCH7qEPTdLsDHRgPuMQjbQxKdH2aBStViMFnt64f",
+    "description": "Kamino's Price Oracle Aggregator - Switchboard's Interface",
+    "added_at": "2025-10-06T12:39:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "kamino",
+    "asset_id": "7tnHPTqQjeUwJGyw32njLe",
+    "url": "https://solscan.io/account/13gDzEXCdocbj8iAiqrScGo47NiSuYENGsRqi3SEAwet",
+    "description": "Kamino's Price Oracle Aggregator - Adrena's Perp Interface",
+    "added_at": "2025-10-06T12:39:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kamino",
+    "asset_id": "s8NMZco1lO2ZoxIxOyKzt",
+    "url": "https://solscan.io/account/FarmsPZpWu9i7Kky8tPN37rs2TpmMrAZrC7S7vJa91Hr",
+    "description": "Kamino Farms Program - KFarms",
+    "added_at": "2025-10-06T12:39:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "kamino",
+    "asset_id": "2OigWYWYzRcE5Ta2cDUnkt",
+    "url": "https://solscan.io/account/6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc",
+    "description": "Kamino Liquidity Program",
+    "added_at": "2025-10-06T12:39:00.000Z",
+    "revision": 1
+  }
+]

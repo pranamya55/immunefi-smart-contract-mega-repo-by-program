@@ -1,0 +1,8 @@
+{
+  "url_host": "tronscan.org",
+  "address": "TBtChPo34CGJkb1QVEwPhxS8HQE2Xp7ir2",
+  "chain_kind": "tron",
+  "mode": "tronscan-contract-detail",
+  "verified_status": 2,
+  "name": "JumpRateModelV2"
+}

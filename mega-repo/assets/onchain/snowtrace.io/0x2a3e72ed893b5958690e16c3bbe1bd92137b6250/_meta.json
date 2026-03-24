@@ -1,0 +1,24 @@
+{
+  "url": "https://snowtrace.io/address/0x2a3e72ed893b5958690e16c3bbe1bd92137b6250",
+  "host": "snowtrace.io",
+  "address": "0x2a3e72ed893b5958690e16c3bbe1bd92137b6250",
+  "chainid": 43114,
+  "project_slug": "debridge",
+  "asset_id": "5hzc2VLMNZKs1PDzJUibYC",
+  "contract_name": "SignatureVerifier",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 12,
+  "mode": "json-sources"
+}

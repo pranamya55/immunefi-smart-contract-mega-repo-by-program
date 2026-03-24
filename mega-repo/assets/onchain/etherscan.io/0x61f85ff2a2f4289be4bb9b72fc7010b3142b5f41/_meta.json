@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x61f85fF2a2f4289Be4bb9B72Fc7010B3142B5f41",
+  "host": "etherscan.io",
+  "address": "0x61f85fF2a2f4289Be4bb9B72Fc7010B3142B5f41",
+  "chainid": 1,
+  "project_slug": "celer",
+  "asset_id": "1FkEsqjxk3UXJkuAmbw1xB",
+  "contract_name": "FarmingRewards",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "800",
+  "constructor_arguments": "0000000000000000000000008a4b4c2acadeaa7206df96f00052e41d74a015ce",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "GNU GPLv3",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 12,
+  "mode": "json-sources"
+}

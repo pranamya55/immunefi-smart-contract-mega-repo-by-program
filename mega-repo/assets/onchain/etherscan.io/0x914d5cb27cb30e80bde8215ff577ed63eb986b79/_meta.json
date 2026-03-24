@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x914D5Cb27cb30E80BdE8215ff577eD63Eb986B79",
+  "host": "etherscan.io",
+  "address": "0x914D5Cb27cb30E80BdE8215ff577eD63Eb986B79",
+  "chainid": 1,
+  "project_slug": "ondofinance",
+  "asset_id": "1b4Is79YQdj2gYoHElb567",
+  "contract_name": "OndoSanityCheckOracle",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "00000000000000000000000054b5aae5bda007db744ea762460a96f24bc1f4ad00000000000000000000000000000000000000000000000000000000000003e8000000000000000000000000000000000000000000000000000000000002a300",
+  "evm_version": "london",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 11,
+  "mode": "json-sources"
+}

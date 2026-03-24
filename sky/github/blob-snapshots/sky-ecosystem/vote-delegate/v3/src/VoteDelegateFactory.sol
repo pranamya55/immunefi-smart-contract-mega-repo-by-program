@@ -1,0 +1,1 @@
+../../../../../../../../mega-repo/assets/github/blob-snapshots/sky-ecosystem/vote-delegate/v3/src/VoteDelegateFactory.sol

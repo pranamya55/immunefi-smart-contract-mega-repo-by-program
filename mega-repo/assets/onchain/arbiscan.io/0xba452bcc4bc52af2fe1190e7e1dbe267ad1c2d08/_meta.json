@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0xba452bCc4BC52AF2fe1190e7e1dBE267ad1C2d08#code",
+  "host": "arbiscan.io",
+  "address": "0xba452bCc4BC52AF2fe1190e7e1dBE267ad1C2d08",
+  "chainid": 42161,
+  "project_slug": "woofi",
+  "asset_id": "3FHc7c6ZihtqSvuRWzqGSV",
+  "contract_name": "WooSuperChargerVault",
+  "compiler_version": "v0.8.14+commit.80d49f37",
+  "optimization_used": "1",
+  "runs": "20000",
+  "constructor_arguments": "00000000000000000000000082af49447d8a07e3bd95bd0d56f35241523fbab100000000000000000000000082af49447d8a07e3bd95bd0d56f35241523fbab1000000000000000000000000d14a997308f9e7514a8fea835064d596cdcaa99e",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 22,
+  "mode": "json-sources"
+}

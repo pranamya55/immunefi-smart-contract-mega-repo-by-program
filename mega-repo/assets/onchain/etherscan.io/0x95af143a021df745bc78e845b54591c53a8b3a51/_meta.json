@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x95Af143a021DF745bc78e845b54591C53a8B3A51",
+  "host": "etherscan.io",
+  "address": "0x95Af143a021DF745bc78e845b54591C53a8B3A51",
+  "chainid": 1,
+  "project_slug": "fluxfinance",
+  "asset_id": "3srYKm8XLgdEAsejyAxPyf",
+  "contract_name": "Unitroller",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": "1",
+  "runs": "100",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "None",
+  "proxy": "1",
+  "implementation": "0xdc7b90593cafe7a919d22b903fed21bf27da9719",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 11,
+  "mode": "json-sources"
+}

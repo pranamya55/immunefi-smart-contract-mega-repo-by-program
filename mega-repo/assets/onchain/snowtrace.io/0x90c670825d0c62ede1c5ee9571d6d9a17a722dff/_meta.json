@@ -1,0 +1,24 @@
+{
+  "url": "https://snowtrace.io/address/0x90c670825d0C62ede1c5ee9571d6d9a17A722DFF",
+  "host": "snowtrace.io",
+  "address": "0x90c670825d0C62ede1c5ee9571d6d9a17A722DFF",
+  "chainid": 43114,
+  "project_slug": "gmx",
+  "asset_id": "41jM5xeXzGSemFtsXYjIKw",
+  "contract_name": "DepositVault",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": "1",
+  "runs": "10",
+  "constructor_arguments": "000000000000000000000000a44f830b6a2b6fa76657a3b92c1fe74fcb7c6afd0000000000000000000000002f0b22339414aded7d5f06f9d604c7ff5b2fe3f6",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 24,
+  "mode": "json-sources"
+}

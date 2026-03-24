@@ -1,0 +1,24 @@
+{
+  "url": "https://bscscan.com/address/0xB274Bbbc1df5f1d1763216A93d473fde6f5de043",
+  "host": "bscscan.com",
+  "address": "0xB274Bbbc1df5f1d1763216A93d473fde6f5de043",
+  "chainid": 56,
+  "project_slug": "hyperlane",
+  "asset_id": "74YKPNAfIIxyJcxX6QYlWS",
+  "contract_name": "InterchainAccountIsm",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": "1",
+  "runs": "999999",
+  "constructor_arguments": "0000000000000000000000002971b9Aec44bE4eb673DF1B88cDB57b96eefe8a4",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 202,
+  "mode": "json-sources"
+}

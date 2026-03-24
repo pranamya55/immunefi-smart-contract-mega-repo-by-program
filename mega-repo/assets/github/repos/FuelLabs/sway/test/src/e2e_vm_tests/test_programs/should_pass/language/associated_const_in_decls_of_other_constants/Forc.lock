@@ -1,0 +1,8 @@
+[[package]]
+name = "associated_const_in_decls_of_other_constants"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-8CB91B60FB2568E4"

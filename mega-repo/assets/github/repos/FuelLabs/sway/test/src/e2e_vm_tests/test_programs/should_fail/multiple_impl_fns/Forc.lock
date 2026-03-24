@@ -1,0 +1,8 @@
+[[package]]
+name = "multiple_impl_fns"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-99C864323F6D5FE1"

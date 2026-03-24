@@ -1,0 +1,24 @@
+[package]
+name = "sway-lsp-test-utils"
+version.workspace = true
+description = "Test utils for the Sway LSP Server."
+publish = false
+authors.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[package.metadata.cargo-udeps.ignore]
+normal = ["tower"]
+
+[dependencies]
+assert-json-diff.workspace = true
+futures = { workspace = true, features = ["async-await", "std"] }
+lsp-types = { workspace = true, features = ["proposed"] }
+rand.workspace = true
+serde = { workspace = true, features = ["derive"] }
+serde_json.workspace = true
+tokio = { workspace = true, features = ["io-util", "io-std", "macros", "net", "rt-multi-thread", "sync", "time"] }
+tower = { workspace = true, features = ["util"] }
+tower-lsp = { workspace = true, features = ["proposed"] }

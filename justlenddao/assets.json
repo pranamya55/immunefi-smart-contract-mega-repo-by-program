@@ -1,0 +1,346 @@
+[
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "1qhmli2z5vjgYwce3kQCNf",
+    "url": "https://tronscan.org/#/contract/TGjYzgCyPobsNS9n6WcbdLVR9dH7mWqFx7/code",
+    "description": "Unitroller",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "7fNxM0QZsLGCUK6ziZ54Ym",
+    "url": "https://tronscan.org/#/contract/TCtzg2CQsAuLkSxrGjFGbHVwKvv95W9C8e/code",
+    "description": "Comptroller",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "6Oqtn6FNq0bDxuuvR8FYxd",
+    "url": "https://tronscan.org/#/contract/TEqiF5JbhDPD77yjEfnEMncGRZNDt2uogD/code",
+    "description": "GovernorBravoDelegator",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "5lpedMWKt7gtFgyH73AVyl",
+    "url": "https://tronscan.org/#/contract/TRWNvb15NmfNKNLhQpxefFz7cNjrYjEw7x/code",
+    "description": "Timelock",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "4gq88us3xKTjJQujE3jfaB",
+    "url": "https://tronscan.org/#/contract/TXk9LnTnLN7oH96H3sKxJayMxLxR9M4ZD6/code",
+    "description": "WJST",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "1nFzfvf1MEhGF5ESDhwOQ3",
+    "url": "https://tronscan.org/#/contract/TTetZxp98wcPaciyBMHYvQkS735RZ3tyXY/code",
+    "description": "jumpRateUSDT",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "3QDacV9rYCEF0mzLaOwdLI",
+    "url": "https://tronscan.org/#/contract/TLScd7kpWnKADtH7ZXKzrJHAxJUnjiiExq/code",
+    "description": "jumpRateUSDJ",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "1LPaqWT2YRHqIjDMBIXWic",
+    "url": "https://tronscan.org/#/contract/TK7WVRz34wUVRCpsgbW1wUCPmh5bSnCqg1/code",
+    "description": "jumpRateSUN",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "1YXpi0Z4Q2At3SXJzJSMNU",
+    "url": "https://tronscan.org/#/contract/TBtChPo34CGJkb1QVEwPhxS8HQE2Xp7ir2/code",
+    "description": "jumpRateWIN",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "7m43oUqEsRUyo61AE1RrmY",
+    "url": "https://tronscan.org/#/contract/TMNXjQTa8x4wNHBa3X647KRnkRQpSuXBRT/code",
+    "description": "jumpRateJST",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "3DpQTfzE8EIO7nBv96PCks",
+    "url": "https://tronscan.org/#/contract/TJAfCJdJZa44pG5adQGLMLh27hJqPeLxod/code",
+    "description": "jumpRateWBTT",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "5noZDjCweS3i3y8Zg4rwWg",
+    "url": "https://tronscan.org/#/contract/TBE9tkWYdZPEHLNeKC6Xn44YFLpieiM3xq/code",
+    "description": "jumpRateNFT",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "657sgxA4QzUSoYWh7SqXLj",
+    "url": "https://tronscan.org/#/contract/TF8B4iysAGfrssdQhMJGYsdd9SZoxGsH7M/code",
+    "description": "WhitePaperModelTRX",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "7sMzKuRexqlISVihsqZQHa",
+    "url": "https://tronscan.org/#/contract/TYJi9q4qLQWoBiKmMQY3Mn81tmhw7SeCmh/code",
+    "description": "WhitePaperModelBTC",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "6XlmfgVvcUGU94KPfcyU3m",
+    "url": "https://tronscan.org/#/contract/TE2RzoSV3wFK99w6J9UnnZ4vLfXYoxvRwP/code",
+    "description": "TRX CEther",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "33I74knMWUIx3xUUJ2fYWk",
+    "url": "https://tronscan.org/#/contract/TLjn59xNM7VEK6VZ3VQ8Y1ipxsdsFka5wZ/code",
+    "description": "USDT CErc20Delegate",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "35deCHTUAQw0XHg9voapkG",
+    "url": "https://tronscan.org/#/contract/TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd/code",
+    "description": "USDT CErc20Delegator",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "3oAYPyh10vunTUS98yg7Fg",
+    "url": "https://tronscan.org/#/contract/TYSHTEq9NFSgst94saeRvt6rAYgWkqMFbj/code",
+    "description": "USDJ CErc20Delegate",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "1O62pIaZ2BiOaYB1zT3gpO",
+    "url": "https://tronscan.org/#/contract/TL5x9MtSnDy537FXKx53yAaHRRNdg9TkkA/code",
+    "description": "USDJ CErc20Delegator",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "1e3Le0akR1Pzpxd5O1jX5w",
+    "url": "https://tronscan.org/#/contract/TSCpzKvJfXHj1HW5jKg9dZA8z9aMxxGLd8/code",
+    "description": "SUNOLD CErc20Delegate",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "4yM9ekUpavOaELvcZ907Us",
+    "url": "https://tronscan.org/#/contract/TGBr8uh9jBVHJhhkwSJvQN2ZAKzVkxDmno/code",
+    "description": "SUNOLD CErc20Delegator",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "1dSvGYjHx6J1c3e1gl38oQ",
+    "url": "https://tronscan.org/#/contract/TW3GyD3hYkKwzSGytWwWGXpe2a93zCpRzJ/code",
+    "description": "WIN CErc20Delegate",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "5xece8AYyyq8dfjQISePmj",
+    "url": "https://tronscan.org/#/contract/TRg6MnpsFXc82ymUPgf5qbj59ibxiEDWvv/code",
+    "description": "WIN CErc20Delegator",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "7JhcjqasM0lzzcGZ21TnhL",
+    "url": "https://tronscan.org/#/contract/TVsKSRgRoMcCp798qqRGesXRfzy2MzRjkR/code",
+    "description": "BTC CErc20Delegate",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "603g43zjX4lQPPNUoG8qck",
+    "url": "https://tronscan.org/#/contract/TQ2sbnmxtR7jrNk4nxz2A8f9sneCqmk6SB/code",
+    "description": "JST CErc20Delegate",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "3DOHpYJStbeG7z8IagpqCV",
+    "url": "https://tronscan.org/#/contract/TWQhCXaWz4eHK4Kd1ErSDHjMFPoPc9czts/code",
+    "description": "JST CErc20Delegator",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "3KFJnEkjP8RV3wLN9W3eNq",
+    "url": "https://tronscan.org/#/contract/TV4WWBqBfn1kd4KmpYeSJpVAfybfrxEN9L/code",
+    "description": "WBTT CErc20Delegate",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "FTDpmH7fJfBo1k5qVihsh",
+    "url": "https://tronscan.org/#/contract/TUY54PVeH6WCcYCd6ZXXoBDsHytN9V5PXt/code",
+    "description": "WBTT CErc20Delegator",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "6VYtpXNzeRbuFdrWNYk9aj",
+    "url": "https://tronscan.org/#/contract/TLkUdtDBLMfJdXni2iTa4u2DKM53XmDJHi/code",
+    "description": "NFT CErc20Delegate",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "6EdSAmUw86eAvLf7r9dtky",
+    "url": "https://tronscan.org/#/contract/TFpPyDCKvNFgos3g3WVsAqMrdqhB81JXHE/code",
+    "description": "NFT CErc20Delegator",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "nfHsPDfgP6BQb2COQF37s",
+    "url": "https://tronscan.org/#/contract/TPXDpkg9e3eZzxqxAUyke9S4z4pGJBJw9e/code",
+    "description": "SUN CErc20Delegator",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "3nPqnwlUxUbw9wgDSQAZ0g",
+    "url": "https://tronscan.org/#/contract/TM82erAZJSP7NKc17JdTnzVC8WKJHismWB/code",
+    "description": "SUN CErc20Delegate",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "5CZJNoPnz6O8pRXTfUXZm9",
+    "url": "https://tronscan.org/#/contract/TSXv71Fy5XdL3Rh2QfBoUu3NAaM4sMif8R/code",
+    "description": "TUSD CErc20Delegator",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "4s7JckRfcMZyacmiMZI0yk",
+    "url": "https://tronscan.org/#/contract/THbrSjDsDA2KJRxx8K73tN7vLgaXSUNQFk/code",
+    "description": "TUSD CErc20Delegate",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "3Z5oSesWFiK3fpWEOigYLn",
+    "url": "https://tronscan.org/#/contract/TNSBA6KvSvMoTqQcEgpVK7VhHT3z7wifxy/code",
+    "description": "USDC CErc20Delegator",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "2NiRLAdrd9La4aToPpq5gg",
+    "url": "https://tronscan.org/#/contract/THQY8YX19jLFSFg1xhthM5wb7xZvKLCzgq/code",
+    "description": "USDC CErc20Delegate",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "6UsSA72tkCRf7Rz8oZVYC",
+    "url": "https://tronscan.org/#/contract/TR7BUFRQeq1w5jAZf1FKx85SHuX6PfMqsV/code",
+    "description": "ETH CErc20Delegator",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "2FvTFbawUD1KAgqLzwbkfc",
+    "url": "https://tronscan.org/#/contract/TQBvTVisiceDvsQVbLbcYyWQGWP7wtaQnc/code",
+    "description": "ETH CErc20Delegate",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "4PZyrEgAHeCR5mY6m0Rjig",
+    "url": "https://tronscan.org/#/contract/TX7kybeP6UwTBRHLNPYmswFESHfyjm9bAS/code",
+    "description": "USDD CErc20Delegator",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "2TnP6EnxmzztRljpXKopZ0",
+    "url": "https://tronscan.org/#/contract/TFdTqrMyb6PMMqTa9vnhmQHDFDU2oUhw9W/code",
+    "description": "USDD CErc20Delegate",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "6IC4aGBTGpBTWIVPI1wxGy",
+    "url": "https://tronscan.org/#/contract/TD8bq1aFY8yc9nsD2rfqqJGDtkh7aPpEpr/code",
+    "description": "Oracle PriceOracle",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "1js98DrA5UjYS717Hg5l38",
+    "url": "https://tronscan.org/#/contract/TCKp2AzuhzV4B4Ahx1ej4mvQgHZ1kH7F7k/code",
+    "description": "Oracle proxy PriceOracleProxy",
+    "added_at": "2022-08-31T03:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "justlenddao",
+    "asset_id": "9WctWroNrTR7bAFR2dlmP",
+    "url": "https://tronscan.org/#/contract/TCiQTkxhzwSeXhRsNdHCvrxHRAvpjQn5Dt/code",
+    "description": "GovernorBravoDelegate",
+    "added_at": "2022-11-02T22:46:45.983Z",
+    "revision": 1
+  }
+]

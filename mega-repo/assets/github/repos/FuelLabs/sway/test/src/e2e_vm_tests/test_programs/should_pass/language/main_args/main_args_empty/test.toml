@@ -1,0 +1,8 @@
+category = "run"
+
+script_data = ""
+expected_result = { action = "return", value = 0 }
+
+validate_abi = true
+
+experimental = { new_encoding = false }

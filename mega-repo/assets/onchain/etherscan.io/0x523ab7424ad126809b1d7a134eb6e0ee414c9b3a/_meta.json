@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x523AB7424AD126809b1d7A134eb6E0ee414C9B3A",
+  "host": "etherscan.io",
+  "address": "0x523AB7424AD126809b1d7A134eb6E0ee414C9B3A",
+  "chainid": 1,
+  "project_slug": "connext",
+  "asset_id": "649dOCMz9qFqaLOsgSghOv",
+  "contract_name": "RootManager",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "00000000000000000000000000000000000000000000000000000000000000780000000000000000000000007d2596d7e44b0990611d390fbb0bd24e6484569400000000000000000000000079e6e0242405a66b2dd8b96ded3b2f0216fd417d000000000000000000000000000000000000000000000000000000000000003c0000000000000000000000000000000000000000000000000000000000000078",
+  "evm_version": "london",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 20,
+  "mode": "json-sources"
+}

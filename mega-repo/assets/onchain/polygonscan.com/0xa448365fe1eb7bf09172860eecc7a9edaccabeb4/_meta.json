@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0xa448365fe1Eb7bf09172860Eecc7A9EDaCCabEb4",
+  "host": "polygonscan.com",
+  "address": "0xa448365fe1Eb7bf09172860Eecc7A9EDaCCabEb4",
+  "chainid": 137,
+  "project_slug": "connext",
+  "asset_id": "3J8tdDbdBbyt8zPOFNT3Vt",
+  "contract_name": "WatcherManager",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "london",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 3,
+  "mode": "json-sources"
+}

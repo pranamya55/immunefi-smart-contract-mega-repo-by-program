@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xafE830B6Ee262ba11cce5F32fDCd760FFE6a66e4",
+  "host": "etherscan.io",
+  "address": "0xafE830B6Ee262ba11cce5F32fDCd760FFE6a66e4",
+  "chainid": 1,
+  "project_slug": "ssvnetwork",
+  "asset_id": "6qPKTaZD5Izg2h3RexSo5j",
+  "contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x052e5f6bd9db71c08db38377596875cec5708a94",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

@@ -1,0 +1,7 @@
+# Following directories have their own formatting configuration:
+solidity/
+yearn/
+typescript/
+system-tests/
+monitoring/
+cross-chain/

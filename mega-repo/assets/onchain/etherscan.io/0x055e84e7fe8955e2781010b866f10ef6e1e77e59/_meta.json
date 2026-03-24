@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x055E84e7FE8955E2781010B866f10Ef6E1E77e59",
+  "host": "etherscan.io",
+  "address": "0x055E84e7FE8955E2781010B866f10Ef6E1E77e59",
+  "chainid": 1,
+  "project_slug": "lombard-finance",
+  "asset_id": "4a7sAYkwE7aqtIMzzrzFeO",
+  "contract_name": "LombardTimeLock",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": "0",
+  "runs": "200",
+  "constructor_arguments": "0000000000000000000000000000000000000000000000000000000000000e10000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000c000000000000000000000000000000000000000000000000000000000000000020000000000000000000000003f6bf1c36ccbb59eaf8415301a0cec73c344a079000000000000000000000000251a604e8e8f6906d60f8dedc5aaeb8cd38f48920000000000000000000000000000000000000000000000000000000000000001000000000000000000000000251a604e8e8f6906d60f8dedc5aaeb8cd38f4892",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 12,
+  "mode": "json-sources"
+}

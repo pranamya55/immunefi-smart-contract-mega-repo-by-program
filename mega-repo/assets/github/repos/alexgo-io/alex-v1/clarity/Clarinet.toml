@@ -1,0 +1,1745 @@
+[project]
+name = "alex-v1"
+
+[project.cache_location]
+path = ".cache"
+
+# [[project.requirements]]
+# contract_id = "ST287GF5M9WEJ6BXEN7NPN1WGA95YWXWBE0ZRK6X.Wrapped-USD"
+[[project.requirements]]
+contract_id = "SP2TZK01NKDC89J6TA56SA47SDF7RTHYEQ79AAB9A.Wrapped-USD"
+[[project.requirements]]
+contract_id = "SP3NE50GEXFG9SZGTT51P40X2CKYSZ5CC4ZTZ7A2G.welshcorgicoin-token"
+[[project.requirements]]
+contract_id = "SP2C2YFP12AJZB4MABJBAJ55XECVS7E4PMMZ89YZR.arkadiko-swap-v2-1"
+[[project.requirements]]
+contract_id = "SP2C2YFP12AJZB4MABJBAJ55XECVS7E4PMMZ89YZR.wrapped-stx-token"
+[[project.requirements]]
+contract_id = "SP2C2YFP12AJZB4MABJBAJ55XECVS7E4PMMZ89YZR.arkadiko-token"
+[[project.requirements]]
+contract_id = "SP2C2YFP12AJZB4MABJBAJ55XECVS7E4PMMZ89YZR.arkadiko-alex-dual-yield-v1-1"
+[[project.requirements]]
+contract_id = "SP27BB1Y2DGSXZHS7G9YHKTSH6KQ6BD3QG0AN3CR9.vibes-token"
+[[project.requirements]]
+contract_id = "SP3D6PV2ACBPEKYJTCMH7HEN02KP87QSP8KTEH335.mega"
+[[project.requirements]]
+contract_id = "SP1AY6K3PQV5MRT6R4S671NWW2FRVPKM0BR162CT6.leo-token"
+[[project.requirements]]
+contract_id = "SP1JFFSYTSH7VBM54K29ZFS9H4SVB67EA8VT2MYJ9.gus-token"
+[[project.requirements]]
+contract_id = "SP265WBWD4NH7TVPYQTVD23X3607NNK4484DTXQZ3.longcoin"
+# [[project.requirements]]
+# contract_id = "SP32AEEF6WW5Y0NMJ1S8SBSZDAY8R5J32NBZFPKKZ.wrapped-nothing-v8"
+[[project.requirements]]
+contract_id = "SP3Y2ZSH8P7D50B0VBTSX11S7XSG24M1VB9YFQA4K.token-aewbtc"
+[[project.requirements]]
+contract_id = "SP7V1SE7EA3ZG3QTWSBA2AAG8SRHEYJ06EBBD1J2.max-token"
+[[project.requirements]]
+contract_id = "SP1PW804599BZ46B4A0FYH86ED26XPJA7SFYNK1XS.play"
+[[project.requirements]]
+contract_id = "SP3Y2ZSH8P7D50B0VBTSX11S7XSG24M1VB9YFQA4K.token-aeusdc"
+[[project.requirements]]
+contract_id = "SP1Z92MPDQEWZXW36VX71Q25HKF5K2EPCJ304F275.tokensoft-token-v4k68639zxz"
+[[project.requirements]]
+contract_id = "SP32AEEF6WW5Y0NMJ1S8SBSZDAY8R5J32NBZFPKKZ.nope"
+[[project.requirements]]
+contract_id = "SP2Y8T3TR3FKH3Y2FPZVNQAEKNJXKWVS4RVQF48JE.stakemouse"
+[[project.requirements]]
+contract_id = "SP3951VNPC55BMS9RCF6SKRZP4K3Q2PQ2RSM1DD1V.fast"
+[[project.requirements]]
+contract_id = "SPPK49DG7WR1J5D50GZ4W7DYYWM5MAXSX0ZA9VEJ.FrodoSaylorKeanuPepe10Inu-token-v69"
+[[project.requirements]]
+contract_id = "SP3WPNAEBYMX06RQNNYTH5PTJ1FRGX5A13ZZMZ01D.dogwifhat-token"
+# [[project.requirements]]
+# contract_id = "SP3R4MHK99JAAM0N3T0CBZRZVSVQFG1N75DQ08JSD.Wsbtc"
+# [[project.requirements]]
+# contract_id = "SP1BMZTS416A3VTMN0SYTRMEJSCHW75RRAKXWF4DZ.inscription"
+# [[project.requirements]]
+# contract_id = "SP2PABAF9FTAJYNFZH93XENAJ8FVY99RRM50D2JG9.nft-trait"
+# [[project.requirements]]
+# contract_id = "SP1BMZTS416A3VTMN0SYTRMEJSCHW75RRAKXWF4DZ.stacks-inscription" # comment out LoC 317/318 of stacks-inscription
+[[project.requirements]]
+contract_id = "SP3SJSNPJXXHY7RJM48ZT6G1BXYZADAC5YAXZA3ZC.ODINToken"
+[[project.requirements]]
+contract_id = "SPXZB55NWTRQM02QYK7Z6K2PP7F279F640HAYTPG.TwinsPig"
+[[project.requirements]]
+contract_id = "SP1N4EXSR8DP5GRN2XCWZEW9PR32JHNRYW7MVPNTA.PomerenianBoo-Pomboo"
+[[project.requirements]]
+contract_id = "SP3MRT36YWK7R0SKFCQ1TDJB3Y3XBAVRFXPYBQ33E.Something-v420"
+# [[project.requirements]]
+# contract_id = "SM26NBC8SFHNW4P1Y4DFH27974P56WN86C92HPEHH.token-lqstx"
+# [[project.requirements]]
+# contract_id = "SM26NBC8SFHNW4P1Y4DFH27974P56WN86C92HPEHH.token-vlqstx"
+[[project.requirements]]
+contract_id = "SP2VGJQAB0T7R2Y9S2PJRNPDEW91CM2YCDYJGGPQS.mooneeb"
+[[project.requirements]]
+contract_id = "SP351ZJK9F5AWZJEEZGZ7NZKSRKA65EWFRR48V9KS.ALL"
+[[project.requirements]]
+# contract_id = "SP3R4MHK99JAAM0N3T0CBZRZVSVQFG1N75DQ08JSD.nakamoto"
+[[project.requirements]]
+contract_id = "SPTJG5KG69N7GEDB2WKMN898Q934ZB2J2NTQW155.Parker-Muneebs-Cat"
+[[project.requirements]]
+contract_id = "SP2F4QC563WN0A0949WPH5W1YXVC4M1R46QKE0G14.memegoatstx"
+[[project.requirements]]
+contract_id = "SP4M2C88EE8RQZPYTC4PZ88CE16YGP825EYF6KBQ.stacks-rock"
+[[project.requirements]]
+contract_id = "SP1NKZVK335XCGQGGFDXY4Q8E78F7YT4A6QFW1K62.Pikachu-Thunders-Stacks"
+[[project.requirements]]
+contract_id = "SP2GEP37WGW6QRFHVDAM3XW9Z716SRS94FJXPZFT3.meme3"
+[[project.requirements]]
+contract_id = "SP28NB976TJHHGF4218KT194NPWP9N1X3WY516Z1P.Hashiko"
+[[project.requirements]]
+contract_id = "SPBVF489RM32YGESDWE38AWHQVKXGDZ6XM57JYRJ.RunestoneStacks-Token"
+[[project.requirements]]
+contract_id = "SP1Z92MPDQEWZXW36VX71Q25HKF5K2EPCJ304F275.tokensoft-token-v4karmaedcr"
+
+[repl]
+costs_version = 2
+
+# [repl.analysis]
+# passes = ["check_checker"]
+
+[contracts.age000-governance-token]
+path = "contracts_modules/alex_dao/extensions/age000-governance-token.clar"
+depends_on = ["executor-dao", "governance-token-trait", "trait-sip-010"]
+
+[contracts.age001-proposal-voting]
+path = "contracts_modules/alex_dao/extensions/age001-proposal-voting.clar"
+depends_on = ["executor-dao", "proposal-trait", "extension-trait", "governance-token-trait", "age000-governance-token"]
+
+[contracts.age002-emergency-proposals]
+path = "contracts_modules/alex_dao/extensions/age002-emergency-proposals.clar"
+depends_on = ["executor-dao", "extension-trait", "age001-proposal-voting"]
+
+[contracts.age003-emergency-execute]
+path = "contracts_modules/alex_dao/extensions/age003-emergency-execute.clar"
+depends_on = ["executor-dao", "extension-trait", "age001-proposal-voting"]
+
+[contracts.agp000-bootstrap]
+path = "contracts_modules/alex_dao/proposals/agp000-bootstrap.clar"
+
+depends_on = ["executor-dao", "proposal-trait", "extension-trait", "age000-governance-token", "age001-proposal-voting", "age002-emergency-proposals", "age003-emergency-execute"]
+
+[contracts.agp001-kill-emergency-execute]
+path = "contracts_modules/alex_dao/proposals/agp001-kill-emergency-execute.clar"
+depends_on = ["age003-emergency-execute", "executor-dao"]
+
+[contracts.executor-dao]
+path = "contracts_modules/alex_dao/executor-dao.clar"
+depends_on = ["proposal-trait", "extension-trait"]
+
+[contracts.extension-trait]
+path = "contracts_modules/alex_dao/traits/extension-trait.clar"
+depends_on = []
+
+[contracts.governance-token-trait]
+path = "contracts_modules/alex_dao/traits/governance-token-trait.clar"
+depends_on = []
+
+[contracts.ownable-trait]
+path = "contracts_modules/alex_dao/traits/ownable-trait.clar"
+depends_on = []
+
+[contracts.proposal-trait]
+path = "contracts_modules/alex_dao/traits/proposal-trait.clar"
+depends_on = []
+
+[contracts.sip010-ft-trait]
+path = "contracts_modules/alex_dao/traits/sip010-ft-trait.clar"
+depends_on = []
+
+[contracts.agp004-launchpad-alex]
+path = "contracts_modules/alex_dao/proposals/agp004-launchpad-alex.clar"
+depends_on = ["proposal-trait", "alex-launchpad", "lottery-ido-alex", "age000-governance-token"]
+
+[contracts.alex-reserve-pool]
+path = "contracts/pool/alex-reserve-pool.clar"
+depends_on = [
+  "trait-ownable",
+  "trait-sip-010",
+  "alex-vault",
+  "age000-governance-token",
+  "token-apower"
+]
+
+[contracts.futures-pool]
+path = "contracts/pool/futures-pool.clar"
+depends_on = [
+  "trait-ownable",
+  "trait-semi-fungible",
+  "trait-multisig-vote",
+  "alex-reserve-pool"
+]
+
+[contracts.staking-helper]
+path = "contracts/helpers/staking-helper.clar"
+depends_on = [ "alex-reserve-pool", "trait-sip-010" ]
+
+[contracts.alex-vault]
+path = "contracts/alex-vault.clar"
+depends_on = [
+  "trait-vault",
+  "trait-sip-010",
+  "trait-flash-loan-user",
+  "trait-ownable",
+  "trait-semi-fungible"
+]
+
+[contracts.collateral-rebalancing-pool-v1]
+path = "contracts/pool/collateral-rebalancing-pool-v1.clar"
+depends_on = [
+  "trait-sip-010",
+  "trait-ownable",
+  "trait-semi-fungible",
+  "alex-vault",
+  "alex-reserve-pool",
+  "yield-token-pool",
+  "swap-helper-v1-03"
+]
+
+[contracts.faucet]
+path = "contracts/faucet.clar"
+depends_on = [ "token-xbtc", "token-usda", "age000-governance-token", "token-wstx" ]
+
+[contracts.flash-loan-user-margin-usda-wbtc]
+path = "contracts/flash-loan-user-margin-usda-wbtc.clar"
+depends_on = [
+  "trait-sip-010",
+  "trait-flash-loan-user",
+  "yield-wbtc",
+  "key-wbtc-usda",
+  "collateral-rebalancing-pool-v1",
+  "yield-token-pool",
+  "fixed-weight-pool-v1-01",
+  "token-wusda",
+  "token-wbtc"
+]
+
+[contracts.flash-loan-user-margin-wstx-usda]
+path = "contracts/flash-loan-user-margin-wstx-usda.clar"
+depends_on = [
+  "trait-sip-010",
+  "trait-flash-loan-user",
+  "token-wstx",
+  "yield-usda",
+  "key-usda-wstx",
+  "collateral-rebalancing-pool-v1",
+  "yield-token-pool",
+  "fixed-weight-pool-v1-01",
+  "token-wstx",
+  "token-wusda"
+]
+
+[contracts.key-usda-wbtc]
+path = "contracts/key-token/key-usda-wbtc.clar"
+depends_on = ["trait-ownable", "trait-semi-fungible"]
+
+[contracts.key-usda-wstx]
+path = "contracts/key-token/key-usda-wstx.clar"
+depends_on = ["trait-ownable", "trait-semi-fungible"]
+
+[contracts.liquidity-bootstrapping-pool]
+path = "contracts/pool/liquidity-bootstrapping-pool.clar"
+depends_on = [
+  "trait-sip-010",
+  "trait-vault",
+  "weighted-equation-v1-01",
+  "alex-reserve-pool",
+  "fixed-weight-pool-v1-01",
+  "trait-multisig-vote",
+  "alex-vault"
+]
+
+[contracts.margin-helper]
+path = "contracts/helpers/margin-helper.clar"
+depends_on = [
+  "trait-sip-010",
+  "trait-flash-loan-user",
+  "collateral-rebalancing-pool-v1",
+  "swap-helper",
+  "alex-vault"
+]
+
+[contracts.math-fixed-point]
+path = "contracts/lib/math-fixed-point.clar"
+depends_on = []
+
+[contracts.math-fixed-point-v2]
+path = "contracts/lib/math-fixed-point-v2.clar"
+depends_on = []
+
+[contracts.multisig-crp-usda-wstx]
+path = "contracts/multisig/multisig-crp-usda-wstx.clar"
+depends_on = ["yield-usda", "key-usda-wstx", "collateral-rebalancing-pool-v1", "trait-multisig-vote"]
+
+[contracts.multisig-ytp-yield-wbtc]
+path = "contracts/multisig/multisig-ytp-yield-wbtc.clar"
+depends_on = ["ytp-yield-wbtc", "yield-wbtc", "yield-token-pool", "trait-multisig-vote"]
+
+[contracts.token-usda]
+path = "contracts/token/token-usda.clar"
+depends_on = ["trait-ownable", "trait-sip-010"]
+
+[contracts.token-wusda]
+path = "contracts/wrapped-token/token-wusda.clar"
+depends_on = ["trait-ownable", "trait-sip-010", "token-usda" ]
+
+[contracts.token-xbtc]
+path = "contracts/token/token-xbtc.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+
+[contracts.token-wbtc]
+path = "contracts/wrapped-token/token-wbtc.clar"
+depends_on = [ "trait-ownable", "trait-sip-010", "token-xbtc" ]
+
+[contracts.token-wstx]
+path = "contracts/wrapped-token/token-wstx.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+
+[contracts.token-apower]
+path = "contracts/token/token-apower.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+
+[contracts.trait-flash-loan-user]
+path = "contracts/traits/trait-flash-loan-user.clar"
+depends_on = ["trait-sip-010"]
+
+[contracts.trait-multisig-vote]
+path = "contracts/traits/trait-multisig-vote.clar"
+depends_on = ["trait-sip-010", "trait-semi-fungible"]
+
+[contracts.trait-oracle]
+path = "contracts/traits/trait-oracle.clar"
+depends_on = []
+
+[contracts.trait-ownable]
+path = "contracts/traits/trait-ownable.clar"
+depends_on = []
+
+[contracts.trait-semi-fungible]
+path = "contracts/traits/trait-semi-fungible.clar"
+depends_on = []
+
+[contracts.trait-semi-fungible-v1-01]
+path = "contracts/traits/trait-semi-fungible-v1-01.clar"
+depends_on = []
+
+[contracts.trait-sip-010]
+path = "contracts/traits/trait-sip-010.clar"
+depends_on = []
+
+[contracts.trait-vault]
+path = "contracts/traits/trait-vault.clar"
+depends_on = ["trait-sip-010", "trait-flash-loan-user"]
+
+[contracts.yield-token-equation]
+path = "contracts/equations/yield-token-equation.clar"
+depends_on = [ "math-fixed-point" ]
+
+[contracts.yield-token-pool]
+path = "contracts/pool/yield-token-pool.clar"
+depends_on = [
+  "trait-ownable",
+  "trait-sip-010",
+  "trait-semi-fungible",
+  "alex-reserve-pool",
+  "alex-vault",
+  "fixed-weight-pool-v1-01",
+  "simple-weight-pool-alex"
+]
+
+[contracts.lbp-alex-usda-90-10]
+path = "contracts/pool-token/lbp-alex-usda-90-10.clar"
+depends_on = [ "trait-sip-010", "trait-ownable" ]
+
+[contracts.multisig-lbp-alex-usda-90-10]
+path = "contracts/multisig/multisig-lbp-alex-usda-90-10.clar"
+depends_on = [ "lbp-alex-usda-90-10" ]
+
+[contracts.lbp-alex-wstx-80-20]
+path = "contracts/pool-token/lbp-alex-wstx-80-20.clar"
+depends_on = [ "trait-sip-010", "trait-ownable" ]
+
+[contracts.multisig-lbp-alex-wstx-80-20]
+path = "contracts/multisig/multisig-lbp-alex-wstx-80-20.clar"
+depends_on = [ "lbp-alex-wstx-80-20" ]
+
+[contracts.multisig-crp-usda-wbtc]
+path = "contracts/multisig/multisig-crp-usda-wbtc.clar"
+depends_on = [
+  "yield-usda",
+  "key-usda-wbtc",
+  "collateral-rebalancing-pool-v1",
+  "trait-semi-fungible",
+  "trait-multisig-vote"
+]
+
+[contracts.multisig-crp-wbtc-wbtc]
+path = "contracts/multisig/multisig-crp-wbtc-wbtc.clar"
+depends_on = [
+  "yield-wbtc",
+  "key-wbtc-wbtc",
+  "collateral-rebalancing-pool-v1",
+  "trait-semi-fungible",
+  "trait-multisig-vote"
+]
+
+[contracts.multisig-crp-wbtc-usda]
+path = "contracts/multisig/multisig-crp-wbtc-usda.clar"
+depends_on = [
+  "yield-wbtc",
+  "key-wbtc-usda",
+  "collateral-rebalancing-pool-v1",
+  "trait-multisig-vote"
+]
+
+[contracts.multisig-ytp-yield-usda]
+path = "contracts/multisig/multisig-ytp-yield-usda.clar"
+depends_on = [ "ytp-yield-usda", "yield-usda", "yield-token-pool", "trait-multisig-vote" ]
+
+[contracts.key-wbtc-usda]
+path = "contracts/key-token/key-wbtc-usda.clar"
+depends_on = [ "trait-ownable", "trait-semi-fungible" ]
+
+[contracts.key-wbtc-wbtc]
+path = "contracts/key-token/key-wbtc-wbtc.clar"
+depends_on = [ "trait-ownable", "trait-semi-fungible" ]
+
+[contracts.yield-usda]
+path = "contracts/yield-token/yield-usda.clar"
+depends_on = ["trait-ownable", "trait-semi-fungible"]
+
+[contracts.yield-wbtc]
+path = "contracts/yield-token/yield-wbtc.clar"
+depends_on = ["trait-ownable", "trait-semi-fungible"]
+
+[contracts.ytp-yield-usda]
+path = "contracts/pool-token/ytp-yield-usda.clar"
+depends_on = ["trait-ownable", "trait-semi-fungible"]
+
+[contracts.ytp-yield-wbtc]
+path = "contracts/pool-token/ytp-yield-wbtc.clar"
+depends_on = [ "trait-ownable", "trait-semi-fungible" ]
+
+[contracts.alex-launchpad]
+path = "contracts/pool/alex-launchpad.clar"
+depends_on = [ "trait-ownable", "trait-sip-010", "token-wstx", "executor-dao" ]
+
+[contracts.staked-alex]
+path = "contracts/staked-token/staked-alex.clar"
+depends_on = [ "trait-ownable", "trait-semi-fungible" ]
+
+[contracts.staked-fwp-wstx-alex-50-50-v1-01]
+path = "contracts/staked-token/staked-fwp-wstx-alex-50-50-v1-01.clar"
+depends_on = [ "trait-ownable", "trait-semi-fungible" ]
+
+[contracts.flash-loan-user-margin-wbtc-usda]
+path = "contracts/flash-loan-user-margin-wbtc-usda.clar"
+depends_on = [
+  "trait-sip-010",
+  "trait-flash-loan-user",
+  "token-wbtc",
+  "yield-usda",
+  "key-usda-wbtc",
+  "collateral-rebalancing-pool-v1",
+  "yield-token-pool",
+  "swap-helper",
+  "multisig-ytp-yield-wbtc",
+  "multisig-ytp-yield-usda"
+]
+
+[contracts.lottery-t-alex]
+path = "contracts/lottery-tokens/lottery-t-alex.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+
+[contracts.token-unauthorised]
+path = "contracts/tests/token-unauthorised.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+
+[contracts.flash-loan-user-unauthorised]
+path = "contracts/tests/flash-loan-user-unauthorised.clar"
+depends_on = [ "trait-flash-loan-user" ]
+
+[contracts.exchange]
+path = "contracts/exchange.clar"
+depends_on = [ "trait-ownable", "age000-governance-token" ]
+
+[contracts.lottery-ido-alex]
+path = "contracts/lottery-tokens/lottery-ido-alex.clar"
+depends_on = ["trait-ownable", "trait-sip-010"]
+
+[contracts.flash-loan-user-margin-wbtc-wstx]
+path = "contracts/flash-loan-user-margin-wbtc-wstx.clar"
+depends_on = [
+  "trait-sip-010",
+  "trait-flash-loan-user",
+  "token-wbtc",
+  "yield-wstx",
+  "key-wstx-wbtc",
+  "collateral-rebalancing-pool-v1",
+  "yield-token-pool",
+  "fixed-weight-pool-v1-01",
+  "multisig-ytp-yield-wbtc",
+  "multisig-ytp-yield-wstx"
+]
+
+[contracts.yield-wstx]
+path = "contracts/yield-token/yield-wstx.clar"
+depends_on = [ "trait-ownable", "trait-semi-fungible" ]
+
+[contracts.multisig-ytp-yield-wstx]
+path = "contracts/multisig/multisig-ytp-yield-wstx.clar"
+depends_on = [ "ytp-yield-wstx", "yield-wstx", "yield-token-pool", "trait-multisig-vote" ]
+
+[contracts.ytp-yield-wstx]
+path = "contracts/pool-token/ytp-yield-wstx.clar"
+depends_on = [ "trait-ownable", "trait-semi-fungible" ]
+
+[contracts.multisig-crp-wstx-wbtc]
+path = "contracts/multisig/multisig-crp-wstx-wbtc.clar"
+depends_on = [ "yield-wstx", "key-wstx-wbtc", "collateral-rebalancing-pool-v1", "trait-multisig-vote" ]
+
+[contracts.key-wstx-wbtc]
+path = "contracts/key-token/key-wstx-wbtc.clar"
+depends_on = [ "trait-ownable", "trait-semi-fungible" ]
+
+[contracts.key-wstx-alex]
+path = "contracts/key-token/key-wstx-alex.clar"
+depends_on = [ "trait-ownable", "trait-semi-fungible" ]
+
+[contracts.token-t-alex]
+path = "contracts/token/token-t-alex.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+
+[contracts.weighted-equation-v1-01]
+path = "contracts/equations/weighted-equation-v1-01.clar"
+depends_on = [ "math-fixed-point" ]
+
+[contracts.fixed-weight-pool-v1-01]
+path = "contracts/pool/fixed-weight-pool-v1-01.clar"
+depends_on = [
+  "alex-vault",
+  "trait-sip-010",
+  "trait-vault",
+  "weighted-equation-v1-01",
+  "alex-reserve-pool",
+  "token-wstx"
+]
+
+[contracts.fixed-weight-pool-v1-02]
+path = "contracts/pool/fixed-weight-pool-v1-02.clar"
+depends_on = [
+  "alex-vault",
+  "trait-sip-010",
+  "trait-vault",
+  "weighted-equation-v1-01",
+  "alex-reserve-pool",
+  "token-wstx"
+]
+
+[contracts.fixed-weight-pool-alex]
+path = "contracts/pool/fixed-weight-pool-alex.clar"
+depends_on = [
+  "alex-vault",
+  "trait-sip-010",
+  "trait-vault",
+  "weighted-equation-v1-01",
+  "fixed-weight-pool-v1-01",
+  "alex-reserve-pool",
+  "age000-governance-token",
+  "token-wstx"
+]
+
+[contracts.fwp-wstx-alex-50-50-v1-01]
+path = "contracts/pool-token/fwp-wstx-alex-50-50-v1-01.clar"
+depends_on = [ "trait-sip-010", "trait-ownable" ]
+
+[contracts.multisig-fwp-wstx-alex-50-50-v1-01]
+path = "contracts/multisig/multisig-fwp-wstx-alex-50-50-v1-01.clar"
+depends_on = [
+  "fwp-wstx-alex-50-50-v1-01",
+  "fixed-weight-pool-v1-01",
+  "trait-multisig-vote"
+]
+
+[contracts.fwp-wstx-wbtc-50-50-v1-01]
+path = "contracts/pool-token/fwp-wstx-wbtc-50-50-v1-01.clar"
+depends_on = [ "trait-sip-010", "trait-ownable" ]
+
+[contracts.multisig-fwp-wstx-wbtc-50-50-v1-01]
+path = "contracts/multisig/multisig-fwp-wstx-wbtc-50-50-v1-01.clar"
+depends_on = [
+  "fwp-wstx-wbtc-50-50-v1-01",
+  "fixed-weight-pool-v1-01",
+  "trait-multisig-vote"
+]
+
+[contracts.multisig-fwp-alex-wbtc-50-50]
+path = "contracts/multisig/multisig-fwp-alex-wbtc-50-50.clar"
+depends_on = [
+  "fwp-alex-wbtc-50-50",
+  "fixed-weight-pool-alex",
+  "trait-multisig-vote"
+]
+
+[contracts.fwp-wstx-usda-50-50-v1-01]
+path = "contracts/pool-token/fwp-wstx-usda-50-50-v1-01.clar"
+depends_on = [ "trait-sip-010", "trait-ownable" ]
+
+[contracts.multisig-fwp-wstx-usda-50-50-v1-01]
+path = "contracts/multisig/multisig-fwp-wstx-usda-50-50-v1-01.clar"
+depends_on = [
+  "fwp-wstx-usda-50-50-v1-01",
+  "fixed-weight-pool-v1-01",
+  "trait-multisig-vote"
+]
+
+[contracts.fwp-alex-usda]
+path = "contracts/pool-token/fwp-alex-usda.clar"
+depends_on = [ "trait-sip-010", "trait-ownable" ]
+
+[contracts.fwp-alex-wbtc-50-50]
+path = "contracts/pool-token/fwp-alex-wbtc-50-50.clar"
+depends_on = [ "trait-sip-010", "trait-ownable" ]
+
+[contracts.swap-helper]
+path = "contracts/helpers/swap-helper.clar"
+depends_on = [ "trait-sip-010", "fixed-weight-pool-v1-01", "simple-weight-pool-alex" ]
+
+[contracts.swap-helper-v1-01]
+path = "contracts/helpers/swap-helper-v1-01.clar"
+depends_on = [ "trait-sip-010", "fixed-weight-pool-v1-01", "simple-weight-pool-alex" ]
+
+[contracts.swap-helper-v1-02]
+path = "contracts/helpers/swap-helper-v1-02.clar"
+depends_on = [ "trait-sip-010", "fixed-weight-pool-v1-01", "simple-weight-pool-alex" ]
+
+[contracts.simple-equation]
+path = "contracts/equations/simple-equation.clar"
+depends_on = [ "math-fixed-point" ]
+
+[contracts.simple-weight-pool-alex]
+path = "contracts/pool/simple-weight-pool-alex.clar"
+depends_on = [
+  "alex-vault",
+  "trait-sip-010",
+  "trait-vault",
+  "simple-equation",
+  "alex-reserve-pool",
+  "age000-governance-token",
+]
+
+[contracts.multisig-fwp-alex-usda]
+path = "contracts/multisig/multisig-fwp-alex-usda.clar"
+depends_on = [
+  "fwp-alex-usda",
+  "simple-weight-pool-alex",
+  "trait-multisig-vote"
+]
+
+[contracts.alex-launchpad-v1-1]
+path = "contracts/pool/alex-launchpad-v1-1.clar"
+depends_on = ["trait-sip-010", "trait-ido-ft", "token-apower"]
+
+[contracts.alex-launchpad-v1-2]
+path = "contracts/pool/alex-launchpad-v1-2.clar"
+depends_on = ["trait-sip-010", "trait-ido-ft", "token-apower"]
+
+[contracts.alex-launchpad-v1-3]
+path = "contracts/pool/alex-launchpad-v1-3.clar"
+depends_on = ["trait-sip-010", "trait-ido-ft", "token-apower"]
+
+[contracts.alex-launchpad-v1-4]
+path = "contracts/pool/alex-launchpad-v1-4.clar"
+depends_on = ["trait-sip-010", "token-apower"]
+
+[contracts.alex-launchpad-v1-5]
+path = "contracts/pool/alex-launchpad-v1-5.clar"
+depends_on = ["trait-sip-010", "token-apower"]
+
+[contracts.alex-launchpad-v1-6]
+path = "contracts/pool/alex-launchpad-v1-6.clar"
+depends_on = ["trait-sip-010", "token-apower"]
+
+[contracts.token-banana]
+path = "contracts/token/token-banana.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+
+[contracts.token-wban]
+path = "contracts/wrapped-token/token-wban.clar"
+depends_on = [ "trait-ownable", "trait-sip-010", "token-banana", "trait-ido-ft"]
+
+[contracts.fwp-alex-wban]
+path = "contracts/pool-token/fwp-alex-wban.clar"
+depends_on = [ "trait-sip-010", "trait-ownable" ]
+
+[contracts.multisig-fwp-alex-wban]
+path = "contracts/multisig/multisig-fwp-alex-wban.clar"
+depends_on = [
+  "fwp-alex-wban",
+  "simple-weight-pool-alex",
+  "trait-multisig-vote"
+]
+
+[contracts.trait-ido-ft]
+path = "contracts/traits/trait-ido-ft.clar"
+depends_on = [ ]
+
+[contracts.simple-weight-pool]
+path = "contracts/pool/simple-weight-pool.clar"
+depends_on = [
+  "alex-vault",
+  "trait-sip-010",
+  "trait-vault",
+  "simple-equation",
+  "alex-reserve-pool",
+  "token-wstx",
+]
+
+[contracts.multisig-fwp-wstx-usda]
+path = "contracts/multisig/multisig-fwp-wstx-usda.clar"
+depends_on = [
+  "fwp-wstx-usda-50-50-v1-01",
+  "simple-weight-pool",
+  "trait-multisig-vote"
+]
+
+[contracts.key-usda-alex]
+path = "contracts/key-token/key-usda-alex.clar"
+depends_on = [ "trait-ownable", "trait-semi-fungible" ]
+
+[contracts.flash-loan-user-margin-alex-usda]
+path = "contracts/flash-loan-user-margin-alex-usda.clar"
+depends_on = [
+  "trait-sip-010",
+  "trait-flash-loan-user",
+  "age000-governance-token",
+  "yield-usda",
+  "key-usda-alex",
+  "collateral-rebalancing-pool-v1",
+  "yield-token-pool",
+  "swap-helper",
+  "token-wusda"
+]
+
+[contracts.multisig-crp-wbtc-alex]
+path = "contracts/multisig/multisig-crp-wbtc-alex.clar"
+depends_on = [
+  "yield-wbtc",
+  "key-wbtc-alex",
+  "collateral-rebalancing-pool-v1",
+  "trait-multisig-vote"
+]
+
+[contracts.multisig-crp-wbtc-wban]
+path = "contracts/multisig/multisig-crp-wbtc-wban.clar"
+depends_on = [
+  "yield-wbtc",
+  "key-wbtc-wban",
+  "collateral-rebalancing-pool-v1",
+  "trait-multisig-vote"
+]
+
+[contracts.key-wbtc-alex]
+path = "contracts/key-token/key-wbtc-alex.clar"
+depends_on = [ "trait-ownable", "trait-semi-fungible" ]
+
+[contracts.key-wbtc-wban]
+path = "contracts/key-token/key-wbtc-wban.clar"
+depends_on = [ "trait-ownable", "trait-semi-fungible" ]
+
+[contracts.fwp-alex-autoalex]
+path = "contracts/pool-token/fwp-alex-autoalex.clar"
+depends_on = [ "trait-sip-010", "trait-ownable" ]
+
+[contracts.multisig-fwp-alex-autoalex]
+path = "contracts/multisig/multisig-fwp-alex-autoalex.clar"
+depends_on = [ "fwp-alex-autoalex", "simple-weight-pool-alex", "trait-multisig-vote" ]
+
+[contracts.multisig-crp-alex-autoalex-v1]
+path = "contracts/multisig/multisig-crp-alex-autoalex-v1.clar"
+depends_on = [
+  "yield-alex-v1",
+  "key-alex-autoalex-v1",
+  "collateral-rebalancing-pool-v1",
+  "trait-multisig-vote"
+]
+
+[contracts.multisig-ytp-alex]
+path = "contracts/multisig/multisig-ytp-alex.clar"
+depends_on = [ "ytp-alex-v1", "yield-alex-v1", "yield-token-pool", "trait-multisig-vote" ]
+
+[contracts.key-alex-autoalex-v1]
+path = "contracts/key-token/key-alex-autoalex-v1.clar"
+depends_on = [ "trait-ownable", "trait-semi-fungible" ]
+
+[contracts.yield-alex-v1]
+path = "contracts/yield-token/yield-alex-v1.clar"
+depends_on = ["trait-ownable", "trait-semi-fungible"]
+
+[contracts.ytp-alex-v1]
+path = "contracts/pool-token/ytp-alex-v1.clar"
+depends_on = ["trait-ownable", "trait-semi-fungible"]
+
+[contracts.auto-ytp-alex]
+path = "contracts/auto-token/auto-ytp-alex.clar"
+depends_on = [ "trait-sip-010", "trait-ownable" ]
+
+[contracts.auto-yield-alex]
+path = "contracts/auto-token/auto-yield-alex.clar"
+depends_on = [ "trait-sip-010", "trait-ownable" ]
+
+[contracts.auto-key-alex-autoalex]
+path = "contracts/auto-token/auto-key-alex-autoalex.clar"
+depends_on = [ "trait-sip-010", "trait-ownable" ]
+
+[contracts.dual-farming-pool]
+path = "contracts/pool/dual-farming-pool.clar"
+depends_on = [ "trait-ownable", "trait-sip-010", "trait-transfer", "alex-reserve-pool" ]
+
+[contracts.dual-farming-pool-v1-01]
+path = "contracts/helpers/dual-farming-pool-v1-01.clar"
+depends_on = [ "trait-ownable", "trait-sip-010", "alex-reserve-pool", "auto-alex-v2" ]
+
+[contracts.dual-farming-pool-v1-02]
+path = "contracts/helpers/dual-farming-pool-v1-02.clar"
+depends_on = [ "trait-ownable", "trait-sip-010", "alex-reserve-pool", "auto-alex-v2" ]
+
+[contracts.dual-farming-pool-v1-03]
+path = "contracts/helpers/dual-farming-pool-v1-03.clar"
+depends_on = [ "trait-ownable", "trait-sip-010", "alex-reserve-pool", "auto-alex-v2" ]
+
+[contracts.trait-transfer]
+path = "contracts/traits/trait-transfer.clar"
+depends_on = [ ]
+
+[contracts.dual-farm-diko-helper]
+path = "contracts/helpers/dual-farm-diko-helper.clar"
+depends_on = [ "trait-transfer", "token-wdiko" ]
+
+[contracts.token-diko]
+path = "contracts/token/token-diko.clar"
+depends_on = ["trait-ownable", "trait-sip-010"]
+
+[contracts.token-wdiko]
+path = "contracts/wrapped-token/token-wdiko.clar"
+depends_on = ["trait-ownable", "trait-sip-010", "token-diko" ]
+
+[contracts.stable-swap-pool]
+path = "contracts/pool/stable-swap-pool.clar"
+depends_on = [
+  "alex-vault",
+  "trait-sip-010",
+  "trait-vault",
+  "alex-reserve-pool",
+  "token-wxusd",
+]
+
+[contracts.auto-alex]
+path = "contracts/auto-token/auto-alex.clar"
+depends_on = [ "trait-sip-010", "trait-ownable", "age000-governance-token", "alex-reserve-pool", "staking-helper" ]
+
+[contracts.auto-fwp-wstx-alex]
+path = "contracts/auto-token/auto-fwp-wstx-alex.clar"
+depends_on = [ "trait-sip-010", "trait-ownable", "age000-governance-token", "fwp-wstx-alex-50-50-v1-01", "alex-reserve-pool" ]
+
+[contracts.auto-fwp-wstx-alex-120]
+path = "contracts/auto-token/auto-fwp-wstx-alex-120.clar"
+depends_on = [ "trait-sip-010", "trait-ownable", "age000-governance-token", "fwp-wstx-alex-50-50-v1-01", "alex-reserve-pool" ]
+
+[contracts.auto-fwp-wstx-alex-120x]
+path = "contracts/auto-token/auto-fwp-wstx-alex-120x.clar"
+depends_on = [ "trait-sip-010", "trait-ownable", "fixed-weight-pool-v1-01", "token-wstx", "age000-governance-token", "auto-fwp-wstx-alex-120" ]
+
+[contracts.auto-fwp-alex-usda]
+path = "contracts/auto-token/auto-fwp-alex-usda.clar"
+depends_on = [ "trait-sip-010", "trait-ownable", "age000-governance-token", "token-wusda", "fwp-alex-usda", "alex-reserve-pool", "dual-farming-pool", "dual-farm-diko-helper", "token-wdiko" ]
+
+[contracts.auto-fwp-alex-usda-100]
+path = "contracts/auto-token/auto-fwp-alex-usda-100.clar"
+depends_on = [ "trait-sip-010", "trait-ownable", "age000-governance-token", "token-wusda", "fwp-alex-usda", "alex-reserve-pool", "dual-farming-pool", "dual-farm-diko-helper", "token-wdiko" ]
+
+[contracts.auto-fwp-alex-usda-100x]
+path = "contracts/auto-token/auto-fwp-alex-usda-100x.clar"
+depends_on = [ "trait-sip-010", "trait-ownable", "simple-weight-pool-alex", "token-wusda", "age000-governance-token" ]
+
+[contracts.token-slime]
+path = "contracts/token/token-slime.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+
+[contracts.token-wslm]
+path = "contracts/wrapped-token/token-wslm.clar"
+depends_on = [ "trait-ownable", "trait-sip-010", "token-slime"]
+
+[contracts.fwp-alex-wslm]
+path = "contracts/pool-token/fwp-alex-wslm.clar"
+depends_on = [ "trait-sip-010", "trait-ownable" ]
+
+[contracts.multisig-fwp-alex-wslm]
+path = "contracts/multisig/multisig-fwp-alex-wslm.clar"
+depends_on = [
+  "fwp-alex-wslm",
+  "simple-weight-pool-alex",
+  "trait-multisig-vote"
+]
+
+[contracts.farming-helper]
+path = "contracts/helpers/farming-helper.clar"
+depends_on = [ "alex-reserve-pool", "staking-helper", "trait-sip-010" ]
+
+[contracts.token-xusd]
+path = "contracts/token/token-xusd.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+
+[contracts.token-wxusd]
+path = "contracts/wrapped-token/token-wxusd.clar"
+depends_on = [ "trait-ownable", "trait-sip-010", "token-xusd"]
+
+[contracts.fwp-alex-wxusd]
+path = "contracts/pool-token/fwp-alex-wxusd.clar"
+depends_on = [ "trait-sip-010", "trait-ownable" ]
+
+[contracts.multisig-fwp-alex-wxusd]
+path = "contracts/multisig/multisig-fwp-alex-wxusd.clar"
+depends_on = [
+  "fwp-alex-wxusd",
+  "simple-weight-pool-alex",
+  "trait-multisig-vote"
+]
+
+[contracts.token-mia]
+path = "contracts/token/token-mia.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+
+[contracts.token-wmia]
+path = "contracts/wrapped-token/token-wmia.clar"
+depends_on = [ "trait-ownable", "trait-sip-010", "token-mia"]
+
+[contracts.fwp-alex-wmia]
+path = "contracts/pool-token/fwp-alex-wmia.clar"
+depends_on = [ "trait-sip-010", "trait-ownable" ]
+
+[contracts.multisig-fwp-alex-wmia]
+path = "contracts/multisig/multisig-fwp-alex-wmia.clar"
+depends_on = [
+  "fwp-alex-wmia",
+  "simple-weight-pool-alex",
+  "trait-multisig-vote"
+]
+
+[contracts.token-nycc]
+path = "contracts/token/token-nycc.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+
+[contracts.token-wnycc]
+path = "contracts/wrapped-token/token-wnycc.clar"
+depends_on = [ "trait-ownable", "trait-sip-010", "token-nycc"]
+
+[contracts.fwp-alex-wnycc]
+path = "contracts/pool-token/fwp-alex-wnycc.clar"
+depends_on = [ "trait-sip-010", "trait-ownable" ]
+
+[contracts.multisig-fwp-alex-wnycc]
+path = "contracts/multisig/multisig-fwp-alex-wnycc.clar"
+depends_on = [
+  "fwp-alex-wnycc",
+  "simple-weight-pool-alex",
+  "trait-multisig-vote"
+]
+
+[contracts.fwp-wstx-wxusd-50-50-v1-01]
+path = "contracts/pool-token/fwp-wstx-wxusd-50-50-v1-01.clar"
+depends_on = [ "trait-sip-010", "trait-ownable" ]
+
+[contracts.multisig-fwp-wstx-wxusd-50-50-v1-01]
+path = "contracts/multisig/multisig-fwp-wstx-wxusd-50-50-v1-01.clar"
+depends_on = [
+  "fwp-wstx-wxusd-50-50-v1-01",
+  "fixed-weight-pool-v1-01",
+  "trait-multisig-vote",
+  "token-wstx",
+  "token-wxusd"
+]
+
+[contracts.flash-loan-user-autoalex-to-alex]
+path = "contracts/flash-loan-user-autoalex-to-alex.clar"
+depends_on = [
+  "trait-sip-010",
+  "trait-flash-loan-user",
+  "auto-alex",
+  "age000-governance-token",
+  "swap-helper-v1-01"
+]
+
+[contracts.autoalex-apower-helper]
+path = "contracts/helpers/autoalex-apower-helper.clar"
+depends_on = [ "auto-alex", "token-apower" ]
+
+[contracts.auto-fwp-alex-autoalex-x-v1-01]
+path = "contracts/auto-token/auto-fwp-alex-autoalex-x-v1-01.clar"
+depends_on = [ "trait-semi-fungible-v1-01", "trait-ownable", "simple-weight-pool-alex", "auto-alex", "age000-governance-token", "fwp-alex-autoalex" ]
+
+[contracts.fwp-wstx-wmia-50-50-v1-01]
+path = "contracts/pool-token/fwp-wstx-wmia-50-50-v1-01.clar"
+depends_on = [ "trait-sip-010", "trait-ownable" ]
+
+[contracts.multisig-fwp-wstx-wmia-50-50-v1-01]
+path = "contracts/multisig/multisig-fwp-wstx-wmia-50-50-v1-01.clar"
+depends_on = [
+  "fwp-wstx-wmia-50-50-v1-01",
+  "fixed-weight-pool-v1-01",
+  "trait-multisig-vote",
+  "token-wstx",
+  "token-wmia"
+]
+
+[contracts.fwp-wstx-wnycc-50-50-v1-01]
+path = "contracts/pool-token/fwp-wstx-wnycc-50-50-v1-01.clar"
+depends_on = [ "trait-sip-010", "trait-ownable" ]
+
+[contracts.multisig-fwp-wstx-wnycc-50-50-v1-01]
+path = "contracts/multisig/multisig-fwp-wstx-wnycc-50-50-v1-01.clar"
+depends_on = [
+  "fwp-wstx-wnycc-50-50-v1-01",
+  "fixed-weight-pool-v1-01",
+  "trait-multisig-vote",
+  "token-wstx",
+  "token-wnycc"
+]
+
+[contracts.swap-helper-v1-03]
+path = "contracts/helpers/swap-helper-v1-03.clar"
+depends_on = [ "trait-sip-010", "fixed-weight-pool-v1-01", "simple-weight-pool-alex" ]
+
+[contracts.fwp-wstx-alex-tranched-64]
+path = "contracts/pool/fwp-wstx-alex-tranched-64.clar"
+depends_on = [ "trait-sip-010", "trait-ownable", "age000-governance-token", "fwp-wstx-alex-50-50-v1-01", "alex-reserve-pool", "fixed-weight-pool-v1-01", "token-wstx", "age000-governance-token" ]
+
+[contracts.alex-lottery]
+path = "contracts/pool/alex-lottery.clar"
+depends_on = ["trait-sip-010"]
+
+[contracts.roll-auto-helper-1]
+path = "contracts/helpers/roll-auto-helper-1.clar"
+depends_on = ["swap-helper-v1-03", "age000-governance-token", "auto-alex", "collateral-rebalancing-pool-v1", "ytp-alex-v1", "yield-alex-v1", "key-alex-autoalex-v1", "auto-ytp-alex", "auto-key-alex-autoalex" ]
+
+[contracts.total-value-locked-helper]
+path = "contracts/helpers/total-value-locked-helper.clar"
+depends_on = ["trait-sip-010", "alex-reserve-pool"]
+
+[contracts.redeem-auto-helper]
+path = "contracts/helpers/redeem-auto-helper.clar"
+depends_on = []
+
+[contracts.multisig-crp-xusd-xbtc]
+path = "contracts/multisig/multisig-crp-xusd-xbtc.clar"
+depends_on = [
+  "yield-xusd",
+  "key-xusd-xbtc",
+  "collateral-rebalancing-pool-v1",
+  "trait-multisig-vote"
+]
+
+[contracts.multisig-ytp-xusd]
+path = "contracts/multisig/multisig-ytp-xusd.clar"
+depends_on = [ "ytp-xusd", "yield-xusd", "yield-token-pool", "trait-multisig-vote" ]
+
+[contracts.key-xusd-xbtc]
+path = "contracts/key-token/key-xusd-xbtc.clar"
+depends_on = [ "trait-ownable", "trait-semi-fungible" ]
+
+[contracts.yield-xusd]
+path = "contracts/yield-token/yield-xusd.clar"
+depends_on = ["trait-ownable", "trait-semi-fungible"]
+
+[contracts.ytp-xusd]
+path = "contracts/pool-token/ytp-xusd.clar"
+depends_on = ["trait-ownable", "trait-semi-fungible"]
+
+[contracts.auto-ytp-xusd]
+path = "contracts/auto-token/auto-ytp-xusd.clar"
+depends_on = [ "trait-sip-010", "trait-ownable" ]
+
+[contracts.auto-yield-xusd]
+path = "contracts/auto-token/auto-yield-xusd.clar"
+depends_on = [ "trait-sip-010", "trait-ownable" ]
+
+[contracts.auto-key-xusd-xbtc]
+path = "contracts/auto-token/auto-key-xusd-xbtc.clar"
+depends_on = [ "trait-sip-010", "trait-ownable" ]
+
+[contracts.cofarm-apower-helper]
+path = "contracts/helpers/cofarm-apower-helper.clar"
+depends_on = [ "trait-ownable", "fwp-wstx-alex-tranched-64", "alex-reserve-pool", "auto-alex", "token-apower" ]
+
+[contracts.lottery-claim-helper]
+path = "contracts/helpers/lottery-claim-helper.clar"
+depends_on = [ "trait-ownable", "alex-lottery" ]
+
+[contracts.bridge-helper]
+path = "contracts/helpers/bridge-helper.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+
+[contracts.token-wxusd-tokensoft]
+path = "contracts/wrapped-token/token-wxusd-tokensoft.clar"
+depends_on = [ "trait-ownable", "trait-sip-010"]
+
+[contracts.faucet-xusd-tokensoft]
+path = "contracts/helpers/faucet-xusd-tokensoft.clar"
+depends_on = [ "token-wxusd-tokensoft" ]
+
+[contracts.stable-wxusd-wusda]
+path = "contracts/pool-token/stable-wxusd-wusda.clar"
+depends_on = [ "trait-sip-010", "trait-ownable" ]
+
+[contracts.amm-swap-pool]
+path = "contracts/pool/amm-swap-pool.clar"
+depends_on = ["trait-ownable", "trait-sip-010", "token-amm-swap-pool"]
+
+[contracts.token-amm-swap-pool]
+path = "contracts/pool-token/token-amm-swap-pool.clar"
+depends_on = ["trait-ownable", "trait-semi-fungible"]
+
+[contracts.flash-loan-user-usda-to-xusd]
+path = "contracts/flash-loan-user-usda-to-xusd.clar"
+depends_on = ["amm-swap-pool", "swap-helper-v1-03"]
+
+[contracts.flash-loan-user-xusd-to-usda]
+path = "contracts/flash-loan-user-xusd-to-usda.clar"
+
+[contracts.token-corgi]
+path = "contracts/token/token-corgi.clar"
+depends_on = ["trait-ownable", "trait-sip-010"]
+
+[contracts.token-wcorgi]
+path = "contracts/wrapped-token/token-wcorgi.clar"
+depends_on = ["token-corgi"]
+
+[contracts.flash-loan-user-wstx-to-diko]
+path = "contracts/flash-loan-user-wstx-to-diko.clar"
+
+[contracts.flash-loan-user-diko-to-wstx]
+path = "contracts/flash-loan-user-wstx-to-diko.clar"
+
+[contracts.swap-helper-bridged]
+path = "contracts/helpers/swap-helper-bridged.clar"
+depends_on = [
+  "trait-sip-010",
+  "amm-swap-pool"
+]
+
+[contracts.swap-helper-bridged-v1-1]
+path = "contracts/helpers/swap-helper-bridged-v1-1.clar"
+depends_on = [
+  "trait-sip-010",
+  "amm-swap-pool-v1-1"
+]
+
+[contracts.alex-vault-v1-1]
+path = "contracts/alex-vault-v1-1.clar"
+depends_on = [
+  "trait-vault",
+  "trait-sip-010",
+  "trait-flash-loan-user",
+  "trait-ownable",
+  "trait-semi-fungible"
+]
+
+[contracts.amm-swap-pool-v1-1]
+path = "contracts/pool/amm-swap-pool-v1-1.clar"
+depends_on = ["trait-ownable", "trait-sip-010", "token-amm-swap-pool-v1-1"]
+
+[contracts.token-amm-swap-pool-v1-1]
+path = "contracts/pool-token/token-amm-swap-pool-v1-1.clar"
+depends_on = ["trait-ownable", "trait-semi-fungible", "alex-vault-v1-1"]
+
+[contracts.token-susdt]
+path = "contracts/bridge/bridged-tokens/token-susdt.clar"
+depends_on = ["trait-ownable", "trait-sip-010"]
+
+[contracts.token-slunr]
+path = "contracts/bridge/bridged-tokens/token-slunr.clar"
+depends_on = ["trait-ownable", "trait-sip-010"]
+
+[contracts.bridge-endpoint-v1-02]
+path = "contracts/bridge/bridge-endpoint-v1-02.clar"
+depends_on = ["trait-ownable", "trait-sip-010", "token-susdt", "token-slunr"]
+clarity_version = 2
+epoch = "2.1"
+
+[contracts.bridge-registration-helper-v1-02]
+path = "contracts/bridge/bridge-registration-helper-v1-02.clar"
+depends_on = ["bridge-endpoint-v1-02"]
+clarity_version = 2
+epoch = "2.1"
+
+[contracts.auto-alex-v2]
+path = "contracts/auto-token/auto-alex-v2.clar"
+depends_on = [ "trait-sip-010", "trait-ownable", "age000-governance-token", "alex-reserve-pool", "staking-helper" ]
+
+[contracts.flash-loan-user-amm-to-fixed-stx-alex]
+path = "contracts/flash-loan-user-amm-to-fixed-stx-alex.clar"
+
+[contracts.flash-loan-user-fixed-to-amm-stx-alex]
+path = "contracts/flash-loan-user-fixed-to-amm-stx-alex.clar"
+
+[contracts.flash-loan-user-amm-to-fixed-stx-xbtc]
+path = "contracts/flash-loan-user-amm-to-fixed-stx-xbtc.clar"
+
+[contracts.flash-loan-user-fixed-to-amm-stx-xbtc]
+path = "contracts/flash-loan-user-fixed-to-amm-stx-xbtc.clar"
+
+[contracts.auto-alex-buyback-helper]
+path = "contracts/helpers/auto-alex-buyback-helper.clar"
+
+[contracts.alex-reserve-pool-sft]
+path = "contracts/pool/alex-reserve-pool-sft.clar"
+depends_on = [
+  "trait-ownable",
+  "trait-sip-010",
+  "alex-vault",
+  "age000-governance-token",
+  "token-apower",
+  "trait-semi-fungible"
+]
+
+[contracts.staking-helper-sft]
+path = "contracts/helpers/staking-helper-sft.clar"
+depends_on = [ "alex-reserve-pool-sft", "trait-semi-fungible" ]
+
+[contracts.token-vibes]
+path = "contracts/token/token-vibes.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+
+[contracts.token-wvibes]
+path = "contracts/wrapped-token/token-wvibes.clar"
+depends_on = [ "trait-ownable", "trait-sip-010", "token-vibes", "trait-ido-ft"]
+
+[contracts.autoalex-apower-helper-v2]
+path = "contracts/helpers/autoalex-apower-helper-v2.clar"
+depends_on = [ "auto-alex-v2", "token-apower" ]
+
+[contracts.autoalex-b20-helper-v2]
+path = "contracts/helpers/autoalex-b20-helper-v2.clar"
+depends_on = [ "auto-alex-v2", "token-apower", "brc20-db20" ]
+
+[contracts.brc20-db20]
+path = "contracts/token/brc20-db20.clar"
+depends_on = []
+
+[contracts.brc20-chax]
+path = "contracts/token/brc20-chax.clar"
+depends_on = []
+
+[contracts.flash-loan-user-amm-to-fixed-susdt-xusd]
+path = "contracts/flash-loan-user-amm-to-fixed-susdt-xusd.clar"
+
+[contracts.flash-loan-user-fixed-to-amm-susdt-xusd]
+path = "contracts/flash-loan-user-fixed-to-amm-susdt-xusd.clar"
+
+[contracts.flash-loan-user-amm-to-fixed-xusd-susdt]
+path = "contracts/flash-loan-user-amm-to-fixed-xusd-susdt.clar"
+
+[contracts.flash-loan-user-fixed-to-amm-xusd-susdt]
+path = "contracts/flash-loan-user-fixed-to-amm-xusd-susdt.clar"
+
+[contracts.ordinals-bluewheel]
+path = "contracts/token/ordinals-bluewheel.clar"
+
+[contracts.event-claim-helper-v1-01]
+path = "contracts/helpers/event-claim-helper-v1-01.clar"
+clarity_version = 2
+epoch = "2.1"
+
+[contracts.launchpad-with-pool-lock]
+path = "contracts/pool/launchpad-with-pool-lock.clar"
+
+[contracts.launchpad-with-pool-lock-v1-4]
+path = "contracts/pool/launchpad-with-pool-lock-v1-4.clar"
+
+[contracts.launchpad-with-pool-lock-v1-5]
+path = "contracts/pool/launchpad-with-pool-lock-v1-5.clar"
+
+[contracts.launchpad-with-pool-lock-v1-6]
+path = "contracts/pool/launchpad-with-pool-lock-v1-6.clar"
+
+[contracts.bridge-apower-helper]
+path = "contracts/helpers/bridge-apower-helper.clar"
+clarity_version = 2
+epoch = "2.4"
+
+[contracts.bridge-apower-helper-v1-01]
+path = "contracts/helpers/bridge-apower-helper-v1-01.clar"
+clarity_version = 2
+epoch = "2.4"
+
+[contracts.token-abtc]
+path = "contracts/bridge/bridged-tokens/token-abtc.clar"
+depends_on = ["trait-ownable", "trait-sip-010"]
+
+[contracts.sponsored-amm-swap-pool-v1-1]
+path = 'contracts/sponsored/sponsored-amm-swap-pool-v1-1.clar'
+depends_on= ["amm-swap-pool-v1-1"]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.sponsored-alex-launchpad-v1-4]
+path = 'contracts/sponsored/sponsored-alex-launchpad-v1-4.clar'
+depends_on = ["alex-launchpad-v1-4"]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.sponsored-alex-launchpad-v1-5]
+path = 'contracts/sponsored/sponsored-alex-launchpad-v1-5.clar'
+depends_on = ["alex-launchpad-v1-5"]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.sponsored-alex-launchpad-v1-6]
+path = 'contracts/sponsored/sponsored-alex-launchpad-v1-6.clar'
+depends_on = ["alex-launchpad-v1-6"]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.dual-farming-pool-sft]
+path = "contracts/helpers/dual-farming-pool-sft.clar"
+depends_on = [ "trait-ownable", "trait-sip-010", "alex-reserve-pool-sft", "auto-alex-v2", "trait-semi-fungible" ]
+
+[contracts.brc20-ordg]
+path = "contracts/token/brc20-ordg.clar"
+depends_on = []
+
+[contracts.vault-welsh-pool]
+path = "contracts/vault-token/vault-welsh-pool.clar"
+depends_on = ["token-amm-swap-pool", "token-wcorgi"]
+
+[contracts.stake-vault-welsh-pool]
+path = "contracts/vault-token/stake-vault-welsh-pool.clar"
+depends_on = ["vault-welsh-pool"]
+
+[contracts.token-mega]
+path = "contracts/token/token-mega.clar"
+depends_on = [ "trait-ownable", "trait-sip-010"]
+
+[contracts.token-wmega-v2]
+path = "contracts/wrapped-token/token-wmega-v2.clar"
+depends_on = [ "trait-ownable", "trait-sip-010", "token-mega"]
+
+[contracts.token-leo]
+path = "contracts/token/token-leo.clar"
+depends_on = ["trait-ownable", "trait-sip-010"]
+
+[contracts.token-wleo]
+path = "contracts/wrapped-token/token-wleo.clar"
+depends_on = [ "trait-ownable", "trait-sip-010", "token-leo"]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.alex-launchpad-v1-7]
+path = "contracts/pool/alex-launchpad-v1-7.clar"
+depends_on = ["trait-sip-010", "token-apower"]
+
+[contracts.launchpad-with-pool-lock-v1-7]
+path = "contracts/pool/launchpad-with-pool-lock-v1-7.clar"
+
+[contracts.brc20-reos]
+path = "contracts/token/brc20-reos.clar"
+depends_on = []
+
+[contracts.token-gus]
+path = "contracts/token/token-gus.clar"
+depends_on = ["trait-ownable", "trait-sip-010"]
+
+[contracts.token-wgus]
+path = "contracts/wrapped-token/token-wgus.clar"
+depends_on = [ "trait-ownable", "trait-sip-010", "token-gus"]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.brc20-ornj]
+path = "contracts/token/brc20-ornj.clar"
+depends_on = []
+
+[contracts.brc20-izip]
+path = "contracts/token/brc20-izip.clar"
+depends_on = []
+
+[contracts.launchpad-buyback-helper-v1-7]
+path = "contracts/helpers/launchpad-buyback-helper-v1-7.clar"
+depends_on = ["alex-launchpad-v1-7"]
+
+[contracts.sponsored-amm-swap-pool-v1-1a]
+path = 'contracts/sponsored/sponsored-amm-swap-pool-v1-1a.clar'
+depends_on= ["amm-swap-pool-v1-1"]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.sponsored-amm-swap-pool-a]
+path = 'contracts/sponsored/sponsored-amm-swap-pool-a.clar'
+depends_on= ["amm-swap-pool"]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.sponsored-amm-swap-pool]
+path = 'contracts/sponsored/sponsored-amm-swap-pool.clar'
+depends_on= ["amm-swap-pool"]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.sponsored-swap-helper-a]
+path = 'contracts/sponsored/sponsored-swap-helper-a.clar'
+depends_on= ["swap-helper-v1-03", "swap-helper-bridged-v1-1", "swap-helper-bridged"]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.sponsored-swap-helper]
+path = 'contracts/sponsored/sponsored-swap-helper.clar'
+depends_on= ["swap-helper-v1-03", "swap-helper-bridged-v1-1", "swap-helper-bridged"]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.sponsored-alex-launchpad-v1-7a]
+path = 'contracts/sponsored/sponsored-alex-launchpad-v1-7a.clar'
+depends_on = ["alex-launchpad-v1-7"]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.sponsored-alex-launchpad-v1-7]
+path = 'contracts/sponsored/sponsored-alex-launchpad-v1-7.clar'
+depends_on = ["alex-launchpad-v1-7"]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-long]
+path = "contracts/token/token-long.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+
+[contracts.token-wlong]
+path = "contracts/wrapped-token/token-wlong.clar"
+depends_on = [ "trait-ownable", "trait-sip-010", "token-long" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-stx404]
+path = "contracts/stx404-token/token-stx404.clar"
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-wstx404]
+path = "contracts/wrapped-token/token-wstx404.clar"
+depends_on = [ "trait-ownable", "trait-sip-010", "token-stx404"]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.trait-transfer-fixed]
+path = "contracts/traits/trait-transfer-fixed.clar"
+
+[contracts.trait-sft-transfer-fixed]
+path = "contracts/traits/trait-sft-transfer-fixed.clar"
+
+[contracts.trait-flash-loan-user-fixed]
+path = "contracts/traits/trait-flash-loan-user-fixed.clar"
+
+[contracts.token-wnothing]
+path = "contracts/token/token-wnothing.clar"
+depends_on = [ "trait-ownable", "trait-sip-010"]
+
+[contracts.token-wnthng]
+path = "contracts/wrapped-token/token-wnthng.clar"
+depends_on = [ "trait-ownable", "trait-sip-010", "token-wnothing"]
+
+[contracts.trait-rebase-sip-010]
+path = "contracts/traits/trait-rebase-sip-010.clar"
+
+[contracts.token-rebase-swap-pool]
+path = "contracts/pool-token/token-rebase-swap-pool.clar"
+clarity_version = 2
+epoch = 2.4
+
+[contracts.rebase-swap-pool]
+path = "contracts/pool/rebase-swap-pool.clar"
+clarity_version = 2
+epoch = 2.4
+
+[contracts.auto-alex-v3-2]
+path = "contracts/auto-token/auto-alex-v3-2.clar"
+depends_on = [ "trait-sip-010", "trait-ownable" ]
+
+[contracts.auto-alex-v3-2-wrapped]
+path = "contracts/auto-token/auto-alex-v3-2-wrapped.clar"
+depends_on = [ "trait-sip-010", "trait-ownable" ]
+
+[contracts.auto-alex-v3-2-registry]
+path = "contracts/auto-token/auto-alex-v3-2-registry.clar"
+depends_on = [ ]
+
+[contracts.auto-alex-v3-2-endpoint]
+path = "contracts/auto-token/auto-alex-v3-2-endpoint.clar"
+depends_on = [ "trait-sip-010", "age000-governance-token", "alex-reserve-pool" ]
+
+[contracts.stx20-bridge-endpoint-v1-01]
+path = "contracts/bridge/stx20-bridge-endpoint-v1-01.clar"
+clarity_version = 2
+epoch = 2.4
+
+[contracts.stx20-bridge-endpoint-v1-02]
+path = "contracts/bridge/stx20-bridge-endpoint-v1-02.clar"
+clarity_version = 2
+epoch = 2.4
+
+[contracts.stx20-bridge-registry-v1-01]
+path = "contracts/bridge/stx20-bridge-registry-v1-01.clar"
+clarity_version = 2
+epoch = 2.4
+
+[contracts.stx20-stxs]
+path = "contracts/token/stx20-stxs.clar"
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-aewbtc]
+path = "contracts/token/token-aewbtc.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-waewbtc]
+path = "contracts/wrapped-token/token-waewbtc.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-wmax]
+path = "contracts/wrapped-token/token-wmax.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-wplay]
+path = "contracts/wrapped-token/token-wplay.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-waeusdc]
+path = "contracts/wrapped-token/token-waeusdc.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-pepe]
+path = "contracts/token/token-pepe.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+[contracts.token-wpepe]
+path = "contracts/wrapped-token/token-wpepe.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-max]
+path = "contracts/token/token-max.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-play]
+path = "contracts/token/token-play.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-aeusdc]
+path = "contracts/token/token-aeusdc.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-nope]
+path = "contracts/token/token-nope.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+[contracts.token-wnope]
+path = "contracts/wrapped-token/token-wnope.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-mick]
+path = "contracts/token/token-mick.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-wmick]
+path = "contracts/wrapped-token/token-wmick.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-wfast]
+path = "contracts/wrapped-token/token-wfast.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-wfrodo]
+path = "contracts/wrapped-token/token-wfrodo.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-picsum-404]
+path = "contracts/token/token-picsum-404.clar"
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-wpicsum]
+path = "contracts/wrapped-token/token-wpicsum.clar"
+depends_on = [ "trait-ownable", "trait-sip-010", "token-picsum-404"]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-wwif]
+path = "contracts/wrapped-token/token-wwif.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.amm-swap-pool-helper-v1-1]
+path = "contracts/helpers/amm-swap-pool-helper-v1-1.clar"
+depends_on = [ ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.launchpad-vesting-helper-v1-7]
+path = "contracts/helpers/launchpad-vesting-helper-v1-7.clar"
+depends_on = ["alex-launchpad-v1-7"]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-ssko]
+path = "contracts/bridge/bridged-tokens/token-ssko.clar"
+depends_on = ["trait-ownable", "trait-sip-010"]
+
+# [contracts.token-ssl-wsbtc-08JSD]
+# path = "contracts/wrapped-token/token-ssl-wsbtc-08JSD.clar"
+# depends_on = [ ]
+# clarity_version = 2
+# epoch = 2.4
+
+[contracts.token-ssl-odin-ZA3ZC]
+path = "contracts/wrapped-token/token-ssl-odin-ZA3ZC.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-ssl-TwinsPig-AYTPG]
+path = "contracts/wrapped-token/token-ssl-TwinsPig-AYTPG.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-blif]
+path = "contracts/token/token-blif.clar"
+depends_on = ["trait-ownable", "trait-sip-010"]
+
+[contracts.token-ssl-PomBoo-VPNTA]
+path = "contracts/wrapped-token/token-ssl-PomBoo-VPNTA.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-ssl-Sv420-BQ33E]
+path = "contracts/wrapped-token/token-ssl-Sv420-BQ33E.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+# [contracts.token-wlqstx]
+# path = "contracts/wrapped-token/token-wlqstx.clar"
+# depends_on = [ "trait-ownable", "trait-sip-010"]
+# clarity_version = 2
+# epoch = 2.4
+
+# [contracts.token-wvlqstx]
+# path = "contracts/wrapped-token/token-wvlqstx.clar"
+# depends_on = [ "trait-ownable", "trait-sip-010"]
+# clarity_version = 2
+# epoch = 2.4
+
+[contracts.token-ssl-mooneeb-JGGPQS]
+path = "contracts/wrapped-token/token-ssl-mooneeb-JGGPQS.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-ssl-all-AESDE]
+path = "contracts/wrapped-token/token-ssl-all-AESDE.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+# [contracts.token-ssl-nakamoto-08JSD]
+# path = "contracts/wrapped-token/token-ssl-nakamoto-08JSD.clar"
+# depends_on = [ "trait-ownable", "trait-sip-010" ]
+# clarity_version = 2
+# epoch = 2.4
+
+[contracts.token-ssl-parker-QW155]
+path = "contracts/wrapped-token/token-ssl-parker-QW155.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-ssl-memegoatstx-E0G14]
+path = "contracts/wrapped-token/token-ssl-memegoatstx-E0G14.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.runes-dog]
+path = "contracts/token/runes-dog.clar"
+depends_on = []
+
+[contracts.token-ssl-stacks-rock-F6KBQ]
+path = "contracts/wrapped-token/token-ssl-stacks-rock-F6KBQ.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-ssl-pikachu-W1K62]
+path = "contracts/wrapped-token/token-ssl-pikachu-W1K62.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-ssl-meme3-PZFT3]
+path = "contracts/wrapped-token/token-ssl-meme3-PZFT3.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.token-ssl-hashiko-16Z1P]
+path = "contracts/wrapped-token/token-ssl-hashiko-16Z1P.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.4
+
+[contracts.runes-games]
+path = "contracts/token/runes-games.clar"
+depends_on = []
+
+[contracts.token-ssl-Runestone-7JYRJ]
+path = "contracts/wrapped-token/token-ssl-Runestone-7JYRJ.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.5
+
+[contracts.token-ssl-STXOSHI-RNTJY]
+path = "contracts/wrapped-token/token-ssl-STXOSHI-RNTJY.clar"
+depends_on = [ "trait-ownable", "trait-sip-010" ]
+clarity_version = 2
+epoch = 2.5

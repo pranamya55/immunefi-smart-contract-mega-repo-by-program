@@ -1,0 +1,8 @@
+[[package]]
+name = "dereferencing_operator_index"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-F936EAA5128B67EA"

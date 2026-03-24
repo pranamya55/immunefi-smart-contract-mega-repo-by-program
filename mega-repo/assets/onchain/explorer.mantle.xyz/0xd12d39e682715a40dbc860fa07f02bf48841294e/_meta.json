@@ -1,0 +1,8 @@
+{
+  "url": "https://explorer.mantle.xyz/address/0xd12d39e682715a40dbc860fa07f02bf48841294e",
+  "host": "explorer.mantle.xyz",
+  "address": "0xd12d39e682715a40dbc860fa07f02bf48841294e",
+  "chainid": 5000,
+  "mode": "bytecode-v2-proxy",
+  "bytecode_length_hex_chars": 17762
+}

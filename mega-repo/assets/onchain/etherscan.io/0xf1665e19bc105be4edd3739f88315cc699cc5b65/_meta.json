@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xf1665E19bc105BE4EDD3739F88315cC699cc5b65",
+  "host": "etherscan.io",
+  "address": "0xf1665E19bc105BE4EDD3739F88315cC699cc5b65",
+  "chainid": 1,
+  "project_slug": "balancer",
+  "asset_id": "3SDJ61MOcJeA0tj518drX9",
+  "contract_name": "LiquidityGaugeFactory",
+  "compiler_version": "v0.7.1+commit.f4a555be",
+  "optimization_used": "1",
+  "runs": "9999",
+  "constructor_arguments": "000000000000000000000000e5f96070ca00cd54795416b1a4b4c2403231c548",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

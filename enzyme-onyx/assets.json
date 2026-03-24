@@ -1,0 +1,186 @@
+[
+  {
+    "project_slug": "enzyme-onyx",
+    "asset_id": "cC2hBNCF0nM2dQNqYbgJ0",
+    "url": "https://github.com/enzymefinance/protocol-onyx/blob/85570db648edb66240564ae844d88d5a3f8fe610/src/components/value/position-trackers/LinearCreditDebtTracker.sol",
+    "description": "LinearCreditDebtTracker",
+    "added_at": "2026-01-26T17:05:24.474Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "enzyme-onyx",
+    "asset_id": "1GpqXEyFR1csrwRt8qhkOe",
+    "url": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/roles/LimitedAccessLimitedCallForwarder.sol",
+    "description": "LimitedAccessLimitedCallForwarder",
+    "added_at": "2025-09-03T17:48:17.365Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "enzyme-onyx",
+    "asset_id": "1lxYhwaQSjYQ3p8MAKUC16",
+    "url": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/shares/Shares.sol",
+    "description": "Shares",
+    "added_at": "2025-09-03T17:48:17.369Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "enzyme-onyx",
+    "asset_id": "3a2KMVVFmlxV04qJR275Bq",
+    "url": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/utils/StorageHelpersLib.sol",
+    "description": "StorageHelpersLib",
+    "added_at": "2025-09-03T17:48:19.116Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "enzyme-onyx",
+    "asset_id": "47gqDfHbzTZ8g3qzco0Lx2",
+    "url": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/value/ValuationHandler.sol",
+    "description": "ValuationHandler",
+    "added_at": "2025-09-03T17:48:17.333Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "enzyme-onyx",
+    "asset_id": "4vZ8TyuGH5uc7Zgxzokycz",
+    "url": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/fees/management-fee-trackers/ContinuousFlatRateManagementFeeTracker.sol",
+    "description": "ContinuousFlatRateManagementFeeTracker",
+    "added_at": "2025-09-03T17:48:17.428Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "enzyme-onyx",
+    "asset_id": "50sciYr24pFjZuDUXscQFW",
+    "url": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/infra/oracles/OneToOneAggregator.sol",
+    "description": "OneToOneAggregator",
+    "added_at": "2025-09-03T17:48:18.995Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "enzyme-onyx",
+    "asset_id": "5GgSOotezBM7jd26IKHXUz",
+    "url": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/value/position-trackers/AccountERC20Tracker.sol",
+    "description": "AccountERC20Tracker",
+    "added_at": "2025-09-03T17:48:18.934Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "enzyme-onyx",
+    "asset_id": "5RFLShgqBX1Za1455zTrVn",
+    "url": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/roles/OpenAccessLimitedCallForwarder.sol",
+    "description": "OpenAccessLimitedCallForwarder",
+    "added_at": "2025-09-03T17:48:19.354Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "enzyme-onyx",
+    "asset_id": "5wZaa27Bav3oatoFBQwLQ5",
+    "url": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/fees/FeeHandler.sol",
+    "description": "FeeHandler",
+    "added_at": "2025-09-03T17:48:17.366Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "enzyme-onyx",
+    "asset_id": "66B33THY54dkcAmiiwsHZe",
+    "url": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/global/Global.sol",
+    "description": "Global",
+    "added_at": "2025-09-03T17:48:19.031Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "enzyme-onyx",
+    "asset_id": "7H1UAtLRwkQiUWr5w5zyWo",
+    "url": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/issuance/redeem-handlers/ERC7540LikeRedeemQueue.sol",
+    "description": "ERC7540LikeRedeemQueue",
+    "added_at": "2025-09-03T17:48:18.983Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "enzyme-onyx",
+    "asset_id": "7hDKBBZmjL7Eqep9n50eBD",
+    "url": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/factories/ComponentBeaconProxy.sol",
+    "description": "ComponentBeaconProxy",
+    "added_at": "2025-09-03T17:48:17.373Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "enzyme-onyx",
+    "asset_id": "cjldh6LXFfMxrHoWa7JDk",
+    "url": "https://github.com/enzymefinance/protocol-onyx/blob/6bde0489b1a3196e6290b59e119748ecbeb8b8e4/src/components/fees/performance-fee-trackers/ContinuousFlatRatePerformanceFeeTracker.sol",
+    "description": "ContinuousFlatRatePerformanceFeeTracker",
+    "added_at": "2025-12-08T07:58:36.370Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "enzyme-onyx",
+    "asset_id": "98716",
+    "url": "https://immunefi.com/",
+    "description": "Primacy of Impact",
+    "added_at": "2026-02-06T15:58:36.804Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "enzyme-onyx",
+    "asset_id": "99109",
+    "url": "https://github.com/enzymefinance/protocol-onyx/blob/61ef53d2dfd17d83183d832529b148e6e15c26ab/src/infra/lists/address-list/OwnableAddressList.sol",
+    "description": "OwnableAddressList",
+    "added_at": "2026-02-24T13:14:13.104Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "enzyme-onyx",
+    "asset_id": "99110",
+    "url": "https://github.com/enzymefinance/protocol-onyx/blob/61ef53d2dfd17d83183d832529b148e6e15c26ab/src/components/shares-transfer-validators/AddressListsSharesTransferValidator.sol",
+    "description": "AddressListsSharesTransferValidator",
+    "added_at": "2026-02-24T13:14:13.104Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "enzyme-onyx",
+    "asset_id": "99111",
+    "url": "https://github.com/enzymefinance/protocol-onyx/blob/61ef53d2dfd17d83183d832529b148e6e15c26ab/src/components/lists/SharesOwnedAddressList.sol",
+    "description": "SharesOwnedAddressList",
+    "added_at": "2026-02-24T13:14:13.104Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "enzyme-onyx",
+    "asset_id": "99112",
+    "url": "https://github.com/enzymefinance/protocol-onyx/blob/61ef53d2dfd17d83183d832529b148e6e15c26ab/src/components/issuance/deposit-handlers/ERC7540LikeDepositQueue.sol",
+    "description": "ERC7540LikeDepositQueue - latest audited",
+    "added_at": "2026-02-24T13:14:13.104Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "enzyme-onyx",
+    "asset_id": "99113",
+    "url": "https://github.com/enzymefinance/protocol-onyx/blob/61ef53d2dfd17d83183d832529b148e6e15c26ab/src/components/automations/chainlink-cre/CreWorkflowConsumer.sol",
+    "description": "CreWorkflowConsumer",
+    "added_at": "2026-02-24T13:14:13.104Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "enzyme-onyx",
+    "asset_id": "99133",
+    "url": "https://github.com/enzymefinance/protocol-onyx/blob/df697194bdfbb883b6eff7a667b08debfcf467a0/src/utils/ValueHelpersLib.sol",
+    "description": "ValueHelpersLib",
+    "added_at": "2026-03-05T12:48:01.994Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "enzyme-onyx",
+    "asset_id": "99134",
+    "url": "https://github.com/enzymefinance/protocol-onyx/blob/df697194bdfbb883b6eff7a667b08debfcf467a0/src/components/issuance/deposit-handlers/SyncDepositHandler.sol",
+    "description": "SyncDepositHandler",
+    "added_at": "2026-03-05T12:48:01.994Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "enzyme-onyx",
+    "asset_id": "99285",
+    "url": "https://github.com/enzymefinance/protocol-onyx/blob/e68728ca987a3d003f8ccc962151ee333d3dcc0f/src/components/issuance/deposit-handlers/ERC7540LikeDepositQueue.sol",
+    "description": "ERC7540LikeDepositQueue - live",
+    "added_at": "2026-03-17T14:00:04.730Z",
+    "revision": 0
+  }
+]

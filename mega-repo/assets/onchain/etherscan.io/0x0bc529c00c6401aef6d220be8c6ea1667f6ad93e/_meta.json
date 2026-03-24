@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e#code",
+  "host": "etherscan.io",
+  "address": "0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e",
+  "chainid": 1,
+  "project_slug": "yearnfinance",
+  "asset_id": "4zrBrwqX0lJXwVmv3t9mS2",
+  "contract_name": "YFI",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": "0",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "bzzr://550d0f99ce1b508d46ec652e7b7c74f8267234c5be6b8fd1467d17dad8a53800",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

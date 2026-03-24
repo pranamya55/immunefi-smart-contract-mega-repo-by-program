@@ -1,0 +1,1 @@
+../../../../../../../../../mega-repo/assets/github/blob-snapshots/reserve-protocol/protocol/master/contracts/mixins/Versioned.sol

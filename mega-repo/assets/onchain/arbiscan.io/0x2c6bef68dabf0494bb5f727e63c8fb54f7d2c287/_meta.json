@@ -1,0 +1,19 @@
+{
+  "url": "https://arbiscan.io/address/0x2c6bef68dabf0494bb5f727e63c8fb54f7d2c287",
+  "host": "arbiscan.io",
+  "address": "0x2c6bef68dabf0494bb5f727e63c8fb54f7d2c287",
+  "chainid": 42161,
+  "contract_name": "AddressListRegistry",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "0000000000000000000000008da28441a4c594fd2fac72726c1412d8cf9e4a19",
+  "evm_version": "istanbul",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 3,
+  "mode": "recover-json-sources"
+}

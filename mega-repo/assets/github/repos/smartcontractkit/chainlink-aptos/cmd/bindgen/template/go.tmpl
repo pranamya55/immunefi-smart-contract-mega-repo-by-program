@@ -1,0 +1,178 @@
+{{- /*gotype: github.com/smartcontractkit/chainlink-aptos/cmd/bindgen/template.tmplData*/ -}}
+// Code generated - DO NOT EDIT.
+// This file is a generated binding and any manual changes will be lost.
+
+package module_{{.Module}}
+
+import (
+  "math/big"
+
+  "github.com/aptos-labs/aptos-go-sdk"
+  "github.com/aptos-labs/aptos-go-sdk/api"
+
+  "github.com/smartcontractkit/chainlink-aptos/bindings/bind"
+  "github.com/smartcontractkit/chainlink-aptos/relayer/codec"
+
+{{- range .Imports}}
+  {{.PackageName}} "{{.Path}}"
+{{- end}}
+)
+
+var (
+  _ = aptos.AccountAddress{}
+  _ = api.PendingTransaction{}
+  _ = big.NewInt
+  _ = bind.NewBoundContract
+  _ = codec.DecodeAptosJsonValue
+)
+
+type {{toUpperCamel .Module}}Interface interface {
+  {{- range .ViewFuncs}}
+    {{.Name}}(opts *bind.CallOpts, {{range .Params}}{{.Name}} {{.Type.GoType}},{{end}}) ({{range .Returns}}{{.GoType}},{{end}} error)
+  {{- end}}
+
+  {{ range .EntryFuncs}}
+    {{.Name}}(opts *bind.TransactOpts, {{range .Params}}{{.Name}} {{.Type.GoType}},{{end}}) (*api.PendingTransaction, error)
+  {{- end}}
+
+  // Encoder returns the encoder implementation of this module.
+  Encoder() {{toUpperCamel .Module}}Encoder
+}
+
+type {{toUpperCamel .Module}}Encoder interface {
+  {{- range .ViewFuncs}}
+    {{.Name}}({{range .Params}}{{.Name}} {{.Type.GoType}},{{end}}) (bind.ModuleInformation, string, []aptos.TypeTag, [][]byte, error)
+  {{- end}}
+  {{- range .EntryFuncs}}
+    {{.Name}}({{range .Params}}{{.Name}} {{.Type.GoType}},{{end}}) (bind.ModuleInformation, string, []aptos.TypeTag, [][]byte, error)
+  {{- end}}
+  {{- range .OtherFuncs}}
+    {{.Name}}({{range .Params}}{{.Name}} {{.Type.GoType}},{{end}}) (bind.ModuleInformation, string, []aptos.TypeTag, [][]byte, error)
+  {{- end}}
+}
+
+const FunctionInfo = `{{.FunctionInfo}}`
+
+func New{{toUpperCamel .Module}}(address aptos.AccountAddress, client aptos.AptosRpcClient) {{toUpperCamel .Module}}Interface {
+  contract := bind.NewBoundContract(address, "{{.Package}}", "{{.Module}}", client)
+  return {{toUpperCamel .Module}}Contract {
+    BoundContract: contract,
+    {{toLowerCamel .Module}}Encoder: {{toLowerCamel .Module}}Encoder{BoundContract: contract},
+  }
+}
+
+{{- if (gt (.Consts | len) 0)}}
+// Constants
+  const (
+  {{- range .Consts}}
+    {{.Name}} {{.Type.GoType}} = {{.Value}}
+  {{- end}}
+  )
+{{- end}}
+
+// Structs
+
+{{$structs := .Structs}}
+{{range $structs}}
+  type {{.Name}} struct { {{range $field := .Fields}}
+    {{$field.Name}} {{if $field.Type.GoInternalType}}{{$field.Type.GoInternalType}}{{else}}{{$field.Type.GoType}}{{end}} `move:"{{if $field.Type.MoveInteralType}}{{$field.Type.MoveInteralType}}{{else}}{{$field.Type.MoveType}}{{end}}"` {{end}}
+  }
+{{end}}
+
+type {{toUpperCamel .Module}}Contract struct {
+  *bind.BoundContract
+  {{toLowerCamel .Module}}Encoder
+}
+
+var _ {{toUpperCamel .Module}}Interface = {{toUpperCamel .Module}}Contract{}
+
+func (c {{toUpperCamel .Module}}Contract) Encoder() {{toUpperCamel .Module}}Encoder {
+  return c.{{toLowerCamel .Module}}Encoder
+}
+
+// View Functions
+
+{{range .ViewFuncs}}
+  func (c {{toUpperCamel $.Module}}Contract) {{.Name}}(opts *bind.CallOpts, {{range .Params}}{{.Name}} {{.Type.GoType}},{{end}}) ({{range .Returns}}{{.GoType}},{{end}} error) {
+    module, function, typeTags, args, err := c.{{toLowerCamel $.Module}}Encoder.{{.Name}}({{range .Params}}{{.Name}}, {{end}})
+    if err != nil {
+      return {{range .Returns}}*new({{.GoType}}),{{end}} err
+    }
+
+    callData, err := c.Call(opts, module, function, typeTags, args)
+    if err != nil {
+      return {{range .Returns}}*new({{.GoType}}),{{end}} err
+    }
+
+    var (
+    {{- range $index, $element := .Returns}}
+      r{{$index}} {{if $element.StdOption }} bind.StdOption[{{$element.StdOption.UnderlyingGoType}}] {{else if $element.StdObject}} bind.StdObject {{else}} {{$element.GoType}} {{end}}
+    {{- end}}
+    )
+
+    if err := codec.DecodeAptosJsonArray(callData, {{range $index, $element := .Returns}}&r{{$index}}, {{end}}); err != nil {
+      return {{range .Returns}}*new({{.GoType}}),{{end}} err
+    }
+  return {{range $index, $element := .Returns}}r{{$index}}{{if $element.StdOption}}.Value(){{else if $element.StdObject}}.Address(){{end}}, {{end}} nil
+  }
+{{end}}
+
+// Entry Functions
+
+{{range .EntryFuncs}}
+  func (c {{toUpperCamel $.Module}}Contract) {{.Name}}(opts *bind.TransactOpts, {{range .Params}}{{.Name}} {{.Type.GoType}},{{end}}) (*api.PendingTransaction, error) {
+  module, function, typeTags, args, err := c.{{toLowerCamel $.Module}}Encoder.{{.Name}}({{range .Params}}{{.Name}}, {{end}})
+    if err != nil {
+      return nil, err
+    }
+
+    return c.BoundContract.Transact(opts, module, function, typeTags, args)
+  }
+{{end}}
+
+// Encoder
+type {{toLowerCamel .Module}}Encoder struct {
+  *bind.BoundContract
+}
+
+{{range .ViewFuncs}}
+  func (c {{toLowerCamel $.Module}}Encoder) {{.Name}}({{range .Params}}{{.Name}} {{.Type.GoType}},{{end}}) (bind.ModuleInformation, string, []aptos.TypeTag, [][]byte, error) {
+  return c.BoundContract.Encode("{{.MoveName}}", nil, []string{
+  {{- range .Params}}
+    "{{.Type.MoveType}}",
+  {{- end}}
+  }, []any{
+  {{- range .Params}}
+      {{.Name}},
+  {{- end}}
+  })
+  }
+{{end}}
+
+{{range .EntryFuncs}}
+  func (c {{toLowerCamel $.Module}}Encoder) {{.Name}}({{range .Params}}{{.Name}} {{.Type.GoType}},{{end}}) (bind.ModuleInformation, string, []aptos.TypeTag, [][]byte, error) {
+    return c.BoundContract.Encode("{{.MoveName}}", nil, []string{
+    {{- range .Params}}
+      "{{.Type.MoveType}}",
+    {{- end}}
+    }, []any{
+    {{- range .Params}}
+        {{.Name}},
+    {{- end}}
+    })
+  }
+{{end}}
+
+{{range .OtherFuncs}}
+  func (c {{toLowerCamel $.Module}}Encoder) {{.Name}}({{range .Params}}{{.Name}} {{.Type.GoType}},{{end}}) (bind.ModuleInformation, string, []aptos.TypeTag, [][]byte, error) {
+    return c.BoundContract.Encode("{{.MoveName}}", nil, []string{
+    {{- range .Params}}
+      "{{.Type.MoveType}}",
+    {{- end}}
+    }, []any{
+    {{- range .Params}}
+        {{.Name}},
+    {{- end}}
+    })
+  }
+{{end}}

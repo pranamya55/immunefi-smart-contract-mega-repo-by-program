@@ -1,0 +1,402 @@
+// SPDX-License-Identifier: Apache-2.0
+pragma solidity ^0.8.18;
+import { EventTypes } from "../library/types/EventTypes.sol";
+
+interface ILedgerEvent {
+    event AccountRegister(bytes32 indexed accountId, bytes32 indexed brokerId, address indexed userAddress);
+    event AccountDeposit(
+        bytes32 indexed accountId,
+        uint64 indexed depositNonce,
+        uint64 indexed eventId,
+        address userAddress,
+        bytes32 tokenHash,
+        uint128 tokenAmount,
+        uint256 srcChainId,
+        uint64 srcChainDepositNonce,
+        bytes32 brokerHash
+    );
+    event AccountWithdrawApprove(
+        bytes32 indexed accountId,
+        uint64 indexed withdrawNonce,
+        uint64 indexed eventId,
+        bytes32 brokerHash,
+        address sender,
+        address receiver,
+        uint256 chainId,
+        bytes32 tokenHash,
+        uint128 tokenAmount,
+        uint128 fee
+    );
+    event AccountWithdrawFinish(
+        bytes32 indexed accountId,
+        uint64 indexed withdrawNonce,
+        uint64 indexed eventId,
+        bytes32 brokerHash,
+        address sender,
+        address receiver,
+        uint256 chainId,
+        bytes32 tokenHash,
+        uint128 tokenAmount,
+        uint128 fee
+    );
+    event AccountWithdrawFail(
+        bytes32 indexed accountId,
+        uint64 indexed withdrawNonce,
+        uint64 indexed eventId,
+        bytes32 brokerHash,
+        address sender,
+        address receiver,
+        uint256 chainId,
+        bytes32 tokenHash,
+        uint128 tokenAmount,
+        uint128 fee,
+        uint8 failReason
+    );
+
+    event SettlementResult(
+        uint64 indexed eventId,
+        bytes32 indexed accountId,
+        int128 settledAmount,
+        bytes32 settledAssetHash,
+        bytes32 insuranceAccountId,
+        uint128 insuranceTransferAmount,
+        uint64 settlementExecutionsCount,
+        uint64 lastEngineEventId
+    );
+
+    event AdlResult(
+        uint64 indexed eventId,
+        bytes32 indexed accountId,
+        bytes32 insuranceAccountId,
+        bytes32 symbolHash,
+        int128 positionQtyTransfer,
+        int128 costPositionTransfer,
+        uint128 adlPrice,
+        int128 sumUnitaryFundings,
+        uint64 lastEngineEventId
+    );
+
+    event AdlResultV2(
+        uint64 indexed eventId,
+        bytes32 indexed accountId,
+        bytes32 symbolHash,
+        int128 positionQtyTransfer,
+        int128 costPositionTransfer,
+        uint128 adlPrice,
+        int128 sumUnitaryFundings,
+        uint64 lastEngineEventId
+    );
+
+    event LiquidationResult(
+        uint64 indexed eventId,
+        bytes32 indexed liquidatedAccountId,
+        bytes32 indexed insuranceAccountId,
+        bytes32 liquidatedAssetHash,
+        uint128 insuranceTransferAmount,
+        uint64 lastEngineEventId
+    );
+
+    event LiquidationResultV2(
+        uint64 indexed eventId,
+        bytes32 indexed accountId,
+        bytes32 liquidatedAssetHash,
+        int128 insuranceTransferAmount,
+        uint64 lastEngineEventId
+    );
+
+    event ProcessValidatedFutures(
+        bytes32 indexed accountId,
+        bytes32 indexed symbolHash,
+        bytes32 feeAssetHash,
+        int128 tradeQty,
+        int128 notional,
+        uint128 executedPrice,
+        int128 fee,
+        int128 sumUnitaryFundings,
+        uint64 tradeId,
+        uint64 matchId,
+        uint64 timestamp,
+        bool side
+    );
+
+    event SettlementExecution(
+        bytes32 indexed symbolHash, uint128 markPrice, int128 sumUnitaryFundings, int128 settledAmount
+    );
+    event LiquidationTransfer(
+        uint64 indexed liquidationTransferId,
+        bytes32 indexed liquidatorAccountId,
+        bytes32 indexed symbolHash,
+        int128 positionQtyTransfer,
+        int128 costPositionTransfer,
+        int128 liquidatorFee,
+        int128 insuranceFee,
+        int128 liquidationFee,
+        uint128 markPrice,
+        int128 sumUnitaryFundings
+    );
+
+    event LiquidationTransferV2(
+        bytes32 indexed accountId,
+        bytes32 indexed symbolHash,
+        int128 positionQtyTransfer,
+        int128 costPositionTransfer,
+        int128 fee,
+        uint128 markPrice,
+        int128 sumUnitaryFundings
+    );
+
+    event FeeDistribution(
+        uint64 indexed eventId,
+        bytes32 indexed fromAccountId,
+        bytes32 indexed toAccountId,
+        uint128 amount,
+        bytes32 tokenHash
+    );
+
+    event DelegateSigner(
+        uint64 indexed eventId,
+        uint256 indexed chainId,
+        bytes32 indexed accountId,
+        address delegateContract,
+        bytes32 brokerHash,
+        address delegateSigner
+    );
+
+    event ChangeOperatorManager(address oldAddress, address newAddress);
+    event ChangeCrossChainManager(address oldAddress, address newAddress);
+    event ChangeCrossChainManagerV2(address oldAddress, address newAddress);
+    event ChangeVaultManager(address oldAddress, address newAddress);
+    event ChangeMarketManager(address oldAddress, address newAddress);
+    event ChangeFeeManager(address oldAddress, address newAddress);
+    event ChangeLedgerImplA(address oldAddress, address newAddress);
+    event ChangeLedgerImplB(address oldAddress, address newAddress);
+    event ChangeLedgerImplC(address oldAddress, address newAddress);
+    event ChangeLedgerImplD(address oldAddress, address newAddress);
+
+    // for Solana
+    event AccountRegister(bytes32 indexed accountId, bytes32 indexed brokerId, bytes32 indexed pubkey);
+    event AccountDepositSol(
+        bytes32 indexed accountId,
+        uint64 indexed depositNonce,
+        uint64 indexed eventId,
+        bytes32 pubkey,
+        bytes32 tokenHash,
+        uint128 tokenAmount,
+        uint256 srcChainId,
+        uint64 srcChainDepositNonce,
+        bytes32 brokerHash
+    );
+    // used for normal withdrawal to Solana
+    event AccountWithdrawSolApprove(
+        bytes32 indexed accountId,
+        uint64 indexed withdrawNonce,
+        uint64 indexed eventId,
+        bytes32 brokerHash,
+        bytes32 sender,
+        bytes32 receiver,
+        uint256 chainId,
+        bytes32 tokenHash,
+        uint128 tokenAmount,
+        uint128 fee
+    );
+    // used for Ceffu withdrawals to Solana
+    event AccountWithdrawSolApprove(
+        bytes32 indexed accountId,
+        uint64 indexed withdrawNonce,
+        uint64 indexed eventId,
+        EventTypes.ChainType senderChainType,
+        EventTypes.ChainType receiverChainType,
+        bytes32 brokerHash,
+        bytes32 sender,
+        bytes32 receiver,
+        uint256 chainId,
+        bytes32 tokenHash,
+        uint128 tokenAmount,
+        uint128 fee
+    );
+    // used for normal withdrawal to Solana
+    event AccountWithdrawSolFail(
+        bytes32 indexed accountId,
+        uint64 indexed withdrawNonce,
+        uint64 indexed eventId,
+        bytes32 brokerHash,
+        bytes32 sender,
+        bytes32 receiver,
+        uint256 chainId,
+        bytes32 tokenHash,
+        uint128 tokenAmount,
+        uint128 fee,
+        uint8 failReason
+    );
+    // used for Ceffu withdrawals to Solana
+    event AccountWithdrawSolFail(
+        bytes32 indexed accountId,
+        uint64 indexed withdrawNonce,
+        uint64 indexed eventId,
+        EventTypes.ChainType senderChainType,
+        EventTypes.ChainType receiverChainType,
+        bytes32 brokerHash,
+        bytes32 sender,
+        bytes32 receiver,
+        uint256 chainId,
+        bytes32 tokenHash,
+        uint128 tokenAmount,
+        uint128 fee,
+        uint8 failReason
+    );
+    event AccountWithdraw2Contract(
+        bytes32 indexed accountId,
+        uint64 indexed withdrawNonce,
+        uint64 indexed eventId,
+        uint256 chainId,
+        bytes32 tokenHash,
+        uint128 tokenAmount,
+        uint128 fee,
+        address receiver
+    );
+
+    /// @dev Emitted when a balance transfer event is processed
+    /// @param eventId Global event ID for this transfer event
+    /// @param transferId Unique identifier linking debit and credit events
+    /// @param fromAccountId Source account ID
+    /// @param toAccountId Destination account ID
+    /// @param amount Transfer amount
+    /// @param tokenHash Token hash identifier
+    /// @param isFromAccountId True for debit event, false for credit event
+    /// @param transferType Type of transfer:
+    ///        0: BROKER_FEE - Broker fee distribution
+    ///        1: REFEREE_REBATE - Referee rebate
+    ///        2: REFERRER_REBATE - Referrer rebate
+    ///        3: INTERNAL_TRANSFER - Internal transfer between accounts
+    ///        4: SV_INTERNAL_TRANSFER - Special vault internal transfer
+    ///        5: SP_LIQUIDATION_FEE - Spot liquidation fee
+    ///        6: SP_ORDERLY_REVENUE - Spot Orderly revenue
+    ///        255: UNKNOWN - Unknown transfer type (fallback)
+    event BalanceTransfer(
+        uint64 indexed eventId,
+        uint256 indexed transferId,
+        bytes32 fromAccountId,
+        bytes32 toAccountId,
+        uint128 amount,
+        bytes32 tokenHash,
+        bool isFromAccountId,
+        uint8 transferType
+    );
+
+    /// @dev Emitted when an internal transfer is finalized (both debit and credit processed)
+    /// @param eventId Global event ID for this finalization
+    /// @param transferId Unique identifier of the completed transfer
+    /// @param toAccountId Receiver account ID
+    /// @param tokenHash Token hash identifier
+    /// @param amount Transfer amount
+    event InternalTransferFinalised(
+        uint64 indexed eventId,
+        uint256 indexed transferId,
+        bytes32 toAccountId,
+        bytes32 tokenHash,
+        uint128 amount
+    );
+
+    event PrimeWalletSet(bytes32 id, address primeWallet);
+    event SolanaPrimeWalletSet(bytes32 id, bytes32 solanaPrimeWallet);
+
+    event SwapResultUploaded(
+        uint64 indexed eventId,
+        bytes32 indexed accountId,
+        bytes32 buyTokenHash,
+        bytes32 sellTokenHash,
+        int128 buyQuantity,
+        int128 sellQuantity,
+        uint256 chainId,
+        uint8 swapStatus
+    );
+    event VaultSet(address vault, bool isValid);
+    // All events below are deprecated
+    // Keep them for indexer backward compatibility
+
+    // @deprecated
+    event AccountRegister(
+        bytes32 indexed accountId, bytes32 indexed brokerId, address indexed userAddress, uint256 blocktime
+    );
+    // @deprecated
+    event AccountDeposit(
+        bytes32 indexed accountId,
+        uint64 indexed depositNonce,
+        uint64 indexed eventId,
+        address userAddress,
+        bytes32 tokenHash,
+        uint128 tokenAmount,
+        uint256 srcChainId,
+        uint64 srcChainDepositNonce,
+        bytes32 brokerHash,
+        uint256 blocktime
+    );
+    // @deprecated
+    event AccountWithdrawApprove(
+        bytes32 indexed accountId,
+        uint64 indexed withdrawNonce,
+        uint64 indexed eventId,
+        bytes32 brokerHash,
+        address sender,
+        address receiver,
+        uint256 chainId,
+        bytes32 tokenHash,
+        uint128 tokenAmount,
+        uint128 fee,
+        uint256 blocktime
+    );
+    // @deprecated
+    event AccountWithdrawFinish(
+        bytes32 indexed accountId,
+        uint64 indexed withdrawNonce,
+        uint64 indexed eventId,
+        bytes32 brokerHash,
+        address sender,
+        address receiver,
+        uint256 chainId,
+        bytes32 tokenHash,
+        uint128 tokenAmount,
+        uint128 fee,
+        uint256 blocktime
+    );
+    // @deprecated
+    event AccountWithdrawFail(
+        bytes32 indexed accountId,
+        uint64 indexed withdrawNonce,
+        uint64 indexed eventId,
+        bytes32 brokerHash,
+        address sender,
+        address receiver,
+        uint256 chainId,
+        bytes32 tokenHash,
+        uint128 tokenAmount,
+        uint128 fee,
+        uint256 blocktime,
+        uint8 failReason
+    );
+    // @deprecated
+    event ProcessValidatedFutures(
+        bytes32 indexed accountId,
+        bytes32 indexed symbolHash,
+        bytes32 feeAssetHash,
+        int128 tradeQty,
+        int128 notional,
+        uint128 executedPrice,
+        uint128 fee,
+        int128 sumUnitaryFundings,
+        uint64 tradeId,
+        uint64 matchId,
+        uint64 timestamp,
+        bool side
+    );
+    
+    /// @notice Emitted when SetBroker operation is initiated from Ledger
+    /// @param chainIds Array of destination chain IDs where broker status will be modified
+    /// @param brokerHash Hash of the broker being modified
+    /// @param allowed true if adding broker, false if removing broker
+    event SetBrokerFromLedgerInitiated(
+        uint256[] chainIds, 
+        bytes32 indexed brokerHash, 
+        bool allowed
+    );
+}

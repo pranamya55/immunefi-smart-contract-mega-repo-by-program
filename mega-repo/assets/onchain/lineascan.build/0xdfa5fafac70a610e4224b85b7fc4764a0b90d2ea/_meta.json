@@ -1,0 +1,8 @@
+{
+  "url": "https://lineascan.build/address/0xdfa5fafac70a610e4224b85b7fc4764a0b90d2ea",
+  "host": "lineascan.build",
+  "address": "0xdfa5fafac70a610e4224b85b7fc4764a0b90d2ea",
+  "chainid": 59144,
+  "mode": "bytecode-v2-proxy",
+  "bytecode_length_hex_chars": 3064
+}

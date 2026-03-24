@@ -1,0 +1,42 @@
+[
+  {
+    "project_slug": "paradex",
+    "asset_id": "3xonwpwfPiqt9YDPYHMw2A",
+    "url": "https://voyager.prod.paradex.trade/contract/0x03ca9388f8d4e04adecbd7b06b9b24a33030a593522248a7bddd87afc0b61a0c",
+    "description": "Paraclear Contract",
+    "added_at": "2025-08-25T03:01:07.563Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "paradex",
+    "asset_id": "460VivMwY0dyDDGTyJjxDe",
+    "url": "https://voyager.prod.paradex.trade/contract/0x0662d75749ee4b4afa63f891308cb0bae63ce10999d1c332d92b53eb9ac0a0d3",
+    "description": "Oracle Contract",
+    "added_at": "2025-08-25T03:02:17.113Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "paradex",
+    "asset_id": "Y0Y0nPg0jxznlS1MNq1s4",
+    "url": "https://voyager.prod.paradex.trade/contract/0x0355b9f48262d37607098294a37aea883cf34cb81458039e8c0d0871a4f4e4e8",
+    "description": "Registry Contract",
+    "added_at": "2025-08-25T03:01:56.187Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "paradex",
+    "asset_id": "vKQMiNUwPGAU8sxPaUrH6",
+    "url": "https://voyager.prod.paradex.trade/contract/0x071408d2903ac0876602f105a198c17028519d7f48f318adb94a0650c686dfc3",
+    "description": "Vault Factory Contract",
+    "added_at": "2025-08-25T03:01:32.661Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "paradex",
+    "asset_id": "98735",
+    "url": "https://immunefi.com/",
+    "description": "Primacy of Impact",
+    "added_at": "2026-02-06T15:58:36.804Z",
+    "revision": 0
+  }
+]

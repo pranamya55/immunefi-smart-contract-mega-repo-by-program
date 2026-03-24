@@ -1,0 +1,25 @@
+{
+  "url": "https://explorer.inkonchain.com/address/0xcaae49fb7f74cCFBE8A05E6104b01c097a78789f",
+  "host": "explorer.inkonchain.com",
+  "address": "0xcaae49fb7f74cCFBE8A05E6104b01c097a78789f",
+  "chainid": 57073,
+  "project_slug": "veda",
+  "asset_id": "4sJ5FafysWydMsuEgquzwl",
+  "contract_name": "BoringVault",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": "0x0000000000000000000000005f2f11ad8656439d5c14d9b351f8b09cdac2a02d000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000001342616c616e636564205969656c64205553444300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c62616c616e636564555344430000000000000000000000000000000000000000",
+  "evm_version": "shanghai",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:unexpected-response",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

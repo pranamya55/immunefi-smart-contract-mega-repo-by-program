@@ -1,0 +1,25 @@
+{
+  "url": "https://unichain.blockscout.com/address/0x5A1a44D2192Dd1e21efB9caA50E32D0716b35535",
+  "host": "unichain.blockscout.com",
+  "address": "0x5A1a44D2192Dd1e21efB9caA50E32D0716b35535",
+  "chainid": null,
+  "project_slug": "sparklend",
+  "asset_id": "4QsD3iDhfFU22x5RsJu5Qz",
+  "contract_name": "RateLimits",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": "000000000000000000000000b037c43b433964a2017cd689f535beb6b0531473",
+  "evm_version": "cancun",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:missing-chainid",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

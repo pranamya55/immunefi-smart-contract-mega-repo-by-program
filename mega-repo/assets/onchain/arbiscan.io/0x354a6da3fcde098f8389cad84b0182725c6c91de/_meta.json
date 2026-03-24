@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x354A6dA3fcde098F8389cad84b0182725c6C91dE",
+  "host": "arbiscan.io",
+  "address": "0x354A6dA3fcde098F8389cad84b0182725c6C91dE",
+  "chainid": 42161,
+  "project_slug": "compoundfinance",
+  "asset_id": "xXjBMHEhfviroi16paLN3",
+  "contract_name": "ClonableBeaconProxy",
+  "compiler_version": "v0.6.11+commit.5ef660b1",
+  "optimization_used": "1",
+  "runs": "100",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x3f770ac673856f105b586bb393d122721265ad46",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://basescan.org/address/0x69Dd4385EdC7BDBe221159278981dD81ff792247",
+  "host": "basescan.org",
+  "address": "0x69Dd4385EdC7BDBe221159278981dD81ff792247",
+  "chainid": 8453,
+  "project_slug": "connext",
+  "asset_id": "5MbQYnzSotz7kFKKcHIjFu",
+  "contract_name": "UpgradeBeaconController",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "london",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 5,
+  "mode": "json-sources"
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x959F30F765a44273EcCaA0FAc094160aa7c238E2",
+  "host": "etherscan.io",
+  "address": "0x959F30F765a44273EcCaA0FAc094160aa7c238E2",
+  "chainid": 1,
+  "project_slug": "wepiggy",
+  "asset_id": "648skd9pLRWe7ENAzTnjh2",
+  "contract_name": "AdminUpgradeabilityProxy",
+  "compiler_version": "v0.5.3+commit.10d17f24",
+  "optimization_used": "0",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "constantinople",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "1",
+  "implementation": "0x465461657b4175c1676ecea1fb0e8d0174d8d7f6",
+  "swarm_source": "bzzr://3a61cbfff803b053d8f397cf95cfa0c8c53ef12ce921c5d484b275b58be38897",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

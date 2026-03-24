@@ -1,0 +1,162 @@
+x-base-secret-service: &base-secret-service
+  image: secret-service:latest
+  build:
+    context: .
+    dockerfile: ./docker/secret-service/Dockerfile
+  environment:
+    - SECRET_SERVICE_DEV=0 # use ./docker/gen_s2_tls.sh to gen tls certs
+    - RUST_LOG=info
+
+x-base-asm-runner: &base-asm-runner
+  image: strata-asm-runner:latest
+  build:
+    context: .
+    dockerfile: ./docker/asm-runner/Dockerfile
+  environment:
+    - RUST_LOG=info
+  ports:
+    - 9010:9010
+  volumes:
+    - ./docker/vol/asm-runner:/app
+    - ./docker/vol/strata-bridge-3/params.toml:/bridge/params.toml:ro
+  depends_on:
+    - bitcoind
+  networks:
+    - bridge
+
+x-base-bridge-node: &base-bridge-node
+  image: strata-bridge:latest
+  build:
+    context: .
+    dockerfile: ./docker/strata-bridge/Dockerfile
+  environment:
+    - MODE=operator
+    - RUST_LOG=info
+    - LOG_FILE=0
+    - LOG_LINE_NUM=0
+    - RUST_BACKTRACE=full
+    - FDB_CLUSTER_FILE=/var/fdb/fdb.cluster
+  depends_on:
+    - bitcoind
+    - foundationdb
+    - asm-runner
+
+services:
+  foundationdb:
+    image: foundationdb/foundationdb:7.3.43
+    environment:
+      - FDB_NETWORKING_MODE=container
+      - FDB_CLUSTER_FILE=/var/fdb/fdb.cluster
+    volumes:
+      - ./docker/vol/fdb/fdb.cluster:/var/fdb/fdb.cluster:ro
+      - ./docker/vol/fdb/data:/var/fdb/data
+    ports:
+      # NOTE: (zk2u) Keep this port in sync with docker/vol/fdb/fdb.cluster
+      - "4500:4500"
+    networks:
+      - bridge
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "fdbcli --no-status --exec 'status minimal' 2>/dev/null | grep -q 'The database is available' || exit 1",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  asm-runner:
+    <<: *base-asm-runner
+
+  secret-service-1:
+    <<: *base-secret-service
+    ports:
+      - 11000:3000
+    volumes:
+      - ./docker/vol/secret-service-1:/app
+    networks:
+      - bridge
+  bridge-1:
+    <<: *base-bridge-node
+    ports:
+      - 15678:5678
+      - 15679:5679
+      - 13000:3000
+    volumes:
+      - ./docker/vol/strata-bridge-1:/app
+      - ./migrations:/app/migrations
+      - ./docker/vol/fdb/fdb.cluster:/var/fdb/fdb.cluster:ro
+    networks:
+      - bridge
+
+  secret-service-2:
+    <<: *base-secret-service
+    ports:
+      - 21000:3000
+    volumes:
+      - ./docker/vol/secret-service-2:/app
+    networks:
+      - bridge
+  bridge-2:
+    <<: *base-bridge-node
+    ports:
+      - 25678:5678
+      - 25679:5679
+      - 23000:3000
+    volumes:
+      - ./docker/vol/strata-bridge-2:/app
+      - ./migrations:/app/migrations
+      - ./docker/vol/fdb/fdb.cluster:/var/fdb/fdb.cluster:ro
+    networks:
+      - bridge
+
+  secret-service-3:
+    <<: *base-secret-service
+    ports:
+      - 31000:3000
+    volumes:
+      - ./docker/vol/secret-service-3:/app
+    networks:
+      - bridge
+  bridge-3:
+    <<: *base-bridge-node
+    ports:
+      - 35678:5678
+      - 35679:5679
+      - 33000:3000
+    volumes:
+      - ./docker/vol/strata-bridge-3:/app
+      - ./migrations:/app/migrations
+      - ./docker/vol/fdb/fdb.cluster:/var/fdb/fdb.cluster:ro
+    networks:
+      - bridge
+
+  bitcoind:
+    image: bitcoin/bitcoin:30
+    volumes:
+      - ./docker/bitcoin/entrypoint.sh:/entrypoint.sh
+    ports:
+      - 18443:18443
+      - 18444:18444
+      - 28332:28332
+      - 28333:28333
+      - 28334:28334
+      - 28335:28335
+      - 28336:28336
+    # see logs from the bridge node to populate these env vars
+    #
+    # Example:
+    #
+    # INFO operator_wallet: crates/operator-wallet/src/lib.rs:87: general wallet address: bcrt1pjrd2pungnh6ae7acw9dt92t5hj8gkn2gh8nuwu2r3kakklkswqrquyus8n
+    # INFO operator_wallet: crates/operator-wallet/src/lib.rs:95: stakechain wallet address: bcrt1pga206rnnd9vchqvs5s0gax4v99pdzlml470f3tfw8nfaemmmu0wsjru24g
+    environment:
+      - GENERAL_WALLET_1=$GENERAL_WALLET_1
+      - GENERAL_WALLET_2=$GENERAL_WALLET_2
+      - GENERAL_WALLET_3=$GENERAL_WALLET_3
+      - AUTOMINE=5 # every 5 seconds, set to 0 to disable auto generating blocks, keep in alignment with `block_time` in sidesystem params
+    networks:
+      - bridge
+
+networks:
+  bridge:

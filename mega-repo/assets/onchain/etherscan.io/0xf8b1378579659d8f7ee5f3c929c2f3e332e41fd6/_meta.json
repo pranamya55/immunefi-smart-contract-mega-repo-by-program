@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xF8B1378579659D8F7EE5f3C929c2f3E332E41Fd6",
+  "host": "etherscan.io",
+  "address": "0xF8B1378579659D8F7EE5f3C929c2f3E332E41Fd6",
+  "chainid": 1,
+  "project_slug": "scroll",
+  "asset_id": "752Z9CXIM51cKcrDYP6nYH",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0xb93ac04010bd61f45bf492022a5b49a902f798f3",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

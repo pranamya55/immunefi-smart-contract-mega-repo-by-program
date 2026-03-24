@@ -1,0 +1,24 @@
+{
+  "url": "https://gnosisscan.io/address/0xC9Fe2D32E96Bb364c7d29f3663ed3b27E30767bB",
+  "host": "gnosisscan.io",
+  "address": "0xC9Fe2D32E96Bb364c7d29f3663ed3b27E30767bB",
+  "chainid": 100,
+  "project_slug": "sparklend",
+  "asset_id": "5AMQL9dorgC6AFGl7ZZ738",
+  "contract_name": "InitializableImmutableAdminUpgradeabilityProxy",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "1",
+  "runs": "100000",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x856900aa78e856a5df1a2665ee3a66b2487cd68f",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 6,
+  "mode": "json-sources"
+}

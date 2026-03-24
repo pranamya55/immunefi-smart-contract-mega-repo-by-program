@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x4aa42145Aa6Ebf72e164C9bBC74fbD3788045016",
+  "host": "etherscan.io",
+  "address": "0x4aa42145Aa6Ebf72e164C9bBC74fbD3788045016",
+  "chainid": 1,
+  "project_slug": "gnosischain",
+  "asset_id": "39I4UubBcljARlt90OaRGQ",
+  "contract_name": "EternalStorageProxy",
+  "compiler_version": "v0.4.24+commit.e67f0147",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x257bdd093cab1bd39ebf837dcb60f33d031d7d49",
+  "swarm_source": "bzzr://468432494ae522077e1a5855bc87444d93894689c72242af4568befd3cd609d6",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

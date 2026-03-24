@@ -1,0 +1,24 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0x6B34A6B84444dC3Fc692821D5d077a1e4927342d",
+  "host": "optimistic.etherscan.io",
+  "address": "0x6B34A6B84444dC3Fc692821D5d077a1e4927342d",
+  "chainid": 10,
+  "project_slug": "sparklend",
+  "asset_id": "1wA5Eti9egDs6H0SB3FFI3",
+  "contract_name": "RateLimits",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "000000000000000000000000205216d89a00feb2a73273ceecd297baf89d576d",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 7,
+  "mode": "json-sources"
+}

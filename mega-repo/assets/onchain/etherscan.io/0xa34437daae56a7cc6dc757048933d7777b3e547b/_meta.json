@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xA34437dAAE56A7CC6DC757048933D7777b3e547B#code",
+  "host": "etherscan.io",
+  "address": "0xA34437dAAE56A7CC6DC757048933D7777b3e547B",
+  "chainid": 1,
+  "project_slug": "sparklend",
+  "asset_id": "4bhYRvKxyv1jZU1rbGXUnw",
+  "contract_name": "DSROracleForwarderWorldChain",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "100000",
+  "constructor_arguments": "000000000000000000000000197e90f9fad81970ba7976f33cbd77088e5d7cf700000000000000000000000033a3ab524a43e69f30bfd9ae97d1ec679ff00b64",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 7,
+  "mode": "json-sources"
+}

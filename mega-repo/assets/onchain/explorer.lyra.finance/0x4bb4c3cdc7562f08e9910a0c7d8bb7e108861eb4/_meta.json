@@ -1,0 +1,25 @@
+{
+  "url": "https://explorer.lyra.finance/address/0x4BB4C3CDc7562f08e9910A0C7D8bB7e108861eB4",
+  "host": "explorer.lyra.finance",
+  "address": "0x4BB4C3CDc7562f08e9910A0C7D8bB7e108861eB4",
+  "chainid": null,
+  "project_slug": "derive",
+  "asset_id": "lHeiBHzK051vNjNzg0F1Y",
+  "contract_name": "OptionAsset",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": "0x000000000000000000000000e7603df191d699d8bd9891b821347dbab889e5a5000000000000000000000000791a570f5785fbdb02ea5c7a794c43111ae2f948",
+  "evm_version": "paris",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:missing-chainid",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

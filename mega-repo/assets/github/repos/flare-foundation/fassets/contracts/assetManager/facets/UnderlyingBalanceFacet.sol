@@ -1,0 +1,174 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.27;
+
+import {IPayment} from "@flarenetwork/flare-periphery-contracts/flare/IPayment.sol";
+import {SafeCast} from "@openzeppelin/contracts/utils/math/SafeCast.sol";
+import {AssetManagerBase} from "./AssetManagerBase.sol";
+import {ReentrancyGuard} from "../../openzeppelin/security/ReentrancyGuard.sol";
+import {Agents} from "../library/Agents.sol";
+import {AgentPayout} from "../library/AgentPayout.sol";
+import {Globals} from "../library/Globals.sol";
+import {TransactionAttestation} from "../library/TransactionAttestation.sol";
+import {UnderlyingBalance} from "../library/UnderlyingBalance.sol";
+import {Agent} from "../library/data/Agent.sol";
+import {PaymentConfirmations} from "../library/data/PaymentConfirmations.sol";
+import {PaymentReference} from "../library/data/PaymentReference.sol";
+import {AssetManagerSettings} from "../../userInterfaces/data/AssetManagerSettings.sol";
+import {AssetManagerState} from "../library/data/AssetManagerState.sol";
+import {IAssetManagerEvents} from "../../userInterfaces/IAssetManagerEvents.sol";
+
+
+contract UnderlyingBalanceFacet is AssetManagerBase, ReentrancyGuard {
+    using SafeCast for uint256;
+    using PaymentConfirmations for PaymentConfirmations.State;
+
+    error WrongAnnouncedPaymentSource();
+    error WrongAnnouncedPaymentReference();
+    error NoActiveAnnouncement();
+    error AnnouncedUnderlyingWithdrawalActive();
+    error TopupBeforeAgentCreated();
+    error NotATopupPayment();
+    error NotUnderlyingAddress();
+
+    /**
+     * When the agent tops up his underlying address, it has to be confirmed by calling this method,
+     * which updates the underlying free balance value.
+     * NOTE: may only be called by the agent vault owner.
+     * @param _payment proof of the underlying payment; must include payment
+     *      reference of the form `0x4642505266410011000...0<agents_vault_address>`
+     * @param _agentVault agent vault address
+     */
+    function confirmTopupPayment(
+        IPayment.Proof calldata _payment,
+        address _agentVault
+    )
+        external
+        notEmergencyPaused
+        onlyActiveAgentVaultOwner(_agentVault)
+    {
+        Agent.State storage agent = Agent.get(_agentVault);
+        AssetManagerState.State storage state = AssetManagerState.get();
+        TransactionAttestation.verifyPaymentSuccess(_payment);
+        require(_payment.data.responseBody.receivingAddressHash == agent.underlyingAddressHash,
+            NotUnderlyingAddress());
+        require(_payment.data.responseBody.standardPaymentReference == PaymentReference.topup(_agentVault),
+            NotATopupPayment());
+        require(_payment.data.responseBody.blockNumber >= agent.underlyingBlockAtCreation,
+            TopupBeforeAgentCreated());
+        state.paymentConfirmations.confirmIncomingPayment(_payment);
+        // update state
+        uint256 amountUBA = SafeCast.toUint256(_payment.data.responseBody.receivedAmount);
+        UnderlyingBalance.increaseBalance(agent, amountUBA.toUint128());
+        // notify
+        emit IAssetManagerEvents.UnderlyingBalanceToppedUp(_agentVault, _payment.data.requestBody.transactionId,
+            amountUBA);
+    }
+
+    /**
+     * Announce withdrawal of underlying currency.
+     * In the event UnderlyingWithdrawalAnnounced the agent receives payment reference, which must be
+     * added to the payment, otherwise it can be challenged as illegal.
+     * Until the announced withdrawal is performed and confirmed or cancelled, no other withdrawal can be announced.
+     * NOTE: may only be called by the agent vault owner.
+     * @param _agentVault agent vault address
+     */
+    function announceUnderlyingWithdrawal(
+        address _agentVault
+    )
+        external
+        notEmergencyPaused
+        onlyActiveAgentVaultOwner(_agentVault)
+    {
+        AssetManagerState.State storage state = AssetManagerState.get();
+        Agent.State storage agent = Agent.get(_agentVault);
+        require(agent.announcedUnderlyingWithdrawalId == 0, AnnouncedUnderlyingWithdrawalActive());
+        state.newPaymentAnnouncementId += PaymentReference.randomizedIdSkip();
+        uint64 announcementId = state.newPaymentAnnouncementId;
+        agent.announcedUnderlyingWithdrawalId = announcementId;
+        agent.underlyingWithdrawalAnnouncedAt = block.timestamp.toUint64();
+        bytes32 paymentReference = PaymentReference.announcedWithdrawal(announcementId);
+        emit IAssetManagerEvents.UnderlyingWithdrawalAnnounced(_agentVault, announcementId, paymentReference);
+    }
+
+    /**
+     * Agent must provide confirmation of performed underlying withdrawal, which updates free balance with used gas
+     * and releases announcement so that a new one can be made.
+     * If the agent doesn't call this method, anyone can call it after a time (confirmationByOthersAfterSeconds).
+     * NOTE: may only be called by the owner of the agent vault
+     *   except if enough time has passed without confirmation - then it can be called by anybody.
+     * @param _payment proof of the underlying payment
+     * @param _agentVault agent vault address
+     */
+    function confirmUnderlyingWithdrawal(
+        IPayment.Proof calldata _payment,
+        address _agentVault
+    )
+        external
+        notFullyEmergencyPaused
+        nonReentrant
+    {
+        AssetManagerState.State storage state = AssetManagerState.get();
+        TransactionAttestation.verifyPayment(_payment);
+        Agent.State storage agent = Agent.get(_agentVault);
+        bool isAgent = Agents.isOwner(agent, msg.sender);
+        uint64 announcementId = agent.announcedUnderlyingWithdrawalId;
+        require(announcementId != 0, NoActiveAnnouncement());
+        bytes32 paymentReference = PaymentReference.announcedWithdrawal(announcementId);
+        require(_payment.data.responseBody.standardPaymentReference == paymentReference,
+            WrongAnnouncedPaymentReference());
+        require(_payment.data.responseBody.sourceAddressHash == agent.underlyingAddressHash,
+            WrongAnnouncedPaymentSource());
+        require(isAgent || _othersCanConfirmWithdrawal(agent), Agents.OnlyAgentVaultOwner());
+        // make sure withdrawal cannot be challenged as invalid
+        state.paymentConfirmations.confirmSourceDecreasingTransaction(_payment);
+        // clear active withdrawal announcement
+        agent.announcedUnderlyingWithdrawalId = 0;
+        // if the confirmation was done by someone else than agent, pay some reward from agent's vault
+        if (!isAgent) {
+            AgentPayout.payForConfirmationByOthers(agent, msg.sender);
+        }
+        // update free underlying balance and trigger liquidation if negative
+        UnderlyingBalance.updateBalance(agent, -_payment.data.responseBody.spentAmount);
+        // send event
+        emit IAssetManagerEvents.UnderlyingWithdrawalConfirmed(_agentVault, announcementId,
+            _payment.data.responseBody.spentAmount, _payment.data.requestBody.transactionId);
+    }
+
+    /**
+     * Cancel ongoing withdrawal of underlying currency.
+     * Needed in order to reset announcement timestamp, so that others cannot front-run agent at
+     * confirmUnderlyingWithdrawal call. This could happen if withdrawal would be performed more
+     * than confirmationByOthersAfterSeconds seconds after announcement.
+     * NOTE: may only be called by the agent vault owner.
+     * @param _agentVault agent vault address
+     */
+    function cancelUnderlyingWithdrawal(
+        address _agentVault
+    )
+        external
+        notFullyEmergencyPaused
+        onlyActiveAgentVaultOwner(_agentVault)
+    {
+        Agent.State storage agent = Agent.get(_agentVault);
+        uint64 announcementId = agent.announcedUnderlyingWithdrawalId;
+        require(announcementId != 0, NoActiveAnnouncement());
+        // clear active withdrawal announcement
+        agent.announcedUnderlyingWithdrawalId = 0;
+        // send event
+        emit IAssetManagerEvents.UnderlyingWithdrawalCancelled(_agentVault, announcementId);
+    }
+
+    function _othersCanConfirmWithdrawal(
+        Agent.State storage _agent
+    )
+        private view
+        returns (bool)
+    {
+        AssetManagerSettings.Data storage settings = Globals.getSettings();
+        // Others can confirm payments only after several hours and only if the vault is not in full liquidation.
+        // (Others' confirmations are not necessary for keeping the underlying balance when the vault is already in
+        // full liquidation and the reward just uses the collateral that should be reserved for liquidation.)
+        return block.timestamp > _agent.underlyingWithdrawalAnnouncedAt + settings.confirmationByOthersAfterSeconds
+            && _agent.status != Agent.Status.FULL_LIQUIDATION;
+    }
+}

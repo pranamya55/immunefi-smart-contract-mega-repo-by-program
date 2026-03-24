@@ -1,0 +1,25 @@
+{
+  "url": "https://explorer.inkonchain.com/address/0xC2867bd44E58B43e74859cbd1c320477b3ca9f33?tab=contract",
+  "host": "explorer.inkonchain.com",
+  "address": "0xC2867bd44E58B43e74859cbd1c320477b3ca9f33",
+  "chainid": 57073,
+  "project_slug": "veda",
+  "asset_id": "4fYujxvmyxX2M876kZcKRv",
+  "contract_name": "AaveV3BufferHelper",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": "0x0000000000000000000000002816cf15f6d2a220e789aa011d5ee4eb6c47feba000000000000000000000000a53a60245922836b73184f443338fa24152d6aee",
+  "evm_version": "shanghai",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:unexpected-response",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

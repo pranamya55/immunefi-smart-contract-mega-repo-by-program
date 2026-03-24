@@ -1,0 +1,7 @@
+{
+  "url": "https://bobascan.com/address/0x216d3e7520B09605B7c4243b59aD02Cc6E052F52",
+  "host": "bobascan.com",
+  "address": "0x216d3e7520B09605B7c4243b59aD02Cc6E052F52",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:http 403"
+}

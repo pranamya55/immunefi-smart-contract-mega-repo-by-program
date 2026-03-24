@@ -1,0 +1,4 @@
+dist/
+external/
+typechain/
+api-reference/

@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x0502c5ae08E7CD64fe1AEDA7D6e229413eCC6abe",
+  "host": "etherscan.io",
+  "address": "0x0502c5ae08E7CD64fe1AEDA7D6e229413eCC6abe",
+  "chainid": 1,
+  "project_slug": "ondofinance",
+  "asset_id": "BMyZkIhAAyM7RRoxrOv0N",
+  "contract_name": "RWAOracleExternalComparisonCheck",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": "1",
+  "runs": "100",
+  "constructor_arguments": "000000000000000000000000000000000000000000000005780786fae0599c00000000000000000000000000c04611c43842220fd941515f86d1dddb15f04e4600000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000118919e891d0205a7492650ad32e727617fa9452000000000000000000000000118919e891d0205a7492650ad32e727617fa945200000000000000000000000000000000000000000000000000000000000000084f5553472f555344000000000000000000000000000000000000000000000000",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "None",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

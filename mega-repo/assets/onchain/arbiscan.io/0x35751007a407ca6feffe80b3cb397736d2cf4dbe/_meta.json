@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe",
+  "host": "arbiscan.io",
+  "address": "0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe",
+  "chainid": 42161,
+  "project_slug": "etherfi",
+  "asset_id": "4uVgQGXhcot3l2QrgZ4UYd",
+  "contract_name": "ClonableBeaconProxy",
+  "compiler_version": "v0.6.11+commit.5ef660b1",
+  "optimization_used": "1",
+  "runs": "100",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x3f770ac673856f105b586bb393d122721265ad46",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

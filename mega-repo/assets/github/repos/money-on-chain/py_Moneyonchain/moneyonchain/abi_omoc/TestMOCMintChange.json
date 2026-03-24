@@ -1,0 +1,1415 @@
+{
+  "contractName": "TestMOCMintChange",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract IMintableERC20",
+          "name": "_token",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "amount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "token",
+      "outputs": [
+        {
+          "internalType": "contract IMintableERC20",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "user",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "execute",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IMintableERC20\",\"name\":\"_token\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"amount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"execute\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"token\",\"outputs\":[{\"internalType\":\"contract IMintableERC20\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"user\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"execute()\":{\"details\":\"Should be called by the governor, but this contract does not check that explicitly because it is not its responsability in the current architecture\"}},\"title\":\"MocRegistryInitChange\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"constructor\":\"Constructor\",\"execute()\":{\"notice\":\"Execute the changes.\"}},\"notice\":\"This contract is a ChangeContract intended to initialize all the MOC registry values\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/jbokser/work2/OMoC-SC-Shared/contracts/change/TestMOCMintChange.sol\":\"TestMOCMintChange\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/jbokser/work2/OMoC-SC-Shared/contracts/IMintableERC20.sol\":{\"keccak256\":\"0x4c2ca1278f724d8d295d4303637c54a6be6e3ff38824d812f42933238c25440e\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://62e983127d61adb5d3f4a973b55ef0bf2f1b5e44f42878b17bd6af6989c28737\",\"dweb:/ipfs/QmXSNeN1H2zZSvgeqyyLYdEr5G41shWDGr5vzERhu1ut6b\"]},\"/home/jbokser/work2/OMoC-SC-Shared/contracts/change/TestMOCMintChange.sol\":{\"keccak256\":\"0x1dc30351ef50dce9255480a66ab3609041365b60ce707963a40563b0bdb1dcbd\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://86c2ba28d7f75b6751482ed492c5860fd2b1304109e84e42f4ecf1b0d601cdbc\",\"dweb:/ipfs/QmUqdebbfamgHox24jYvPETNbqtRUZJqJcpey1KMdch7YB\"]},\"/home/jbokser/work2/OMoC-SC-Shared/contracts/moc-governance/Governance/ChangeContract.sol\":{\"keccak256\":\"0x6c786977acab4c076087e4569b2fd423e2c3a7e45150353c18de328b7e114843\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://cbdaaed4b97fc67586f6f20f185d6227dd4a1d0896bd6db20ee06744cca2eaa6\",\"dweb:/ipfs/QmbZrRtxMdebQa1dHfTdC1pPA48ZvzSopcc2pLmmJ7XJ9X\"]},\"@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x6cc1cb934a3ac2137a7dcaed018af9e235392236ceecfd3687259702b9c767ad\",\"urls\":[\"bzz-raw://0055fa88138cd1c3c6440370f8580f85857f8fe9dec41c99af9eafbeb8d9c3ce\",\"dweb:/ipfs/QmX1xDh8vwGLLCH8ti45eXjQ7Wcxv1FEGTR3jkFnd5Nv6F\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516101f03803806101f08339818101604052606081101561003357600080fd5b5080516020820151604090920151600080546001600160a01b039384166001600160a01b031991821617909155600180549390941692169190911790915560025561016d806100836000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80634f8632ba146100515780636146195414610075578063aa8c217c1461007f578063fc0c546a14610099575b600080fd5b6100596100a1565b604080516001600160a01b039092168252519081900360200190f35b61007d6100b0565b005b610087610122565b60408051918252519081900360200190f35b610059610128565b6001546001600160a01b031681565b60008054600154600254604080516340c10f1960e01b81526001600160a01b03938416600482015260248101929092525191909216926340c10f19926044808201939182900301818387803b15801561010857600080fd5b505af115801561011c573d6000803e3d6000fd5b50505050565b60025481565b6000546001600160a01b03168156fea26469706673582212209010ac9df0855db2ffa0946cff9333dfd4300917bd6107a6bafb6150d6fa3bd764736f6c634300060c0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c80634f8632ba146100515780636146195414610075578063aa8c217c1461007f578063fc0c546a14610099575b600080fd5b6100596100a1565b604080516001600160a01b039092168252519081900360200190f35b61007d6100b0565b005b610087610122565b60408051918252519081900360200190f35b610059610128565b6001546001600160a01b031681565b60008054600154600254604080516340c10f1960e01b81526001600160a01b03938416600482015260248101929092525191909216926340c10f19926044808201939182900301818387803b15801561010857600080fd5b505af115801561011c573d6000803e3d6000fd5b50505050565b60025481565b6000546001600160a01b03168156fea26469706673582212209010ac9df0855db2ffa0946cff9333dfd4300917bd6107a6bafb6150d6fa3bd764736f6c634300060c0033",
+  "immutableReferences": {},
+  "sourceMap": "333:663:25:-:0;;;511:183;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;511:183:25;;;;;;;;;;;625:5;:14;;-1:-1:-1;;;;;625:14:25;;;-1:-1:-1;;;;;;625:14:25;;;;;;;;649:12;;;;;;;;;;;;;;;671:6;:16;333:663;;;;;;",
+  "deployedSourceMap": "333:663:25:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;417:19;;;:::i;:::-;;;;-1:-1:-1;;;;;417:19:25;;;;;;;;;;;;;;916:78;;;:::i;:::-;;442:21;;;:::i;:::-;;;;;;;;;;;;;;;;384:27;;;:::i;417:19::-;;;-1:-1:-1;;;;;417:19:25;;:::o;916:78::-;963:5;;;;974:4;980:6;;963:24;;;-1:-1:-1;;;963:24:25;;-1:-1:-1;;;;;974:4:25;;;963:24;;;;;;;;;;;;:5;;;;;:10;;:24;;;;;;;;;;;:5;;:24;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;916:78::o;442:21::-;;;;:::o;384:27::-;;;-1:-1:-1;;;;;384:27:25;;:::o",
+  "source": "// SPDX-License-Identifier: UNLICENSED\npragma solidity 0.6.12;\n\nimport {ChangeContract} from \"../moc-governance/Governance/ChangeContract.sol\";\nimport {IMintableERC20} from \"../IMintableERC20.sol\";\n\n/**\n  @title MocRegistryInitChange\n  @notice This contract is a ChangeContract intended to initialize all the MOC registry values\n */\ncontract TestMOCMintChange is ChangeContract {\n    IMintableERC20 public token;\n    address public user;\n    uint256 public amount;\n\n    /**\n      @notice Constructor\n    */\n    constructor(\n        IMintableERC20 _token,\n        address _user,\n        uint256 _amount\n    ) public {\n        token = _token;\n        user = _user;\n        amount = _amount;\n    }\n\n    /**\n      @notice Execute the changes.\n      @dev Should be called by the governor, but this contract does not check that explicitly because it is\n      not its responsability in the current architecture\n     */\n    function execute() external override {\n        token.mint(user, amount);\n    }\n}\n",
+  "sourcePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/change/TestMOCMintChange.sol",
+  "ast": {
+    "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/change/TestMOCMintChange.sol",
+    "exportedSymbols": {
+      "TestMOCMintChange": [
+        4040
+      ]
+    },
+    "id": 4041,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3990,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:23:25"
+      },
+      {
+        "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/moc-governance/Governance/ChangeContract.sol",
+        "file": "../moc-governance/Governance/ChangeContract.sol",
+        "id": 3992,
+        "nodeType": "ImportDirective",
+        "scope": 4041,
+        "sourceUnit": 4399,
+        "src": "64:79:25",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "argumentTypes": null,
+              "id": 3991,
+              "name": "ChangeContract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": null,
+              "src": "72:14:25",
+              "typeDescriptions": {
+                "typeIdentifier": null,
+                "typeString": null
+              }
+            },
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/IMintableERC20.sol",
+        "file": "../IMintableERC20.sol",
+        "id": 3994,
+        "nodeType": "ImportDirective",
+        "scope": 4041,
+        "sourceUnit": 1241,
+        "src": "144:53:25",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "argumentTypes": null,
+              "id": 3993,
+              "name": "IMintableERC20",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": null,
+              "src": "152:14:25",
+              "typeDescriptions": {
+                "typeIdentifier": null,
+                "typeString": null
+              }
+            },
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 3996,
+              "name": "ChangeContract",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4398,
+              "src": "363:14:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ChangeContract_$4398",
+                "typeString": "contract ChangeContract"
+              }
+            },
+            "id": 3997,
+            "nodeType": "InheritanceSpecifier",
+            "src": "363:14:25"
+          }
+        ],
+        "contractDependencies": [
+          4398
+        ],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 3995,
+          "nodeType": "StructuredDocumentation",
+          "src": "199:133:25",
+          "text": "@title MocRegistryInitChange\n@notice This contract is a ChangeContract intended to initialize all the MOC registry values"
+        },
+        "fullyImplemented": true,
+        "id": 4040,
+        "linearizedBaseContracts": [
+          4040,
+          4398
+        ],
+        "name": "TestMOCMintChange",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "fc0c546a",
+            "id": 3999,
+            "mutability": "mutable",
+            "name": "token",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 4040,
+            "src": "384:27:25",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_IMintableERC20_$1240",
+              "typeString": "contract IMintableERC20"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 3998,
+              "name": "IMintableERC20",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1240,
+              "src": "384:14:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IMintableERC20_$1240",
+                "typeString": "contract IMintableERC20"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "4f8632ba",
+            "id": 4001,
+            "mutability": "mutable",
+            "name": "user",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 4040,
+            "src": "417:19:25",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 4000,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "417:7:25",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "aa8c217c",
+            "id": 4003,
+            "mutability": "mutable",
+            "name": "amount",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 4040,
+            "src": "442:21:25",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 4002,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "442:7:25",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 4025,
+              "nodeType": "Block",
+              "src": "615:79:25",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 4015,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 4013,
+                      "name": "token",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3999,
+                      "src": "625:5:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IMintableERC20_$1240",
+                        "typeString": "contract IMintableERC20"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 4014,
+                      "name": "_token",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4006,
+                      "src": "633:6:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IMintableERC20_$1240",
+                        "typeString": "contract IMintableERC20"
+                      }
+                    },
+                    "src": "625:14:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IMintableERC20_$1240",
+                      "typeString": "contract IMintableERC20"
+                    }
+                  },
+                  "id": 4016,
+                  "nodeType": "ExpressionStatement",
+                  "src": "625:14:25"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 4019,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 4017,
+                      "name": "user",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4001,
+                      "src": "649:4:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 4018,
+                      "name": "_user",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4008,
+                      "src": "656:5:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "649:12:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 4020,
+                  "nodeType": "ExpressionStatement",
+                  "src": "649:12:25"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 4023,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 4021,
+                      "name": "amount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4003,
+                      "src": "671:6:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 4022,
+                      "name": "_amount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4010,
+                      "src": "680:7:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "671:16:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 4024,
+                  "nodeType": "ExpressionStatement",
+                  "src": "671:16:25"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 4004,
+              "nodeType": "StructuredDocumentation",
+              "src": "470:36:25",
+              "text": "@notice Constructor"
+            },
+            "id": 4026,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 4011,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4006,
+                  "mutability": "mutable",
+                  "name": "_token",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4026,
+                  "src": "532:21:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IMintableERC20_$1240",
+                    "typeString": "contract IMintableERC20"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 4005,
+                    "name": "IMintableERC20",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1240,
+                    "src": "532:14:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IMintableERC20_$1240",
+                      "typeString": "contract IMintableERC20"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4008,
+                  "mutability": "mutable",
+                  "name": "_user",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4026,
+                  "src": "563:13:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4007,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "563:7:25",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4010,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4026,
+                  "src": "586:15:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4009,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "586:7:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "522:85:25"
+            },
+            "returnParameters": {
+              "id": 4012,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "615:0:25"
+            },
+            "scope": 4040,
+            "src": "511:183:25",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "baseFunctions": [
+              4397
+            ],
+            "body": {
+              "id": 4038,
+              "nodeType": "Block",
+              "src": "953:41:25",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 4034,
+                        "name": "user",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4001,
+                        "src": "974:4:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 4035,
+                        "name": "amount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4003,
+                        "src": "980:6:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 4031,
+                        "name": "token",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3999,
+                        "src": "963:5:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IMintableERC20_$1240",
+                          "typeString": "contract IMintableERC20"
+                        }
+                      },
+                      "id": 4033,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "mint",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 1239,
+                      "src": "963:10:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,uint256) external"
+                      }
+                    },
+                    "id": 4036,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "963:24:25",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 4037,
+                  "nodeType": "ExpressionStatement",
+                  "src": "963:24:25"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 4027,
+              "nodeType": "StructuredDocumentation",
+              "src": "700:211:25",
+              "text": "@notice Execute the changes.\n@dev Should be called by the governor, but this contract does not check that explicitly because it is\nnot its responsability in the current architecture"
+            },
+            "functionSelector": "61461954",
+            "id": 4039,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "execute",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 4029,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "944:8:25"
+            },
+            "parameters": {
+              "id": 4028,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "932:2:25"
+            },
+            "returnParameters": {
+              "id": 4030,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "953:0:25"
+            },
+            "scope": 4040,
+            "src": "916:78:25",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 4041,
+        "src": "333:663:25"
+      }
+    ],
+    "src": "39:958:25"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/change/TestMOCMintChange.sol",
+      "exportedSymbols": {
+        "TestMOCMintChange": [
+          4040
+        ]
+      },
+      "license": "UNLICENSED"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 3990,
+        "name": "PragmaDirective",
+        "src": "39:23:25"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 4399,
+          "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/moc-governance/Governance/ChangeContract.sol",
+          "file": "../moc-governance/Governance/ChangeContract.sol",
+          "scope": 4041,
+          "symbolAliases": [
+            {
+              "foreign": {
+                "attributes": {
+                  "argumentTypes": null,
+                  "overloadedDeclarations": [
+                    null
+                  ],
+                  "referencedDeclaration": null,
+                  "type": null,
+                  "value": "ChangeContract"
+                },
+                "id": 3991,
+                "name": "Identifier",
+                "src": "72:14:25"
+              },
+              "local": null
+            }
+          ],
+          "unitAlias": ""
+        },
+        "id": 3992,
+        "name": "ImportDirective",
+        "src": "64:79:25"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 1241,
+          "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/IMintableERC20.sol",
+          "file": "../IMintableERC20.sol",
+          "scope": 4041,
+          "symbolAliases": [
+            {
+              "foreign": {
+                "attributes": {
+                  "argumentTypes": null,
+                  "overloadedDeclarations": [
+                    null
+                  ],
+                  "referencedDeclaration": null,
+                  "type": null,
+                  "value": "IMintableERC20"
+                },
+                "id": 3993,
+                "name": "Identifier",
+                "src": "152:14:25"
+              },
+              "local": null
+            }
+          ],
+          "unitAlias": ""
+        },
+        "id": 3994,
+        "name": "ImportDirective",
+        "src": "144:53:25"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "contractDependencies": [
+            4398
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            4040,
+            4398
+          ],
+          "name": "TestMOCMintChange",
+          "scope": 4041
+        },
+        "children": [
+          {
+            "attributes": {
+              "text": "@title MocRegistryInitChange\n@notice This contract is a ChangeContract intended to initialize all the MOC registry values"
+            },
+            "id": 3995,
+            "name": "StructuredDocumentation",
+            "src": "199:133:25"
+          },
+          {
+            "attributes": {
+              "arguments": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "ChangeContract",
+                  "referencedDeclaration": 4398,
+                  "type": "contract ChangeContract"
+                },
+                "id": 3996,
+                "name": "UserDefinedTypeName",
+                "src": "363:14:25"
+              }
+            ],
+            "id": 3997,
+            "name": "InheritanceSpecifier",
+            "src": "363:14:25"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "fc0c546a",
+              "mutability": "mutable",
+              "name": "token",
+              "overrides": null,
+              "scope": 4040,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "contract IMintableERC20",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "IMintableERC20",
+                  "referencedDeclaration": 1240,
+                  "type": "contract IMintableERC20"
+                },
+                "id": 3998,
+                "name": "UserDefinedTypeName",
+                "src": "384:14:25"
+              }
+            ],
+            "id": 3999,
+            "name": "VariableDeclaration",
+            "src": "384:27:25"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "4f8632ba",
+              "mutability": "mutable",
+              "name": "user",
+              "overrides": null,
+              "scope": 4040,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "nonpayable",
+                  "type": "address"
+                },
+                "id": 4000,
+                "name": "ElementaryTypeName",
+                "src": "417:7:25"
+              }
+            ],
+            "id": 4001,
+            "name": "VariableDeclaration",
+            "src": "417:19:25"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "aa8c217c",
+              "mutability": "mutable",
+              "name": "amount",
+              "overrides": null,
+              "scope": 4040,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 4002,
+                "name": "ElementaryTypeName",
+                "src": "442:7:25"
+              }
+            ],
+            "id": 4003,
+            "name": "VariableDeclaration",
+            "src": "442:21:25"
+          },
+          {
+            "attributes": {
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "overrides": null,
+              "scope": 4040,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Constructor"
+                },
+                "id": 4004,
+                "name": "StructuredDocumentation",
+                "src": "470:36:25"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_token",
+                      "overrides": null,
+                      "scope": 4026,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IMintableERC20",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IMintableERC20",
+                          "referencedDeclaration": 1240,
+                          "type": "contract IMintableERC20"
+                        },
+                        "id": 4005,
+                        "name": "UserDefinedTypeName",
+                        "src": "532:14:25"
+                      }
+                    ],
+                    "id": 4006,
+                    "name": "VariableDeclaration",
+                    "src": "532:21:25"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_user",
+                      "overrides": null,
+                      "scope": 4026,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 4007,
+                        "name": "ElementaryTypeName",
+                        "src": "563:7:25"
+                      }
+                    ],
+                    "id": 4008,
+                    "name": "VariableDeclaration",
+                    "src": "563:13:25"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_amount",
+                      "overrides": null,
+                      "scope": 4026,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 4009,
+                        "name": "ElementaryTypeName",
+                        "src": "586:7:25"
+                      }
+                    ],
+                    "id": 4010,
+                    "name": "VariableDeclaration",
+                    "src": "586:15:25"
+                  }
+                ],
+                "id": 4011,
+                "name": "ParameterList",
+                "src": "522:85:25"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4012,
+                "name": "ParameterList",
+                "src": "615:0:25"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "contract IMintableERC20"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 3999,
+                              "type": "contract IMintableERC20",
+                              "value": "token"
+                            },
+                            "id": 4013,
+                            "name": "Identifier",
+                            "src": "625:5:25"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4006,
+                              "type": "contract IMintableERC20",
+                              "value": "_token"
+                            },
+                            "id": 4014,
+                            "name": "Identifier",
+                            "src": "633:6:25"
+                          }
+                        ],
+                        "id": 4015,
+                        "name": "Assignment",
+                        "src": "625:14:25"
+                      }
+                    ],
+                    "id": 4016,
+                    "name": "ExpressionStatement",
+                    "src": "625:14:25"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "address"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4001,
+                              "type": "address",
+                              "value": "user"
+                            },
+                            "id": 4017,
+                            "name": "Identifier",
+                            "src": "649:4:25"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4008,
+                              "type": "address",
+                              "value": "_user"
+                            },
+                            "id": 4018,
+                            "name": "Identifier",
+                            "src": "656:5:25"
+                          }
+                        ],
+                        "id": 4019,
+                        "name": "Assignment",
+                        "src": "649:12:25"
+                      }
+                    ],
+                    "id": 4020,
+                    "name": "ExpressionStatement",
+                    "src": "649:12:25"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4003,
+                              "type": "uint256",
+                              "value": "amount"
+                            },
+                            "id": 4021,
+                            "name": "Identifier",
+                            "src": "671:6:25"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4010,
+                              "type": "uint256",
+                              "value": "_amount"
+                            },
+                            "id": 4022,
+                            "name": "Identifier",
+                            "src": "680:7:25"
+                          }
+                        ],
+                        "id": 4023,
+                        "name": "Assignment",
+                        "src": "671:16:25"
+                      }
+                    ],
+                    "id": 4024,
+                    "name": "ExpressionStatement",
+                    "src": "671:16:25"
+                  }
+                ],
+                "id": 4025,
+                "name": "Block",
+                "src": "615:79:25"
+              }
+            ],
+            "id": 4026,
+            "name": "FunctionDefinition",
+            "src": "511:183:25"
+          },
+          {
+            "attributes": {
+              "baseFunctions": [
+                4397
+              ],
+              "functionSelector": "61461954",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "execute",
+              "scope": 4040,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Execute the changes.\n@dev Should be called by the governor, but this contract does not check that explicitly because it is\nnot its responsability in the current architecture"
+                },
+                "id": 4027,
+                "name": "StructuredDocumentation",
+                "src": "700:211:25"
+              },
+              {
+                "attributes": {
+                  "overrides": [
+                    null
+                  ]
+                },
+                "id": 4029,
+                "name": "OverrideSpecifier",
+                "src": "944:8:25"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4028,
+                "name": "ParameterList",
+                "src": "932:2:25"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4030,
+                "name": "ParameterList",
+                "src": "953:0:25"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "mint",
+                              "referencedDeclaration": 1239,
+                              "type": "function (address,uint256) external"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 3999,
+                                  "type": "contract IMintableERC20",
+                                  "value": "token"
+                                },
+                                "id": 4031,
+                                "name": "Identifier",
+                                "src": "963:5:25"
+                              }
+                            ],
+                            "id": 4033,
+                            "name": "MemberAccess",
+                            "src": "963:10:25"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4001,
+                              "type": "address",
+                              "value": "user"
+                            },
+                            "id": 4034,
+                            "name": "Identifier",
+                            "src": "974:4:25"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4003,
+                              "type": "uint256",
+                              "value": "amount"
+                            },
+                            "id": 4035,
+                            "name": "Identifier",
+                            "src": "980:6:25"
+                          }
+                        ],
+                        "id": 4036,
+                        "name": "FunctionCall",
+                        "src": "963:24:25"
+                      }
+                    ],
+                    "id": 4037,
+                    "name": "ExpressionStatement",
+                    "src": "963:24:25"
+                  }
+                ],
+                "id": 4038,
+                "name": "Block",
+                "src": "953:41:25"
+              }
+            ],
+            "id": 4039,
+            "name": "FunctionDefinition",
+            "src": "916:78:25"
+          }
+        ],
+        "id": 4040,
+        "name": "ContractDefinition",
+        "src": "333:663:25"
+      }
+    ],
+    "id": 4041,
+    "name": "SourceUnit",
+    "src": "39:958:25"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-02-04T20:51:03.393Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "execute()": {
+        "details": "Should be called by the governor, but this contract does not check that explicitly because it is not its responsability in the current architecture"
+      }
+    },
+    "title": "MocRegistryInitChange",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "constructor": "Constructor",
+      "execute()": {
+        "notice": "Execute the changes."
+      }
+    },
+    "notice": "This contract is a ChangeContract intended to initialize all the MOC registry values",
+    "version": 1
+  }
+}

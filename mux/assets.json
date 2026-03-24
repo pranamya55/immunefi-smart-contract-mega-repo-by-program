@@ -1,0 +1,98 @@
+[
+  {
+    "project_slug": "mux",
+    "asset_id": "76Tg9tlfRmhDDtuw0XMiKp",
+    "url": "https://github.com/mux-world/muxlp-tranches-protocol",
+    "description": "",
+    "added_at": "2024-08-28T12:02:40.994Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "mux",
+    "asset_id": "5mZvhOe95LrCNj1n6L0qc4",
+    "url": "https://github.com/mux-world/mux-degen-protocol",
+    "description": "",
+    "added_at": "2024-08-28T12:02:51.850Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "mux",
+    "asset_id": "3eoO8FPvuWnv9Yq6PnO1sA",
+    "url": "https://github.com/mux-world/mux-aggregator-protocol",
+    "description": "",
+    "added_at": "2024-08-28T12:03:04.502Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "mux",
+    "asset_id": "3EnvNaAvGjLeScRTEgwhUY",
+    "url": "https://github.com/mux-world/mux3-protocol/",
+    "description": "",
+    "added_at": "2025-03-17T10:39:34.439Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "mux",
+    "asset_id": "2iLIEDhC19m0lyq9tKxQvR",
+    "url": "https://github.com/mux-world/mux-aggregator-protocol/tree/main/contracts/proxyFactory",
+    "description": "",
+    "added_at": "2025-08-28T23:18:57.469Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "mux",
+    "asset_id": "5MhqtU6OjHMi1VCJAvBJUT",
+    "url": "https://github.com/mux-world/mux-aggregator-protocol/tree/main/contracts/aggregators/gmxV2",
+    "description": "",
+    "added_at": "2025-08-28T23:19:09.336Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "mux",
+    "asset_id": "3rYDe2Owh0EOtE0VolZVso",
+    "url": "https://github.com/mux-world/mux-protocol/tree/main/contracts/components",
+    "description": "",
+    "added_at": "2025-08-28T23:19:21.175Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "mux",
+    "asset_id": "3R4vPSH6yYCWgvVFOplmEh",
+    "url": "https://github.com/mux-world/mux-protocol/tree/main/contracts/core",
+    "description": "",
+    "added_at": "2025-08-28T23:19:33.102Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "mux",
+    "asset_id": "6R6GaysJUNIynYWzYI9i7w",
+    "url": "https://github.com/mux-world/mux-protocol/tree/main/contracts/governance",
+    "description": "",
+    "added_at": "2025-08-28T23:19:40.097Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "mux",
+    "asset_id": "1Pr9CgCg4s7SLir47wIJXt",
+    "url": "https://github.com/mux-world/mux-protocol/tree/main/contracts/libraries",
+    "description": "",
+    "added_at": "2025-08-28T23:19:48.239Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "mux",
+    "asset_id": "7G1FsqHDgxL7hPpecRb9Yx",
+    "url": "https://github.com/mux-world/mux-protocol/tree/main/contracts/orderbook",
+    "description": "",
+    "added_at": "2025-08-28T23:19:57.951Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "mux",
+    "asset_id": "3KyoVQ7NoyAXntpMLxZXRo",
+    "url": "https://github.com/mux-world/mux-staking",
+    "description": "",
+    "added_at": "2025-08-28T23:20:48.558Z",
+    "revision": 0
+  }
+]

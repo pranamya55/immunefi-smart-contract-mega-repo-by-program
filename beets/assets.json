@@ -1,0 +1,26 @@
+[
+  {
+    "project_slug": "beets",
+    "asset_id": "25PjCoxtseQRLXksawP1am",
+    "url": "https://sonicscan.org/address/0xe5da20f15420ad15de0fa650600afc998bbe3955#code",
+    "description": "Beets Staked Sonic",
+    "added_at": "2025-02-14T10:26:00.659Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beets",
+    "asset_id": "7gnY4UMMiqIRhTe4bt6VPi",
+    "url": "https://sonicscan.org/address/0x2d0e0814e62d80056181f5cd932274405966e4f0#code",
+    "description": "Beets Token",
+    "added_at": "2025-02-14T10:26:24.172Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "beets",
+    "asset_id": "4mnlvQ4nESWEZteFcOCutR",
+    "url": "https://sonicscan.org/address/0x5f9a5CD0B77155AC1814EF6Cd9D82dA53d05E386#code",
+    "description": "Beets Token Migrator",
+    "added_at": "2025-02-14T10:26:36.508Z",
+    "revision": 1
+  }
+]

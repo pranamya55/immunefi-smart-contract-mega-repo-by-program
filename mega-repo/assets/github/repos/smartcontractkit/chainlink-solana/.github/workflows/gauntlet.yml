@@ -1,0 +1,92 @@
+name: gauntlet
+
+on:
+  pull_request:
+  push:
+    branches:
+      - develop
+
+jobs:
+  tool_versions:
+    name: Get the tool versions
+    runs-on: ubuntu-latest
+    outputs:
+      nodejs_version: ${{ steps.tool-versions.outputs.nodejs_version }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: smartcontractkit/tool-versions-to-env-action@v1.0.8
+        id: tool-versions
+
+  gauntlet_build:
+    name: Gauntlet Build
+    runs-on: ubuntu-latest
+    needs: [tool_versions]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node ${{ needs.tool_versions.outputs.nodejs_version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ needs.tool_versions.outputs.nodejs_version }}
+      - name: Install
+        run: yarn --cwd ./gauntlet install --frozen-lockfile
+      - name: Build
+        run: yarn --cwd ./gauntlet build
+      - name: Run Gauntlet
+        run: yarn --cwd ./gauntlet gauntlet
+
+  gauntlet_format:
+    name: Gauntlet Format
+    runs-on: ubuntu-latest
+    needs: [tool_versions]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node ${{ needs.tool_versions.outputs.nodejs_version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ needs.tool_versions.outputs.nodejs_version }}
+      - name: Install
+        run: yarn --cwd ./gauntlet install --frozen-lockfile
+      - name: Lint
+        run: yarn --cwd ./gauntlet lint:format
+
+  gauntlet_eslint:
+    name: Gauntlet ESLint
+    env:
+      CI: true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Nix
+        uses: cachix/install-nix-action@3715ab1a11cac9e991980d7b4a28d80c7ebdd8f9 # nix:v2.24.6
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+          extra_nix_config: "sandbox = false"
+      - name: Cache Nix
+        uses: cachix/cachix-action@18cf96c7c98e048e10a83abd92116114cd8504be # v14
+        with:
+          name: chainlink-cosmos
+          authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
+      - run: nix develop -c yarn --cwd ./gauntlet install --frozen-lockfile
+      - run: nix develop -c yarn --cwd ./gauntlet eslint
+      - name: Upload eslint report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gauntlet-eslint-report
+          path: ./gauntlet/eslint-report.json
+
+  gauntlet_run_tests:
+    name: Gauntlet Run Tests
+    runs-on: ubuntu-latest
+    needs: [tool_versions]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Nix
+        uses: cachix/install-nix-action@3715ab1a11cac9e991980d7b4a28d80c7ebdd8f9 # nix:v2.24.6
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+          extra_nix_config: "sandbox = false"
+      - name: Install
+        run: nix develop -c yarn --cwd ./gauntlet install --frozen-lockfile
+      - name: test:ci
+        run: nix develop -c yarn --cwd ./gauntlet test:ci

@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xeB197439D1425F3129F01F7763EC511DF2489095#code",
+  "host": "etherscan.io",
+  "address": "0xeB197439D1425F3129F01F7763EC511DF2489095",
+  "chainid": 1,
+  "project_slug": "parallel",
+  "asset_id": "2O15PwX2WvV4QdcgkqAqPP",
+  "contract_name": "SettersGovernor",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "1000",
+  "constructor_arguments": "",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "BSL 1.1",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 36,
+  "mode": "json-sources"
+}

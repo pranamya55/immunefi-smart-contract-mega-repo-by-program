@@ -1,0 +1,24 @@
+{
+  "url": "https://bscscan.com/address/0x9e347Af362059bf2E55839002c699F7A5BaFE86E",
+  "host": "bscscan.com",
+  "address": "0x9e347Af362059bf2E55839002c699F7A5BaFE86E",
+  "chainid": 56,
+  "project_slug": "ankr",
+  "asset_id": "271efAzPJxBMYPQlNPMvlg",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0xbbbc99198f62e56c20b44d2e6e63a7ebce88a9ac",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://bscscan.com/address/0xBc3Af0D4930502Ff0f6a8416a7a184c7BFFe19E7",
+  "host": "bscscan.com",
+  "address": "0xBc3Af0D4930502Ff0f6a8416a7a184c7BFFe19E7",
+  "chainid": 56,
+  "project_slug": "hyperlane",
+  "asset_id": "59EhONr8x5cg7oWP4mNgdi",
+  "contract_name": "DomainRoutingIsm",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": "1",
+  "runs": "999999",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://f0cc32ae1934429dd420659050d8028483b5aae93f12f681c739b29d820898b6",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

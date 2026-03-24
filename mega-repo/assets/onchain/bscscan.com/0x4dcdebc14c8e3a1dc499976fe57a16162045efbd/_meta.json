@@ -1,0 +1,24 @@
+{
+  "url": "https://bscscan.com/address/0x4DCdeBc14c8e3A1dc499976fe57a16162045eFBd",
+  "host": "bscscan.com",
+  "address": "0x4DCdeBc14c8e3A1dc499976fe57a16162045eFBd",
+  "chainid": 56,
+  "project_slug": "velvetcapital",
+  "asset_id": "2lFJWE0nlcGqlOlIn9vl36",
+  "contract_name": "IndexSwapLibrary",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 20,
+  "mode": "json-sources"
+}

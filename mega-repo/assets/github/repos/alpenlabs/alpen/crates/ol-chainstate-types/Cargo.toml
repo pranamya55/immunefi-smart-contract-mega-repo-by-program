@@ -1,0 +1,17 @@
+[package]
+edition = "2021"
+name = "strata-ol-chainstate-types"
+version = "0.3.0-alpha.1"
+
+[lints]
+workspace = true
+
+[dependencies]
+strata-bridge-types.workspace = true
+strata-crypto.workspace = true
+strata-identifiers.workspace = true
+strata-primitives.workspace = true
+strata-state.workspace = true
+
+arbitrary.workspace = true
+borsh.workspace = true

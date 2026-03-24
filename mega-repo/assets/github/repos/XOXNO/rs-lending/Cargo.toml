@@ -1,0 +1,21 @@
+[workspace]
+resolver = "2"
+members = [
+    "liquidity_layer",
+    "liquidity_layer/meta",
+    "controller",
+    "controller/meta",
+    "common/structs",
+    "common/constants",
+    "common/errors",
+    "common/events",
+    "common/math",
+    "common/rates",
+    "common/proxies",
+    "price_aggregator",
+    "price_aggregator/meta",
+    "flash_mock",
+    "flash_mock/meta",
+    "swap_mock",
+    "swap_mock/meta",
+]

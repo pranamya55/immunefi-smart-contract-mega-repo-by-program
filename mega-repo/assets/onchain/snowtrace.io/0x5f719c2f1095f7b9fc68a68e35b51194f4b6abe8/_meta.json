@@ -1,0 +1,24 @@
+{
+  "url": "https://snowtrace.io/address/0x5f719c2f1095f7b9fc68a68e35b51194f4b6abe8",
+  "host": "snowtrace.io",
+  "address": "0x5f719c2f1095f7b9fc68a68e35b51194f4b6abe8",
+  "chainid": 43114,
+  "project_slug": "gmx",
+  "asset_id": "6kjFZeWi2q9xZVq7xl0iMM",
+  "contract_name": "Router",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "0000000000000000000000009ab2de34a33fb459b538c43f251eb825645e8595000000000000000000000000c0253c3cc6aa5ab407b5795a04c28fb063273894000000000000000000000000b31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 8,
+  "mode": "json-sources"
+}

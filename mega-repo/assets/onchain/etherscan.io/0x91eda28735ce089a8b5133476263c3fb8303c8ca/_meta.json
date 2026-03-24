@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x91EDA28735cE089a8b5133476263c3Fb8303c8CA",
+  "host": "etherscan.io",
+  "address": "0x91EDA28735cE089a8b5133476263c3Fb8303c8CA",
+  "chainid": 1,
+  "project_slug": "resolv",
+  "asset_id": "1M9YYKxE2GuOvEKrEZ23Ls",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000b3ba8216fd3d9404f178aff3359581a9ea52477c0000000000000000000000008729dae4370a1cf21f28c95f9e736e69995358bc00000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000024fe4b84df00000000000000000000000000000000000000000000000014d1120d7b16000000000000000000000000000000000000000000000000000000000000",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0xb3ba8216fd3d9404f178aff3359581a9ea52477c",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

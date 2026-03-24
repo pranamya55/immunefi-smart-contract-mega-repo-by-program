@@ -1,0 +1,1 @@
+../../../../../../../../../mega-repo/assets/github/blob-snapshots/sky-ecosystem/starknet-dai-bridge/main/contracts/l2/registry.cairo

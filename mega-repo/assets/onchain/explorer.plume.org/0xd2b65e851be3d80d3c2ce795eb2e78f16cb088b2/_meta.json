@@ -1,0 +1,25 @@
+{
+  "url": "https://explorer.plume.org/address/0xD2B65e851Be3d80D3c2ce795eB2E78f16cB088b2",
+  "host": "explorer.plume.org",
+  "address": "0xD2B65e851Be3d80D3c2ce795eB2E78f16cB088b2",
+  "chainid": null,
+  "project_slug": "ondofinance",
+  "asset_id": "3fVzSTp8iZv5mnHXMywPb",
+  "contract_name": "TokenProxy",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": "000000000000000000000000bbfe105992808f4f92d2becd9e586358014ce613000000000000000000000000bd452c59fa3c4c03de464500e94e8f3e6cf1216700000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000000",
+  "evm_version": "default",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:missing-chainid",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

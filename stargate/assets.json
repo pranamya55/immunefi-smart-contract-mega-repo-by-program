@@ -1,0 +1,122 @@
+[
+  {
+    "project_slug": "stargate",
+    "asset_id": "6UjSAYUSIZI99NDCddVRZe",
+    "url": "https://etherscan.io/address/0x3E368B6C95c6fEfB7A16dCc0D756389F3c658a06",
+    "description": "FeeLibV1ETH",
+    "added_at": "2024-09-24T18:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "stargate",
+    "asset_id": "21pbi36gz1fNOHnvCTGuhj",
+    "url": "https://etherscan.io/address/0x52B35406CB2FB5e0038EdEcFc129A152a1f74087",
+    "description": "FeeLibV1USDC",
+    "added_at": "2024-09-24T18:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "stargate",
+    "asset_id": "4VGH7W1a1ZWdulIKy9hZYW",
+    "url": "https://etherscan.io/address/0xe171AFcd1E0394b3312e68ca823D5BC87F3Db311",
+    "description": "FeeLibV1USDT",
+    "added_at": "2024-09-24T18:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "stargate",
+    "asset_id": "5ZzA3qAkCUgfbBgL2IOQsM",
+    "url": "https://etherscan.io/address/0x6Dd69717B1194B81A92105B7e0F94cb40f68A3e3",
+    "description": "FeeLibV1METIS",
+    "added_at": "2024-09-24T18:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "stargate",
+    "asset_id": "4MeAKLQ7S0HAniCgzrlOyW",
+    "url": "https://etherscan.io/address/0x6D5521F46b2cba9443feFC09cBaC3B15AE0F73eB",
+    "description": "FeeLibV1mETH",
+    "added_at": "2024-09-24T18:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "stargate",
+    "asset_id": "Pe9YFl3PBTZPXzLzX86Nk",
+    "url": "https://etherscan.io/address/0x5871A7f88b0f3F5143Bf599Fd45F8C0Dc237E881",
+    "description": "StargateMultiRewarder",
+    "added_at": "2024-09-24T18:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "stargate",
+    "asset_id": "3fYTGSAy73mGE1UTPmSMbR",
+    "url": "https://etherscan.io/address/0x77b2043768d28E9C9aB44E1aBfC95944bcE57931",
+    "description": "StargatePoolNative",
+    "added_at": "2024-09-24T18:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "stargate",
+    "asset_id": "1LU9KtyMSmhyxY44GeMXW8",
+    "url": "https://etherscan.io/address/0xc026395860Db2d07ee33e05fE50ed7bD583189C7",
+    "description": "StargatePoolUSDC",
+    "added_at": "2024-09-24T18:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "stargate",
+    "asset_id": "3aFEUTCnKGFaSdSKat7nkt",
+    "url": "https://etherscan.io/address/0x933597a323Eb81cAe705C5bC29985172fd5A3973",
+    "description": "StargatePoolUSDT",
+    "added_at": "2024-09-24T18:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "stargate",
+    "asset_id": "1AOjIOA13hCqbOSChiOkrh",
+    "url": "https://etherscan.io/address/0xcDafB1b2dB43f366E48e6F614b8DCCBFeeFEEcD3",
+    "description": "StargatePoolMETIS",
+    "added_at": "2024-09-24T18:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "stargate",
+    "asset_id": "3oDZk2hEtqcEpKo3SEDPpl",
+    "url": "https://etherscan.io/address/0x268Ca24DAefF1FaC2ed883c598200CcbB79E931D",
+    "description": "StargatePoolmETH",
+    "added_at": "2024-09-24T18:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "stargate",
+    "asset_id": "7wm5NwFMURhqXbNePIOsFF",
+    "url": "https://etherscan.io/address/0xFF551fEDdbeDC0AeE764139cCD9Cb644Bb04A6BD",
+    "description": "StargateStaking",
+    "added_at": "2024-09-24T18:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "stargate",
+    "asset_id": "6R24eeZ00mv2UqL4Gn2N7S",
+    "url": "https://etherscan.io/address/0x6d6620eFa72948C5f68A3C8646d58C00d3f4A980",
+    "description": "TokenMessaging",
+    "added_at": "2024-09-24T18:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "stargate",
+    "asset_id": "4pMNZufTADKzOo2XDW5pLJ",
+    "url": "https://etherscan.io/address/0x1041D127b2d4BC700F0F563883bC689502606918",
+    "description": "Treasurer",
+    "added_at": "2024-09-24T18:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "stargate",
+    "asset_id": "1RyVYHXUl91hV20DhYQyyy",
+    "url": "https://immunefi.com",
+    "description": "Primacy of Impact",
+    "added_at": "2025-11-10T16:00:43.302Z",
+    "revision": 1
+  }
+]

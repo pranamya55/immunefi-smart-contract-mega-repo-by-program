@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x6A23F4940BD5BA117Da261f98aae51A8BFfa210A#code",
+  "host": "etherscan.io",
+  "address": "0x6A23F4940BD5BA117Da261f98aae51A8BFfa210A",
+  "chainid": 1,
+  "project_slug": "livepeer",
+  "asset_id": "48WXjN9eI8Q14si4hwxIM5",
+  "contract_name": "L1Escrow",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "0",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 7,
+  "mode": "json-sources"
+}

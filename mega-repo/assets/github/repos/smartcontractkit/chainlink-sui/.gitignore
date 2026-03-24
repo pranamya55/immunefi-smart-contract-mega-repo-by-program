@@ -1,0 +1,20 @@
+# secrets
+*.env
+.env.*
+
+
+# misc
+/.vscode
+*.log
+.idea/
+.vscode/
+**/build/**
+.DS_Store
+*.cursor
+
+# Node.js
+**/node_modules/
+chainlink-sui
+
+/scripts/artifacts.**.json
+/contracts/**/Move.toml.bak

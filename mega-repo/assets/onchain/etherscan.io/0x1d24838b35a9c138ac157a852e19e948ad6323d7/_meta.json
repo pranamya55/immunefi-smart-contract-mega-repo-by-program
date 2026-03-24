@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x1d24838b35A9c138Ac157A852e19e948aD6323D7#code",
+  "host": "etherscan.io",
+  "address": "0x1d24838b35A9c138Ac157A852e19e948aD6323D7",
+  "chainid": 1,
+  "project_slug": "livepeer",
+  "asset_id": "35pjN33XgCfei1RwUsq9yb",
+  "contract_name": "L1LPTDataCache",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "0",
+  "runs": "200",
+  "constructor_arguments": "0000000000000000000000004dbd4fc535ac27206064b68ffcf827b0a60bab3f00000000000000000000000058b6a8a3302369daec383334672404ee733ab239000000000000000000000000d78b6bd09cd28a83cfb21afa0da95c685a6bb0b1",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 6,
+  "mode": "json-sources"
+}

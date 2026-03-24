@@ -1,0 +1,25 @@
+{
+  "url": "https://explorer.optimism.io/address/0x33a3aB524A43E69f30bFd9Ae97d1Ec679FF00B64#code",
+  "host": "explorer.optimism.io",
+  "address": "0x33a3aB524A43E69f30bFd9Ae97d1Ec679FF00B64",
+  "chainid": null,
+  "project_slug": "sparklend",
+  "asset_id": "6nLVMxbM8dToHdmWHvNIdA",
+  "contract_name": "DSRAuthOracle",
+  "compiler_version": "0.8.20+commit.a1b79de6",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": null,
+  "evm_version": "paris",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:missing-chainid",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

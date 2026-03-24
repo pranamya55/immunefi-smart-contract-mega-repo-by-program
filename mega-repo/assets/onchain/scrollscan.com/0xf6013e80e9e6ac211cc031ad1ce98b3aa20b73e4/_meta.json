@@ -1,0 +1,24 @@
+{
+  "url": "https://scrollscan.com/address/0xF6013e80E9e6AC211Cc031ad1CE98B3Aa20b73E4",
+  "host": "scrollscan.com",
+  "address": "0xF6013e80E9e6AC211Cc031ad1CE98B3Aa20b73E4",
+  "chainid": 534352,
+  "project_slug": "compoundfinance",
+  "asset_id": "5pOQE0fwUDxSu6SufNolQA",
+  "contract_name": "Timelock",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 2,
+  "mode": "json-sources"
+}

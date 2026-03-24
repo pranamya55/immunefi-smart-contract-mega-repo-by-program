@@ -1,0 +1,30 @@
+[package]
+name = "sway-types"
+version.workspace = true
+description = "Sway core types."
+authors.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[features]
+no-span-debug = []
+
+[dependencies]
+fuel-asm.workspace = true
+fuel-crypto.workspace = true
+fuel-tx.workspace = true
+indexmap.workspace = true
+lazy_static.workspace = true
+num-bigint.workspace = true
+num-traits.workspace = true
+parking_lot.workspace = true
+rustc-hash.workspace = true
+serde = { workspace = true, features = ["derive", "std", "rc"] }
+sway-utils.workspace = true
+thiserror.workspace = true
+toml.workspace = true
+
+[lints]
+workspace = true

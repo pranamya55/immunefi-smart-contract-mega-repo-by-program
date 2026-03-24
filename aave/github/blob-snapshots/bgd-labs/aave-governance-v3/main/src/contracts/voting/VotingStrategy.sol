@@ -1,0 +1,1 @@
+../../../../../../../../../../mega-repo/assets/github/blob-snapshots/bgd-labs/aave-governance-v3/main/src/contracts/voting/VotingStrategy.sol

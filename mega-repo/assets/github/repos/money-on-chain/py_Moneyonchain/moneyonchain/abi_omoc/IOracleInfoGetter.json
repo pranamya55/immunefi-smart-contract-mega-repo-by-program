@@ -1,0 +1,4011 @@
+{
+  "contractName": "IOracleInfoGetter",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract ICoinPairPrice",
+          "name": "_coinPairPrice",
+          "type": "address"
+        }
+      ],
+      "name": "getCoinPairUIInfo",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "round",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "startBlock",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lockPeriodTimestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalPoints",
+              "type": "uint256"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "points",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "selectedInRound",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "address",
+                  "name": "addr",
+                  "type": "address"
+                }
+              ],
+              "internalType": "struct IOracleInfoGetter.CoinPairUIOracleRoundInfo[]",
+              "name": "info",
+              "type": "tuple[]"
+            },
+            {
+              "internalType": "uint256",
+              "name": "currentBlock",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lastPubBlock",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "lastPubBlockHash",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "validPricePeriodInBlocks",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "availableRewards",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IOracleInfoGetter.CoinPairPriceUIInfo",
+          "name": "coinPairPriceUIInfo",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IOracleManager",
+          "name": "_oracleManager",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_offset",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_limit",
+          "type": "uint256"
+        }
+      ],
+      "name": "getManagerUICoinPairInfo",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "addr",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "coinPair",
+              "type": "bytes32"
+            }
+          ],
+          "internalType": "struct IOracleInfoGetter.ManagerUICoinPairInfo[]",
+          "name": "info",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IOracleManager",
+          "name": "_oracleManager",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_from",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_cant",
+          "type": "uint256"
+        }
+      ],
+      "name": "getManagerUIOracleInfo",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "stake",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "mocsBalance",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "basecoinBalance",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "addr",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct IOracleInfoGetter.ManagerUIOracleInfo[]",
+          "name": "info",
+          "type": "tuple[]"
+        },
+        {
+          "internalType": "address",
+          "name": "nextEntry",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IOracleManager",
+          "name": "_oracleManager",
+          "type": "address"
+        },
+        {
+          "internalType": "contract ICoinPairPrice",
+          "name": "_coinPairPrice",
+          "type": "address"
+        }
+      ],
+      "name": "getOracleServerInfo",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "round",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "startBlock",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lockPeriodTimestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalPoints",
+              "type": "uint256"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "stake",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "points",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "address",
+                  "name": "addr",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address",
+                  "name": "owner",
+                  "type": "address"
+                },
+                {
+                  "internalType": "string",
+                  "name": "name",
+                  "type": "string"
+                }
+              ],
+              "internalType": "struct IOracleInfoGetter.FullOracleRoundInfo[]",
+              "name": "info",
+              "type": "tuple[]"
+            },
+            {
+              "internalType": "uint256",
+              "name": "price",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "currentBlock",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lastPubBlock",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "lastPubBlockHash",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "validPricePeriodInBlocks",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IOracleInfoGetter.OracleServerInfo",
+          "name": "oracleServerInfo",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract ICoinPairPrice\",\"name\":\"_coinPairPrice\",\"type\":\"address\"}],\"name\":\"getCoinPairUIInfo\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"round\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"startBlock\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"lockPeriodTimestamp\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"totalPoints\",\"type\":\"uint256\"},{\"components\":[{\"internalType\":\"uint256\",\"name\":\"points\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"selectedInRound\",\"type\":\"bool\"},{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"internalType\":\"struct IOracleInfoGetter.CoinPairUIOracleRoundInfo[]\",\"name\":\"info\",\"type\":\"tuple[]\"},{\"internalType\":\"uint256\",\"name\":\"currentBlock\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"lastPubBlock\",\"type\":\"uint256\"},{\"internalType\":\"bytes32\",\"name\":\"lastPubBlockHash\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"validPricePeriodInBlocks\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"availableRewards\",\"type\":\"uint256\"}],\"internalType\":\"struct IOracleInfoGetter.CoinPairPriceUIInfo\",\"name\":\"coinPairPriceUIInfo\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract IOracleManager\",\"name\":\"_oracleManager\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_offset\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_limit\",\"type\":\"uint256\"}],\"name\":\"getManagerUICoinPairInfo\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"coinPair\",\"type\":\"bytes32\"}],\"internalType\":\"struct IOracleInfoGetter.ManagerUICoinPairInfo[]\",\"name\":\"info\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract IOracleManager\",\"name\":\"_oracleManager\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_from\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_cant\",\"type\":\"uint256\"}],\"name\":\"getManagerUIOracleInfo\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"stake\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"mocsBalance\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"basecoinBalance\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"}],\"internalType\":\"struct IOracleInfoGetter.ManagerUIOracleInfo[]\",\"name\":\"info\",\"type\":\"tuple[]\"},{\"internalType\":\"address\",\"name\":\"nextEntry\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract IOracleManager\",\"name\":\"_oracleManager\",\"type\":\"address\"},{\"internalType\":\"contract ICoinPairPrice\",\"name\":\"_coinPairPrice\",\"type\":\"address\"}],\"name\":\"getOracleServerInfo\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"round\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"startBlock\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"lockPeriodTimestamp\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"totalPoints\",\"type\":\"uint256\"},{\"components\":[{\"internalType\":\"uint256\",\"name\":\"stake\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"points\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"}],\"internalType\":\"struct IOracleInfoGetter.FullOracleRoundInfo[]\",\"name\":\"info\",\"type\":\"tuple[]\"},{\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"currentBlock\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"lastPubBlock\",\"type\":\"uint256\"},{\"internalType\":\"bytes32\",\"name\":\"lastPubBlockHash\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"validPricePeriodInBlocks\",\"type\":\"uint256\"}],\"internalType\":\"struct IOracleInfoGetter.OracleServerInfo\",\"name\":\"oracleServerInfo\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"getCoinPairUIInfo(address)\":{\"params\":{\"_coinPairPrice\":\"coinPairPrice contract\"}},\"getManagerUICoinPairInfo(address,uint256,uint256)\":{\"params\":{\"_limit\":\"take to this limit, limit == 0 => take all\",\"_offset\":\"take from this offset\",\"_oracleManager\":\"oracleManager contract\"}},\"getManagerUIOracleInfo(address,uint256,uint256)\":{\"params\":{\"_cant\":\"Number of items to return.\",\"_from\":\"The index to start from.\",\"_oracleManager\":\"oracleManager contract\"}},\"getOracleServerInfo(address,address)\":{\"params\":{\"_coinPairPrice\":\"coinPairPrice contract\",\"_oracleManager\":\"oracleManager contract\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getCoinPairUIInfo(address)\":{\"notice\":\"Return all the information needed by the ui (one call, to avoid a lot of rpc)\"},\"getManagerUICoinPairInfo(address,uint256,uint256)\":{\"notice\":\"Return all the information needed by the ui (one call, to avoid a lot of rpc)\"},\"getManagerUIOracleInfo(address,uint256,uint256)\":{\"notice\":\"Return all the information needed by the ui (one call, to avoid a lot of rpc)\"},\"getOracleServerInfo(address,address)\":{\"notice\":\"Return all the information needed by the oracle server (one call, to avoid a lot of rpc)\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/jbokser/work2/OMoC-SC-Shared/contracts/IOracleInfoGetter.sol\":\"IOracleInfoGetter\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/jbokser/work2/OMoC-SC-Shared/contracts/ICoinPairPrice.sol\":{\"keccak256\":\"0x6e2a16eecab9750e9de4be6e8d906bd90b2be2eb04c8fa3f89b3f96c5f86eb34\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://945b97e46ec8444f84bccb1513dea253a33e6ac255fcfe471660417a6074ab09\",\"dweb:/ipfs/QmZTg98ThuVudN6JpxqQMgq6p5XUzjGYkbHhV4BrKdaqeB\"]},\"/home/jbokser/work2/OMoC-SC-Shared/contracts/IDelayMachine.sol\":{\"keccak256\":\"0x7e08dc7a04bdb0b079e7e9aa7b4ae373bbfa5346482468468e1cf9b6f8e515db\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://3a542097f25d8991b78e193aacafd545f130f367df3ddbd91e5203f83e6640e8\",\"dweb:/ipfs/QmQ8na1tc1Dq5sNmAa1sZDuJNAoWcY9MKrso9HAZdP1ae9\"]},\"/home/jbokser/work2/OMoC-SC-Shared/contracts/IOracleInfoGetter.sol\":{\"keccak256\":\"0x67c1415a338687e07f1e4c8b9093cc3011131ad613cf602c083353bdf672d97a\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://c90845531a53e0a230e0e947fab13a2737e1cb8763715d1ea8aeed697bac2b51\",\"dweb:/ipfs/QmbMGkyA8MAtasjCFzLePtQCPLLatkAkouW32BwLTPGaMa\"]},\"/home/jbokser/work2/OMoC-SC-Shared/contracts/IOracleManager.sol\":{\"keccak256\":\"0x78c5270346b456232734e61858ef0a338a3b4ff77ca75df57ab040f34ff9196c\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://f818cf802ca403f9710c672f20ddc33986874e8b499dbb5ccd21696c4b785eb4\",\"dweb:/ipfs/QmUkqUC5oPHDYj8KSo8yAXYakF6JxD1kdQm2ZnrXCAFzkD\"]},\"/home/jbokser/work2/OMoC-SC-Shared/contracts/IRegistry.sol\":{\"keccak256\":\"0x1a3c93785a8970884cb8ba4beb89d0f63dbc387a2c27c4ce074d144c44a2f889\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://7ab1ace62f43089a4b1a767bbfd9c65f4c42f74fa8f8bb799a661bc421228472\",\"dweb:/ipfs/QmazGCjEYg9egsMVuCugoUt7M5QRsJDKUWQTjCbyPTbFcF\"]},\"/home/jbokser/work2/OMoC-SC-Shared/contracts/IStakingMachine.sol\":{\"keccak256\":\"0x2cfdf56c79c79fc1b5b5b1df9f2078064ffb2d63aea45163556224687f92aece\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://ee62a66fa4cba28a127e5e61cbe553bda29001dfa21ac0e47825d51474223e55\",\"dweb:/ipfs/QmdEKjts1WAcS6kVWWpraNmXvo3MuMwpHJWKE595zi26qS\"]},\"@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x6cc1cb934a3ac2137a7dcaed018af9e235392236ceecfd3687259702b9c767ad\",\"urls\":[\"bzz-raw://0055fa88138cd1c3c6440370f8580f85857f8fe9dec41c99af9eafbeb8d9c3ce\",\"dweb:/ipfs/QmX1xDh8vwGLLCH8ti45eXjQ7Wcxv1FEGTR3jkFnd5Nv6F\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: UNLICENSED\npragma solidity ^0.6.0;\npragma experimental ABIEncoderV2;\n\nimport {ICoinPairPrice} from \"./ICoinPairPrice.sol\";\nimport {IOracleManager} from \"./IOracleManager.sol\";\n\ninterface IOracleInfoGetter {\n    struct FullOracleRoundInfo {\n        uint256 stake;\n        uint256 points;\n        address addr;\n        address owner;\n        string name;\n    }\n\n    struct OracleServerInfo {\n        uint256 round;\n        uint256 startBlock;\n        uint256 lockPeriodTimestamp;\n        uint256 totalPoints;\n        FullOracleRoundInfo[] info;\n        uint256 price;\n        uint256 currentBlock;\n        uint256 lastPubBlock;\n        bytes32 lastPubBlockHash;\n        uint256 validPricePeriodInBlocks;\n    }\n\n    struct ManagerUIOracleInfo {\n        uint256 stake;\n        uint256 mocsBalance;\n        uint256 basecoinBalance;\n        address addr;\n        address owner;\n        string name;\n    }\n\n    struct ManagerUICoinPairInfo {\n        address addr;\n        bytes32 coinPair;\n    }\n\n    struct CoinPairUIOracleRoundInfo {\n        uint256 points;\n        bool selectedInRound;\n        address addr;\n    }\n\n    struct CoinPairPriceUIInfo {\n        uint256 round;\n        uint256 startBlock;\n        uint256 lockPeriodTimestamp;\n        uint256 totalPoints;\n        CoinPairUIOracleRoundInfo[] info;\n        uint256 currentBlock;\n        uint256 lastPubBlock;\n        bytes32 lastPubBlockHash;\n        uint256 validPricePeriodInBlocks;\n        uint256 availableRewards;\n    }\n\n    /**\n        Return all the information needed by the ui (one call, to avoid a lot of rpc)\n\n        @param _coinPairPrice coinPairPrice contract\n    */\n    function getCoinPairUIInfo(ICoinPairPrice _coinPairPrice)\n        external\n        view\n        returns (CoinPairPriceUIInfo memory coinPairPriceUIInfo);\n\n    /**\n        Return all the information needed by the ui (one call, to avoid a lot of rpc)\n\n        @param _oracleManager oracleManager contract\n        @param _offset take from this offset\n        @param _limit take to this limit, limit == 0 => take all\n    */\n    function getManagerUICoinPairInfo(\n        IOracleManager _oracleManager,\n        uint256 _offset,\n        uint256 _limit\n    ) external view returns (ManagerUICoinPairInfo[] memory info);\n\n    /**\n        Return all the information needed by the ui (one call, to avoid a lot of rpc)\n\n        @param _oracleManager oracleManager contract\n        @param _from The index to start from.\n        @param _cant Number of items to return.\n    */\n    function getManagerUIOracleInfo(\n        IOracleManager _oracleManager,\n        uint256 _from,\n        uint256 _cant\n    ) external view returns (ManagerUIOracleInfo[] memory info, address nextEntry);\n\n    /**\n        Return all the information needed by the oracle server (one call, to avoid a lot of rpc)\n\n        @param _oracleManager oracleManager contract\n        @param _coinPairPrice coinPairPrice contract\n    */\n    function getOracleServerInfo(IOracleManager _oracleManager, ICoinPairPrice _coinPairPrice)\n        external\n        view\n        returns (OracleServerInfo memory oracleServerInfo);\n}\n",
+  "sourcePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/IOracleInfoGetter.sol",
+  "ast": {
+    "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/IOracleInfoGetter.sol",
+    "exportedSymbols": {
+      "IOracleInfoGetter": [
+        1374
+      ]
+    },
+    "id": 1375,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1242,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:23:5"
+      },
+      {
+        "id": 1243,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "63:33:5"
+      },
+      {
+        "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/ICoinPairPrice.sol",
+        "file": "./ICoinPairPrice.sol",
+        "id": 1245,
+        "nodeType": "ImportDirective",
+        "scope": 1375,
+        "sourceUnit": 907,
+        "src": "98:52:5",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "argumentTypes": null,
+              "id": 1244,
+              "name": "ICoinPairPrice",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": null,
+              "src": "106:14:5",
+              "typeDescriptions": {
+                "typeIdentifier": null,
+                "typeString": null
+              }
+            },
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/IOracleManager.sol",
+        "file": "./IOracleManager.sol",
+        "id": 1247,
+        "nodeType": "ImportDirective",
+        "scope": 1375,
+        "sourceUnit": 1608,
+        "src": "151:52:5",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "argumentTypes": null,
+              "id": 1246,
+              "name": "IOracleManager",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": null,
+              "src": "159:14:5",
+              "typeDescriptions": {
+                "typeIdentifier": null,
+                "typeString": null
+              }
+            },
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 1374,
+        "linearizedBaseContracts": [
+          1374
+        ],
+        "name": "IOracleInfoGetter",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "IOracleInfoGetter.FullOracleRoundInfo",
+            "id": 1258,
+            "members": [
+              {
+                "constant": false,
+                "id": 1249,
+                "mutability": "mutable",
+                "name": "stake",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1258,
+                "src": "276:13:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1248,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "276:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1251,
+                "mutability": "mutable",
+                "name": "points",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1258,
+                "src": "299:14:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1250,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "299:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1253,
+                "mutability": "mutable",
+                "name": "addr",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1258,
+                "src": "323:12:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 1252,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "323:7:5",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1255,
+                "mutability": "mutable",
+                "name": "owner",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1258,
+                "src": "345:13:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 1254,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "345:7:5",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1257,
+                "mutability": "mutable",
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1258,
+                "src": "368:11:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1256,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "368:6:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "FullOracleRoundInfo",
+            "nodeType": "StructDefinition",
+            "scope": 1374,
+            "src": "239:147:5",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "IOracleInfoGetter.OracleServerInfo",
+            "id": 1280,
+            "members": [
+              {
+                "constant": false,
+                "id": 1260,
+                "mutability": "mutable",
+                "name": "round",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1280,
+                "src": "426:13:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1259,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "426:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1262,
+                "mutability": "mutable",
+                "name": "startBlock",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1280,
+                "src": "449:18:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1261,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "449:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1264,
+                "mutability": "mutable",
+                "name": "lockPeriodTimestamp",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1280,
+                "src": "477:27:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1263,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "477:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1266,
+                "mutability": "mutable",
+                "name": "totalPoints",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1280,
+                "src": "514:19:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1265,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "514:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1269,
+                "mutability": "mutable",
+                "name": "info",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1280,
+                "src": "543:26:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_struct$_FullOracleRoundInfo_$1258_storage_$dyn_storage_ptr",
+                  "typeString": "struct IOracleInfoGetter.FullOracleRoundInfo[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "contractScope": null,
+                    "id": 1267,
+                    "name": "FullOracleRoundInfo",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1258,
+                    "src": "543:19:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_FullOracleRoundInfo_$1258_storage_ptr",
+                      "typeString": "struct IOracleInfoGetter.FullOracleRoundInfo"
+                    }
+                  },
+                  "id": 1268,
+                  "length": null,
+                  "nodeType": "ArrayTypeName",
+                  "src": "543:21:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_FullOracleRoundInfo_$1258_storage_$dyn_storage_ptr",
+                    "typeString": "struct IOracleInfoGetter.FullOracleRoundInfo[]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1271,
+                "mutability": "mutable",
+                "name": "price",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1280,
+                "src": "579:13:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1270,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "579:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1273,
+                "mutability": "mutable",
+                "name": "currentBlock",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1280,
+                "src": "602:20:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1272,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "602:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1275,
+                "mutability": "mutable",
+                "name": "lastPubBlock",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1280,
+                "src": "632:20:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1274,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "632:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1277,
+                "mutability": "mutable",
+                "name": "lastPubBlockHash",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1280,
+                "src": "662:24:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 1276,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "662:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1279,
+                "mutability": "mutable",
+                "name": "validPricePeriodInBlocks",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1280,
+                "src": "696:32:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1278,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "696:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "OracleServerInfo",
+            "nodeType": "StructDefinition",
+            "scope": 1374,
+            "src": "392:343:5",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "IOracleInfoGetter.ManagerUIOracleInfo",
+            "id": 1293,
+            "members": [
+              {
+                "constant": false,
+                "id": 1282,
+                "mutability": "mutable",
+                "name": "stake",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1293,
+                "src": "778:13:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1281,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "778:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1284,
+                "mutability": "mutable",
+                "name": "mocsBalance",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1293,
+                "src": "801:19:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1283,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "801:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1286,
+                "mutability": "mutable",
+                "name": "basecoinBalance",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1293,
+                "src": "830:23:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1285,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "830:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1288,
+                "mutability": "mutable",
+                "name": "addr",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1293,
+                "src": "863:12:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 1287,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "863:7:5",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1290,
+                "mutability": "mutable",
+                "name": "owner",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1293,
+                "src": "885:13:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 1289,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "885:7:5",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1292,
+                "mutability": "mutable",
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1293,
+                "src": "908:11:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1291,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "908:6:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "ManagerUIOracleInfo",
+            "nodeType": "StructDefinition",
+            "scope": 1374,
+            "src": "741:185:5",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "IOracleInfoGetter.ManagerUICoinPairInfo",
+            "id": 1298,
+            "members": [
+              {
+                "constant": false,
+                "id": 1295,
+                "mutability": "mutable",
+                "name": "addr",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1298,
+                "src": "971:12:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 1294,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "971:7:5",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1297,
+                "mutability": "mutable",
+                "name": "coinPair",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1298,
+                "src": "993:16:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 1296,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "993:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "ManagerUICoinPairInfo",
+            "nodeType": "StructDefinition",
+            "scope": 1374,
+            "src": "932:84:5",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "IOracleInfoGetter.CoinPairUIOracleRoundInfo",
+            "id": 1305,
+            "members": [
+              {
+                "constant": false,
+                "id": 1300,
+                "mutability": "mutable",
+                "name": "points",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1305,
+                "src": "1065:14:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1299,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1065:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1302,
+                "mutability": "mutable",
+                "name": "selectedInRound",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1305,
+                "src": "1089:20:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 1301,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1089:4:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1304,
+                "mutability": "mutable",
+                "name": "addr",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1305,
+                "src": "1119:12:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 1303,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1119:7:5",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "CoinPairUIOracleRoundInfo",
+            "nodeType": "StructDefinition",
+            "scope": 1374,
+            "src": "1022:116:5",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "IOracleInfoGetter.CoinPairPriceUIInfo",
+            "id": 1327,
+            "members": [
+              {
+                "constant": false,
+                "id": 1307,
+                "mutability": "mutable",
+                "name": "round",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1327,
+                "src": "1181:13:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1306,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1181:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1309,
+                "mutability": "mutable",
+                "name": "startBlock",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1327,
+                "src": "1204:18:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1308,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1204:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1311,
+                "mutability": "mutable",
+                "name": "lockPeriodTimestamp",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1327,
+                "src": "1232:27:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1310,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1232:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1313,
+                "mutability": "mutable",
+                "name": "totalPoints",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1327,
+                "src": "1269:19:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1312,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1269:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1316,
+                "mutability": "mutable",
+                "name": "info",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1327,
+                "src": "1298:32:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_struct$_CoinPairUIOracleRoundInfo_$1305_storage_$dyn_storage_ptr",
+                  "typeString": "struct IOracleInfoGetter.CoinPairUIOracleRoundInfo[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "contractScope": null,
+                    "id": 1314,
+                    "name": "CoinPairUIOracleRoundInfo",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1305,
+                    "src": "1298:25:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_CoinPairUIOracleRoundInfo_$1305_storage_ptr",
+                      "typeString": "struct IOracleInfoGetter.CoinPairUIOracleRoundInfo"
+                    }
+                  },
+                  "id": 1315,
+                  "length": null,
+                  "nodeType": "ArrayTypeName",
+                  "src": "1298:27:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_CoinPairUIOracleRoundInfo_$1305_storage_$dyn_storage_ptr",
+                    "typeString": "struct IOracleInfoGetter.CoinPairUIOracleRoundInfo[]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1318,
+                "mutability": "mutable",
+                "name": "currentBlock",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1327,
+                "src": "1340:20:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1317,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1340:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1320,
+                "mutability": "mutable",
+                "name": "lastPubBlock",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1327,
+                "src": "1370:20:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1319,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1370:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1322,
+                "mutability": "mutable",
+                "name": "lastPubBlockHash",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1327,
+                "src": "1400:24:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 1321,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1400:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1324,
+                "mutability": "mutable",
+                "name": "validPricePeriodInBlocks",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1327,
+                "src": "1434:32:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1323,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1434:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1326,
+                "mutability": "mutable",
+                "name": "availableRewards",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 1327,
+                "src": "1476:24:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1325,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1476:7:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "CoinPairPriceUIInfo",
+            "nodeType": "StructDefinition",
+            "scope": 1374,
+            "src": "1144:363:5",
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 1328,
+              "nodeType": "StructuredDocumentation",
+              "src": "1513:150:5",
+              "text": "Return all the information needed by the ui (one call, to avoid a lot of rpc)\n@param _coinPairPrice coinPairPrice contract"
+            },
+            "functionSelector": "64911422",
+            "id": 1335,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCoinPairUIInfo",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1331,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1330,
+                  "mutability": "mutable",
+                  "name": "_coinPairPrice",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1335,
+                  "src": "1695:29:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ICoinPairPrice_$906",
+                    "typeString": "contract ICoinPairPrice"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 1329,
+                    "name": "ICoinPairPrice",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 906,
+                    "src": "1695:14:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ICoinPairPrice_$906",
+                      "typeString": "contract ICoinPairPrice"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1694:31:5"
+            },
+            "returnParameters": {
+              "id": 1334,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1333,
+                  "mutability": "mutable",
+                  "name": "coinPairPriceUIInfo",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1335,
+                  "src": "1773:46:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_CoinPairPriceUIInfo_$1327_memory_ptr",
+                    "typeString": "struct IOracleInfoGetter.CoinPairPriceUIInfo"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 1332,
+                    "name": "CoinPairPriceUIInfo",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1327,
+                    "src": "1773:19:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_CoinPairPriceUIInfo_$1327_storage_ptr",
+                      "typeString": "struct IOracleInfoGetter.CoinPairPriceUIInfo"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1772:48:5"
+            },
+            "scope": 1374,
+            "src": "1668:153:5",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 1336,
+              "nodeType": "StructuredDocumentation",
+              "src": "1827:260:5",
+              "text": "Return all the information needed by the ui (one call, to avoid a lot of rpc)\n@param _oracleManager oracleManager contract\n@param _offset take from this offset\n@param _limit take to this limit, limit == 0 => take all"
+            },
+            "functionSelector": "072b89d8",
+            "id": 1348,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getManagerUICoinPairInfo",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1343,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1338,
+                  "mutability": "mutable",
+                  "name": "_oracleManager",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1348,
+                  "src": "2135:29:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IOracleManager_$1607",
+                    "typeString": "contract IOracleManager"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 1337,
+                    "name": "IOracleManager",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1607,
+                    "src": "2135:14:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IOracleManager_$1607",
+                      "typeString": "contract IOracleManager"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1340,
+                  "mutability": "mutable",
+                  "name": "_offset",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1348,
+                  "src": "2174:15:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1339,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2174:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1342,
+                  "mutability": "mutable",
+                  "name": "_limit",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1348,
+                  "src": "2199:14:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1341,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2199:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2125:94:5"
+            },
+            "returnParameters": {
+              "id": 1347,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1346,
+                  "mutability": "mutable",
+                  "name": "info",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1348,
+                  "src": "2243:35:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_ManagerUICoinPairInfo_$1298_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "struct IOracleInfoGetter.ManagerUICoinPairInfo[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "contractScope": null,
+                      "id": 1344,
+                      "name": "ManagerUICoinPairInfo",
+                      "nodeType": "UserDefinedTypeName",
+                      "referencedDeclaration": 1298,
+                      "src": "2243:21:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_ManagerUICoinPairInfo_$1298_storage_ptr",
+                        "typeString": "struct IOracleInfoGetter.ManagerUICoinPairInfo"
+                      }
+                    },
+                    "id": 1345,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "2243:23:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_ManagerUICoinPairInfo_$1298_storage_$dyn_storage_ptr",
+                      "typeString": "struct IOracleInfoGetter.ManagerUICoinPairInfo[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2242:37:5"
+            },
+            "scope": 1374,
+            "src": "2092:188:5",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 1349,
+              "nodeType": "StructuredDocumentation",
+              "src": "2286:244:5",
+              "text": "Return all the information needed by the ui (one call, to avoid a lot of rpc)\n@param _oracleManager oracleManager contract\n@param _from The index to start from.\n@param _cant Number of items to return."
+            },
+            "functionSelector": "80ca28d0",
+            "id": 1363,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getManagerUIOracleInfo",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1356,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1351,
+                  "mutability": "mutable",
+                  "name": "_oracleManager",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1363,
+                  "src": "2576:29:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IOracleManager_$1607",
+                    "typeString": "contract IOracleManager"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 1350,
+                    "name": "IOracleManager",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1607,
+                    "src": "2576:14:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IOracleManager_$1607",
+                      "typeString": "contract IOracleManager"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1353,
+                  "mutability": "mutable",
+                  "name": "_from",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1363,
+                  "src": "2615:13:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1352,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2615:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1355,
+                  "mutability": "mutable",
+                  "name": "_cant",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1363,
+                  "src": "2638:13:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1354,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2638:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2566:91:5"
+            },
+            "returnParameters": {
+              "id": 1362,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1359,
+                  "mutability": "mutable",
+                  "name": "info",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1363,
+                  "src": "2681:33:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_ManagerUIOracleInfo_$1293_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "struct IOracleInfoGetter.ManagerUIOracleInfo[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "contractScope": null,
+                      "id": 1357,
+                      "name": "ManagerUIOracleInfo",
+                      "nodeType": "UserDefinedTypeName",
+                      "referencedDeclaration": 1293,
+                      "src": "2681:19:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_ManagerUIOracleInfo_$1293_storage_ptr",
+                        "typeString": "struct IOracleInfoGetter.ManagerUIOracleInfo"
+                      }
+                    },
+                    "id": 1358,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "2681:21:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_ManagerUIOracleInfo_$1293_storage_$dyn_storage_ptr",
+                      "typeString": "struct IOracleInfoGetter.ManagerUIOracleInfo[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1361,
+                  "mutability": "mutable",
+                  "name": "nextEntry",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1363,
+                  "src": "2716:17:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1360,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2716:7:5",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2680:54:5"
+            },
+            "scope": 1374,
+            "src": "2535:200:5",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 1364,
+              "nodeType": "StructuredDocumentation",
+              "src": "2741:214:5",
+              "text": "Return all the information needed by the oracle server (one call, to avoid a lot of rpc)\n@param _oracleManager oracleManager contract\n@param _coinPairPrice coinPairPrice contract"
+            },
+            "functionSelector": "ad314b2e",
+            "id": 1373,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getOracleServerInfo",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1369,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1366,
+                  "mutability": "mutable",
+                  "name": "_oracleManager",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1373,
+                  "src": "2989:29:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IOracleManager_$1607",
+                    "typeString": "contract IOracleManager"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 1365,
+                    "name": "IOracleManager",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1607,
+                    "src": "2989:14:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IOracleManager_$1607",
+                      "typeString": "contract IOracleManager"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1368,
+                  "mutability": "mutable",
+                  "name": "_coinPairPrice",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1373,
+                  "src": "3020:29:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ICoinPairPrice_$906",
+                    "typeString": "contract ICoinPairPrice"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 1367,
+                    "name": "ICoinPairPrice",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 906,
+                    "src": "3020:14:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ICoinPairPrice_$906",
+                      "typeString": "contract ICoinPairPrice"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2988:62:5"
+            },
+            "returnParameters": {
+              "id": 1372,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1371,
+                  "mutability": "mutable",
+                  "name": "oracleServerInfo",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1373,
+                  "src": "3098:40:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_OracleServerInfo_$1280_memory_ptr",
+                    "typeString": "struct IOracleInfoGetter.OracleServerInfo"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 1370,
+                    "name": "OracleServerInfo",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1280,
+                    "src": "3098:16:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_OracleServerInfo_$1280_storage_ptr",
+                      "typeString": "struct IOracleInfoGetter.OracleServerInfo"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3097:42:5"
+            },
+            "scope": 1374,
+            "src": "2960:180:5",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1375,
+        "src": "205:2937:5"
+      }
+    ],
+    "src": "39:3104:5"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/IOracleInfoGetter.sol",
+      "exportedSymbols": {
+        "IOracleInfoGetter": [
+          1374
+        ]
+      },
+      "license": "UNLICENSED"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.6",
+            ".0"
+          ]
+        },
+        "id": 1242,
+        "name": "PragmaDirective",
+        "src": "39:23:5"
+      },
+      {
+        "attributes": {
+          "literals": [
+            "experimental",
+            "ABIEncoderV2"
+          ]
+        },
+        "id": 1243,
+        "name": "PragmaDirective",
+        "src": "63:33:5"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 907,
+          "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/ICoinPairPrice.sol",
+          "file": "./ICoinPairPrice.sol",
+          "scope": 1375,
+          "symbolAliases": [
+            {
+              "foreign": {
+                "attributes": {
+                  "argumentTypes": null,
+                  "overloadedDeclarations": [
+                    null
+                  ],
+                  "referencedDeclaration": null,
+                  "type": null,
+                  "value": "ICoinPairPrice"
+                },
+                "id": 1244,
+                "name": "Identifier",
+                "src": "106:14:5"
+              },
+              "local": null
+            }
+          ],
+          "unitAlias": ""
+        },
+        "id": 1245,
+        "name": "ImportDirective",
+        "src": "98:52:5"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 1608,
+          "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/IOracleManager.sol",
+          "file": "./IOracleManager.sol",
+          "scope": 1375,
+          "symbolAliases": [
+            {
+              "foreign": {
+                "attributes": {
+                  "argumentTypes": null,
+                  "overloadedDeclarations": [
+                    null
+                  ],
+                  "referencedDeclaration": null,
+                  "type": null,
+                  "value": "IOracleManager"
+                },
+                "id": 1246,
+                "name": "Identifier",
+                "src": "159:14:5"
+              },
+              "local": null
+            }
+          ],
+          "unitAlias": ""
+        },
+        "id": 1247,
+        "name": "ImportDirective",
+        "src": "151:52:5"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            1374
+          ],
+          "name": "IOracleInfoGetter",
+          "scope": 1375
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "IOracleInfoGetter.FullOracleRoundInfo",
+              "name": "FullOracleRoundInfo",
+              "scope": 1374,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "stake",
+                  "overrides": null,
+                  "scope": 1258,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 1248,
+                    "name": "ElementaryTypeName",
+                    "src": "276:7:5"
+                  }
+                ],
+                "id": 1249,
+                "name": "VariableDeclaration",
+                "src": "276:13:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "points",
+                  "overrides": null,
+                  "scope": 1258,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 1250,
+                    "name": "ElementaryTypeName",
+                    "src": "299:7:5"
+                  }
+                ],
+                "id": 1251,
+                "name": "VariableDeclaration",
+                "src": "299:14:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "addr",
+                  "overrides": null,
+                  "scope": 1258,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "stateMutability": "nonpayable",
+                      "type": "address"
+                    },
+                    "id": 1252,
+                    "name": "ElementaryTypeName",
+                    "src": "323:7:5"
+                  }
+                ],
+                "id": 1253,
+                "name": "VariableDeclaration",
+                "src": "323:12:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "owner",
+                  "overrides": null,
+                  "scope": 1258,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "stateMutability": "nonpayable",
+                      "type": "address"
+                    },
+                    "id": 1254,
+                    "name": "ElementaryTypeName",
+                    "src": "345:7:5"
+                  }
+                ],
+                "id": 1255,
+                "name": "VariableDeclaration",
+                "src": "345:13:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "overrides": null,
+                  "scope": 1258,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 1256,
+                    "name": "ElementaryTypeName",
+                    "src": "368:6:5"
+                  }
+                ],
+                "id": 1257,
+                "name": "VariableDeclaration",
+                "src": "368:11:5"
+              }
+            ],
+            "id": 1258,
+            "name": "StructDefinition",
+            "src": "239:147:5"
+          },
+          {
+            "attributes": {
+              "canonicalName": "IOracleInfoGetter.OracleServerInfo",
+              "name": "OracleServerInfo",
+              "scope": 1374,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "round",
+                  "overrides": null,
+                  "scope": 1280,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 1259,
+                    "name": "ElementaryTypeName",
+                    "src": "426:7:5"
+                  }
+                ],
+                "id": 1260,
+                "name": "VariableDeclaration",
+                "src": "426:13:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "startBlock",
+                  "overrides": null,
+                  "scope": 1280,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 1261,
+                    "name": "ElementaryTypeName",
+                    "src": "449:7:5"
+                  }
+                ],
+                "id": 1262,
+                "name": "VariableDeclaration",
+                "src": "449:18:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "lockPeriodTimestamp",
+                  "overrides": null,
+                  "scope": 1280,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 1263,
+                    "name": "ElementaryTypeName",
+                    "src": "477:7:5"
+                  }
+                ],
+                "id": 1264,
+                "name": "VariableDeclaration",
+                "src": "477:27:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "totalPoints",
+                  "overrides": null,
+                  "scope": 1280,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 1265,
+                    "name": "ElementaryTypeName",
+                    "src": "514:7:5"
+                  }
+                ],
+                "id": 1266,
+                "name": "VariableDeclaration",
+                "src": "514:19:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "info",
+                  "overrides": null,
+                  "scope": 1280,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "struct IOracleInfoGetter.FullOracleRoundInfo[]",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "length": null,
+                      "type": "struct IOracleInfoGetter.FullOracleRoundInfo[]"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "FullOracleRoundInfo",
+                          "referencedDeclaration": 1258,
+                          "type": "struct IOracleInfoGetter.FullOracleRoundInfo"
+                        },
+                        "id": 1267,
+                        "name": "UserDefinedTypeName",
+                        "src": "543:19:5"
+                      }
+                    ],
+                    "id": 1268,
+                    "name": "ArrayTypeName",
+                    "src": "543:21:5"
+                  }
+                ],
+                "id": 1269,
+                "name": "VariableDeclaration",
+                "src": "543:26:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "price",
+                  "overrides": null,
+                  "scope": 1280,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 1270,
+                    "name": "ElementaryTypeName",
+                    "src": "579:7:5"
+                  }
+                ],
+                "id": 1271,
+                "name": "VariableDeclaration",
+                "src": "579:13:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "currentBlock",
+                  "overrides": null,
+                  "scope": 1280,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 1272,
+                    "name": "ElementaryTypeName",
+                    "src": "602:7:5"
+                  }
+                ],
+                "id": 1273,
+                "name": "VariableDeclaration",
+                "src": "602:20:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "lastPubBlock",
+                  "overrides": null,
+                  "scope": 1280,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 1274,
+                    "name": "ElementaryTypeName",
+                    "src": "632:7:5"
+                  }
+                ],
+                "id": 1275,
+                "name": "VariableDeclaration",
+                "src": "632:20:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "lastPubBlockHash",
+                  "overrides": null,
+                  "scope": 1280,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "bytes32",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "bytes32",
+                      "type": "bytes32"
+                    },
+                    "id": 1276,
+                    "name": "ElementaryTypeName",
+                    "src": "662:7:5"
+                  }
+                ],
+                "id": 1277,
+                "name": "VariableDeclaration",
+                "src": "662:24:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "validPricePeriodInBlocks",
+                  "overrides": null,
+                  "scope": 1280,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 1278,
+                    "name": "ElementaryTypeName",
+                    "src": "696:7:5"
+                  }
+                ],
+                "id": 1279,
+                "name": "VariableDeclaration",
+                "src": "696:32:5"
+              }
+            ],
+            "id": 1280,
+            "name": "StructDefinition",
+            "src": "392:343:5"
+          },
+          {
+            "attributes": {
+              "canonicalName": "IOracleInfoGetter.ManagerUIOracleInfo",
+              "name": "ManagerUIOracleInfo",
+              "scope": 1374,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "stake",
+                  "overrides": null,
+                  "scope": 1293,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 1281,
+                    "name": "ElementaryTypeName",
+                    "src": "778:7:5"
+                  }
+                ],
+                "id": 1282,
+                "name": "VariableDeclaration",
+                "src": "778:13:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "mocsBalance",
+                  "overrides": null,
+                  "scope": 1293,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 1283,
+                    "name": "ElementaryTypeName",
+                    "src": "801:7:5"
+                  }
+                ],
+                "id": 1284,
+                "name": "VariableDeclaration",
+                "src": "801:19:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "basecoinBalance",
+                  "overrides": null,
+                  "scope": 1293,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 1285,
+                    "name": "ElementaryTypeName",
+                    "src": "830:7:5"
+                  }
+                ],
+                "id": 1286,
+                "name": "VariableDeclaration",
+                "src": "830:23:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "addr",
+                  "overrides": null,
+                  "scope": 1293,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "stateMutability": "nonpayable",
+                      "type": "address"
+                    },
+                    "id": 1287,
+                    "name": "ElementaryTypeName",
+                    "src": "863:7:5"
+                  }
+                ],
+                "id": 1288,
+                "name": "VariableDeclaration",
+                "src": "863:12:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "owner",
+                  "overrides": null,
+                  "scope": 1293,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "stateMutability": "nonpayable",
+                      "type": "address"
+                    },
+                    "id": 1289,
+                    "name": "ElementaryTypeName",
+                    "src": "885:7:5"
+                  }
+                ],
+                "id": 1290,
+                "name": "VariableDeclaration",
+                "src": "885:13:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "overrides": null,
+                  "scope": 1293,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 1291,
+                    "name": "ElementaryTypeName",
+                    "src": "908:6:5"
+                  }
+                ],
+                "id": 1292,
+                "name": "VariableDeclaration",
+                "src": "908:11:5"
+              }
+            ],
+            "id": 1293,
+            "name": "StructDefinition",
+            "src": "741:185:5"
+          },
+          {
+            "attributes": {
+              "canonicalName": "IOracleInfoGetter.ManagerUICoinPairInfo",
+              "name": "ManagerUICoinPairInfo",
+              "scope": 1374,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "addr",
+                  "overrides": null,
+                  "scope": 1298,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "stateMutability": "nonpayable",
+                      "type": "address"
+                    },
+                    "id": 1294,
+                    "name": "ElementaryTypeName",
+                    "src": "971:7:5"
+                  }
+                ],
+                "id": 1295,
+                "name": "VariableDeclaration",
+                "src": "971:12:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "coinPair",
+                  "overrides": null,
+                  "scope": 1298,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "bytes32",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "bytes32",
+                      "type": "bytes32"
+                    },
+                    "id": 1296,
+                    "name": "ElementaryTypeName",
+                    "src": "993:7:5"
+                  }
+                ],
+                "id": 1297,
+                "name": "VariableDeclaration",
+                "src": "993:16:5"
+              }
+            ],
+            "id": 1298,
+            "name": "StructDefinition",
+            "src": "932:84:5"
+          },
+          {
+            "attributes": {
+              "canonicalName": "IOracleInfoGetter.CoinPairUIOracleRoundInfo",
+              "name": "CoinPairUIOracleRoundInfo",
+              "scope": 1374,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "points",
+                  "overrides": null,
+                  "scope": 1305,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 1299,
+                    "name": "ElementaryTypeName",
+                    "src": "1065:7:5"
+                  }
+                ],
+                "id": 1300,
+                "name": "VariableDeclaration",
+                "src": "1065:14:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "selectedInRound",
+                  "overrides": null,
+                  "scope": 1305,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "bool",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "bool",
+                      "type": "bool"
+                    },
+                    "id": 1301,
+                    "name": "ElementaryTypeName",
+                    "src": "1089:4:5"
+                  }
+                ],
+                "id": 1302,
+                "name": "VariableDeclaration",
+                "src": "1089:20:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "addr",
+                  "overrides": null,
+                  "scope": 1305,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "stateMutability": "nonpayable",
+                      "type": "address"
+                    },
+                    "id": 1303,
+                    "name": "ElementaryTypeName",
+                    "src": "1119:7:5"
+                  }
+                ],
+                "id": 1304,
+                "name": "VariableDeclaration",
+                "src": "1119:12:5"
+              }
+            ],
+            "id": 1305,
+            "name": "StructDefinition",
+            "src": "1022:116:5"
+          },
+          {
+            "attributes": {
+              "canonicalName": "IOracleInfoGetter.CoinPairPriceUIInfo",
+              "name": "CoinPairPriceUIInfo",
+              "scope": 1374,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "round",
+                  "overrides": null,
+                  "scope": 1327,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 1306,
+                    "name": "ElementaryTypeName",
+                    "src": "1181:7:5"
+                  }
+                ],
+                "id": 1307,
+                "name": "VariableDeclaration",
+                "src": "1181:13:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "startBlock",
+                  "overrides": null,
+                  "scope": 1327,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 1308,
+                    "name": "ElementaryTypeName",
+                    "src": "1204:7:5"
+                  }
+                ],
+                "id": 1309,
+                "name": "VariableDeclaration",
+                "src": "1204:18:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "lockPeriodTimestamp",
+                  "overrides": null,
+                  "scope": 1327,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 1310,
+                    "name": "ElementaryTypeName",
+                    "src": "1232:7:5"
+                  }
+                ],
+                "id": 1311,
+                "name": "VariableDeclaration",
+                "src": "1232:27:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "totalPoints",
+                  "overrides": null,
+                  "scope": 1327,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 1312,
+                    "name": "ElementaryTypeName",
+                    "src": "1269:7:5"
+                  }
+                ],
+                "id": 1313,
+                "name": "VariableDeclaration",
+                "src": "1269:19:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "info",
+                  "overrides": null,
+                  "scope": 1327,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "struct IOracleInfoGetter.CoinPairUIOracleRoundInfo[]",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "length": null,
+                      "type": "struct IOracleInfoGetter.CoinPairUIOracleRoundInfo[]"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "CoinPairUIOracleRoundInfo",
+                          "referencedDeclaration": 1305,
+                          "type": "struct IOracleInfoGetter.CoinPairUIOracleRoundInfo"
+                        },
+                        "id": 1314,
+                        "name": "UserDefinedTypeName",
+                        "src": "1298:25:5"
+                      }
+                    ],
+                    "id": 1315,
+                    "name": "ArrayTypeName",
+                    "src": "1298:27:5"
+                  }
+                ],
+                "id": 1316,
+                "name": "VariableDeclaration",
+                "src": "1298:32:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "currentBlock",
+                  "overrides": null,
+                  "scope": 1327,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 1317,
+                    "name": "ElementaryTypeName",
+                    "src": "1340:7:5"
+                  }
+                ],
+                "id": 1318,
+                "name": "VariableDeclaration",
+                "src": "1340:20:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "lastPubBlock",
+                  "overrides": null,
+                  "scope": 1327,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 1319,
+                    "name": "ElementaryTypeName",
+                    "src": "1370:7:5"
+                  }
+                ],
+                "id": 1320,
+                "name": "VariableDeclaration",
+                "src": "1370:20:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "lastPubBlockHash",
+                  "overrides": null,
+                  "scope": 1327,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "bytes32",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "bytes32",
+                      "type": "bytes32"
+                    },
+                    "id": 1321,
+                    "name": "ElementaryTypeName",
+                    "src": "1400:7:5"
+                  }
+                ],
+                "id": 1322,
+                "name": "VariableDeclaration",
+                "src": "1400:24:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "validPricePeriodInBlocks",
+                  "overrides": null,
+                  "scope": 1327,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 1323,
+                    "name": "ElementaryTypeName",
+                    "src": "1434:7:5"
+                  }
+                ],
+                "id": 1324,
+                "name": "VariableDeclaration",
+                "src": "1434:32:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "availableRewards",
+                  "overrides": null,
+                  "scope": 1327,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 1325,
+                    "name": "ElementaryTypeName",
+                    "src": "1476:7:5"
+                  }
+                ],
+                "id": 1326,
+                "name": "VariableDeclaration",
+                "src": "1476:24:5"
+              }
+            ],
+            "id": 1327,
+            "name": "StructDefinition",
+            "src": "1144:363:5"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "64911422",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getCoinPairUIInfo",
+              "overrides": null,
+              "scope": 1374,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "Return all the information needed by the ui (one call, to avoid a lot of rpc)\n@param _coinPairPrice coinPairPrice contract"
+                },
+                "id": 1328,
+                "name": "StructuredDocumentation",
+                "src": "1513:150:5"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_coinPairPrice",
+                      "overrides": null,
+                      "scope": 1335,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract ICoinPairPrice",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "ICoinPairPrice",
+                          "referencedDeclaration": 906,
+                          "type": "contract ICoinPairPrice"
+                        },
+                        "id": 1329,
+                        "name": "UserDefinedTypeName",
+                        "src": "1695:14:5"
+                      }
+                    ],
+                    "id": 1330,
+                    "name": "VariableDeclaration",
+                    "src": "1695:29:5"
+                  }
+                ],
+                "id": 1331,
+                "name": "ParameterList",
+                "src": "1694:31:5"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "coinPairPriceUIInfo",
+                      "overrides": null,
+                      "scope": 1335,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "struct IOracleInfoGetter.CoinPairPriceUIInfo",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "CoinPairPriceUIInfo",
+                          "referencedDeclaration": 1327,
+                          "type": "struct IOracleInfoGetter.CoinPairPriceUIInfo"
+                        },
+                        "id": 1332,
+                        "name": "UserDefinedTypeName",
+                        "src": "1773:19:5"
+                      }
+                    ],
+                    "id": 1333,
+                    "name": "VariableDeclaration",
+                    "src": "1773:46:5"
+                  }
+                ],
+                "id": 1334,
+                "name": "ParameterList",
+                "src": "1772:48:5"
+              }
+            ],
+            "id": 1335,
+            "name": "FunctionDefinition",
+            "src": "1668:153:5"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "072b89d8",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getManagerUICoinPairInfo",
+              "overrides": null,
+              "scope": 1374,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "Return all the information needed by the ui (one call, to avoid a lot of rpc)\n@param _oracleManager oracleManager contract\n@param _offset take from this offset\n@param _limit take to this limit, limit == 0 => take all"
+                },
+                "id": 1336,
+                "name": "StructuredDocumentation",
+                "src": "1827:260:5"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_oracleManager",
+                      "overrides": null,
+                      "scope": 1348,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IOracleManager",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IOracleManager",
+                          "referencedDeclaration": 1607,
+                          "type": "contract IOracleManager"
+                        },
+                        "id": 1337,
+                        "name": "UserDefinedTypeName",
+                        "src": "2135:14:5"
+                      }
+                    ],
+                    "id": 1338,
+                    "name": "VariableDeclaration",
+                    "src": "2135:29:5"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_offset",
+                      "overrides": null,
+                      "scope": 1348,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1339,
+                        "name": "ElementaryTypeName",
+                        "src": "2174:7:5"
+                      }
+                    ],
+                    "id": 1340,
+                    "name": "VariableDeclaration",
+                    "src": "2174:15:5"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_limit",
+                      "overrides": null,
+                      "scope": 1348,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1341,
+                        "name": "ElementaryTypeName",
+                        "src": "2199:7:5"
+                      }
+                    ],
+                    "id": 1342,
+                    "name": "VariableDeclaration",
+                    "src": "2199:14:5"
+                  }
+                ],
+                "id": 1343,
+                "name": "ParameterList",
+                "src": "2125:94:5"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "info",
+                      "overrides": null,
+                      "scope": 1348,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "struct IOracleInfoGetter.ManagerUICoinPairInfo[]",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "length": null,
+                          "type": "struct IOracleInfoGetter.ManagerUICoinPairInfo[]"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "contractScope": null,
+                              "name": "ManagerUICoinPairInfo",
+                              "referencedDeclaration": 1298,
+                              "type": "struct IOracleInfoGetter.ManagerUICoinPairInfo"
+                            },
+                            "id": 1344,
+                            "name": "UserDefinedTypeName",
+                            "src": "2243:21:5"
+                          }
+                        ],
+                        "id": 1345,
+                        "name": "ArrayTypeName",
+                        "src": "2243:23:5"
+                      }
+                    ],
+                    "id": 1346,
+                    "name": "VariableDeclaration",
+                    "src": "2243:35:5"
+                  }
+                ],
+                "id": 1347,
+                "name": "ParameterList",
+                "src": "2242:37:5"
+              }
+            ],
+            "id": 1348,
+            "name": "FunctionDefinition",
+            "src": "2092:188:5"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "80ca28d0",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getManagerUIOracleInfo",
+              "overrides": null,
+              "scope": 1374,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "Return all the information needed by the ui (one call, to avoid a lot of rpc)\n@param _oracleManager oracleManager contract\n@param _from The index to start from.\n@param _cant Number of items to return."
+                },
+                "id": 1349,
+                "name": "StructuredDocumentation",
+                "src": "2286:244:5"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_oracleManager",
+                      "overrides": null,
+                      "scope": 1363,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IOracleManager",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IOracleManager",
+                          "referencedDeclaration": 1607,
+                          "type": "contract IOracleManager"
+                        },
+                        "id": 1350,
+                        "name": "UserDefinedTypeName",
+                        "src": "2576:14:5"
+                      }
+                    ],
+                    "id": 1351,
+                    "name": "VariableDeclaration",
+                    "src": "2576:29:5"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_from",
+                      "overrides": null,
+                      "scope": 1363,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1352,
+                        "name": "ElementaryTypeName",
+                        "src": "2615:7:5"
+                      }
+                    ],
+                    "id": 1353,
+                    "name": "VariableDeclaration",
+                    "src": "2615:13:5"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_cant",
+                      "overrides": null,
+                      "scope": 1363,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1354,
+                        "name": "ElementaryTypeName",
+                        "src": "2638:7:5"
+                      }
+                    ],
+                    "id": 1355,
+                    "name": "VariableDeclaration",
+                    "src": "2638:13:5"
+                  }
+                ],
+                "id": 1356,
+                "name": "ParameterList",
+                "src": "2566:91:5"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "info",
+                      "overrides": null,
+                      "scope": 1363,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "struct IOracleInfoGetter.ManagerUIOracleInfo[]",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "length": null,
+                          "type": "struct IOracleInfoGetter.ManagerUIOracleInfo[]"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "contractScope": null,
+                              "name": "ManagerUIOracleInfo",
+                              "referencedDeclaration": 1293,
+                              "type": "struct IOracleInfoGetter.ManagerUIOracleInfo"
+                            },
+                            "id": 1357,
+                            "name": "UserDefinedTypeName",
+                            "src": "2681:19:5"
+                          }
+                        ],
+                        "id": 1358,
+                        "name": "ArrayTypeName",
+                        "src": "2681:21:5"
+                      }
+                    ],
+                    "id": 1359,
+                    "name": "VariableDeclaration",
+                    "src": "2681:33:5"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "nextEntry",
+                      "overrides": null,
+                      "scope": 1363,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 1360,
+                        "name": "ElementaryTypeName",
+                        "src": "2716:7:5"
+                      }
+                    ],
+                    "id": 1361,
+                    "name": "VariableDeclaration",
+                    "src": "2716:17:5"
+                  }
+                ],
+                "id": 1362,
+                "name": "ParameterList",
+                "src": "2680:54:5"
+              }
+            ],
+            "id": 1363,
+            "name": "FunctionDefinition",
+            "src": "2535:200:5"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "ad314b2e",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getOracleServerInfo",
+              "overrides": null,
+              "scope": 1374,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "Return all the information needed by the oracle server (one call, to avoid a lot of rpc)\n@param _oracleManager oracleManager contract\n@param _coinPairPrice coinPairPrice contract"
+                },
+                "id": 1364,
+                "name": "StructuredDocumentation",
+                "src": "2741:214:5"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_oracleManager",
+                      "overrides": null,
+                      "scope": 1373,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IOracleManager",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IOracleManager",
+                          "referencedDeclaration": 1607,
+                          "type": "contract IOracleManager"
+                        },
+                        "id": 1365,
+                        "name": "UserDefinedTypeName",
+                        "src": "2989:14:5"
+                      }
+                    ],
+                    "id": 1366,
+                    "name": "VariableDeclaration",
+                    "src": "2989:29:5"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_coinPairPrice",
+                      "overrides": null,
+                      "scope": 1373,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract ICoinPairPrice",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "ICoinPairPrice",
+                          "referencedDeclaration": 906,
+                          "type": "contract ICoinPairPrice"
+                        },
+                        "id": 1367,
+                        "name": "UserDefinedTypeName",
+                        "src": "3020:14:5"
+                      }
+                    ],
+                    "id": 1368,
+                    "name": "VariableDeclaration",
+                    "src": "3020:29:5"
+                  }
+                ],
+                "id": 1369,
+                "name": "ParameterList",
+                "src": "2988:62:5"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "oracleServerInfo",
+                      "overrides": null,
+                      "scope": 1373,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "struct IOracleInfoGetter.OracleServerInfo",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "OracleServerInfo",
+                          "referencedDeclaration": 1280,
+                          "type": "struct IOracleInfoGetter.OracleServerInfo"
+                        },
+                        "id": 1370,
+                        "name": "UserDefinedTypeName",
+                        "src": "3098:16:5"
+                      }
+                    ],
+                    "id": 1371,
+                    "name": "VariableDeclaration",
+                    "src": "3098:40:5"
+                  }
+                ],
+                "id": 1372,
+                "name": "ParameterList",
+                "src": "3097:42:5"
+              }
+            ],
+            "id": 1373,
+            "name": "FunctionDefinition",
+            "src": "2960:180:5"
+          }
+        ],
+        "id": 1374,
+        "name": "ContractDefinition",
+        "src": "205:2937:5"
+      }
+    ],
+    "id": 1375,
+    "name": "SourceUnit",
+    "src": "39:3104:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-02-04T20:51:03.342Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "getCoinPairUIInfo(address)": {
+        "params": {
+          "_coinPairPrice": "coinPairPrice contract"
+        }
+      },
+      "getManagerUICoinPairInfo(address,uint256,uint256)": {
+        "params": {
+          "_limit": "take to this limit, limit == 0 => take all",
+          "_offset": "take from this offset",
+          "_oracleManager": "oracleManager contract"
+        }
+      },
+      "getManagerUIOracleInfo(address,uint256,uint256)": {
+        "params": {
+          "_cant": "Number of items to return.",
+          "_from": "The index to start from.",
+          "_oracleManager": "oracleManager contract"
+        }
+      },
+      "getOracleServerInfo(address,address)": {
+        "params": {
+          "_coinPairPrice": "coinPairPrice contract",
+          "_oracleManager": "oracleManager contract"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "getCoinPairUIInfo(address)": {
+        "notice": "Return all the information needed by the ui (one call, to avoid a lot of rpc)"
+      },
+      "getManagerUICoinPairInfo(address,uint256,uint256)": {
+        "notice": "Return all the information needed by the ui (one call, to avoid a lot of rpc)"
+      },
+      "getManagerUIOracleInfo(address,uint256,uint256)": {
+        "notice": "Return all the information needed by the ui (one call, to avoid a lot of rpc)"
+      },
+      "getOracleServerInfo(address,address)": {
+        "notice": "Return all the information needed by the oracle server (one call, to avoid a lot of rpc)"
+      }
+    },
+    "version": 1
+  }
+}

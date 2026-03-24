@@ -1,0 +1,12 @@
+assets/ @SwenSchaeferjohann
+program-libs/ @ananas-block @sergeytimoshin
+cli/ @ananas-block @sergeytimoshin
+programs/ @ananas-block
+prover.js/ @sergeytimoshin
+examples/ @ananas-block @SwenSchaeferjohann
+rpc/ @sergeytimoshin @SwenSchaeferjohann
+scripts/ @ananas-block @sergeytimoshin
+third-party/ @ananas-block
+tsconfig/ @SwenSchaeferjohann
+web/ @SwenSchaeferjohann
+xtask/ @ananas-block

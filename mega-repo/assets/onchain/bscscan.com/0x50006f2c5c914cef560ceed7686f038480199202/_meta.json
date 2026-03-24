@@ -1,0 +1,24 @@
+{
+  "url": "https://bscscan.com/address/0x50006F2C5C914cEF560ceeD7686f038480199202",
+  "host": "bscscan.com",
+  "address": "0x50006F2C5C914cEF560ceeD7686f038480199202",
+  "chainid": 56,
+  "project_slug": "kiln-defi",
+  "asset_id": "qXWuwJSJWwsCgbTHPcgjT",
+  "contract_name": "VaultUpgradeableBeacon",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "00000000000000000000000059d323355f4b257097e041c4776b7492ed294ea4000000000000000000000000c564d4ae5aa66f30768eaa4198abcf85fabb2a8a000000000000000000000000c564d4ae5aa66f30768eaa4198abcf85fabb2a8a000000000000000000000000acf758dc2b9d36b101b5ddff8410dbb89653fc90000000000000000000000000c564d4ae5aa66f30768eaa4198abcf85fabb2a8a0000000000000000000000007c00aa22200d4c2db4e3456c2bd040f49ff6e1a50000000000000000000000000000000000000000000000000000000000015180",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

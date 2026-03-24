@@ -1,0 +1,24 @@
+[package]
+edition = "2021"
+name = "strata-csm-types"
+version = "0.3.0-alpha.1"
+
+[lints]
+workspace = true
+
+[dependencies]
+strata-btc-types.workspace = true
+strata-checkpoint-types.workspace = true
+strata-identifiers.workspace = true
+strata-primitives.workspace = true
+
+arbitrary.workspace = true
+borsh.workspace = true
+serde.workspace = true
+
+[dev-dependencies]
+bitcoin.workspace = true
+
+[features]
+default = ["std"]
+std = []

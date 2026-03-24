@@ -1,0 +1,7 @@
+{
+  "url": "https://optimistic.etherscan.io/token/0x0b5740c6b4a97f90eF2F0220651Cca420B868FfB?utm_source=immunefi",
+  "host": "optimistic.etherscan.io",
+  "address": "0x0b5740c6b4a97f90eF2F0220651Cca420B868FfB",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:unexpected-response; scan-host-no-key:http 403"
+}

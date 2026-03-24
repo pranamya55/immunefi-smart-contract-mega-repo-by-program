@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x6175ddEc3B9b38c88157C10A01ed4A3fa8639cC6#code",
+  "host": "etherscan.io",
+  "address": "0x6175ddEc3B9b38c88157C10A01ed4A3fa8639cC6",
+  "chainid": 1,
+  "project_slug": "sparklend",
+  "asset_id": "6TmkDDmwIWgjVTi9JxnsEy",
+  "contract_name": "AToken",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "1",
+  "runs": "100000",
+  "constructor_arguments": "000000000000000000000000c13e21b648a5ee794902342038ff3adab66be987",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 21,
+  "mode": "json-sources"
+}

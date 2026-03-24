@@ -1,0 +1,19 @@
+[package]
+edition = "2021"
+name = "strata-bridge-rpc"
+version = "0.1.0"
+
+[lints]
+workspace = true
+
+[dependencies]
+strata-bridge-primitives.workspace = true
+strata-primitives.workspace = true
+
+bitcoin.workspace = true
+jsonrpsee = { workspace = true, features = ["server", "macros"] }
+serde.workspace = true
+
+[features]
+default = []
+client = ["jsonrpsee/client"]

@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x30d8C505516Ab7693e2DE491bdceB028d8ae7EbF",
+  "host": "arbiscan.io",
+  "address": "0x30d8C505516Ab7693e2DE491bdceB028d8ae7EbF",
+  "chainid": 42161,
+  "project_slug": "gainsnetwork",
+  "asset_id": "2KEehkMj6rN9CRWyCFpgJ6",
+  "contract_name": "GNSCompensationHandlerV6_4_1",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "125",
+  "constructor_arguments": "00000000000000000000000018c11fd286c5ec11c3b683caa813b77f5163a1220000000000000000000000007edde7e5900633f698eab0dbc97de640fc5dc01500000000000000000000000075cbcc5414c539c2b302a5fa60e30b949d2d6f89000000000000000000000000d1f024ba4dbb1593b486cb5031b3ac5ac28e8a4e0000000000000000000000009834159eaf9811cf4c568294d5c7c9158f84b38400000000000000000000000040f0aeab6383be2f254ce40b79089070fa1a21a10000000000000000000000005e3b541ad6acc4381c110247946c863e05ffc9be",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 4,
+  "mode": "json-sources"
+}

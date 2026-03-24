@@ -1,0 +1,82 @@
+[
+  {
+    "project_slug": "synthetix",
+    "asset_id": "17CiH3PAbbDZeNAb8KT6bL",
+    "url": "https://github.com/Synthetixio/synthetix-v3/blob/main/markets/legacy-market/contracts/Proxy.sol",
+    "description": "markets/legacy-market/contracts/Proxy.sol",
+    "added_at": "2025-07-15T04:57:02.807Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "synthetix",
+    "asset_id": "1DjxReBhQn6PTN4o8O2Ghk",
+    "url": "https://github.com/Synthetixio/synthetix-v3/blob/main/markets/treasury-market/contracts/TreasuryStakingRewards.sol",
+    "description": "markets/treasury-market/contracts/TreasuryStakingRewards.sol",
+    "added_at": "2025-07-15T04:56:22.003Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "synthetix",
+    "asset_id": "28FR8FYXM29SYi0MqdsvBf",
+    "url": "https://github.com/Synthetixio/synthetix-v3/blob/main/markets/treasury-market/contracts/SynthetixTreasuryProxy.sol",
+    "description": "markets/treasury-market/contracts/SynthetixTreasuryProxy.sol",
+    "added_at": "2025-07-15T04:55:56.282Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "synthetix",
+    "asset_id": "2TM0qserpzgj6BmjxYLabV",
+    "url": "https://github.com/Synthetixio/synthetix-v3/blob/main/protocol/synthetix/contracts/modules/account/AccountTokenModule.sol",
+    "description": "protocol/synthetix/contracts/modules/account/AccountTokenModule.sol",
+    "added_at": "2025-07-15T04:55:29.680Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "synthetix",
+    "asset_id": "2eMVvBqO3NNERPyCABkac4",
+    "url": "https://github.com/Synthetixio/synthetix-v3/blob/main/protocol/synthetix/contracts/modules/usd/USDTokenModule.sol",
+    "description": "protocol/synthetix/contracts/modules/usd/USDTokenModule.sol",
+    "added_at": "2025-07-15T04:55:17.435Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "synthetix",
+    "asset_id": "3s8s7JVtSVM5H5hA1v5q00",
+    "url": "https://github.com/Synthetixio/synthetix-v3/blob/main/markets/treasury-market/contracts/InitialModuleBundle.sol",
+    "description": "markets/treasury-market/contracts/InitialModuleBundle.sol",
+    "added_at": "2025-07-15T04:55:42.263Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "synthetix",
+    "asset_id": "4YRM26IBJyV8zLa9mBGUsW",
+    "url": "https://github.com/Synthetixio/synthetix-v3/blob/main/markets/legacy-market/contracts/InitialModuleBundle.sol",
+    "description": "markets/legacy-market/contracts/InitialModuleBundle.sol",
+    "added_at": "2025-07-15T04:56:35.638Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "synthetix",
+    "asset_id": "69iJrbpKzQrhv2EivWfI8G",
+    "url": "https://github.com/Synthetixio/synthetix-v3/blob/main/markets/legacy-market/contracts/SNXDistributor.sol",
+    "description": "markets/legacy-market/contracts/SNXDistributor.sol",
+    "added_at": "2025-07-15T04:57:16.308Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "synthetix",
+    "asset_id": "7igmAeaS7AcSBRo76f80M9",
+    "url": "https://github.com/Synthetixio/synthetix-v3/blob/main/markets/treasury-market/contracts/TreasuryMarket.sol",
+    "description": "markets/treasury-market/contracts/TreasuryMarket.sol",
+    "added_at": "2025-07-15T04:56:08.803Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "synthetix",
+    "asset_id": "7wsI4VLrT3GKY7MDCbI88F",
+    "url": "https://github.com/Synthetixio/synthetix-v3/blob/main/markets/legacy-market/contracts/LegacyMarket.sol",
+    "description": "markets/legacy-market/contracts/LegacyMarket.sol",
+    "added_at": "2025-07-15T04:56:49.775Z",
+    "revision": 2
+  }
+]

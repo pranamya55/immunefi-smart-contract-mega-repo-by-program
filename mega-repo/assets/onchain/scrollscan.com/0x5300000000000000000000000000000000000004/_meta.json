@@ -1,0 +1,8 @@
+{
+  "url": "https://scrollscan.com/address/0x5300000000000000000000000000000000000004",
+  "host": "scrollscan.com",
+  "address": "0x5300000000000000000000000000000000000004",
+  "chainid": 534352,
+  "mode": "bytecode-v2-proxy",
+  "bytecode_length_hex_chars": 11742
+}

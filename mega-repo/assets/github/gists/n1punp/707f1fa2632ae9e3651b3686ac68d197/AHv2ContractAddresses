@@ -1,0 +1,30 @@
+Bank:
+HomoraBankProxy         - https://etherscan.io/address/0xba5ebaf3fc1fcca67147050bf80462393814e54b
+HomoraBankImpl          - https://etherscan.io/address/0x99c666810ba4bf9a4c2318ce60cb2c279ee2cf56
+
+Wrappers:
+WERC20                  - https://etherscan.io/address/0x06799a1e4792001aa9114f0012b9650ca28059a3
+WMasterChef	            - https://etherscan.io/address/0xA2caEa05fF7B98f10Ad5ddc837F15905f33FEb60
+WLiquidityGauge	        - https://etherscan.io/address/0xf1F32C8EEb06046d3cc3157B8F9f72B09D84ee5b
+
+Oracles:
+ProxyOracle	            - https://etherscan.io/address/0x914C687FFdAB6E1B47a327E7E4C10e4a058e009d
+CoreOracle	            - https://etherscan.io/address/0x6be987c6d72e25F02f6f061F94417d83a6Aa13fC
+UniswapV2Oracle	        - https://etherscan.io/address/0x7678eB6251f41FBF4e0DF36c90bfE32843C2dAf9
+BalancerPairOracle	    - https://etherscan.io/address/0x040349970d87edeef60252117A4E660C49aea5Af
+CurveOracle	            - https://etherscan.io/address/0x772937644A24AA105847931c74DA168fF1DBB6eA
+
+ProxyAdmin	            - https://etherscan.io/address/0x090eCE252cEc5998Db765073D07fac77b8e60CB2
+
+Spells:
+UniswapV2SpellV1	      - https://etherscan.io/address/0x7b1f4cDD4f599774feae6516460BCCD97Fc2100E
+SushiswapSpellV1	      - https://etherscan.io/address/0xc4a59cfEd3FE06bDB5C21dE75A70B20dB280D8fE
+BalancerSpellV1	        - https://etherscan.io/address/0x6b8079Bf80E07fB103a55E49EE226f729E1e38D5
+CurveSpellV1	          - https://etherscan.io/address/0x8b947D8448CFFb89EF07A6922b74fBAbac219795
+
+SafeBoxes:
+SafeBoxETH	            - https://etherscan.io/address/0xeEa3311250FE4c3268F8E684f7C87A82fF183Ec1
+SafeBoxDAI	            - https://etherscan.io/address/0xee8389d235E092b2945fE363e97CDBeD121A0439
+SafeBoxUSDT	            - https://etherscan.io/address/0x020eDC614187F9937A1EfEeE007656C6356Fb13A
+SafeBoxUSDC	            - https://etherscan.io/address/0x08bd64BFC832F1C2B3e07e634934453bA7Fa2db2
+SafeBoxYFI	            - https://etherscan.io/address/0xe52557bf7315Fd5b38ac0ff61304cb33BB973603

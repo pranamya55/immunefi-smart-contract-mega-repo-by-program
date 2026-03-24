@@ -1,0 +1,166 @@
+//! The Game State Machine (GSM).
+
+use std::sync::Arc;
+
+use serde::{Deserialize, Serialize};
+use strata_bridge_primitives::types::BitcoinBlockHeight;
+use strata_bridge_tx_graph::game_graph::{DepositParams, GameData, GameGraph};
+
+use crate::{
+    error_policy::soften_peer_event_error,
+    graph::{
+        config::GraphSMCfg,
+        context::GraphSMCtx,
+        duties::GraphDuty,
+        errors::{GSMError, GSMResult},
+        events::GraphEvent,
+        state::GraphState,
+    },
+    signals::GraphSignal,
+    state_machine::{SMOutput, StateMachine},
+};
+
+/// The State Machine that tracks the state of a deposit utxo at any given time (including the state
+/// of cooperative payout process)
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
+pub struct GraphSM {
+    /// Context associated with this Graph State Machine instance.
+    pub context: GraphSMCtx,
+    /// The current state of the Graph State Machine.
+    pub state: GraphState,
+}
+
+impl StateMachine for GraphSM {
+    type Config = Arc<GraphSMCfg>;
+    type Duty = GraphDuty;
+    type OutgoingSignal = GraphSignal;
+    type Event = GraphEvent;
+    type Error = GSMError;
+
+    fn process_event(
+        &mut self,
+        cfg: Self::Config,
+        event: Self::Event,
+    ) -> Result<SMOutput<Self::Duty, Self::OutgoingSignal>, Self::Error> {
+        match event {
+            GraphEvent::GraphDataProduced(graph_data) => {
+                let event = GraphEvent::GraphDataProduced(graph_data.clone());
+                self.process_graph_data(cfg, graph_data)
+                    .map_err(|err| soften_peer_event_error(event, err))
+            }
+            GraphEvent::AdaptorsVerified(adaptors) => {
+                self.process_adaptors_verification(cfg, adaptors)
+            }
+            GraphEvent::NoncesReceived(nonces_event) => {
+                let event = GraphEvent::NoncesReceived(nonces_event.clone());
+                self.process_nonce_received(cfg, nonces_event)
+                    .map_err(|err| soften_peer_event_error(event, err))
+            }
+            GraphEvent::PartialsReceived(partials_event) => {
+                let event = GraphEvent::PartialsReceived(partials_event.clone());
+                self.process_partial_received(cfg, partials_event)
+                    .map_err(|err| soften_peer_event_error(event, err))
+            }
+            GraphEvent::WithdrawalAssigned(assignment) => self.process_assignment(assignment),
+            GraphEvent::FulfillmentConfirmed(fulfillment) => self.process_fulfillment(fulfillment),
+            GraphEvent::DepositMessage(deposit_message) => {
+                self.process_deposit_signal(cfg, deposit_message)
+            }
+            GraphEvent::ClaimConfirmed(claim) => self.process_claim(cfg, claim),
+            GraphEvent::ContestConfirmed(_contest) => todo!(),
+            GraphEvent::BridgeProofConfirmed(_bridge_proof) => todo!(),
+            GraphEvent::BridgeProofTimeoutConfirmed(timeout) => {
+                self.process_bridge_proof_timeout(timeout)
+            }
+            GraphEvent::CounterProofConfirmed(_counterproof) => todo!(),
+            GraphEvent::CounterProofAckConfirmed(_ack) => todo!(),
+            GraphEvent::CounterProofNackConfirmed(_nack) => todo!(),
+            GraphEvent::SlashConfirmed(_slash) => todo!(),
+            GraphEvent::PayoutConfirmed(payout) => self.process_payout(payout),
+            GraphEvent::PayoutConnectorSpent(_connector_spent) => todo!(),
+            GraphEvent::NewBlock(new_block) => self.notify_new_block(cfg, new_block),
+            GraphEvent::RetryTick(_retry_tick) => self.process_retry_tick(cfg),
+            GraphEvent::NagTick(_nag_tick) => self.process_nag_tick(cfg),
+            GraphEvent::NagReceived(event) => {
+                let sm_event = GraphEvent::NagReceived(event.clone());
+                self.process_nag_received(cfg, event)
+                    .map_err(|err| soften_peer_event_error(sm_event, err))
+            }
+        }
+    }
+}
+
+/// The output of the Graph State Machine after processing an event.
+///
+/// This is a type alias for [`SMOutput`] specialized to the Graph State Machine's
+/// duty and signal types. This ensures that the Graph SM can only emit [`GraphDuty`]
+/// duties and [`GraphSignal`] signals.
+pub type GSMOutput = SMOutput<GraphDuty, GraphSignal>;
+
+impl GraphSM {
+    /// Creates a new [`GraphSM`] using the provided context and initial block height.
+    ///
+    /// The state machine starts in [`GraphState::Created`] by constructing the
+    /// initial [`GraphState`] via [`GraphState::new`].
+    pub fn new(context: GraphSMCtx, block_height: BitcoinBlockHeight) -> (Self, Option<GraphDuty>) {
+        let sm = Self {
+            context,
+            state: GraphState::new(block_height),
+        };
+
+        let is_mine = sm.context().operator_table().pov_idx() == sm.context().operator_idx();
+        let duty = is_mine.then(|| GraphDuty::GenerateGraphData {
+            graph_idx: sm.context().graph_idx(),
+        });
+
+        (sm, duty)
+    }
+
+    /// Returns a reference to the context of the Graph State Machine.
+    pub const fn context(&self) -> &GraphSMCtx {
+        &self.context
+    }
+
+    /// Returns a reference to the current state of the Graph State Machine.
+    pub const fn state(&self) -> &GraphState {
+        &self.state
+    }
+
+    /// Returns a mutable reference to the current state of the Graph State Machine.
+    pub const fn state_mut(&mut self) -> &mut GraphState {
+        &mut self.state
+    }
+    /// Checks that the operator index exists, otherwise returns `GSMError::Rejected`.
+    pub(super) fn check_operator_idx<E>(&self, operator_idx: u32, inner_event: &E) -> GSMResult<()>
+    where
+        E: Clone + Into<GraphEvent>,
+    {
+        if self.context().operator_table().contains_idx(&operator_idx) {
+            Ok(())
+        } else {
+            Err(GSMError::rejected(
+                self.state().clone(),
+                inner_event.clone().into(),
+                format!("Operator index {} not in operator table", operator_idx),
+            ))
+        }
+    }
+}
+
+/// Generates the [`GameGraph`] from the [`GraphSM`] config and deposit params.
+pub(crate) fn generate_game_graph(
+    cfg: &GraphSMCfg,
+    ctx: &GraphSMCtx,
+    deposit_params: DepositParams,
+) -> GameGraph {
+    let setup_params = ctx.generate_setup_params(cfg);
+    let protocol_params = cfg.game_graph_params;
+    let graph_data = GameData {
+        protocol: protocol_params,
+        setup: setup_params,
+        deposit: deposit_params,
+    };
+
+    let (game_graph, _) = GameGraph::new(graph_data);
+    game_graph
+}

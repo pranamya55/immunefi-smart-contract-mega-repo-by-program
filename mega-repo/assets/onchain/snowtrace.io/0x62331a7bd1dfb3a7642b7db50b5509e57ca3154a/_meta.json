@@ -1,0 +1,24 @@
+{
+  "url": "https://snowtrace.io/address/0x62331A7Bd1dfB3A7642B7db50B5509E57CA3154A",
+  "host": "snowtrace.io",
+  "address": "0x62331A7Bd1dfB3A7642B7db50B5509E57CA3154A",
+  "chainid": 43114,
+  "project_slug": "gmx",
+  "asset_id": "o0aTSCjqXQyKobyRHW1B6",
+  "contract_name": "Vester",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 10,
+  "mode": "json-sources"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://etherscan.io/address/0xeb3bc40acebabf62d31b0d52fe3ff327b7c82cbc",
+  "host": "etherscan.io",
+  "address": "0xeb3bc40acebabf62d31b0d52fe3ff327b7c82cbc",
+  "chainid": 1,
+  "contract_name": "BinaryComboLock",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": "1",
+  "runs": "10000",
+  "constructor_arguments": "000000000000000000000000d721a90dd7e010c8c5e022cc0100c55ac78e0fc4",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 17,
+  "mode": "recover-json-sources"
+}

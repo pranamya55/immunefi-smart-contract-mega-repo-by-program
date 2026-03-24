@@ -1,0 +1,60 @@
+[package]
+edition = "2021"
+name = "strata-consensus-logic"
+version = "0.3.0-alpha.1"
+
+[lints]
+workspace = true
+
+[dependencies]
+strata-asm-common.workspace = true
+strata-asm-params.workspace = true
+strata-asm-worker.workspace = true
+strata-btc-types.workspace = true
+strata-chain-worker.workspace = true
+strata-chain-worker-new.workspace = true
+strata-chainexec.workspace = true
+strata-chaintsn.workspace = true
+strata-checkpoint-types.workspace = true
+strata-common = { workspace = true, default-features = true }
+strata-csm-types.workspace = true
+strata-csm-worker.workspace = true
+strata-db-types.workspace = true
+strata-eectl.workspace = true
+strata-identifiers.workspace = true
+strata-ledger-types.workspace = true
+strata-merkle.workspace = true
+strata-node-context.workspace = true
+strata-ol-chain-types.workspace = true
+strata-ol-chain-types-new.workspace = true
+strata-ol-chainstate-types.workspace = true
+strata-ol-state-types.workspace = true
+strata-params.workspace = true
+strata-predicate.workspace = true
+strata-primitives.workspace = true
+strata-service.workspace = true
+strata-state.workspace = true
+strata-status.workspace = true
+strata-storage.workspace = true
+strata-tasks.workspace = true
+zkaleido.workspace = true
+
+anyhow.workspace = true
+bitcoin.workspace = true
+bitcoind-async-client.workspace = true
+borsh.workspace = true
+serde.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+strata-db-types = { workspace = true, features = ["stubs"] }
+strata-db-store-sled = { workspace = true, features = ["test_utils"] }
+strata-test-utils-l2.workspace = true
+
+rand = { version = "0.8.5", features = ["getrandom", "std_rng"] }
+threadpool.workspace = true
+
+[features]
+debug-utils = ["strata-common/debug-utils"]

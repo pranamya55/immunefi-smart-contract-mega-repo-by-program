@@ -1,0 +1,19 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0xb220f093e308ee702a8f6e0740712bba5ea65fa7",
+  "host": "optimistic.etherscan.io",
+  "address": "0xb220f093e308ee702a8f6e0740712bba5ea65fa7",
+  "chainid": 10,
+  "contract_name": "SyntheticToken",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "london",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 31,
+  "mode": "recover-json-sources"
+}

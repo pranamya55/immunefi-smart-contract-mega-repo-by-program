@@ -1,0 +1,8 @@
+[[package]]
+name = "std"
+source = "path+from-root-D885AAAE8A999D71"
+
+[[package]]
+name = "vec_set_index_out_of_bounds"
+source = "member"
+dependencies = ["std"]

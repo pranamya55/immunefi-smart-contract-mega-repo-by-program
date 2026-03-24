@@ -1,0 +1,24 @@
+{
+  "url": "https://gnosisscan.io/address/0x7a76e7874f3c2222352386e9a2fc8922c2f3032b",
+  "host": "gnosisscan.io",
+  "address": "0x7a76e7874f3c2222352386e9a2fc8922c2f3032b",
+  "chainid": 100,
+  "project_slug": "connext",
+  "asset_id": "2OZLAmhMKUOvLugmdTmbMy",
+  "contract_name": "LPToken",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "Unlicense",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

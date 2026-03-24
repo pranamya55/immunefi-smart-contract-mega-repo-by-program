@@ -1,0 +1,25 @@
+{
+  "url": "https://explorer.lyra.finance/address/0x4e798659b9846F1da7B6D6B5d09d581270aB6FEC",
+  "host": "explorer.lyra.finance",
+  "address": "0x4e798659b9846F1da7B6D6B5d09d581270aB6FEC",
+  "chainid": null,
+  "project_slug": "derive",
+  "asset_id": "6Vw2NgDlLM2n70ujvWmHYd",
+  "contract_name": "InterestRateModel",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": "0x00000000000000000000000000000000000000000000000000470de4df820000000000000000000000000000000000000000000000000000011c37937e0800000000000000000000000000000000000000000000000000000c7d713b49da00000000000000000000000000000000000000000000000000000bcbce7f1b150000",
+  "evm_version": "paris",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:missing-chainid",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

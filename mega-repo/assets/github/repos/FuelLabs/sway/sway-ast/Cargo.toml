@@ -1,0 +1,20 @@
+[package]
+name = "sway-ast"
+version.workspace = true
+description = "Sway's AST"
+authors.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+extension-trait.workspace = true
+num-bigint = { workspace = true, features = ["serde"] }
+num-traits.workspace = true
+serde = { workspace = true, features = ["derive"] }
+sway-error.workspace = true
+sway-types.workspace = true
+
+[lints]
+workspace = true

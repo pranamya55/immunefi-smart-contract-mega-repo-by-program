@@ -1,0 +1,11 @@
+plugins {
+  id 'net.consensys.zkevm.kotlin-library-conventions'
+}
+
+description = "Tuweni bytes utilities"
+
+dependencies {
+  api "io.consensys.tuweni:tuweni-bytes:${libs.versions.tuweni.get()}"
+  implementation(project(':jvm-libs:generic:extensions:kotlin'))
+  testImplementation "io.consensys.tuweni:tuweni-units:${libs.versions.tuweni.get()}"
+}

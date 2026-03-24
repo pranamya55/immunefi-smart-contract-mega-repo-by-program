@@ -1,0 +1,31 @@
+.anchor
+node_modules
+.env
+coverage
+coverage.json
+target
+typechain
+typechain-types
+test-ledger
+
+# Hardhat files
+cache
+artifacts
+
+# LayerZero specific files
+.layerzero
+
+# Foundry
+broadcast
+out
+
+# pnpm
+pnpm-error.log
+
+# Editor and OS files
+.DS_Store
+.idea
+
+# Kinobi
+tasks/solana/sdk/generated
+src/generated

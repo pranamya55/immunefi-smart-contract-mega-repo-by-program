@@ -1,0 +1,24 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0xCa10E8825FA9F1dB0651Cd48A9097997DBf7615d#code",
+  "host": "optimistic.etherscan.io",
+  "address": "0xCa10E8825FA9F1dB0651Cd48A9097997DBf7615d",
+  "chainid": 10,
+  "project_slug": "woofi",
+  "asset_id": "1UOQkeMVf8fBOpFfjx6HLs",
+  "contract_name": "WooCrossChainRouterV4",
+  "compiler_version": "v0.8.14+commit.80d49f37",
+  "optimization_used": "1",
+  "runs": "20000",
+  "constructor_arguments": "0000000000000000000000004200000000000000000000000000000000000006000000000000000000000000eaf1ac8e89ea0ae13e0f03634a4ff23502527024000000000000000000000000be07e5eb5e4b6ca700586b41e4ecab614ad3a05b",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 16,
+  "mode": "json-sources"
+}

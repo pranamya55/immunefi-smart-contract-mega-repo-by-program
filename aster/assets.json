@@ -1,0 +1,82 @@
+[
+  {
+    "project_slug": "aster",
+    "asset_id": "2m4mYXFEFRGsNtF0oUe9VB",
+    "url": "https://bscscan.com/address/0x184b72289c0992BDf96751354680985a7C4825d6",
+    "description": "asBTC Token Contract",
+    "added_at": "2025-04-16T05:20:32.236Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aster",
+    "asset_id": "2WUt6BQBJs35SZn3k0bFQZ",
+    "url": "https://bscscan.com/address/0x8a3C77E6c6A488d26CD44F403b95e44675f46e6A",
+    "description": "asBTC Minting Contract",
+    "added_at": "2025-04-16T05:22:23.320Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aster",
+    "asset_id": "6CyxgbMKgh26xShBoXVkze",
+    "url": "https://bscscan.com/address/0xCb378a8A4afA40BA8c7e80F1B7E993c3c1AD6EFB",
+    "description": "asBTC withdraw Vault Contract",
+    "added_at": "2025-04-16T05:22:36.970Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aster",
+    "asset_id": "7E55toZhjEOEDGGwuuY1K5",
+    "url": "https://bscscan.com/address/0x5A110fC00474038f6c02E89C707D638602EA44B5",
+    "description": "USDF Token Contract",
+    "added_at": "2025-04-16T05:22:51.008Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aster",
+    "asset_id": "4wbECJESVQLndaNCRBXbsV",
+    "url": "https://bscscan.com/address/0xC271fc70dD9E678ac1AB632f797894fe4BE2C345",
+    "description": "USDF Minting Contract",
+    "added_at": "2025-04-16T05:23:09.190Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aster",
+    "asset_id": "33WdH9QFSrExn8NKj5gJLK",
+    "url": "https://bscscan.com/address/0xAd4836bBf3671EBd4f2e1F49119c1184655E47CA",
+    "description": "USDF withdraw Vault Contract",
+    "added_at": "2025-04-16T05:23:22.091Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aster",
+    "asset_id": "2Xvgrfvx4T7bU7Y2wcNb4q",
+    "url": "https://bscscan.com/address/0x56F966fD321128A2a4E107aF82282455e9025D02",
+    "description": "USDF Dispatcher Contract",
+    "added_at": "2025-04-16T05:23:35.648Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aster",
+    "asset_id": "48s7IEgcB7HrKKaAUnTEVM",
+    "url": "https://bscscan.com/address/0x917AF46B3C3c6e1Bb7286B9F59637Fb7C65851Fb",
+    "description": "asUSDF Token Contract",
+    "added_at": "2025-04-16T05:23:48.492Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aster",
+    "asset_id": "2J8IGFoUurIId8GOFi8jIp",
+    "url": "https://bscscan.com/address/0xdB57a53C428a9faFcbFefFB6dd80d0f427543695",
+    "description": "asUSDF Minting Contract",
+    "added_at": "2025-04-16T05:24:06.083Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aster",
+    "asset_id": "7K2hwh1mcoSrkmkJCLXra1",
+    "url": "https://bscscan.com/address/0x77734e70b6E88b4d82fE632a168EDf6e700912b6",
+    "description": "asBNB Token Contract",
+    "added_at": "2025-04-16T05:24:19.406Z",
+    "revision": 1
+  }
+]

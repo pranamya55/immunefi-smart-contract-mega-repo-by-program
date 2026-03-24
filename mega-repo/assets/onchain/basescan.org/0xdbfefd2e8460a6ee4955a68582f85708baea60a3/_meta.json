@@ -1,0 +1,24 @@
+{
+  "url": "https://basescan.org/address/0xdbfefd2e8460a6ee4955a68582f85708baea60a3#code",
+  "host": "basescan.org",
+  "address": "0xdbfefd2e8460a6ee4955a68582f85708baea60a3",
+  "chainid": 8453,
+  "project_slug": "originprotocol",
+  "asset_id": "6whGnZwizA6gYqLnRBhr4N",
+  "contract_name": "OETHBaseProxy",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "london",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "1",
+  "implementation": "0xccd483ce093682d7d9a41e645eeb710afaa88249",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 4,
+  "mode": "json-sources"
+}

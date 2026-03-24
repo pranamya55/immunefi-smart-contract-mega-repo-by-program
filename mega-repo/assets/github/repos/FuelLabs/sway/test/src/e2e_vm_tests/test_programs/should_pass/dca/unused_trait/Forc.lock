@@ -1,0 +1,8 @@
+[[package]]
+name = "std"
+source = "path+from-root-1F61DBB338364380"
+
+[[package]]
+name = "unused_trait"
+source = "member"
+dependencies = ["std"]

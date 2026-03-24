@@ -1,0 +1,24 @@
+{
+  "url": "https://basescan.org/address/0xbCbc8cb4D1e8ED048a6276a5E94A3e952660BcbC",
+  "host": "basescan.org",
+  "address": "0xbCbc8cb4D1e8ED048a6276a5E94A3e952660BcbC",
+  "chainid": 8453,
+  "project_slug": "yo-protocol",
+  "asset_id": "6Pog845i5sAJjsZV6Cx0ZS",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "1000",
+  "constructor_arguments": "",
+  "evm_version": "shanghai",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0xf59c19eb032ff3301b6695b58303470a79098771",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 12,
+  "mode": "json-sources"
+}

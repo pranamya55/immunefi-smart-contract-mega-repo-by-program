@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x5c46Fc65855c0C7465a1EA85EEA0B24B601502D3",
+  "host": "etherscan.io",
+  "address": "0x5c46Fc65855c0C7465a1EA85EEA0B24B601502D3",
+  "chainid": 1,
+  "project_slug": "sparklend",
+  "asset_id": "db_f3e22ce3-c434-4b90-9af3-7cd87f70200d",
+  "contract_name": "MainnetController",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "0000000000000000000000003300f198988e4c9c63f75df86de36421f06af8c40000000000000000000000001601843c5e9bc251a3272907010afa41fa18347e0000000000000000000000007a5fd5cf045e010e62147f065ceae59e5344b188000000000000000000000000691a6c29e9e96dd897718305427ad5d534db16ba000000000000000000000000f6e72db5454dd049d0788e411b06cfaf168530420000000000000000000000003225737a9bbb6473cb4a45b7244aca2befdb276a000000000000000000000000bd3fa81b58ba92a82136038b25adec7066af3155",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 64,
+  "mode": "json-sources"
+}

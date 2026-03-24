@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x2B05F8e1cACC6974fD79A673a341Fe1f58d27266#code",
+  "host": "arbiscan.io",
+  "address": "0x2B05F8e1cACC6974fD79A673a341Fe1f58d27266",
+  "chainid": 42161,
+  "project_slug": "sparklend",
+  "asset_id": "2BUz6pDiLs4FHLTgTcXgkl",
+  "contract_name": "PSM3",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "00000000000000000000000065d946e533748a998b1f0e430803e39a6388f7a1000000000000000000000000af88d065e77c8cc2239327c5edb3a432268e58310000000000000000000000006491c05a82219b8d1479057361ff1654749b876b000000000000000000000000ddb46999f8891663a8f2828d25298f70416d7610000000000000000000000000ee2816c1e1eed14d444552654ed3027abc033a36",
+  "evm_version": "shanghai",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 8,
+  "mode": "json-sources"
+}

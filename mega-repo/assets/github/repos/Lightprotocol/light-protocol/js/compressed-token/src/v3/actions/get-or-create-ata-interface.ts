@@ -1,0 +1,435 @@
+import {
+    Rpc,
+    LIGHT_TOKEN_PROGRAM_ID,
+    buildAndSignTx,
+    sendAndConfirmTx,
+    assertV2Enabled,
+} from '@lightprotocol/stateless.js';
+import {
+    getAssociatedTokenAddressSync,
+    TOKEN_PROGRAM_ID,
+    TokenAccountNotFoundError,
+    TokenInvalidAccountOwnerError,
+    TokenInvalidMintError,
+    TokenInvalidOwnerError,
+} from '@solana/spl-token';
+import type {
+    Commitment,
+    ConfirmOptions,
+    PublicKey,
+    Signer,
+} from '@solana/web3.js';
+import {
+    sendAndConfirmTransaction,
+    Transaction,
+    ComputeBudgetProgram,
+} from '@solana/web3.js';
+import {
+    createAssociatedTokenAccountInterfaceInstruction,
+    createAssociatedTokenAccountInterfaceIdempotentInstruction,
+} from '../instructions/create-ata-interface';
+import {
+    getAccountInterface,
+    getAtaInterface,
+    AccountInterface,
+    TokenAccountSourceType,
+} from '../get-account-interface';
+import { getAtaProgramId } from '../ata-utils';
+import { loadAta } from './load-ata';
+
+/**
+ * Retrieve the associated token account, or create it if it doesn't exist.
+ *
+ * @param rpc                       Connection to use
+ * @param payer                     Payer of the transaction and initialization
+ *                                  fees.
+ * @param mint                      Mint associated with the account to set or
+ *                                  verify.
+ * @param owner                     Owner of the account. Pass Signer to
+ *                                  auto-load compressed light-tokens (cold balance), or
+ *                                  PublicKey for read-only.
+ * @param allowOwnerOffCurve        Allow the owner account to be a PDA (Program
+ *                                  Derived Address).
+ * @param commitment                Desired level of commitment for querying the
+ *                                  state.
+ * @param confirmOptions            Options for confirming the transaction
+ * @param programId                 Token program ID (defaults to
+ *                                  LIGHT_TOKEN_PROGRAM_ID)
+ * @param associatedTokenProgramId  Associated token program ID (auto-derived if
+ *                                  not provided)
+ *
+ * @returns AccountInterface with aggregated balance and source breakdown
+ */
+export async function getOrCreateAtaInterface(
+    rpc: Rpc,
+    payer: Signer,
+    mint: PublicKey,
+    owner: PublicKey | Signer,
+    allowOwnerOffCurve = false,
+    commitment?: Commitment,
+    confirmOptions?: ConfirmOptions,
+    programId = LIGHT_TOKEN_PROGRAM_ID,
+    associatedTokenProgramId = getAtaProgramId(programId),
+): Promise<AccountInterface> {
+    assertV2Enabled();
+
+    return _getOrCreateAtaInterface(
+        rpc,
+        payer,
+        mint,
+        owner,
+        allowOwnerOffCurve,
+        commitment,
+        confirmOptions,
+        programId,
+        associatedTokenProgramId,
+        false, // wrap=false for standard path
+    );
+}
+
+/** @internal */
+function isSigner(owner: PublicKey | Signer): owner is Signer {
+    // Check for both publicKey and secretKey properties
+    // A proper Signer (like Keypair) has secretKey as Uint8Array
+    if (!('publicKey' in owner) || !('secretKey' in owner)) {
+        return false;
+    }
+    // Verify secretKey is actually present and is a Uint8Array
+    const signer = owner as Signer;
+    return (
+        signer.secretKey instanceof Uint8Array && signer.secretKey.length > 0
+    );
+}
+
+/** @internal */
+function getOwnerPublicKey(owner: PublicKey | Signer): PublicKey {
+    return isSigner(owner) ? owner.publicKey : owner;
+}
+
+/**
+ * @internal
+ * Internal implementation with wrap parameter.
+ */
+export async function _getOrCreateAtaInterface(
+    rpc: Rpc,
+    payer: Signer,
+    mint: PublicKey,
+    owner: PublicKey | Signer,
+    allowOwnerOffCurve: boolean,
+    commitment: Commitment | undefined,
+    confirmOptions: ConfirmOptions | undefined,
+    programId: PublicKey,
+    associatedTokenProgramId: PublicKey,
+    wrap: boolean,
+): Promise<AccountInterface> {
+    const ownerPubkey = getOwnerPublicKey(owner);
+    const associatedToken = getAssociatedTokenAddressSync(
+        mint,
+        ownerPubkey,
+        allowOwnerOffCurve,
+        programId,
+        associatedTokenProgramId,
+    );
+
+    // For light-token, use getAtaInterface which properly aggregates hot+cold balances
+    // When wrap=true (unified path), also includes SPL/T22 balances
+    if (programId.equals(LIGHT_TOKEN_PROGRAM_ID)) {
+        return getOrCreateLightTokenAta(
+            rpc,
+            payer,
+            mint,
+            owner,
+            associatedToken,
+            commitment,
+            confirmOptions,
+            wrap,
+            allowOwnerOffCurve,
+        );
+    }
+
+    // For SPL/T22, use standard address-based lookup
+    return getOrCreateSplAta(
+        rpc,
+        payer,
+        mint,
+        ownerPubkey,
+        associatedToken,
+        programId,
+        associatedTokenProgramId,
+        commitment,
+        confirmOptions,
+    );
+}
+
+/**
+ * Get or create light-token associated token account with proper compressed balance handling.
+ *
+ * Like SPL's getOrCreateAssociatedTokenAccount, this is a write operation:
+ * 1. Creates hot associated token account if it doesn't exist
+ * 2. If owner is Signer: loads compressed light-tokens (cold balance) into light-token associated token account
+ * 3. When wrap=true and owner is Signer: also wraps SPL/T22 tokens
+ *
+ * After this call (with Signer owner), all tokens are in the hot associated token account and ready
+ * to use.
+ *
+ * @internal
+ */
+async function getOrCreateLightTokenAta(
+    rpc: Rpc,
+    payer: Signer,
+    mint: PublicKey,
+    owner: PublicKey | Signer,
+    associatedToken: PublicKey,
+    commitment?: Commitment,
+    confirmOptions?: ConfirmOptions,
+    wrap = false,
+    allowOwnerOffCurve = false,
+): Promise<AccountInterface> {
+    const ownerPubkey = getOwnerPublicKey(owner);
+    const ownerIsSigner = isSigner(owner);
+
+    let accountInterface: AccountInterface;
+    let hasHotAccount = false;
+
+    try {
+        // Use getAtaInterface which properly fetches by owner+mint and aggregates
+        // hot+cold balances. When wrap=true, also includes SPL/T22 balances.
+        accountInterface = await getAtaInterface(
+            rpc,
+            associatedToken,
+            ownerPubkey,
+            mint,
+            commitment,
+            LIGHT_TOKEN_PROGRAM_ID,
+            wrap,
+            allowOwnerOffCurve,
+        );
+
+        // Check if we have a hot account
+        hasHotAccount =
+            accountInterface._sources?.some(
+                s => s.type === TokenAccountSourceType.LightTokenHot,
+            ) ?? false;
+    } catch (error: unknown) {
+        if (
+            error instanceof TokenAccountNotFoundError ||
+            error instanceof TokenInvalidAccountOwnerError
+        ) {
+            // No account found (neither hot nor cold), create hot associated token account
+            await createLightTokenAtaIdempotent(
+                rpc,
+                payer,
+                mint,
+                ownerPubkey,
+                associatedToken,
+                confirmOptions,
+            );
+
+            // Fetch the newly created account
+            accountInterface = await getAtaInterface(
+                rpc,
+                associatedToken,
+                ownerPubkey,
+                mint,
+                commitment,
+                LIGHT_TOKEN_PROGRAM_ID,
+                wrap,
+                allowOwnerOffCurve,
+            );
+            hasHotAccount = true;
+        } else {
+            throw error;
+        }
+    }
+
+    // If we only have cold balance (no hot associated token account), create the hot associated token account first
+    if (!hasHotAccount) {
+        await createLightTokenAtaIdempotent(
+            rpc,
+            payer,
+            mint,
+            ownerPubkey,
+            associatedToken,
+            confirmOptions,
+        );
+    }
+
+    const ownerSigner: Signer | null = isSigner(owner)
+        ? owner
+        : payer.publicKey.equals(ownerPubkey)
+          ? payer
+          : null;
+
+    if (ownerSigner) {
+        const sources = accountInterface._sources ?? [];
+        const hasCold = sources.some(
+            s =>
+                s.type === TokenAccountSourceType.LightTokenCold &&
+                s.amount > BigInt(0),
+        );
+        const hasSplToWrap =
+            wrap &&
+            sources.some(
+                s =>
+                    (s.type === TokenAccountSourceType.Spl ||
+                        s.type === TokenAccountSourceType.Token2022) &&
+                    s.amount > BigInt(0),
+            );
+
+        if (hasCold || hasSplToWrap) {
+            if (
+                !(ownerSigner.secretKey instanceof Uint8Array) ||
+                ownerSigner.secretKey.length === 0
+            ) {
+                throw new Error(
+                    'Owner must be a valid Signer with secretKey to auto-load',
+                );
+            }
+
+            await loadAta(
+                rpc,
+                associatedToken,
+                ownerSigner,
+                mint,
+                payer,
+                confirmOptions,
+                wrap ? { wrap: true } : undefined,
+            );
+
+            // Re-fetch the updated account state
+            accountInterface = await getAtaInterface(
+                rpc,
+                associatedToken,
+                ownerPubkey,
+                mint,
+                commitment,
+                LIGHT_TOKEN_PROGRAM_ID,
+                wrap,
+                allowOwnerOffCurve,
+            );
+        }
+    }
+
+    const account = accountInterface.parsed;
+
+    if (!account.mint.equals(mint)) throw new TokenInvalidMintError();
+    if (!account.owner.equals(ownerPubkey)) throw new TokenInvalidOwnerError();
+
+    return accountInterface;
+}
+
+/**
+ * Create light-token associated token account idempotently.
+ * @internal
+ */
+async function createLightTokenAtaIdempotent(
+    rpc: Rpc,
+    payer: Signer,
+    mint: PublicKey,
+    owner: PublicKey,
+    associatedToken: PublicKey,
+    confirmOptions?: ConfirmOptions,
+): Promise<void> {
+    const ix = createAssociatedTokenAccountInterfaceIdempotentInstruction(
+        payer.publicKey,
+        associatedToken,
+        owner,
+        mint,
+        LIGHT_TOKEN_PROGRAM_ID,
+    );
+
+    const { blockhash } = await rpc.getLatestBlockhash();
+    const tx = buildAndSignTx(
+        [ComputeBudgetProgram.setComputeUnitLimit({ units: 200_000 }), ix],
+        payer,
+        blockhash,
+        [],
+    );
+
+    await sendAndConfirmTx(rpc, tx, confirmOptions);
+}
+
+/**
+ * Get or create SPL/T22 associated token account.
+ * @internal
+ */
+async function getOrCreateSplAta(
+    rpc: Rpc,
+    payer: Signer,
+    mint: PublicKey,
+    owner: PublicKey,
+    associatedToken: PublicKey,
+    programId: PublicKey,
+    associatedTokenProgramId: PublicKey,
+    commitment?: Commitment,
+    confirmOptions?: ConfirmOptions,
+): Promise<AccountInterface> {
+    let accountInterface: AccountInterface;
+
+    try {
+        accountInterface = await getAccountInterface(
+            rpc,
+            associatedToken,
+            commitment,
+            programId,
+        );
+    } catch (error: unknown) {
+        // TokenAccountNotFoundError can be possible if the associated address
+        // has already received some lamports, becoming a system account.
+        if (
+            error instanceof TokenAccountNotFoundError ||
+            error instanceof TokenInvalidAccountOwnerError
+        ) {
+            // As this isn't atomic, it's possible others can create associated
+            // accounts meanwhile.
+            try {
+                const transaction = new Transaction().add(
+                    createAssociatedTokenAccountInterfaceInstruction(
+                        payer.publicKey,
+                        associatedToken,
+                        owner,
+                        mint,
+                        programId,
+                        associatedTokenProgramId,
+                    ),
+                );
+
+                await sendAndConfirmTransaction(
+                    rpc,
+                    transaction,
+                    [payer],
+                    confirmOptions,
+                );
+            } catch (createError) {
+                // Accept race-condition "already exists" only if account can now be fetched.
+                try {
+                    await getAccountInterface(
+                        rpc,
+                        associatedToken,
+                        commitment,
+                        programId,
+                    );
+                } catch {
+                    throw createError;
+                }
+            }
+
+            // Now this should always succeed
+            accountInterface = await getAccountInterface(
+                rpc,
+                associatedToken,
+                commitment,
+                programId,
+            );
+        } else {
+            throw error;
+        }
+    }
+
+    const account = accountInterface.parsed;
+
+    if (!account.mint.equals(mint)) throw new TokenInvalidMintError();
+    if (!account.owner.equals(owner)) throw new TokenInvalidOwnerError();
+
+    return accountInterface;
+}

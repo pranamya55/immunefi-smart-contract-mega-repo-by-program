@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0x2F4eAF29dfeeF4654bD091F7112926E108eF4Ed0",
+  "host": "polygonscan.com",
+  "address": "0x2F4eAF29dfeeF4654bD091F7112926E108eF4Ed0",
+  "chainid": 137,
+  "project_slug": "compoundfinance",
+  "asset_id": "4MUKKHep0J54VvH4KYSeJp",
+  "contract_name": "CometExt",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 6,
+  "mode": "json-sources"
+}

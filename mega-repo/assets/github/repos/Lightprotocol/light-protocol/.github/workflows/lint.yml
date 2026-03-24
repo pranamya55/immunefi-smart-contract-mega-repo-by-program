@@ -1,0 +1,47 @@
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - "*"
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - ready_for_review
+
+name: lint
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    name: lint
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v6
+        with:
+          submodules: true
+
+      - name: Setup and build
+        uses: ./.github/actions/setup-and-build
+        with:
+          skip-components: "proving-keys,redis,disk-cleanup,go"
+          cache-key: "lint"
+
+      - name: Run linters
+        run: |
+          set -euxo pipefail
+          RUSTFMT_NIGHTLY_TOOLCHAIN=nightly-2025-10-26
+          rustup install "$RUSTFMT_NIGHTLY_TOOLCHAIN"
+          rustup target add x86_64-unknown-linux-gnu --toolchain "$RUSTFMT_NIGHTLY_TOOLCHAIN"
+          rustup component add --toolchain "$RUSTFMT_NIGHTLY_TOOLCHAIN" rustfmt
+          rustup component add --toolchain "$RUSTFMT_NIGHTLY_TOOLCHAIN" clippy
+          rustup component add --toolchain 1.86-x86_64-unknown-linux-gnu clippy
+          export RUSTFMT_NIGHTLY_TOOLCHAIN
+          ./scripts/lint.sh

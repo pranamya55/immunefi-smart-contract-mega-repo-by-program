@@ -1,0 +1,3155 @@
+{
+  "contractName": "AddressSetLibMock",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "result",
+          "type": "bool"
+        }
+      ],
+      "name": "Result",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "clear",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "value",
+          "type": "address"
+        }
+      ],
+      "name": "add",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "value",
+          "type": "address"
+        }
+      ],
+      "name": "remove",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "value",
+          "type": "address"
+        }
+      ],
+      "name": "contains",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "length",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "at",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "asArray",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "selectedOracles",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"result\",\"type\":\"bool\"}],\"name\":\"Result\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"value\",\"type\":\"address\"}],\"name\":\"add\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"asArray\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"selectedOracles\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"at\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"clear\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"value\",\"type\":\"address\"}],\"name\":\"contains\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"length\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"value\",\"type\":\"address\"}],\"name\":\"remove\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/jbokser/work2/OMoC-SC-Shared/contracts/testing_mocks/AddressSetLibMock.sol\":\"AddressSetLibMock\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/jbokser/work2/OMoC-SC-Shared/contracts/lib/AddressSetLib.sol\":{\"keccak256\":\"0x164a53571663eed760ad55e9e580e757bee459f73485337d2d6edbb4a15d11d7\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://01b4a24867c85179f07dd19d962b89fdf5d4e9a452221536d2f9430fcf235ad4\",\"dweb:/ipfs/QmU4sWw2EZCVR6HEccoLaRNDXUq6T4PXwKyWg2axukGQFH\"]},\"/home/jbokser/work2/OMoC-SC-Shared/contracts/testing_mocks/AddressSetLibMock.sol\":{\"keccak256\":\"0x9e3f6a10b49be353acea8290a3eed8c3c06633dbbc10f5339f7de88f44c6c820\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://3e2ea0c0ffab8528c5e703cd375ca905e3d5666774f50df3dffe5a1aea8497e5\",\"dweb:/ipfs/QmddMt1ergNL9Cv6R5suTMH6CK3LyLqcmbbvWrTBpzC6UC\"]},\"@openzeppelin/contracts-ethereum-package/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x04d34b3cd5677bea25f8dfceb6dec0eaa071d4d4b789a43f13fe0c415ba4c296\",\"urls\":[\"bzz-raw://e7e8b526a6839e5ba14f0d23a830387fec47f7043ce01d42c9f285b709a9d080\",\"dweb:/ipfs/QmXmhhFmX5gcAvVzNiDPAGA35iHMPNaYtQkACswRHBVTNw\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061002361004260201b6102591760201c565b8051805160009161003991839160200190610064565b509050506100fb565b61004a6100c9565b506040805160006020820190815281830190925290815290565b8280548282559060005260206000209081019282156100b9579160200282015b828111156100b957825182546001600160a01b0319166001600160a01b03909116178255602090920191600190910190610084565b506100c59291506100dc565b5090565b6040518060200160405280606081525090565b5b808211156100c55780546001600160a01b03191681556001016100dd565b6105c28061010a6000396000f3fe608060405234801561001057600080fd5b506004361061007d5760003560e01c806352efea6e1161005b57806352efea6e146100ea5780635dbe47e8146100f2578063bd868b6c1461012c578063e0886f90146101845761007d565b80630a3b0a4f146100825780631f7b6d32146100aa57806329092d0e146100c4575b600080fd5b6100a86004803603602081101561009857600080fd5b50356001600160a01b03166101bd565b005b6100b2610206565b60408051918252519081900360200190f35b6100a8600480360360208110156100da57600080fd5b50356001600160a01b0316610217565b6100a8610223565b6101186004803603602081101561010857600080fd5b50356001600160a01b031661022f565b604080519115158252519081900360200190f35b610134610241565b60408051602080825283518183015283519192839290830191858101910280838360005b83811015610170578181015183820152602001610158565b505050509050019250505060405180910390f35b6101a16004803603602081101561019a57600080fd5b503561024d565b604080516001600160a01b039092168252519081900360200190f35b60006101c9818361027b565b60408051821515815290519192507f0b3bdb70bcb1393d4319be3261bd6ab95e2ea1665e718029d24cecca39e84ccc919081900360200190a15050565b600061021260006102df565b905090565b60006101c981836102e3565b61022d60006103ea565b565b600061023b8183610447565b92915050565b60606102126000610468565b600061023b81836104ce565b610261610547565b506040805160006020820190815281830190925290815290565b60006102878383610447565b6102d657508154600180820184556000848152602080822090930180546001600160a01b0319166001600160a01b0386169081179091558554908252828601909352604090209190915561023b565b50600092915050565b5490565b6001600160a01b038116600090815260018301602052604081205480156103e0578354600019808301919081019060009087908390811061032057fe5b60009182526020909120015487546001600160a01b039091169150819088908590811061034957fe5b600091825260208083209190910180546001600160a01b0319166001600160a01b0394851617905591831681526001898101909252604090209084019055865487908061039257fe5b60008281526020808220830160001990810180546001600160a01b03191690559092019092556001600160a01b038816825260018981019091526040822091909155945061023b9350505050565b600091505061023b565b60005b81548110156104385781600101600083600001838154811061040b57fe5b60009182526020808320909101546001600160a01b031683528201929092526040018120556001016103ed565b5061044481600061055a565b50565b6001600160a01b031660009081526001919091016020526040902054151590565b6060816000018054806020026020016040519081016040528092919081815260200182805480156104c257602002820191906000526020600020905b81546001600160a01b031681526001909101906020018083116104a4575b50505050509050919050565b8154600090821061051c576040805162461bcd60e51b8152602060048201526013602482015272696e646578206f7574206f6620626f756e647360681b604482015290519081900360640190fd5b82600001828154811061052b57fe5b6000918252602090912001546001600160a01b03169392505050565b6040518060200160405280606081525090565b508054600082559060005260206000209081019061044491905b808211156105885760008155600101610574565b509056fea2646970667358221220bdb2a41cb0f1bb2aebb6b64d83c47d44b118b625625ca5eeb35978b69f24328764736f6c634300060c0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061007d5760003560e01c806352efea6e1161005b57806352efea6e146100ea5780635dbe47e8146100f2578063bd868b6c1461012c578063e0886f90146101845761007d565b80630a3b0a4f146100825780631f7b6d32146100aa57806329092d0e146100c4575b600080fd5b6100a86004803603602081101561009857600080fd5b50356001600160a01b03166101bd565b005b6100b2610206565b60408051918252519081900360200190f35b6100a8600480360360208110156100da57600080fd5b50356001600160a01b0316610217565b6100a8610223565b6101186004803603602081101561010857600080fd5b50356001600160a01b031661022f565b604080519115158252519081900360200190f35b610134610241565b60408051602080825283518183015283519192839290830191858101910280838360005b83811015610170578181015183820152602001610158565b505050509050019250505060405180910390f35b6101a16004803603602081101561019a57600080fd5b503561024d565b604080516001600160a01b039092168252519081900360200190f35b60006101c9818361027b565b60408051821515815290519192507f0b3bdb70bcb1393d4319be3261bd6ab95e2ea1665e718029d24cecca39e84ccc919081900360200190a15050565b600061021260006102df565b905090565b60006101c981836102e3565b61022d60006103ea565b565b600061023b8183610447565b92915050565b60606102126000610468565b600061023b81836104ce565b610261610547565b506040805160006020820190815281830190925290815290565b60006102878383610447565b6102d657508154600180820184556000848152602080822090930180546001600160a01b0319166001600160a01b0386169081179091558554908252828601909352604090209190915561023b565b50600092915050565b5490565b6001600160a01b038116600090815260018301602052604081205480156103e0578354600019808301919081019060009087908390811061032057fe5b60009182526020909120015487546001600160a01b039091169150819088908590811061034957fe5b600091825260208083209190910180546001600160a01b0319166001600160a01b0394851617905591831681526001898101909252604090209084019055865487908061039257fe5b60008281526020808220830160001990810180546001600160a01b03191690559092019092556001600160a01b038816825260018981019091526040822091909155945061023b9350505050565b600091505061023b565b60005b81548110156104385781600101600083600001838154811061040b57fe5b60009182526020808320909101546001600160a01b031683528201929092526040018120556001016103ed565b5061044481600061055a565b50565b6001600160a01b031660009081526001919091016020526040902054151590565b6060816000018054806020026020016040519081016040528092919081815260200182805480156104c257602002820191906000526020600020905b81546001600160a01b031681526001909101906020018083116104a4575b50505050509050919050565b8154600090821061051c576040805162461bcd60e51b8152602060048201526013602482015272696e646578206f7574206f6620626f756e647360681b604482015290519081900360640190fd5b82600001828154811061052b57fe5b6000918252602090912001546001600160a01b03169392505050565b6040518060200160405280606081525090565b508054600082559060005260206000209081019061044491905b808211156105885760008155600101610574565b509056fea2646970667358221220bdb2a41cb0f1bb2aebb6b64d83c47d44b118b625625ca5eeb35978b69f24328764736f6c634300060c0033",
+  "immutableReferences": {},
+  "sourceMap": "121:950:37:-:0;;;285:65;;;;;;;;;;323:20;:18;;;;;:20;;:::i;:::-;316:27;;;;:4;;:27;;:4;;:27;;;;:::i;:::-;;;;;121:950;;583:121:26;622:17;;:::i;:::-;-1:-1:-1;658:39:26;;;-1:-1:-1;658:39:26;;;679:16;;;;;;;;;658:39;;;;583:121::o;121:950:37:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;;121:950:37;-1:-1:-1;;;;;121:950:37;;;;;;;;;;;-1:-1:-1;121:950:37;;;;;;;-1:-1:-1;121:950:37;;;-1:-1:-1;121:950:37;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;-1:-1:-1;;;;;;121:950:37;;;;;;;;;;;;;;",
+  "deployedSourceMap": "121:950:37:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;417:106;;;;;;;;;;;;;;;;-1:-1:-1;417:106:37;-1:-1:-1;;;;;417:106:37;;:::i;:::-;;759:87;;;:::i;:::-;;;;;;;;;;;;;;;;529:112;;;;;;;;;;;;;;;;-1:-1:-1;529:112:37;-1:-1:-1;;;;;529:112:37;;:::i;356:55::-;;;:::i;647:106::-;;;;;;;;;;;;;;;;-1:-1:-1;647:106:37;-1:-1:-1;;;;;647:106:37;;:::i;:::-;;;;;;;;;;;;;;;;;;955:114;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;852:97;;;;;;;;;;;;;;;;-1:-1:-1;852:97:37;;:::i;:::-;;;;-1:-1:-1;;;;;852:97:37;;;;;;;;;;;;;;417:106;464:8;475:15;464:8;484:5;475:8;:15::i;:::-;505:11;;;;;;;;;;464:26;;-1:-1:-1;505:11:37;;;;;;;;;;417:106;;:::o;759:87::-;800:7;826:13;:4;:11;:13::i;:::-;819:20;;759:87;:::o;529:112::-;579:8;590:18;579:8;602:5;590:11;:18::i;356:55::-;392:12;:4;:10;:12::i;:::-;356:55::o;647:106::-;703:4;726:20;703:4;740:5;726:13;:20::i;:::-;719:27;647:106;-1:-1:-1;;647:106:37:o;955:114::-;997:32;1048:14;:4;:12;:14::i;852:97::-;902:7;928:14;902:7;936:5;928:7;:14::i;583:121:26:-;622:17;;:::i;:::-;-1:-1:-1;658:39:26;;;-1:-1:-1;658:39:26;;;679:16;;;;;;;;;658:39;;;;583:121::o;1152:410::-;1222:4;1243:20;1252:3;1257:5;1243:8;:20::i;:::-;1238:318;;-1:-1:-1;1279:23:26;;;;;;;;-1:-1:-1;1279:23:26;;;;;;;;;;;;-1:-1:-1;;;;;;1279:23:26;-1:-1:-1;;;;;1279:23:26;;;;;;;;1459:18;;1437:19;;;:12;;;:19;;;;;;:40;;;;1491:11;;1238:318;-1:-1:-1;1540:5:26;1152:410;;;;:::o;3569:114::-;3658:18;;3569:114::o;1730:1543::-;-1:-1:-1;;;;;1940:19:26;;1803:4;1940:19;;;:12;;;:19;;;;;;1974:15;;1970:1297;;2415:18;;-1:-1:-1;;2367:14:26;;;;2415:22;;;;2343:21;;2415:3;;:22;;2697;;;;;;;;;;;;;;;;2811:26;;-1:-1:-1;;;;;2697:22:26;;;;-1:-1:-1;2697:22:26;;2811:3;;2823:13;;2811:26;;;;;;;;;;;;;;;;;;:38;;-1:-1:-1;;;;;;2811:38:26;-1:-1:-1;;;;;2811:38:26;;;;;;2915:23;;;;;-1:-1:-1;2915:12:26;;;:23;;;;;;2941:17;;;2915:43;;3076:17;;2915:12;;3076:17;;;;;;;;;;;;;;;-1:-1:-1;;3076:17:26;;;;;-1:-1:-1;;;;;;3076:17:26;;;;;;;;;-1:-1:-1;;;;;3168:19:26;;;;3076:17;3168:12;;;:19;;;;;;3161:26;;;;3076:17;-1:-1:-1;3202:11:26;;-1:-1:-1;;;;3202:11:26;1970:1297;3251:5;3244:12;;;;;781:201;844:9;839:109;863:18;;859:22;;839:109;;;909:3;:12;;:28;922:3;:11;;934:1;922:14;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;922:14:26;909:28;;;;;;;;;;;;902:35;922:14;883:3;839:109;;;-1:-1:-1;957:18:26;964:3;:11;957:18;:::i;:::-;781:201;:::o;3354:134::-;-1:-1:-1;;;;;3457:19:26;3434:4;3457:19;;;:12;;;;;:19;;;;;;:24;;;3354:134::o;4289:161::-;4377:32;4432:3;:11;;4425:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;4425:18:26;;;;;;;;;;;;;;;;;;;;;;;4289:161;;;:::o;4025:193::-;4126:18;;4099:7;;4126:26;-1:-1:-1;4118:58:26;;;;;-1:-1:-1;;;4118:58:26;;;;;;;;;;;;-1:-1:-1;;;4118:58:26;;;;;;;;;;;;;;;4193:3;:11;;4205:5;4193:18;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;4193:18:26;;4025:193;-1:-1:-1;;;4025:193:26:o;-1:-1:-1:-;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "// SPDX-License-Identifier: UNLICENSED\npragma solidity 0.6.12;\n\nimport {AddressSetLib} from \"../lib/AddressSetLib.sol\";\n\ncontract AddressSetLibMock {\n    using AddressSetLib for AddressSetLib.AddressSet;\n    AddressSetLib.AddressSet internal data;\n\n    event Result(bool result);\n\n    constructor() public {\n        data = AddressSetLib.init();\n    }\n\n    function clear() external {\n        data.clear();\n    }\n\n    function add(address value) external {\n        bool ret = data.add(value);\n        emit Result(ret);\n    }\n\n    function remove(address value) external {\n        bool ret = data.remove(value);\n        emit Result(ret);\n    }\n\n    function contains(address value) external view returns (bool) {\n        return data.contains(value);\n    }\n\n    function length() external view returns (uint256) {\n        return data.length();\n    }\n\n    function at(uint256 index) external view returns (address) {\n        return data.at(index);\n    }\n\n    function asArray() external view returns (address[] memory selectedOracles) {\n        return data.asArray();\n    }\n}\n",
+  "sourcePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/testing_mocks/AddressSetLibMock.sol",
+  "ast": {
+    "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/testing_mocks/AddressSetLibMock.sol",
+    "exportedSymbols": {
+      "AddressSetLibMock": [
+        5162
+      ]
+    },
+    "id": 5163,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5050,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:23:37"
+      },
+      {
+        "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/lib/AddressSetLib.sol",
+        "file": "../lib/AddressSetLib.sol",
+        "id": 5052,
+        "nodeType": "ImportDirective",
+        "scope": 5163,
+        "sourceUnit": 4296,
+        "src": "64:55:37",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "argumentTypes": null,
+              "id": 5051,
+              "name": "AddressSetLib",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": null,
+              "src": "72:13:37",
+              "typeDescriptions": {
+                "typeIdentifier": null,
+                "typeString": null
+              }
+            },
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 5162,
+        "linearizedBaseContracts": [
+          5162
+        ],
+        "name": "AddressSetLibMock",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 5055,
+            "libraryName": {
+              "contractScope": null,
+              "id": 5053,
+              "name": "AddressSetLib",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4295,
+              "src": "160:13:37",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_AddressSetLib_$4295",
+                "typeString": "library AddressSetLib"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "154:49:37",
+            "typeName": {
+              "contractScope": null,
+              "id": 5054,
+              "name": "AddressSetLib.AddressSet",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4056,
+              "src": "178:24:37",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_AddressSet_$4056_storage_ptr",
+                "typeString": "struct AddressSetLib.AddressSet"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "id": 5057,
+            "mutability": "mutable",
+            "name": "data",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 5162,
+            "src": "208:38:37",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_AddressSet_$4056_storage",
+              "typeString": "struct AddressSetLib.AddressSet"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 5056,
+              "name": "AddressSetLib.AddressSet",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4056,
+              "src": "208:24:37",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_AddressSet_$4056_storage_ptr",
+                "typeString": "struct AddressSetLib.AddressSet"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 5061,
+            "name": "Result",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 5060,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5059,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "result",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5061,
+                  "src": "266:11:37",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 5058,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "266:4:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "265:13:37"
+            },
+            "src": "253:26:37"
+          },
+          {
+            "body": {
+              "id": 5070,
+              "nodeType": "Block",
+              "src": "306:44:37",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 5068,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 5064,
+                      "name": "data",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5057,
+                      "src": "316:4:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_AddressSet_$4056_storage",
+                        "typeString": "struct AddressSetLib.AddressSet storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 5065,
+                          "name": "AddressSetLib",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 4295,
+                          "src": "323:13:37",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_AddressSetLib_$4295_$",
+                            "typeString": "type(library AddressSetLib)"
+                          }
+                        },
+                        "id": 5066,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "init",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 4070,
+                        "src": "323:18:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_pure$__$returns$_t_struct$_AddressSet_$4056_memory_ptr_$",
+                          "typeString": "function () pure returns (struct AddressSetLib.AddressSet memory)"
+                        }
+                      },
+                      "id": 5067,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "323:20:37",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_AddressSet_$4056_memory_ptr",
+                        "typeString": "struct AddressSetLib.AddressSet memory"
+                      }
+                    },
+                    "src": "316:27:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_AddressSet_$4056_storage",
+                      "typeString": "struct AddressSetLib.AddressSet storage ref"
+                    }
+                  },
+                  "id": 5069,
+                  "nodeType": "ExpressionStatement",
+                  "src": "316:27:37"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 5071,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 5062,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "296:2:37"
+            },
+            "returnParameters": {
+              "id": 5063,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "306:0:37"
+            },
+            "scope": 5162,
+            "src": "285:65:37",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 5079,
+              "nodeType": "Block",
+              "src": "382:29:37",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 5074,
+                        "name": "data",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5057,
+                        "src": "392:4:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_AddressSet_$4056_storage",
+                          "typeString": "struct AddressSetLib.AddressSet storage ref"
+                        }
+                      },
+                      "id": 5076,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "clear",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 4104,
+                      "src": "392:10:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_AddressSet_$4056_storage_ptr_$returns$__$bound_to$_t_struct$_AddressSet_$4056_storage_ptr_$",
+                        "typeString": "function (struct AddressSetLib.AddressSet storage pointer)"
+                      }
+                    },
+                    "id": 5077,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "392:12:37",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 5078,
+                  "nodeType": "ExpressionStatement",
+                  "src": "392:12:37"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "52efea6e",
+            "id": 5080,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "clear",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 5072,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "370:2:37"
+            },
+            "returnParameters": {
+              "id": 5073,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "382:0:37"
+            },
+            "scope": 5162,
+            "src": "356:55:37",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 5096,
+              "nodeType": "Block",
+              "src": "454:69:37",
+              "statements": [
+                {
+                  "assignments": [
+                    5086
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 5086,
+                      "mutability": "mutable",
+                      "name": "ret",
+                      "nodeType": "VariableDeclaration",
+                      "overrides": null,
+                      "scope": 5096,
+                      "src": "464:8:37",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "typeName": {
+                        "id": 5085,
+                        "name": "bool",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "464:4:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 5091,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 5089,
+                        "name": "value",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5082,
+                        "src": "484:5:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 5087,
+                        "name": "data",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5057,
+                        "src": "475:4:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_AddressSet_$4056_storage",
+                          "typeString": "struct AddressSetLib.AddressSet storage ref"
+                        }
+                      },
+                      "id": 5088,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "add",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 4145,
+                      "src": "475:8:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_AddressSet_$4056_storage_ptr_$_t_address_$returns$_t_bool_$bound_to$_t_struct$_AddressSet_$4056_storage_ptr_$",
+                        "typeString": "function (struct AddressSetLib.AddressSet storage pointer,address) returns (bool)"
+                      }
+                    },
+                    "id": 5090,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "475:15:37",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "464:26:37"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 5093,
+                        "name": "ret",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5086,
+                        "src": "512:3:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 5092,
+                      "name": "Result",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5061,
+                      "src": "505:6:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_bool_$returns$__$",
+                        "typeString": "function (bool)"
+                      }
+                    },
+                    "id": 5094,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "505:11:37",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 5095,
+                  "nodeType": "EmitStatement",
+                  "src": "500:16:37"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "0a3b0a4f",
+            "id": 5097,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "add",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 5083,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5082,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5097,
+                  "src": "430:13:37",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5081,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "430:7:37",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "429:15:37"
+            },
+            "returnParameters": {
+              "id": 5084,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "454:0:37"
+            },
+            "scope": 5162,
+            "src": "417:106:37",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 5113,
+              "nodeType": "Block",
+              "src": "569:72:37",
+              "statements": [
+                {
+                  "assignments": [
+                    5103
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 5103,
+                      "mutability": "mutable",
+                      "name": "ret",
+                      "nodeType": "VariableDeclaration",
+                      "overrides": null,
+                      "scope": 5113,
+                      "src": "579:8:37",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "typeName": {
+                        "id": 5102,
+                        "name": "bool",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "579:4:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 5108,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 5106,
+                        "name": "value",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5099,
+                        "src": "602:5:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 5104,
+                        "name": "data",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5057,
+                        "src": "590:4:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_AddressSet_$4056_storage",
+                          "typeString": "struct AddressSetLib.AddressSet storage ref"
+                        }
+                      },
+                      "id": 5105,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "remove",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 4225,
+                      "src": "590:11:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_AddressSet_$4056_storage_ptr_$_t_address_$returns$_t_bool_$bound_to$_t_struct$_AddressSet_$4056_storage_ptr_$",
+                        "typeString": "function (struct AddressSetLib.AddressSet storage pointer,address) returns (bool)"
+                      }
+                    },
+                    "id": 5107,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "590:18:37",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "579:29:37"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 5110,
+                        "name": "ret",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5103,
+                        "src": "630:3:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 5109,
+                      "name": "Result",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5061,
+                      "src": "623:6:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_bool_$returns$__$",
+                        "typeString": "function (bool)"
+                      }
+                    },
+                    "id": 5111,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "623:11:37",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 5112,
+                  "nodeType": "EmitStatement",
+                  "src": "618:16:37"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "29092d0e",
+            "id": 5114,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "remove",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 5100,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5099,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5114,
+                  "src": "545:13:37",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5098,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "545:7:37",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "544:15:37"
+            },
+            "returnParameters": {
+              "id": 5101,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "569:0:37"
+            },
+            "scope": 5162,
+            "src": "529:112:37",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 5126,
+              "nodeType": "Block",
+              "src": "709:44:37",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 5123,
+                        "name": "value",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5116,
+                        "src": "740:5:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 5121,
+                        "name": "data",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5057,
+                        "src": "726:4:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_AddressSet_$4056_storage",
+                          "typeString": "struct AddressSetLib.AddressSet storage ref"
+                        }
+                      },
+                      "id": 5122,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "contains",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 4243,
+                      "src": "726:13:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_AddressSet_$4056_storage_ptr_$_t_address_$returns$_t_bool_$bound_to$_t_struct$_AddressSet_$4056_storage_ptr_$",
+                        "typeString": "function (struct AddressSetLib.AddressSet storage pointer,address) view returns (bool)"
+                      }
+                    },
+                    "id": 5124,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "726:20:37",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 5120,
+                  "id": 5125,
+                  "nodeType": "Return",
+                  "src": "719:27:37"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "5dbe47e8",
+            "id": 5127,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "contains",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 5117,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5116,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5127,
+                  "src": "665:13:37",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5115,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "665:7:37",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "664:15:37"
+            },
+            "returnParameters": {
+              "id": 5120,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5119,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5127,
+                  "src": "703:4:37",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 5118,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "703:4:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "702:6:37"
+            },
+            "scope": 5162,
+            "src": "647:106:37",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 5136,
+              "nodeType": "Block",
+              "src": "809:37:37",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 5132,
+                        "name": "data",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5057,
+                        "src": "826:4:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_AddressSet_$4056_storage",
+                          "typeString": "struct AddressSetLib.AddressSet storage ref"
+                        }
+                      },
+                      "id": 5133,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "length",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 4256,
+                      "src": "826:11:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_AddressSet_$4056_storage_ptr_$returns$_t_uint256_$bound_to$_t_struct$_AddressSet_$4056_storage_ptr_$",
+                        "typeString": "function (struct AddressSetLib.AddressSet storage pointer) view returns (uint256)"
+                      }
+                    },
+                    "id": 5134,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "826:13:37",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 5131,
+                  "id": 5135,
+                  "nodeType": "Return",
+                  "src": "819:20:37"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "1f7b6d32",
+            "id": 5137,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "length",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 5128,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "774:2:37"
+            },
+            "returnParameters": {
+              "id": 5131,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5130,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5137,
+                  "src": "800:7:37",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5129,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "800:7:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "799:9:37"
+            },
+            "scope": 5162,
+            "src": "759:87:37",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 5149,
+              "nodeType": "Block",
+              "src": "911:38:37",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 5146,
+                        "name": "index",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5139,
+                        "src": "936:5:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 5144,
+                        "name": "data",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5057,
+                        "src": "928:4:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_AddressSet_$4056_storage",
+                          "typeString": "struct AddressSetLib.AddressSet storage ref"
+                        }
+                      },
+                      "id": 5145,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "at",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 4281,
+                      "src": "928:7:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_AddressSet_$4056_storage_ptr_$_t_uint256_$returns$_t_address_$bound_to$_t_struct$_AddressSet_$4056_storage_ptr_$",
+                        "typeString": "function (struct AddressSetLib.AddressSet storage pointer,uint256) view returns (address)"
+                      }
+                    },
+                    "id": 5147,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "928:14:37",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 5143,
+                  "id": 5148,
+                  "nodeType": "Return",
+                  "src": "921:21:37"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "e0886f90",
+            "id": 5150,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "at",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 5140,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5139,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5150,
+                  "src": "864:13:37",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5138,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "864:7:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "863:15:37"
+            },
+            "returnParameters": {
+              "id": 5143,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5142,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5150,
+                  "src": "902:7:37",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5141,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "902:7:37",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "901:9:37"
+            },
+            "scope": 5162,
+            "src": "852:97:37",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 5160,
+              "nodeType": "Block",
+              "src": "1031:38:37",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 5156,
+                        "name": "data",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5057,
+                        "src": "1048:4:37",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_AddressSet_$4056_storage",
+                          "typeString": "struct AddressSetLib.AddressSet storage ref"
+                        }
+                      },
+                      "id": 5157,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "asArray",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 4294,
+                      "src": "1048:12:37",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_AddressSet_$4056_storage_ptr_$returns$_t_array$_t_address_$dyn_memory_ptr_$bound_to$_t_struct$_AddressSet_$4056_storage_ptr_$",
+                        "typeString": "function (struct AddressSetLib.AddressSet storage pointer) view returns (address[] memory)"
+                      }
+                    },
+                    "id": 5158,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1048:14:37",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                      "typeString": "address[] memory"
+                    }
+                  },
+                  "functionReturnParameters": 5155,
+                  "id": 5159,
+                  "nodeType": "Return",
+                  "src": "1041:21:37"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "bd868b6c",
+            "id": 5161,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "asArray",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 5151,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "971:2:37"
+            },
+            "returnParameters": {
+              "id": 5155,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5154,
+                  "mutability": "mutable",
+                  "name": "selectedOracles",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5161,
+                  "src": "997:32:37",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 5152,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "997:7:37",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 5153,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "997:9:37",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "996:34:37"
+            },
+            "scope": 5162,
+            "src": "955:114:37",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 5163,
+        "src": "121:950:37"
+      }
+    ],
+    "src": "39:1033:37"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/testing_mocks/AddressSetLibMock.sol",
+      "exportedSymbols": {
+        "AddressSetLibMock": [
+          5162
+        ]
+      },
+      "license": "UNLICENSED"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 5050,
+        "name": "PragmaDirective",
+        "src": "39:23:37"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 4296,
+          "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/lib/AddressSetLib.sol",
+          "file": "../lib/AddressSetLib.sol",
+          "scope": 5163,
+          "symbolAliases": [
+            {
+              "foreign": {
+                "attributes": {
+                  "argumentTypes": null,
+                  "overloadedDeclarations": [
+                    null
+                  ],
+                  "referencedDeclaration": null,
+                  "type": null,
+                  "value": "AddressSetLib"
+                },
+                "id": 5051,
+                "name": "Identifier",
+                "src": "72:13:37"
+              },
+              "local": null
+            }
+          ],
+          "unitAlias": ""
+        },
+        "id": 5052,
+        "name": "ImportDirective",
+        "src": "64:55:37"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            5162
+          ],
+          "name": "AddressSetLibMock",
+          "scope": 5163
+        },
+        "children": [
+          {
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "AddressSetLib",
+                  "referencedDeclaration": 4295,
+                  "type": "library AddressSetLib"
+                },
+                "id": 5053,
+                "name": "UserDefinedTypeName",
+                "src": "160:13:37"
+              },
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "AddressSetLib.AddressSet",
+                  "referencedDeclaration": 4056,
+                  "type": "struct AddressSetLib.AddressSet"
+                },
+                "id": 5054,
+                "name": "UserDefinedTypeName",
+                "src": "178:24:37"
+              }
+            ],
+            "id": 5055,
+            "name": "UsingForDirective",
+            "src": "154:49:37"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "data",
+              "overrides": null,
+              "scope": 5162,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct AddressSetLib.AddressSet",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "AddressSetLib.AddressSet",
+                  "referencedDeclaration": 4056,
+                  "type": "struct AddressSetLib.AddressSet"
+                },
+                "id": 5056,
+                "name": "UserDefinedTypeName",
+                "src": "208:24:37"
+              }
+            ],
+            "id": 5057,
+            "name": "VariableDeclaration",
+            "src": "208:38:37"
+          },
+          {
+            "attributes": {
+              "anonymous": false,
+              "documentation": null,
+              "name": "Result"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "result",
+                      "overrides": null,
+                      "scope": 5061,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 5058,
+                        "name": "ElementaryTypeName",
+                        "src": "266:4:37"
+                      }
+                    ],
+                    "id": 5059,
+                    "name": "VariableDeclaration",
+                    "src": "266:11:37"
+                  }
+                ],
+                "id": 5060,
+                "name": "ParameterList",
+                "src": "265:13:37"
+              }
+            ],
+            "id": 5061,
+            "name": "EventDefinition",
+            "src": "253:26:37"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "overrides": null,
+              "scope": 5162,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 5062,
+                "name": "ParameterList",
+                "src": "296:2:37"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 5063,
+                "name": "ParameterList",
+                "src": "306:0:37"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct AddressSetLib.AddressSet storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 5057,
+                              "type": "struct AddressSetLib.AddressSet storage ref",
+                              "value": "data"
+                            },
+                            "id": 5064,
+                            "name": "Identifier",
+                            "src": "316:4:37"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "arguments": [
+                                null
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": false,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "tryCall": false,
+                              "type": "struct AddressSetLib.AddressSet memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    null
+                                  ],
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "init",
+                                  "referencedDeclaration": 4070,
+                                  "type": "function () pure returns (struct AddressSetLib.AddressSet memory)"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 4295,
+                                      "type": "type(library AddressSetLib)",
+                                      "value": "AddressSetLib"
+                                    },
+                                    "id": 5065,
+                                    "name": "Identifier",
+                                    "src": "323:13:37"
+                                  }
+                                ],
+                                "id": 5066,
+                                "name": "MemberAccess",
+                                "src": "323:18:37"
+                              }
+                            ],
+                            "id": 5067,
+                            "name": "FunctionCall",
+                            "src": "323:20:37"
+                          }
+                        ],
+                        "id": 5068,
+                        "name": "Assignment",
+                        "src": "316:27:37"
+                      }
+                    ],
+                    "id": 5069,
+                    "name": "ExpressionStatement",
+                    "src": "316:27:37"
+                  }
+                ],
+                "id": 5070,
+                "name": "Block",
+                "src": "306:44:37"
+              }
+            ],
+            "id": 5071,
+            "name": "FunctionDefinition",
+            "src": "285:65:37"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "functionSelector": "52efea6e",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "clear",
+              "overrides": null,
+              "scope": 5162,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 5072,
+                "name": "ParameterList",
+                "src": "370:2:37"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 5073,
+                "name": "ParameterList",
+                "src": "382:0:37"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            null
+                          ],
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                null
+                              ],
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "clear",
+                              "referencedDeclaration": 4104,
+                              "type": "function (struct AddressSetLib.AddressSet storage pointer)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 5057,
+                                  "type": "struct AddressSetLib.AddressSet storage ref",
+                                  "value": "data"
+                                },
+                                "id": 5074,
+                                "name": "Identifier",
+                                "src": "392:4:37"
+                              }
+                            ],
+                            "id": 5076,
+                            "name": "MemberAccess",
+                            "src": "392:10:37"
+                          }
+                        ],
+                        "id": 5077,
+                        "name": "FunctionCall",
+                        "src": "392:12:37"
+                      }
+                    ],
+                    "id": 5078,
+                    "name": "ExpressionStatement",
+                    "src": "392:12:37"
+                  }
+                ],
+                "id": 5079,
+                "name": "Block",
+                "src": "382:29:37"
+              }
+            ],
+            "id": 5080,
+            "name": "FunctionDefinition",
+            "src": "356:55:37"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "functionSelector": "0a3b0a4f",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "add",
+              "overrides": null,
+              "scope": 5162,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "value",
+                      "overrides": null,
+                      "scope": 5097,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 5081,
+                        "name": "ElementaryTypeName",
+                        "src": "430:7:37"
+                      }
+                    ],
+                    "id": 5082,
+                    "name": "VariableDeclaration",
+                    "src": "430:13:37"
+                  }
+                ],
+                "id": 5083,
+                "name": "ParameterList",
+                "src": "429:15:37"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 5084,
+                "name": "ParameterList",
+                "src": "454:0:37"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "assignments": [
+                        5086
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "mutability": "mutable",
+                          "name": "ret",
+                          "overrides": null,
+                          "scope": 5096,
+                          "stateVariable": false,
+                          "storageLocation": "default",
+                          "type": "bool",
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "bool",
+                              "type": "bool"
+                            },
+                            "id": 5085,
+                            "name": "ElementaryTypeName",
+                            "src": "464:4:37"
+                          }
+                        ],
+                        "id": 5086,
+                        "name": "VariableDeclaration",
+                        "src": "464:8:37"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "bool",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "add",
+                              "referencedDeclaration": 4145,
+                              "type": "function (struct AddressSetLib.AddressSet storage pointer,address) returns (bool)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 5057,
+                                  "type": "struct AddressSetLib.AddressSet storage ref",
+                                  "value": "data"
+                                },
+                                "id": 5087,
+                                "name": "Identifier",
+                                "src": "475:4:37"
+                              }
+                            ],
+                            "id": 5088,
+                            "name": "MemberAccess",
+                            "src": "475:8:37"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 5082,
+                              "type": "address",
+                              "value": "value"
+                            },
+                            "id": 5089,
+                            "name": "Identifier",
+                            "src": "484:5:37"
+                          }
+                        ],
+                        "id": 5090,
+                        "name": "FunctionCall",
+                        "src": "475:15:37"
+                      }
+                    ],
+                    "id": 5091,
+                    "name": "VariableDeclarationStatement",
+                    "src": "464:26:37"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 5061,
+                              "type": "function (bool)",
+                              "value": "Result"
+                            },
+                            "id": 5092,
+                            "name": "Identifier",
+                            "src": "505:6:37"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 5086,
+                              "type": "bool",
+                              "value": "ret"
+                            },
+                            "id": 5093,
+                            "name": "Identifier",
+                            "src": "512:3:37"
+                          }
+                        ],
+                        "id": 5094,
+                        "name": "FunctionCall",
+                        "src": "505:11:37"
+                      }
+                    ],
+                    "id": 5095,
+                    "name": "EmitStatement",
+                    "src": "500:16:37"
+                  }
+                ],
+                "id": 5096,
+                "name": "Block",
+                "src": "454:69:37"
+              }
+            ],
+            "id": 5097,
+            "name": "FunctionDefinition",
+            "src": "417:106:37"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "functionSelector": "29092d0e",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "remove",
+              "overrides": null,
+              "scope": 5162,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "value",
+                      "overrides": null,
+                      "scope": 5114,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 5098,
+                        "name": "ElementaryTypeName",
+                        "src": "545:7:37"
+                      }
+                    ],
+                    "id": 5099,
+                    "name": "VariableDeclaration",
+                    "src": "545:13:37"
+                  }
+                ],
+                "id": 5100,
+                "name": "ParameterList",
+                "src": "544:15:37"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 5101,
+                "name": "ParameterList",
+                "src": "569:0:37"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "assignments": [
+                        5103
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "mutability": "mutable",
+                          "name": "ret",
+                          "overrides": null,
+                          "scope": 5113,
+                          "stateVariable": false,
+                          "storageLocation": "default",
+                          "type": "bool",
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "bool",
+                              "type": "bool"
+                            },
+                            "id": 5102,
+                            "name": "ElementaryTypeName",
+                            "src": "579:4:37"
+                          }
+                        ],
+                        "id": 5103,
+                        "name": "VariableDeclaration",
+                        "src": "579:8:37"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "bool",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "remove",
+                              "referencedDeclaration": 4225,
+                              "type": "function (struct AddressSetLib.AddressSet storage pointer,address) returns (bool)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 5057,
+                                  "type": "struct AddressSetLib.AddressSet storage ref",
+                                  "value": "data"
+                                },
+                                "id": 5104,
+                                "name": "Identifier",
+                                "src": "590:4:37"
+                              }
+                            ],
+                            "id": 5105,
+                            "name": "MemberAccess",
+                            "src": "590:11:37"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 5099,
+                              "type": "address",
+                              "value": "value"
+                            },
+                            "id": 5106,
+                            "name": "Identifier",
+                            "src": "602:5:37"
+                          }
+                        ],
+                        "id": 5107,
+                        "name": "FunctionCall",
+                        "src": "590:18:37"
+                      }
+                    ],
+                    "id": 5108,
+                    "name": "VariableDeclarationStatement",
+                    "src": "579:29:37"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 5061,
+                              "type": "function (bool)",
+                              "value": "Result"
+                            },
+                            "id": 5109,
+                            "name": "Identifier",
+                            "src": "623:6:37"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 5103,
+                              "type": "bool",
+                              "value": "ret"
+                            },
+                            "id": 5110,
+                            "name": "Identifier",
+                            "src": "630:3:37"
+                          }
+                        ],
+                        "id": 5111,
+                        "name": "FunctionCall",
+                        "src": "623:11:37"
+                      }
+                    ],
+                    "id": 5112,
+                    "name": "EmitStatement",
+                    "src": "618:16:37"
+                  }
+                ],
+                "id": 5113,
+                "name": "Block",
+                "src": "569:72:37"
+              }
+            ],
+            "id": 5114,
+            "name": "FunctionDefinition",
+            "src": "529:112:37"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "functionSelector": "5dbe47e8",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "contains",
+              "overrides": null,
+              "scope": 5162,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "value",
+                      "overrides": null,
+                      "scope": 5127,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 5115,
+                        "name": "ElementaryTypeName",
+                        "src": "665:7:37"
+                      }
+                    ],
+                    "id": 5116,
+                    "name": "VariableDeclaration",
+                    "src": "665:13:37"
+                  }
+                ],
+                "id": 5117,
+                "name": "ParameterList",
+                "src": "664:15:37"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 5127,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 5118,
+                        "name": "ElementaryTypeName",
+                        "src": "703:4:37"
+                      }
+                    ],
+                    "id": 5119,
+                    "name": "VariableDeclaration",
+                    "src": "703:4:37"
+                  }
+                ],
+                "id": 5120,
+                "name": "ParameterList",
+                "src": "702:6:37"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 5120
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "bool",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "contains",
+                              "referencedDeclaration": 4243,
+                              "type": "function (struct AddressSetLib.AddressSet storage pointer,address) view returns (bool)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 5057,
+                                  "type": "struct AddressSetLib.AddressSet storage ref",
+                                  "value": "data"
+                                },
+                                "id": 5121,
+                                "name": "Identifier",
+                                "src": "726:4:37"
+                              }
+                            ],
+                            "id": 5122,
+                            "name": "MemberAccess",
+                            "src": "726:13:37"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 5116,
+                              "type": "address",
+                              "value": "value"
+                            },
+                            "id": 5123,
+                            "name": "Identifier",
+                            "src": "740:5:37"
+                          }
+                        ],
+                        "id": 5124,
+                        "name": "FunctionCall",
+                        "src": "726:20:37"
+                      }
+                    ],
+                    "id": 5125,
+                    "name": "Return",
+                    "src": "719:27:37"
+                  }
+                ],
+                "id": 5126,
+                "name": "Block",
+                "src": "709:44:37"
+              }
+            ],
+            "id": 5127,
+            "name": "FunctionDefinition",
+            "src": "647:106:37"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "functionSelector": "1f7b6d32",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "length",
+              "overrides": null,
+              "scope": 5162,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 5128,
+                "name": "ParameterList",
+                "src": "774:2:37"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 5137,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 5129,
+                        "name": "ElementaryTypeName",
+                        "src": "800:7:37"
+                      }
+                    ],
+                    "id": 5130,
+                    "name": "VariableDeclaration",
+                    "src": "800:7:37"
+                  }
+                ],
+                "id": 5131,
+                "name": "ParameterList",
+                "src": "799:9:37"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 5131
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            null
+                          ],
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "uint256",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                null
+                              ],
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "length",
+                              "referencedDeclaration": 4256,
+                              "type": "function (struct AddressSetLib.AddressSet storage pointer) view returns (uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 5057,
+                                  "type": "struct AddressSetLib.AddressSet storage ref",
+                                  "value": "data"
+                                },
+                                "id": 5132,
+                                "name": "Identifier",
+                                "src": "826:4:37"
+                              }
+                            ],
+                            "id": 5133,
+                            "name": "MemberAccess",
+                            "src": "826:11:37"
+                          }
+                        ],
+                        "id": 5134,
+                        "name": "FunctionCall",
+                        "src": "826:13:37"
+                      }
+                    ],
+                    "id": 5135,
+                    "name": "Return",
+                    "src": "819:20:37"
+                  }
+                ],
+                "id": 5136,
+                "name": "Block",
+                "src": "809:37:37"
+              }
+            ],
+            "id": 5137,
+            "name": "FunctionDefinition",
+            "src": "759:87:37"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "functionSelector": "e0886f90",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "at",
+              "overrides": null,
+              "scope": 5162,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "index",
+                      "overrides": null,
+                      "scope": 5150,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 5138,
+                        "name": "ElementaryTypeName",
+                        "src": "864:7:37"
+                      }
+                    ],
+                    "id": 5139,
+                    "name": "VariableDeclaration",
+                    "src": "864:13:37"
+                  }
+                ],
+                "id": 5140,
+                "name": "ParameterList",
+                "src": "863:15:37"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 5150,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 5141,
+                        "name": "ElementaryTypeName",
+                        "src": "902:7:37"
+                      }
+                    ],
+                    "id": 5142,
+                    "name": "VariableDeclaration",
+                    "src": "902:7:37"
+                  }
+                ],
+                "id": 5143,
+                "name": "ParameterList",
+                "src": "901:9:37"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 5143
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "address",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "at",
+                              "referencedDeclaration": 4281,
+                              "type": "function (struct AddressSetLib.AddressSet storage pointer,uint256) view returns (address)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 5057,
+                                  "type": "struct AddressSetLib.AddressSet storage ref",
+                                  "value": "data"
+                                },
+                                "id": 5144,
+                                "name": "Identifier",
+                                "src": "928:4:37"
+                              }
+                            ],
+                            "id": 5145,
+                            "name": "MemberAccess",
+                            "src": "928:7:37"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 5139,
+                              "type": "uint256",
+                              "value": "index"
+                            },
+                            "id": 5146,
+                            "name": "Identifier",
+                            "src": "936:5:37"
+                          }
+                        ],
+                        "id": 5147,
+                        "name": "FunctionCall",
+                        "src": "928:14:37"
+                      }
+                    ],
+                    "id": 5148,
+                    "name": "Return",
+                    "src": "921:21:37"
+                  }
+                ],
+                "id": 5149,
+                "name": "Block",
+                "src": "911:38:37"
+              }
+            ],
+            "id": 5150,
+            "name": "FunctionDefinition",
+            "src": "852:97:37"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "functionSelector": "bd868b6c",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "asArray",
+              "overrides": null,
+              "scope": 5162,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 5151,
+                "name": "ParameterList",
+                "src": "971:2:37"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "selectedOracles",
+                      "overrides": null,
+                      "scope": 5161,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "address[]",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "length": null,
+                          "type": "address[]"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "address",
+                              "stateMutability": "nonpayable",
+                              "type": "address"
+                            },
+                            "id": 5152,
+                            "name": "ElementaryTypeName",
+                            "src": "997:7:37"
+                          }
+                        ],
+                        "id": 5153,
+                        "name": "ArrayTypeName",
+                        "src": "997:9:37"
+                      }
+                    ],
+                    "id": 5154,
+                    "name": "VariableDeclaration",
+                    "src": "997:32:37"
+                  }
+                ],
+                "id": 5155,
+                "name": "ParameterList",
+                "src": "996:34:37"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 5155
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            null
+                          ],
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "address[] memory",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                null
+                              ],
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "asArray",
+                              "referencedDeclaration": 4294,
+                              "type": "function (struct AddressSetLib.AddressSet storage pointer) view returns (address[] memory)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 5057,
+                                  "type": "struct AddressSetLib.AddressSet storage ref",
+                                  "value": "data"
+                                },
+                                "id": 5156,
+                                "name": "Identifier",
+                                "src": "1048:4:37"
+                              }
+                            ],
+                            "id": 5157,
+                            "name": "MemberAccess",
+                            "src": "1048:12:37"
+                          }
+                        ],
+                        "id": 5158,
+                        "name": "FunctionCall",
+                        "src": "1048:14:37"
+                      }
+                    ],
+                    "id": 5159,
+                    "name": "Return",
+                    "src": "1041:21:37"
+                  }
+                ],
+                "id": 5160,
+                "name": "Block",
+                "src": "1031:38:37"
+              }
+            ],
+            "id": 5161,
+            "name": "FunctionDefinition",
+            "src": "955:114:37"
+          }
+        ],
+        "id": 5162,
+        "name": "ContractDefinition",
+        "src": "121:950:37"
+      }
+    ],
+    "id": 5163,
+    "name": "SourceUnit",
+    "src": "39:1033:37"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-02-04T20:51:03.405Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

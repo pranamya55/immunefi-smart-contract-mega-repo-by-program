@@ -1,0 +1,19 @@
+{
+  "url": "https://arbiscan.io/address/0x63a015b5e305edca94b9b0c27461547b3f4ea1e3",
+  "host": "arbiscan.io",
+  "address": "0x63a015b5e305edca94b9b0c27461547b3f4ea1e3",
+  "chainid": 42161,
+  "contract_name": "WooStakingCompounder",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "20000",
+  "constructor_arguments": "000000000000000000000000a9e245c1fa7e17263cc7c896488a3da8072924fb",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 10,
+  "mode": "recover-json-sources"
+}

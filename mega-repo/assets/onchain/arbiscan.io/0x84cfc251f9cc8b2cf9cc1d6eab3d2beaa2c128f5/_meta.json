@@ -1,0 +1,19 @@
+{
+  "url": "https://arbiscan.io/address/0x84cfc251f9cc8b2cf9cc1d6eab3d2beaa2c128f5",
+  "host": "arbiscan.io",
+  "address": "0x84cfc251f9cc8b2cf9cc1d6eab3d2beaa2c128f5",
+  "chainid": 42161,
+  "contract_name": "FeeModel",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "20000",
+  "constructor_arguments": "000000000000000000000000bbc5af58233eaccdcf871f52ac29a0affd78accc",
+  "evm_version": "london",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 17,
+  "mode": "recover-json-sources"
+}

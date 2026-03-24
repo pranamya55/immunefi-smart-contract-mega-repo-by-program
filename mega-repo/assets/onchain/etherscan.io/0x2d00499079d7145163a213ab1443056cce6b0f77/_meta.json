@@ -1,0 +1,19 @@
+{
+  "url": "https://etherscan.io/address/0x2d00499079d7145163a213ab1443056cce6b0f77",
+  "host": "etherscan.io",
+  "address": "0x2d00499079d7145163a213ab1443056cce6b0f77",
+  "chainid": 1,
+  "contract_name": "AddressesWhitelist",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "1",
+  "runs": "20000",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 6,
+  "mode": "recover-json-sources"
+}

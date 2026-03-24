@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x7E0049866879151480d9Ec01391Bbf713F7705b1",
+  "host": "etherscan.io",
+  "address": "0x7E0049866879151480d9Ec01391Bbf713F7705b1",
+  "chainid": 1,
+  "project_slug": "sherlock",
+  "asset_id": "1XdySEXBt8EpboHU8LY4I0",
+  "contract_name": "AlphaBetaEqualDepositSplitter",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "1",
+  "runs": "20000",
+  "constructor_arguments": "0000000000000000000000001e8be946370a99019e323998acd37a1206bdd507000000000000000000000000000000000000000000000000000000000000000000000000000000000000000075c5d2d8d54254476239a5c1e1f23ec48df8779e000000000000000000000000000000000000000000000000000000746a528800",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 12,
+  "mode": "json-sources"
+}

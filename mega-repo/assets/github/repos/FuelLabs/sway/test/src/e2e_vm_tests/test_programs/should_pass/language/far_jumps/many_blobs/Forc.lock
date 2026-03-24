@@ -1,0 +1,8 @@
+[[package]]
+name = "many_blobs"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-CA7273114FB9B4E5"

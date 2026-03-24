@@ -1,0 +1,1 @@
+../../../../../../../../../mega-repo/assets/github/blob-snapshots/OffchainLabs/nitro-contracts/main/src/challengeV2/IEdgeChallengeManager.sol

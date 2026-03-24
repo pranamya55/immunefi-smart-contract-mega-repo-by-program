@@ -1,0 +1,8 @@
+[[package]]
+name = "std"
+source = "path+from-root-4A37DED755D546B6"
+
+[[package]]
+name = "storage_annotations_unused_write"
+source = "member"
+dependencies = ["std"]

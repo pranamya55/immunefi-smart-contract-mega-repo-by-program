@@ -1,0 +1,1 @@
+../../../../../../../../mega-repo/assets/github/blob-snapshots/sky-ecosystem/dss-gem-joins/v1.2/src/join-auth.sol

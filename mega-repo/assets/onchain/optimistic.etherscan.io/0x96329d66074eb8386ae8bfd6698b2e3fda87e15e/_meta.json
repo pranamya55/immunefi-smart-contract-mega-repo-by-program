@@ -1,0 +1,24 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0x96329d66074EB8386Ae8bFD6698B2E3FDA87e15E#code",
+  "host": "optimistic.etherscan.io",
+  "address": "0x96329d66074EB8386Ae8bFD6698B2E3FDA87e15E",
+  "chainid": 10,
+  "project_slug": "woofi",
+  "asset_id": "1btoSgiifBgtPnOr0wuM15",
+  "contract_name": "IntegrationHelper",
+  "compiler_version": "v0.8.14+commit.80d49f37",
+  "optimization_used": "1",
+  "runs": "20000",
+  "constructor_arguments": "0000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c3160700000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004000000000000000000000000420000000000000000000000000000000000000600000000000000000000000068f180fcce6836688e9084f035309e29bf0a2095000000000000000000000000871f2f2ff935fd1ed867842ff2a7bfd051a5e5270000000000000000000000004200000000000000000000000000000000000042",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 4,
+  "mode": "json-sources"
+}

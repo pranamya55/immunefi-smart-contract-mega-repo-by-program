@@ -1,0 +1,193 @@
+{
+    "mocTestnetAlpha3": {
+        "governor": "0xFdA634e1732b5dB0FB3b9Af9B3f8D148d8Fe017f",
+        "upgradeDelegator": "0x00a47D7d7B9bD22e0A862908EC493bDE893f627B",
+        "admin": "0xcc8fb7E8666F3bEe51511235753406f96C16E26b",
+        "targetGovernor": "0x4eAC4518e81B3A5198aADAb998D2610B46aAA609",
+        "executeChange": true,
+        "proxyOrder": {
+            "MoC": "01",
+            "MoCBProxManager": "02",
+            "MoCBurnout": "03",
+            "MoCSettlement": "04",
+            "MoCState": "05",
+            "MoCInrate": "06",
+            "CommissionSplitter": "07",
+            "MoCVendors": "08",
+            "upgradeDelegator": "09"
+        },
+        "proxyAddresses": {
+            "MoC": "0xb3e21A5b64Cd0a5666BB6C0e40D6d6D5233Be544",
+            "MoCBProxManager": "0x6390689EdaA8f40bcAF8e76c3762D46cC275a21d",
+            "MoCBurnout": "",
+            "MoCSettlement": "0x5A7456BAa0333466d7fe872d655Bf068b925D1A0",
+            "MoCState": "0x731751fBF3b6C42d4B4CaAab26939C9b20e9DDBC",
+            "MoCInrate": "0xAf0Bc8CE505955D5228d950a3017A32e81441a44",
+            "CommissionSplitter": "0x44b52Ea0081B7d7DD8050529cFe173fD3853b504",
+            "MoCVendors": "",
+            "upgradeDelegator": "0xCDAbFbF334A5F6BCe900D2f73470D1e6722365d8"
+        },
+        "changerAddresses": {
+            "09_upgradeDelegator": null
+        }
+    },
+    "mocTestnetAlpha": {
+        "targetGovernor": "0x4eAC4518e81B3A5198aADAb998D2610B46aAA609",
+        "executeChange": false,
+        "proxyOrder": {
+            "MoC": "01",
+            "MoCBProxManager": "02",
+            "MoCSettlement": "03",
+            "MoCState": "04",
+            "MoCInrate": "05",
+            "CommissionSplitter": "06",
+            "MoCVendors": "07",
+            "upgradeDelegator": "08"
+        },
+        "proxyAddresses": {
+            "MoC": "0x01AD6f8E884ed4DDC089fA3efC075E9ba45C9039",
+            "MoCBProxManager": "0x6F6cb4802CB9B0551953b0E6c824f32D5809348D",
+            "MoCSettlement": "0xF3d40B15DCe0b6257a6A8F62c707621E1e464c1e",
+            "MoCState": "0xfb526c0Ace90f52049691389B040a33D03343eb7",
+            "MoCInrate": "0x8CA7685F69B4bb96D221049Ac84e2F9363ca7F2c",
+            "CommissionSplitter": "0x9c1e20A0Ea6c71B0AEA47fd8B1E29de208ab7A82",
+            "MoCVendors": "0xCDaCa57171cF101e52b391E024e0D3cCbB892588",
+            "upgradeDelegator": "0x00a47D7d7B9bD22e0A862908EC493bDE893f627B"
+        },
+        "changerAddresses": {}
+    },
+    "mocTestnet": {
+        "targetGovernor": "0x7b716178771057195bB511f0B1F7198EEE62Bc22",
+        "executeChange": false,
+        "proxyOrder": {
+            "MoC": "01",
+            "MoCBProxManager": "02",
+            "MoCSettlement": "03",
+            "MoCState": "04",
+            "MoCInrate": "05",
+            "CommissionSplitter": "06",
+            "MoCVendors": "07",
+            "upgradeDelegator": "08"
+        },
+        "proxyAddresses": {
+            "MoC": "0x2820f6d4D199B8D8838A4B26F9917754B86a0c1F",
+            "MoCBProxManager": "0x634b6c45Eb7b1D8Fe0961BB4586bf585aE718A96",
+            "MoCSettlement": "0x367D283c53f8F10e47424e2AeB102F45eCC49FEa",
+            "MoCState": "0x0adb40132cB0ffcEf6ED81c26A1881e214100555",
+            "MoCInrate": "0x76790f846FAAf44cf1B2D717d0A6c5f6f5152B60",
+            "CommissionSplitter": "0xC003A2e210FA3E2fBdDcf564Fe0E1bbCd93E3B40",
+            "MoCVendors": "0x84b895A1b7be8fAc64d43757479281Bf0b5E3719",
+            "upgradeDelegator": "0xCDAbFbF334A5F6BCe900D2f73470D1e6722365d8"
+        },
+        "changerAddresses": {}
+    },
+    "mocMainnet2": {
+        "targetGovernor": "0x3b8853DF65AfBd94853E6D77ee0Ab5590F41bB08",
+        "executeChange": false,
+        "proxyOrder": {
+            "MoC": "01",
+            "MoCBProxManager": "02",
+            "MoCSettlement": "03",
+            "MoCState": "04",
+            "MoCInrate": "05",
+            "CommissionSplitter": "06",
+            "MoCVendors": "07",
+            "upgradeDelegator": "08"
+        },
+        "proxyAddresses": {
+            "MoC": "0xf773B590aF754D597770937Fa8ea7AbDf2668370",
+            "MoCBProxManager": "0xC4fBFa2270Be87FEe5BC38f7a1Bb6A9415103b6c",
+            "MoCSettlement": "0x609dF03D8a85eAffE376189CA7834D4C35e32F22",
+            "MoCState": "0xb9C42EFc8ec54490a37cA91c423F7285Fa01e257",
+            "MoCInrate": "0xc0f9B54c41E3d0587Ce0F7540738d8d649b0A3F3",
+            "CommissionSplitter": "0xa5467535851263122ef1476e24C529CFc6CFc086",
+            "MoCVendors": "0x2d442aA5D391475b6Af3ad361eA3b9818fb35BcA",
+            "upgradeDelegator": "0x5cE577f6Ec969CE9a282838D350206C52A6F338C"
+        },
+        "changerAddresses": {}
+    },
+    "rdocTestnetAlpha": {
+        "targetGovernor": "0x7b716178771057195bB511f0B1F7198EEE62Bc22",
+        "executeChange": true,
+        "proxyOrder": {
+            "MoC": "01",
+            "MoCBProxManager": "02",
+            "MoCSettlement": "03",
+            "MoCState": "04",
+            "MoCInrate": "05",
+            "CommissionSplitter": "06",
+            "MoCVendors": "07",
+            "upgradeDelegator": "08"
+        },
+        "proxyAddresses": {
+            "MoC": "0x4512f4C1d984bbf8B7f7404EddFb1881cFA79EfD",
+            "MoCBProxManager": "0xBB2d536d3fCa262516e950984085C745E5EE824e",
+            "MoCSettlement": "0xF7a2835aF44DF2b831291D7229DcD13D32E57d4A",
+            "MoCState": "0xB80C23576053A1a5278C1a43DC8471F432f77245",
+            "MoCInrate": "0x2B57fb820601655ca7Da16a5134db4780Aa93E74",
+            "CommissionSplitter": "0xE79fE1d8D321d01aA973E319112Fb98eA319B7a1",
+            "MoCVendors": "0xd282f98475A6996E1E0325BEa4ADe201Eb4c33B5",
+            "upgradeDelegator": "0xCDAbFbF334A5F6BCe900D2f73470D1e6722365d8"
+        },
+        "changerAddresses": {
+            "01_MoC": null,
+            "02_MoCBProxManager": null,
+            "04_MoCSettlement": null,
+            "05_MoCState": null,
+            "06_MoCInrate": null,
+            "07_CommissionSplitter": null
+        }
+    },
+    "rdocTestnet": {
+        "targetGovernor": "0x7b716178771057195bB511f0B1F7198EEE62Bc22",
+        "executeChange": false,
+        "proxyOrder": {
+            "MoC": "01",
+            "MoCBProxManager": "02",
+            "MoCSettlement": "03",
+            "MoCState": "04",
+            "MoCInrate": "05",
+            "CommissionSplitter": "06",
+            "MoCVendors": "07",
+            "upgradeDelegator": "08"
+        },
+        "proxyAddresses": {
+            "MoC": "0x7e2F245F7dc8e78576ECB13AEFc0a101E9BE1AD3",
+            "MoCBProxManager": "0xDd67D17eDABF2b320A18C00753C4D1c1008Abd73",
+            "MoCSettlement": "0x163D79dB568417983Aa2D64AA6310Bed0f23Ab61",
+            "MoCState": "0x496eD67F77D044C8d9471fe86085Ccb5DC4d2f63",
+            "MoCInrate": "0x4C54053845F4f219AddB43ef3A7d4478E89a2A47",
+            "CommissionSplitter": "0xe65C567B0AB8A138A3fF8df7febad994a8060E47",
+            "MoCVendors": "0x60E38CB11562C665A6efac87406B7B0bDE725576",
+            "upgradeDelegator": "0xCDAbFbF334A5F6BCe900D2f73470D1e6722365d8"
+        },
+        "changerAddresses": {
+        }
+    },
+    "rdocMainnet": {
+        "targetGovernor": "0x3b8853DF65AfBd94853E6D77ee0Ab5590F41bB08",
+        "executeChange": false,
+        "proxyOrder": {
+            "MoC": "01",
+            "MoCBProxManager": "02",
+            "MoCSettlement": "03",
+            "MoCState": "04",
+            "MoCInrate": "05",
+            "CommissionSplitter": "06",
+            "MoCVendors": "07",
+            "upgradeDelegator": "08"
+        },
+        "proxyAddresses": {
+            "MoC": "0xCfF3fcaeC2352C672C38d77cb1a064B7D50ce7e1",
+            "MoCBProxManager": "0x07Cd11fC4c4eC0BdBdC2Ec495f66A69bba32e7e7",
+            "MoCSettlement": "0xb8a6beBa78c3E73f6A66DDacFaEB240ae22Ca709",
+            "MoCState": "0x541F68a796Fe5ae3A381d2Aa5a50b975632e40A6",
+            "MoCInrate": "0x1DaB07c4FD07d6eE1359a5198ACa2DEe64F371f3",
+            "CommissionSplitter": "0x4C42DBa2a88D4ecc97aA7F28Ced17b4e60523201",
+            "MoCVendors": "0x581C819c48ed1a6c716A736361001B53D54A0a80",
+            "upgradeDelegator": "0x5cE577f6Ec969CE9a282838D350206C52A6F338C"
+        },
+        "changerAddresses": {
+        }
+    }
+}

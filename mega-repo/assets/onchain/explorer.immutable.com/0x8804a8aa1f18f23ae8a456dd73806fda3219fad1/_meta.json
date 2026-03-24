@@ -1,0 +1,25 @@
+{
+  "url": "https://explorer.immutable.com/address/0x8804A8aA1F18f23aE8A456dD73806FdA3219FaD1",
+  "host": "explorer.immutable.com",
+  "address": "0x8804A8aA1F18f23aE8A456dD73806FdA3219FaD1",
+  "chainid": null,
+  "project_slug": "immutable",
+  "asset_id": "28TZvhCDwNl1jC2D3qyxET",
+  "contract_name": "ChildERC20",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": null,
+  "evm_version": "paris",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:missing-chainid",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

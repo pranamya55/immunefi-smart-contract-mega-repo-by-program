@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x271e35a8555a62F6bA76508E85dfD76D580B0692",
+  "host": "etherscan.io",
+  "address": "0x271e35a8555a62F6bA76508E85dfD76D580B0692",
+  "chainid": 1,
+  "project_slug": "olympus",
+  "asset_id": "99074",
+  "contract_name": "YieldRepurchaseFacility",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": "1",
+  "runs": "10",
+  "constructor_arguments": "0000000000000000000000002286d7f9639e8158fad1169e76d1fbc38247f54b00000000000000000000000064aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5000000000000000000000000a3931d71877c0e7a3148cb7eb4463524fec27fbd000000000000000000000000007f7735baf391e207e3aa380bb53c4bd9a5fed6000000000000000000000000007f7a1cb838a872515c8ebd16be4b14ef43a222",
+  "evm_version": "london",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 20,
+  "mode": "json-sources"
+}

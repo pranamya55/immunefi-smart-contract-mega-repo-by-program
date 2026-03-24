@@ -1,0 +1,1 @@
+../../../../../../../../../../../../../../mega-repo/assets/github/blob-snapshots/starkware-libs/starknet-staking/40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/reward_supplier/reward_supplier.cairo

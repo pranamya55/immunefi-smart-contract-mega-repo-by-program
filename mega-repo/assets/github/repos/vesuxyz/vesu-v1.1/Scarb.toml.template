@@ -1,0 +1,51 @@
+[package]
+name = "vesu"
+version = "0.1.0"
+cairo-version = "=2.11.4"
+edition = "2024_07"
+license = "BUSL-1.1"
+
+[lib]
+
+[[target.starknet-contract]]
+casm = true
+sierra = true
+
+[dependencies]
+starknet = "2.11.4"
+alexandria_math = { git = "https://github.com/keep-starknet-strange/alexandria.git", rev = "c804e98" }
+openzeppelin = "2.0.0"
+
+[dev-dependencies]
+snforge_std = { git = "https://github.com/foundry-rs/starknet-foundry", tag = "v0.46.0" }
+
+[tool.fmt]
+max-line-length = 120
+sort-module-level-items = true
+
+[[tool.snforge.fork]]
+name = "Mainnet"
+url = "MAINNET_RPC_URL"
+block_id.number = "3098012"
+
+[tool.voyager]
+singleton = { path = "src/singleton_v2.cairo" }
+default_extension_po_v2 = { path = "src/extension/default_extension_po_v2.cairo" }
+
+[scripts]
+buildRelease = "scarb --profile release build"
+format = "scarb fmt && yarn prettier --write ."
+checkFormat = "scarb fmt --check && yarn prettier --check ."
+startDevnet = "./scripts/startDevnet.sh"
+killDevnet = "lsof -t -i tcp:5050 | xargs kill"
+createPool = "node --loader ts-node/esm ./scripts/createPool.ts"
+createPosition = "node --loader ts-node/esm ./scripts/createPosition.ts"
+checkShutdownStatus = "node --loader ts-node/esm ./scripts/checkShutdownStatus.ts"
+deployDevnet = "scarb --profile release build && node --loader ts-node/esm ./scripts/deployDevnet.ts"
+deployMainnet = "scarb --profile release build && node --loader ts-node/esm ./scripts/deployMainnet.ts"
+deploySepolia = "scarb --profile release build && node --loader ts-node/esm ./scripts/deploySepolia.ts"
+deployExtensions = "scarb --profile release build && node --loader ts-node/esm ./scripts/deployExtensions.ts"
+verifyPool = "node --loader ts-node/esm ./scripts/verifyPool.ts"
+upgrade = "node --loader ts-node/esm ./scripts/upgrade.ts"
+print-contract-size = "node --loader ts-node/esm ./scripts/print-contract-size.ts"
+test = "snforge test --max-n-steps 100000000"

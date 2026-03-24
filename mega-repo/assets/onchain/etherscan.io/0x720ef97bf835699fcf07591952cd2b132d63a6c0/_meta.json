@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x720ef97bf835699fcf07591952cd2b132d63a6c0",
+  "host": "etherscan.io",
+  "address": "0x720ef97bf835699fcf07591952cd2b132d63a6c0",
+  "chainid": 1,
+  "project_slug": "enzymefinance",
+  "asset_id": "2BfPCr7a6rZut9DHTK2oRH",
+  "contract_name": "AllowedAdaptersPolicy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "0",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000adf5a8db090627b153ef0c5726ccfdc1c7aed7bd0000000000000000000000004eb4c7babfb5d54ab4857265b482fb6512d22dff",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "GNU GPLv3",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 33,
+  "mode": "json-sources"
+}

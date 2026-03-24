@@ -1,0 +1,24 @@
+{
+  "url": "https://basescan.org/address/0x89898c38d584166a8ed5c10cbd0ce7f4b0058c6c",
+  "host": "basescan.org",
+  "address": "0x89898c38d584166a8ed5c10cbd0ce7f4b0058c6c",
+  "chainid": 8453,
+  "project_slug": "enzymefinance",
+  "asset_id": "6bQWGmmizqQ0tVYhPxttbf",
+  "contract_name": "AaveV3FlashLoanAssetManagerLib",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000e20fcbdbffc4dd138ce8b2e6fbb6cb49777ad64d0000000000000000000000000000000000000000000000000000000000000000",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 11,
+  "mode": "json-sources"
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x290D9544669c9c7a64F6899a0a3b28d563F6ebEe",
+  "host": "etherscan.io",
+  "address": "0x290D9544669c9c7a64F6899a0a3b28d563F6ebEe",
+  "chainid": 1,
+  "project_slug": "resolv",
+  "asset_id": "79lO5LqwD0DARP2O6z9Il",
+  "contract_name": "Timelock",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "1",
+  "runs": "20000",
+  "constructor_arguments": "0000000000000000000000000000000000000000000000000000000000015180000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000001000000000000000000000000d6889f307be1b83bb355d5da7d4478fb0d2af5470000000000000000000000000000000000000000000000000000000000000001000000000000000000000000d6889f307be1b83bb355d5da7d4478fb0d2af547",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 12,
+  "mode": "json-sources"
+}

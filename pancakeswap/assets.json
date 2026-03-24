@@ -1,0 +1,42 @@
+[
+  {
+    "project_slug": "pancakeswap",
+    "asset_id": "4I3Xs76vaBmrAdpNRwmuGL",
+    "url": "https://github.com/pancakeswap/infinity-universal-router",
+    "description": "Pancakeswap Infinity Router",
+    "added_at": "2025-10-30T08:15:59.395Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "pancakeswap",
+    "asset_id": "5Mybwl38SoAMbIs1Hvn05p",
+    "url": "https://github.com/pancakeswap/pancake-v3-contracts",
+    "description": "Pancakeswap V3",
+    "added_at": "2025-10-30T08:15:59.430Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "pancakeswap",
+    "asset_id": "6HwLEqOpgtsbhpXStHqlEd",
+    "url": "https://github.com/pancakeswap/infinity-core",
+    "description": "Pancakeswap Infinity Core",
+    "added_at": "2025-10-30T08:15:59.567Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "pancakeswap",
+    "asset_id": "7h98Bj3XvQGzq7ZDeiJ28W",
+    "url": "https://github.com/pancakeswap/infinity-periphery",
+    "description": "Pancakeswap Infinity Periphery",
+    "added_at": "2025-10-30T08:15:59.572Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "pancakeswap",
+    "asset_id": "VQW86j81JaGjf4Q4H6BJk",
+    "url": "https://github.com/pancakeswap/pancake-swap-periphery",
+    "description": "Pancakeswap V2 Periphery ",
+    "added_at": "2025-10-30T08:15:59.391Z",
+    "revision": 0
+  }
+]

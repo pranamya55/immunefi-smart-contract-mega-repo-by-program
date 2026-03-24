@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x92e56d2146D54d5AEcB25CA36c89D027a6ea0D90",
+  "host": "etherscan.io",
+  "address": "0x92e56d2146D54d5AEcB25CA36c89D027a6ea0D90",
+  "chainid": 1,
+  "project_slug": "mETH",
+  "asset_id": "gYpPymDelDthKYa0SpJBf",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "1000000",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x54c23e0d89da943165c969d1abdb65f0d64174b4",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

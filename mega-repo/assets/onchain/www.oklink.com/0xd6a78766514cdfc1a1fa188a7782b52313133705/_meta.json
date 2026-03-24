@@ -1,0 +1,7 @@
+{
+  "url": "https://www.oklink.com/en/oec/address/0xD6a78766514CdFC1a1fA188a7782b52313133705",
+  "host": "www.oklink.com",
+  "address": "0xD6a78766514CdFC1a1fA188a7782b52313133705",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:http 404"
+}

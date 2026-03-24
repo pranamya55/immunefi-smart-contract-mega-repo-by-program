@@ -1,0 +1,7 @@
+[package]
+name = "managed_token_faucet"
+edition = "2024"
+
+[dependencies]
+mcms = { local = "../../mcms/mcms" }
+managed_token = { local = "../managed_token" }

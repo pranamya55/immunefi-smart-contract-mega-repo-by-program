@@ -1,0 +1,7 @@
+{
+  "url": "https://explorer.haven1.org/address/0x43eb2296AB0E642C11BBdb44847390C4869650eb",
+  "host": "explorer.haven1.org",
+  "address": "0x43eb2296AB0E642C11BBdb44847390C4869650eb",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:http 530"
+}

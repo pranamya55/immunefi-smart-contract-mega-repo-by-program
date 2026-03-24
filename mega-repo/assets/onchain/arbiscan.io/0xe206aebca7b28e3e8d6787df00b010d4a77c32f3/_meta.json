@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0xE206AEbca7B28e3E8d6787df00B010D4a77c32F3#code",
+  "host": "arbiscan.io",
+  "address": "0xE206AEbca7B28e3E8d6787df00B010D4a77c32F3",
+  "chainid": 42161,
+  "project_slug": "sparklend",
+  "asset_id": "2QOasskwZRigVtfTjZAZin",
+  "contract_name": "DSRAuthOracle",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "100000",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

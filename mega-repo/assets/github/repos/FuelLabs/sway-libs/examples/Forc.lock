@@ -1,0 +1,205 @@
+[[package]]
+name = "admin"
+source = "path+from-root-9E88A97493D252A9"
+dependencies = [
+    "ownership registry+ownership?0.26.0#QmbVoNUrvCTyQTdE8ZP83XxTQQVzhrevfMqk1rAJAkMFVo!",
+    "src5 registry+src5?0.8.0#QmNRPZrPHFBiEAyWPU8gesdPsD2zb3cMKwEgxJwV1ZEjyD!",
+    "std",
+]
+
+[[package]]
+name = "admin_examples"
+source = "member"
+dependencies = [
+    "admin",
+    "ownership path+from-root-9E88A97493D252A9",
+    "std",
+]
+
+[[package]]
+name = "big_int"
+source = "path+from-root-DEB29AD8AD1C9966"
+dependencies = ["std"]
+
+[[package]]
+name = "big_integers_examples"
+source = "member"
+dependencies = [
+    "big_int",
+    "std",
+]
+
+[[package]]
+name = "bytecode"
+source = "path+from-root-982A69ACF6820E60"
+dependencies = ["std"]
+
+[[package]]
+name = "bytecode_examples"
+source = "member"
+dependencies = [
+    "bytecode",
+    "std",
+]
+
+[[package]]
+name = "merkle"
+source = "path+from-root-4197A95CF859C933"
+dependencies = ["std"]
+
+[[package]]
+name = "merkle_binary_examples"
+source = "member"
+dependencies = [
+    "merkle",
+    "std",
+]
+
+[[package]]
+name = "merkle_sparse_examples"
+source = "member"
+dependencies = [
+    "merkle",
+    "std",
+]
+
+[[package]]
+name = "ownership"
+source = "path+from-root-9E88A97493D252A9"
+dependencies = [
+    "src5 registry+src5?0.8.2#QmVxJGt3C8saPmAe14FtecN2bXcZfVfDwsebsgPZumUXs4!",
+    "std",
+]
+
+[[package]]
+name = "ownership"
+version = "0.26.0"
+source = "registry+ownership?0.26.0#QmbVoNUrvCTyQTdE8ZP83XxTQQVzhrevfMqk1rAJAkMFVo!"
+dependencies = [
+    "src5 registry+src5?0.8.0#QmNRPZrPHFBiEAyWPU8gesdPsD2zb3cMKwEgxJwV1ZEjyD!",
+    "std",
+]
+
+[[package]]
+name = "ownership_configurable_examples"
+source = "member"
+dependencies = [
+    "ownership path+from-root-9E88A97493D252A9",
+    "src5 registry+src5?0.8.2#QmVxJGt3C8saPmAe14FtecN2bXcZfVfDwsebsgPZumUXs4!",
+    "std",
+]
+
+[[package]]
+name = "ownership_examples"
+source = "member"
+dependencies = [
+    "ownership path+from-root-9E88A97493D252A9",
+    "src5 registry+src5?0.8.2#QmVxJGt3C8saPmAe14FtecN2bXcZfVfDwsebsgPZumUXs4!",
+    "std",
+]
+
+[[package]]
+name = "pausable"
+source = "path+from-root-F6A7ECB5C9148078"
+dependencies = ["std"]
+
+[[package]]
+name = "pausable_example"
+source = "member"
+dependencies = [
+    "pausable",
+    "std",
+]
+
+[[package]]
+name = "pausable_with_ownership_example"
+source = "member"
+dependencies = [
+    "ownership path+from-root-9E88A97493D252A9",
+    "pausable",
+    "std",
+]
+
+[[package]]
+name = "queue"
+source = "path+from-root-E798785D0A742CAC"
+dependencies = ["std"]
+
+[[package]]
+name = "queue_examples"
+source = "member"
+dependencies = [
+    "queue",
+    "std",
+]
+
+[[package]]
+name = "reentrancy"
+source = "path+from-root-7F1216DDC69603D7"
+dependencies = ["std"]
+
+[[package]]
+name = "reentrancy_examples"
+source = "member"
+dependencies = [
+    "reentrancy",
+    "std",
+]
+
+[[package]]
+name = "signed_int"
+source = "path+from-root-9685DD96513AE62D"
+dependencies = ["std"]
+
+[[package]]
+name = "signed_integers_examples"
+source = "member"
+dependencies = [
+    "signed_int",
+    "std",
+]
+
+[[package]]
+name = "src14"
+version = "0.8.2"
+source = "registry+src14?0.8.2#QmfU1MiScsFLLMQiPFZNuoijwpvZqQb6rQRHnadT5TGyXE!"
+dependencies = [
+    "src5 registry+src5?0.8.2#QmVxJGt3C8saPmAe14FtecN2bXcZfVfDwsebsgPZumUXs4!",
+    "std",
+]
+
+[[package]]
+name = "src5"
+version = "0.8.0"
+source = "registry+src5?0.8.0#QmNRPZrPHFBiEAyWPU8gesdPsD2zb3cMKwEgxJwV1ZEjyD!"
+dependencies = ["std"]
+
+[[package]]
+name = "src5"
+version = "0.8.2"
+source = "registry+src5?0.8.2#QmVxJGt3C8saPmAe14FtecN2bXcZfVfDwsebsgPZumUXs4!"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+version = "0.70.2"
+source = "registry+std?0.70.2#QmWuWwmjn2vVDup2672LpToek8N58PYGJt2eH55M7ZzY2Y!"
+
+[[package]]
+name = "upgradability"
+source = "path+from-root-2D2584D311CEA5F2"
+dependencies = [
+    "src14",
+    "src5 registry+src5?0.8.2#QmVxJGt3C8saPmAe14FtecN2bXcZfVfDwsebsgPZumUXs4!",
+    "std",
+]
+
+[[package]]
+name = "upgradability_examples"
+source = "member"
+dependencies = [
+    "src14",
+    "src5 registry+src5?0.8.2#QmVxJGt3C8saPmAe14FtecN2bXcZfVfDwsebsgPZumUXs4!",
+    "std",
+    "upgradability",
+]

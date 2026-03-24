@@ -1,0 +1,8 @@
+[[package]]
+name = "revert"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-32A1D8C54897C96A"

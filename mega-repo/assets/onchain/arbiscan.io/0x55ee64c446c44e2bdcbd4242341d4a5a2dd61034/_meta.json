@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x55Ee64c446c44e2bDcbD4242341D4a5A2DD61034",
+  "host": "arbiscan.io",
+  "address": "0x55Ee64c446c44e2bDcbD4242341D4a5A2DD61034",
+  "chainid": 42161,
+  "project_slug": "kiln-defi",
+  "asset_id": "3y6FV1LCK70X907Vh6sZdv",
+  "contract_name": "Vault",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 29,
+  "mode": "json-sources"
+}

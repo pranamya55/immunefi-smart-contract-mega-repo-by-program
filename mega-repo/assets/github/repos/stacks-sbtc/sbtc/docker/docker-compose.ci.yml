@@ -1,0 +1,38 @@
+services:
+  bitcoind:
+    image: bitcoin/bitcoin:${BITCOIN_CORE_VERSION:-25.2}
+    volumes:
+      - ./bitcoin/bitcoin.conf:/root/.bitcoin/bitcoin.conf:ro
+    entrypoint:
+      - /bin/bash
+      - -c
+      - |
+        set -e
+        bitcoind
+    stop_grace_period: 10s
+    ports:
+      - "127.0.0.1:18443:18443"
+    healthcheck:
+      test: ["CMD-SHELL", "bitcoin-cli getblockcount"]
+      interval: 3s
+      timeout: 1s
+      retries: 3
+
+  postgres:
+    image: postgres:16.6-bookworm@sha256:c965017e1d29eb03e18a11abc25f5e3cd78cb5ac799d495922264b8489d5a3a1
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "127.0.0.1:5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready --username=postgres --dbname=signer"]
+      interval: 2s
+      timeout: 1s
+      retries: 5
+
+  emily-dynamodb:
+    image: "amazon/dynamodb-local:latest"
+    command: "-jar DynamoDBLocal.jar -sharedDb -dbPath ."
+    ports:
+      - "127.0.0.1:8000:8000"

@@ -1,0 +1,1 @@
+../../../../../../../../../mega-repo/assets/github/blob-snapshots/bgd-labs/aave-stk-gov-v3/main/src/contracts/StakedAaveV3.sol

@@ -1,0 +1,24 @@
+{
+  "url": "https://hoodi.etherscan.io/address/0x30308CD8844fb2DB3ec4D056F1d475a802DCA07c",
+  "host": "hoodi.etherscan.io",
+  "address": "0x30308CD8844fb2DB3ec4D056F1d475a802DCA07c",
+  "chainid": 560048,
+  "project_slug": "lido-v3-bug-bounty-competition",
+  "asset_id": "5SlM5UiUPwbG82bjQVebuY",
+  "contract_name": "HashConsensus",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "istanbul",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 12,
+  "mode": "json-sources"
+}

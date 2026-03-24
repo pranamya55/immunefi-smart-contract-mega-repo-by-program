@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0x83E0F742cAcBE66349E3701B171eE2487a26e738",
+  "host": "polygonscan.com",
+  "address": "0x83E0F742cAcBE66349E3701B171eE2487a26e738",
+  "chainid": 137,
+  "project_slug": "compoundfinance",
+  "asset_id": "gdh11VI30yX136JuNIf39",
+  "contract_name": "ConfiguratorProxy",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "0000000000000000000000009c4ec768c28520b50860ea7a15bd7213a9ff58bf000000000000000000000000d712ace4ca490d4f3e92992ecf3de12251b975f900000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000024c4d66de80000000000000000000000006103db328d4864dc16bd2f0ee1b9a92e3f87f91500000000000000000000000000000000000000000000000000000000",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x9c4ec768c28520b50860ea7a15bd7213a9ff58bf",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

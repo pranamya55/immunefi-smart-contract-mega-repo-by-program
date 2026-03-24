@@ -1,0 +1,24 @@
+{
+  "url": "https://mantlescan.xyz/address/0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
+  "host": "mantlescan.xyz",
+  "address": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
+  "chainid": 5000,
+  "project_slug": "usdt0",
+  "asset_id": "5qUoV7nGalqx2FsZfQIsYj",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x1ec7df9e74be05cb5a456aca2dc1ac2cec9ab6a3",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 14,
+  "mode": "json-sources"
+}

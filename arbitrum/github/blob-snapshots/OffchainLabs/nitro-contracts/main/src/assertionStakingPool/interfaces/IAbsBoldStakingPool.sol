@@ -1,0 +1,1 @@
+../../../../../../../../../../mega-repo/assets/github/blob-snapshots/OffchainLabs/nitro-contracts/main/src/assertionStakingPool/interfaces/IAbsBoldStakingPool.sol

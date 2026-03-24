@@ -1,0 +1,66 @@
+[
+  {
+    "project_slug": "zksync",
+    "asset_id": "1uDwUySmV9zuWOowAZnLhr",
+    "url": "https://github.com/matter-labs/zksync/blob/breaking/contracts/contracts/ZkSyncNFTFactory.sol",
+    "description": "NFT factory",
+    "added_at": "2022-05-10T16:07:36.557Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "zksync",
+    "asset_id": "2KIkMOMqHfrRygaP6eHH5A",
+    "url": "https://github.com/matter-labs/zksync/blob/breaking/contracts/contracts/UpgradeGatekeeper.sol",
+    "description": "Upgrade gatekeeper",
+    "added_at": "2022-05-10T16:07:29.274Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "zksync",
+    "asset_id": "4C0B7klZkXWUphPVs79fzF",
+    "url": "https://github.com/matter-labs/zksync/blob/breaking/contracts/contracts/Proxy.sol",
+    "description": "Proxy",
+    "added_at": "2022-05-10T16:07:30.436Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "zksync",
+    "asset_id": "4UHNPtw6ufUcfeVQ88OgW7",
+    "url": "https://github.com/matter-labs/zksync/blob/breaking/contracts/contracts/Verifier.sol",
+    "description": "Verifier target",
+    "added_at": "2022-05-10T16:07:33.559Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "zksync",
+    "asset_id": "4mTbtkI5tfjsPfydLUHnIA",
+    "url": "https://github.com/matter-labs/zksync/blob/breaking/contracts/contracts/Governance.sol",
+    "description": "Governance target",
+    "added_at": "2022-05-10T16:07:34.542Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "zksync",
+    "asset_id": "5yTzCjWeVTSPgR434FcTKG",
+    "url": "https://github.com/matter-labs/zksync/blob/breaking/contracts/contracts/ZkSync.sol",
+    "description": "zkSync target",
+    "added_at": "2022-05-10T16:07:31.463Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "zksync",
+    "asset_id": "6bilf9U9vhoGcUVDpx5XNq",
+    "url": "https://github.com/matter-labs/zksync/blob/breaking/contracts/contracts/AdditionalZkSync.sol",
+    "description": "Additional zkSync target",
+    "added_at": "2022-05-10T16:07:32.562Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "zksync",
+    "asset_id": "EtXyKEyMS3O6qZeSdBPtU",
+    "url": "https://github.com/matter-labs/zksync/blob/breaking/contracts/contracts/TokenGovernance.sol",
+    "description": "Token governance",
+    "added_at": "2022-05-10T16:07:35.529Z",
+    "revision": 2
+  }
+]

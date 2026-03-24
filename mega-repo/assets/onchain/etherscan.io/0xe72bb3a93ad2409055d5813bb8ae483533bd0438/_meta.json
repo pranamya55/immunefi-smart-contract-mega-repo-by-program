@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xe72bb3a93ad2409055d5813bb8ae483533bd0438",
+  "host": "etherscan.io",
+  "address": "0xe72bb3a93ad2409055d5813bb8ae483533bd0438",
+  "chainid": 1,
+  "project_slug": "enzymefinance",
+  "asset_id": "XahPAuGmpWkZmcYg2pRPQ",
+  "contract_name": "AaveV3DebtPositionLib",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "00000000000000000000000041393e5e337606dc3821075af65aee84d7688cbd0000000000000000000000002f39d218133afab8f2b819b1066c7e434ad94e9e0000000000000000000000003ef3d8ba38ebe18db133cec108f4d14ce00dd9ae00000000000000000000000000000000000000000000000000000000000000000000000000000000000000008164cc65827dcfe994ab23944cbc90e0aa80bfcb",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 20,
+  "mode": "json-sources"
+}

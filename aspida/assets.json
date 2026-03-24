@@ -1,0 +1,42 @@
+[
+  {
+    "project_slug": "aspida",
+    "asset_id": "2EHfncMOaDTWgSflTBw08N",
+    "url": "https://etherscan.io/address/0xFC87753Df5Ef5C368b5FBA8D4C5043b77e8C5b39",
+    "description": "aETH",
+    "added_at": "2024-02-21T04:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aspida",
+    "asset_id": "1TGj5WiB1Qiv1Yxe7ZEY11",
+    "url": "https://etherscan.io/address/0xF1617882A71467534D14EEe865922de1395c9E89",
+    "description": "saETH",
+    "added_at": "2024-02-21T04:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aspida",
+    "asset_id": "2w7o5YZpPVbrmbzV2KcY2W",
+    "url": "https://etherscan.io/address/0x5341864D99B50155F782C562Bd15Ac4a0A3C117e",
+    "description": "CorePrimary",
+    "added_at": "2024-02-21T04:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aspida",
+    "asset_id": "4flLE7mrcIgHARgsR8Oqy9",
+    "url": "https://etherscan.io/address/0xD691b1c47a578f51aDa825A8565cAfceB401EdaC",
+    "description": "RewardOracle",
+    "added_at": "2024-02-21T04:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aspida",
+    "asset_id": "3cmBrwdhdkswtDQxyYqcUg",
+    "url": "https://etherscan.io/address/0x25a01dBde45cc5Bb7071EB3c3b2F983ea923bec5",
+    "description": "StETHMinter",
+    "added_at": "2024-02-21T04:00:00.000Z",
+    "revision": 1
+  }
+]

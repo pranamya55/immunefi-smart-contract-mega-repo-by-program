@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0x09959798B95d00a3183d20FaC298E4594E599eab",
+  "host": "polygonscan.com",
+  "address": "0x09959798B95d00a3183d20FaC298E4594E599eab",
+  "chainid": 137,
+  "project_slug": "thresholdnetwork",
+  "asset_id": "1Go1ORLFdmZNOueEzzpT9V",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x04671c72aab5ac02a03c1098314b1bb6b560c197",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

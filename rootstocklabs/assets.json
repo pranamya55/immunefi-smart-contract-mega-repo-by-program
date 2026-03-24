@@ -1,0 +1,42 @@
+[
+  {
+    "project_slug": "rootstocklabs",
+    "asset_id": "db_c1d99a16-fc84-42eb-8a79-44960508a0d7",
+    "url": "https://rootstock.blockscout.com/address/0xB107Cc96A5CFC4be502e9Bbb1208de4792044BA7",
+    "description": "Signature Validator",
+    "added_at": "2026-02-10T11:14:03.539Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "rootstocklabs",
+    "asset_id": "db_1d4726b1-fa29-4c72-abeb-b5abbecb4590",
+    "url": "https://rootstock.blockscout.com/address/0x0fCf6eD9DBa0aE3ad3F6908A9499285720a6d43d",
+    "description": "BtcUtils",
+    "added_at": "2026-02-10T11:14:18.710Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "rootstocklabs",
+    "asset_id": "db_bab9ca8a-dc33-4101-b3bd-4b935a704828",
+    "url": "https://rootstock.blockscout.com/address/0xAa9caf1e3967600578727f975F283446a3dA6612",
+    "description": "LiquidityBridgeContract (proxy)",
+    "added_at": "2026-02-10T11:14:32.921Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "rootstocklabs",
+    "asset_id": "db_dc4ef1b8-2802-4bf0-87e5-084c6aafad5c",
+    "url": "https://rootstock.blockscout.com/address/0x0123EF8aE46f9FcBF67c706F73d46bcCE3df44f7?tab=index",
+    "description": "QuoteV2",
+    "added_at": "2026-02-10T11:14:47.403Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "rootstocklabs",
+    "asset_id": "db_70ee9995-6d01-49a8-ab94-964bc13dc02a",
+    "url": "https://immunefi.com/bug-bounty/rootstocklabs",
+    "description": "Primacy of Impact",
+    "added_at": "2026-02-10T11:17:53.178Z",
+    "revision": 0
+  }
+]

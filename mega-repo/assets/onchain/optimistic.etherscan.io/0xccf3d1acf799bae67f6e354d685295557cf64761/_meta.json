@@ -1,0 +1,19 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0xccf3d1acf799bae67f6e354d685295557cf64761",
+  "host": "optimistic.etherscan.io",
+  "address": "0xccf3d1acf799bae67f6e354d685295557cf64761",
+  "chainid": 10,
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "1",
+  "runs": "999999",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "1",
+  "implementation": "0x655952146e18ec662bf2bc7cc3d85247fd5d86d4",
+  "swarm_source": "",
+  "files_written": 8,
+  "mode": "recover-json-sources"
+}

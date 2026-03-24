@@ -1,0 +1,66 @@
+name: Echidna
+
+on: [push, pull_request]
+
+jobs:
+  echidna:
+    name: Echidna
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        testName:
+          - DssVestMintableEchidnaTest
+          - DssVestSuckableEchidnaTest
+          - DssVestTransferrableEchidnaTest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.8
+
+      - name: Install crytic-compile
+        run: pip3 install crytic-compile
+
+      - name: Install solc-select
+        run: pip3 install solc-select
+
+      - name: Solc Select 0.6.12
+        run: |
+          solc-select install 0.6.12
+          solc-select use 0.6.12
+
+      - name: Crytic Compile ${{ matrix.testName }}
+        run: |
+          crytic-compile echidna/${{ matrix.testName }}.sol --solc-args "--optimize --optimize-runs 200" --export-format solc
+          jq --sort-keys . crytic-export/combined_solc.json > sorted_crytic_solc.json
+
+      - name: Cache ${{ matrix.testName }} Corpus
+        uses: actions/cache@v3
+        with:
+          path: corpus
+          key: abi-${{ matrix.testName }}-${{ hashFiles('**/sorted_crytic_solc.json') }}-v3
+
+      - name: Fuzz ${{ matrix.testName }}
+        uses: crytic/echidna-action@v2
+        with:
+          files: echidna/${{ matrix.testName }}.sol
+          contract: ${{ matrix.testName }}
+          config: echidna.config.ci.yml
+          corpus-dir: corpus
+          test-mode: assertion
+          test-limit: 250000
+          seq-len: 100
+          solc-args: --optimize --optimize-runs 200
+          solc-version: 0.6.12
+          echidna-version: v2.0.0
+
+      - name: Upload ${{ matrix.testName }} Coverage
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-${{ matrix.testName }}
+          path: corpus/covered.*

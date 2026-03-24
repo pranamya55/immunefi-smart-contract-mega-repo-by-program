@@ -1,0 +1,24 @@
+{
+  "url": "https://snowtrace.io/address/0xFCf83648b8cDeF62e5d03319a6f1FCE16e4D6A59",
+  "host": "snowtrace.io",
+  "address": "0xFCf83648b8cDeF62e5d03319a6f1FCE16e4D6A59",
+  "chainid": 43114,
+  "project_slug": "debridge",
+  "asset_id": "6vA7MRoSts5sLkJqJ7SzDg",
+  "contract_name": "WethGate",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000b31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 3,
+  "mode": "json-sources"
+}

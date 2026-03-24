@@ -1,0 +1,9 @@
+{
+  "minValues": 1,
+  "initialPrice": 0.30,
+  "expirationTime": 300,
+  "governor": "0xC61F0392d5170214b5D93C0BC4c4354163aBC1f7",
+  "MoCMedianizer": "0x504EfCadFB020d6bBaeC8a5c5BB21453719d0E00",
+  "PriceFactory": "0x54878866F5324B56AEE9B6619a1e1A213B2fCC30",
+  "PriceFeed": "0x461750b4824b14c3d9b7702bC6fBB82469082b23"
+}

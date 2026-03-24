@@ -1,0 +1,98 @@
+[
+  {
+    "project_slug": "ankr",
+    "asset_id": "271efAzPJxBMYPQlNPMvlg",
+    "url": "https://bscscan.com/address/0x9e347Af362059bf2E55839002c699F7A5BaFE86E",
+    "description": "BNB Pool",
+    "added_at": "2023-06-22T21:58:07.853Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "ankr",
+    "asset_id": "5feiYDzh9VcrSU5ghzUaxp",
+    "url": "https://bscscan.com/address/0x52F24a5e03aee338Da5fd9Df68D2b6FAe1178827",
+    "description": "ankrBNB",
+    "added_at": "2022-07-21T18:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "ankr",
+    "asset_id": "1FV5sbI6JBoAahOIi5PhyC",
+    "url": "https://bscscan.com/token/0x67428dE0680494E448F1A19d33C2022a51719348",
+    "description": "BNBStakingConfig",
+    "added_at": "2023-01-12T16:32:02.620Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "ankr",
+    "asset_id": "66gh6Laq3dZJQPC9CunkZi",
+    "url": "https://etherscan.io/address/0x84db6eE82b7Cf3b47E8F19270abdE5718B936670",
+    "description": "ETH Pool",
+    "added_at": "2022-11-28T19:17:21.655Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "ankr",
+    "asset_id": "1VBeAe6ZK53cN9xnv4MhQ7",
+    "url": "https://etherscan.io/token/0xE95A203B1a91a908F9B9CE46459d101078c2c3cb#code",
+    "description": "aETHc",
+    "added_at": "2022-11-28T19:17:18.568Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "ankr",
+    "asset_id": "3PvVK9ELKRF9oJS3ErVWRj",
+    "url": "https://etherscan.io/token/0xd01ef7c0a5d8c432fc2d1a85c66cf2327362e5c6#code",
+    "description": "aETHb",
+    "added_at": "2022-11-28T19:17:15.913Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "ankr",
+    "asset_id": "6obn0iZNqYV0O3ABFQ0nPh",
+    "url": "https://etherscan.io/address/0xCfD4B4Bc15C8bF0Fd820B0D4558c725727B3ce89",
+    "description": "PolygonPool",
+    "added_at": "2023-01-25T15:13:30.847Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "ankr",
+    "asset_id": "6Q3o28BXsPFZhUPPCcCeYC",
+    "url": "https://etherscan.io/address/0x26dcFbFa8Bc267b250432c01C982Eaf81cC5480C",
+    "description": "ankrMATIC",
+    "added_at": "2023-01-25T15:13:28.194Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "ankr",
+    "asset_id": "6pMwmwAJlAMHjIboTwqvPA",
+    "url": "https://etherscan.io/address/0x99534Ef705Df1FFf4e4bD7bbaAF9b0dFf038EbFe",
+    "description": "aMATICb",
+    "added_at": "2023-01-25T15:13:25.609Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "ankr",
+    "asset_id": "1WcLCTmcmNmBxN5Fd6RoIw",
+    "url": "https://etherscan.io/address/0xad0dCC6635a5c38be6B87007210797Ad94AdB4B7",
+    "description": "MaticCrosschainStaking",
+    "added_at": "2023-01-25T15:13:23.981Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "ankr",
+    "asset_id": "1foFgmvYp5e5szlg3kzdQy",
+    "url": "https://polygonscan.com/address/0xad0dCC6635a5c38be6B87007210797Ad94AdB4B7",
+    "description": "MaticCrosschainStaking",
+    "added_at": "2023-01-25T15:13:21.777Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "ankr",
+    "asset_id": "6SNsOZvKMNfeIj19H4Ya1x",
+    "url": "https://polygonscan.com/address/0x62a509ba95c75cabc7190469025e5abee4eddb2a",
+    "description": " MaticSwapPool",
+    "added_at": "2023-01-25T15:13:17.663Z",
+    "revision": 1
+  }
+]

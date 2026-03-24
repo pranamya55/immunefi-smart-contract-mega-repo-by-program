@@ -1,0 +1,8 @@
+[[package]]
+name = "cei_pattern_violation_storage_struct_read"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-CBC22BC7FE54BF44"

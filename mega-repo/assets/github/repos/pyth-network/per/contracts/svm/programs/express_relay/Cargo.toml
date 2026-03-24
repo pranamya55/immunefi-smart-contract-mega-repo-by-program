@@ -1,0 +1,23 @@
+[package]
+name = "express-relay"
+version = "0.8.0"
+description = "Pyth Express Relay program for handling permissioning and bid distribution"
+repository = "https://github.com/pyth-network/per"
+license = "Apache-2.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "express_relay"
+
+[features]
+default = ["cpi"]
+cpi = []
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
+
+[dependencies]
+anchor-lang = { workspace = true, features = ["init-if-needed"] }
+anchor-spl = { workspace = true }

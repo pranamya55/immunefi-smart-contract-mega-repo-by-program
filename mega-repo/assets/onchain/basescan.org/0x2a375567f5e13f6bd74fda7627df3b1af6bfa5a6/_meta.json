@@ -1,0 +1,24 @@
+{
+  "url": "https://basescan.org/address/0x2A375567f5E13F6bd74fDa7627Df3b1Af6BfA5a6#code",
+  "host": "basescan.org",
+  "address": "0x2A375567f5E13F6bd74fDa7627Df3b1Af6BfA5a6",
+  "chainid": 8453,
+  "project_slug": "woofi",
+  "asset_id": "1h10eNJ0xHga6Zeo4Yj6W7",
+  "contract_name": "WooracleV2_2",
+  "compiler_version": "v0.8.14+commit.80d49f37",
+  "optimization_used": "1",
+  "runs": "20000",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 11,
+  "mode": "json-sources"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://bscscan.com/address/0x3a833e6e977e0442e3cbe911507f8d9178f134b9",
+  "host": "bscscan.com",
+  "address": "0x3a833e6e977e0442e3cbe911507f8d9178f134b9",
+  "chainid": 56,
+  "contract_name": "STreasury",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 7,
+  "mode": "recover-json-sources"
+}

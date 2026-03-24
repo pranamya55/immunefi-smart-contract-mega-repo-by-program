@@ -1,0 +1,19 @@
+{
+  "url": "https://sonicscan.org/address/0xa65821ffe86e6eb613daa1f70af350c5a21759df",
+  "host": "sonicscan.org",
+  "address": "0xa65821ffe86e6eb613daa1f70af350c5a21759df",
+  "chainid": 146,
+  "contract_name": "Swapper",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "1000",
+  "constructor_arguments": "",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "BSL 1.1",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 38,
+  "mode": "recover-json-sources"
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://sonicscan.org/address/0x2d0e0814e62d80056181f5cd932274405966e4f0#code",
+  "host": "sonicscan.org",
+  "address": "0x2d0e0814e62d80056181f5cd932274405966e4f0",
+  "chainid": 146,
+  "project_slug": "beets",
+  "asset_id": "7gnY4UMMiqIRhTe4bt6VPi",
+  "contract_name": "Beets",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000000000000000000000c4f6828c7fbbf94eac00000000000000000000000000008a81173fc726eedd1ad6036db6197027c77865c20000000000000000000000006daeb8bb06a7cf3475236c6c567029d333455e38",
+  "evm_version": "shanghai",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 21,
+  "mode": "json-sources"
+}

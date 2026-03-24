@@ -1,0 +1,26 @@
+[
+  {
+    "project_slug": "galagames",
+    "asset_id": "4dMArG8cpMDqw3IT06Ggvx",
+    "url": "https://etherscan.io/token/0xcd17fa52528f37facb3028688e62ec82d9417581#code",
+    "description": "MTRM",
+    "added_at": "2023-05-23T13:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "galagames",
+    "asset_id": "7fjq0nQlH6uYIPuVNBXbBA",
+    "url": "https://etherscan.io/token/0xd1d2eb1b1e90b638588728b4130137d262c87cae#code",
+    "description": "GALA",
+    "added_at": "2023-05-23T13:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "galagames",
+    "asset_id": "meopvdOnWJa7Jl8nBkhsO",
+    "url": "https://etherscan.io/token/0xb045f7f363fe4949954811b113bd56d208c67b23#code",
+    "description": "SILK",
+    "added_at": "2023-05-23T13:00:00.000Z",
+    "revision": 2
+  }
+]

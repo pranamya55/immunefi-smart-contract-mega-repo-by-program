@@ -1,0 +1,11 @@
+.vscode/
+.broadcast/
+.env
+.DS_Store
+cache/
+out/
+report/
+lcov.info
+notes.md
+.gas-snapshot
+/docs

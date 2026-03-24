@@ -1,0 +1,19 @@
+{
+  "url": "https://bscscan.com/address/0x620e897d529efeca41e57d0344ebb24f75864d1e",
+  "host": "bscscan.com",
+  "address": "0x620e897d529efeca41e57d0344ebb24f75864d1e",
+  "chainid": 56,
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "1",
+  "implementation": "0xe4f48754e85f2d24361741885098453e2077181f",
+  "swarm_source": "ipfs://93f028255035b61df476b13b9dba3c4f06f60e51b9b4caee31680b389aef327f",
+  "files_written": 1,
+  "mode": "recover-single-file"
+}

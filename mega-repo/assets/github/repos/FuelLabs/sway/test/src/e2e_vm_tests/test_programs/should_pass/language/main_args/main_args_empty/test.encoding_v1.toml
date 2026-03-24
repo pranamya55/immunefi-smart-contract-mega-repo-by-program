@@ -1,0 +1,4 @@
+script_data = ""
+expected_result = { action = "return_data", value = "" }
+
+experimental = { new_encoding = true }

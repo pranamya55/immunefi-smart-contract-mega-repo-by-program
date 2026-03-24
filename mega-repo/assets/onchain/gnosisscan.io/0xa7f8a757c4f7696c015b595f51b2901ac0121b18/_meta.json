@@ -1,0 +1,24 @@
+{
+  "url": "https://gnosisscan.io/address/0xA7F8A757C4f7696c015B595F51B2901AC0121B18",
+  "host": "gnosisscan.io",
+  "address": "0xA7F8A757C4f7696c015B595F51B2901AC0121B18",
+  "chainid": 100,
+  "project_slug": "sparklend",
+  "asset_id": "7LZ7HcN2PAF55dQBN3mlPO",
+  "contract_name": "UiIncentiveDataProviderV3",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "1",
+  "runs": "100000",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 21,
+  "mode": "json-sources"
+}

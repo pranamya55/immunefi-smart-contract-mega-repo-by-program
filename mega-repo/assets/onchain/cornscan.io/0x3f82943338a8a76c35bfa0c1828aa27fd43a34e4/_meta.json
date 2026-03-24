@@ -1,0 +1,7 @@
+{
+  "url": "https://cornscan.io/address/0x3f82943338a8a76c35BFA0c1828aA27fd43a34E4",
+  "host": "cornscan.io",
+  "address": "0x3f82943338a8a76c35BFA0c1828aA27fd43a34E4",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:http 403"
+}

@@ -1,0 +1,17 @@
+# Compiler files
+cache/
+out/
+
+# Ignores broadcast logs
+broadcast/
+
+# Ignores script config
+script/input/**/*.json
+!script/input/**/template-*.json
+script/output/**/*.json
+
+# Docs
+docs/
+
+# Dotenv file
+.env

@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0x71e2c040F3B9670C693215509A0c0846D221756a",
+  "host": "polygonscan.com",
+  "address": "0x71e2c040F3B9670C693215509A0c0846D221756a",
+  "chainid": 137,
+  "project_slug": "beefyfinance",
+  "asset_id": "72fARTgE7ApuAxShyImqBF",
+  "contract_name": "StrategyPolygonSushiLP",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "0",
+  "runs": "200",
+  "constructor_arguments": "0000000000000000000000002813d43463c374a680f235c428fb1d7f08de0b690000000000000000000000000000000000000000000000000000000000000006000000000000000000000000866a910f3375d0debddd904a36b3940afcd299000000000000000000000000001b02da8cb0d097eb8d57a175b88c7d8b47997506000000000000000000000000d529b1894491a0a26b18939274ae8ede93e81dba0000000000000000000000002c6bd2d42aaa713642ee7c6e83291ca9f94832c600000000000000000000000009ef0e7b555599a9f810789fff68db8dbf4c51a0",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://9e98d0e6268198bd6e28f49c1f9982bbbcca9f739d8d95f93826845bdd3cead2",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

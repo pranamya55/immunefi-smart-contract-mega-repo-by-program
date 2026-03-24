@@ -1,0 +1,19 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0x9d39fc627a6d9d9f8c831c16995b209548cc3401",
+  "host": "optimistic.etherscan.io",
+  "address": "0x9d39fc627a6d9d9f8c831c16995b209548cc3401",
+  "chainid": 10,
+  "contract_name": "Bridge",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "800",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "GNU GPLv3",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 20,
+  "mode": "recover-json-sources"
+}

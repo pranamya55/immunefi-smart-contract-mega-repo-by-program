@@ -1,0 +1,112 @@
+syntax = "proto3";
+
+package stacks.signer.v1;
+
+import "bitcoin/bitcoin.proto";
+import "crypto/common.proto";
+import "crypto/wsts/wsts.proto";
+import "stacks/signer/v1/common.proto";
+import "stacks/signer/v1/decisions.proto";
+import "stacks/signer/v1/requests.proto";
+
+// Messages exchanged between signers
+message SignerMessage {
+  reserved 6, 7, 9;
+  /// The bitcoin chain tip defining the signers view of the blockchain at the time the message was created
+  bitcoin.BitcoinBlockHash bitcoin_chain_tip = 1;
+  // The message payload
+  oneof payload {
+    /// A decision related to signer deposit
+    SignerDepositDecision signer_deposit_decision = 2;
+    // A decision related to signer withdrawal
+    SignerWithdrawalDecision signer_withdrawal_decision = 3;
+    // A request to sign a Stacks transaction
+    StacksTransactionSignRequest stacks_transaction_sign_request = 4;
+    // A signature of a Stacks transaction
+    StacksTransactionSignature stacks_transaction_signature = 5;
+    // Contains all variants for DKG and WSTS signing rounds
+    WstsMessage wsts_message = 8;
+    // Information about a new sweep transaction
+    BitcoinPreSignRequest bitcoin_pre_sign_request = 10;
+    // Represents an acknowledgment of a BitcoinPreSignRequest
+    BitcoinPreSignAck bitcoin_pre_sign_ack = 11;
+  }
+}
+
+// A wsts message.
+message WstsMessage {
+  reserved 1;
+  // The wsts message
+  oneof inner {
+    // Tell signers to begin DKG by sending DKG public shares
+    crypto.wsts.DkgBegin dkg_begin = 2;
+    // Send DKG public shares
+    crypto.wsts.SignerDkgPublicShares signer_dkg_public_shares = 3;
+    // Tell signers to send DKG private shares
+    crypto.wsts.DkgPrivateBegin dkg_private_begin = 4;
+    // Send DKG private shares
+    crypto.wsts.DkgPrivateShares dkg_private_shares = 5;
+    // Tell signers to compute shares and send DKG end
+    crypto.wsts.DkgEndBegin dkg_end_begin = 6;
+    // Tell coordinator that DKG is complete
+    crypto.wsts.DkgEnd dkg_end = 7;
+    // Tell signers to send signing nonces
+    crypto.wsts.NonceRequest nonce_request = 8;
+    // Tell coordinator signing nonces
+    crypto.wsts.NonceResponse nonce_response = 9;
+    // Tell signers to construct signature shares
+    crypto.wsts.SignatureShareRequest signature_share_request = 10;
+    // Tell coordinator signature shares
+    crypto.wsts.SignatureShareResponse signature_share_response = 11;
+  }
+  oneof id {
+    // If this WSTS message is related to a Bitcoin signing round, this field
+    // will be set to the related Bitcoin transaction ID.
+    bitcoin.BitcoinTxid sweep = 12;
+    // If this WSTS message is related to a rotate-keys transaction, this field
+    // will be set to the _new_ aggregate public key being verified.
+    crypto.PublicKey dkg_verification = 13;
+    // If this WSTS message is related to a DKG round, this field will be set
+    // to the 32-byte id determined based on the coordinator public key and
+    // block hash, set by the coordinator.
+    crypto.Uint256 dkg = 14;
+  }
+}
+
+// Wraps an inner type with a public key and a signature,
+// allowing easy verification of the integrity of the inner data.
+message Signed {
+  // A signature over the hash of the inner structure.
+  crypto.EcdsaSignature signature = 1;
+  // The public key of the signer that generated the signature.
+  crypto.PublicKey signer_public_key = 2;
+  // The signed structure.
+  SignerMessage signer_message = 3;
+}
+
+// Information about a new Bitcoin block sign request
+message BitcoinPreSignRequest {
+  // The set of sBTC request identifiers. This contains each of the
+  // requests for the entire transaction package. Each element in the
+  // vector corresponds to the requests that will be included in a
+  // single bitcoin transaction.
+  repeated TxRequestIds request_package = 1;
+  // The current market fee rate in sat/vByte.
+  double fee_rate = 2;
+  // The total fee amount and the fee rate for the last transaction that
+  // used this UTXO as an input.
+  Fees last_fees = 3;
+}
+
+// Represents an acknowledgment of a BitcoinPreSignRequest.
+message BitcoinPreSignAck {}
+
+// This type is a container for all deposits and withdrawals that are part
+// of a transaction package.
+message TxRequestIds {
+  // The deposit requests associated with the inputs in the transaction.
+  repeated bitcoin.OutPoint deposits = 1;
+  // The withdrawal requests associated with the outputs in the current
+  // transaction.
+  repeated QualifiedRequestId withdrawals = 2;
+}

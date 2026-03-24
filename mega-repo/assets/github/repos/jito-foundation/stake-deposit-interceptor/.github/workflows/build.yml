@@ -1,0 +1,92 @@
+name: Build
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - "v*"
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  lint:
+    name: lint
+    runs-on: big-runner-1
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: Install Protobuf Compiler
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y protobuf-compiler libudev-dev libclang-dev
+      - name: Install cargo-sort from crates.io
+        uses: baptiste0928/cargo-install@v3
+        with:
+          crate: cargo-sort
+      - run: sudo apt-get install protobuf-compiler -y
+      - run: cargo sort --workspace --check
+      - run: cargo fmt --all --check
+      - run: cargo clippy --all-features --all-targets --tests -- -D warnings
+
+  verified_build:
+    name: verified_build
+    runs-on: big-runner-1
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: Install solana-verify deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y protobuf-compiler libudev-dev libclang-dev
+
+      - name: Install solana-verify from git
+        run: cargo install solana-verify --git https://github.com/Ellipsis-Labs/solana-verifiable-build.git
+
+      - name: add to path
+        run: echo "/home/runner/.local/share/solana/install/active_release/bin" >> $GITHUB_PATH
+
+      - name: Run verified build
+        run: solana-verify build --library-name stake_deposit_interceptor_program
+        env:
+          SVB_DOCKER_MEMORY_LIMIT: 6g
+          SVB_DOCKER_CPU_LIMIT: 2
+
+      - name: Upload program artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: stake_deposit_interceptor_program.so
+          path: target/deploy/stake_deposit_interceptor_program.so
+
+  # tests run on verified build
+  test:
+    name: test
+    runs-on: big-runner-1
+
+    needs:
+      - verified_build
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: Install Protobuf Compiler
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y protobuf-compiler libudev-dev libclang-dev
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: stake_deposit_interceptor_program.so
+          path: target/sbf-solana-solana/release/
+
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: nextest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - run: cargo nextest run
+        # env:
+        #   SBF_OUT_DIR: ${{ github.workspace }}/target/sbf-solana-solana/release

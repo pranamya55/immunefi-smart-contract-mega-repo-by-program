@@ -1,0 +1,24 @@
+{
+  "url": "https://moonbeam.moonscan.io/address/0xa226877393fc4e3b5f2b43a1bae3c5d72c918c2d",
+  "host": "moonbeam.moonscan.io",
+  "address": "0xa226877393fc4e3b5f2b43a1bae3c5d72c918c2d",
+  "chainid": 1284,
+  "project_slug": "zenlink",
+  "asset_id": "2g980lLkvqXFmZm3hHbmTq",
+  "contract_name": "Farming",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://a6155b8573cd110b853a83146ea2ae40c425d63093052d0bc8c5078f9e845c76",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

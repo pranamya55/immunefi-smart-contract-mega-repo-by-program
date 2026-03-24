@@ -1,0 +1,24 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0x70Cdb45f5b0660c122708286198446d23872595f#code",
+  "host": "optimistic.etherscan.io",
+  "address": "0x70Cdb45f5b0660c122708286198446d23872595f",
+  "chainid": 10,
+  "project_slug": "extrafinance",
+  "asset_id": "6248upy3OjWfvEoCybK7bQ",
+  "contract_name": "ACLManager",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": "1",
+  "runs": "100000",
+  "constructor_arguments": "000000000000000000000000a98cc6031ba6908d73dc5615ca82b607096d721d",
+  "evm_version": "shanghai",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 10,
+  "mode": "json-sources"
+}

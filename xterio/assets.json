@@ -1,0 +1,122 @@
+[
+  {
+    "project_slug": "xterio",
+    "asset_id": "1GaekPpcasmQoMvCRus97Q",
+    "url": "https://etherscan.io/address/0x7127f0FEaEF8143241A5FaC62aC5b7be02Ef26A9",
+    "description": "TokenGateway",
+    "added_at": "2024-07-08T10:30:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "xterio",
+    "asset_id": "2OrnBv1r3TUdgSjatQsa0y",
+    "url": "https://basescan.org/address/0xFC1759E75180aeE982DC08D0d6D365ebFA0296a7",
+    "description": "MarketplaceV2",
+    "added_at": "2024-07-08T10:30:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "xterio",
+    "asset_id": "2gDyNUJTDBXD7AE7yaIuaR",
+    "url": "https://etherscan.io/address/0xFC1759E75180aeE982DC08D0d6D365ebFA0296a7",
+    "description": "MarketplaceV2",
+    "added_at": "2024-07-08T10:30:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "xterio",
+    "asset_id": "2xwaWcEoXO4rHsOFdsb1Ni",
+    "url": "https://bscscan.com/address/0xFC1759E75180aeE982DC08D0d6D365ebFA0296a7",
+    "description": "MarketplaceV2",
+    "added_at": "2024-07-08T10:30:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "xterio",
+    "asset_id": "4D9uoLdS36uSBNxbOmMGEh",
+    "url": "https://bscscan.com/address/0x7127f0FEaEF8143241A5FaC62aC5b7be02Ef26A9",
+    "description": "TokenGateway",
+    "added_at": "2024-07-08T10:30:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "xterio",
+    "asset_id": "4qs0volKOzcfr1grBVwCuZ",
+    "url": "https://polygonscan.com/address/0xFC1759E75180aeE982DC08D0d6D365ebFA0296a7",
+    "description": "MarketplaceV2",
+    "added_at": "2024-07-08T10:30:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "xterio",
+    "asset_id": "5f0JVjhYhqVkfHXMCHJDlR",
+    "url": "https://opbnbscan.com/address/0x7127f0FEaEF8143241A5FaC62aC5b7be02Ef26A9",
+    "description": "TokenGateway",
+    "added_at": "2024-07-08T10:30:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "xterio",
+    "asset_id": "5s0vRyQmF1uKWLfoQYfsl8",
+    "url": "https://eth.xterscan.io/address/0x7127f0FEaEF8143241A5FaC62aC5b7be02Ef26A9",
+    "description": "TokenGateway",
+    "added_at": "2024-07-08T10:30:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "xterio",
+    "asset_id": "5ybAvFAbPxtC5zfByaQvgx",
+    "url": "https://bnb.xterscan.io/address/0xFC1759E75180aeE982DC08D0d6D365ebFA0296a7",
+    "description": "MarketplaceV2",
+    "added_at": "2024-07-08T10:30:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "xterio",
+    "asset_id": "5z3LtZrQSWyJ9cburKJYbl",
+    "url": "https://opbnbscan.com/address/0xFC1759E75180aeE982DC08D0d6D365ebFA0296a7",
+    "description": "MarketplaceV2",
+    "added_at": "2024-07-08T10:30:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "xterio",
+    "asset_id": "6JpHQvKEFxniJKPioJQz2E",
+    "url": "https://bnb.xterscan.io/address/0x7127f0FEaEF8143241A5FaC62aC5b7be02Ef26A9",
+    "description": "TokenGateway",
+    "added_at": "2024-07-08T10:30:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "xterio",
+    "asset_id": "72eAq3DUVDhnIEpkxRUEuJ",
+    "url": "https://polygonscan.com/address/0x7127f0FEaEF8143241A5FaC62aC5b7be02Ef26A9",
+    "description": "TokenGateway",
+    "added_at": "2024-07-08T10:30:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "xterio",
+    "asset_id": "7At0K17vLCloNv57RdXalG",
+    "url": "https://immunefi.com",
+    "description": "Primacy of Impact",
+    "added_at": "2025-01-28T11:36:10.466Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "xterio",
+    "asset_id": "7xLkkza8yKparZFxxIZFFb",
+    "url": "https://eth.xterscan.io/address/0xFC1759E75180aeE982DC08D0d6D365ebFA0296a7",
+    "description": "MarketplaceV2",
+    "added_at": "2024-07-08T10:30:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "xterio",
+    "asset_id": "oL3AFypUJj5ssNlGJ4ikW",
+    "url": "https://basescan.org/address/0x7127f0FEaEF8143241A5FaC62aC5b7be02Ef26A9",
+    "description": "TokenGateway",
+    "added_at": "2024-07-08T10:30:00.000Z",
+    "revision": 2
+  }
+]

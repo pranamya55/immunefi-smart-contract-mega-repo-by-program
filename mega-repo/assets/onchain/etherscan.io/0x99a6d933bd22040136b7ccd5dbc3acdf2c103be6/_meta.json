@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x99a6d933bd22040136b7ccd5dbc3acdf2c103be6",
+  "host": "etherscan.io",
+  "address": "0x99a6d933bd22040136b7ccd5dbc3acdf2c103be6",
+  "chainid": 1,
+  "project_slug": "kiln",
+  "asset_id": "3AlywNNkO1z2wMv7qVHD23",
+  "contract_name": "Cub",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "london",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0xe4dfefaff7f92c86c08107b3201270fa78885319",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 11,
+  "mode": "json-sources"
+}

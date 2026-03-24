@@ -1,0 +1,24 @@
+{
+  "url": "https://basescan.org/address/0x0f3cc3ea42b989323e7c7e499b5b6a343ea55c18",
+  "host": "basescan.org",
+  "address": "0x0f3cc3ea42b989323e7c7e499b5b6a343ea55c18",
+  "chainid": 8453,
+  "project_slug": "teahousefinance",
+  "asset_id": "6YSTitBBioKl0NCXlOeTiL",
+  "contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x75d68afd9b36c4b6e05b3900494ef777064285e8",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

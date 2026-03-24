@@ -1,0 +1,8 @@
+[[package]]
+name = "contract_with_nested_libs"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-46468E57724BD00F"

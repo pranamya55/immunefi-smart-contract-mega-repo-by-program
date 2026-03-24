@@ -1,0 +1,19 @@
+{
+  "url": "https://etherscan.io/address/0xd9e863b7317a66fe0a4d2834910f604fd6f89c6c",
+  "host": "etherscan.io",
+  "address": "0xd9e863b7317a66fe0a4d2834910f604fd6f89c6c",
+  "chainid": 1,
+  "contract_name": "AuraStakingProxy",
+  "compiler_version": "v0.8.11+commit.d7f03943",
+  "optimization_used": "1",
+  "runs": "800",
+  "constructor_arguments": "0000000000000000000000003fa73f1e5d8a792c80f426fc8f84fbf7ce9bbcac000000000000000000000000ba100000625a3754423978a60c9317c58a424e3d000000000000000000000000c0c293ce456ff0ed870add98a0828dd4d2903dbf000000000000000000000000616e8bfa43f920657b3497dbf40d6b1a02d4608d00000000000000000000000068655ad9852a99c87c0934c7290bb62cfa5d412300000000000000000000000000000000000000000000000000000000000026de",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 6,
+  "mode": "recover-json-sources"
+}

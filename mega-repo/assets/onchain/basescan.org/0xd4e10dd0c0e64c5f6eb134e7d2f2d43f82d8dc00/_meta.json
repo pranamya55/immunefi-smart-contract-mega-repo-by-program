@@ -1,0 +1,19 @@
+{
+  "url": "https://basescan.org/address/0xd4e10dd0c0e64c5f6eb134e7d2f2d43f82d8dc00",
+  "host": "basescan.org",
+  "address": "0xd4e10dd0c0e64c5f6eb134e7d2f2d43f82d8dc00",
+  "chainid": 8453,
+  "contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x75d68afd9b36c4b6e05b3900494ef777064285e8",
+  "swarm_source": "",
+  "files_written": 13,
+  "mode": "recover-json-sources"
+}

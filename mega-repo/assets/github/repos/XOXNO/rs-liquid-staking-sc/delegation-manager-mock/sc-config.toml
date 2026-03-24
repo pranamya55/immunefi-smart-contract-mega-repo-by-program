@@ -1,0 +1,8 @@
+[contracts.main]
+name = "delegation-manager-mock"
+
+[[proxy]]
+path = "src/proxy_delegation_manager.rs"
+
+[[proxy]]
+path = "../liquid-staking/src/proxy/proxy_delegation_manager.rs"

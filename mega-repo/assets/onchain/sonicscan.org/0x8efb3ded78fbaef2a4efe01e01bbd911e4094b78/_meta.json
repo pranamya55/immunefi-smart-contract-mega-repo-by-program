@@ -1,0 +1,24 @@
+{
+  "url": "https://sonicscan.org/address/0x8eFb3DED78FbaEF2a4eFe01E01BBD911E4094b78#code",
+  "host": "sonicscan.org",
+  "address": "0x8eFb3DED78FbaEF2a4eFe01E01BBD911E4094b78",
+  "chainid": 146,
+  "project_slug": "parallel",
+  "asset_id": "6KEPd8r9NLzD51XRdW5Y6y",
+  "contract_name": "ParallelAccessManager",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "10000",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 11,
+  "mode": "json-sources"
+}

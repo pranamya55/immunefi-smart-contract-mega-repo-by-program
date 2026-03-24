@@ -1,0 +1,24 @@
+{
+  "url": "https://basescan.org/address/0xe4e23120a38c4348d7e22ab23976fa0c4bf6e2ed",
+  "host": "basescan.org",
+  "address": "0xe4e23120a38c4348d7e22ab23976fa0c4bf6e2ed",
+  "chainid": 8453,
+  "project_slug": "velvet-capital-v2",
+  "asset_id": "3CUIS8muWgTvUI7NQOcJJe",
+  "contract_name": "DepositManager",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "0000000000000000000000006e3e0fe13dae2c42cca7ae2e849b0976e2e63e05",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 5,
+  "mode": "json-sources"
+}

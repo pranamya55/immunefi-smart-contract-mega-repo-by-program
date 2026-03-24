@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0x9932120518b25E35D4653A8b8D316c58c8b6d7c9#code",
+  "host": "polygonscan.com",
+  "address": "0x9932120518b25E35D4653A8b8D316c58c8b6d7c9",
+  "chainid": 137,
+  "project_slug": "enzymefinance",
+  "asset_id": "5F1dntbNaICBwGH9vQ8Jpg",
+  "contract_name": "GatedRedemptionQueueSharesWrapperLib",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000905448cb27f51d9a663fb18d57d76c49d19be8370000000000000000000000000d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 14,
+  "mode": "json-sources"
+}

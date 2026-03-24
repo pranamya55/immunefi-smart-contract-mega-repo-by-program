@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xAC85eF29192487E0a109b7f9E40C267a9ea95f2e",
+  "host": "etherscan.io",
+  "address": "0xAC85eF29192487E0a109b7f9E40C267a9ea95f2e",
+  "chainid": 1,
+  "project_slug": "resolv",
+  "asset_id": "7frvn708m9lf44wENPk336",
+  "contract_name": "UsrExternalRequestsManager",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "20000",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 24,
+  "mode": "json-sources"
+}

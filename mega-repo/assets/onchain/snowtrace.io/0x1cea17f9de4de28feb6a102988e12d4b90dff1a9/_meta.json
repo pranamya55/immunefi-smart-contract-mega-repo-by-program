@@ -1,0 +1,19 @@
+{
+  "url": "https://snowtrace.io/address/0x1cea17f9de4de28feb6a102988e12d4b90dff1a9",
+  "host": "snowtrace.io",
+  "address": "0x1cea17f9de4de28feb6a102988e12d4b90dff1a9",
+  "chainid": 43114,
+  "contract_name": "Storage",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "5000",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 1,
+  "mode": "recover-json-sources"
+}

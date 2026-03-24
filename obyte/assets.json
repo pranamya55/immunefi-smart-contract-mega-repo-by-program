@@ -1,0 +1,66 @@
+[
+  {
+    "project_slug": "obyte",
+    "asset_id": "6yYOyngFvpgo3OXDpvmorv",
+    "url": "https://github.com/byteball/counterstake-bridge",
+    "description": "Smart Contracts and Autonomous Agents for Counterstake cross-chain bridge",
+    "added_at": "2022-05-10T15:55:28.523Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "obyte",
+    "asset_id": "7CjclpdJvZh7Q8DSV4VNgT",
+    "url": "https://github.com/byteball/obyte-cascading-donations",
+    "description": "Autonomous Agent for cascading donations to github repos (kivach.org)",
+    "added_at": "2025-08-19T22:06:57.725Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "obyte",
+    "asset_id": "7bfAYRTnc0IJpwRuP6khx1",
+    "url": "https://github.com/byteball/prediction-markets-aa",
+    "description": "Autonomous Agent for prediction markets (prophet.ooo)",
+    "added_at": "2025-08-19T22:07:14.019Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "obyte",
+    "asset_id": "vBS4nbCcc1ogVN9EMM3zA",
+    "url": "https://github.com/byteball/perpetual-aa",
+    "description": "Autonomous Agent for Pythagorean perpetual futures (pyth.ooo)",
+    "added_at": "2025-08-19T22:07:29.796Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "obyte",
+    "asset_id": "31OyxOMkfBDGMuTkLZzsH0",
+    "url": "https://github.com/byteball/oswap-token-aa",
+    "description": "Autonomous Agent for OSWAP token (token.oswap.io)",
+    "added_at": "2025-08-19T22:07:57.143Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "obyte",
+    "asset_id": "7r5Po32ZC3ueYx4qMVpECx",
+    "url": "https://github.com/byteball/token-registry-aa",
+    "description": "Autonomous Agent for Obyte token registry (tokens.ooo)",
+    "added_at": "2025-08-19T22:08:13.250Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "obyte",
+    "asset_id": "16rV26S7jtissXQ9CCVYxY",
+    "url": "https://github.com/byteball/city-aa",
+    "description": "Autonomous Agent for Obyte City (city.obyte.org)",
+    "added_at": "2025-08-19T22:08:30.283Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "obyte",
+    "asset_id": "99122",
+    "url": "https://github.com/byteball/friend-aa",
+    "description": "Smart Contract - Autonomous Agent for Obyte Friends (friends.obyte.org)",
+    "added_at": "2026-03-03T18:42:11.169Z",
+    "revision": 0
+  }
+]

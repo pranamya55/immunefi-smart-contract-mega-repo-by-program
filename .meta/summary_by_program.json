@@ -1,0 +1,557 @@
+{
+  "0x": {
+    "manifest_linked": 1,
+    "github_repo_linked": 1
+  },
+  "Aevo": {
+    "manifest_linked": 14
+  },
+  "AlphaVentureDAO": {
+    "github_gist_linked": 5
+  },
+  "StaderforPolygon": {
+    "manifest_linked": 5
+  },
+  "aave": {
+    "github_blob_linked": 79,
+    "manifest_linked": 4
+  },
+  "aera": {
+    "manifest_linked": 6
+  },
+  "alchemix": {
+    "github_repo_linked": 1
+  },
+  "alex": {
+    "github_blob_linked": 13,
+    "github_repo_linked": 1
+  },
+  "ankr": {
+    "manifest_linked": 12
+  },
+  "arbitrum": {
+    "github_blob_linked": 179,
+    "github_repo_linked": 2
+  },
+  "arkadiko": {
+    "manifest_linked": 12
+  },
+  "aspida": {
+    "manifest_linked": 5
+  },
+  "aster": {
+    "manifest_linked": 10
+  },
+  "aurafinance": {
+    "manifest_linked": 32
+  },
+  "avail": {
+    "github_repo_linked": 1
+  },
+  "avalanche": {
+    "manifest_linked": 25
+  },
+  "axelarnetwork": {
+    "manifest_linked": 15,
+    "github_repo_linked": 3,
+    "github_blob_linked": 1
+  },
+  "balancer": {
+    "manifest_linked": 38
+  },
+  "beanstalk": {
+    "manifest_linked": 20
+  },
+  "beefyfinance": {
+    "manifest_linked": 243
+  },
+  "beets": {
+    "manifest_linked": 3
+  },
+  "benqi": {
+    "manifest_linked": 36
+  },
+  "berachain": {
+    "github_repo_linked": 2
+  },
+  "bifi": {
+    "manifest_linked": 42
+  },
+  "bitflow": {
+    "manifest_linked": 10
+  },
+  "bobanetwork": {
+    "manifest_linked": 5
+  },
+  "burrow": {
+    "manifest_linked": 1
+  },
+  "buttonwood": {
+    "github_blob_linked": 14
+  },
+  "capyfi": {
+    "manifest_linked": 10
+  },
+  "celer": {
+    "manifest_linked": 14
+  },
+  "chainlink": {
+    "github_repo_linked": 9,
+    "manifest_linked": 1
+  },
+  "compoundfinance": {
+    "github_repo_linked": 1,
+    "manifest_linked": 253
+  },
+  "connext": {
+    "manifest_linked": 64
+  },
+  "cowprotocol": {
+    "github_blob_linked": 19
+  },
+  "debridge": {
+    "manifest_linked": 90
+  },
+  "decentraland": {
+    "manifest_linked": 43
+  },
+  "defisaver": {
+    "github_repo_linked": 1
+  },
+  "derive": {
+    "manifest_linked": 39
+  },
+  "dexeprotocol": {
+    "manifest_linked": 11
+  },
+  "dhedge": {
+    "manifest_linked": 5
+  },
+  "dodo": {
+    "github_repo_linked": 1,
+    "github_blob_linked": 2
+  },
+  "drips": {
+    "manifest_linked": 12
+  },
+  "ens": {
+    "github_repo_linked": 1
+  },
+  "enzyme-onyx": {
+    "github_blob_linked": 22,
+    "manifest_linked": 1
+  },
+  "enzymefinance": {
+    "manifest_linked": 322,
+    "github_repo_linked": 1
+  },
+  "ern": {
+    "manifest_linked": 5
+  },
+  "ethena": {
+    "manifest_linked": 23
+  },
+  "etherfi": {
+    "manifest_linked": 58
+  },
+  "extrafinance": {
+    "manifest_linked": 18
+  },
+  "fbtc": {
+    "manifest_linked": 36
+  },
+  "felix": {
+    "manifest_linked": 29
+  },
+  "flamingofinance": {
+    "github_blob_linked": 1,
+    "github_repo_linked": 4
+  },
+  "flarenetwork": {
+    "github_blob_linked": 2,
+    "manifest_linked": 2
+  },
+  "fluxfinance": {
+    "manifest_linked": 9
+  },
+  "folksfinance": {
+    "manifest_linked": 2
+  },
+  "gainsnetwork": {
+    "manifest_linked": 24
+  },
+  "galagames": {
+    "manifest_linked": 3
+  },
+  "gamma": {
+    "manifest_linked": 3
+  },
+  "gearbox": {
+    "manifest_linked": 3,
+    "github_blob_linked": 1
+  },
+  "glodollar": {
+    "manifest_linked": 4
+  },
+  "gmx": {
+    "manifest_linked": 248
+  },
+  "gnosischain": {
+    "manifest_linked": 4
+  },
+  "gogopool": {
+    "manifest_linked": 16
+  },
+  "granite-protocol": {
+    "manifest_linked": 29
+  },
+  "harvest": {
+    "github_repo_linked": 4
+  },
+  "haven1": {
+    "manifest_linked": 14
+  },
+  "hermetica": {
+    "manifest_linked": 13
+  },
+  "hyperlane": {
+    "manifest_linked": 220
+  },
+  "ichi": {
+    "manifest_linked": 4,
+    "github_repo_linked": 1
+  },
+  "immunefi": {
+    "manifest_linked": 3
+  },
+  "immutable": {
+    "manifest_linked": 10
+  },
+  "impossiblefinance": {
+    "github_repo_linked": 1
+  },
+  "indexcoop": {
+    "manifest_linked": 7
+  },
+  "inversefinance": {
+    "manifest_linked": 118
+  },
+  "jito": {
+    "github_repo_linked": 6
+  },
+  "justlenddao": {
+    "manifest_linked": 43
+  },
+  "kamino": {
+    "github_repo_linked": 4,
+    "manifest_linked": 12
+  },
+  "katana": {
+    "manifest_linked": 19
+  },
+  "kelp-dao": {
+    "manifest_linked": 10
+  },
+  "kiln": {
+    "manifest_linked": 35
+  },
+  "kiln-defi": {
+    "manifest_linked": 35
+  },
+  "kiln-on-chain-v1": {
+    "manifest_linked": 14
+  },
+  "kleidi": {
+    "manifest_linked": 19
+  },
+  "layerzero": {
+    "manifest_linked": 18,
+    "github_blob_linked": 4,
+    "github_repo_linked": 3
+  },
+  "lido": {
+    "manifest_linked": 1,
+    "github_repo_linked": 18
+  },
+  "light-protocol": {
+    "github_repo_linked": 2,
+    "manifest_linked": 15
+  },
+  "linea": {
+    "github_blob_linked": 6,
+    "manifest_linked": 1
+  },
+  "listadao": {
+    "manifest_linked": 134
+  },
+  "lombard-finance": {
+    "manifest_linked": 4
+  },
+  "mETH": {
+    "manifest_linked": 10
+  },
+  "maple": {
+    "manifest_linked": 55
+  },
+  "marinade": {
+    "github_repo_linked": 1
+  },
+  "metronome": {
+    "manifest_linked": 91
+  },
+  "mux": {
+    "github_repo_linked": 12
+  },
+  "neutron": {
+    "manifest_linked": 40,
+    "github_repo_linked": 1
+  },
+  "notional-exponent": {
+    "manifest_linked": 15
+  },
+  "nucleus": {
+    "manifest_linked": 31
+  },
+  "obyte": {
+    "github_repo_linked": 8
+  },
+  "olympus": {
+    "manifest_linked": 72
+  },
+  "ondofinance": {
+    "manifest_linked": 88
+  },
+  "optimism": {
+    "manifest_linked": 18
+  },
+  "orca": {
+    "manifest_linked": 3
+  },
+  "orderlynetwork": {
+    "github_repo_linked": 2,
+    "manifest_linked": 20
+  },
+  "originprotocol": {
+    "manifest_linked": 32
+  },
+  "pancakeswap": {
+    "github_repo_linked": 5
+  },
+  "paradex": {
+    "manifest_linked": 5
+  },
+  "parallel": {
+    "manifest_linked": 171
+  },
+  "pareto": {
+    "manifest_linked": 2
+  },
+  "polygon": {
+    "manifest_linked": 6
+  },
+  "polymarket": {
+    "manifest_linked": 13
+  },
+  "pragmaoracle": {
+    "manifest_linked": 4
+  },
+  "pythnetwork": {
+    "github_repo_linked": 14
+  },
+  "raydium": {
+    "github_blob_linked": 74
+  },
+  "reffinance": {
+    "github_blob_linked": 38
+  },
+  "renzoprotocol": {
+    "manifest_linked": 8
+  },
+  "reserve": {
+    "github_blob_linked": 105
+  },
+  "resolv": {
+    "manifest_linked": 54
+  },
+  "resonate": {
+    "manifest_linked": 24,
+    "github_blob_linked": 1
+  },
+  "revest": {
+    "manifest_linked": 14
+  },
+  "rhinofi": {
+    "manifest_linked": 9
+  },
+  "rocketpool": {
+    "github_blob_linked": 77
+  },
+  "rootstocklabs": {
+    "manifest_linked": 5
+  },
+  "royco": {
+    "manifest_linked": 8
+  },
+  "scroll": {
+    "manifest_linked": 34
+  },
+  "segmentfinance": {
+    "github_repo_linked": 1,
+    "manifest_linked": 10
+  },
+  "sherlock": {
+    "manifest_linked": 15
+  },
+  "silofinance-v2": {
+    "manifest_linked": 11
+  },
+  "sky": {
+    "github_blob_linked": 204,
+    "github_repo_linked": 8
+  },
+  "sparklend": {
+    "manifest_linked": 325,
+    "github_blob_linked": 20
+  },
+  "ssvnetwork": {
+    "manifest_linked": 3
+  },
+  "stackingdao": {
+    "manifest_linked": 23
+  },
+  "stacks": {
+    "github_repo_linked": 1,
+    "github_blob_linked": 3
+  },
+  "staderforeth": {
+    "manifest_linked": 22
+  },
+  "stakelink": {
+    "manifest_linked": 14
+  },
+  "stakestone": {
+    "manifest_linked": 9
+  },
+  "stakewise": {
+    "manifest_linked": 14
+  },
+  "stargate": {
+    "manifest_linked": 15
+  },
+  "starkex": {
+    "manifest_linked": 24
+  },
+  "starknet": {
+    "github_repo_linked": 2
+  },
+  "starknet-staking": {
+    "github_repo_linked": 7,
+    "github_blob_linked": 11
+  },
+  "stellaswap": {
+    "manifest_linked": 9
+  },
+  "sushiswap": {
+    "manifest_linked": 3
+  },
+  "sweateconomy": {
+    "github_repo_linked": 3
+  },
+  "swell": {
+    "manifest_linked": 29
+  },
+  "symbiosis": {
+    "manifest_linked": 8
+  },
+  "synthetix": {
+    "github_blob_linked": 10
+  },
+  "templar-protocol": {
+    "manifest_linked": 2
+  },
+  "termstructurelabs": {
+    "github_repo_linked": 2,
+    "manifest_linked": 1
+  },
+  "thesandbox": {
+    "manifest_linked": 27
+  },
+  "thresholdnetwork": {
+    "manifest_linked": 49,
+    "github_repo_linked": 2
+  },
+  "twyne": {
+    "manifest_linked": 13
+  },
+  "usdn": {
+    "manifest_linked": 9
+  },
+  "usdt0": {
+    "manifest_linked": 41
+  },
+  "usx": {
+    "github_repo_linked": 1,
+    "manifest_linked": 5
+  },
+  "utix": {
+    "manifest_linked": 1
+  },
+  "variational": {
+    "manifest_linked": 4
+  },
+  "veda": {
+    "manifest_linked": 16
+  },
+  "velodromefinance": {
+    "manifest_linked": 54
+  },
+  "velvetcapital": {
+    "manifest_linked": 31
+  },
+  "vesper": {
+    "manifest_linked": 17
+  },
+  "vesu": {
+    "github_blob_linked": 26
+  },
+  "wepiggy": {
+    "manifest_linked": 193,
+    "github_blob_linked": 14
+  },
+  "woofi": {
+    "manifest_linked": 173
+  },
+  "wormhole": {
+    "manifest_linked": 1,
+    "github_repo_linked": 10
+  },
+  "xion": {
+    "github_repo_linked": 1,
+    "manifest_linked": 1
+  },
+  "xoxno": {
+    "github_repo_linked": 4
+  },
+  "xterio": {
+    "manifest_linked": 15
+  },
+  "yearnfinance": {
+    "manifest_linked": 40
+  },
+  "yelay": {
+    "manifest_linked": 40
+  },
+  "zest-protocol-v2": {
+    "manifest_linked": 18
+  },
+  "zestprotocol": {
+    "manifest_linked": 24
+  },
+  "zksync": {
+    "github_blob_linked": 8
+  },
+  "zksyncera": {
+    "manifest_linked": 64,
+    "github_blob_linked": 2
+  }
+}

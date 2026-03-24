@@ -1,0 +1,7 @@
+{
+  "url": "https://moonscan.io/address/0x84Df48F8f241f11d0fA302d09d73030429Bd9C73",
+  "host": "moonscan.io",
+  "address": "0x84Df48F8f241f11d0fA302d09d73030429Bd9C73",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:unexpected-response"
+}

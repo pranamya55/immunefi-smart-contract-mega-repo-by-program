@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xb49882c17281d3451972ae7e476cb3e0698af712",
+  "host": "etherscan.io",
+  "address": "0xb49882c17281d3451972ae7e476cb3e0698af712",
+  "chainid": 1,
+  "project_slug": "decentraland",
+  "asset_id": "7z0YHrSTtMp2J1kcppYLJL",
+  "contract_name": "ProxyAdmin",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

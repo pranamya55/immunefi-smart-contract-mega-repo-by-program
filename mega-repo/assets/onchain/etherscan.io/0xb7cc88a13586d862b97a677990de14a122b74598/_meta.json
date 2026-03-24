@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xb7cc88a13586d862b97a677990de14a122b74598",
+  "host": "etherscan.io",
+  "address": "0xb7cc88a13586d862b97a677990de14a122b74598",
+  "chainid": 1,
+  "project_slug": "indexcoop",
+  "asset_id": "2lZ1Hc0IDUiYxjh5ORQOkz",
+  "contract_name": "ExchangeIssuanceLeveraged",
+  "compiler_version": "v0.6.10+commit.00c0fcaf",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x25a8803b9b611cc13d807829d73049cd803f6fca",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 36,
+  "mode": "json-sources"
+}

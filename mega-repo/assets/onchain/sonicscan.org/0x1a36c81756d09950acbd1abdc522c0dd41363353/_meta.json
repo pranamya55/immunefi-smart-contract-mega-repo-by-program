@@ -1,0 +1,8 @@
+{
+  "url": "https://sonicscan.org/address/0x1a36c81756d09950acbd1abdc522c0dd41363353",
+  "host": "sonicscan.org",
+  "address": "0x1a36c81756d09950acbd1abdc522c0dd41363353",
+  "chainid": 146,
+  "mode": "bytecode-v2-proxy",
+  "bytecode_length_hex_chars": 17828
+}

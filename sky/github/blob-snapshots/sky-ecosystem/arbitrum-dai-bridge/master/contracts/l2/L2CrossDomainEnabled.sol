@@ -1,0 +1,1 @@
+../../../../../../../../../mega-repo/assets/github/blob-snapshots/sky-ecosystem/arbitrum-dai-bridge/master/contracts/l2/L2CrossDomainEnabled.sol

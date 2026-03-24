@@ -1,0 +1,8 @@
+{
+  "url": "https://testnet.snowtrace.io/address/0xc1fbf54b25816b60adf322d8a1eaca37d9a50317",
+  "host": "testnet.snowtrace.io",
+  "address": "0xc1fbf54b25816b60adf322d8a1eaca37d9a50317",
+  "chainid": 43113,
+  "mode": "bytecode-v2-proxy",
+  "bytecode_length_hex_chars": 13764
+}

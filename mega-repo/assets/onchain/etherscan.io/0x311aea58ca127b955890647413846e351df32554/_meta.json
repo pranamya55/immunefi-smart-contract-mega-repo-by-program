@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x311aEA58Ca127B955890647413846E351df32554",
+  "host": "etherscan.io",
+  "address": "0x311aEA58Ca127B955890647413846E351df32554",
+  "chainid": 1,
+  "project_slug": "wepiggy",
+  "asset_id": "3TyRO8lasbBVW8173jXdTK",
+  "contract_name": "Timelock",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "0000000000000000000000008114b3854d1e7b7f5f14896537c321e9062284ce000000000000000000000000000000000000000000000000000000000002a300",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://3a38c3aaa5f01830241af900ee13519554c71f9d81387b6b55ed902c8c4dbfaf",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

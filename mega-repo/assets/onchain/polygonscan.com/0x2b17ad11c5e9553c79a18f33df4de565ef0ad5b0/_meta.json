@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0x2b17aD11c5e9553c79a18F33Df4dE565eF0ad5b0",
+  "host": "polygonscan.com",
+  "address": "0x2b17aD11c5e9553c79a18F33Df4dE565eF0ad5b0",
+  "chainid": 137,
+  "project_slug": "beefyfinance",
+  "asset_id": "19ImJbx3mo4QeNtxnvDBiv",
+  "contract_name": "BeefyVaultV6",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 11,
+  "mode": "json-sources"
+}

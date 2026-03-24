@@ -1,0 +1,24 @@
+{
+  "url": "https://basescan.org/address/0x08417cdb7F52a5021bB4eb6E0deAf3f295c3f182#code",
+  "host": "basescan.org",
+  "address": "0x08417cdb7F52a5021bB4eb6E0deAf3f295c3f182",
+  "chainid": 8453,
+  "project_slug": "parallel",
+  "asset_id": "6GBbfreBl0aMo0C5plX004",
+  "contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "1",
+  "runs": "999999",
+  "constructor_arguments": "",
+  "evm_version": "london",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "1",
+  "implementation": "0xb3dbece41acdd6ad76d037b8da2e53c58826746c",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 7,
+  "mode": "json-sources"
+}

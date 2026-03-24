@@ -1,0 +1,24 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0x31832f2a97Fd20664D76Cc421207669b55CE4BC0#code",
+  "host": "optimistic.etherscan.io",
+  "address": "0x31832f2a97Fd20664D76Cc421207669b55CE4BC0",
+  "chainid": 10,
+  "project_slug": "velodromefinance",
+  "asset_id": "zWJUsiN6toBykf3dsY22W",
+  "contract_name": "RootPoolFactory",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "00000000000000000000000010499d88bd32af443fc936f67de32be1c8bb374c000000000000000000000000f278761576f45472bdd721eaca19317ce159c011",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 5,
+  "mode": "json-sources"
+}

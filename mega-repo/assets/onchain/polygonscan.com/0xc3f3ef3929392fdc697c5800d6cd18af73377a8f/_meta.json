@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0xc3f3ef3929392fdc697c5800d6cd18af73377a8f",
+  "host": "polygonscan.com",
+  "address": "0xc3f3ef3929392fdc697c5800d6cd18af73377a8f",
+  "chainid": 137,
+  "project_slug": "thesandbox",
+  "asset_id": "3peFa2ygqBjUvG854xCUeN",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": "1",
+  "runs": "999999",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "1",
+  "implementation": "0x39a6964c29fd8dac86b5c785c506648238c8924f",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 4,
+  "mode": "json-sources"
+}

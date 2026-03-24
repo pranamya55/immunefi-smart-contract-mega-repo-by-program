@@ -1,0 +1,8 @@
+[[package]]
+name = "reassigning_via_references_to_values"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-4D30E5ABBEE9EB9E"

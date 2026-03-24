@@ -1,0 +1,66 @@
+x-common-vars:
+  # Bitcoin RPC
+  - &BITCOIN_RPC_USERNAME ${BITCOIN_RPC_USERNAME} # Required
+  - &BITCOIN_RPC_PASSWORD ${BITCOIN_RPC_PASSWORD} # Required
+  - &BITCOIN_RPC_PORT ${BITCOIN_RPC_PORT:-8332}
+  # Stacks RPC
+  - &STACKS_RPC_PORT ${STACKS_RPC_PORT:-20443}
+
+services:
+  bitcoin:
+    image: bitcoin/bitcoin:28.1@sha256:40c4d17f6cf0b560a61d33a1d97ccb8b6d407db29e614d2c598cb9b2483a4383
+    container_name: bitcoin
+    restart: on-failure:3
+    ports:
+      - name: bitcoin_rpc
+        target: *BITCOIN_RPC_PORT
+        published: *BITCOIN_RPC_PORT
+      - "8333:8333"  # I2P
+      - "8334:8334"  # P2P
+    volumes:
+      - /mnt/bitcoin:/bitcoin
+    environment:
+      BITCOIN_RPC_USERNAME: *BITCOIN_RPC_USERNAME
+      BITCOIN_RPC_PASSWORD: *BITCOIN_RPC_PASSWORD
+      BITCOIN_RPC_PORT: *BITCOIN_RPC_PORT
+      BITCOIN_DATA: /bitcoin/data
+    entrypoint:
+      - /bin/bash
+      - -c
+      - |
+        set -e
+        bitcoind \
+          -server \
+          -datadir=$${BITCOIN_DATA} \
+          -rpcbind=0.0.0.0 \
+          -rpcuser=$${BITCOIN_RPC_USERNAME} \
+          -rpcpassword=$${BITCOIN_RPC_PASSWORD} \
+          -rpcport=$${BITCOIN_RPC_PORT} \
+          -rpcallowip=0.0.0.0/0 \
+          -rpcallowip=::/0 \
+          -txindex
+
+  stacks-core:
+    # this version can be outdated, check the last image on: https://github.com/stacks-network/stacks-core/pkgs/container/stacks-core
+    image: ghcr.io/stacks-network/stacks-core:3.3.0.0.6@sha256:01c1d538f5b54e68e73f67a0034f13458c52d78837a0d4291e30a338cb34af32
+    container_name: stacks-core
+    restart: on-failure:3
+    ports:
+      - name: stacks_rpc
+        target: *STACKS_RPC_PORT
+        published: *STACKS_RPC_PORT
+      - 20444:20444 # P2P
+      - 9153:9153 # Metrics
+    volumes:
+      - ./nodes/stacks/Config.toml.in:/stacks/Config.toml.in:ro
+      - /mnt/stacks:/stacks
+    environment:
+      STACKS_RPC_PORT: *STACKS_RPC_PORT
+    entrypoint:
+      - /bin/bash
+      - -c
+      - |
+        set -ex
+        apt-get update && apt-get install -y gettext --no-install-recommends
+        envsubst < /stacks/Config.toml.in > /stacks/Config.toml
+        /bin/stacks-node start --config /stacks/Config.toml

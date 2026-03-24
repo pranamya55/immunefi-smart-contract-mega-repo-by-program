@@ -1,0 +1,8 @@
+[[package]]
+name = "generic_trait_constraints"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-755DC030AFA45A7B"

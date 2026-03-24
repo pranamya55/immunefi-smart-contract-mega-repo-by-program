@@ -1,0 +1,34 @@
+[
+  {
+    "project_slug": "variational",
+    "asset_id": "db_6e61022d-fd93-4f9e-9b57-b53ed0a311c0",
+    "url": "https://arbiscan.io/address/0x74bbbb0e7f0bad6938509dd4b556a39a4db1f2cd",
+    "description": "Core OLP Vault",
+    "added_at": "2026-03-13T09:13:46.362Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "variational",
+    "asset_id": "db_4bafb12e-d82d-41b4-bf94-3229e29b6138",
+    "url": "https://arbiscan.io/address/0x5e91b40467fb8902c46a7b6cb90482363188d645",
+    "description": "Variational Protocol Treasury",
+    "added_at": "2026-03-13T09:13:57.284Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "variational",
+    "asset_id": "db_505ec884-f2a0-4da5-9be6-031aad876017",
+    "url": "https://arbiscan.io/address/0x0F820B9afC270d658a9fD7D16B1Bdc45b70f074C",
+    "description": "Settlement Pool Factory Contract",
+    "added_at": "2026-03-13T09:14:06.889Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "variational",
+    "asset_id": "99191",
+    "url": "https://www.variational.io/",
+    "description": "Primacy of Impact Critical",
+    "added_at": "2026-03-13T09:20:13.451Z",
+    "revision": 0
+  }
+]

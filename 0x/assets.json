@@ -1,0 +1,18 @@
+[
+  {
+    "project_slug": "0x",
+    "asset_id": "2kq8YfrkfDfU3PjjmOLEaQ",
+    "url": "https://immunefi.com/",
+    "description": "Primacy of Impact",
+    "added_at": "2024-05-29T15:18:46.247Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "0x",
+    "asset_id": "3q6Ww4Zmb5xTFDecNIOyP9",
+    "url": "https://github.com/0xProject/0x-settler/tree/master/src",
+    "description": "0x Settler",
+    "added_at": "2024-05-29T15:17:15.386Z",
+    "revision": 0
+  }
+]

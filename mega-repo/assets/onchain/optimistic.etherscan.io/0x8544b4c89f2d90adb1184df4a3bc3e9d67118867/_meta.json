@@ -1,0 +1,19 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0x8544b4c89f2d90adb1184df4a3bc3e9d67118867",
+  "host": "optimistic.etherscan.io",
+  "address": "0x8544b4c89f2d90adb1184df4a3bc3e9d67118867",
+  "chainid": 10,
+  "contract_name": "IMXLendStrategy",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "0000000000000000000000006c29834a5e7359055b7f637a5ec1b29047c8e8da000000000000000000000000abcc0531d4cf0b4d6a92f1e5668696033a96f6d2",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "GNU GPLv3",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 52,
+  "mode": "recover-json-sources"
+}

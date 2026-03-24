@@ -1,0 +1,24 @@
+{
+  "url": "https://basescan.org/address/0x0c6dAf9B4e0EB49A0c80c325da82EC028Cb8118B",
+  "host": "basescan.org",
+  "address": "0x0c6dAf9B4e0EB49A0c80c325da82EC028Cb8118B",
+  "chainid": 8453,
+  "project_slug": "yelay",
+  "asset_id": "2mVeRdXpFm2fWJZecNirtZ",
+  "contract_name": "YelayLiteVault",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "10000",
+  "constructor_arguments": "0000000000000000000000001892e547f4e1ba76f82a09c16c9f774744de1ff300000000000000000000000030dfa736b3a20ed032e19894e7ce87ff95055e08000000000000000000000000833589fcd6edb6e08f4c7c32d4f71b54bda029130000000000000000000000001892e547f4e1ba76f82a09c16c9f774744de1ff300000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000002868747470733a2f2f6c6974652e79656c61792e696f2f626173652f6d657461646174612f7b69647d000000000000000000000000000000000000000000000000",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0xb2f722df58cbb704211f1ca628e63c82fc9f098d",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

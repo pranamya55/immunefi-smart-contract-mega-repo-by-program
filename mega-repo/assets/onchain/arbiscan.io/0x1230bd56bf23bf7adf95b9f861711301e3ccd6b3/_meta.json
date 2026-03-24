@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x1230bd56bf23Bf7adF95b9F861711301E3CCd6b3",
+  "host": "arbiscan.io",
+  "address": "0x1230bd56bf23Bf7adF95b9F861711301E3CCd6b3",
+  "chainid": 42161,
+  "project_slug": "inversefinance",
+  "asset_id": "2ubP2KjGTmS1NHe4c0B1aF",
+  "contract_name": "GovernanceProxy",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000141fa059441e0ca23ce184b6a78bafd2a517dde8000000000000000000000000aea8ae87a34a0faaea0e6bed9f4627f576b524fa00000000000000000000000000000000000000000000000045849994fc9c7b15",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 10,
+  "mode": "json-sources"
+}

@@ -1,0 +1,16 @@
+[[package]]
+name = "slice_intrinsics"
+source = "member"
+dependencies = [
+    "std",
+    "utils",
+]
+
+[[package]]
+name = "std"
+source = "path+from-root-53D6DC514F06A250"
+
+[[package]]
+name = "utils"
+source = "path+from-root-53D6DC514F06A250"
+dependencies = ["std"]

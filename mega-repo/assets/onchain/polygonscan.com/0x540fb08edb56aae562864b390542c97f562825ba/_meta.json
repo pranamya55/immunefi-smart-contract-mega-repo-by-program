@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0x540fb08edb56aae562864b390542c97f562825ba",
+  "host": "polygonscan.com",
+  "address": "0x540fb08edb56aae562864b390542c97f562825ba",
+  "chainid": 137,
+  "project_slug": "decentraland",
+  "asset_id": "SB7MImVv9Q21krvF1NQhd",
+  "contract_name": "DecentralandMarketplacePolygon",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000bcac4dafb7e215f2f6cb3312af6d5e4f9d9e7eda0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b08e3e7cc815213304d884c88ca476ebc50eaab200000000000000000000000000000000000000000000000000000000000061a800000000000000000000000090958d4531258ca11d18396d4174a007edbc2b4200000000000000000000000000000000000000000000000000000000000061a8000000000000000000000000a1c57f48f0deb89f569dfbe6e2b7f46d33606fd4000000000000000000000000a1cbf3fe43bc3501e3fc4b573e822c70e76a7512000000000000000000000000000000000000000000000000000000000000003c",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 41,
+  "mode": "json-sources"
+}

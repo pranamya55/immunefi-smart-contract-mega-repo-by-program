@@ -1,0 +1,19 @@
+{
+  "url": "https://moonbeam.moonscan.io/address/0x70085a09d30d6f8c4ecf6ee10120d1847383bb57",
+  "host": "moonbeam.moonscan.io",
+  "address": "0x70085a09d30d6f8c4ecf6ee10120d1847383bb57",
+  "chainid": 1284,
+  "contract_name": "StellaSwapV2Router02",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "00000000000000000000000068a384d826d3678f78bb9fb1533c7e9577dacc0e000000000000000000000000acc15dc74880c9944775448304b263d191c6077f",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "GNU GPLv3",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://dfc952936bd903dfc1c444a27ff6f5550a717473b04af57aa10ed5a8fc7636ca",
+  "files_written": 1,
+  "mode": "recover-single-file"
+}

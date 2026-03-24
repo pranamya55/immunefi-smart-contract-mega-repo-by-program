@@ -1,0 +1,16 @@
+node_modules
+**/node_modules
+*node_modules
+
+# logs
+yarn-error.log
+npm-debug.log
+
+# root folders
+.github
+dockerfiles
+.vscode
+
+# Ignore generated credentials from google-github-actions/auth
+gha-creds-*.json
+

@@ -1,0 +1,1698 @@
+[
+  {
+    "project_slug": "sky",
+    "asset_id": "2kCFFozzMVPDeP2r7Je2mj",
+    "url": "https://github.com/sky-ecosystem/dss/blob/master/src/dai.sol",
+    "description": "MCD_DAI",
+    "added_at": "2022-05-10T16:20:12.479Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3HLitoZoT2E4bd2d0E0hhF",
+    "url": "https://github.com/sky-ecosystem/dss/blob/master/src/spot.sol",
+    "description": "MCD_SPOT",
+    "added_at": "2022-05-10T16:20:13.500Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "5J4ijBifjUyiuRRmKNFuVn",
+    "url": "https://github.com/sky-ecosystem/dss/blob/master/src/pot.sol",
+    "description": "MCD_POT",
+    "added_at": "2022-05-10T16:20:14.516Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "53v85jYCi8GaYiIwt1uDX1",
+    "url": "https://github.com/sky-ecosystem/dss/blob/master/src/flap.sol",
+    "description": "MCD_FLAP",
+    "added_at": "2022-05-10T16:20:16.543Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1xjxGZ2NBtsJPIB2fhT8ox",
+    "url": "https://github.com/sky-ecosystem/dss/blob/master/src/flop.sol",
+    "description": "MCD_FLOP",
+    "added_at": "2022-05-10T16:20:17.504Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3yYYS6cTkRLG7hfJm7LkdV",
+    "url": "https://github.com/sky-ecosystem/dss/blob/master/src/vow.sol",
+    "description": "MCD_VOW",
+    "added_at": "2022-05-10T16:20:18.520Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1wAjMecZZukUKNbYfris3L",
+    "url": "https://github.com/dapphub/ds-weth/blob/master/src/weth9.sol",
+    "description": "MCD_ETH",
+    "added_at": "2022-05-10T16:20:19.546Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "2ApBAFBY5xyPWP8oZ4vk56",
+    "url": "https://github.com/sky-ecosystem/dss/blob/master/src/vat.sol",
+    "description": "MCD_VAT",
+    "added_at": "2022-05-10T16:20:20.537Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "e2CXPLOgneQjjWfyo6dXu",
+    "url": "https://github.com/sky-ecosystem/dss/blob/master/src/jug.sol",
+    "description": "MCD_JUG",
+    "added_at": "2022-05-10T16:20:21.562Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "7ew3hNzx4F5ACqxPT3xN9k",
+    "url": "https://github.com/sky-ecosystem/median/blob/master/src/median.sol",
+    "description": "Medians",
+    "added_at": "2022-05-10T16:20:22.513Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "oB7zwBB2WqyW50VGOwb0m",
+    "url": "https://github.com/sky-ecosystem/osm/blob/master/src/osm.sol",
+    "description": "OSM",
+    "added_at": "2022-05-10T16:20:23.562Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3zyGIwvAxJiuEndPG9Brw9",
+    "url": "https://github.com/sky-ecosystem/rwa-toolkit/blob/master/src/conduits/RwaInputConduit2.sol",
+    "description": "RwaInputConduit2",
+    "added_at": "2023-11-06T17:50:40.829Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "38cHyIw7A0JRjEvdbJrKQQ",
+    "url": "https://github.com/sky-ecosystem/rwa-toolkit/blob/master/src/conduits/RwaInputConduit.sol",
+    "description": "RwaInputConduit",
+    "added_at": "2023-11-06T17:51:47.187Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "7JoubHXvJ0dwTw9yE6g6Nc",
+    "url": "https://github.com/sky-ecosystem/rwa-toolkit/blob/master/src/conduits/RwaMultiSwapOutputConduit.sol",
+    "description": "RwaMultiSwapOutputConduit",
+    "added_at": "2023-11-06T17:52:06.956Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3hUGurS4ClSxw9YB9iJC9Y",
+    "url": "https://github.com/sky-ecosystem/rwa-toolkit/blob/master/src/conduits/RwaOutputConduit2.sol",
+    "description": "RwaOutputConduit2",
+    "added_at": "2023-11-06T17:52:35.843Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3hvEARB8XuRpK07HvzPXrB",
+    "url": "https://github.com/sky-ecosystem/rwa-toolkit/blob/master/src/conduits/RwaOutputConduit.sol",
+    "description": "RwaOutputConduit",
+    "added_at": "2023-11-06T17:53:04.340Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3PLsHzeoKkoVBavxHL9HDW",
+    "url": "https://github.com/sky-ecosystem/rwa-toolkit/blob/master/src/conduits/RwaSwapInputConduit2.sol",
+    "description": "RwaSwapInputConduit2",
+    "added_at": "2023-11-06T17:53:25.735Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "JpvVcCibrkh0GL73s3wyi",
+    "url": "https://github.com/sky-ecosystem/rwa-toolkit/blob/master/src/conduits/RwaSwapInputConduit.sol",
+    "description": "RwaSwapInputConduit",
+    "added_at": "2023-11-06T17:53:50.474Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "2WzT0Pyq8wuIPlDzj66DhN",
+    "url": "https://github.com/sky-ecosystem/rwa-toolkit/blob/master/src/conduits/RwaSwapOutputConduit.sol",
+    "description": "RwaSwapOutputConduit",
+    "added_at": "2023-11-06T17:54:11.401Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3Sx2bEZKy3gkk6lYhwBBTY",
+    "url": "https://github.com/sky-ecosystem/rwa-toolkit/blob/master/src/jars/RwaJar.sol",
+    "description": "RwaJar",
+    "added_at": "2023-11-06T17:54:30.950Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "uOksNg1r48RQtjCORn0nX",
+    "url": "https://github.com/sky-ecosystem/rwa-toolkit/blob/master/src/tokens/RwaToken.sol",
+    "description": "RwaToken",
+    "added_at": "2023-11-06T17:55:11.744Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4aSKX48dEZhUMq07DQZpzK",
+    "url": "https://github.com/sky-ecosystem/rwa-toolkit/blob/master/src/tokens/RwaTokenFactory.sol",
+    "description": "RwaTokenFactory",
+    "added_at": "2023-11-06T17:54:47.671Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "2p4LYyFKMXbkWAnM7MK07Q",
+    "url": "https://github.com/sky-ecosystem/rwa-toolkit/blob/master/src/urns/RwaUrn2.sol",
+    "description": "RwaUrn2",
+    "added_at": "2023-11-06T17:55:33.986Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "5TU8nFNbD3zB3hVbH9h9EY",
+    "url": "https://github.com/sky-ecosystem/rwa-toolkit/blob/master/src/urns/RwaUrn.sol",
+    "description": "RwaUrn",
+    "added_at": "2023-11-06T17:55:54.389Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "8CHcGrEq6Taezsc0mFP4O",
+    "url": "https://github.com/sky-ecosystem/dss-cdp-manager/blob/master/src/DssCdpManager.sol",
+    "description": "DssCdpManager",
+    "added_at": "2022-05-10T16:20:25.721Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1E5ilKCGBtCwicyVMkJe6s",
+    "url": "https://github.com/sky-ecosystem/dss-cdp-manager/blob/master/src/GetCdps.sol",
+    "description": "GetCdps",
+    "added_at": "2022-05-10T16:20:26.845Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "5oL4iWJU4mNFfUmXBwOWGc",
+    "url": "https://github.com/sky-ecosystem/dss-proxy-actions/blob/master/src/DssProxyActions.sol",
+    "description": "DssProxyActions",
+    "added_at": "2022-05-10T16:20:27.880Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3C28zGMqHrjK7bQkdcf4dz",
+    "url": "https://github.com/sky-ecosystem/dss-auto-line/blob/master/src/DssAutoLine.sol",
+    "description": "DssAutoLine",
+    "added_at": "2022-05-10T16:20:29.505Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3orm6ZkmFs0LGLiihPM2vm",
+    "url": "https://github.com/sky-ecosystem/clipper-mom/blob/master/src/ClipperMom.sol",
+    "description": "Clipper Mom",
+    "added_at": "2022-05-10T16:20:30.783Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "6JkpSHtlK7sOoxa2qJ40Cg",
+    "url": "https://github.com/sky-ecosystem/dsr-manager/blob/master/src/DsrManager.sol",
+    "description": "DsrManager",
+    "added_at": "2023-11-07T05:38:11.718Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "KK8eOxOp2mBXXhIiUGjHK",
+    "url": "https://github.com/sky-ecosystem/dss-exec-lib/blob/master/src/CollateralOpts.sol",
+    "description": "CollateralOpts",
+    "added_at": "2022-05-10T16:20:33.355Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "128qKTDF86cYImgFENjIlC",
+    "url": "https://github.com/sky-ecosystem/dss-exec-lib/blob/master/src/DssAction.sol",
+    "description": "DssAction",
+    "added_at": "2022-05-10T16:20:34.418Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "27BkshirpHE6OMEzFw2XWf",
+    "url": "https://github.com/sky-ecosystem/dss-exec-lib/blob/master/src/DssExec.sol",
+    "description": "DssExec",
+    "added_at": "2022-05-10T16:20:35.435Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "5jwiK6QTM1OjthoqyjOpFj",
+    "url": "https://github.com/sky-ecosystem/dss-exec-lib/blob/master/src/DssExecLib.sol",
+    "description": "DssExecLib",
+    "added_at": "2022-05-10T16:20:36.443Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "6XDUbImYWlIoZcpQq43BvU",
+    "url": "https://github.com/sky-ecosystem/dss-flappers/blob/master/src/FlapperMom.sol",
+    "description": "FlapperMom",
+    "added_at": "2023-11-07T05:40:18.942Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "CJtpUsjtUK2EEkbpJn6T5",
+    "url": "https://github.com/sky-ecosystem/dss-flappers/blob/master/src/FlapperUniV2.sol",
+    "description": "FlapperUniV2",
+    "added_at": "2023-11-07T05:40:37.234Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "42itPzztaYS6Q2jV8gtN2x",
+    "url": "https://github.com/sky-ecosystem/dss-flash/blob/master/src/flash.sol",
+    "description": "flash",
+    "added_at": "2023-11-07T05:41:00.641Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "6zJIeIwSvHbC1FD8vhZfXF",
+    "url": "https://github.com/sky-ecosystem/ilk-registry/blob/master/src/IlkRegistry.sol",
+    "description": "Ilk Registry",
+    "added_at": "2022-05-10T16:20:43.318Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "2m1Z4tuDhIEY2byrsUukgy",
+    "url": "https://github.com/sky-ecosystem/line-mom/blob/master/src/LineMom.sol",
+    "description": "LineMom",
+    "added_at": "2023-11-07T05:45:57.540Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "PJQn3Ugynj9B3x2hMZnth",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/ERC/GemAbstract.sol",
+    "description": "Gem Abstract",
+    "added_at": "2022-05-10T16:20:44.288Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "5ZNQgSUYDMmmmPSGBT4dcb",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dapp/DSAuthorityAbstract.sol",
+    "description": "DS Authority Abstract",
+    "added_at": "2022-05-10T16:20:45.307Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1m9aBFMVBpfQoKpIoyHv3X",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dapp/DSChiefAbstract.sol",
+    "description": "DS Chief Abstract",
+    "added_at": "2022-05-10T16:20:46.301Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4F46besNhxzrCjSQqkwSBa",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dapp/DSPauseAbstract.sol",
+    "description": "DS Pause Abstract",
+    "added_at": "2022-05-10T16:20:47.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4BHDGZf8ap2rm2lYihCkQc",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dapp/DSPauseProxyAbstract.sol",
+    "description": "DS Pause Proxy Abstract",
+    "added_at": "2022-05-10T16:20:48.322Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4T2cISxlooCRWnWRdFdy6C",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dapp/DSRolesAbstract.sol",
+    "description": "DS Roles Abstract",
+    "added_at": "2022-05-10T16:20:49.288Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1lmbbTeOQU3Of9HnEbrOva",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dapp/DSRuneAbstract.sol",
+    "description": "DS Rune Abstract",
+    "added_at": "2022-05-10T16:20:50.296Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1LHGljRMOAVmYvnnAc12TI",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dapp/DSSpellAbstract.sol",
+    "description": "DS Spell Abstract",
+    "added_at": "2022-05-10T16:20:51.332Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4BlMCLpu3fbHqwt4evoYtV",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dapp/DSThingAbstract.sol",
+    "description": "DS Thing Abstract",
+    "added_at": "2022-05-10T16:20:52.395Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4d245mb4IUGZtWFtgZzL7H",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dapp/DSTokenAbstract.sol",
+    "description": "DS Token Abstract",
+    "added_at": "2022-05-10T16:20:53.409Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "74EHDNtUPIJ9QQWmM2oFv4",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dapp/DSValueAbstract.sol",
+    "description": "DS Value Abstract",
+    "added_at": "2022-05-10T16:20:54.401Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "PntAcMRTjakS43HyL6pqG",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/AuthGemJoinAbstract.sol",
+    "description": "Auth Gem Join Abstract",
+    "added_at": "2022-05-10T16:20:55.459Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "5ZxnyeeRnD9bjm8bJhRWsE",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/CatAbstract.sol",
+    "description": "Cat Abstract",
+    "added_at": "2022-05-10T16:20:56.580Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "6OrJ5F0HWbhh5cK35HctxO",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/ChainlogAbstract.sol",
+    "description": "Chainlog Abstract",
+    "added_at": "2022-05-10T16:20:57.566Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "7Go8KEom3tAzhMOkIOELl0",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/ClipAbstract.sol",
+    "description": "Clip Abstract",
+    "added_at": "2022-05-10T16:20:58.969Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "Tr38v1jqjya5nflEs2h23",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/ClipperMomAbstract.sol",
+    "description": "Clipper Mom Abstract",
+    "added_at": "2022-05-10T16:20:59.996Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3FNrgyT7KotlGMVwREyEPq",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/DaiAbstract.sol",
+    "description": "Dai Abstract",
+    "added_at": "2022-05-10T16:21:01.260Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "7I3HiRbYcpjm5G0bXUDtMq",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/DaiJoinAbstract.sol",
+    "description": "DaiJoinAbstract",
+    "added_at": "2022-05-10T16:21:02.389Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "7qVWoxqTTadNOrCK0ipWKX",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/DogAbstract.sol",
+    "description": "Dog Abstract",
+    "added_at": "2022-05-10T16:21:03.513Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "7tKYz4bdwdk5MaRokL9AnY",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/DssAutoLineAbstract.sol",
+    "description": "Dss Auto Line Abstract",
+    "added_at": "2022-05-10T16:21:04.533Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "6POYH7fYk4rJNbP7YKHlIF",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/DssCdpManager.sol",
+    "description": "Dss Cdp Manager",
+    "added_at": "2022-05-10T16:21:05.546Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1cUmaKYPOawHgRsmKDwwsP",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/ETHJoinAbstract.sol",
+    "description": "ETH Join Abstract",
+    "added_at": "2022-05-10T16:21:07.688Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "18RCBZ3oE0NlLKxJfOwa0t",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/ExponentialDecreaseAbstract.sol",
+    "description": "Exponential Decrease Abstract",
+    "added_at": "2022-05-10T16:21:09.759Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "2jtXBNmhCW1VihjTqutwuK",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/FaucetAbstract.sol",
+    "description": "Faucet Abstract",
+    "added_at": "2022-05-10T16:21:10.748Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "tHQeVVkmZpF5WGO2d5TtV",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/FlapAbstract.sol",
+    "description": "Flap Abstract",
+    "added_at": "2022-05-10T16:21:11.850Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "6HSesu9u1PSFG024xNo8Ir",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/FlashAbstract.sol",
+    "description": "Flash Abstract",
+    "added_at": "2022-05-10T16:21:12.946Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1quehZDIzcX2c26HHY2pLd",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/FlipAbstract.sol",
+    "description": "Flip Abstract",
+    "added_at": "2022-05-10T16:21:13.902Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1k1bxqRGo5S5jSxe3ugkJW",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/FlipperMomAbstract.sol",
+    "description": "Flipper Mom Abstract",
+    "added_at": "2022-05-10T16:21:14.898Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4T88CXw4gNRxd8jWhwcJCA",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/FlopAbstract.sol",
+    "description": "Flop Abstract",
+    "added_at": "2022-05-10T16:21:15.987Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "2YTaSEyNuTug5XAyayYxwe",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/GemJoinAbstract.sol",
+    "description": "Gem Join Abstract",
+    "added_at": "2022-05-10T16:21:16.961Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "Ir4Sd54UJcRbTgjlIF3C4",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/GemJoinImplementationAbstract.sol",
+    "description": "Gem Join Implementation Abstract",
+    "added_at": "2022-05-10T16:21:17.937Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3skdqB0fKS2j4CbIOG4m5Y",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/GemJoinManagedAbstract.sol",
+    "description": "Gem Join Managed Abstract",
+    "added_at": "2022-05-10T16:21:18.920Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "6rO0cSAILcQV5gD7CUMlfr",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/GetCdpsAbstract.sol",
+    "description": "Get Cdps Abstract",
+    "added_at": "2022-05-10T16:21:19.915Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "305jp8sX6VnxeNDdm76Ot1",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/IlkRegistryAbstract.sol",
+    "description": "Ilk Registry Abstract",
+    "added_at": "2022-05-10T16:21:21.029Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "5n5S3u4JYDZxJC4NWDqhTa",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/JugAbstract.sol",
+    "description": "Jug Abstract",
+    "added_at": "2022-05-10T16:21:22.096Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4ecnCFM4WiXQ62bMyFVzWp",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/LPOsmAbstract.sol",
+    "description": "LPOsm Abstract",
+    "added_at": "2022-05-10T16:21:23.060Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "7wsbDg2Nvq8dzZWE3Ol3YT",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/LerpAbstract.sol",
+    "description": "Lerp Abstract",
+    "added_at": "2022-05-10T16:21:28.120Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "2ilzFnu8qVVJnvzrmuUin3",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/LerpFactoryAbstract.sol",
+    "description": "Lerp Factory Abstract",
+    "added_at": "2022-05-10T16:21:29.170Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "BsI7XuyZLd1C5Mi05RCUs",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/LinearDecreaseAbstract.sol",
+    "description": "Linear Decrease Abstract",
+    "added_at": "2022-05-10T16:21:30.206Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "5buG3mo5L8YCTqSHfELIKg",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/MKRAbstract.sol",
+    "description": "MKR Abstract",
+    "added_at": "2022-05-10T16:21:31.247Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "5PAp90Xwwb9EsV4P5SWjW2",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/MedianAbstract.sol",
+    "description": "Median Abstract",
+    "added_at": "2022-05-10T16:21:32.211Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1AGNp44t2rCv1KyMkDwvrw",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/MkrAuthorityAbstract.sol",
+    "description": "MKR Authority Abstract",
+    "added_at": "2022-05-10T16:21:33.673Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "7jWZs8L0ia37WFpEqIpm59",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/OsmAbstract.sol",
+    "description": "Osm Abstract",
+    "added_at": "2022-05-10T16:21:34.714Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "6DnEmW3QmXovPO5ykcb5u9",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/OsmMomAbstract.sol",
+    "description": "Osm Mom Abstract",
+    "added_at": "2022-05-10T16:21:35.844Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "R9z8kHPmX4sNo0TH81TLC",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/PipAbstract.sol",
+    "description": "Pip Abstract",
+    "added_at": "2022-05-10T16:21:36.854Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "6k0aS4XDdsfik2vdwFefy",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/PotAbstract.sol",
+    "description": "Pot Abstract",
+    "added_at": "2022-05-10T16:21:37.871Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "6NRyMZNNMUd6uKH9fxJPbj",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/PotHelper.sol",
+    "description": "Pot Helper",
+    "added_at": "2022-05-10T16:21:38.911Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "7xq4jq6mN7qlWGn6KOVZRq",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/PsmAbstract.sol",
+    "description": "Psm Abstract",
+    "added_at": "2022-05-10T16:21:39.906Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3E6FQsFFBQlaaeZmwgOZpf",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/SpotAbstract.sol",
+    "description": "Spot Abstract",
+    "added_at": "2022-05-10T16:21:41.038Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "veJuOwCuQOBoDHFbGi41u",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/StairstepExponentialDecreaseAbstract.sol",
+    "description": "Stairstep Exponential Decrease Abstract",
+    "added_at": "2022-05-10T16:21:42.015Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "6l2ZhbPPZbSSbFurdJyhUM",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/VatAbstract.sol",
+    "description": "Vat Abstract",
+    "added_at": "2022-05-10T16:21:43.302Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "5qvLp90KyyFgO4HDP6RBwK",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/VestAbstract.sol",
+    "description": "Vest Abstract",
+    "added_at": "2022-05-10T16:21:44.393Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "2VftUlTWCGMzp1Wrz7AyAk",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/dss/VowAbstract.sol",
+    "description": "Vow Abstract",
+    "added_at": "2022-05-10T16:21:45.381Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "7AranBBEkEwuW9xlSAoJNo",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/sai/GemPitAbstract.sol",
+    "description": "Gem Pit Abstract",
+    "added_at": "2022-05-10T16:21:46.339Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "36CO9wcBdZlGJkf34fsevt",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/sai/SaiMomAbstract.sol",
+    "description": "Sai Mom Abstract",
+    "added_at": "2022-05-10T16:21:47.835Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1IpTr7KIQvr6Si3CFyyVT6",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/sai/SaiTapAbstract.sol",
+    "description": "Sai Tap Abstract",
+    "added_at": "2022-05-10T16:21:48.866Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "2XCXJsRGdrEwRIzJZSnwzY",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/sai/SaiTokenAbstract.sol",
+    "description": "Sai Token Abstract",
+    "added_at": "2022-05-10T16:21:49.919Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1hDCAFfNeKZWgytZ9dgg1G",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/sai/SaiTopAbstract.sol",
+    "description": "Sai Top Abstract",
+    "added_at": "2022-05-10T16:21:50.933Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1WXtGbv8hZ8Wu75BdZt8Hr",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/sai/SaiTubAbstract.sol",
+    "description": "Sai Tub Abstract",
+    "added_at": "2022-05-10T16:21:51.969Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "5dwVJtFNqpn7z46EPsIQ04",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/sai/SaiVoxAbstract.sol",
+    "description": "Sai Vox Abstract",
+    "added_at": "2022-05-10T16:21:52.965Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "5rCEOIifQN1qS2d4vqwQAh",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/utils/WardsAbstract.sol",
+    "description": "Wards Abstract",
+    "added_at": "2022-05-10T16:21:53.967Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "isieC5rute3t4mkSDmb19",
+    "url": "https://github.com/sky-ecosystem/dss-interfaces/blob/master/src/Interfaces.sol",
+    "description": "Interfaces (Abstracts)",
+    "added_at": "2022-05-10T16:21:54.972Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "6J14UqNUaqtIYhaZb7zvPT",
+    "url": "https://github.com/sky-ecosystem/dss-vest/blob/master/src/DssVest.sol",
+    "description": "Dss Vest",
+    "added_at": "2022-05-10T16:21:55.990Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4ErHIpVPumH4qzGqoaNmFG",
+    "url": "https://github.com/sky-ecosystem/dss-gem-joins/blob/v1.2/src/join-auth.sol",
+    "description": "Join Auth",
+    "added_at": "2022-05-10T16:21:56.965Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "35cIoSTFVNBCGmPF443ORR",
+    "url": "https://github.com/sky-ecosystem/dss-gem-joins/blob/v1.2/src/join-2.sol",
+    "description": "Join 2",
+    "added_at": "2022-05-10T16:21:58.024Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4F1RxHYRKCfEpHHwcr224i",
+    "url": "https://github.com/sky-ecosystem/dss-gem-joins/blob/v1.2/src/join-3.sol",
+    "description": "Join 3",
+    "added_at": "2022-05-10T16:21:59.052Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3YPomU3962w4EIheseWVNN",
+    "url": "https://github.com/sky-ecosystem/dss-gem-joins/blob/v1.2/src/join-4.sol",
+    "description": "Join 4",
+    "added_at": "2022-05-10T16:22:00.044Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1M6DOrazwwqmdS3pYTew6T",
+    "url": "https://github.com/sky-ecosystem/dss-gem-joins/blob/v1.2/src/join-5.sol",
+    "description": "Join 5",
+    "added_at": "2022-05-10T16:22:01.119Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1yQfJ3jChc0N3opQ0HfAyC",
+    "url": "https://github.com/sky-ecosystem/dss-gem-joins/blob/v1.2/src/join-6.sol",
+    "description": "Join 6",
+    "added_at": "2022-05-10T16:22:06.838Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3uUxn28s6bDrgC0adyHqHp",
+    "url": "https://github.com/sky-ecosystem/dss-gem-joins/blob/v1.2/src/join-7.sol",
+    "description": "Join 7",
+    "added_at": "2022-05-10T16:22:12.834Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "2uyKP2tFG9jLBVDEAzNBDg",
+    "url": "https://github.com/sky-ecosystem/dss-gem-joins/blob/v1.2/src/join-8.sol",
+    "description": "Join 8",
+    "added_at": "2022-05-10T16:22:13.923Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3AId2A6v3edNTfjs6KdVZz",
+    "url": "https://github.com/sky-ecosystem/dss/blob/v1.2/src/join.sol",
+    "description": "Join",
+    "added_at": "2022-05-10T16:22:14.994Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "5QTxKZW6KytpiJ5tDsdB07",
+    "url": "https://github.com/sky-ecosystem/dss/blob/c8d4c806691dacb903ff281b81f316bea974e4c7/src/abaci.sol",
+    "description": "Abaci",
+    "added_at": "2022-05-10T16:22:16.322Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "7uiTWgJpK2dFLGAiSaJOG5",
+    "url": "https://github.com/sky-ecosystem/dss-psm/blob/master/src/join-5-auth.sol",
+    "description": "Join 5 Auth",
+    "added_at": "2022-05-10T16:22:17.552Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "5IaBINjOFX0RAtUMSJkKDw",
+    "url": "https://github.com/sky-ecosystem/dss-psm/blob/master/src/join-8-auth.sol",
+    "description": "Join 8 Auth",
+    "added_at": "2022-05-10T16:22:18.606Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3txn0Nuh6670tjM52pzoNq",
+    "url": "https://github.com/sky-ecosystem/dss-psm/blob/master/src/join-auth.sol",
+    "description": "Join Auth (Dss PSM)",
+    "added_at": "2022-05-10T16:22:19.636Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3DvlwZqNLBTsiEcvVSTMFf",
+    "url": "https://github.com/sky-ecosystem/dss-psm/blob/master/src/psm.sol",
+    "description": "PSM",
+    "added_at": "2022-05-10T16:22:20.813Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "uWIFflU3kl91gx77D0tlz",
+    "url": "https://github.com/sky-ecosystem/dss/blob/master/src/dog.sol",
+    "description": "Dss Dog",
+    "added_at": "2022-05-10T16:22:24.005Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3ronZDMZCiJYYysEaiOkax",
+    "url": "https://github.com/sky-ecosystem/dss/blob/master/src/clip.sol",
+    "description": "Dss Clip",
+    "added_at": "2022-05-10T16:22:26.074Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "47YNMt9z3o4FPGj9Km1zN9",
+    "url": "https://github.com/sky-ecosystem/optimism-dai-bridge/blob/master/contracts/l1/L1DAITokenBridge.sol",
+    "description": "L1 DAI Token Bridge (Optimism DAI Bridge)",
+    "added_at": "2022-05-10T16:22:27.139Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1rjLCrZW6EVqMYiiYLNw5v",
+    "url": "https://github.com/sky-ecosystem/optimism-dai-bridge/blob/master/contracts/l1/L1Escrow.sol",
+    "description": "L1 Escrow (Optimism DAI Bridge)",
+    "added_at": "2022-05-10T16:22:28.203Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1RCONIb0mqV8xKWhPFdNnP",
+    "url": "https://github.com/sky-ecosystem/optimism-dai-bridge/blob/master/contracts/l1/L1GovernanceRelay.sol",
+    "description": "L1 Governance Relay (Optimism DAI Bridge)",
+    "added_at": "2022-05-10T16:22:29.252Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3xsDK7Rfe3ymIOn6Yp5nxc",
+    "url": "https://github.com/sky-ecosystem/optimism-dai-bridge/blob/master/contracts/l2/L2DAITokenBridge.sol",
+    "description": "L2 DAI Token Bridge (Optimism DAI Bridge)",
+    "added_at": "2022-05-10T16:22:30.488Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3J95qoCBauhtu3uduu7lEA",
+    "url": "https://github.com/sky-ecosystem/optimism-dai-bridge/blob/master/contracts/l2/L2GovernanceRelay.sol",
+    "description": "L2 Governance Relay (Optimism DAI Bridge)",
+    "added_at": "2022-05-10T16:22:31.544Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "6lS1J6L9kGYiKtHpvITfEb",
+    "url": "https://github.com/sky-ecosystem/optimism-dai-bridge/blob/master/contracts/l2/dai.sol",
+    "description": "DAI (Optimism DAI Bridge)",
+    "added_at": "2022-05-10T16:22:32.574Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "2pOY78EJhYz2Oin163soVj",
+    "url": "https://github.com/sky-ecosystem/arbitrum-dai-bridge/blob/master/contracts/l1/L1CrossDomainEnabled.sol",
+    "description": "L1 Cross Domain Enabled (Arbitrum DAI Bridge)",
+    "added_at": "2022-05-10T16:22:33.594Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "2obQSIhKWYH2Ar8uVIz0ik",
+    "url": "https://github.com/sky-ecosystem/arbitrum-dai-bridge/blob/master/contracts/l1/L1DaiGateway.sol",
+    "description": "L1 DAI Gateway (Arbitrum DAI Bridge)",
+    "added_at": "2022-05-10T16:22:34.593Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "48thP6ObsDChA9De51nX32",
+    "url": "https://github.com/sky-ecosystem/arbitrum-dai-bridge/blob/master/contracts/l1/L1Escrow.sol",
+    "description": "L1 Escrow (Arbitrum DAI Bridge)",
+    "added_at": "2022-05-10T16:22:35.680Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "2ZQg1wICyl4kC4s7zvC6wa",
+    "url": "https://github.com/sky-ecosystem/arbitrum-dai-bridge/blob/master/contracts/l1/L1GovernanceRelay.sol",
+    "description": "L1 Governance Relay (Arbitrum DAI Bridge)",
+    "added_at": "2022-05-10T16:22:36.682Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "58Kk2UoheVWaEksaPrW6Ez",
+    "url": "https://github.com/sky-ecosystem/arbitrum-dai-bridge/blob/master/contracts/l1/L1ITokenGateway.sol",
+    "description": "L1 Token Gateway (Arbitrum DAI Bridge)",
+    "added_at": "2022-05-10T16:22:37.648Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4U61YRDvACWAhKokhqtbf0",
+    "url": "https://github.com/sky-ecosystem/arbitrum-dai-bridge/blob/master/contracts/l2/L2CrossDomainEnabled.sol",
+    "description": "L2 Cross Domain Enabled (Arbitrum DAI Bridge)",
+    "added_at": "2022-05-10T16:22:38.687Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3RXq0dYQlFyj98T9kNe5vP",
+    "url": "https://github.com/sky-ecosystem/arbitrum-dai-bridge/blob/master/contracts/l2/L2DaiGateway.sol",
+    "description": "L2 DAI Gateway (Arbitrum DAI Bridge)",
+    "added_at": "2022-05-10T16:22:39.672Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4ACCBfbRuY3BpwrRVuopC9",
+    "url": "https://github.com/sky-ecosystem/arbitrum-dai-bridge/blob/master/contracts/l2/L2GovernanceRelay.sol",
+    "description": "L2 Governance Relay (Arbitrum DAI Bridge)",
+    "added_at": "2022-05-10T16:22:41.024Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "31yzL0yhdUiC5PISzidXWp",
+    "url": "https://github.com/sky-ecosystem/arbitrum-dai-bridge/blob/master/contracts/l2/L2ITokenGateway.sol",
+    "description": "L2 Token Gateway (Arbitrum DAI Bridge)",
+    "added_at": "2022-05-10T16:22:42.187Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "61LO9dEYlLZepRLRQo1muf",
+    "url": "https://github.com/sky-ecosystem/arbitrum-dai-bridge/blob/master/contracts/l2/dai.sol",
+    "description": "DAI (Arbitrum DAI Bridge)",
+    "added_at": "2022-05-10T16:22:43.229Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3AETksx4FpzDuuHAGAg2tF",
+    "url": "https://github.com/sky-ecosystem/starknet-dai-bridge/blob/main/contracts/l1/L1DAIBridge.sol",
+    "description": "L1DAIBridge (StarkNet)",
+    "added_at": "2022-11-02T22:25:43.364Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "5OZPkEdJHuN0Sm0J2aIx50",
+    "url": "https://github.com/sky-ecosystem/starknet-dai-bridge/blob/main/contracts/l1/L1Escrow.sol",
+    "description": "L1Escrow (StarkNet)",
+    "added_at": "2022-11-02T22:26:05.887Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4Am2PeUQZQvYYqr3uBOFT",
+    "url": "https://github.com/sky-ecosystem/starknet-dai-bridge/blob/main/contracts/l1/L1EscrowMom.sol",
+    "description": "L1EscrowMom (StarkNet)",
+    "added_at": "2022-11-02T22:26:28.272Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "6SS8Dq8OrN3Lsqwu17Eoz9",
+    "url": "https://github.com/sky-ecosystem/starknet-dai-bridge/blob/main/contracts/l1/L1GovernanceRelay.sol",
+    "description": "L1GovernanceRelay (StarkNet)",
+    "added_at": "2022-11-02T22:27:01.494Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "55QVLUqtREj4OnVYmcIiAw",
+    "url": "https://github.com/sky-ecosystem/starknet-dai-bridge/blob/main/contracts/l2/dai.cairo",
+    "description": "dai (StarkNet)",
+    "added_at": "2022-11-02T22:27:30.698Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "6AKd69REJdg8tW6UBZ0LTA",
+    "url": "https://github.com/sky-ecosystem/starknet-dai-bridge/blob/main/contracts/l2/l2_dai_bridge.cairo",
+    "description": "l2_dai_bridge (StarkNet)",
+    "added_at": "2022-11-02T22:28:01.696Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "7w4SbA1jQ62fPRf5nx7XTB",
+    "url": "https://github.com/sky-ecosystem/starknet-dai-bridge/blob/main/contracts/l2/l2_governance_relay.cairo",
+    "description": "l2_governance_relay (StarkNet)",
+    "added_at": "2022-11-02T22:28:35.868Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4d5rGDyHK5WLwQB7CV0ZSj",
+    "url": "https://github.com/sky-ecosystem/starknet-dai-bridge/blob/main/contracts/l2/registry.cairo",
+    "description": "registry (StarkNet)",
+    "added_at": "2022-11-02T22:29:39.919Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "2yDnY5r58Er7d85tkzyLZA",
+    "url": "https://github.com/sky-ecosystem/dss-chain-log/blob/master/src/ChainLog.sol",
+    "description": "ChainLog",
+    "added_at": "2022-05-10T16:22:44.283Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1cB2G4Db9pHN81FkVCjoBd",
+    "url": "https://github.com/sky-ecosystem/dss-direct-deposit/blob/master/src/D3MHub.sol",
+    "description": "D3MHub",
+    "added_at": "2022-12-06T02:53:50.375Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1IeE6DTJ5YCF5y70DDF0kz",
+    "url": "https://github.com/sky-ecosystem/dss-direct-deposit/blob/master/src/D3MMom.sol",
+    "description": "D3MMom",
+    "added_at": "2022-12-06T02:54:20.652Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "5Vh6vF2uW9yM8xam1vzCdS",
+    "url": "https://github.com/sky-ecosystem/dss-direct-deposit/blob/master/src/D3MOracle.sol",
+    "description": "D3MOracle",
+    "added_at": "2022-12-06T02:54:50.109Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "695anHwMGcZdghB6pKDes8",
+    "url": "https://github.com/sky-ecosystem/mip21-toolkit/blob/master/src/oracles/RwaLiquidationOracle.sol",
+    "description": "MIP21_Liquidation_Oracle",
+    "added_at": "2023-04-22T13:37:48.879Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "7yu3GqKzRnhdi1u5u6ZqNP",
+    "url": "https://github.com/sky-ecosystem/mkr-authority/blob/master/src/MkrAuthority.sol",
+    "description": "MkrAuthority",
+    "added_at": "2023-11-07T06:04:00.394Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "iYg6edqbeOkJT3Ue65oIW",
+    "url": "https://github.com/sky-ecosystem/univ2-lp-oracle/blob/master/src/UNIV2LPOracle.sol",
+    "description": "UNIV2LPOracle",
+    "added_at": "2023-04-28T22:22:00.104Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4BPviZbzo1sKUNkcJnVkhr",
+    "url": "https://github.com/sky-ecosystem/univ3-lp-oracle/blob/master/src/GUniLPOracle.sol",
+    "description": "GUniLPOracle",
+    "added_at": "2023-04-28T22:22:15.426Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "bZrUnJHpiBwUYNqPm9UHA",
+    "url": "https://github.com/sky-ecosystem/dss-lite-psm/blob/main/src/DssLitePsmMom.sol",
+    "description": "DssLitePsmMom",
+    "added_at": "2024-08-01T06:41:16.294Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "DKQo34uQE1U8hPcxc6mTF",
+    "url": "https://github.com/sky-ecosystem/dss-lite-psm/blob/main/src/DssLitePsm.sol",
+    "description": "DssLitePsm",
+    "added_at": "2024-08-01T06:41:42.327Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4XwvZXgFCDQkZ1UzWB2aT9",
+    "url": "https://github.com/sky-ecosystem/dss-direct-deposit/blob/master/src/plans/D3MOperatorPlan.sol",
+    "description": "D3MOperatorPlan",
+    "added_at": "2024-08-19T04:26:53.133Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4FHbquMch65xbeEMzIkMp2",
+    "url": "https://github.com/sky-ecosystem/dss-direct-deposit/blob/master/src/pools/D3M4626TypePool.sol",
+    "description": "D3M4626TypePool",
+    "added_at": "2024-08-19T04:27:20.012Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "2HQobGpS0pCuRDR2bvrwIc",
+    "url": "https://github.com/sky-ecosystem/endgame-toolkit/blob/master/src/VestedRewardsDistribution.sol",
+    "description": "Vested Rewards Distribution",
+    "added_at": "2024-09-24T16:47:05.025Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1YZxubJxU5lTW4ACLHJwT9",
+    "url": "https://github.com/sky-ecosystem/endgame-toolkit/blob/master/src/synthetix/StakingRewards.sol",
+    "description": "SKY Staking Rewards",
+    "added_at": "2024-09-24T16:47:21.860Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "szzoPSeCBqa3m091XUK96",
+    "url": "https://github.com/sky-ecosystem/endgame-toolkit/blob/master/src/SDAO.sol",
+    "description": "SubDAO ERC20",
+    "added_at": "2024-09-24T16:47:49.958Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3z7DQhiOa3NSH2CdHtapBV",
+    "url": "https://github.com/sky-ecosystem/endgame-toolkit/blob/master/src/SubProxy.sol",
+    "description": "SubDAO Proxy for Ownership",
+    "added_at": "2024-09-24T16:48:08.059Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "39HizRuKEgPhbSrwjZ6HnD",
+    "url": "https://github.com/sky-ecosystem/usds/blob/dev/src/UsdsJoin.sol",
+    "description": "USDSJoin",
+    "added_at": "2024-09-24T16:48:26.972Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3V3BieInrS0PLo0BbEq4kk",
+    "url": "https://github.com/sky-ecosystem/usds/blob/dev/src/Usds.sol",
+    "description": "USDS ERC20",
+    "added_at": "2024-09-24T16:48:43.660Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "74s92EEn1hNbt4kOSowVud",
+    "url": "https://github.com/sky-ecosystem/usds/blob/dev/src/DaiUsds.sol",
+    "description": "DAI to USDS Converter",
+    "added_at": "2024-09-24T16:49:03.487Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3d2oG8MOFQ17rSIhF8lNrT",
+    "url": "https://github.com/sky-ecosystem/sky/blob/dev/src/Sky.sol",
+    "description": "SKY ERC20",
+    "added_at": "2024-09-24T16:49:17.564Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4X9IEjLQI10wYKaQo2Wfx5",
+    "url": "https://github.com/sky-ecosystem/sky/blob/one-direction/src/MkrSky.sol",
+    "description": "MKR to SKY Converter",
+    "added_at": "2024-09-24T16:49:32.321Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "2nzDUKdOkI32e6z0CFeV3o",
+    "url": "https://github.com/sky-ecosystem/sdai/blob/susds/src/SUsds.sol",
+    "description": "sUSDS",
+    "added_at": "2024-09-24T16:49:47.121Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "7oRIsmbOve0pgEOApFfQ5V",
+    "url": "https://github.com/sky-ecosystem/lockstake/blob/v2/src/LockstakeSky.sol",
+    "description": "LSSKY ERC20",
+    "added_at": "2024-09-24T16:50:03.856Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "2H5JxhuCOSA1j5t9oeWwBV",
+    "url": "https://github.com/sky-ecosystem/lockstake/blob/v2/src/LockstakeEngine.sol",
+    "description": "Lockstake Engine",
+    "added_at": "2024-09-24T16:50:20.130Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "78d1cPYQPwsSVAfS0kKqsH",
+    "url": "https://github.com/sky-ecosystem/lockstake/blob/v2/src/LockstakeClipper.sol",
+    "description": "Lockstake Clipper",
+    "added_at": "2024-09-24T16:50:34.068Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "6JoftH6d81KzAbYEkxix9A",
+    "url": "https://github.com/sky-ecosystem/vote-delegate/blob/v3/src/VoteDelegate.sol",
+    "description": "Vote Delegate",
+    "added_at": "2024-09-24T16:50:47.711Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "zvX4Su3JpuRojr8Sl8Ny7",
+    "url": "https://github.com/sky-ecosystem/vote-delegate/blob/v3/src/VoteDelegateFactory.sol",
+    "description": "Vote Delegate Factory",
+    "added_at": "2024-09-24T16:51:02.392Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1PiPEDijIUGLm7SGJtLcE3",
+    "url": "https://github.com/sky-ecosystem/dss-flappers/blob/dev/src/FlapperUniV2.sol",
+    "description": "FlapperUniV2",
+    "added_at": "2024-09-24T16:51:25.555Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1wLLtmGCBXzVUMDNcxOOE5",
+    "url": "https://github.com/sky-ecosystem/dss-flappers/blob/dev/src/FlapperUniV2SwapOnly.sol",
+    "description": "FlapperUniV2SwapOnly",
+    "added_at": "2024-09-24T16:51:43.061Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4SNcitHhALukieoLsrVrvs",
+    "url": "https://github.com/sky-ecosystem/dss-flappers/blob/dev/src/OracleWrapper.sol",
+    "description": "Oracle Wrapper",
+    "added_at": "2024-09-24T16:52:15.429Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3wD3OGLW7P6osta2OjDOvl",
+    "url": "https://github.com/sky-ecosystem/dss-flappers/blob/dev/src/Splitter.sol",
+    "description": "Splitter",
+    "added_at": "2024-09-24T16:52:29.471Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4XeDi1XPdkvZhXehNEl0ca",
+    "url": "https://github.com/sky-ecosystem/dss-flappers/blob/dev/src/SplitterMom.sol",
+    "description": "SplitterMom",
+    "added_at": "2024-09-24T16:52:47.774Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "katflgh46gigZ727LcOo8",
+    "url": "https://github.com/sky-ecosystem/univ2-pool-migrator/blob/dev/deploy/UniV2PoolMigratorInit.sol",
+    "description": "UniV2PoolMigratorInit",
+    "added_at": "2024-09-24T16:53:02.870Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "5k1krSdq2A4BqHv0dwoW2y",
+    "url": "https://github.com/sky-ecosystem/lockstake/blob/v2/src/LockstakeUrn.sol",
+    "description": "Lockstake Urn",
+    "added_at": "2025-06-03T15:15:46.307Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "6n5qtWTuzdpXFWaH6pQbU3",
+    "url": "https://github.com/sky-ecosystem/dss-allocator/blob/dev/src/AllocatorOracle.sol",
+    "description": "Allocator Oracle",
+    "added_at": "2025-06-03T15:17:24.742Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "2Vf1wI7vaXeOqI7SeQN2I8",
+    "url": "https://github.com/sky-ecosystem/dss-allocator/blob/dev/src/AllocatorVault.sol",
+    "description": "Allocator Vault",
+    "added_at": "2025-06-03T15:18:22.696Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "6fX4b7W0xmkVoko786PFgM",
+    "url": "https://github.com/sky-ecosystem/dss-allocator/blob/dev/src/AllocatorRoles.sol",
+    "description": "Allocator Roles",
+    "added_at": "2025-06-03T15:26:28.567Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1yUxB2m32y2vYYphNnqrna",
+    "url": "https://github.com/sky-ecosystem/dss-allocator/blob/dev/src/AllocatorRegistry.sol",
+    "description": "Allocator Registry",
+    "added_at": "2025-06-03T15:26:51.792Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1bbO6Dybdca7Tg2dWch2ei",
+    "url": "https://github.com/sky-ecosystem/dss-allocator/blob/dev/src/AllocatorBuffer.sol",
+    "description": "Allocator Buffer",
+    "added_at": "2025-06-03T15:27:12.446Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3WkhHLkGYgRjE7aArRVBfA",
+    "url": "https://github.com/sky-ecosystem/op-token-bridge/blob/master/src/Escrow.sol",
+    "description": "Optimism Escrow",
+    "added_at": "2025-06-03T15:27:27.859Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4lUejt1wsO3DX4Mmx2Ysuf",
+    "url": "https://github.com/sky-ecosystem/op-token-bridge/blob/master/src/L1GovernanceRelay.sol",
+    "description": "Optimism L1 Governance Relay",
+    "added_at": "2025-06-03T15:27:50.315Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1KqF7B1qqoh0SToCx9EFKT",
+    "url": "https://github.com/sky-ecosystem/op-token-bridge/blob/master/src/L1TokenBridge.sol",
+    "description": "Optimism L1 Token Bridge",
+    "added_at": "2025-06-03T15:28:10.802Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4O6ObjZohyBQfi0mgJxlF9",
+    "url": "https://github.com/sky-ecosystem/op-token-bridge/blob/master/src/L2GovernanceRelay.sol",
+    "description": "Optimism L2 Governance Relay",
+    "added_at": "2025-06-03T15:28:31.846Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "5BXJB5lz2BSWdem80kY2At",
+    "url": "https://github.com/sky-ecosystem/op-token-bridge/blob/master/src/L2TokenBridge.sol",
+    "description": "Optimism L2 Token Bridge",
+    "added_at": "2025-06-03T15:28:50.568Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "6JUwURwsef0xDKq85qBJBX",
+    "url": "https://github.com/sky-ecosystem/dss-emergency-spells/blob/master/src/DssEmergencySpell.sol",
+    "description": "DssEmergencySpell",
+    "added_at": "2025-06-03T15:29:08.561Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "2Z8xCDr4oaXON0mAF0y69k",
+    "url": "https://github.com/sky-ecosystem/dss-emergency-spells/blob/master/src/DssGroupedEmergencySpell.sol",
+    "description": "DssGroupedEmergencySpell",
+    "added_at": "2025-06-03T15:29:53.160Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4aP3Sz0ZKYIshhujo2pySd",
+    "url": "https://github.com/sky-ecosystem/dss-emergency-spells/tree/master/src/clip-breaker",
+    "description": "EMSP_GLOBAL_CLIP_BREAKER",
+    "added_at": "2025-06-03T15:31:21.145Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "2Hu35EuWJpX6JUPeQxlzQQ",
+    "url": "https://github.com/sky-ecosystem/dss-emergency-spells/tree/master/src/line-wipe",
+    "description": "EMSP_GLOBAL_LINE_WIPE",
+    "added_at": "2025-06-03T15:31:38.706Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1RgnA5qmWjUMQOjYZA3dEI",
+    "url": "https://github.com/sky-ecosystem/dss-emergency-spells/tree/master/src/osm-stop",
+    "description": "EMSP_GLOBAL_OSM_STOP",
+    "added_at": "2025-06-03T15:31:54.754Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "2owyG5gn55f3pTncRGUbIZ",
+    "url": "https://github.com/sky-ecosystem/dss-emergency-spells/tree/master/src/ddm-disable",
+    "description": "EMSP_DDM_DISABLE_FAB",
+    "added_at": "2025-06-03T15:32:13.591Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "qQgeSZmNr6lThQ844g5ud",
+    "url": "https://github.com/sky-ecosystem/dss-emergency-spells/tree/master/src/lite-psm-halt",
+    "description": "EMSP_LITE_PSM_HALT_FAB",
+    "added_at": "2025-06-03T15:32:29.684Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4hcfhjlFdCQJ5SHlcFh3I6",
+    "url": "https://github.com/sky-ecosystem/dss-emergency-spells/tree/master/src/splitter-stop",
+    "description": "EMSP_SPLITTER_STOP",
+    "added_at": "2025-06-03T15:32:47.883Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "2SIOBrsNeMkZGnfY3Qoinp",
+    "url": "https://github.com/sky-ecosystem/arbitrum-token-bridge/blob/master/src/L1TokenGateway.sol",
+    "description": "Arbitrum L1 Token Gateway",
+    "added_at": "2025-06-03T15:33:08.711Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "6DZagcuff2RRZAnpSoTsMx",
+    "url": "https://github.com/sky-ecosystem/arbitrum-token-bridge/blob/master/src/L2TokenGateway.sol",
+    "description": "Arbitrum L2 Token Gateway",
+    "added_at": "2025-06-03T15:33:32.589Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "21MUtobHBHbeAJHUdQeXmw",
+    "url": "https://github.com/sky-ecosystem/dss-blow2/blob/master/src/DssBlow2.sol",
+    "description": "Blow 2",
+    "added_at": "2025-06-03T15:33:49.912Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "5TpoBWRPmmz1nJrGOyRPz8",
+    "url": "https://github.com/sky-ecosystem/sp-beam/blob/master/src/SPBEAM.sol",
+    "description": "SPBeam",
+    "added_at": "2025-06-03T15:34:09.592Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "5KKEdcl5k581oiJAPJ9uit",
+    "url": "https://github.com/sky-ecosystem/sp-beam/blob/master/src/SPBEAMMom.sol",
+    "description": "SPBeam Mom",
+    "added_at": "2025-06-03T15:34:26.640Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "32bUe0Di9ijqMK89EMpPhW",
+    "url": "https://github.com/sky-ecosystem/dss-emergency-spells/tree/master/src/spbeam-halt",
+    "description": "EMSP_SPBEAM_HALT",
+    "added_at": "2025-06-03T15:34:42.525Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "2LUCXGodD1Jn02Gu2y2wCu",
+    "url": "https://github.com/sky-ecosystem/protego/blob/master/src/Protego.sol",
+    "description": "Protego",
+    "added_at": "2025-06-03T15:34:57.695Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "24dflw3xhutFxPSCyC7NdI",
+    "url": "https://github.com/sky-ecosystem/protego/blob/master/src/EmergencyDropSpell.sol",
+    "description": "Emergency Drop Spell",
+    "added_at": "2025-06-03T15:35:13.497Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "5VlRAR3Fou4rDDY2tn3Pbl",
+    "url": "https://github.com/sky-ecosystem/chief/blob/master/src/Chief.sol",
+    "description": "Chief",
+    "added_at": "2025-09-15T15:45:40.184Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4Ipvgc1yynOTgM4iaCxMn2",
+    "url": "https://github.com/sky-ecosystem/stusds/",
+    "description": "Staked USDS",
+    "added_at": "2025-09-22T15:16:29.649Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4Yz6Lgrr0Ff5P0zL3maypw",
+    "url": "https://github.com/sky-ecosystem/lockstake/blob/master/src/LockstakeCappedOsmWrapper.sol",
+    "description": "LockStake Capped OSM Wrapper",
+    "added_at": "2025-10-03T09:34:13.793Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "52QM0Rh8XO3NUv5FcdZtG",
+    "url": "https://github.com/sky-ecosystem/sky-oapp-oft/blob/main/contracts/GovernanceOAppSender.sol",
+    "description": "Governance OApp Sender",
+    "added_at": "2025-11-19T06:51:44.025Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "3uRggpYd7jLt3OvjcxGaUV",
+    "url": "https://github.com/sky-ecosystem/lz-governance-relay/blob/master/src/L1GovernanceRelay.sol",
+    "description": "L1 Governance Relay",
+    "added_at": "2025-11-19T06:52:03.298Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "78O3wQrlkjRLRmVuBJuVYY",
+    "url": "https://github.com/sky-ecosystem/sky-oapp-oft/blob/main/programs/governance/src/state/governance.rs",
+    "description": "Governance OApp Receiver",
+    "added_at": "2025-11-19T06:52:20.755Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "4XXKT0eRUgabJjxnoFog2d",
+    "url": "https://github.com/sky-ecosystem/sky-oapp-oft/blob/main/contracts/SkyOFTAdapter.sol",
+    "description": "OFT Adapter",
+    "added_at": "2025-11-19T06:52:34.738Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "1s4tiBaHd01WDAXrWjkvua",
+    "url": "https://github.com/sky-ecosystem/sky-oapp-oft/blob/main/programs/oft/src/state/oft.rs",
+    "description": "OFT Program",
+    "added_at": "2025-11-19T06:52:48.096Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "2GMZcvW8LCOaYW5p3BnSPu",
+    "url": "https://github.com/sky-ecosystem/dss-flappers/blob/master/src/Kicker.sol",
+    "description": "Kicker",
+    "added_at": "2025-11-19T06:53:02.440Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "sky",
+    "asset_id": "db_2ce5ef55-d33b-4ae1-a33e-8f1dd8a18e87",
+    "url": "https://github.com/sky-ecosystem/star-guard/blob/main/src/StarGuard.sol",
+    "description": "StarGuard",
+    "added_at": "2026-02-26T15:35:36.081Z",
+    "revision": 0
+  }
+]

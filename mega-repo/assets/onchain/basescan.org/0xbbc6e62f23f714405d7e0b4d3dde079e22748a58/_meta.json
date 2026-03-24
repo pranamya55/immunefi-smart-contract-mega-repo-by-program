@@ -1,0 +1,24 @@
+{
+  "url": "https://basescan.org/address/0xbBC6E62F23F714405D7e0b4D3DDe079E22748a58",
+  "host": "basescan.org",
+  "address": "0xbBC6E62F23F714405D7e0b4D3DDe079E22748a58",
+  "chainid": 8453,
+  "project_slug": "yelay",
+  "asset_id": "6Z484BzGH5Bpfs6DVazYuo",
+  "contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x5fccacaef88e6e2727bc8e682980e082c4c91015",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

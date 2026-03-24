@@ -1,0 +1,330 @@
+[
+  {
+    "project_slug": "usdt0",
+    "asset_id": "6aUkdsvYMWokJ0JyBunmgd",
+    "url": "https://megaeth.blockscout.com/address/0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+    "description": "USDT0 MegaEth",
+    "added_at": "2026-01-20T13:45:52.250Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "2Cuil4A6CBUPpMV8VMGFEo",
+    "url": "https://megaeth.blockscout.com/address/0x9151434b16b9763660705744891fA906F660EcC5",
+    "description": "OApp MegaEth",
+    "added_at": "2026-01-20T13:45:52.286Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "1Bm5pM4kU4iy5QkXbw7AeN",
+    "url": "https://flarescan.com/address/0xe7cd86e13AC4309349F30B3435a9d337750fC82D",
+    "description": "USDT0 Flare",
+    "added_at": "2025-07-16T12:55:34.124Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "1GW6N7B8lVrbUAhtZU2P3c",
+    "url": "https://optimistic.etherscan.io/address/0xF03b4d9AC1D5d1E7c4cEf54C2A313b9fe051A0aD",
+    "description": "OApp Optimism",
+    "added_at": "2025-07-16T12:55:35.755Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "1NxFTazyOsDqqLk6JOQJPr",
+    "url": "https://monadscan.com/address/0xe7cd86e13AC4309349F30B3435a9d337750fC82D",
+    "description": "USDT0 Monad",
+    "added_at": "2025-11-25T09:43:31.949Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "1pfm53bg5UYArKfFmMivvG",
+    "url": "https://plasmascan.to/address/0x02ca37966753bDdDf11216B73B16C1dE756A7CF9",
+    "description": "OApp Plasma",
+    "added_at": "2025-11-14T08:18:04.322Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "1qEEorrigT8TyOheBQv7E4",
+    "url": "https://purrsec.com/address/0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+    "description": "USDT0 HyperEVM (HyperliquidExtension)",
+    "added_at": "2025-07-16T12:55:34.121Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "1rPkTbuiotoXmyJNulcLZK",
+    "url": "https://arbiscan.io/address/0x14E4A1B13bf7F943c8ff7C51fb60FA964A298D92",
+    "description": "OApp Arbitrum Contract",
+    "added_at": "2025-01-29T09:37:10.001Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "1znBszmEfLRk3aW67ZhqQZ",
+    "url": "https://monadscan.com/address/0x9151434b16b9763660705744891fA906F660EcC5",
+    "description": "OApp Monad",
+    "added_at": "2025-11-25T09:43:31.951Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "298tp4DY6jgXI9FWqlszxk",
+    "url": "https://cornscan.io/address/0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb/contract/21000000/readContract",
+    "description": "USDT0 Corn",
+    "added_at": "2025-07-16T12:55:35.747Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "2AWQYK9UJGYZNbE03FNoY5",
+    "url": "https://seitrace.com/token/0x56Fe74A2e3b484b921c447357203431a3485CC60?chain=pacific-1",
+    "description": "OApp Sei",
+    "added_at": "2025-07-16T12:55:34.076Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "2xNXMosSWdV6C6h3fVZaxb",
+    "url": "https://explorer.inkonchain.com/address/0x0200C29006150606B650577BBE7B6248F58470c1",
+    "description": "USDT0 INK",
+    "added_at": "2025-01-29T08:49:47.208Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "35DiMx2op3LEk8QRkMyJVw",
+    "url": "https://mantlescan.xyz/address/0xcb768e263FB1C62214E7cab4AA8d036D76dc59CC",
+    "description": "OApp Mantle",
+    "added_at": "2025-11-27T17:21:11.759Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "3FG7c7xaXvMVIuyl8jp0Yf",
+    "url": "https://arbiscan.io/address/0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "description": "USDT0 Arbitrum",
+    "added_at": "2025-01-29T09:37:25.759Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "3HO6xO1XjsSjgudMDJmNtV",
+    "url": "https://polygonscan.com/address/0x6BA10300f0DC58B7a1e4c0e41f5daBb7D7829e13",
+    "description": "OApp Polygon",
+    "added_at": "2025-08-28T07:56:32.544Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "3SFYNHRlWlGWY6gTQp3QJr",
+    "url": "https://www.oklink.com/x-layer/address/0x94bcca6bdfd6a61817ab0e960bfede4984505554",
+    "description": "OApp X-Layer",
+    "added_at": "2025-09-15T08:48:37.869Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "3gNpk4tG4yMZHWSMVcTqM3",
+    "url": "https://flarescan.com/address/0x567287d2A9829215a37e3B88843d32f9221E7588",
+    "description": "OApp Flare",
+    "added_at": "2025-07-16T12:55:34.128Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "3jYsiXUeLHLj6gFtpX7FUB",
+    "url": "https://explorer.inkonchain.com/address/0x1cB6De532588fCA4a21B7209DE7C456AF8434A65",
+    "description": "OApp INKSmart Contract",
+    "added_at": "2025-01-29T08:49:32.807Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "3rUrMzYgU9HkHM7QCHq1mE",
+    "url": "https://seitrace.com/token/0x9151434b16b9763660705744891fA906F660EcC5?chain=pacific-1",
+    "description": "USDT0 Sei",
+    "added_at": "2025-07-16T12:55:35.650Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "4M7mUSl4DSvBVKtvpvsgHj",
+    "url": "https://stablescan.xyz/address/0xedaba024be4d87974d5aB11C6Dd586963CcCB027",
+    "description": "OApp Stable",
+    "added_at": "2025-12-15T09:53:52.953Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "4Q7b8bQLu9yijNk0hsSCGy",
+    "url": "https://rootstock.blockscout.com/address/0x779dED0C9e1022225F8e0630b35A9B54Be713736",
+    "description": "USDT0 Rootstock",
+    "added_at": "2025-07-16T12:55:35.742Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "5IWgDZOHERDhF18s4cFav5",
+    "url": "https://www.oklink.com/x-layer/address/0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
+    "description": "USDT0 X-Layer",
+    "added_at": "2025-09-15T08:48:37.860Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "5JARn5d14N4X9UNqWbOofe",
+    "url": "https://berascan.com/address/0x3Dc96399109df5ceb2C226664A086140bD0379cB",
+    "description": "OApp Berachain",
+    "added_at": "2025-07-16T12:55:34.056Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "5pD53p6aBJi39gzsO71F0G",
+    "url": "https://cornscan.io/address/0x3f82943338a8a76c35BFA0c1828aA27fd43a34E4",
+    "description": "OApp Corn",
+    "added_at": "2025-07-16T12:55:34.104Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "5qUoV7nGalqx2FsZfQIsYj",
+    "url": "https://mantlescan.xyz/address/0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
+    "description": "USDT0 Mantle",
+    "added_at": "2025-11-27T17:21:11.738Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "5yYQhjw2Z4fPjTEMkT1fJa",
+    "url": "https://polygonscan.com/address/0xc2132D05D31c914a87C6611C10748AEb04B58e8F#code",
+    "description": "USDT0 Polygon",
+    "added_at": "2025-08-28T07:56:32.562Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "65tLIitO0PkB300uQAul4y",
+    "url": "https://purrsec.com/address/0x904861a24F30EC96ea7CFC3bE9EA4B476d237e98/contract",
+    "description": "OApp HyperEVM",
+    "added_at": "2025-07-16T12:55:34.118Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "66aE1oLRPtgm9qBsxku7Og",
+    "url": "https://stablescan.xyz/address/0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
+    "description": "USDT0 Stable",
+    "added_at": "2025-12-15T09:53:52.957Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "6Dgap6C0RkxkoMn1SMXgY",
+    "url": "https://evm.confluxscan.net/address/0xaf37e8b6c9ed7f6318979f56fc287d76c30847ff",
+    "description": "USDT0 Conflux",
+    "added_at": "2025-11-14T08:18:04.318Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "6oKvAqw9SZTV2Pq1vz8PXh",
+    "url": "https://unichain.blockscout.com/address/0x9151434b16b9763660705744891fA906F660EcC5",
+    "description": "USDT0 Unichain",
+    "added_at": "2025-07-16T12:55:34.132Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "6xkXIgc7NpIyF4Hk5G8KWo",
+    "url": "https://optimistic.etherscan.io/address/0x01bFF41798a0BcF287b996046Ca68b395DbC1071",
+    "description": "USDT0 Optimism",
+    "added_at": "2025-07-16T12:55:34.068Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "7GrlGgk2EPxb0BZTKvliwG",
+    "url": "https://plasmascan.to/address/0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+    "description": "USDT0 Plasma",
+    "added_at": "2025-11-14T08:18:04.320Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "7a173IZJ8OqX7mVs4L4KEv",
+    "url": "https://evm.confluxscan.net/address/0xc57efa1c7113d98bda6f9f249471704ece5dd84a",
+    "description": "OApp Conflux",
+    "added_at": "2025-11-14T08:18:04.328Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "7wsMfQPOPBfB7TmRXSRVib",
+    "url": "https://rootstock.blockscout.com/address/0x1a594d5d5d1c426281C1064B07f23F57B2716B61",
+    "description": "OApp Rootstock",
+    "added_at": "2025-07-16T12:55:35.818Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "JorzgTAwiA40OFc14BnBg",
+    "url": "https://unichain.blockscout.com/address/0xc07bE8994D035631c36fb4a89C918CeFB2f03EC3",
+    "description": "OApp Unichain",
+    "added_at": "2025-07-16T12:55:35.806Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "RyGoEspexCJZGI0oVELeB",
+    "url": "https://etherscan.io/address/0x6c96de32cea08842dcc4058c14d3aaad7fa41dee",
+    "description": "OApp Adapter Ethereum",
+    "added_at": "2025-01-29T08:49:18.862Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "cDgZDvotE03oOftDQo9UU",
+    "url": "https://beratrail.io/token/0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
+    "description": "USDT0 Berachain",
+    "added_at": "2025-07-16T12:55:34.114Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "98707",
+    "url": "https://explorer.morph.network/address/0xe7cd86e13AC4309349F30B3435a9d337750fC82D",
+    "description": "USDT0 Morph",
+    "added_at": "2026-02-06T11:43:38.078Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "98708",
+    "url": "https://explorer.morph.network/address/0xcb768e263FB1C62214E7cab4AA8d036D76dc59CC",
+    "description": "OApp Morph",
+    "added_at": "2026-02-06T11:43:38.078Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "99184",
+    "url": "https://hashscan.io/mainnet/contract/0xe3119e23fC2371d1E6b01775ba312035425A53d6",
+    "description": "OApp Hedera",
+    "added_at": "2026-03-12T12:01:26.357Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "usdt0",
+    "asset_id": "99289",
+    "url": "https://explore.mainnet.tempo.xyz/address/0xaf37E8B6C9ED7f6318979f56Fc287d76c30847ff",
+    "description": "OApp Tempo",
+    "added_at": "2026-03-19T16:37:02.152Z",
+    "revision": 0
+  }
+]

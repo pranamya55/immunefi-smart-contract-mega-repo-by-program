@@ -1,0 +1,114 @@
+[
+  {
+    "project_slug": "alex",
+    "asset_id": "7N0vaSsTkwrl6P6UEjCZQm",
+    "url": "https://github.com/alexgo-io/alex-v1/blob/dev/clarity/contracts/pool/alex-launchpad-v1-1.clar",
+    "description": "ALEX Launchpad v1.1",
+    "added_at": "2022-02-09T13:43:21.107Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "alex",
+    "asset_id": "18D6Md4dRFvGZzNtIiqDG3",
+    "url": "https://github.com/alexgo-io/alex-v1/blob/dev/clarity/contracts/pool/alex-reserve-pool.clar",
+    "description": "ALEX Reserve Pool",
+    "added_at": "2022-02-09T13:43:55.113Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "alex",
+    "asset_id": "4qAoKrS3TkH8n5JEuionF",
+    "url": "https://github.com/alexgo-io/alex-v1/blob/dev/clarity/contracts/pool/fixed-weight-pool-v1-01.clar",
+    "description": "Fixed Weight Pool",
+    "added_at": "2022-02-09T13:44:29.687Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "alex",
+    "asset_id": "4ULE2Yl2Rnd1B2dBITAbyz",
+    "url": "https://github.com/alexgo-io/alex-v1/blob/dev/clarity/contracts/pool/simple-weight-pool-alex.clar",
+    "description": "Simple Weight Pool (ALEX)",
+    "added_at": "2022-02-09T13:45:10.299Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "alex",
+    "asset_id": "4FIwofSkZlhrbXCxaeb8rA",
+    "url": "https://github.com/alexgo-io/alex-v1/blob/dev/clarity/contracts/alex-vault.clar",
+    "description": "ALEX Vault",
+    "added_at": "2022-02-09T13:45:55.525Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "alex",
+    "asset_id": "1HLYAH5XoUz4yW2AU4Y5aj",
+    "url": "https://github.com/alexgo-io/alex-dao/blob/main/contracts/executor-dao.clar",
+    "description": "ALEX DAO",
+    "added_at": "2022-02-09T13:46:42.575Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "alex",
+    "asset_id": "3xN50CzipGnomCqLZLXEUx",
+    "url": "https://github.com/alexgo-io/alex-dao/blob/main/contracts/extensions/age000-governance-token.clar",
+    "description": "ALEX Governance Token",
+    "added_at": "2022-02-09T13:47:24.406Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "alex",
+    "asset_id": "2xGOLPYOyP0z6f2Dqnht2Y",
+    "url": "https://github.com/alexgo-io/alex-dao/blob/main/contracts/extensions/age001-proposal-voting.clar",
+    "description": "AGE 001",
+    "added_at": "2022-04-26T05:29:53.494Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "alex",
+    "asset_id": "b63909e3evZbUNRqn85qx",
+    "url": "https://github.com/alexgo-io/alex-dao/blob/main/contracts/extensions/age002-emergency-proposals.clar",
+    "description": "AGE 002",
+    "added_at": "2022-04-26T05:30:07.371Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "alex",
+    "asset_id": "DYLZmtXS9gyDsZfP7iBPj",
+    "url": "https://github.com/alexgo-io/alex-dao/blob/main/contracts/extensions/age003-emergency-execute.clar",
+    "description": "AGE 003",
+    "added_at": "2022-04-26T05:30:27.162Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "alex",
+    "asset_id": "3lCb33XbHmHn0P5ohvTRkM",
+    "url": "https://github.com/alexgo-io/alex-v1/blob/dev/clarity/contracts/pool/collateral-rebalancing-pool.clar",
+    "description": "Collateral Rebalancing Pool",
+    "added_at": "2022-04-26T05:30:46.032Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "alex",
+    "asset_id": "4bPKzHS11ZzEL6AdhOnceU",
+    "url": "https://github.com/alexgo-io/alex-v1/blob/dev/clarity/contracts/pool/yield-token-pool.clar",
+    "description": "Yield Token Pool",
+    "added_at": "2022-04-26T05:31:04.851Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "alex",
+    "asset_id": "6NZyeTet94bCkFhx5e6QWM",
+    "url": "https://github.com/alexgo-io/alex-v1/blob/dev/clarity/contracts/auto-token/auto-alex.clar",
+    "description": "AutoALEX",
+    "added_at": "2022-04-26T05:31:27.017Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "alex",
+    "asset_id": "1OxKS1rE3Qagpw2QwLsvhT",
+    "url": "https://github.com/alexgo-io/alex-bridge-contracts",
+    "description": "Bridge",
+    "added_at": "2023-04-21T03:49:55.501Z",
+    "revision": 1
+  }
+]

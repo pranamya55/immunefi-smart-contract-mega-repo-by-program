@@ -1,0 +1,24 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0xe0F9978b907853F354d79188A3dEfbD41978af62",
+  "host": "optimistic.etherscan.io",
+  "address": "0xe0F9978b907853F354d79188A3dEfbD41978af62",
+  "chainid": 10,
+  "project_slug": "sparklend",
+  "asset_id": "5GVYOC5XkEiB7SdySoU7lC",
+  "contract_name": "PSM3",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000205216d89a00feb2a73273ceecd297baf89d576d0000000000000000000000000b2c639c533813f4aa9d7837caf62653d097ff850000000000000000000000004f13a96ec5c4cf34e442b46bbd98a0791f20edc3000000000000000000000000b5b2dc7fd34c249f4be7fb1fcea07950784229e00000000000000000000000006e53585449142a5e6d5fc918ae6bea341dc81c68",
+  "evm_version": "shanghai",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 8,
+  "mode": "json-sources"
+}

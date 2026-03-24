@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x34E45203669aADd0d6ac342538AA7b62C9128f4a",
+  "host": "etherscan.io",
+  "address": "0x34E45203669aADd0d6ac342538AA7b62C9128f4a",
+  "chainid": 1,
+  "project_slug": "bifi",
+  "asset_id": "2aed1MwctAd93Ly0V5R1lV",
+  "contract_name": "managerDataStorage",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "BSD-3-Clause",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://254ab62859b5b282761d1f300624839994c0865c65f2e7688c71699bf6770b83",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

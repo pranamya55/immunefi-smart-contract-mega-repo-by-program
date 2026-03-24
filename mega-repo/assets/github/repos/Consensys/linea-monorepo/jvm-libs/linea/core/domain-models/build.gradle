@@ -1,0 +1,16 @@
+plugins {
+  id 'net.consensys.zkevm.kotlin-common-conventions'
+  id 'java-test-fixtures'
+}
+
+description="Linea domain models"
+
+dependencies {
+  implementation project(":jvm-libs:generic:extensions:kotlin")
+  testFixturesApi project(":jvm-libs:linea:besu-libs")
+  testFixturesApi project(":jvm-libs:generic:extensions:kotlin")
+}
+
+jar {
+  dependsOn configurations.runtimeClasspath
+}

@@ -1,0 +1,2736 @@
+{
+  "contractName": "IVestingMachine",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getParameters",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "verify",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getHolder",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "target",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "callWithData",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "approve",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "deposit",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "withdrawAll",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "getLockedAt",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getLocked",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getAvailable",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "isVerified",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTotal",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newHolder",
+          "type": "address"
+        }
+      ],
+      "name": "setHolder",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "setTotal",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"target\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"callWithData\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"deposit\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getAvailable\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getHolder\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getLocked\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"}],\"name\":\"getLockedAt\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getParameters\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getTotal\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"isVerified\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newHolder\",\"type\":\"address\"}],\"name\":\"setHolder\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"setTotal\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"verify\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"withdraw\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"withdrawAll\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"approve(uint256)\":{\"params\":{\"amount\":\"Token amount to approve\"}},\"callWithData(address,bytes)\":{\"params\":{\"data\":\"Data to pass target contract\",\"target\":\"Target contract to call (must be one of: staking, vesting or voting machine)\"}},\"deposit(uint256)\":{\"params\":{\"amount\":\"Token amount to approve\"}},\"getLockedAt(uint256)\":{\"params\":{\"timestamp\":\"date to check\"}},\"setHolder(address)\":{\"params\":{\"newHolder\":\"the new holder (only can be called by governance)\"}},\"withdraw(uint256)\":{\"params\":{\"amount\":\"Tokens amount to withdraw\"},\"returns\":{\"_0\":\"Returns true on success\"}},\"withdrawAll()\":{\"returns\":{\"_0\":\"Returns true on success\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"approve(uint256)\":{\"notice\":\"approve a transfer to the staking machine.\"},\"callWithData(address,bytes)\":{\"notice\":\"Calls a function from target passing data\"},\"deposit(uint256)\":{\"notice\":\"deposit MOCs in the staking machine\"},\"getAvailable()\":{\"notice\":\"Token amount available for withdrawal\"},\"getHolder()\":{\"notice\":\"Returns current holder address\"},\"getLocked()\":{\"notice\":\"Minimum token amount required to be locked\"},\"getLockedAt(uint256)\":{\"notice\":\"Minimum token amount required to be locked\"},\"getParameters()\":{\"notice\":\"Retrieve vesting parameters\"},\"getTotal()\":{\"notice\":\"Total token balance configured\"},\"isVerified()\":{\"notice\":\"Returns true after contract has been verified by holder\"},\"setHolder(address)\":{\"notice\":\"Change holder address\"},\"setTotal(uint256)\":{\"notice\":\"Configure vesting total balance (only can be called by factory)\"},\"verify()\":{\"notice\":\"Mark contract as verified by holder\"},\"withdraw(uint256)\":{\"notice\":\"Withdraws tokens to holder address\"},\"withdrawAll()\":{\"notice\":\"Withdraws all available tokens to holder address\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/jbokser/work2/OMoC-SC-Shared/contracts/IVestingMachine.sol\":\"IVestingMachine\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/jbokser/work2/OMoC-SC-Shared/contracts/IVestingMachine.sol\":{\"keccak256\":\"0xa6cae40a0aa75d57b9588bc058f81b295fa513b05e9998bb3da434599bb7e630\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://640e715c7d8a2bb3d68f1952dd391f4dade9d9fb51bf12cef46a92389d88a596\",\"dweb:/ipfs/QmaB68QjW9df3trbiif8fSdTnpaDkp5PkQJ8QvTXd9cNfN\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: UNLICENSED\npragma solidity ^0.6.0;\n\ninterface IVestingMachine {\n    /// @notice Retrieve vesting parameters\n    function getParameters() external view returns (uint256[] memory, uint256[] memory);\n\n    /// @notice Mark contract as verified by holder\n    function verify() external;\n\n    /// @notice Returns current holder address\n    function getHolder() external view returns (address);\n\n    /// @notice Calls a function from target passing data\n    /// @param target Target contract to call (must be one of: staking, vesting or voting machine)\n    /// @param data Data to pass target contract\n    function callWithData(address target, bytes memory data) external;\n\n    /// @notice approve a transfer to the staking machine.\n    /// @param amount Token amount to approve\n    function approve(uint256 amount) external;\n\n    /// @notice deposit MOCs in the staking machine\n    /// @param amount Token amount to approve\n    function deposit(uint256 amount) external;\n\n    /// @notice Withdraws tokens to holder address\n    /// @param amount Tokens amount to withdraw\n    /// @return Returns true on success\n    function withdraw(uint256 amount) external returns (bool);\n\n    /// @notice Withdraws all available tokens to holder address\n    /// @return Returns true on success\n    function withdrawAll() external returns (bool);\n\n    /// @notice Minimum token amount required to be locked\n    /// @param timestamp date to check\n    function getLockedAt(uint256 timestamp) external view returns (uint256);\n\n    /// @notice Minimum token amount required to be locked\n    function getLocked() external view returns (uint256);\n\n    /// @notice Token amount available for withdrawal\n    function getAvailable() external view returns (uint256);\n\n    /// @notice Returns true after contract has been verified by holder\n    function isVerified() external view returns (bool);\n\n    /// @notice Total token balance configured\n    function getTotal() external view returns (uint256);\n\n    /// @notice Update vesting parameters (only can be called by factory)\n    /// @param _percentages array of token percentages locked at a date\n    /// @param _timedeltas array of date deltas from TGE when percentages are valid\n    // function update(uint256[] memory _percentages, uint256[] memory _timedeltas) external;\n\n    /// @notice Change holder address\n    /// @param newHolder the new holder (only can be called by governance)\n    function setHolder(address newHolder) external;\n\n    /// @notice Configure vesting total balance (only can be called by factory)\n    function setTotal(uint256 amount) external;\n}\n",
+  "sourcePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/IVestingMachine.sol",
+  "ast": {
+    "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/IVestingMachine.sol",
+    "exportedSymbols": {
+      "IVestingMachine": [
+        2294
+      ]
+    },
+    "id": 2295,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2195,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:23:14"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 2294,
+        "linearizedBaseContracts": [
+          2294
+        ],
+        "name": "IVestingMachine",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": {
+              "id": 2196,
+              "nodeType": "StructuredDocumentation",
+              "src": "96:39:14",
+              "text": "@notice Retrieve vesting parameters"
+            },
+            "functionSelector": "a5ea11da",
+            "id": 2205,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getParameters",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2197,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "162:2:14"
+            },
+            "returnParameters": {
+              "id": 2204,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2200,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2205,
+                  "src": "188:16:14",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 2198,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "188:7:14",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 2199,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "188:9:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2203,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2205,
+                  "src": "206:16:14",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 2201,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "206:7:14",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 2202,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "206:9:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "187:36:14"
+            },
+            "scope": 2294,
+            "src": "140:84:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2206,
+              "nodeType": "StructuredDocumentation",
+              "src": "230:47:14",
+              "text": "@notice Mark contract as verified by holder"
+            },
+            "functionSelector": "fc735e99",
+            "id": 2209,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "verify",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2207,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "297:2:14"
+            },
+            "returnParameters": {
+              "id": 2208,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "308:0:14"
+            },
+            "scope": 2294,
+            "src": "282:27:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2210,
+              "nodeType": "StructuredDocumentation",
+              "src": "315:42:14",
+              "text": "@notice Returns current holder address"
+            },
+            "functionSelector": "0c05b3c5",
+            "id": 2215,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getHolder",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2211,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "380:2:14"
+            },
+            "returnParameters": {
+              "id": 2214,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2213,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2215,
+                  "src": "406:7:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2212,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "406:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "405:9:14"
+            },
+            "scope": 2294,
+            "src": "362:53:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2216,
+              "nodeType": "StructuredDocumentation",
+              "src": "421:201:14",
+              "text": "@notice Calls a function from target passing data\n @param target Target contract to call (must be one of: staking, vesting or voting machine)\n @param data Data to pass target contract"
+            },
+            "functionSelector": "1de0af6b",
+            "id": 2223,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "callWithData",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2221,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2218,
+                  "mutability": "mutable",
+                  "name": "target",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2223,
+                  "src": "649:14:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2217,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "649:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2220,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2223,
+                  "src": "665:17:14",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 2219,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "665:5:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "648:35:14"
+            },
+            "returnParameters": {
+              "id": 2222,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "692:0:14"
+            },
+            "scope": 2294,
+            "src": "627:66:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2224,
+              "nodeType": "StructuredDocumentation",
+              "src": "699:100:14",
+              "text": "@notice approve a transfer to the staking machine.\n @param amount Token amount to approve"
+            },
+            "functionSelector": "b759f954",
+            "id": 2229,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "approve",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2227,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2226,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2229,
+                  "src": "821:14:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2225,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "821:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "820:16:14"
+            },
+            "returnParameters": {
+              "id": 2228,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "845:0:14"
+            },
+            "scope": 2294,
+            "src": "804:42:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2230,
+              "nodeType": "StructuredDocumentation",
+              "src": "852:93:14",
+              "text": "@notice deposit MOCs in the staking machine\n @param amount Token amount to approve"
+            },
+            "functionSelector": "b6b55f25",
+            "id": 2235,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deposit",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2233,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2232,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2235,
+                  "src": "967:14:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2231,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "967:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "966:16:14"
+            },
+            "returnParameters": {
+              "id": 2234,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "991:0:14"
+            },
+            "scope": 2294,
+            "src": "950:42:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2236,
+              "nodeType": "StructuredDocumentation",
+              "src": "998:134:14",
+              "text": "@notice Withdraws tokens to holder address\n @param amount Tokens amount to withdraw\n @return Returns true on success"
+            },
+            "functionSelector": "2e1a7d4d",
+            "id": 2243,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdraw",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2239,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2238,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2243,
+                  "src": "1155:14:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2237,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1155:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1154:16:14"
+            },
+            "returnParameters": {
+              "id": 2242,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2241,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2243,
+                  "src": "1189:4:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 2240,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1189:4:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1188:6:14"
+            },
+            "scope": 2294,
+            "src": "1137:58:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2244,
+              "nodeType": "StructuredDocumentation",
+              "src": "1201:100:14",
+              "text": "@notice Withdraws all available tokens to holder address\n @return Returns true on success"
+            },
+            "functionSelector": "853828b6",
+            "id": 2249,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdrawAll",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2245,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1326:2:14"
+            },
+            "returnParameters": {
+              "id": 2248,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2247,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2249,
+                  "src": "1347:4:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 2246,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1347:4:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1346:6:14"
+            },
+            "scope": 2294,
+            "src": "1306:47:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2250,
+              "nodeType": "StructuredDocumentation",
+              "src": "1359:93:14",
+              "text": "@notice Minimum token amount required to be locked\n @param timestamp date to check"
+            },
+            "functionSelector": "d41ecc5a",
+            "id": 2257,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLockedAt",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2253,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2252,
+                  "mutability": "mutable",
+                  "name": "timestamp",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2257,
+                  "src": "1478:17:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2251,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1478:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1477:19:14"
+            },
+            "returnParameters": {
+              "id": 2256,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2255,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2257,
+                  "src": "1520:7:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2254,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1520:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1519:9:14"
+            },
+            "scope": 2294,
+            "src": "1457:72:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2258,
+              "nodeType": "StructuredDocumentation",
+              "src": "1535:54:14",
+              "text": "@notice Minimum token amount required to be locked"
+            },
+            "functionSelector": "2d49ffcd",
+            "id": 2263,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLocked",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2259,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1612:2:14"
+            },
+            "returnParameters": {
+              "id": 2262,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2261,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2263,
+                  "src": "1638:7:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2260,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1638:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1637:9:14"
+            },
+            "scope": 2294,
+            "src": "1594:53:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2264,
+              "nodeType": "StructuredDocumentation",
+              "src": "1653:49:14",
+              "text": "@notice Token amount available for withdrawal"
+            },
+            "functionSelector": "f9cc0605",
+            "id": 2269,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAvailable",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2265,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1728:2:14"
+            },
+            "returnParameters": {
+              "id": 2268,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2267,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2269,
+                  "src": "1754:7:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2266,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1754:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1753:9:14"
+            },
+            "scope": 2294,
+            "src": "1707:56:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2270,
+              "nodeType": "StructuredDocumentation",
+              "src": "1769:67:14",
+              "text": "@notice Returns true after contract has been verified by holder"
+            },
+            "functionSelector": "80007e83",
+            "id": 2275,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isVerified",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2271,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1860:2:14"
+            },
+            "returnParameters": {
+              "id": 2274,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2273,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2275,
+                  "src": "1886:4:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 2272,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1886:4:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1885:6:14"
+            },
+            "scope": 2294,
+            "src": "1841:51:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2276,
+              "nodeType": "StructuredDocumentation",
+              "src": "1898:42:14",
+              "text": "@notice Total token balance configured"
+            },
+            "functionSelector": "775a25e3",
+            "id": 2281,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getTotal",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2277,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1962:2:14"
+            },
+            "returnParameters": {
+              "id": 2280,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2279,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2281,
+                  "src": "1988:7:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2278,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1988:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1987:9:14"
+            },
+            "scope": 2294,
+            "src": "1945:52:14",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2282,
+              "nodeType": "StructuredDocumentation",
+              "src": "2328:108:14",
+              "text": "@notice Change holder address\n @param newHolder the new holder (only can be called by governance)"
+            },
+            "functionSelector": "d979f5aa",
+            "id": 2287,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setHolder",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2285,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2284,
+                  "mutability": "mutable",
+                  "name": "newHolder",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2287,
+                  "src": "2460:17:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2283,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2460:7:14",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2459:19:14"
+            },
+            "returnParameters": {
+              "id": 2286,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2487:0:14"
+            },
+            "scope": 2294,
+            "src": "2441:47:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2288,
+              "nodeType": "StructuredDocumentation",
+              "src": "2494:75:14",
+              "text": "@notice Configure vesting total balance (only can be called by factory)"
+            },
+            "functionSelector": "1f8d1d50",
+            "id": 2293,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setTotal",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2291,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2290,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2293,
+                  "src": "2592:14:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2289,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2592:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2591:16:14"
+            },
+            "returnParameters": {
+              "id": 2292,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2616:0:14"
+            },
+            "scope": 2294,
+            "src": "2574:43:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2295,
+        "src": "64:2555:14"
+      }
+    ],
+    "src": "39:2581:14"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/IVestingMachine.sol",
+      "exportedSymbols": {
+        "IVestingMachine": [
+          2294
+        ]
+      },
+      "license": "UNLICENSED"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.6",
+            ".0"
+          ]
+        },
+        "id": 2195,
+        "name": "PragmaDirective",
+        "src": "39:23:14"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            2294
+          ],
+          "name": "IVestingMachine",
+          "scope": 2295
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "a5ea11da",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getParameters",
+              "overrides": null,
+              "scope": 2294,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Retrieve vesting parameters"
+                },
+                "id": 2196,
+                "name": "StructuredDocumentation",
+                "src": "96:39:14"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2197,
+                "name": "ParameterList",
+                "src": "162:2:14"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2205,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "uint256[]",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "length": null,
+                          "type": "uint256[]"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "uint256",
+                              "type": "uint256"
+                            },
+                            "id": 2198,
+                            "name": "ElementaryTypeName",
+                            "src": "188:7:14"
+                          }
+                        ],
+                        "id": 2199,
+                        "name": "ArrayTypeName",
+                        "src": "188:9:14"
+                      }
+                    ],
+                    "id": 2200,
+                    "name": "VariableDeclaration",
+                    "src": "188:16:14"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2205,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "uint256[]",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "length": null,
+                          "type": "uint256[]"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "uint256",
+                              "type": "uint256"
+                            },
+                            "id": 2201,
+                            "name": "ElementaryTypeName",
+                            "src": "206:7:14"
+                          }
+                        ],
+                        "id": 2202,
+                        "name": "ArrayTypeName",
+                        "src": "206:9:14"
+                      }
+                    ],
+                    "id": 2203,
+                    "name": "VariableDeclaration",
+                    "src": "206:16:14"
+                  }
+                ],
+                "id": 2204,
+                "name": "ParameterList",
+                "src": "187:36:14"
+              }
+            ],
+            "id": 2205,
+            "name": "FunctionDefinition",
+            "src": "140:84:14"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "fc735e99",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "verify",
+              "overrides": null,
+              "scope": 2294,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Mark contract as verified by holder"
+                },
+                "id": 2206,
+                "name": "StructuredDocumentation",
+                "src": "230:47:14"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2207,
+                "name": "ParameterList",
+                "src": "297:2:14"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2208,
+                "name": "ParameterList",
+                "src": "308:0:14"
+              }
+            ],
+            "id": 2209,
+            "name": "FunctionDefinition",
+            "src": "282:27:14"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "0c05b3c5",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getHolder",
+              "overrides": null,
+              "scope": 2294,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Returns current holder address"
+                },
+                "id": 2210,
+                "name": "StructuredDocumentation",
+                "src": "315:42:14"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2211,
+                "name": "ParameterList",
+                "src": "380:2:14"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2215,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2212,
+                        "name": "ElementaryTypeName",
+                        "src": "406:7:14"
+                      }
+                    ],
+                    "id": 2213,
+                    "name": "VariableDeclaration",
+                    "src": "406:7:14"
+                  }
+                ],
+                "id": 2214,
+                "name": "ParameterList",
+                "src": "405:9:14"
+              }
+            ],
+            "id": 2215,
+            "name": "FunctionDefinition",
+            "src": "362:53:14"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "1de0af6b",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "callWithData",
+              "overrides": null,
+              "scope": 2294,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Calls a function from target passing data\n @param target Target contract to call (must be one of: staking, vesting or voting machine)\n @param data Data to pass target contract"
+                },
+                "id": 2216,
+                "name": "StructuredDocumentation",
+                "src": "421:201:14"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "target",
+                      "overrides": null,
+                      "scope": 2223,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2217,
+                        "name": "ElementaryTypeName",
+                        "src": "649:7:14"
+                      }
+                    ],
+                    "id": 2218,
+                    "name": "VariableDeclaration",
+                    "src": "649:14:14"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "data",
+                      "overrides": null,
+                      "scope": 2223,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "bytes",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes",
+                          "type": "bytes"
+                        },
+                        "id": 2219,
+                        "name": "ElementaryTypeName",
+                        "src": "665:5:14"
+                      }
+                    ],
+                    "id": 2220,
+                    "name": "VariableDeclaration",
+                    "src": "665:17:14"
+                  }
+                ],
+                "id": 2221,
+                "name": "ParameterList",
+                "src": "648:35:14"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2222,
+                "name": "ParameterList",
+                "src": "692:0:14"
+              }
+            ],
+            "id": 2223,
+            "name": "FunctionDefinition",
+            "src": "627:66:14"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "b759f954",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "approve",
+              "overrides": null,
+              "scope": 2294,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice approve a transfer to the staking machine.\n @param amount Token amount to approve"
+                },
+                "id": 2224,
+                "name": "StructuredDocumentation",
+                "src": "699:100:14"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "amount",
+                      "overrides": null,
+                      "scope": 2229,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2225,
+                        "name": "ElementaryTypeName",
+                        "src": "821:7:14"
+                      }
+                    ],
+                    "id": 2226,
+                    "name": "VariableDeclaration",
+                    "src": "821:14:14"
+                  }
+                ],
+                "id": 2227,
+                "name": "ParameterList",
+                "src": "820:16:14"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2228,
+                "name": "ParameterList",
+                "src": "845:0:14"
+              }
+            ],
+            "id": 2229,
+            "name": "FunctionDefinition",
+            "src": "804:42:14"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "b6b55f25",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "deposit",
+              "overrides": null,
+              "scope": 2294,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice deposit MOCs in the staking machine\n @param amount Token amount to approve"
+                },
+                "id": 2230,
+                "name": "StructuredDocumentation",
+                "src": "852:93:14"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "amount",
+                      "overrides": null,
+                      "scope": 2235,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2231,
+                        "name": "ElementaryTypeName",
+                        "src": "967:7:14"
+                      }
+                    ],
+                    "id": 2232,
+                    "name": "VariableDeclaration",
+                    "src": "967:14:14"
+                  }
+                ],
+                "id": 2233,
+                "name": "ParameterList",
+                "src": "966:16:14"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2234,
+                "name": "ParameterList",
+                "src": "991:0:14"
+              }
+            ],
+            "id": 2235,
+            "name": "FunctionDefinition",
+            "src": "950:42:14"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "2e1a7d4d",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "withdraw",
+              "overrides": null,
+              "scope": 2294,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Withdraws tokens to holder address\n @param amount Tokens amount to withdraw\n @return Returns true on success"
+                },
+                "id": 2236,
+                "name": "StructuredDocumentation",
+                "src": "998:134:14"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "amount",
+                      "overrides": null,
+                      "scope": 2243,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2237,
+                        "name": "ElementaryTypeName",
+                        "src": "1155:7:14"
+                      }
+                    ],
+                    "id": 2238,
+                    "name": "VariableDeclaration",
+                    "src": "1155:14:14"
+                  }
+                ],
+                "id": 2239,
+                "name": "ParameterList",
+                "src": "1154:16:14"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2243,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 2240,
+                        "name": "ElementaryTypeName",
+                        "src": "1189:4:14"
+                      }
+                    ],
+                    "id": 2241,
+                    "name": "VariableDeclaration",
+                    "src": "1189:4:14"
+                  }
+                ],
+                "id": 2242,
+                "name": "ParameterList",
+                "src": "1188:6:14"
+              }
+            ],
+            "id": 2243,
+            "name": "FunctionDefinition",
+            "src": "1137:58:14"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "853828b6",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "withdrawAll",
+              "overrides": null,
+              "scope": 2294,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Withdraws all available tokens to holder address\n @return Returns true on success"
+                },
+                "id": 2244,
+                "name": "StructuredDocumentation",
+                "src": "1201:100:14"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2245,
+                "name": "ParameterList",
+                "src": "1326:2:14"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2249,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 2246,
+                        "name": "ElementaryTypeName",
+                        "src": "1347:4:14"
+                      }
+                    ],
+                    "id": 2247,
+                    "name": "VariableDeclaration",
+                    "src": "1347:4:14"
+                  }
+                ],
+                "id": 2248,
+                "name": "ParameterList",
+                "src": "1346:6:14"
+              }
+            ],
+            "id": 2249,
+            "name": "FunctionDefinition",
+            "src": "1306:47:14"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "d41ecc5a",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getLockedAt",
+              "overrides": null,
+              "scope": 2294,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Minimum token amount required to be locked\n @param timestamp date to check"
+                },
+                "id": 2250,
+                "name": "StructuredDocumentation",
+                "src": "1359:93:14"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "timestamp",
+                      "overrides": null,
+                      "scope": 2257,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2251,
+                        "name": "ElementaryTypeName",
+                        "src": "1478:7:14"
+                      }
+                    ],
+                    "id": 2252,
+                    "name": "VariableDeclaration",
+                    "src": "1478:17:14"
+                  }
+                ],
+                "id": 2253,
+                "name": "ParameterList",
+                "src": "1477:19:14"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2257,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2254,
+                        "name": "ElementaryTypeName",
+                        "src": "1520:7:14"
+                      }
+                    ],
+                    "id": 2255,
+                    "name": "VariableDeclaration",
+                    "src": "1520:7:14"
+                  }
+                ],
+                "id": 2256,
+                "name": "ParameterList",
+                "src": "1519:9:14"
+              }
+            ],
+            "id": 2257,
+            "name": "FunctionDefinition",
+            "src": "1457:72:14"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "2d49ffcd",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getLocked",
+              "overrides": null,
+              "scope": 2294,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Minimum token amount required to be locked"
+                },
+                "id": 2258,
+                "name": "StructuredDocumentation",
+                "src": "1535:54:14"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2259,
+                "name": "ParameterList",
+                "src": "1612:2:14"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2263,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2260,
+                        "name": "ElementaryTypeName",
+                        "src": "1638:7:14"
+                      }
+                    ],
+                    "id": 2261,
+                    "name": "VariableDeclaration",
+                    "src": "1638:7:14"
+                  }
+                ],
+                "id": 2262,
+                "name": "ParameterList",
+                "src": "1637:9:14"
+              }
+            ],
+            "id": 2263,
+            "name": "FunctionDefinition",
+            "src": "1594:53:14"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "f9cc0605",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getAvailable",
+              "overrides": null,
+              "scope": 2294,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Token amount available for withdrawal"
+                },
+                "id": 2264,
+                "name": "StructuredDocumentation",
+                "src": "1653:49:14"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2265,
+                "name": "ParameterList",
+                "src": "1728:2:14"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2269,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2266,
+                        "name": "ElementaryTypeName",
+                        "src": "1754:7:14"
+                      }
+                    ],
+                    "id": 2267,
+                    "name": "VariableDeclaration",
+                    "src": "1754:7:14"
+                  }
+                ],
+                "id": 2268,
+                "name": "ParameterList",
+                "src": "1753:9:14"
+              }
+            ],
+            "id": 2269,
+            "name": "FunctionDefinition",
+            "src": "1707:56:14"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "80007e83",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "isVerified",
+              "overrides": null,
+              "scope": 2294,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Returns true after contract has been verified by holder"
+                },
+                "id": 2270,
+                "name": "StructuredDocumentation",
+                "src": "1769:67:14"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2271,
+                "name": "ParameterList",
+                "src": "1860:2:14"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2275,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 2272,
+                        "name": "ElementaryTypeName",
+                        "src": "1886:4:14"
+                      }
+                    ],
+                    "id": 2273,
+                    "name": "VariableDeclaration",
+                    "src": "1886:4:14"
+                  }
+                ],
+                "id": 2274,
+                "name": "ParameterList",
+                "src": "1885:6:14"
+              }
+            ],
+            "id": 2275,
+            "name": "FunctionDefinition",
+            "src": "1841:51:14"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "775a25e3",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getTotal",
+              "overrides": null,
+              "scope": 2294,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Total token balance configured"
+                },
+                "id": 2276,
+                "name": "StructuredDocumentation",
+                "src": "1898:42:14"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2277,
+                "name": "ParameterList",
+                "src": "1962:2:14"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2281,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2278,
+                        "name": "ElementaryTypeName",
+                        "src": "1988:7:14"
+                      }
+                    ],
+                    "id": 2279,
+                    "name": "VariableDeclaration",
+                    "src": "1988:7:14"
+                  }
+                ],
+                "id": 2280,
+                "name": "ParameterList",
+                "src": "1987:9:14"
+              }
+            ],
+            "id": 2281,
+            "name": "FunctionDefinition",
+            "src": "1945:52:14"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "d979f5aa",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "setHolder",
+              "overrides": null,
+              "scope": 2294,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Change holder address\n @param newHolder the new holder (only can be called by governance)"
+                },
+                "id": 2282,
+                "name": "StructuredDocumentation",
+                "src": "2328:108:14"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "newHolder",
+                      "overrides": null,
+                      "scope": 2287,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2283,
+                        "name": "ElementaryTypeName",
+                        "src": "2460:7:14"
+                      }
+                    ],
+                    "id": 2284,
+                    "name": "VariableDeclaration",
+                    "src": "2460:17:14"
+                  }
+                ],
+                "id": 2285,
+                "name": "ParameterList",
+                "src": "2459:19:14"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2286,
+                "name": "ParameterList",
+                "src": "2487:0:14"
+              }
+            ],
+            "id": 2287,
+            "name": "FunctionDefinition",
+            "src": "2441:47:14"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "1f8d1d50",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "setTotal",
+              "overrides": null,
+              "scope": 2294,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Configure vesting total balance (only can be called by factory)"
+                },
+                "id": 2288,
+                "name": "StructuredDocumentation",
+                "src": "2494:75:14"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "amount",
+                      "overrides": null,
+                      "scope": 2293,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2289,
+                        "name": "ElementaryTypeName",
+                        "src": "2592:7:14"
+                      }
+                    ],
+                    "id": 2290,
+                    "name": "VariableDeclaration",
+                    "src": "2592:14:14"
+                  }
+                ],
+                "id": 2291,
+                "name": "ParameterList",
+                "src": "2591:16:14"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2292,
+                "name": "ParameterList",
+                "src": "2616:0:14"
+              }
+            ],
+            "id": 2293,
+            "name": "FunctionDefinition",
+            "src": "2574:43:14"
+          }
+        ],
+        "id": 2294,
+        "name": "ContractDefinition",
+        "src": "64:2555:14"
+      }
+    ],
+    "id": 2295,
+    "name": "SourceUnit",
+    "src": "39:2581:14"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-02-04T20:51:03.357Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "approve(uint256)": {
+        "params": {
+          "amount": "Token amount to approve"
+        }
+      },
+      "callWithData(address,bytes)": {
+        "params": {
+          "data": "Data to pass target contract",
+          "target": "Target contract to call (must be one of: staking, vesting or voting machine)"
+        }
+      },
+      "deposit(uint256)": {
+        "params": {
+          "amount": "Token amount to approve"
+        }
+      },
+      "getLockedAt(uint256)": {
+        "params": {
+          "timestamp": "date to check"
+        }
+      },
+      "setHolder(address)": {
+        "params": {
+          "newHolder": "the new holder (only can be called by governance)"
+        }
+      },
+      "withdraw(uint256)": {
+        "params": {
+          "amount": "Tokens amount to withdraw"
+        },
+        "returns": {
+          "_0": "Returns true on success"
+        }
+      },
+      "withdrawAll()": {
+        "returns": {
+          "_0": "Returns true on success"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "approve(uint256)": {
+        "notice": "approve a transfer to the staking machine."
+      },
+      "callWithData(address,bytes)": {
+        "notice": "Calls a function from target passing data"
+      },
+      "deposit(uint256)": {
+        "notice": "deposit MOCs in the staking machine"
+      },
+      "getAvailable()": {
+        "notice": "Token amount available for withdrawal"
+      },
+      "getHolder()": {
+        "notice": "Returns current holder address"
+      },
+      "getLocked()": {
+        "notice": "Minimum token amount required to be locked"
+      },
+      "getLockedAt(uint256)": {
+        "notice": "Minimum token amount required to be locked"
+      },
+      "getParameters()": {
+        "notice": "Retrieve vesting parameters"
+      },
+      "getTotal()": {
+        "notice": "Total token balance configured"
+      },
+      "isVerified()": {
+        "notice": "Returns true after contract has been verified by holder"
+      },
+      "setHolder(address)": {
+        "notice": "Change holder address"
+      },
+      "setTotal(uint256)": {
+        "notice": "Configure vesting total balance (only can be called by factory)"
+      },
+      "verify()": {
+        "notice": "Mark contract as verified by holder"
+      },
+      "withdraw(uint256)": {
+        "notice": "Withdraws tokens to holder address"
+      },
+      "withdrawAll()": {
+        "notice": "Withdraws all available tokens to holder address"
+      }
+    },
+    "version": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "url": "https://pacific-explorer.manta.network/address/0x89fEc31daD373922879bd6279ccDc3666c5D1b7a",
+  "host": "pacific-explorer.manta.network",
+  "address": "0x89fEc31daD373922879bd6279ccDc3666c5D1b7a",
+  "chainid": 169,
+  "project_slug": "zerolend-boost",
+  "asset_id": "66W7Bz5iEms94prXc7JOvT",
+  "contract_name": "LiquidationLogic",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": null,
+  "evm_version": "berlin",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:unexpected-response",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

@@ -1,0 +1,7 @@
+{
+  "url": "https://snowscan.xyz/address/0xF6Cc47E981ED5902BE382dbe7B54e3696De22dBb#code",
+  "host": "snowscan.xyz",
+  "address": "0xF6Cc47E981ED5902BE382dbe7B54e3696De22dBb",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:unexpected-response"
+}

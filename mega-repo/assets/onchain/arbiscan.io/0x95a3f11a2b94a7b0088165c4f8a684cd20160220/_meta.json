@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x95a3f11a2b94a7b0088165c4f8a684cd20160220",
+  "host": "arbiscan.io",
+  "address": "0x95a3f11a2b94a7b0088165c4f8a684cd20160220",
+  "chainid": 42161,
+  "project_slug": "teahousefinance",
+  "asset_id": "1ja4awWA9GaTHsAbXVm0m8",
+  "contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x276ba31eec2d5df8123a521fc1c5a516c2071d4c",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 6,
+  "mode": "json-sources"
+}

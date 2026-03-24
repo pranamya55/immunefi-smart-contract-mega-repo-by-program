@@ -1,0 +1,19 @@
+{
+  "url": "https://basescan.org/address/0x30dfa736b3a20ed032e19894e7ce87ff95055e08",
+  "host": "basescan.org",
+  "address": "0x30dfa736b3a20ed032e19894e7ce87ff95055e08",
+  "chainid": 8453,
+  "contract_name": "OwnerFacet",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "10000",
+  "constructor_arguments": "",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 5,
+  "mode": "recover-json-sources"
+}

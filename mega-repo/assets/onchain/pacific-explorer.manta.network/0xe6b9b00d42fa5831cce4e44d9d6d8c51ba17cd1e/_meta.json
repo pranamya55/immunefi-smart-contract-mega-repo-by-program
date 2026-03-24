@@ -1,0 +1,25 @@
+{
+  "url": "https://pacific-explorer.manta.network/address/0xe6B9b00d42fA5831ccE4E44D9d6D8C51ba17cd1E",
+  "host": "pacific-explorer.manta.network",
+  "address": "0xe6B9b00d42fA5831ccE4E44D9d6D8C51ba17cd1E",
+  "chainid": 169,
+  "project_slug": "zerolend-boost",
+  "asset_id": "17xZi94jDNYdXmT3R3BU51",
+  "contract_name": "InitializableImmutableAdminUpgradeabilityProxy",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": "000000000000000000000000f17218b09699d0f7145e40e771e72130ff616498",
+  "evm_version": "berlin",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:unexpected-response",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

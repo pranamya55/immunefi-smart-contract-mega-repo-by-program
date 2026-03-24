@@ -1,0 +1,9 @@
+[package]
+name = "ccip"
+edition = "2024"
+
+[dependencies]
+mcms = { local = "../../mcms/mcms" }
+
+[environments]
+devnet = "a9149565"

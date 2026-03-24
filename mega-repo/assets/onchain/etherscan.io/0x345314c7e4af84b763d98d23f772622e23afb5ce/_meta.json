@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x345314c7e4af84b763d98d23f772622e23afb5ce#code",
+  "host": "etherscan.io",
+  "address": "0x345314c7e4af84b763d98d23f772622e23afb5ce",
+  "chainid": 1,
+  "project_slug": "zksyncera",
+  "asset_id": "3vJLZJSuEk4fTLAgsIEuFe",
+  "contract_name": "ChainTypeManager",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "9999999",
+  "constructor_arguments": "000000000000000000000000303a465b659cbb0ab36ee643ea362c509eeb5213",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 42,
+  "mode": "json-sources"
+}

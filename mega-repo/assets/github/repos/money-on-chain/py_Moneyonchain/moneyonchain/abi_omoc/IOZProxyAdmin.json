@@ -1,0 +1,2143 @@
+{
+  "contractName": "IOZProxyAdmin",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IOZAdminUpgradeabilityProxy",
+          "name": "proxy",
+          "type": "address"
+        }
+      ],
+      "name": "getProxyImplementation",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IOZAdminUpgradeabilityProxy",
+          "name": "proxy",
+          "type": "address"
+        }
+      ],
+      "name": "getProxyAdmin",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IOZAdminUpgradeabilityProxy",
+          "name": "proxy",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "newAdmin",
+          "type": "address"
+        }
+      ],
+      "name": "changeProxyAdmin",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IOZAdminUpgradeabilityProxy",
+          "name": "proxy",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "implementation",
+          "type": "address"
+        }
+      ],
+      "name": "upgrade",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IOZAdminUpgradeabilityProxy",
+          "name": "proxy",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "implementation",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "upgradeAndCall",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "isOwner",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"contract IOZAdminUpgradeabilityProxy\",\"name\":\"proxy\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"newAdmin\",\"type\":\"address\"}],\"name\":\"changeProxyAdmin\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract IOZAdminUpgradeabilityProxy\",\"name\":\"proxy\",\"type\":\"address\"}],\"name\":\"getProxyAdmin\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract IOZAdminUpgradeabilityProxy\",\"name\":\"proxy\",\"type\":\"address\"}],\"name\":\"getProxyImplementation\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract IOZAdminUpgradeabilityProxy\",\"name\":\"proxy\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"implementation\",\"type\":\"address\"}],\"name\":\"upgrade\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract IOZAdminUpgradeabilityProxy\",\"name\":\"proxy\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"implementation\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"upgradeAndCall\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Interface of the openzeppeling ProxyAdmin\",\"kind\":\"dev\",\"methods\":{\"changeProxyAdmin(address,address)\":{\"details\":\"Changes the admin of a proxy.\",\"params\":{\"newAdmin\":\"Address to transfer proxy administration to.\",\"proxy\":\"Proxy to change admin.\"}},\"getProxyAdmin(address)\":{\"details\":\"Returns the admin of a proxy. Only the admin can query it.\",\"returns\":{\"_0\":\"The address of the current admin of the proxy.\"}},\"getProxyImplementation(address)\":{\"details\":\"Returns the current implementation of a proxy. This is needed because only the proxy admin can query it.\",\"returns\":{\"_0\":\"The address of the current implementation of the proxy.\"}},\"isOwner()\":{\"returns\":{\"_0\":\"true if msg.sender is the owner of the contract.\"}},\"owner()\":{\"returns\":{\"_0\":\"the address of the owner.\"}},\"renounceOwnership()\":{\"details\":\"Allows the current owner to relinquish control of the contract.\"},\"transferOwnership(address)\":{\"details\":\"Allows the current owner to transfer control of the contract to a newOwner.\",\"params\":{\"newOwner\":\"The address to transfer ownership to.\"}},\"upgrade(address,address)\":{\"details\":\"Upgrades a proxy to the newest implementation of a contract.\",\"params\":{\"implementation\":\"the address of the Implementation.\",\"proxy\":\"Proxy to be upgraded.\"}},\"upgradeAndCall(address,address,bytes)\":{\"details\":\"Upgrades a proxy to the newest implementation of a contract and forwards a function call to it. This is useful to initialize the proxied contract.\",\"params\":{\"data\":\"Data to send as msg.data in the low level call. It should include the signature and the parameters of the function to be called, as described in https://solidity.readthedocs.io/en/v0.4.24/abi-spec.html#function-selector-and-argument-encoding.\",\"implementation\":\"Address of the Implementation.\",\"proxy\":\"Proxy to be upgraded.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"renounceOwnership()\":{\"notice\":\"Renouncing to ownership will leave the contract without an owner. It will not be possible to call the functions with the `onlyOwner` modifier anymore.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/jbokser/work2/OMoC-SC-Shared/contracts/moc-governance/IOZProxyAdmin.sol\":\"IOZProxyAdmin\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/jbokser/work2/OMoC-SC-Shared/contracts/moc-governance/IOZAdminUpgradeabilityProxy.sol\":{\"keccak256\":\"0x3e3e138c6b913f1f21c083680bba50bef5377c7bcdb082ab025d8e285ee2c445\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://8fbec08a47400f965188c9aac17783d9771f1a751d1d19acfd63d39310d6a714\",\"dweb:/ipfs/QmceyPCbC6tpm5U1JezAkLunkn6jQMNwHZeKXZkUZeAQLB\"]},\"/home/jbokser/work2/OMoC-SC-Shared/contracts/moc-governance/IOZProxyAdmin.sol\":{\"keccak256\":\"0x47d62d98c45ba8880b07fac74b398c75ec278ccd7ea0f12424354892012498f9\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://599fcdffd749d1f64121a6308fb34f38043dcc571817babdf245ec870d7c5b73\",\"dweb:/ipfs/QmVbUcU67aAuGZRGKx8DfrKx4U2nqxxMCU9FRdTn6GZoJv\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: UNLICENSED\npragma solidity ^0.6.0;\n\nimport {IOZAdminUpgradeabilityProxy} from \"./IOZAdminUpgradeabilityProxy.sol\";\n\n/**\n * @dev Interface of the openzeppeling ProxyAdmin\n */\ninterface IOZProxyAdmin {\n    /**\n     * @dev Returns the current implementation of a proxy.\n     * This is needed because only the proxy admin can query it.\n     * @return The address of the current implementation of the proxy.\n     */\n    function getProxyImplementation(IOZAdminUpgradeabilityProxy proxy)\n        external\n        view\n        returns (address);\n\n    /**\n     * @dev Returns the admin of a proxy. Only the admin can query it.\n     * @return The address of the current admin of the proxy.\n     */\n    function getProxyAdmin(IOZAdminUpgradeabilityProxy proxy) external view returns (address);\n\n    /**\n     * @dev Changes the admin of a proxy.\n     * @param proxy Proxy to change admin.\n     * @param newAdmin Address to transfer proxy administration to.\n     */\n    function changeProxyAdmin(IOZAdminUpgradeabilityProxy proxy, address newAdmin) external;\n\n    /**\n     * @dev Upgrades a proxy to the newest implementation of a contract.\n     * @param proxy Proxy to be upgraded.\n     * @param implementation the address of the Implementation.\n     */\n    function upgrade(IOZAdminUpgradeabilityProxy proxy, address implementation) external;\n\n    /**\n     * @dev Upgrades a proxy to the newest implementation of a contract and forwards a function call to it.\n     * This is useful to initialize the proxied contract.\n     * @param proxy Proxy to be upgraded.\n     * @param implementation Address of the Implementation.\n     * @param data Data to send as msg.data in the low level call.\n     * It should include the signature and the parameters of the function to be called, as described in\n     * https://solidity.readthedocs.io/en/v0.4.24/abi-spec.html#function-selector-and-argument-encoding.\n     */\n    function upgradeAndCall(\n        IOZAdminUpgradeabilityProxy proxy,\n        address implementation,\n        bytes calldata data\n    ) external payable;\n\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\n\n    /**\n     * @return the address of the owner.\n     */\n    function owner() external view returns (address);\n\n    /**\n     * @return true if msg.sender is the owner of the contract.\n     */\n    function isOwner() external view returns (bool);\n\n    /**\n     * @dev Allows the current owner to relinquish control of the contract.\n     * @notice Renouncing to ownership will leave the contract without an owner.\n     * It will not be possible to call the functions with the `onlyOwner`\n     * modifier anymore.\n     */\n    function renounceOwnership() external;\n\n    /**\n     * @dev Allows the current owner to transfer control of the contract to a newOwner.\n     * @param newOwner The address to transfer ownership to.\n     */\n    function transferOwnership(address newOwner) external;\n}\n",
+  "sourcePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/moc-governance/IOZProxyAdmin.sol",
+  "ast": {
+    "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/moc-governance/IOZProxyAdmin.sol",
+    "exportedSymbols": {
+      "IOZProxyAdmin": [
+        4920
+      ]
+    },
+    "id": 4921,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4846,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:23:35"
+      },
+      {
+        "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/moc-governance/IOZAdminUpgradeabilityProxy.sol",
+        "file": "./IOZAdminUpgradeabilityProxy.sol",
+        "id": 4848,
+        "nodeType": "ImportDirective",
+        "scope": 4921,
+        "sourceUnit": 4845,
+        "src": "64:78:35",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "argumentTypes": null,
+              "id": 4847,
+              "name": "IOZAdminUpgradeabilityProxy",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": null,
+              "src": "72:27:35",
+              "typeDescriptions": {
+                "typeIdentifier": null,
+                "typeString": null
+              }
+            },
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 4849,
+          "nodeType": "StructuredDocumentation",
+          "src": "144:57:35",
+          "text": " @dev Interface of the openzeppeling ProxyAdmin"
+        },
+        "fullyImplemented": false,
+        "id": 4920,
+        "linearizedBaseContracts": [
+          4920
+        ],
+        "name": "IOZProxyAdmin",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": {
+              "id": 4850,
+              "nodeType": "StructuredDocumentation",
+              "src": "232:206:35",
+              "text": " @dev Returns the current implementation of a proxy.\n This is needed because only the proxy admin can query it.\n @return The address of the current implementation of the proxy."
+            },
+            "functionSelector": "204e1c7a",
+            "id": 4857,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getProxyImplementation",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 4853,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4852,
+                  "mutability": "mutable",
+                  "name": "proxy",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4857,
+                  "src": "475:33:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IOZAdminUpgradeabilityProxy_$4844",
+                    "typeString": "contract IOZAdminUpgradeabilityProxy"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 4851,
+                    "name": "IOZAdminUpgradeabilityProxy",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 4844,
+                    "src": "475:27:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IOZAdminUpgradeabilityProxy_$4844",
+                      "typeString": "contract IOZAdminUpgradeabilityProxy"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "474:35:35"
+            },
+            "returnParameters": {
+              "id": 4856,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4855,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4857,
+                  "src": "557:7:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4854,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "557:7:35",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "556:9:35"
+            },
+            "scope": 4920,
+            "src": "443:123:35",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 4858,
+              "nodeType": "StructuredDocumentation",
+              "src": "572:144:35",
+              "text": " @dev Returns the admin of a proxy. Only the admin can query it.\n @return The address of the current admin of the proxy."
+            },
+            "functionSelector": "f3b7dead",
+            "id": 4865,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getProxyAdmin",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 4861,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4860,
+                  "mutability": "mutable",
+                  "name": "proxy",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4865,
+                  "src": "744:33:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IOZAdminUpgradeabilityProxy_$4844",
+                    "typeString": "contract IOZAdminUpgradeabilityProxy"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 4859,
+                    "name": "IOZAdminUpgradeabilityProxy",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 4844,
+                    "src": "744:27:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IOZAdminUpgradeabilityProxy_$4844",
+                      "typeString": "contract IOZAdminUpgradeabilityProxy"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "743:35:35"
+            },
+            "returnParameters": {
+              "id": 4864,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4863,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4865,
+                  "src": "802:7:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4862,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "802:7:35",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "801:9:35"
+            },
+            "scope": 4920,
+            "src": "721:90:35",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 4866,
+              "nodeType": "StructuredDocumentation",
+              "src": "817:164:35",
+              "text": " @dev Changes the admin of a proxy.\n @param proxy Proxy to change admin.\n @param newAdmin Address to transfer proxy administration to."
+            },
+            "functionSelector": "7eff275e",
+            "id": 4873,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "changeProxyAdmin",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 4871,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4868,
+                  "mutability": "mutable",
+                  "name": "proxy",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4873,
+                  "src": "1012:33:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IOZAdminUpgradeabilityProxy_$4844",
+                    "typeString": "contract IOZAdminUpgradeabilityProxy"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 4867,
+                    "name": "IOZAdminUpgradeabilityProxy",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 4844,
+                    "src": "1012:27:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IOZAdminUpgradeabilityProxy_$4844",
+                      "typeString": "contract IOZAdminUpgradeabilityProxy"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4870,
+                  "mutability": "mutable",
+                  "name": "newAdmin",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4873,
+                  "src": "1047:16:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4869,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1047:7:35",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1011:53:35"
+            },
+            "returnParameters": {
+              "id": 4872,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1073:0:35"
+            },
+            "scope": 4920,
+            "src": "986:88:35",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 4874,
+              "nodeType": "StructuredDocumentation",
+              "src": "1080:190:35",
+              "text": " @dev Upgrades a proxy to the newest implementation of a contract.\n @param proxy Proxy to be upgraded.\n @param implementation the address of the Implementation."
+            },
+            "functionSelector": "99a88ec4",
+            "id": 4881,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "upgrade",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 4879,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4876,
+                  "mutability": "mutable",
+                  "name": "proxy",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4881,
+                  "src": "1292:33:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IOZAdminUpgradeabilityProxy_$4844",
+                    "typeString": "contract IOZAdminUpgradeabilityProxy"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 4875,
+                    "name": "IOZAdminUpgradeabilityProxy",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 4844,
+                    "src": "1292:27:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IOZAdminUpgradeabilityProxy_$4844",
+                      "typeString": "contract IOZAdminUpgradeabilityProxy"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4878,
+                  "mutability": "mutable",
+                  "name": "implementation",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4881,
+                  "src": "1327:22:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4877,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1327:7:35",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1291:59:35"
+            },
+            "returnParameters": {
+              "id": 4880,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1359:0:35"
+            },
+            "scope": 4920,
+            "src": "1275:85:35",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 4882,
+              "nodeType": "StructuredDocumentation",
+              "src": "1366:555:35",
+              "text": " @dev Upgrades a proxy to the newest implementation of a contract and forwards a function call to it.\n This is useful to initialize the proxied contract.\n @param proxy Proxy to be upgraded.\n @param implementation Address of the Implementation.\n @param data Data to send as msg.data in the low level call.\n It should include the signature and the parameters of the function to be called, as described in\n https://solidity.readthedocs.io/en/v0.4.24/abi-spec.html#function-selector-and-argument-encoding."
+            },
+            "functionSelector": "9623609d",
+            "id": 4891,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "upgradeAndCall",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 4889,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4884,
+                  "mutability": "mutable",
+                  "name": "proxy",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4891,
+                  "src": "1959:33:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IOZAdminUpgradeabilityProxy_$4844",
+                    "typeString": "contract IOZAdminUpgradeabilityProxy"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 4883,
+                    "name": "IOZAdminUpgradeabilityProxy",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 4844,
+                    "src": "1959:27:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IOZAdminUpgradeabilityProxy_$4844",
+                      "typeString": "contract IOZAdminUpgradeabilityProxy"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4886,
+                  "mutability": "mutable",
+                  "name": "implementation",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4891,
+                  "src": "2002:22:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4885,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2002:7:35",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4888,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4891,
+                  "src": "2034:19:35",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 4887,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2034:5:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1949:110:35"
+            },
+            "returnParameters": {
+              "id": 4890,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2076:0:35"
+            },
+            "scope": 4920,
+            "src": "1926:151:35",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 4897,
+            "name": "OwnershipTransferred",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 4896,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4893,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "previousOwner",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4897,
+                  "src": "2110:29:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4892,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2110:7:35",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4895,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "newOwner",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4897,
+                  "src": "2141:24:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4894,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2141:7:35",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2109:57:35"
+            },
+            "src": "2083:84:35"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 4898,
+              "nodeType": "StructuredDocumentation",
+              "src": "2173:52:35",
+              "text": " @return the address of the owner."
+            },
+            "functionSelector": "8da5cb5b",
+            "id": 4903,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "owner",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 4899,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2244:2:35"
+            },
+            "returnParameters": {
+              "id": 4902,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4901,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4903,
+                  "src": "2270:7:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4900,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2270:7:35",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2269:9:35"
+            },
+            "scope": 4920,
+            "src": "2230:49:35",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 4904,
+              "nodeType": "StructuredDocumentation",
+              "src": "2285:75:35",
+              "text": " @return true if msg.sender is the owner of the contract."
+            },
+            "functionSelector": "8f32d59b",
+            "id": 4909,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isOwner",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 4905,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2381:2:35"
+            },
+            "returnParameters": {
+              "id": 4908,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4907,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4909,
+                  "src": "2407:4:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 4906,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2407:4:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2406:6:35"
+            },
+            "scope": 4920,
+            "src": "2365:48:35",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 4910,
+              "nodeType": "StructuredDocumentation",
+              "src": "2419:267:35",
+              "text": " @dev Allows the current owner to relinquish control of the contract.\n @notice Renouncing to ownership will leave the contract without an owner.\n It will not be possible to call the functions with the `onlyOwner`\n modifier anymore."
+            },
+            "functionSelector": "715018a6",
+            "id": 4913,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "renounceOwnership",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 4911,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2717:2:35"
+            },
+            "returnParameters": {
+              "id": 4912,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2728:0:35"
+            },
+            "scope": 4920,
+            "src": "2691:38:35",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 4914,
+              "nodeType": "StructuredDocumentation",
+              "src": "2735:160:35",
+              "text": " @dev Allows the current owner to transfer control of the contract to a newOwner.\n @param newOwner The address to transfer ownership to."
+            },
+            "functionSelector": "f2fde38b",
+            "id": 4919,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "transferOwnership",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 4917,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4916,
+                  "mutability": "mutable",
+                  "name": "newOwner",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 4919,
+                  "src": "2927:16:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4915,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2927:7:35",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2926:18:35"
+            },
+            "returnParameters": {
+              "id": 4918,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2953:0:35"
+            },
+            "scope": 4920,
+            "src": "2900:54:35",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 4921,
+        "src": "202:2754:35"
+      }
+    ],
+    "src": "39:2918:35"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/moc-governance/IOZProxyAdmin.sol",
+      "exportedSymbols": {
+        "IOZProxyAdmin": [
+          4920
+        ]
+      },
+      "license": "UNLICENSED"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.6",
+            ".0"
+          ]
+        },
+        "id": 4846,
+        "name": "PragmaDirective",
+        "src": "39:23:35"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 4845,
+          "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/moc-governance/IOZAdminUpgradeabilityProxy.sol",
+          "file": "./IOZAdminUpgradeabilityProxy.sol",
+          "scope": 4921,
+          "symbolAliases": [
+            {
+              "foreign": {
+                "attributes": {
+                  "argumentTypes": null,
+                  "overloadedDeclarations": [
+                    null
+                  ],
+                  "referencedDeclaration": null,
+                  "type": null,
+                  "value": "IOZAdminUpgradeabilityProxy"
+                },
+                "id": 4847,
+                "name": "Identifier",
+                "src": "72:27:35"
+              },
+              "local": null
+            }
+          ],
+          "unitAlias": ""
+        },
+        "id": 4848,
+        "name": "ImportDirective",
+        "src": "64:78:35"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            4920
+          ],
+          "name": "IOZProxyAdmin",
+          "scope": 4921
+        },
+        "children": [
+          {
+            "attributes": {
+              "text": " @dev Interface of the openzeppeling ProxyAdmin"
+            },
+            "id": 4849,
+            "name": "StructuredDocumentation",
+            "src": "144:57:35"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "204e1c7a",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getProxyImplementation",
+              "overrides": null,
+              "scope": 4920,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev Returns the current implementation of a proxy.\n This is needed because only the proxy admin can query it.\n @return The address of the current implementation of the proxy."
+                },
+                "id": 4850,
+                "name": "StructuredDocumentation",
+                "src": "232:206:35"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "proxy",
+                      "overrides": null,
+                      "scope": 4857,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IOZAdminUpgradeabilityProxy",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IOZAdminUpgradeabilityProxy",
+                          "referencedDeclaration": 4844,
+                          "type": "contract IOZAdminUpgradeabilityProxy"
+                        },
+                        "id": 4851,
+                        "name": "UserDefinedTypeName",
+                        "src": "475:27:35"
+                      }
+                    ],
+                    "id": 4852,
+                    "name": "VariableDeclaration",
+                    "src": "475:33:35"
+                  }
+                ],
+                "id": 4853,
+                "name": "ParameterList",
+                "src": "474:35:35"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 4857,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 4854,
+                        "name": "ElementaryTypeName",
+                        "src": "557:7:35"
+                      }
+                    ],
+                    "id": 4855,
+                    "name": "VariableDeclaration",
+                    "src": "557:7:35"
+                  }
+                ],
+                "id": 4856,
+                "name": "ParameterList",
+                "src": "556:9:35"
+              }
+            ],
+            "id": 4857,
+            "name": "FunctionDefinition",
+            "src": "443:123:35"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "f3b7dead",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getProxyAdmin",
+              "overrides": null,
+              "scope": 4920,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev Returns the admin of a proxy. Only the admin can query it.\n @return The address of the current admin of the proxy."
+                },
+                "id": 4858,
+                "name": "StructuredDocumentation",
+                "src": "572:144:35"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "proxy",
+                      "overrides": null,
+                      "scope": 4865,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IOZAdminUpgradeabilityProxy",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IOZAdminUpgradeabilityProxy",
+                          "referencedDeclaration": 4844,
+                          "type": "contract IOZAdminUpgradeabilityProxy"
+                        },
+                        "id": 4859,
+                        "name": "UserDefinedTypeName",
+                        "src": "744:27:35"
+                      }
+                    ],
+                    "id": 4860,
+                    "name": "VariableDeclaration",
+                    "src": "744:33:35"
+                  }
+                ],
+                "id": 4861,
+                "name": "ParameterList",
+                "src": "743:35:35"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 4865,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 4862,
+                        "name": "ElementaryTypeName",
+                        "src": "802:7:35"
+                      }
+                    ],
+                    "id": 4863,
+                    "name": "VariableDeclaration",
+                    "src": "802:7:35"
+                  }
+                ],
+                "id": 4864,
+                "name": "ParameterList",
+                "src": "801:9:35"
+              }
+            ],
+            "id": 4865,
+            "name": "FunctionDefinition",
+            "src": "721:90:35"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "7eff275e",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "changeProxyAdmin",
+              "overrides": null,
+              "scope": 4920,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev Changes the admin of a proxy.\n @param proxy Proxy to change admin.\n @param newAdmin Address to transfer proxy administration to."
+                },
+                "id": 4866,
+                "name": "StructuredDocumentation",
+                "src": "817:164:35"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "proxy",
+                      "overrides": null,
+                      "scope": 4873,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IOZAdminUpgradeabilityProxy",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IOZAdminUpgradeabilityProxy",
+                          "referencedDeclaration": 4844,
+                          "type": "contract IOZAdminUpgradeabilityProxy"
+                        },
+                        "id": 4867,
+                        "name": "UserDefinedTypeName",
+                        "src": "1012:27:35"
+                      }
+                    ],
+                    "id": 4868,
+                    "name": "VariableDeclaration",
+                    "src": "1012:33:35"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "newAdmin",
+                      "overrides": null,
+                      "scope": 4873,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 4869,
+                        "name": "ElementaryTypeName",
+                        "src": "1047:7:35"
+                      }
+                    ],
+                    "id": 4870,
+                    "name": "VariableDeclaration",
+                    "src": "1047:16:35"
+                  }
+                ],
+                "id": 4871,
+                "name": "ParameterList",
+                "src": "1011:53:35"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4872,
+                "name": "ParameterList",
+                "src": "1073:0:35"
+              }
+            ],
+            "id": 4873,
+            "name": "FunctionDefinition",
+            "src": "986:88:35"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "99a88ec4",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "upgrade",
+              "overrides": null,
+              "scope": 4920,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev Upgrades a proxy to the newest implementation of a contract.\n @param proxy Proxy to be upgraded.\n @param implementation the address of the Implementation."
+                },
+                "id": 4874,
+                "name": "StructuredDocumentation",
+                "src": "1080:190:35"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "proxy",
+                      "overrides": null,
+                      "scope": 4881,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IOZAdminUpgradeabilityProxy",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IOZAdminUpgradeabilityProxy",
+                          "referencedDeclaration": 4844,
+                          "type": "contract IOZAdminUpgradeabilityProxy"
+                        },
+                        "id": 4875,
+                        "name": "UserDefinedTypeName",
+                        "src": "1292:27:35"
+                      }
+                    ],
+                    "id": 4876,
+                    "name": "VariableDeclaration",
+                    "src": "1292:33:35"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "implementation",
+                      "overrides": null,
+                      "scope": 4881,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 4877,
+                        "name": "ElementaryTypeName",
+                        "src": "1327:7:35"
+                      }
+                    ],
+                    "id": 4878,
+                    "name": "VariableDeclaration",
+                    "src": "1327:22:35"
+                  }
+                ],
+                "id": 4879,
+                "name": "ParameterList",
+                "src": "1291:59:35"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4880,
+                "name": "ParameterList",
+                "src": "1359:0:35"
+              }
+            ],
+            "id": 4881,
+            "name": "FunctionDefinition",
+            "src": "1275:85:35"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "9623609d",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "upgradeAndCall",
+              "overrides": null,
+              "scope": 4920,
+              "stateMutability": "payable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev Upgrades a proxy to the newest implementation of a contract and forwards a function call to it.\n This is useful to initialize the proxied contract.\n @param proxy Proxy to be upgraded.\n @param implementation Address of the Implementation.\n @param data Data to send as msg.data in the low level call.\n It should include the signature and the parameters of the function to be called, as described in\n https://solidity.readthedocs.io/en/v0.4.24/abi-spec.html#function-selector-and-argument-encoding."
+                },
+                "id": 4882,
+                "name": "StructuredDocumentation",
+                "src": "1366:555:35"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "proxy",
+                      "overrides": null,
+                      "scope": 4891,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IOZAdminUpgradeabilityProxy",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IOZAdminUpgradeabilityProxy",
+                          "referencedDeclaration": 4844,
+                          "type": "contract IOZAdminUpgradeabilityProxy"
+                        },
+                        "id": 4883,
+                        "name": "UserDefinedTypeName",
+                        "src": "1959:27:35"
+                      }
+                    ],
+                    "id": 4884,
+                    "name": "VariableDeclaration",
+                    "src": "1959:33:35"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "implementation",
+                      "overrides": null,
+                      "scope": 4891,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 4885,
+                        "name": "ElementaryTypeName",
+                        "src": "2002:7:35"
+                      }
+                    ],
+                    "id": 4886,
+                    "name": "VariableDeclaration",
+                    "src": "2002:22:35"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "data",
+                      "overrides": null,
+                      "scope": 4891,
+                      "stateVariable": false,
+                      "storageLocation": "calldata",
+                      "type": "bytes",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes",
+                          "type": "bytes"
+                        },
+                        "id": 4887,
+                        "name": "ElementaryTypeName",
+                        "src": "2034:5:35"
+                      }
+                    ],
+                    "id": 4888,
+                    "name": "VariableDeclaration",
+                    "src": "2034:19:35"
+                  }
+                ],
+                "id": 4889,
+                "name": "ParameterList",
+                "src": "1949:110:35"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4890,
+                "name": "ParameterList",
+                "src": "2076:0:35"
+              }
+            ],
+            "id": 4891,
+            "name": "FunctionDefinition",
+            "src": "1926:151:35"
+          },
+          {
+            "attributes": {
+              "anonymous": false,
+              "documentation": null,
+              "name": "OwnershipTransferred"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": true,
+                      "mutability": "mutable",
+                      "name": "previousOwner",
+                      "overrides": null,
+                      "scope": 4897,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 4892,
+                        "name": "ElementaryTypeName",
+                        "src": "2110:7:35"
+                      }
+                    ],
+                    "id": 4893,
+                    "name": "VariableDeclaration",
+                    "src": "2110:29:35"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": true,
+                      "mutability": "mutable",
+                      "name": "newOwner",
+                      "overrides": null,
+                      "scope": 4897,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 4894,
+                        "name": "ElementaryTypeName",
+                        "src": "2141:7:35"
+                      }
+                    ],
+                    "id": 4895,
+                    "name": "VariableDeclaration",
+                    "src": "2141:24:35"
+                  }
+                ],
+                "id": 4896,
+                "name": "ParameterList",
+                "src": "2109:57:35"
+              }
+            ],
+            "id": 4897,
+            "name": "EventDefinition",
+            "src": "2083:84:35"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "8da5cb5b",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "owner",
+              "overrides": null,
+              "scope": 4920,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @return the address of the owner."
+                },
+                "id": 4898,
+                "name": "StructuredDocumentation",
+                "src": "2173:52:35"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4899,
+                "name": "ParameterList",
+                "src": "2244:2:35"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 4903,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 4900,
+                        "name": "ElementaryTypeName",
+                        "src": "2270:7:35"
+                      }
+                    ],
+                    "id": 4901,
+                    "name": "VariableDeclaration",
+                    "src": "2270:7:35"
+                  }
+                ],
+                "id": 4902,
+                "name": "ParameterList",
+                "src": "2269:9:35"
+              }
+            ],
+            "id": 4903,
+            "name": "FunctionDefinition",
+            "src": "2230:49:35"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "8f32d59b",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "isOwner",
+              "overrides": null,
+              "scope": 4920,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @return true if msg.sender is the owner of the contract."
+                },
+                "id": 4904,
+                "name": "StructuredDocumentation",
+                "src": "2285:75:35"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4905,
+                "name": "ParameterList",
+                "src": "2381:2:35"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 4909,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 4906,
+                        "name": "ElementaryTypeName",
+                        "src": "2407:4:35"
+                      }
+                    ],
+                    "id": 4907,
+                    "name": "VariableDeclaration",
+                    "src": "2407:4:35"
+                  }
+                ],
+                "id": 4908,
+                "name": "ParameterList",
+                "src": "2406:6:35"
+              }
+            ],
+            "id": 4909,
+            "name": "FunctionDefinition",
+            "src": "2365:48:35"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "715018a6",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "renounceOwnership",
+              "overrides": null,
+              "scope": 4920,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev Allows the current owner to relinquish control of the contract.\n @notice Renouncing to ownership will leave the contract without an owner.\n It will not be possible to call the functions with the `onlyOwner`\n modifier anymore."
+                },
+                "id": 4910,
+                "name": "StructuredDocumentation",
+                "src": "2419:267:35"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4911,
+                "name": "ParameterList",
+                "src": "2717:2:35"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4912,
+                "name": "ParameterList",
+                "src": "2728:0:35"
+              }
+            ],
+            "id": 4913,
+            "name": "FunctionDefinition",
+            "src": "2691:38:35"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "f2fde38b",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "transferOwnership",
+              "overrides": null,
+              "scope": 4920,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev Allows the current owner to transfer control of the contract to a newOwner.\n @param newOwner The address to transfer ownership to."
+                },
+                "id": 4914,
+                "name": "StructuredDocumentation",
+                "src": "2735:160:35"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "newOwner",
+                      "overrides": null,
+                      "scope": 4919,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 4915,
+                        "name": "ElementaryTypeName",
+                        "src": "2927:7:35"
+                      }
+                    ],
+                    "id": 4916,
+                    "name": "VariableDeclaration",
+                    "src": "2927:16:35"
+                  }
+                ],
+                "id": 4917,
+                "name": "ParameterList",
+                "src": "2926:18:35"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4918,
+                "name": "ParameterList",
+                "src": "2953:0:35"
+              }
+            ],
+            "id": 4919,
+            "name": "FunctionDefinition",
+            "src": "2900:54:35"
+          }
+        ],
+        "id": 4920,
+        "name": "ContractDefinition",
+        "src": "202:2754:35"
+      }
+    ],
+    "id": 4921,
+    "name": "SourceUnit",
+    "src": "39:2918:35"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-02-04T20:51:03.403Z",
+  "devdoc": {
+    "details": "Interface of the openzeppeling ProxyAdmin",
+    "kind": "dev",
+    "methods": {
+      "changeProxyAdmin(address,address)": {
+        "details": "Changes the admin of a proxy.",
+        "params": {
+          "newAdmin": "Address to transfer proxy administration to.",
+          "proxy": "Proxy to change admin."
+        }
+      },
+      "getProxyAdmin(address)": {
+        "details": "Returns the admin of a proxy. Only the admin can query it.",
+        "returns": {
+          "_0": "The address of the current admin of the proxy."
+        }
+      },
+      "getProxyImplementation(address)": {
+        "details": "Returns the current implementation of a proxy. This is needed because only the proxy admin can query it.",
+        "returns": {
+          "_0": "The address of the current implementation of the proxy."
+        }
+      },
+      "isOwner()": {
+        "returns": {
+          "_0": "true if msg.sender is the owner of the contract."
+        }
+      },
+      "owner()": {
+        "returns": {
+          "_0": "the address of the owner."
+        }
+      },
+      "renounceOwnership()": {
+        "details": "Allows the current owner to relinquish control of the contract."
+      },
+      "transferOwnership(address)": {
+        "details": "Allows the current owner to transfer control of the contract to a newOwner.",
+        "params": {
+          "newOwner": "The address to transfer ownership to."
+        }
+      },
+      "upgrade(address,address)": {
+        "details": "Upgrades a proxy to the newest implementation of a contract.",
+        "params": {
+          "implementation": "the address of the Implementation.",
+          "proxy": "Proxy to be upgraded."
+        }
+      },
+      "upgradeAndCall(address,address,bytes)": {
+        "details": "Upgrades a proxy to the newest implementation of a contract and forwards a function call to it. This is useful to initialize the proxied contract.",
+        "params": {
+          "data": "Data to send as msg.data in the low level call. It should include the signature and the parameters of the function to be called, as described in https://solidity.readthedocs.io/en/v0.4.24/abi-spec.html#function-selector-and-argument-encoding.",
+          "implementation": "Address of the Implementation.",
+          "proxy": "Proxy to be upgraded."
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "renounceOwnership()": {
+        "notice": "Renouncing to ownership will leave the contract without an owner. It will not be possible to call the functions with the `onlyOwner` modifier anymore."
+      }
+    },
+    "version": 1
+  }
+}

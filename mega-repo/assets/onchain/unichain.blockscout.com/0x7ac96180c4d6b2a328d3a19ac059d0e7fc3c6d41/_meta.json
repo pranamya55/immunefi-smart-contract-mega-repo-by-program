@@ -1,0 +1,25 @@
+{
+  "url": "https://unichain.blockscout.com/address/0x7ac96180C4d6b2A328D3a19ac059D0E7Fc3C6d41",
+  "host": "unichain.blockscout.com",
+  "address": "0x7ac96180C4d6b2A328D3a19ac059D0E7Fc3C6d41",
+  "chainid": null,
+  "project_slug": "sparklend",
+  "asset_id": "5c7BtjL0vwGwrwCXobJWGo",
+  "contract_name": "SSRChainlinkRateProviderAdapter",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": "0x0000000000000000000000001566bfa55d95686a823751298533d42651183988",
+  "evm_version": "shanghai",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:missing-chainid",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

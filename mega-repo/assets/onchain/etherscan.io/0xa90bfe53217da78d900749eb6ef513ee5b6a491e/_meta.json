@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xa90bFe53217da78D900749eb6Ef513ee5b6a491e?utm_source=immunefi",
+  "host": "etherscan.io",
+  "address": "0xa90bFe53217da78D900749eb6Ef513ee5b6a491e",
+  "chainid": 1,
+  "project_slug": "olympus",
+  "asset_id": "64KLxYs8SlOMhXQV44SUaK",
+  "contract_name": "OlympusMinter",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": "1",
+  "runs": "10",
+  "constructor_arguments": "0000000000000000000000002286d7f9639e8158fad1169e76d1fbc38247f54b00000000000000000000000064aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 4,
+  "mode": "json-sources"
+}

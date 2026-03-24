@@ -1,0 +1,50 @@
+name: Codspeed Benchmarks
+
+on:
+  push:
+    branches:
+      - "master"
+  pull_request:
+    paths:
+       - forc-plugins/forc-lsp/**
+       - sway-lsp/**
+       - forc-pkg/**
+       - sway-core/**
+       - forc-plugins/forc-doc/**
+  # `workflow_dispatch` allows CodSpeed to trigger backtest
+  # performance analysis in order to generate initial data.
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  benchmarks:
+    runs-on: warp-ubuntu-latest-x64-4x
+    steps:
+      - uses: actions/checkout@v6
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+        with:
+          cache-provider: "warpbuild"
+
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: cargo-codspeed
+
+      - name: Build the benchmark targets
+        run: |
+          cargo codspeed build -p sway-lsp
+          cargo codspeed build -p forc-doc
+
+      - name: Run the benchmarks
+        uses: CodSpeedHQ/action@v3
+        with:
+          run: |
+            cargo codspeed run -p sway-lsp
+            cargo codspeed run -p forc-doc
+          token: ${{ secrets.CODSPEED_TOKEN }}

@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x2Bf852e22C92Fd790f4AE54A76536c8C4217786b",
+  "host": "arbiscan.io",
+  "address": "0x2Bf852e22C92Fd790f4AE54A76536c8C4217786b",
+  "chainid": 42161,
+  "project_slug": "wepiggy",
+  "asset_id": "6YcEaDFjEayYxnrJEqTMoM",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "1",
+  "implementation": "0x22f934a1bb68ea7e7893ef8f76249afe904af6ae",
+  "swarm_source": "ipfs://93f028255035b61df476b13b9dba3c4f06f60e51b9b4caee31680b389aef327f",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xd9a442856c234a39a81a089c06451ebaa4306a72",
+  "host": "etherscan.io",
+  "address": "0xd9a442856c234a39a81a089c06451ebaa4306a72",
+  "chainid": 1,
+  "project_slug": "pufferfinance-boost",
+  "asset_id": "3NdyyZx2NPLR3ugCrVDF4L",
+  "contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "shanghai",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x3b2fdfdefe919dbcce0bc5ac426097d5523b8afa",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 6,
+  "mode": "json-sources"
+}

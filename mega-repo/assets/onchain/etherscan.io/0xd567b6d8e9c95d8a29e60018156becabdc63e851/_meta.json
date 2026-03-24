@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xd567b6D8e9C95d8a29e60018156becaBDC63E851",
+  "host": "etherscan.io",
+  "address": "0xd567b6D8e9C95d8a29e60018156becaBDC63E851",
+  "chainid": 1,
+  "project_slug": "nucleus",
+  "asset_id": "6iB2XSQIgMqX3hgqnyepMT",
+  "contract_name": "MultiChainLayerZeroTellerWithMultiAssetSupport",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "00000000000000000000000094544835cf97c631f101c5f538787fe14e2e04f60000000000000000000000006c587402dc88ef187670f744dfb9d6a09ff7fd760000000000000000000000008ca1d13de3039142186aa57656adbe0fd2620d2b0000000000000000000000001a44076050125825900e736c501f859c50fe728c",
+  "evm_version": "shanghai",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 51,
+  "mode": "json-sources"
+}

@@ -1,0 +1,25 @@
+{
+  "url": "https://unichain.blockscout.com/address/0xc07bE8994D035631c36fb4a89C918CeFB2f03EC3",
+  "host": "unichain.blockscout.com",
+  "address": "0xc07bE8994D035631c36fb4a89C918CeFB2f03EC3",
+  "chainid": null,
+  "project_slug": "usdt0",
+  "asset_id": "JorzgTAwiA40OFc14BnBg",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": "00000000000000000000000013c41af9e2adadb47a55961f6d3b68b41ae36ef9000000000000000000000000a882c21c9df00958a958cde96f2b2ae8fb4315b100000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000024c4d66de80000000000000000000000001a6362ad64ccff5902d46d875b36e8798267d15400000000000000000000000000000000000000000000000000000000",
+  "evm_version": "london",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:missing-chainid",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x1711e93eec78ba83D38C26f0fF284eB478bdbec4",
+  "host": "etherscan.io",
+  "address": "0x1711e93eec78ba83D38C26f0fF284eB478bdbec4",
+  "chainid": 1,
+  "project_slug": "stakelink",
+  "asset_id": "7vCbWbRiLQ0Dfpj5CVuo0a",
+  "contract_name": "RebaseController",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": "1",
+  "runs": "115",
+  "constructor_arguments": "000000000000000000000000b8b295df2cd735b15be5eb419517aa626fc43cd5000000000000000000000000ddc796a66e8b83d0bccd97df33a6ccfba8fd60ea0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000785a2de1cad17721b05d111bf087b1d87048f4a5000000000000000000000000f5c08d55a77063ac4e5e18f1a470804088be1ad4",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 10,
+  "mode": "json-sources"
+}

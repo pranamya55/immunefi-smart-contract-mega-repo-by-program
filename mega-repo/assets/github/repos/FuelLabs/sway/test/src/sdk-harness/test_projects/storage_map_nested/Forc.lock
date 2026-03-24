@@ -1,0 +1,8 @@
+[[package]]
+name = "std"
+source = "path+from-root-2D4FB64C341C97C5"
+
+[[package]]
+name = "storage_map_nested"
+source = "member"
+dependencies = ["std"]

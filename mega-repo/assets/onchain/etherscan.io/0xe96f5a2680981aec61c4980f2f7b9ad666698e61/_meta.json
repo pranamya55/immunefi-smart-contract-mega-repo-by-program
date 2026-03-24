@@ -1,0 +1,19 @@
+{
+  "url": "https://etherscan.io/address/0xe96f5a2680981aec61c4980f2f7b9ad666698e61",
+  "host": "etherscan.io",
+  "address": "0xe96f5a2680981aec61c4980f2f7b9ad666698e61",
+  "chainid": 1,
+  "contract_name": "IntegralMerkleTimeRelease",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000d502f487e1841fdc805130e13eae80c61186bc9843d990087905b64223e6073e9ef1b7b49f9c593e3da7d70cb35dcdddde10d5ff0000000000000000000000000000000000000000000000000000000000de79fd00000000000000000000000000000000000000000000000000000000014d85e00000000000000000000000000000000000000000000000000000000000de79fd0000000000000000000000000000000000000000000000000000000000f0fbf9",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "None",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 8,
+  "mode": "recover-json-sources"
+}

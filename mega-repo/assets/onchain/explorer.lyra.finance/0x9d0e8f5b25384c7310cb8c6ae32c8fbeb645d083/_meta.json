@@ -1,0 +1,25 @@
+{
+  "url": "https://explorer.lyra.finance/address/0x9d0E8f5b25384C7310CB8C6aE32C8fbeb645d083",
+  "host": "explorer.lyra.finance",
+  "address": "0x9d0E8f5b25384C7310CB8C6aE32C8fbeb645d083",
+  "chainid": null,
+  "project_slug": "derive",
+  "asset_id": "44RmXgrS2nyPUbGuerCWBB",
+  "contract_name": "WithdrawalModule",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": "0x000000000000000000000000eb8d770ec18db98db922e9d83260a585b9f0dead",
+  "evm_version": "paris",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:missing-chainid",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

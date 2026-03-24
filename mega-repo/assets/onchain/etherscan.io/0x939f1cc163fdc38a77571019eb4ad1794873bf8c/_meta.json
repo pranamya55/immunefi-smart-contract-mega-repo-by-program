@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x939f1cC163fDc38a77571019eb4Ad1794873bf8c",
+  "host": "etherscan.io",
+  "address": "0x939f1cC163fDc38a77571019eb4Ad1794873bf8c",
+  "chainid": 1,
+  "project_slug": "swell",
+  "asset_id": "2RscjIwRmaZvrETbBJoRGM",
+  "contract_name": "RegistryFactory",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "1",
+  "runs": "10000",
+  "constructor_arguments": "",
+  "evm_version": "shanghai",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 8,
+  "mode": "json-sources"
+}

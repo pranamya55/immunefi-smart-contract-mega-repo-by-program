@@ -1,0 +1,24 @@
+{
+  "url": "https://basescan.org/address/0x608e93ad410f3e3288dfc1a60446925a0fcf967e",
+  "host": "basescan.org",
+  "address": "0x608e93ad410f3e3288dfc1a60446925a0fcf967e",
+  "chainid": 8453,
+  "project_slug": "velvet-capital-v2",
+  "asset_id": "1wMtjkyZXyBWpIX5DVblUe",
+  "contract_name": "PriceOracleL2",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "0000000000000000000000004200000000000000000000000000000000000006000000000000000000000000bcf85224fc0756b9fa45aa7892530b47e10b6433",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 11,
+  "mode": "json-sources"
+}

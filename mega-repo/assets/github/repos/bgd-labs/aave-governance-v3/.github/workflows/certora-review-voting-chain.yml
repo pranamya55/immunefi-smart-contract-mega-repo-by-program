@@ -1,0 +1,63 @@
+# Github action for verifying the contracts under src/contracts/voting using certora-cli-beta 6
+name: certora-review-voting-chain
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+on:
+  pull_request:
+    branches:
+      - '*'
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    if:
+      github.event.pull_request.head.repo.full_name == github.repository || (github.event_name == 'push' &&
+      github.ref == format('refs/heads/{0}', github.event.repository.default_branch))
+    permissions:
+      contents: read
+      statuses: write
+      pull-requests: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - uses: Certora/certora-run-action@v2
+        with:
+          cli-version: 7.28.0
+          configurations: |-
+            security/certora/confs/voting/verifyLegality.conf --rule createdVoteHasNonZeroHash  votedPowerIsImmutable  onlyValidProposalCanChangeTally  legalVote  method_reachability
+            security/certora/confs/voting/verifyMisc.conf --exclude_rule submitTripleProofVerification
+            security/certora/confs/voting/verifyMisc.conf --rule submitTripleProofVerification
+            security/certora/confs/voting/verifyPower_summary.conf --rule onlyThreeTokens method_reachability
+            security/certora/confs/voting/verifyProposal_config.conf --rule startedProposalHasConfig  createdProposalHasRoots  proposalHasNonzeroDuration newProposalUnusedId configIsImmutable  getProposalsConfigsDoesntRevert  method_reachability 
+            security/certora/confs/voting/verifyProposal_states.conf --rule startsBeforeEnds  startsStrictlyBeforeEnds  proposalLegalStates  proposalMethodStateTransitionCompliance  proposalTimeStateTransitionCompliance  proposalIdIsImmutable  proposalImmutability  startedProposalHasConfig  proposalHasNonzeroDuration method_reachability 
+            security/certora/confs/voting/verifyVoting_and_tally.conf --rule votingPowerGhostIsVotingPower  sumOfVotes  voteTallyChangedOnlyByVoting  voteUpdatesTally  onlyVoteCanChangeResult  votingTallyCanOnlyIncrease  strangerVoteUnchanged  otherProposalUnchanged  otherVoterUntouched  method_reachability
+            security/certora/confs/voting/verifyVoting_and_tally.conf --rule cannot_vote_twice_with_submitVote_and_submitVoteAsRepresentative 
+            security/certora/confs/voting/verifyVoting_and_tally.conf --rule cannot_vote_twice_with_submitVoteAsRepresentative_and_submitVote 
+            security/certora/confs/voting/verifyVoting_and_tally.conf --rule cannot_vote_twice_with_submitVoteSingleProofAsRepresentative_and_submitVote
+          solc-versions: 0.8.20
+          comment-fail-only: false
+          solc-remove-version-prefix: "0."
+          job-name: "Certora Prover Run"
+          certora-key: ${{ secrets.CERTORAKEY }}
+          install-java: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+          
+          
+          
+          
+          
+          
+          
+        

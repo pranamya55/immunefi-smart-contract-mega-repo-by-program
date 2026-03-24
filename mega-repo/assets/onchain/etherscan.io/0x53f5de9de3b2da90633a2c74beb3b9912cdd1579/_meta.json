@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x53F5DE9De3B2DA90633a2c74BEb3b9912cdd1579#code",
+  "host": "etherscan.io",
+  "address": "0x53F5DE9De3B2DA90633a2c74BEb3b9912cdd1579",
+  "chainid": 1,
+  "project_slug": "zksyncera",
+  "asset_id": "7dMIvXvMfEycwgGm6qYw31",
+  "contract_name": "DualVerifier",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "9999999",
+  "constructor_arguments": "000000000000000000000000d5dbe903f5382b052317d326fa1a7b63710c6a5b0000000000000000000000005bafef6729228add8775af4cecd2e68a51424ee1",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 4,
+  "mode": "json-sources"
+}

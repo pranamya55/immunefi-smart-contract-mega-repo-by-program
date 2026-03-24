@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x9Ad87668d49ab69EEa0AF091de970EF52b0D5178#code",
+  "host": "etherscan.io",
+  "address": "0x9Ad87668d49ab69EEa0AF091de970EF52b0D5178",
+  "chainid": 1,
+  "project_slug": "sparklend",
+  "asset_id": "McdpCnoevPjF6ouuvJ8ig",
+  "contract_name": "ALMProxyFreezable",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "0000000000000000000000003300f198988e4c9c63f75df86de36421f06af8c4",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

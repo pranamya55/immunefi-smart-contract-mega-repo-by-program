@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x447ddf3aCdb6809FFE90a033D0de1d85F30C8c16",
+  "host": "arbiscan.io",
+  "address": "0x447ddf3aCdb6809FFE90a033D0de1d85F30C8c16",
+  "chainid": 42161,
+  "project_slug": "gmx",
+  "asset_id": "4Hea01yeIzqiqiGnq8qLas",
+  "contract_name": "DecreasePositionSwapUtils",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": "1",
+  "runs": "10",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 67,
+  "mode": "json-sources"
+}

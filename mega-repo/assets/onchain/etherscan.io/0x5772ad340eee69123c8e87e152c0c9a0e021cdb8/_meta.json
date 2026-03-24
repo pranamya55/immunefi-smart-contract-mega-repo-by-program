@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x5772Ad340EeE69123C8e87E152C0C9a0E021Cdb8",
+  "host": "etherscan.io",
+  "address": "0x5772Ad340EeE69123C8e87E152C0C9a0E021Cdb8",
+  "chainid": 1,
+  "project_slug": "metronome",
+  "asset_id": "52oBbJaPXM0yRGsoTAbOFB",
+  "contract_name": "SmartFarmingManager",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "london",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 38,
+  "mode": "json-sources"
+}

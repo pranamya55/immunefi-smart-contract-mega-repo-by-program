@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x88730d254A2f7e6AC8388c3198aFd694bA9f7fae",
+  "host": "arbiscan.io",
+  "address": "0x88730d254A2f7e6AC8388c3198aFd694bA9f7fae",
+  "chainid": 42161,
+  "project_slug": "compoundfinance",
+  "asset_id": "6qETZkxIr0U1rLbX6Zp4PM",
+  "contract_name": "CometRewards",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "0000000000000000000000006103db328d4864dc16bd2f0ee1b9a92e3f87f915",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

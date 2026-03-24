@@ -1,0 +1,8 @@
+{
+  "url_host": "tronscan.org",
+  "address": "TD8bq1aFY8yc9nsD2rfqqJGDtkh7aPpEpr",
+  "chain_kind": "tron",
+  "mode": "tronscan-contract-detail",
+  "verified_status": 2,
+  "name": "PriceOracle"
+}

@@ -1,0 +1,12 @@
+[project]
+authors = ["Fuel Labs <contact@fuel.sh>"]
+entry = "main.sw"
+license = "Apache-2.0"
+name = "renaming"
+implicit-std = false
+
+[dependencies]
+# std = { git = "https://github.com/FuelLabs/sway", tag = "v0.48.1" }
+# TODO: Pin back to latest version once std and core merge is in
+std = { path = "../../../../sway-lib-std" }
+

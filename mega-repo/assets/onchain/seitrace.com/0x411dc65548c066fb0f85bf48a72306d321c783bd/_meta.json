@@ -1,0 +1,24 @@
+{
+  "url": "https://seitrace.com/address/0x411dc65548c066Fb0F85bF48A72306D321C783bd?chain=pacific-1&tab=contract",
+  "host": "seitrace.com",
+  "address": "0x411dc65548c066Fb0F85bF48A72306D321C783bd",
+  "chainid": 1329,
+  "project_slug": "parallel",
+  "asset_id": "3yXROZbHHolhqx6q2Weev2",
+  "contract_name": "TokenP",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "10000",
+  "constructor_arguments": "",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 37,
+  "mode": "json-sources"
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x316f9708bB98af7dA9c68C1C3b5e79039cD336E3",
+  "host": "etherscan.io",
+  "address": "0x316f9708bB98af7dA9c68C1C3b5e79039cD336E3",
+  "chainid": 1,
+  "project_slug": "compoundfinance",
+  "asset_id": "4Qelr3v99zUX7OB5WGypre",
+  "contract_name": "ConfiguratorProxy",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "000000000000000000000000cfc1fa6b7ca982176529899d99af6473ad80df4f0000000000000000000000001ec63b5883c3481134fd50d5daebc83ecd2e877900000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000024c4d66de8000000000000000000000000343715fa797b8e9fe48b9efab4b54f01ca860e7800000000000000000000000000000000000000000000000000000000",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0xcfc1fa6b7ca982176529899d99af6473ad80df4f",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

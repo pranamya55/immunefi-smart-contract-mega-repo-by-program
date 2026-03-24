@@ -1,0 +1,290 @@
+[
+  {
+    "project_slug": "benqi",
+    "asset_id": "14sxV3LxRhvFxw0TxD4QLK",
+    "url": "https://snowtrace.io/address/0x872670CcAe8C19557cC9443Eff587D7086b8043A",
+    "description": "qiBUSD",
+    "added_at": "2025-11-27T17:14:46.172Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "15azVGiZEOtjrTQIfjbrDY",
+    "url": "https://snowtrace.io/address/0x4036cb0D6BF6b5F17Aa4e05191F86D4b1655b0d9",
+    "description": "qiAvalancheEcosystemMarketsJOE",
+    "added_at": "2025-11-27T17:14:47.096Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "1OkVa5ar4hQdZlhaWeiAJC",
+    "url": "https://snowtrace.io/address/0x0fFAc5aae14E28E79C5CCc7a335D8C70Ee458A3A",
+    "description": "qiAvalancheEcosystemMarketsSolvBTC",
+    "added_at": "2025-11-27T17:14:48.575Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "1RmJZBhy6NzkfR6ofPXEvv",
+    "url": "https://snowtrace.io/address/0x77533A0b34cd9Aa135EBE795dc40666Ca295C16D",
+    "description": "QiTokenSaleDistributorProxy",
+    "added_at": "2022-05-10T15:42:53.760Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "1wH1YfQ1Z3cYMmBQZyz0nV",
+    "url": "https://snowtrace.io/address/0x0eBfebD41e1eA83Be5e911cDCd2730a0CCEE344d",
+    "description": "qiAvalancheEcosystemMarketsCOQ",
+    "added_at": "2025-11-27T17:14:46.851Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "289eHURMLwVyqnm70iGIbw",
+    "url": "https://snowtrace.io/address/0xb7CfB8Ae67E20059021A0D20fc30311a6c67C734",
+    "description": "qiAvalancheEcosystemMarketsAUSD",
+    "added_at": "2025-11-27T17:14:45.444Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "2AB5KY8DhS64f2WTslCo9n",
+    "url": "https://snowtrace.io/address/0x8729438EB15e2C8B576fCc6AeCdA6A148776C0F5",
+    "description": "QI",
+    "added_at": "2025-11-27T17:14:45.917Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "2YbqYxKfUeGExaz1v3yu23",
+    "url": "https://snowtrace.io/address/0xBEb5d47A3f720Ec0a390d04b4d41ED7d9688bC7F",
+    "description": "qiUSDC",
+    "added_at": "2025-11-27T17:14:44.898Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "2mnyYSbMU3XgLEdrNDYeF6",
+    "url": "https://snowtrace.io/address/0x4e9f683A27a6BdAD3FC2764003759277e93696e6",
+    "description": "qiLINK",
+    "added_at": "2025-11-27T17:14:46.423Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "2uxxnGllXIDXcnCrizLz5l",
+    "url": "https://snowtrace.io/address/0x334AD834Cd4481BB02d09615E7c11a00579A7909",
+    "description": "qiETH",
+    "added_at": "2025-11-27T17:14:47.637Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "2xzwHsdn1nsSrPRRTb8DSl",
+    "url": "https://snowtrace.io/address/0xF362feA9659cf036792c9cb02f8ff8198E21B4cB",
+    "description": "qisAVAX",
+    "added_at": "2025-11-27T17:14:44.841Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "3MobJIXqRUK7iiaDlgMbyZ",
+    "url": "https://snowtrace.io/address/0xd8fcDa6ec4Bdc547C0827B8804e89aCd817d56EF",
+    "description": "qiUSDTn",
+    "added_at": "2025-11-27T17:14:44.608Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "3cgWRqS4X6GbNsgcyRRz7s",
+    "url": "https://snowtrace.io/address/0xd78DEd803b28A5A9C860c2cc7A4d84F611aA4Ef8",
+    "description": "Maximillion",
+    "added_at": "2025-11-27T17:14:45.133Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "44Ezj5kkw4B9Hkrb7bDVyi",
+    "url": "https://snowtrace.io/address/0x09C1E991870cbC01009a4b49397A4f2a127D3784",
+    "description": " sAVAX reward timelock",
+    "added_at": "2025-11-27T17:14:48.507Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "4GsdsToKXWl9p3NJgFl8Kx",
+    "url": "https://snowtrace.io/address/0xe194c4c5aC32a3C9ffDb358d9Bfd523a0B6d1568",
+    "description": "qiBTC",
+    "added_at": "2025-11-27T17:14:44.853Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "4JWu5vKWfWjdRFTdWJXVC8",
+    "url": "https://snowtrace.io/address/0x14593cb3Ffe270a72862Eb08CeB57Bc3D4DdC16C",
+    "description": "GaugeController",
+    "added_at": "2025-11-27T17:14:46.669Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "4WgoVKj9GFeJ0G1ilF30po",
+    "url": "https://snowtrace.io/address/0xc436f5bc8a8bd9c9e240a2a83d44705ec87a9d55",
+    "description": "JumpRateModel",
+    "added_at": "2022-05-10T15:42:47.158Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "55zD1Ldjqi7gA9Ek4X641S",
+    "url": "https://snowtrace.io/address/0x5C0401e81Bc07Ca70fAD469b451682c0d747Ef1c",
+    "description": "qiAVAX",
+    "added_at": "2025-11-27T17:14:46.234Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "5HrftjHWZJhTcODOqzJsms",
+    "url": "https://snowtrace.io/address/0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE",
+    "description": "StakedAvax",
+    "added_at": "2022-05-10T15:42:51.756Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "5Ij7al6RDW38MIVaoesaeH",
+    "url": "https://snowtrace.io/address/0xD7c4006d33DA2A0A8525791ed212bbCD7Aca763F",
+    "description": "Isolated Markets Unitroller",
+    "added_at": "2025-11-27T17:14:45.200Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "5RxhgueaEceQnUCWMvcZdI",
+    "url": "https://snowtrace.io/address/0x784DA19e61cf348a8c54547531795ECfee2AfFd1",
+    "description": "PglStakingContractProxy",
+    "added_at": "2022-05-10T15:42:52.800Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "5wwssFSTNRJjb8eDKQZOtV",
+    "url": "https://snowtrace.io/address/0x10f3dd258707A398964a286D9F2EF556C6Ad82E6/",
+    "description": "Pause Guardian",
+    "added_at": "2025-11-27T17:14:48.605Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "6KFaHPl6ZXqOXsy8cKW7j2",
+    "url": "https://snowtrace.io/address/0x89a415b3D20098E6A6C8f7a59001C67BD3129821",
+    "description": "qiBTC.b",
+    "added_at": "2025-11-27T17:14:45.875Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "6QdNzBlzHO8e0m9FfBThtT",
+    "url": "https://snowtrace.io/address/0x6B35Eb18BCA06bD7d66a428eeb45aC7d200C1e4E",
+    "description": "qiAvalancheEcosystemMarketsUSDC",
+    "added_at": "2025-11-27T17:14:46.335Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "6VRm960UTXxKl1ky3CJrZk",
+    "url": "https://snowtrace.io/address/0x926C0857bcB6b109C1260c3b6660EfA8E633d73A",
+    "description": "Benqi Dual Oracle",
+    "added_at": "2025-11-27T17:14:45.968Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "6XTC6a6Dx0XUDsUGmrqEHT",
+    "url": "https://snowtrace.io/address/0xbAA9Ae3370Ba3804619ea75979C56D1137a904A5",
+    "description": "JlpStakingContractProxy",
+    "added_at": "2025-11-27T17:14:45.616Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "6r5kO5TN6DTCl7EA0JkgAu",
+    "url": "https://snowtrace.io/address/0x545356e396350D40cDEa888ad73534517399BF96",
+    "description": "qiAvalancheEcosystemMarketsQI",
+    "added_at": "2025-11-27T17:14:46.442Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "7CBWqNh1LS9tHbP1bP8j6N",
+    "url": "https://snowtrace.io/address/0x35Bd6aedA81a7E5FC7A7832490e71F757b0cD9Ce",
+    "description": "qiQi",
+    "added_at": "2025-11-27T17:14:47.351Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "7KTOCexRkaXmkhwqgSeNig",
+    "url": "https://snowtrace.io/address/0x486Af39519B4Dc9a7fCcd318217352830E8AD9b4",
+    "description": "BENQI Core Markets Unitroller",
+    "added_at": "2025-11-27T17:14:46.510Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "7fxef80EVPAOTN5yPXURLm",
+    "url": "https://snowtrace.io/address/0x835866d37AFB8CB8F8334dCCdaf66cf01832Ff5D",
+    "description": "qiDAI",
+    "added_at": "2025-11-27T17:14:46.164Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "7mIWaeVdKRcoeSGOCNKFC3",
+    "url": "https://snowtrace.io/address/0x9F21eB10b7Bc56a7d7879E67fB7BAC415EaFb973",
+    "description": "MultiRewardDistributor",
+    "added_at": "2025-11-27T17:14:45.833Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "7pJODdJ8HpWNOpNBMdE7yf",
+    "url": "https://snowtrace.io/address/0xB71a820d80189073F69498010cb67bDDAe050633",
+    "description": "Ignite",
+    "added_at": "2025-11-27T17:14:45.557Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "GuWkA3fz0fd00wI8cb7KV",
+    "url": "https://snowtrace.io/address/0x7Ee65Fdc1C534A6b4f9ea2Cc3ca9aC8d6c602aBd",
+    "description": "veQI",
+    "added_at": "2025-11-27T17:14:46.098Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "SetPZfCilVtwA2PT5gY63",
+    "url": "https://snowtrace.io/address/0xf81B4C4abf7de8B8FC560D66F0eB70598D8BF15e",
+    "description": "BenqiDualOracle",
+    "added_at": "2025-11-27T17:14:44.269Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "Ykbhu0Dy5MRbsadCYHqTf",
+    "url": "https://snowtrace.io/address/0xc9e5999b8e75C3fEB117F6f73E664b9f3C8ca65C",
+    "description": "qiUSDT",
+    "added_at": "2025-11-27T17:14:44.946Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "benqi",
+    "asset_id": "p5V92PkQjU1MdDhPQyKGl",
+    "url": "https://snowtrace.io/address/0xB715808a78F6041E46d61Cb123C9B4A27056AE9C",
+    "description": "qiUSDCn",
+    "added_at": "2025-11-27T17:14:45.644Z",
+    "revision": 1
+  }
+]

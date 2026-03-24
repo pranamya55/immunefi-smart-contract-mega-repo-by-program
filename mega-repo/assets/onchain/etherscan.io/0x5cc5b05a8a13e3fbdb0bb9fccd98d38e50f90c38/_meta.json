@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x5CC5B05a8A13E3fBDB0BB9FcCd98D38e50F90c38",
+  "host": "etherscan.io",
+  "address": "0x5CC5B05a8A13E3fBDB0BB9FcCd98D38e50F90c38",
+  "chainid": 1,
+  "project_slug": "thesandbox",
+  "asset_id": "2Cotw4ZmNuNMZZ5JgiEz57",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": "1",
+  "runs": "999999",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "1",
+  "implementation": "0x7f2cad7d2ad6fd2b6ce281d40ae5434ac776bdfb",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 4,
+  "mode": "json-sources"
+}

@@ -1,0 +1,8 @@
+[[package]]
+name = "array_generics"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-9063F6813E94C772"

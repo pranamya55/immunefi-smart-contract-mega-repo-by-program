@@ -1,0 +1,1 @@
+../../../../../../../../../mega-repo/assets/github/blob-snapshots/alexgo-io/alex-dao/main/contracts/extensions/age001-proposal-voting.clar

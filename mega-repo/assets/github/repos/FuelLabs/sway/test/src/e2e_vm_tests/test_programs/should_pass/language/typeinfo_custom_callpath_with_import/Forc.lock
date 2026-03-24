@@ -1,0 +1,8 @@
+[[package]]
+name = "std"
+source = "path+from-root-0D225CDF4C64C2FD"
+
+[[package]]
+name = "typeinfo_custom_callpath_with_import"
+source = "member"
+dependencies = ["std"]

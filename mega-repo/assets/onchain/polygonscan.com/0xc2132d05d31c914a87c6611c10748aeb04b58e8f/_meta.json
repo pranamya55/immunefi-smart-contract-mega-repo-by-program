@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+  "host": "polygonscan.com",
+  "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+  "chainid": 137,
+  "project_slug": "compoundfinance",
+  "asset_id": "5HKW4A7IKucjTL4NW5MKOb",
+  "contract_name": "UChildERC20Proxy",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": "0",
+  "runs": "200",
+  "constructor_arguments": "00000000000000000000000042243231fb4a64a5bcfc7f4b7a9ad92576804046",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "None",
+  "proxy": "1",
+  "implementation": "0x90040487a6c9f949c4f07cadcfb0f3b8eeab4229",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

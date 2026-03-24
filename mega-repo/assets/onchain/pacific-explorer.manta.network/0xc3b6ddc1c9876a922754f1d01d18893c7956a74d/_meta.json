@@ -1,0 +1,25 @@
+{
+  "url": "https://pacific-explorer.manta.network/address/0xC3B6dDc1c9876a922754f1d01D18893C7956A74D",
+  "host": "pacific-explorer.manta.network",
+  "address": "0xC3B6dDc1c9876a922754f1d01D18893C7956A74D",
+  "chainid": 169,
+  "project_slug": "zerolend-boost",
+  "asset_id": "3IPriIdG7MV46ph6MfXmCt",
+  "contract_name": "PoolAddressesProviderRegistry",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": "0000000000000000000000000f6e98a756a40dd050dc78959f45559f98d3289d",
+  "evm_version": "berlin",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:unexpected-response",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

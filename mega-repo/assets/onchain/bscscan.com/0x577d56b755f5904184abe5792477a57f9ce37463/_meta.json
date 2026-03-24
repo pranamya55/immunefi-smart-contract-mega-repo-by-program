@@ -1,0 +1,24 @@
+{
+  "url": "https://bscscan.com/address/0x577d56b755f5904184abE5792477a57f9CE37463",
+  "host": "bscscan.com",
+  "address": "0x577d56b755f5904184abE5792477a57f9CE37463",
+  "chainid": 56,
+  "project_slug": "velvetcapital",
+  "asset_id": "3vu9buZvxFi4tB4s15I9EF",
+  "contract_name": "OffChainIndexSwap",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 32,
+  "mode": "json-sources"
+}

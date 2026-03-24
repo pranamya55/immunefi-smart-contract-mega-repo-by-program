@@ -1,0 +1,194 @@
+[
+  {
+    "project_slug": "starkex",
+    "asset_id": "4BajHT1TjDfrqDEuYwstMz",
+    "url": "https://etherscan.io/address/0xF5C9F957705bea56a7e806943f98F7777B995826",
+    "description": "Proxy (Sorare contract)",
+    "added_at": "2023-06-26T21:53:16.375Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "starkex",
+    "asset_id": "4Ox9xklgjCd5PrITfIzEYf",
+    "url": "https://etherscan.io/address/0x3318074aD502B7dee59463595fba226653944522",
+    "description": "EscapeVerifier (Sorare contract)",
+    "added_at": "2023-06-26T21:53:33.644Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "starkex",
+    "asset_id": "6E2SwE9n8HthbC23Iok8Le",
+    "url": "https://etherscan.io/address/0x879cD57975d596004863D30c59d579ef78BBbe32",
+    "description": "Committee (Sorare contract)",
+    "added_at": "2023-06-26T21:53:47.656Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "starkex",
+    "asset_id": "23A2gMT9zeu2FNyc7tuJC8",
+    "url": "https://etherscan.io/address/0x4EDD62189732e9fF476ABa880b48c29432A7AC9B",
+    "description": "StarkExchange (Sorare contract)",
+    "added_at": "2023-06-26T21:54:01.363Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "starkex",
+    "asset_id": "3HnUtJJDIQxhGgWLtX7Dds",
+    "url": "https://etherscan.io/address/0x62BCA4DB742A99c834e2c24b609656A70EA25379",
+    "description": "AllVerifiers (Sorare contract)",
+    "added_at": "2023-06-26T21:54:13.671Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "starkex",
+    "asset_id": "mzf3hOUg6w7MTQ585JoL0",
+    "url": "https://etherscan.io/address/0x8536850750956c2FEebeCAB786d82271a5467687",
+    "description": "TokensAndRamping (Sorare contract)",
+    "added_at": "2023-06-26T21:54:28.948Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "starkex",
+    "asset_id": "7mpP9VzMapV3YlhBchySep",
+    "url": "https://etherscan.io/address/0x1c3A4EfF75a287Fe6249CAb49606FA25659929A2",
+    "description": "StarkExState (Sorare contract)",
+    "added_at": "2023-06-26T21:54:44.762Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "starkex",
+    "asset_id": "3hzCJ2e0A6GBKh5zyzfnTW",
+    "url": "https://etherscan.io/address/0x3799ad2a4Eb4E882219B02C036656d4ECbD437A1",
+    "description": "ForcedActions (Sorare contract)",
+    "added_at": "2023-06-26T21:55:00.454Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "starkex",
+    "asset_id": "4PQZhHvN153xUe0cwCHtjB",
+    "url": "https://etherscan.io/address/0x1688abB0B5c72F34B7f78e857Aa317deD5B5D339",
+    "description": "OnchainVaults (Sorare contract)",
+    "added_at": "2023-06-26T21:55:17.933Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "starkex",
+    "asset_id": "esKDUIOnnD9enBZzaq8R3",
+    "url": "https://etherscan.io/address/0xB3788a88F063B217227E27ae16Ba550db3132bE6",
+    "description": "ProxyUtils (Sorare contract)",
+    "added_at": "2023-06-26T21:55:32.171Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "starkex",
+    "asset_id": "6H4HThlOpBj8LC0T7PLylY",
+    "url": "https://etherscan.io/address/0xbcc17446B99465fF01E6816d9bcb2d8b1D7cEdB1",
+    "description": "GpsFactRegistryAdapter (Sorare contract)",
+    "added_at": "2023-06-26T21:55:44.516Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "starkex",
+    "asset_id": "6CypiFZwh8UIC3yLZEY4PZ",
+    "url": "https://etherscan.io/address/0x518c4A79a1102eEDc987005CA8cE6B87Ca14dDf8",
+    "description": "OrderRegistry (Sorare contract)",
+    "added_at": "2023-06-26T21:55:58.021Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "starkex",
+    "asset_id": "22v7eSx5LhnuFAPiCEaU5Y",
+    "url": "https://etherscan.io/address/0x3071BE11F9e92A9eb28F305e1Fa033cD102714e7",
+    "description": "Proxy (Myria contract)",
+    "added_at": "2023-06-26T21:59:10.510Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "starkex",
+    "asset_id": "1Q720hPZ1s1JBRflHgRD5G",
+    "url": "https://etherscan.io/address/0x3318074aD502B7dee59463595fba226653944522",
+    "description": "EscapeVerifier (Myria contract)",
+    "added_at": "2023-06-26T21:59:24.251Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "starkex",
+    "asset_id": "Or03qpyl4qY2X7Aez6omM",
+    "url": "https://etherscan.io/address/0x1e601435E181423e7A8430813d7500012a6169cB",
+    "description": "Committee (Myria contract)",
+    "added_at": "2023-06-26T21:59:37.749Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "starkex",
+    "asset_id": "31fvnyWOVhJXHzITxZDB9M",
+    "url": "https://etherscan.io/address/0xdF2f24751F7e84ccDCD39e7b49904FAB0Fb0f583",
+    "description": "StarkExchange (Myria contract)",
+    "added_at": "2023-06-26T21:59:51.303Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "starkex",
+    "asset_id": "7bDDu8GOe1Go3055gld8os",
+    "url": "https://etherscan.io/address/0xfbea22FeB369DB10C0d3a2aAa8F4939E76815f12",
+    "description": "AllVerifiers (Myria contract)",
+    "added_at": "2023-06-26T22:00:04.908Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "starkex",
+    "asset_id": "7543E2QVv2kq96VdZE7Q6l",
+    "url": "https://etherscan.io/address/0x2Dbc18A3ac126abE1fF90A83Bbc3947ff7912Afb",
+    "description": "TokensAndRamping (Myria contract)",
+    "added_at": "2023-06-26T22:00:18.780Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "starkex",
+    "asset_id": "6wax0g8VuRHHjbMYDnNlWK",
+    "url": "https://etherscan.io/address/0x67e198743BC19fa4757720eDd0e769f8291e1F1D",
+    "description": "StarkExState (Myria contract)",
+    "added_at": "2023-06-26T22:00:31.688Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "starkex",
+    "asset_id": "6SYF4Rvihedlgh24GV2ttv",
+    "url": "https://etherscan.io/address/0x613ee54C54D5548627064B4D648942bF3648f376",
+    "description": "ForcedActions (Myria contract)",
+    "added_at": "2023-06-26T22:00:45.444Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "starkex",
+    "asset_id": "6E5RVgBjB8ZCPf4IX5TgEc",
+    "url": "https://etherscan.io/address/0xb2ED005D0278179001a49a9969BB22BA8e98f31F",
+    "description": "OnchainVaults (Myria contract)",
+    "added_at": "2023-06-26T22:00:59.257Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "starkex",
+    "asset_id": "2T7y2EO65kb7JLAzrKBPlI",
+    "url": "https://etherscan.io/address/0xB5353268d8d4D711a92cb838F8fEDFC2A66E50Db",
+    "description": "ProxyUtils (Myria contract)",
+    "added_at": "2023-06-26T22:01:11.666Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "starkex",
+    "asset_id": "7qKVcb7AKc1gVUaRaDUSwi",
+    "url": "https://etherscan.io/address/0x5339AB7557b3152b91A57D10B0Caf5da88Db5143",
+    "description": "GpsFactRegistryAdapter (Myria contract)",
+    "added_at": "2023-06-26T22:01:25.898Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "starkex",
+    "asset_id": "1l500txNTpNzgfaF7VZ9Aw",
+    "url": "https://etherscan.io/address/0x806d435a82B0381bD884540c2235147c13B97fe6",
+    "description": "OrderRegistry (Myria contract)",
+    "added_at": "2023-06-26T22:01:39.064Z",
+    "revision": 0
+  }
+]

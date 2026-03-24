@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x3c6951fdb433b5b8442e7aa126d50fbfb54b5f42",
+  "host": "arbiscan.io",
+  "address": "0x3c6951fdb433b5b8442e7aa126d50fbfb54b5f42",
+  "chainid": 42161,
+  "project_slug": "integral",
+  "asset_id": "4XnST2lRQAfvjULMpTduO7",
+  "contract_name": "Proxy",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "0000000000000000000000001a983ca929f75b2c699a61d2618dac5e2cd84602",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x8b892a99de54b2b9e44c1f2c03a23789118053c0",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "json-sources"
+}

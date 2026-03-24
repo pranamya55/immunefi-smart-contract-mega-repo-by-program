@@ -1,0 +1,26 @@
+build/
+migrations/
+node_modules/
+
+# asdf
+.tool-versions
+
+# hardhat
+artifacts
+cache
+deployments/hardhat
+deployments/local
+deployments/devchain
+typechain-types
+
+# IDEA
+.idea
+
+# decrypted environment configs
+.env.staging
+.env.alfajores
+.env.local
+.env
+
+#devchain
+db

@@ -1,0 +1,6 @@
+[package]
+name = "ccip_router"
+edition = "2024"
+
+[dependencies]
+mcms = { local = "../../mcms/mcms" }

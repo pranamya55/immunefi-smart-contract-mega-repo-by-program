@@ -1,0 +1,24 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0xD4b132C6d4AA93A4247F1A91e1ED929c0572a43d",
+  "host": "optimistic.etherscan.io",
+  "address": "0xD4b132C6d4AA93A4247F1A91e1ED929c0572a43d",
+  "chainid": 10,
+  "project_slug": "hyperlane",
+  "asset_id": "KJom52IccjftoSW0aoeNm",
+  "contract_name": "FallbackDomainRoutingHook",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": "1",
+  "runs": "999999",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "Unknown",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 18,
+  "mode": "json-sources"
+}

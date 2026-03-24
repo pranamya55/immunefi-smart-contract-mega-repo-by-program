@@ -1,0 +1,61 @@
+{
+  "address": "TCKp2AzuhzV4B4Ahx1ej4mvQgHZ1kH7F7k",
+  "balance": 0,
+  "verify_status": 2,
+  "is_proxy": false,
+  "proxy_implementation": "",
+  "old_proxy_implementation": "",
+  "balanceInUsd": 0,
+  "trxCount": 0,
+  "date_created": 1607153253000,
+  "call_value": 0,
+  "call_token_value": 0,
+  "call_token_id": 0,
+  "call_token_info": {
+    "tokenInfo": {
+      "tokenId": "_",
+      "tokenAbbr": "trx",
+      "tokenName": "trx",
+      "tokenDecimal": 6,
+      "tokenCanShow": 1,
+      "tokenType": "trc10",
+      "tokenLogo": "https://static.tronscan.org/production/logo/trx.png",
+      "tokenLevel": "2",
+      "vip": true
+    }
+  },
+  "name": "PriceOracleProxy",
+  "description": "",
+  "tag1": "",
+  "tag1Url": "",
+  "vip": false,
+  "feedbackRisk": false,
+  "announcement": "",
+  "license": "1",
+  "blueTag": "",
+  "blueTagUrl": "",
+  "greyTag": "",
+  "redTag": "",
+  "publicTag": "",
+  "publicTagDesc": "",
+  "activeDay": 1540,
+  "creator": {
+    "address": "TV3Wg2zNUBzGJsJNCEUZ2W9YVsFK2AAcLB",
+    "address_is_contract": false,
+    "txHash": "0558a92f35c12464a1e9a6106ab17b4d28b313d71f8fcd62423a17fa69423391",
+    "token_balance": 0,
+    "consume_user_resource_percent": 100,
+    "energy_remaining": 0,
+    "energy_limit": 0
+  },
+  "auditReportUrl": "",
+  "auditDep": "",
+  "auditDate": "",
+  "methodMap": {
+    "f9c99e9c": "setSaiPrice(uint256)"
+  },
+  "energy_factor": 0.0,
+  "tokenInfo": {},
+  "balanceWithTokens": 0.0,
+  "balanceWithTokensInUsd": 0.0
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0xa0a07a78c7d31E6f8698F48Fc9219f9a3030f38C",
+  "host": "polygonscan.com",
+  "address": "0xa0a07a78c7d31E6f8698F48Fc9219f9a3030f38C",
+  "chainid": 137,
+  "project_slug": "orderlynetwork",
+  "asset_id": "5CcIOTUUW442ZieIJW2S9N",
+  "contract_name": "CrossChainManagerProxy",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000d1c426290eaf9c16dc55e9bd10b624abb827deef00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x3305135e37440254c48b0c9050c1b29918b8a579",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

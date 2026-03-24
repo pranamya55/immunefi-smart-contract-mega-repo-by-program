@@ -1,0 +1,19 @@
+{
+  "url": "https://arbiscan.io/address/0x9e0f80bc5a688e93d6c57efcfdd4564f70975e8b",
+  "host": "arbiscan.io",
+  "address": "0x9e0f80bc5a688e93d6c57efcfdd4564f70975e8b",
+  "chainid": 42161,
+  "contract_name": "PerformanceFee",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "0000000000000000000000002c46503d4a0313c7161a5593b6865baa194b466f",
+  "evm_version": "istanbul",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 16,
+  "mode": "recover-json-sources"
+}

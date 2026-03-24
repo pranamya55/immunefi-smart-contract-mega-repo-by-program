@@ -1,0 +1,8 @@
+{
+  "url": "https://sepolia.basescan.org/address/0x7cdb014bc73c74da5b3830ede6a4494ec52c3738",
+  "host": "sepolia.basescan.org",
+  "address": "0x7cdb014bc73c74da5b3830ede6a4494ec52c3738",
+  "chainid": 84532,
+  "mode": "bytecode-v2-proxy",
+  "bytecode_length_hex_chars": 21140
+}

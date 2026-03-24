@@ -1,0 +1,19 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0x18aa88bb25b8f15fdbe329f789dd000bf679753e",
+  "host": "optimistic.etherscan.io",
+  "address": "0x18aa88bb25b8f15fdbe329f789dd000bf679753e",
+  "chainid": 10,
+  "contract_name": "WooSuperChargerVaultV2",
+  "compiler_version": "v0.8.14+commit.80d49f37",
+  "optimization_used": "1",
+  "runs": "20000",
+  "constructor_arguments": "00000000000000000000000042000000000000000000000000000000000000060000000000000000000000000b2c639c533813f4aa9d7837caf62653d097ff85000000000000000000000000af558f888e138ca9416111ec7ae8e28354cd9239",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 22,
+  "mode": "recover-json-sources"
+}

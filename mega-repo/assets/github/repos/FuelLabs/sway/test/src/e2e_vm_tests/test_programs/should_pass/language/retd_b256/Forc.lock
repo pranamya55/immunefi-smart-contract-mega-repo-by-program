@@ -1,0 +1,8 @@
+[[package]]
+name = "retd_b256"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-369A2B47EEBEB803"

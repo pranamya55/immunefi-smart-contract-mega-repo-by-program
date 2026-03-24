@@ -1,0 +1,18 @@
+node_modules
+.env
+.vscode
+coverage
+coverage.json
+typechain
+typechain-types
+
+# Hardhat files
+cache
+build
+artifacts
+
+# OS specific
+.DS_Store
+
+# compilers
+solc

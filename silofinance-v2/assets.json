@@ -1,0 +1,90 @@
+[
+  {
+    "project_slug": "silofinance-v2",
+    "asset_id": "6AHweDS9bnQTH9EV95H76n",
+    "url": "https://sonicscan.org/address/0x8509b92145Bb2645F47c6847Bb61A46bE61AE3F2",
+    "description": "InterestRateModelV2.sol - Silo Lending",
+    "added_at": "2022-08-30T15:58:34.197Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "silofinance-v2",
+    "asset_id": "2e3It5AFVgq8EELpvu8uOd",
+    "url": "https://sonicscan.org/address/0xE83fDb15b5efeD3E3D3FD2a086219c33686b7231",
+    "description": "ShareDebtToken.sol - Silo Lending",
+    "added_at": "2022-08-30T16:00:28.765Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "silofinance-v2",
+    "asset_id": "18Z9uWmNS2X9ngB8ORrVub",
+    "url": "https://sonicscan.org/address/0x1a36C81756d09950AcBd1aBDC522C0DD41363353",
+    "description": "ShareProtectedCollateralToken.sol - Silo Lending",
+    "added_at": "2025-06-09T17:51:09.331Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "silofinance-v2",
+    "asset_id": "3dBdyhPZKzWIWIYjplTsof",
+    "url": "https://sonicscan.org/address/0x435Ab368F5fCCcc71554f4A8ac5F5b922bC4Dc06",
+    "description": "Silo.sol - Silo Lending",
+    "added_at": "2025-06-09T17:51:26.387Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "silofinance-v2",
+    "asset_id": "3TNj4xjohjthEpvXjyeAkK",
+    "url": "https://sonicscan.org/address/0x4e9dE3a64c911A37f7EB2fCb06D1e68c3cBe9203",
+    "description": "SiloFactory.sol - Silo Lending",
+    "added_at": "2025-06-09T17:51:56.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "silofinance-v2",
+    "asset_id": "uFDms3P9btyn6Aq5AkwIS",
+    "url": "https://sonicscan.org/address/0x1D9289efd4424F50c9155cf8b591944B0fba0fD0",
+    "description": "SiloHookV1.sol - Silo Lending",
+    "added_at": "2025-06-09T17:52:16.757Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "silofinance-v2",
+    "asset_id": "GAuUEQ5pIXgqZmwWQKBGF",
+    "url": "https://sonicscan.org/address/0xff1d0359CAd3BC603584A63D852D884BF5b17A67",
+    "description": "SiloRouterV2.sol",
+    "added_at": "2025-06-09T17:52:32.338Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "silofinance-v2",
+    "asset_id": "4aFIMHXgDcHDLcPFZvex7y",
+    "url": "https://sonicscan.org/address/0xC95149D52dA227cfeb0425ac6803086Db5A193b7",
+    "description": "PublicAllocator.sol  - Silo Vaults",
+    "added_at": "2025-06-09T17:52:53.497Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "silofinance-v2",
+    "asset_id": "2Th05O6sTtLQZ40AogHkja",
+    "url": "https://sonicscan.org/address/0x4e125E605FDcf3B07BDE441DECf8EDAd423D5DC6",
+    "description": "SiloVaultsFactory.sol - Silo Vaults",
+    "added_at": "2025-06-09T17:53:29.847Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "silofinance-v2",
+    "asset_id": "6p9AYmezLanw7C7EpDD1bV",
+    "url": "https://sonicscan.org/address/0xDED4aC8645619334186f28B8798e07ca354CFa0e",
+    "description": "Example of SiloVault.sol - Silo Vaults",
+    "added_at": "2025-06-12T13:19:44.658Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "silofinance-v2",
+    "asset_id": "98760",
+    "url": "https://immunefi.com/",
+    "description": "Primacy of Impact",
+    "added_at": "2026-02-06T15:58:36.804Z",
+    "revision": 0
+  }
+]

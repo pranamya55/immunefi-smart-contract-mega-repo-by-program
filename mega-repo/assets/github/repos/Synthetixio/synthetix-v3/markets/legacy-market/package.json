@@ -1,0 +1,41 @@
+{
+  "name": "@synthetixio/legacy-market",
+  "version": "3.13.0",
+  "description": "Contract for migration from v2x to v3",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "contracts",
+    "!contracts/generated",
+    "hardhat.config.ts",
+    "storage.dump.json",
+    "*.toml"
+  ],
+  "scripts": {
+    "build:contracts": "hardhat compile --force && yarn storage:dump && CANNON_REGISTRY_PRIORITY=local hardhat cannon:build",
+    "storage:dump": "hardhat storage:dump --output storage.new.dump.json",
+    "build": "yarn build:contracts",
+    "storage:verify": " hardhat storage:verify",
+    "test": "hardhat test",
+    "coverage": "hardhat coverage --network hardhat",
+    "clean": "hardhat clean",
+    "compile-contracts": "hardhat compile",
+    "publish-contracts": "cannon publish synthetix-legacy-market:$(node -p 'require(`./package.json`).version') --chain-id 13370 --quiet --tags $(node -p '/^\\d+\\.\\d+\\.\\d+$/.test(require(`./package.json`).version) ? `latest` : `dev`')",
+    "deploy": "yarn build && yarn publish-contracts",
+    "size-contracts": "hardhat compile && hardhat size-contracts",
+    "docgen": "hardhat docgen"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@synthetixio/common-config": "workspace:*",
+    "@synthetixio/core-utils": "workspace:*",
+    "@synthetixio/docgen": "workspace:*",
+    "@synthetixio/wei": "^2.74.4",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.19.5",
+    "solidity-docgen": "^0.6.0-beta.36"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0xd2Ce37BCB287CaDc40647f567C2D3C4220901634",
+  "host": "arbiscan.io",
+  "address": "0xd2Ce37BCB287CaDc40647f567C2D3C4220901634",
+  "chainid": 42161,
+  "project_slug": "livepeer",
+  "asset_id": "68hiZaKh1uq3yXqY3VNeZ0",
+  "contract_name": "LivepeerGovernor",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000d8e8328501e9645d16cf49539efc04f734606ee4",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 46,
+  "mode": "json-sources"
+}

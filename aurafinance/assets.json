@@ -1,0 +1,258 @@
+[
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "5PDgLtbtz0c1yiQad1AoZN",
+    "url": "https://etherscan.io/address/0xaF52695E1bB01A16D33D7194C28C42b10e0Dbec2#code",
+    "description": "voterProxy",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "7yh9NF4eB3NqRR6yN50SZ1",
+    "url": "https://etherscan.io/address/0xC0c293ce456fF0ED870ADd98a0828Dd4d2903DBF#code",
+    "description": "aura",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "3ZYM4EVD1QReSUogpLTyiy",
+    "url": "https://etherscan.io/address/0x59A5ccD34943CD0AdCf5ce703EE9F06889E13707#code",
+    "description": "minter",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "4dP2fZlpvm79KVrveE56EE",
+    "url": "https://etherscan.io/address/0xA57b8d98dAE62B26Ec3bcC4a365338157060B234#code",
+    "description": "booster",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "22iPEkol6uY9vuhnItObbd",
+    "url": "https://etherscan.io/address/0x228a142081b456a9fF803d004504955032989f04#code",
+    "description": "boosterOwner",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "3pgqSgYv9KUTnuXpTYwhpZ",
+    "url": "https://etherscan.io/address/0xbc8d9caf4b6bf34773976c5707ad1f2778332dca#code",
+    "description": "rewardFactory & BaseRewardPool4626",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "3wGN0n9zr8aaWpfR3vLjdY",
+    "url": "https://etherscan.io/address/0x3eC040DbF7D953216F4C89A2e665d5073445f5Ba#code",
+    "description": "tokenFactory",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "5bQPNAR0CMvdBvn99Phg9X",
+    "url": "https://etherscan.io/address/0xf5E2cFde016bd55BEF42a5A4bAad7E21cd39720d#code",
+    "description": "proxyFactory",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "W5KAIbWrRe0DSy1EQ4ZvW",
+    "url": "https://etherscan.io/address/0x54da426EFBB93fbaB5CF81bef03F9B9F00A3E915#code",
+    "description": "stashFactory",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "nqTYWn8ClxzqAs5HHUoug",
+    "url": "https://etherscan.io/address/0x37C3EBfD4b0cF66DF19a413e92dd21E556915F98#code",
+    "description": "extraRewardStashV3",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "4LoRfbQoumVH8tw358XCZA",
+    "url": "https://etherscan.io/address/0x616e8BfA43F920657B3497DBf40D6b1A02D4608d#code",
+    "description": "auraBAL",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "p44q3rabu4BU9clI5AS1o",
+    "url": "https://etherscan.io/address/0x6641a8c1d33bd3dec8dd85e69c63cafb5bf36388#code",
+    "description": "auraBALBpt",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "77EmDpltzs0vL01VnRF83a",
+    "url": "https://etherscan.io/address/0x00A7BA8Ae7bca0B10A32Ea1f8e2a1Da980c6CAd2#code",
+    "description": "cvxCrvRewards",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "2LnkcJ8ErkEq6vEnZAvhLm",
+    "url": "https://etherscan.io/address/0xC47162863a12227E5c3B0860715F9cF721651C0c#code",
+    "description": "initialCvxCrvStaking",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "1PKXRG4y8yuDDGbUeqVK26",
+    "url": "https://etherscan.io/address/0xeAd792B55340Aa20181A80d6a16db6A0ECd1b827#code",
+    "description": "crvDepositor",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "7f4QHLlG2AnXZhFXuQUQPS",
+    "url": "https://etherscan.io/address/0x68655AD9852a99C87C0934c7290BB62CFa5D4123#code",
+    "description": "crvDepositorWrapper",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "6qCI1U1Dg6L09eVD2PVIyX",
+    "url": "https://etherscan.io/address/0xb58eb197c35157e6f3351718c4c387d284562be5#code",
+    "description": "poolManager",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "4lIE9une8BHoFNfaB9XPHO",
+    "url": "https://etherscan.io/address/0x3Fa73f1E5d8A792C80F426fc8F84FBF7Ce9bBCAC#code",
+    "description": "auraLocker (vlAURA)",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "1WbwltGttD2mNAMhAGGlra",
+    "url": "https://etherscan.io/address/0xd9e863B7317a66fe0a4d2834910f604Fd6F89C6c#code",
+    "description": "cvxStakingProxy",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "1olq4Rp3EosUFfBUdxIWl1",
+    "url": "https://etherscan.io/address/0x1ab80F7Fb46B25b7e0B2cfAC23Fc88AC37aaf4e9#code",
+    "description": "chef",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "3DmuFoP9mBD0wKXria3Y82",
+    "url": "https://etherscan.io/address/0xa7429af4DeB16827dAd0e71D8AEEa9C2bF70e32c#code",
+    "description": "balLiquidityProvider",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "3vZHHeHBxu1qdepH1IImMX",
+    "url": "https://etherscan.io/address/0x4043569200F7a7a1D989AbbaBC2De2Bde1C20D1E#code",
+    "description": "penaltyForwarder",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "27edYjlYmxw3eWBeumO7IP",
+    "url": "https://etherscan.io/address/0xA3739b206097317c72EF416F0E75BB8f58FbD308#code",
+    "description": "extraRewardsDistributor",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "74wiAQ2sx0WJCLaO9FshvJ",
+    "url": "https://etherscan.io/address/0x2c809Ec701C088099c911AF9DdfA4A1Db6110F3c#code",
+    "description": "poolManagerProxy",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "4VlY16OyhGUrPG8y8UtrVE",
+    "url": "https://etherscan.io/address/0xa72932Aea1392b0Da9eDc34178dA2B29EcE2de54#code",
+    "description": "poolManagerSecondaryProxy",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "4cU4zUvR0bRJXIXLCLacFr",
+    "url": "https://etherscan.io/address/0x5bd3fCA8D3d8c94a6419d85E0a76ec8Da52d836a#code",
+    "description": "vestedEscrows",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "20whUlcNTXHoXnLrduQdjg",
+    "url": "https://etherscan.io/address/0x24346652e0e2aE0CE05c781501fDF4Fe4553fAc6#code",
+    "description": "https://etherscan.io/address/0x24346652e0e2aE0CE05c781501fDF4Fe4553fAc6#code",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "1muhgKzLQ2GfMPF9VTi5bH",
+    "url": "https://etherscan.io/address/0x45025Ebc38647bcf7Edd2b40CfDaF3fbfE1538F5#code",
+    "description": "vestedEscrows",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "kqT2oYxKdK21n2pFHon03",
+    "url": "https://etherscan.io/address/0x43B17088503F4CE1AED9fB302ED6BB51aD6694Fa#code",
+    "description": "vestedEscrows",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "30KmzqGQsXVft8zXcdxYw8",
+    "url": "https://etherscan.io/address/0xfd72170339ac6d7bdda09d1eaca346b21a30d422#code",
+    "description": "vestedEscrows",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "2NeXG3yeTsf5WCqdgZC3I4",
+    "url": "https://etherscan.io/address/0x45EB1A004373b1D8457134A2C04a42d69D287724#code",
+    "description": "drops",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "aurafinance",
+    "asset_id": "vlypnxM53YXKJxoImBn2Y",
+    "url": "https://etherscan.io/address/0x1a661CF8D8cd69dD2A423F3626A461A24280a8fB#code",
+    "description": "drops",
+    "added_at": "2022-06-16T19:00:00.000Z",
+    "revision": 1
+  }
+]

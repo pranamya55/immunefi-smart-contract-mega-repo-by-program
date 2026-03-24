@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x87b8081A3ace680f35125F469526Ac10f5418Ca7",
+  "host": "etherscan.io",
+  "address": "0x87b8081A3ace680f35125F469526Ac10f5418Ca7",
+  "chainid": 1,
+  "project_slug": "twyne",
+  "asset_id": "2QlIEVqh8EXvdcNtDsvYs7",
+  "contract_name": "BeaconProxy",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": "1",
+  "runs": "20000",
+  "constructor_arguments": "0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000004000000000d8b27cf359b7d15710a5be299af6e7bf904984c2b001f039d76ba48e577a17c04b6940db37af86480000000000000000000000000000000000000348",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x2ff808ea1716d77cae91d85feeeef74baac85106",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "json-sources"
+}

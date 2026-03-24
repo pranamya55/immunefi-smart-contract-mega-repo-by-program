@@ -1,0 +1,78 @@
+name: rust
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "program-libs/**"
+      - "**/Cargo.*"
+      - ".cargo/**"
+      - "prover/client/**"
+      - ".github/workflows/rust.yml"
+  pull_request:
+    branches: ["*"]
+    paths:
+      - "program-libs/**"
+      - "**/Cargo.*"
+      - "prover/client/**"
+      - ".github/workflows/rust.yml"
+    types: [opened, synchronize, reopened, ready_for_review]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  RUST_MIN_STACK: 8388608
+  RUSTFLAGS: "-D warnings"
+  CARGO_INCREMENTAL: "0"
+
+jobs:
+  test:
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        group:
+          - name: batched-merkle-tree-simulate
+            test_cmd: just program-libs test-simulate
+          - name: program-libs-fast
+            test_cmd: just program-libs test-fast
+          - name: program-libs-slow
+            test_cmd: just program-libs test-slow
+
+    name: Test ${{ matrix.group.name }}
+
+    services:
+      redis:
+        image: redis:8.0.1
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    env:
+      REDIS_URL: redis://localhost:6379
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          submodules: true
+
+      - name: Setup and build
+        uses: ./.github/actions/setup-and-build
+        with:
+          skip-components: "redis,disk-cleanup,go"
+          cache-key: "rust"
+
+      - name: Build CLI
+        run: |
+          just cli build
+
+      - name: Run tests for ${{ matrix.group.name }}
+        run: |
+          ${{ matrix.group.test_cmd }}

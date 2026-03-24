@@ -1,0 +1,154 @@
+[
+  {
+    "project_slug": "lido",
+    "asset_id": "40Hi0IrxIZVK2InNJxWMY0",
+    "url": "https://docs.lido.fi/deployed-contracts",
+    "description": "",
+    "added_at": "2022-02-11T10:44:17.264Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "lido",
+    "asset_id": "5riYRwlznbFEw62j0l7bdr",
+    "url": "https://github.com/lidofinance/core",
+    "description": "",
+    "added_at": "2022-02-11T10:44:27.958Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "lido",
+    "asset_id": "6RpZVfsfN95MrrxAHXTWVW",
+    "url": "https://github.com/lidofinance/aave-delivery-infrastructure",
+    "description": "",
+    "added_at": "2025-06-02T02:43:16.141Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "lido",
+    "asset_id": "5tKd5yjKIl3V7yAlDUqnab",
+    "url": "https://github.com/lidofinance/governance-crosschain-bridges",
+    "description": "",
+    "added_at": "2025-06-02T02:43:45.170Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "lido",
+    "asset_id": "2tVegIs4LvQTmwi9pIj0Rn",
+    "url": "https://github.com/lidofinance/lido-l2",
+    "description": "",
+    "added_at": "2025-06-02T02:44:03.038Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "lido",
+    "asset_id": "6XL9w3y6fvBTObC2qjkBvo",
+    "url": "https://github.com/lidofinance/lido-l2-with-steth",
+    "description": "",
+    "added_at": "2025-06-02T02:44:24.300Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "lido",
+    "asset_id": "1EQaTC2lDDMnsZITI5VeD9",
+    "url": "https://github.com/lidofinance/mev-boost-relay-allowed-list",
+    "description": "",
+    "added_at": "2025-06-02T02:44:52.894Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "lido",
+    "asset_id": "3PlIcUtXp5nzRtjidntz8Q",
+    "url": "https://github.com/lidofinance/gate-seals",
+    "description": "",
+    "added_at": "2025-06-02T02:45:18.442Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "lido",
+    "asset_id": "B8CFxZDtm4ZLerxMoZf75",
+    "url": "https://github.com/lidofinance/community-staking-module",
+    "description": "",
+    "added_at": "2025-06-02T02:46:42.298Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "lido",
+    "asset_id": "7HlVrl8VDddyEPDm7eSttM",
+    "url": "https://github.com/lidofinance/easy-track",
+    "description": "",
+    "added_at": "2025-06-02T02:47:01.040Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "lido",
+    "asset_id": "4IGGFif9ieIdgBLJ1rFhnS",
+    "url": "https://github.com/lidofinance/stonks",
+    "description": "",
+    "added_at": "2025-06-02T02:47:19.483Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "lido",
+    "asset_id": "3QoaTfEUYyWsziqdame04g",
+    "url": "https://github.com/lidofinance/lido-vesting-escrow",
+    "description": "",
+    "added_at": "2025-06-02T02:47:35.630Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "lido",
+    "asset_id": "4jR1WBC4gZDUwKJtT5vAKh",
+    "url": "https://github.com/lidofinance/dual-governance",
+    "description": "",
+    "added_at": "2025-06-02T02:47:46.913Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "lido",
+    "asset_id": "4tdVsd2yYvBsNAtpOPGgEB",
+    "url": "https://github.com/lidofinance/aragon-apps",
+    "description": "",
+    "added_at": "2025-06-02T02:48:02.547Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "lido",
+    "asset_id": "7I6qZcicxedkZjX70ll2hU",
+    "url": "https://github.com/lidofinance/lido-council-daemon",
+    "description": "",
+    "added_at": "2025-06-02T02:48:20.305Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "lido",
+    "asset_id": "66rt1meZwJegWJVTt8gYwN",
+    "url": "https://github.com/lidofinance/lido-oracle",
+    "description": "",
+    "added_at": "2025-06-02T02:48:31.754Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "lido",
+    "asset_id": "5Zo8F43Lwbo5iozWU4i0yo",
+    "url": "https://github.com/lidofinance/lido-keys-api",
+    "description": "",
+    "added_at": "2025-06-02T02:48:44.292Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "lido",
+    "asset_id": "6ilyLSPnOPc067Z4UQBafP",
+    "url": "https://github.com/lidofinance/validator-ejector",
+    "description": "",
+    "added_at": "2025-06-02T02:48:59.690Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "lido",
+    "asset_id": "5kPJSzsG9nAttPIACvDLSr",
+    "url": "https://github.com/lidofinance/oz-merkle-tree",
+    "description": "",
+    "added_at": "2025-06-02T02:49:14.464Z",
+    "revision": 1
+  }
+]

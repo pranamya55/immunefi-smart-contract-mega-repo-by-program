@@ -1,0 +1,7 @@
+{
+  "url": "https://beratrail.io/token/0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
+  "host": "beratrail.io",
+  "address": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:http 403"
+}

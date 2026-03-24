@@ -1,0 +1,10 @@
+category = "fail"
+
+#check: $()Associated function or method is not found
+#check: $()const MOD_CONST: u8 = S::assoc();
+#nextln: $()"assoc() -> u8" is not found for type "recursive_const_module_over_associated_function::S".
+
+#check: $()const MOD_CONST: u8 = S::assoc();
+#nextln: $()Could not evaluate initializer to a const declaration.
+
+#check: $()Aborting due to 2 errors.

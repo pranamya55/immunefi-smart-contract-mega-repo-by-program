@@ -1,0 +1,25 @@
+{
+  "url": "https://rootstock.blockscout.com/address/0x1a594d5d5d1c426281C1064B07f23F57B2716B61",
+  "host": "rootstock.blockscout.com",
+  "address": "0x1a594d5d5d1c426281C1064B07f23F57B2716B61",
+  "chainid": null,
+  "project_slug": "usdt0",
+  "asset_id": "7wsMfQPOPBfB7TmRXSRVib",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": "0000000000000000000000006084203ff1c4c2ecf26722b59ac7bf1a1dc220b6000000000000000000000000a882c21c9df00958a958cde96f2b2ae8fb4315b100000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000024c4d66de80000000000000000000000001a6362ad64ccff5902d46d875b36e8798267d15400000000000000000000000000000000000000000000000000000000",
+  "evm_version": "london",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:missing-chainid",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

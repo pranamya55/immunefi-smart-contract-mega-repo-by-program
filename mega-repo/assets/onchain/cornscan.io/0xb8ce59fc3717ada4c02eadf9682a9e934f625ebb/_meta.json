@@ -1,0 +1,7 @@
+{
+  "url": "https://cornscan.io/address/0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb/contract/21000000/readContract",
+  "host": "cornscan.io",
+  "address": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:http 403"
+}

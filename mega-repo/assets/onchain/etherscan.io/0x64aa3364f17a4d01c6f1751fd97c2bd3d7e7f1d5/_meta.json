@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x64aa3364F17a4D01c6f1751Fd97C2BD3D7e7f1D5?utm_source=immunefi",
+  "host": "etherscan.io",
+  "address": "0x64aa3364F17a4D01c6f1751Fd97C2BD3D7e7f1D5",
+  "chainid": 1,
+  "project_slug": "olympus",
+  "asset_id": "7syzpfzs4xu7jGXtN2h9s0",
+  "contract_name": "OlympusERC20Token",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "0000000000000000000000001c21f8ea7e39e2ba00bc12d2968d63f4acb38b7a",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "GNU AGPLv3",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://1dd9d58665b9f124afb5f5fd154759d875decbca6dcc7036a2d0e59c76a3832a",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

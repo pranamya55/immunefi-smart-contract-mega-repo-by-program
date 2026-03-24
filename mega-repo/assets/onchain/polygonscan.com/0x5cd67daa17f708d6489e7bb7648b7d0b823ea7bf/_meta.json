@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0x5cd67Daa17F708d6489E7Bb7648b7D0B823eA7bF",
+  "host": "polygonscan.com",
+  "address": "0x5cd67Daa17F708d6489E7Bb7648b7D0B823eA7bF",
+  "chainid": 137,
+  "project_slug": "thesandbox",
+  "asset_id": "2OUsfwmQhmNFEKvrvQ87pZ",
+  "contract_name": "TwoPeriodsRewardCalculator",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": "1",
+  "runs": "2000",
+  "constructor_arguments": "000000000000000000000000d3a9caa25393765c05ce9f332b5e33b5e33d8b8f",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

@@ -1,0 +1,209 @@
+category = "fail"
+
+#check: $()error
+#check: $()use ::lib_3::Items3_Struct;
+#nextln: $()Symbol "Items3_Struct" is private.
+
+#check: $()error
+#check: $()use ::lib_3::Items3_Enum;
+#nextln: $()Symbol "Items3_Enum" is private.
+
+#check: $()error
+#check: $()use ::lib_3::Items3_Variants;
+#nextln: $()Symbol "Items3_Variants" is private.
+
+#check: $()error
+#check: $()use ::lib_3::Items3_Variants::G;
+#nextln: $()Symbol "Items3_Variants" is private.
+
+#check: $()error
+#check: $()use ::lib_3::Items3_Variants::H;
+#nextln: $()Symbol "Items3_Variants" is private.
+
+#check: $()error
+#check: $()use ::lib_3::ITEMS_3_FUNCTION_RES;
+#nextln: $()Symbol "ITEMS_3_FUNCTION_RES" is private.
+
+#check: $()error
+#check: $()use ::lib_3::items_3_function;
+#nextln: $()Symbol "items_3_function" is private.
+
+#check: $()error
+#check: $()use ::lib_3::Items3Trait;
+#nextln: $()Symbol "Items3Trait" is private.
+
+#check: $()error
+#check: $()use ::lib_4::Items4_Struct;
+#nextln: $()Symbol "Items4_Struct" is private.
+
+#check: $()error
+#check: $()use ::lib_4::Items4_Enum;
+#nextln: $()Symbol "Items4_Enum" is private.
+
+#check: $()error
+#check: $()use ::lib_4::Items4_Variants;
+#nextln: $()Symbol "Items4_Variants" is private.
+
+#check: $()error
+#check: $()use ::lib_4::Items4_Variants::K;
+#nextln: $()Symbol "Items4_Variants" is private.
+
+#check: $()error
+#check: $()use ::lib_4::Items4_Variants::L;
+#nextln: $()Symbol "Items4_Variants" is private.
+
+#check: $()error
+#check: $()use ::lib_4::ITEMS_4_FUNCTION_RES;
+#nextln: $()Symbol "ITEMS_4_FUNCTION_RES" is private.
+
+#check: $()error
+#check: $()use ::lib_4::items_4_function;
+#nextln: $()Symbol "items_4_function" is private.
+
+#check: $()error
+#check: $()use ::lib_4::Items4Trait;
+#nextln: $()Symbol "Items4Trait" is private.
+
+#check: $()error
+#check: $()use ::lib_4::M;
+#nextln: $()Symbol "M" is private.
+
+#check: $()error
+#check: $()use ::lib_4::N;
+#nextln: $()Symbol "N" is private.
+
+#check: $()error
+#check: $()input.a
+#nextln: $()Mismatched types.
+#nextln: $()expected: u64
+#nextln: $()found:    bool.
+
+#check: $()error
+#check: $()input.a
+#nextln: $()Mismatched types.
+#nextln: $()expected: u64
+#nextln: $()found:    bool.
+
+#check: $()error
+#check: $()Items1_Enum::A(val) => val,
+#nextln: $()Mismatched types.
+#nextln: $()expected: u64
+#nextln: $()found:    bool.
+
+#check: $()Associated function or method is not found
+#check: $()Items1_Enum::B(val) => val + 1000,
+#nextln: $()"add(bool, {numeric}) -> u64" is not found for type "bool".
+
+#check: $()error
+#check: $()items_1_function()
+#check: $()Mismatched types.
+#nextln: $()expected: u64
+#nextln: $()found:    bool.
+
+#check: $()error
+#check: $()items_1_function()
+#check: $()Mismatched types.
+#nextln: $()expected: u64
+#nextln: $()found:    bool.
+
+#check: $()error
+#check: $()items_1_function()
+#check: $()Mismatched types.
+#nextln: $()expected: u64
+#nextln: $()found:    bool.
+
+#check: $()error
+#check: $()fn items_1_trait_function(self, x: TestStruct2) -> u64 {
+#nextln: $()expected: bool
+#nextln: $()found:    u64
+
+#check: $()error
+#check: $()input.b
+#nextln: $()Mismatched types.
+#nextln: $()expected: u64
+#nextln: $()found:    bool.
+
+#check: $()error
+#check: $()input.b
+#nextln: $()Mismatched types.
+#nextln: $()expected: u64
+#nextln: $()found:    bool.
+
+#check: $()error
+#check: $()Items2_Enum::C(val) => val,
+#nextln: $()Mismatched types.
+#nextln: $()expected: u64
+#nextln: $()found:    bool.
+
+#check: $()Associated function or method is not found
+#check: $()Items2_Enum::D(val) => val + 1000,
+#nextln: $()"add(bool, {numeric}) -> u64" is not found for type "bool".
+
+#check: $()error
+#check: $()items_2_function()
+#check: $()Mismatched types.
+#nextln: $()expected: u64
+#nextln: $()found:    bool.
+
+#check: $()error
+#check: $()items_2_function()
+#check: $()Mismatched types.
+#nextln: $()expected: u64
+#nextln: $()found:    bool.
+
+#check: $()error
+#check: $()items_2_function()
+#check: $()Mismatched types.
+#nextln: $()expected: u64
+#nextln: $()found:    bool.
+
+#check: $()error
+#check: $()fn items_2_trait_function(self, x: TestStruct2) -> u64 {
+#nextln: $()expected: bool
+#nextln: $()found:    u64
+
+#check: $()error
+#check: $()let items_1_struct = Items1_Struct { a: 123 };
+#nextln: $()Mismatched types.
+#nextln: $()expected: bool
+#nextln: $()found:    {numeric}.
+
+#check: $()error
+#check: $()let items_1_enum = Items1_Enum::A(432);
+#nextln: $()Mismatched types.
+#nextln: $()expected: bool
+#nextln: $()found:    {numeric}.
+
+#check: $()Associated function or method is not found
+#check: $()let items_1_trait_teststruct_1_res = teststruct_1.items_1_trait_function(teststruct_2);
+#nextln: $()"items_1_trait_function(shadowing_in_reexporting_module::tests::TestStruct1, shadowing_in_reexporting_module::tests::TestStruct2)" is not found for type "shadowing_in_reexporting_module::tests::TestStruct1".
+#nextln: $()Only this "items_1_trait_function" function is implemented for the type:
+#nextln: $()- <shadowing_in_reexporting_module::tests::TestStruct1 as shadowing_in_reexporting_module::items_1::Items1Trait<shadowing_in_reexporting_module::tests::TestStruct2>>::items_1_trait_function() -> u64
+#nextln: $()Did you mean to call that function?
+
+#check: $()error
+#check: $()let items_2_struct = Items2_Struct { b: 879 };
+#nextln: $()Mismatched types.
+#nextln: $()expected: bool
+#nextln: $()found:    {numeric}.
+
+#check: $()error
+#check: $()let items_2_enum = Items2_Enum::C(246);
+#nextln: $()Mismatched types.
+#nextln: $()expected: bool
+#nextln: $()found:    {numeric}.
+
+#check: $()Associated function or method is not found
+#check: $()let items_2_trait_teststruct_1_res = teststruct_1.items_2_trait_function(teststruct_2);
+#nextln: $()"items_2_trait_function(shadowing_in_reexporting_module::tests::TestStruct1, shadowing_in_reexporting_module::tests::TestStruct2)" is not found for type "shadowing_in_reexporting_module::tests::TestStruct1".
+#nextln: $()Only this "items_2_trait_function" function is implemented for the type:
+#nextln: $()- <shadowing_in_reexporting_module::tests::TestStruct1 as shadowing_in_reexporting_module::items_2_1::Items2Trait<shadowing_in_reexporting_module::tests::TestStruct2>>::items_2_trait_function() -> u64
+#nextln: $()Did you mean to call that function?
+
+#check: $()error
+#check: $()This path must return a value of type "u64" from function "items_1_trait_function", but it does not.
+
+#check: $()error
+#check: $()This path must return a value of type "u64" from function "items_2_trait_function", but it does not.
+
+#check: $()Aborting due to 44 errors.

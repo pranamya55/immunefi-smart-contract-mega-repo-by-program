@@ -1,0 +1,24 @@
+{
+  "url": "https://mantlescan.xyz/address/0xc4aaDc921E1cdb66c5300Bc158a313292923C0cb",
+  "host": "mantlescan.xyz",
+  "address": "0xc4aaDc921E1cdb66c5300Bc158a313292923C0cb",
+  "chainid": 5000,
+  "project_slug": "agni",
+  "asset_id": "db_44df51f1-25b2-4465-ba4e-2128173f667b",
+  "contract_name": "QuoterV2",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000e9827b4ebeb9ae41fc57efdddd79edddc2ea4d0300000000000000000000000025780dc8fc3cfbd75f33bfdab65e969b603b203500000000000000000000000078c1b0c915c4faa5fffa6cabf0219da63d7f4cb8",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 21,
+  "mode": "json-sources"
+}

@@ -1,0 +1,234 @@
+[
+  {
+    "project_slug": "felix",
+    "asset_id": "5qwYobxzDk4FFHNdDhw9Oe",
+    "url": "https://purrsec.com/address/0x02c6a2fa58cc01a18b8d9e00ea48d65e4df26c70",
+    "description": "feUSD",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "2E8AisrFAOsTys82XGMUo2",
+    "url": "https://purrsec.com/address/0x9de1e57049c475736289cb006212f3e1dce4711b",
+    "description": "Collateral Registry",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "oxGhTJ6AMSbvrm9EpFOrV",
+    "url": "https://purrsec.com/address/0xa32e89c658f7fdcc0bdb2717f253bacd99f864d4",
+    "description": "Hint Helpers",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "2C0WvZmQ2bOY9GP4BJMXrD",
+    "url": "https://purrsec.com/address/0x5555555555555555555555555555555555555555",
+    "description": "WHYPE",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "26vhKLnqbFQMHHvszfQAq3",
+    "url": "https://purrsec.com/address/0xd389c600B302C05e619a25112B27eA07C62A6c8c",
+    "description": "WHYPE Zapper (For Native Hype)",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "4RP7KbSBSmsjrOJxHkliqQ",
+    "url": "https://purrsec.com/address/0x39ebba742b6917d49d4a9ac7cf5c70f84d34cc9e",
+    "description": "Active Pool",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "61JqYLjkb9LkozhrtI9LPB",
+    "url": "https://purrsec.com/address/0x7201fb5c3ba06f10a858819f62221ae2f473815d",
+    "description": "Address Registry",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "11WS4aEjaroPEQoLOAjPWL",
+    "url": "https://purrsec.com/address/0x5b271dc20ba7beb8eee276eb4f1644b6a217f0a3",
+    "description": "Borrower Operations",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "7AOq4ZVoJo0zpRV5w9pvHV",
+    "url": "https://purrsec.com/address/0x9182e36bd7cceb71812c766c4464208ad9c122ca",
+    "description": "Collateral Surplus Pool",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "22oKg1TqDjKAqs7SOkUrqx",
+    "url": "https://purrsec.com/address/0xa1e95e74d07fec324a82cd2ef19ebcb33907c605",
+    "description": "Default Pool",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "3jLZTkdB7MymGAWHf8JJqG",
+    "url": "https://purrsec.com/address/0x7560059081ede2ff6c6b980fd1ee9a53df4e9935",
+    "description": "Gas Pool",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "46jmfceZi3rQGhz1zLtW4e",
+    "url": "https://purrsec.com/address/0x12a1868b89789900e413a6241ca9032dd1873a51",
+    "description": "Price Feed",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "jWaJCuQwlV2gXvBM30xXU",
+    "url": "https://purrsec.com/address/0xd1caa4218808eb94d36e1df7247f7406f43f2ef6",
+    "description": "Sorted Troves",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "7aH4dOgxdnUxowKc8aO1oO",
+    "url": "https://purrsec.com/address/0x576c9c501473e01ae23748de28415a74425efd6b",
+    "description": "Stability Pool",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "XXBx4rSdk93qZYmRcufTd",
+    "url": "https://purrsec.com/address/0x3100f4e7bda2ed2452d9a57eb30260ab071bbe62",
+    "description": "Trove Manager",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "1xQMVwbrLXoJBLXGXmypix",
+    "url": "https://purrsec.com/address/0x5ad1512e7006fdbd0f3ebb8aa35c5e9234a03aa7",
+    "description": "Trove NFT",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "2WnmG2bxvxR1Tv0VREkGq2",
+    "url": "https://purrsec.com/address/0x9fdbda0a5e284c32744d2f17ee5c74b284993463",
+    "description": "UBTC",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "2TIEoKfEKsKGjstP657a29",
+    "url": "https://purrsec.com/address/0xefbd9cfe88235f0e648aefb52c8e8dc152a9ad6f",
+    "description": "feUBTC (Felix UBTC Wrapper for Decimals)",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "3QS5L3CbsZ0CIvc17iiQYc",
+    "url": "https://purrsec.com/address/0x8d99575ebbbda038a626ca769561c16fdd7a5939",
+    "description": "Active Pool",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "2qfiBeJaXw3rT62YY7LN7M",
+    "url": "https://purrsec.com/address/0xfc4e20bd9f0e4f8782bea92a7bd8002367882407",
+    "description": "Address Registry",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "39tlvkqA2JZPqSBzCOr0wq",
+    "url": "https://purrsec.com/address/0x36b7bd65276eda7cdc5f730da5cdb7ee7736672e",
+    "description": "Borrower Operations",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "44bvOPpxrqqpljwxLgEc4r",
+    "url": "https://purrsec.com/address/0xe7aba857f8e2c95462e69b93c7ea78ac19aafe38",
+    "description": "Collateral Surplus Pool",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "7C6RKSskhv2jNIgRKhCFLn",
+    "url": "https://purrsec.com/address/0x50743a84c68a9d14d93364ed31afa4012183df1c",
+    "description": "Default Pool",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "347QXkbXTq7Juv60ie0E71",
+    "url": "https://purrsec.com/address/0x8b71c92edf02dff693042e4e808d0568ccf0a137",
+    "description": "Gas Pool",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "NaAucDsaFkN0NOGgdGsJ4",
+    "url": "https://purrsec.com/address/0xf59f338424062dd1d44a9b4dd2721128a45358ab",
+    "description": "Price Feed",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "1bviVJkbwRPIj5MixfMU28",
+    "url": "https://purrsec.com/address/0x642d979341eaac9c10623f5a58283aa72f6e2fa9",
+    "description": "Sorted Troves",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "YXvBDQ2ZFgXRJeGFpsGX6",
+    "url": "https://purrsec.com/address/0xabf0369530205ae56dd4c49629474c65d1168924",
+    "description": "Stability Pool",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "1dS8mAMh0KvoyIJXzzkZXi",
+    "url": "https://purrsec.com/address/0xbbe5f227275f24b64bd290a91f55723a00214885",
+    "description": "Trove Manager",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "felix",
+    "asset_id": "1GdkpxnETEBOCLSuFj68pS",
+    "url": "https://purrsec.com/address/0xad8a43ac8da98990efa4d5ec7b91135965d5846b",
+    "description": "Trove NFT",
+    "added_at": "2025-10-02T05:00:00.000Z",
+    "revision": 1
+  }
+]

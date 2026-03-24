@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x33996CC9EEe2dc20B10b8E57d313d0FacC7a0828",
+  "host": "etherscan.io",
+  "address": "0x33996CC9EEe2dc20B10b8E57d313d0FacC7a0828",
+  "chainid": 1,
+  "project_slug": "scroll",
+  "asset_id": "5ss4rU8xgRDH92uTLOEUKk",
+  "contract_name": "ZkEvmVerifierPostEuclid",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 2,
+  "mode": "json-sources"
+}

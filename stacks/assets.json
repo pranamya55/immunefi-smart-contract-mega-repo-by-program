@@ -1,0 +1,34 @@
+[
+  {
+    "project_slug": "stacks",
+    "asset_id": "1wf5EgCM3ZemiZtx4wya65",
+    "url": "https://github.com/stacks-sbtc/sbtc/tree/main/contracts",
+    "description": "sBTC contracts",
+    "added_at": "2025-04-30T05:34:35.039Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "stacks",
+    "asset_id": "3BygY3ZGnYEdOHHW9dXU1S",
+    "url": "https://github.com/stacks-network/stacks-core/blob/master/stackslib/src/chainstate/stacks/boot/costs.clar",
+    "description": "Costs contract",
+    "added_at": "2022-05-10T15:55:21.514Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "stacks",
+    "asset_id": "bUooaKIGszVwaxPSCOa1g",
+    "url": "https://github.com/stacks-network/stacks-core/blob/master/stackslib/src/chainstate/stacks/boot/lockup.clar",
+    "description": "Lockup contract",
+    "added_at": "2022-05-10T15:55:20.388Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "stacks",
+    "asset_id": "cOg6GDCBuTBMg879ePnHa",
+    "url": "https://github.com/stacks-network/stacks-core/blob/master/stackslib/src/chainstate/stacks/boot/pox-4.clar",
+    "description": "POX contract",
+    "added_at": "2022-05-10T15:55:19.323Z",
+    "revision": 0
+  }
+]

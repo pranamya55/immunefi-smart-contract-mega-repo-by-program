@@ -1,0 +1,8 @@
+[[package]]
+name = "local_impl_for_ord"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-FE72F77802732C1A"

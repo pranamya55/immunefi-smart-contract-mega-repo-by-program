@@ -1,0 +1,1 @@
+../../../../../../../../mega-repo/assets/github/blob-snapshots/Gearbox-protocol/security/main/bug-bounty/v3-scope.md

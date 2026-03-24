@@ -1,0 +1,3 @@
+[package]
+name = "mock_link_token"
+edition = "2024"

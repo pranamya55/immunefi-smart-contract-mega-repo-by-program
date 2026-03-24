@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x0edbb060a8f00f5967eecfc87c8559fa65501a3d",
+  "host": "etherscan.io",
+  "address": "0x0edbb060a8f00f5967eecfc87c8559fa65501a3d",
+  "chainid": 1,
+  "project_slug": "enzymefinance",
+  "asset_id": "4DproFsgkmD4QeCMjMwAt1",
+  "contract_name": "ManualValueOracleFactory",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "istanbul",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 6,
+  "mode": "json-sources"
+}

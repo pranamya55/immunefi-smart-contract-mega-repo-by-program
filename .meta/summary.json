@@ -1,0 +1,27 @@
+{
+  "program_count": 173,
+  "smart_contract_assets": 5968,
+  "projects_before_filter": 310,
+  "projects_after_filter": 190,
+  "dropped_reasons": {
+    "min_max_bounty": 62,
+    "exclude_program_slug": 1,
+    "exclude_audit_competitions": 20,
+    "exclude_shutdown": 37
+  },
+  "filters": {
+    "exclude_audit_competitions": true,
+    "exclude_shutdown": true,
+    "exclude_program_slug": [
+      "instadapp"
+    ],
+    "min_max_bounty": 50000.0,
+    "now_date_utc": "2026-03-24"
+  },
+  "totals": {
+    "manifest_linked": 4874,
+    "github_repo_linked": 153,
+    "github_gist_linked": 5,
+    "github_blob_linked": 936
+  }
+}

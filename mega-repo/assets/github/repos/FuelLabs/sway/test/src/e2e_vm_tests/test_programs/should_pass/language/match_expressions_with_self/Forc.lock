@@ -1,0 +1,8 @@
+[[package]]
+name = "match_expressions_with_self"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-BA34DF212BA52818"

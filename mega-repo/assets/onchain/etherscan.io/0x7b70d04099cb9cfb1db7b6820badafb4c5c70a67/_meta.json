@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x7B70D04099CB9cfb1Db7B6820baDAfB4C5C70A67#code",
+  "host": "etherscan.io",
+  "address": "0x7B70D04099CB9cfb1Db7B6820baDAfB4C5C70A67",
+  "chainid": 1,
+  "project_slug": "sparklend",
+  "asset_id": "3qvCRZAbl3X2gdxRDmrCdq",
+  "contract_name": "InitializableImmutableAdminUpgradeabilityProxy",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "1",
+  "runs": "100000",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "GNU AGPLv3",
+  "proxy": "1",
+  "implementation": "0x86c71796ccdb31c3997f8ec5c2e3db3e9e40b985",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 6,
+  "mode": "json-sources"
+}

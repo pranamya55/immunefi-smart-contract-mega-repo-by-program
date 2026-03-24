@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0x12534065db54c01a73857febc6a0a9225b53309c",
+  "host": "polygonscan.com",
+  "address": "0x12534065db54c01a73857febc6a0a9225b53309c",
+  "chainid": 137,
+  "project_slug": "enzymefinance",
+  "asset_id": "23ekciNYw0lXPKaK47MF3G",
+  "contract_name": "AaveV3FlashLoanAssetManagerLib",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000a97684ead0e402dc232d5a977953df7ecbab3cdb0000000000000000000000000000000000000000000000000000000000000000",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 11,
+  "mode": "json-sources"
+}

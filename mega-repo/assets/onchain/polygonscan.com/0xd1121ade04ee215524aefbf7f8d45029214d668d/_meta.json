@@ -1,0 +1,19 @@
+{
+  "url": "https://polygonscan.com/address/0xd1121ade04ee215524aefbf7f8d45029214d668d",
+  "host": "polygonscan.com",
+  "address": "0xd1121ade04ee215524aefbf7f8d45029214d668d",
+  "chainid": 137,
+  "contract_name": "Maximillion",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000c1b02e52e9512519edf99671931772e452fb4399",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://7fe5be2a5b099ec3e3423fe1939882c4499745961602a75534bb4cb8b8774011",
+  "files_written": 1,
+  "mode": "recover-single-file"
+}

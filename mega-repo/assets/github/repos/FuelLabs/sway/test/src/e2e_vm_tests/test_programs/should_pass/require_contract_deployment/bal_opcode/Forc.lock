@@ -1,0 +1,16 @@
+[[package]]
+name = "bal_opcode"
+source = "member"
+dependencies = [
+    "balance_test_abi",
+    "std",
+]
+
+[[package]]
+name = "balance_test_abi"
+source = "path+from-root-22833226E3BC014E"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-22833226E3BC014E"

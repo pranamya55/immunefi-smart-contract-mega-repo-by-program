@@ -1,0 +1,19 @@
+{
+  "url": "https://arbiscan.io/address/0x9a61b0c7307d45e67357e0d5a0d35bca5ce96755",
+  "host": "arbiscan.io",
+  "address": "0x9a61b0c7307d45e67357e0d5a0d35bca5ce96755",
+  "chainid": 42161,
+  "contract_name": "ERC4626RateAggregatorFactory",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 8,
+  "mode": "recover-json-sources"
+}

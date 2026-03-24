@@ -1,0 +1,1 @@
+../../../../../../../../../../mega-repo/assets/github/blob-snapshots/ref-finance/boost-farm/main/contracts/mock-ft/src/lib.rs

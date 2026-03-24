@@ -1,0 +1,19 @@
+{
+  "url": "https://scrollscan.com/address/0x13d24a7ff6f5ec5ff0e9c40fc3b8c9c01c65437b",
+  "host": "scrollscan.com",
+  "address": "0x13d24a7ff6f5ec5ff0e9c40fc3b8c9c01c65437b",
+  "chainid": 534352,
+  "contract_name": "ScrollOwner",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 12,
+  "mode": "recover-json-sources"
+}

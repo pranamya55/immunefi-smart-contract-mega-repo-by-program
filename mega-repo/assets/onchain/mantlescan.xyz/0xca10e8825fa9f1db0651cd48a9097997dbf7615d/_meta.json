@@ -1,0 +1,24 @@
+{
+  "url": "https://mantlescan.xyz/address/0xCa10E8825FA9F1dB0651Cd48A9097997DBf7615d#code",
+  "host": "mantlescan.xyz",
+  "address": "0xCa10E8825FA9F1dB0651Cd48A9097997DBf7615d",
+  "chainid": 5000,
+  "project_slug": "woofi",
+  "asset_id": "3ZXvRdpxtUOWtRIhBYTLs5",
+  "contract_name": "WooCrossChainRouterV4",
+  "compiler_version": "v0.8.14+commit.80d49f37",
+  "optimization_used": "1",
+  "runs": "20000",
+  "constructor_arguments": "00000000000000000000000078c1b0c915c4faa5fffa6cabf0219da63d7f4cb8000000000000000000000000d14a997308f9e7514a8fea835064d596cdcaa99e000000000000000000000000be07e5eb5e4b6ca700586b41e4ecab614ad3a05b",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 16,
+  "mode": "json-sources"
+}

@@ -1,0 +1,1749 @@
+{
+  "contractName": "IVestingFactory",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "holder",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "percentages",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "timedeltas",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "create",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "setTGE",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "isTGEConfigured",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTGETimestamp",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IVestingMachine",
+          "name": "wallet",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "setTotal",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getRegistry",
+      "outputs": [
+        {
+          "internalType": "contract IRegistry",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getVestingMachinesLen",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "idx",
+          "type": "uint256"
+        }
+      ],
+      "name": "getVestingMachinesEntry",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"holder\",\"type\":\"address\"},{\"internalType\":\"uint256[]\",\"name\":\"percentages\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256[]\",\"name\":\"timedeltas\",\"type\":\"uint256[]\"}],\"name\":\"create\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getRegistry\",\"outputs\":[{\"internalType\":\"contract IRegistry\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getTGETimestamp\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"idx\",\"type\":\"uint256\"}],\"name\":\"getVestingMachinesEntry\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getVestingMachinesLen\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"isTGEConfigured\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"setTGE\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract IVestingMachine\",\"name\":\"wallet\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"setTotal\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"create(address,uint256[],uint256[])\":{\"params\":{\"holder\":\"wallet's owner\",\"percentages\":\"percentages allowed in each step\",\"timedeltas\":\"duration of each step\"}},\"getVestingMachinesEntry(uint256)\":{\"params\":{\"idx\":\"the index in the list\"}},\"setTotal(address,uint256)\":{\"params\":{\"amount\":\"wallet balance\",\"wallet\":\"the vesting machine\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"create(address,uint256[],uint256[])\":{\"notice\":\"Create a holder wallet\"},\"getRegistry()\":{\"notice\":\"Return registry\"},\"getTGETimestamp()\":{\"notice\":\"Returns the configured TGE timestamp\"},\"getVestingMachinesEntry(uint256)\":{\"notice\":\"Get the an entry of the list of vesting machines\"},\"getVestingMachinesLen()\":{\"notice\":\"Get the length of the list of vesting machines\"},\"isTGEConfigured()\":{\"notice\":\"Returns true when the TGE was configured\"},\"setTGE()\":{\"notice\":\"Set the TGE time enabling holder wallets\"},\"setTotal(address,uint256)\":{\"notice\":\"Set a holder wallet balance\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/jbokser/work2/OMoC-SC-Shared/contracts/IVestingFactory.sol\":\"IVestingFactory\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/jbokser/work2/OMoC-SC-Shared/contracts/IRegistry.sol\":{\"keccak256\":\"0x1a3c93785a8970884cb8ba4beb89d0f63dbc387a2c27c4ce074d144c44a2f889\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://7ab1ace62f43089a4b1a767bbfd9c65f4c42f74fa8f8bb799a661bc421228472\",\"dweb:/ipfs/QmazGCjEYg9egsMVuCugoUt7M5QRsJDKUWQTjCbyPTbFcF\"]},\"/home/jbokser/work2/OMoC-SC-Shared/contracts/IVestingFactory.sol\":{\"keccak256\":\"0xbe8163b31a663fba5ed834f07611204e80bdc59388b0ff862b5c3fb9d8187d53\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://5ca4bad316b58bc27297e49141c7c2b095bc87e74be4768ac79b6a19be30591c\",\"dweb:/ipfs/Qmd6h2iDH17yR1XrN7dE2QYpnovJ5WXnLFAQ5FBTr3g4aB\"]},\"/home/jbokser/work2/OMoC-SC-Shared/contracts/IVestingMachine.sol\":{\"keccak256\":\"0xa6cae40a0aa75d57b9588bc058f81b295fa513b05e9998bb3da434599bb7e630\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://640e715c7d8a2bb3d68f1952dd391f4dade9d9fb51bf12cef46a92389d88a596\",\"dweb:/ipfs/QmaB68QjW9df3trbiif8fSdTnpaDkp5PkQJ8QvTXd9cNfN\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: UNLICENSED\npragma solidity ^0.6.0;\n\nimport {IRegistry} from \"./IRegistry.sol\";\nimport {IVestingMachine} from \"./IVestingMachine.sol\";\n\ninterface IVestingFactory {\n    /// @notice Create a holder wallet\n    /// @param holder wallet's owner\n    /// @param percentages percentages allowed in each step\n    /// @param timedeltas duration of each step\n    function create(\n        address holder,\n        uint256[] memory percentages,\n        uint256[] memory timedeltas\n    ) external;\n\n    /// @notice Update the vesting machine values\n    /// function update(\n    ///     IVestingMachine wallet,\n    ///     uint256[] memory percentages,\n    ///     uint256[] memory timedeltas\n    /// ) external;\n\n    /// @notice Set the TGE time enabling holder wallets\n    function setTGE() external;\n\n    /// @notice Returns true when the TGE was configured\n    function isTGEConfigured() external view returns (bool);\n\n    /// @notice Returns the configured TGE timestamp\n    function getTGETimestamp() external view returns (uint256);\n\n    /// @notice Set a holder wallet balance\n    /// @param wallet the vesting machine\n    /// @param amount wallet balance\n    function setTotal(IVestingMachine wallet, uint256 amount) external;\n\n    /// @notice Return registry\n    function getRegistry() external view returns (IRegistry);\n\n    /// @notice Get the length of the list of vesting machines\n    function getVestingMachinesLen() external view returns (uint256);\n\n    /// @notice Get the an entry of the list of vesting machines\n    /// @param idx the index in the list\n    function getVestingMachinesEntry(uint256 idx) external view returns (address);\n}\n",
+  "sourcePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/IVestingFactory.sol",
+  "ast": {
+    "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/IVestingFactory.sol",
+    "exportedSymbols": {
+      "IVestingFactory": [
+        2193
+      ]
+    },
+    "id": 2194,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2132,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:23:13"
+      },
+      {
+        "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/IRegistry.sol",
+        "file": "./IRegistry.sol",
+        "id": 2134,
+        "nodeType": "ImportDirective",
+        "scope": 2194,
+        "sourceUnit": 1889,
+        "src": "64:42:13",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "argumentTypes": null,
+              "id": 2133,
+              "name": "IRegistry",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": null,
+              "src": "72:9:13",
+              "typeDescriptions": {
+                "typeIdentifier": null,
+                "typeString": null
+              }
+            },
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/IVestingMachine.sol",
+        "file": "./IVestingMachine.sol",
+        "id": 2136,
+        "nodeType": "ImportDirective",
+        "scope": 2194,
+        "sourceUnit": 2295,
+        "src": "107:54:13",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "argumentTypes": null,
+              "id": 2135,
+              "name": "IVestingMachine",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": null,
+              "src": "115:15:13",
+              "typeDescriptions": {
+                "typeIdentifier": null,
+                "typeString": null
+              }
+            },
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 2193,
+        "linearizedBaseContracts": [
+          2193
+        ],
+        "name": "IVestingFactory",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": {
+              "id": 2137,
+              "nodeType": "StructuredDocumentation",
+              "src": "195:179:13",
+              "text": "@notice Create a holder wallet\n @param holder wallet's owner\n @param percentages percentages allowed in each step\n @param timedeltas duration of each step"
+            },
+            "functionSelector": "d47d21e2",
+            "id": 2148,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "create",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2146,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2139,
+                  "mutability": "mutable",
+                  "name": "holder",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2148,
+                  "src": "404:14:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2138,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "404:7:13",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2142,
+                  "mutability": "mutable",
+                  "name": "percentages",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2148,
+                  "src": "428:28:13",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 2140,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "428:7:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 2141,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "428:9:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2145,
+                  "mutability": "mutable",
+                  "name": "timedeltas",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2148,
+                  "src": "466:27:13",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 2143,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "466:7:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 2144,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "466:9:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "394:105:13"
+            },
+            "returnParameters": {
+              "id": 2147,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "508:0:13"
+            },
+            "scope": 2193,
+            "src": "379:130:13",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2149,
+              "nodeType": "StructuredDocumentation",
+              "src": "729:52:13",
+              "text": "@notice Set the TGE time enabling holder wallets"
+            },
+            "functionSelector": "a0e7cfe0",
+            "id": 2152,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setTGE",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2150,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "801:2:13"
+            },
+            "returnParameters": {
+              "id": 2151,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "812:0:13"
+            },
+            "scope": 2193,
+            "src": "786:27:13",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2153,
+              "nodeType": "StructuredDocumentation",
+              "src": "819:52:13",
+              "text": "@notice Returns true when the TGE was configured"
+            },
+            "functionSelector": "ea5dbe77",
+            "id": 2158,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isTGEConfigured",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2154,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "900:2:13"
+            },
+            "returnParameters": {
+              "id": 2157,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2156,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2158,
+                  "src": "926:4:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 2155,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "926:4:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "925:6:13"
+            },
+            "scope": 2193,
+            "src": "876:56:13",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2159,
+              "nodeType": "StructuredDocumentation",
+              "src": "938:48:13",
+              "text": "@notice Returns the configured TGE timestamp"
+            },
+            "functionSelector": "57d83ab1",
+            "id": 2164,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getTGETimestamp",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2160,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1015:2:13"
+            },
+            "returnParameters": {
+              "id": 2163,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2162,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2164,
+                  "src": "1041:7:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2161,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1041:7:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1040:9:13"
+            },
+            "scope": 2193,
+            "src": "991:59:13",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2165,
+              "nodeType": "StructuredDocumentation",
+              "src": "1056:118:13",
+              "text": "@notice Set a holder wallet balance\n @param wallet the vesting machine\n @param amount wallet balance"
+            },
+            "functionSelector": "321e3885",
+            "id": 2172,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setTotal",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2170,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2167,
+                  "mutability": "mutable",
+                  "name": "wallet",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2172,
+                  "src": "1197:22:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IVestingMachine_$2294",
+                    "typeString": "contract IVestingMachine"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 2166,
+                    "name": "IVestingMachine",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 2294,
+                    "src": "1197:15:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IVestingMachine_$2294",
+                      "typeString": "contract IVestingMachine"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2169,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2172,
+                  "src": "1221:14:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2168,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1221:7:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1196:40:13"
+            },
+            "returnParameters": {
+              "id": 2171,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1245:0:13"
+            },
+            "scope": 2193,
+            "src": "1179:67:13",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2173,
+              "nodeType": "StructuredDocumentation",
+              "src": "1252:27:13",
+              "text": "@notice Return registry"
+            },
+            "functionSelector": "5ab1bd53",
+            "id": 2178,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getRegistry",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2174,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1304:2:13"
+            },
+            "returnParameters": {
+              "id": 2177,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2176,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2178,
+                  "src": "1330:9:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IRegistry_$1888",
+                    "typeString": "contract IRegistry"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 2175,
+                    "name": "IRegistry",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1888,
+                    "src": "1330:9:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IRegistry_$1888",
+                      "typeString": "contract IRegistry"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1329:11:13"
+            },
+            "scope": 2193,
+            "src": "1284:57:13",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2179,
+              "nodeType": "StructuredDocumentation",
+              "src": "1347:58:13",
+              "text": "@notice Get the length of the list of vesting machines"
+            },
+            "functionSelector": "8842ef5d",
+            "id": 2184,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getVestingMachinesLen",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2180,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1440:2:13"
+            },
+            "returnParameters": {
+              "id": 2183,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2182,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2184,
+                  "src": "1466:7:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2181,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1466:7:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1465:9:13"
+            },
+            "scope": 2193,
+            "src": "1410:65:13",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": {
+              "id": 2185,
+              "nodeType": "StructuredDocumentation",
+              "src": "1481:101:13",
+              "text": "@notice Get the an entry of the list of vesting machines\n @param idx the index in the list"
+            },
+            "functionSelector": "bcf10f1a",
+            "id": 2192,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getVestingMachinesEntry",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2188,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2187,
+                  "mutability": "mutable",
+                  "name": "idx",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2192,
+                  "src": "1620:11:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2186,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1620:7:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1619:13:13"
+            },
+            "returnParameters": {
+              "id": 2191,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2190,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2192,
+                  "src": "1656:7:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2189,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1656:7:13",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1655:9:13"
+            },
+            "scope": 2193,
+            "src": "1587:78:13",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2194,
+        "src": "163:1504:13"
+      }
+    ],
+    "src": "39:1629:13"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/IVestingFactory.sol",
+      "exportedSymbols": {
+        "IVestingFactory": [
+          2193
+        ]
+      },
+      "license": "UNLICENSED"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.6",
+            ".0"
+          ]
+        },
+        "id": 2132,
+        "name": "PragmaDirective",
+        "src": "39:23:13"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 1889,
+          "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/IRegistry.sol",
+          "file": "./IRegistry.sol",
+          "scope": 2194,
+          "symbolAliases": [
+            {
+              "foreign": {
+                "attributes": {
+                  "argumentTypes": null,
+                  "overloadedDeclarations": [
+                    null
+                  ],
+                  "referencedDeclaration": null,
+                  "type": null,
+                  "value": "IRegistry"
+                },
+                "id": 2133,
+                "name": "Identifier",
+                "src": "72:9:13"
+              },
+              "local": null
+            }
+          ],
+          "unitAlias": ""
+        },
+        "id": 2134,
+        "name": "ImportDirective",
+        "src": "64:42:13"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 2295,
+          "absolutePath": "/home/jbokser/work2/OMoC-SC-Shared/contracts/IVestingMachine.sol",
+          "file": "./IVestingMachine.sol",
+          "scope": 2194,
+          "symbolAliases": [
+            {
+              "foreign": {
+                "attributes": {
+                  "argumentTypes": null,
+                  "overloadedDeclarations": [
+                    null
+                  ],
+                  "referencedDeclaration": null,
+                  "type": null,
+                  "value": "IVestingMachine"
+                },
+                "id": 2135,
+                "name": "Identifier",
+                "src": "115:15:13"
+              },
+              "local": null
+            }
+          ],
+          "unitAlias": ""
+        },
+        "id": 2136,
+        "name": "ImportDirective",
+        "src": "107:54:13"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            2193
+          ],
+          "name": "IVestingFactory",
+          "scope": 2194
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "d47d21e2",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "create",
+              "overrides": null,
+              "scope": 2193,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Create a holder wallet\n @param holder wallet's owner\n @param percentages percentages allowed in each step\n @param timedeltas duration of each step"
+                },
+                "id": 2137,
+                "name": "StructuredDocumentation",
+                "src": "195:179:13"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "holder",
+                      "overrides": null,
+                      "scope": 2148,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2138,
+                        "name": "ElementaryTypeName",
+                        "src": "404:7:13"
+                      }
+                    ],
+                    "id": 2139,
+                    "name": "VariableDeclaration",
+                    "src": "404:14:13"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "percentages",
+                      "overrides": null,
+                      "scope": 2148,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "uint256[]",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "length": null,
+                          "type": "uint256[]"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "uint256",
+                              "type": "uint256"
+                            },
+                            "id": 2140,
+                            "name": "ElementaryTypeName",
+                            "src": "428:7:13"
+                          }
+                        ],
+                        "id": 2141,
+                        "name": "ArrayTypeName",
+                        "src": "428:9:13"
+                      }
+                    ],
+                    "id": 2142,
+                    "name": "VariableDeclaration",
+                    "src": "428:28:13"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "timedeltas",
+                      "overrides": null,
+                      "scope": 2148,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "uint256[]",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "length": null,
+                          "type": "uint256[]"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "uint256",
+                              "type": "uint256"
+                            },
+                            "id": 2143,
+                            "name": "ElementaryTypeName",
+                            "src": "466:7:13"
+                          }
+                        ],
+                        "id": 2144,
+                        "name": "ArrayTypeName",
+                        "src": "466:9:13"
+                      }
+                    ],
+                    "id": 2145,
+                    "name": "VariableDeclaration",
+                    "src": "466:27:13"
+                  }
+                ],
+                "id": 2146,
+                "name": "ParameterList",
+                "src": "394:105:13"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2147,
+                "name": "ParameterList",
+                "src": "508:0:13"
+              }
+            ],
+            "id": 2148,
+            "name": "FunctionDefinition",
+            "src": "379:130:13"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "a0e7cfe0",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "setTGE",
+              "overrides": null,
+              "scope": 2193,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Set the TGE time enabling holder wallets"
+                },
+                "id": 2149,
+                "name": "StructuredDocumentation",
+                "src": "729:52:13"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2150,
+                "name": "ParameterList",
+                "src": "801:2:13"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2151,
+                "name": "ParameterList",
+                "src": "812:0:13"
+              }
+            ],
+            "id": 2152,
+            "name": "FunctionDefinition",
+            "src": "786:27:13"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "ea5dbe77",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "isTGEConfigured",
+              "overrides": null,
+              "scope": 2193,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Returns true when the TGE was configured"
+                },
+                "id": 2153,
+                "name": "StructuredDocumentation",
+                "src": "819:52:13"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2154,
+                "name": "ParameterList",
+                "src": "900:2:13"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2158,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 2155,
+                        "name": "ElementaryTypeName",
+                        "src": "926:4:13"
+                      }
+                    ],
+                    "id": 2156,
+                    "name": "VariableDeclaration",
+                    "src": "926:4:13"
+                  }
+                ],
+                "id": 2157,
+                "name": "ParameterList",
+                "src": "925:6:13"
+              }
+            ],
+            "id": 2158,
+            "name": "FunctionDefinition",
+            "src": "876:56:13"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "57d83ab1",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getTGETimestamp",
+              "overrides": null,
+              "scope": 2193,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Returns the configured TGE timestamp"
+                },
+                "id": 2159,
+                "name": "StructuredDocumentation",
+                "src": "938:48:13"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2160,
+                "name": "ParameterList",
+                "src": "1015:2:13"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2164,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2161,
+                        "name": "ElementaryTypeName",
+                        "src": "1041:7:13"
+                      }
+                    ],
+                    "id": 2162,
+                    "name": "VariableDeclaration",
+                    "src": "1041:7:13"
+                  }
+                ],
+                "id": 2163,
+                "name": "ParameterList",
+                "src": "1040:9:13"
+              }
+            ],
+            "id": 2164,
+            "name": "FunctionDefinition",
+            "src": "991:59:13"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "321e3885",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "setTotal",
+              "overrides": null,
+              "scope": 2193,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Set a holder wallet balance\n @param wallet the vesting machine\n @param amount wallet balance"
+                },
+                "id": 2165,
+                "name": "StructuredDocumentation",
+                "src": "1056:118:13"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "wallet",
+                      "overrides": null,
+                      "scope": 2172,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IVestingMachine",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IVestingMachine",
+                          "referencedDeclaration": 2294,
+                          "type": "contract IVestingMachine"
+                        },
+                        "id": 2166,
+                        "name": "UserDefinedTypeName",
+                        "src": "1197:15:13"
+                      }
+                    ],
+                    "id": 2167,
+                    "name": "VariableDeclaration",
+                    "src": "1197:22:13"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "amount",
+                      "overrides": null,
+                      "scope": 2172,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2168,
+                        "name": "ElementaryTypeName",
+                        "src": "1221:7:13"
+                      }
+                    ],
+                    "id": 2169,
+                    "name": "VariableDeclaration",
+                    "src": "1221:14:13"
+                  }
+                ],
+                "id": 2170,
+                "name": "ParameterList",
+                "src": "1196:40:13"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2171,
+                "name": "ParameterList",
+                "src": "1245:0:13"
+              }
+            ],
+            "id": 2172,
+            "name": "FunctionDefinition",
+            "src": "1179:67:13"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "5ab1bd53",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getRegistry",
+              "overrides": null,
+              "scope": 2193,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Return registry"
+                },
+                "id": 2173,
+                "name": "StructuredDocumentation",
+                "src": "1252:27:13"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2174,
+                "name": "ParameterList",
+                "src": "1304:2:13"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2178,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IRegistry",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IRegistry",
+                          "referencedDeclaration": 1888,
+                          "type": "contract IRegistry"
+                        },
+                        "id": 2175,
+                        "name": "UserDefinedTypeName",
+                        "src": "1330:9:13"
+                      }
+                    ],
+                    "id": 2176,
+                    "name": "VariableDeclaration",
+                    "src": "1330:9:13"
+                  }
+                ],
+                "id": 2177,
+                "name": "ParameterList",
+                "src": "1329:11:13"
+              }
+            ],
+            "id": 2178,
+            "name": "FunctionDefinition",
+            "src": "1284:57:13"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "8842ef5d",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getVestingMachinesLen",
+              "overrides": null,
+              "scope": 2193,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Get the length of the list of vesting machines"
+                },
+                "id": 2179,
+                "name": "StructuredDocumentation",
+                "src": "1347:58:13"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2180,
+                "name": "ParameterList",
+                "src": "1440:2:13"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2184,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2181,
+                        "name": "ElementaryTypeName",
+                        "src": "1466:7:13"
+                      }
+                    ],
+                    "id": 2182,
+                    "name": "VariableDeclaration",
+                    "src": "1466:7:13"
+                  }
+                ],
+                "id": 2183,
+                "name": "ParameterList",
+                "src": "1465:9:13"
+              }
+            ],
+            "id": 2184,
+            "name": "FunctionDefinition",
+            "src": "1410:65:13"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "functionSelector": "bcf10f1a",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getVestingMachinesEntry",
+              "overrides": null,
+              "scope": 2193,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Get the an entry of the list of vesting machines\n @param idx the index in the list"
+                },
+                "id": 2185,
+                "name": "StructuredDocumentation",
+                "src": "1481:101:13"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "idx",
+                      "overrides": null,
+                      "scope": 2192,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 2186,
+                        "name": "ElementaryTypeName",
+                        "src": "1620:7:13"
+                      }
+                    ],
+                    "id": 2187,
+                    "name": "VariableDeclaration",
+                    "src": "1620:11:13"
+                  }
+                ],
+                "id": 2188,
+                "name": "ParameterList",
+                "src": "1619:13:13"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 2192,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 2189,
+                        "name": "ElementaryTypeName",
+                        "src": "1656:7:13"
+                      }
+                    ],
+                    "id": 2190,
+                    "name": "VariableDeclaration",
+                    "src": "1656:7:13"
+                  }
+                ],
+                "id": 2191,
+                "name": "ParameterList",
+                "src": "1655:9:13"
+              }
+            ],
+            "id": 2192,
+            "name": "FunctionDefinition",
+            "src": "1587:78:13"
+          }
+        ],
+        "id": 2193,
+        "name": "ContractDefinition",
+        "src": "163:1504:13"
+      }
+    ],
+    "id": 2194,
+    "name": "SourceUnit",
+    "src": "39:1629:13"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-02-04T20:51:03.357Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "create(address,uint256[],uint256[])": {
+        "params": {
+          "holder": "wallet's owner",
+          "percentages": "percentages allowed in each step",
+          "timedeltas": "duration of each step"
+        }
+      },
+      "getVestingMachinesEntry(uint256)": {
+        "params": {
+          "idx": "the index in the list"
+        }
+      },
+      "setTotal(address,uint256)": {
+        "params": {
+          "amount": "wallet balance",
+          "wallet": "the vesting machine"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "create(address,uint256[],uint256[])": {
+        "notice": "Create a holder wallet"
+      },
+      "getRegistry()": {
+        "notice": "Return registry"
+      },
+      "getTGETimestamp()": {
+        "notice": "Returns the configured TGE timestamp"
+      },
+      "getVestingMachinesEntry(uint256)": {
+        "notice": "Get the an entry of the list of vesting machines"
+      },
+      "getVestingMachinesLen()": {
+        "notice": "Get the length of the list of vesting machines"
+      },
+      "isTGEConfigured()": {
+        "notice": "Returns true when the TGE was configured"
+      },
+      "setTGE()": {
+        "notice": "Set the TGE time enabling holder wallets"
+      },
+      "setTotal(address,uint256)": {
+        "notice": "Set a holder wallet balance"
+      }
+    },
+    "version": 1
+  }
+}

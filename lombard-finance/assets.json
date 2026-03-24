@@ -1,0 +1,34 @@
+[
+  {
+    "project_slug": "lombard-finance",
+    "asset_id": "5M3uTns5bu3S8dNw4Vpk2h",
+    "url": "https://etherscan.io/address/0xed6D647E2F81E5262101aFf72c4A7bcDcfd780e0",
+    "description": "Consortium's Governance",
+    "added_at": "2024-09-02T07:17:57.546Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "lombard-finance",
+    "asset_id": "1cFlNFrrvEGU4suzp0zOro",
+    "url": "https://etherscan.io/address/0x8236a87084f8b84306f72007f36f2618a5634494",
+    "description": "LBTC Mainnet",
+    "added_at": "2024-09-02T07:18:17.238Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "lombard-finance",
+    "asset_id": "4a7sAYkwE7aqtIMzzrzFeO",
+    "url": "https://etherscan.io/address/0x055E84e7FE8955E2781010B866f10Ef6E1E77e59",
+    "description": "Proxy Upgrade Timelock",
+    "added_at": "2024-09-02T07:18:36.271Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "lombard-finance",
+    "asset_id": "98753",
+    "url": "https://immunefi.com/",
+    "description": "Primacy of Impact",
+    "added_at": "2026-02-06T15:58:36.804Z",
+    "revision": 0
+  }
+]

@@ -1,0 +1,87 @@
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "programs/**"
+      - "program-tests/**"
+      - "program-libs/**"
+      - "prover/client/**"
+      - ".github/workflows/programs.yml"
+  pull_request:
+    branches:
+      - "*"
+    paths:
+      - "programs/**"
+      - "program-tests/**"
+      - "program-libs/**"
+      - "prover/client/**"
+      - ".github/workflows/programs.yml"
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - ready_for_review
+
+name: programs
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  system-programs:
+    name: ${{ matrix.test-group }}
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    services:
+      redis:
+        image: redis:8.0.1
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    env:
+      REDIS_URL: redis://localhost:6379
+      CARGO_INCREMENTAL: "0"
+
+    strategy:
+      matrix:
+        test-group:
+          - account-compression-and-registry
+          - system-address
+          - system-compression
+          - compressed-token-and-e2e
+          - compressed-token-batched-tree
+          - system-cpi
+          - system-cpi-v2-functional-read-only
+          - system-cpi-v2-functional-account-infos
+
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v6
+        with:
+          submodules: true
+
+      - name: Setup and build
+        uses: ./.github/actions/setup-and-build
+        with:
+          skip-components: "redis,disk-cleanup"
+          cache-key: "rust"
+
+      - name: Build CLI
+        run: |
+          just cli build
+
+      - name: Run tests
+        working-directory: program-tests
+        run: |
+          just ci-${{ matrix.test-group }}

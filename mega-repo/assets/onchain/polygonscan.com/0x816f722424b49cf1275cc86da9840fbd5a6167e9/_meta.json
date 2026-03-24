@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0x816f722424b49cf1275cc86da9840fbd5a6167e9",
+  "host": "polygonscan.com",
+  "address": "0x816f722424b49cf1275cc86da9840fbd5a6167e9",
+  "chainid": 137,
+  "project_slug": "orderlynetwork",
+  "asset_id": "B0MGbCAgv4nQTv6AzOHzl",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": "1",
+  "runs": "1000",
+  "constructor_arguments": "0000000000000000000000001cbf5533ddb4934a38d6014e5b3dacc7114209e8000000000000000000000000a2ea0a58b083c492adc91a687fac8b53adb7c0fd000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000048129fc1c00000000000000000000000000000000000000000000000000000000",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "1",
+  "implementation": "0x4f8c0f4f794dc5b6d4f1c0883e3fab402867f083",
+  "swarm_source": "ipfs://377d5c06a9da17775dcb223549c484a643cb87909eaf2057b60f1bacfae49dc3",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

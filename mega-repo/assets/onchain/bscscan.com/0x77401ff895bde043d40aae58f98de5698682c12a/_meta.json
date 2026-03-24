@@ -1,0 +1,19 @@
+{
+  "url": "https://bscscan.com/address/0x77401ff895bde043d40aae58f98de5698682c12a",
+  "host": "bscscan.com",
+  "address": "0x77401ff895bde043d40aae58f98de5698682c12a",
+  "chainid": 56,
+  "contract_name": "Comptroller",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://514b29d0351656ccc6b8e36cf305ce7fc3d77a0c585b18b321f664d22862e5db",
+  "files_written": 1,
+  "mode": "recover-single-file"
+}

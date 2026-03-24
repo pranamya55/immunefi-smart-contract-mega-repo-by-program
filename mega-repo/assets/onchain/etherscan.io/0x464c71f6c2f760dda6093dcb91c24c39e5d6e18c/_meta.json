@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c",
+  "host": "etherscan.io",
+  "address": "0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c",
+  "chainid": 1,
+  "project_slug": "aave",
+  "asset_id": "lfAMZH4yoMseurXJ6erRy",
+  "contract_name": "InitializableAdminUpgradeabilityProxy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "GNU AGPLv3",
+  "proxy": "1",
+  "implementation": "0x83b7ce402a0e756e901c4a9d1cafa27ca9572afc",
+  "swarm_source": "ipfs://1799a47c1e80a7ef7ef66d6c3f09083c663b74b42f89a778861663207d9aad90",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

@@ -1,0 +1,8 @@
+{
+  "url_host": "tronscan.org",
+  "address": "TL5x9MtSnDy537FXKx53yAaHRRNdg9TkkA",
+  "chain_kind": "tron",
+  "mode": "tronscan-contract-detail",
+  "verified_status": 2,
+  "name": "CErc20Delegator"
+}

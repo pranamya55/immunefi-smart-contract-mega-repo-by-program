@@ -1,0 +1,24 @@
+{
+  "url": "https://hoodi.etherscan.io/address/0x6d1a9bBFF97f7565e9532FEB7b499982848E5e07",
+  "host": "hoodi.etherscan.io",
+  "address": "0x6d1a9bBFF97f7565e9532FEB7b499982848E5e07",
+  "chainid": 560048,
+  "project_slug": "lido-v3-bug-bounty-competition",
+  "asset_id": "eHZL4U9qdJlfNiHatEw7v",
+  "contract_name": "MinFirstAllocationStrategy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "istanbul",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 2,
+  "mode": "json-sources"
+}

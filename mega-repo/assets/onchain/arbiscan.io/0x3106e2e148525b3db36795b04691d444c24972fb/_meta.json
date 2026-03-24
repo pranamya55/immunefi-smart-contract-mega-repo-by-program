@@ -1,0 +1,19 @@
+{
+  "url": "https://arbiscan.io/address/0x3106e2e148525b3db36795b04691d444c24972fb",
+  "host": "arbiscan.io",
+  "address": "0x3106e2e148525b3db36795b04691d444c24972fb",
+  "chainid": 42161,
+  "contract_name": "BurnMintERC677",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 17,
+  "mode": "recover-json-sources"
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x9E6ac9e474Ce93040141391bf52fa74135490f50",
+  "host": "arbiscan.io",
+  "address": "0x9E6ac9e474Ce93040141391bf52fa74135490f50",
+  "chainid": 42161,
+  "project_slug": "gmx",
+  "asset_id": "1O8Pko6vNt2Tam8PfNxBoZ",
+  "contract_name": "ChainReader",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": "1",
+  "runs": "10",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 4,
+  "mode": "json-sources"
+}

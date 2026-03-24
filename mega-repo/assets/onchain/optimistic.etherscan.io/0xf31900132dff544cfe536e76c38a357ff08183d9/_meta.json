@@ -1,0 +1,24 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0xF31900132dFf544Cfe536e76C38a357FF08183D9",
+  "host": "optimistic.etherscan.io",
+  "address": "0xF31900132dFf544Cfe536e76C38a357FF08183D9",
+  "chainid": 10,
+  "project_slug": "teahousefinance",
+  "asset_id": "6YMI2ybAfTvzBGfc0aZPIG",
+  "contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x3d4407552a491e8b1f62ee8e138320d58fad4435",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

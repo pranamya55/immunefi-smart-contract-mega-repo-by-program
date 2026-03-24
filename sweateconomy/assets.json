@@ -1,0 +1,26 @@
+[
+  {
+    "project_slug": "sweateconomy",
+    "asset_id": "1CUQYIF94opUrvyP9DUThH",
+    "url": "https://github.com/sweatco/sweat-near/tree/main",
+    "description": "FT Token",
+    "added_at": "2023-03-31T18:00:00.000Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "sweateconomy",
+    "asset_id": "1GaJXbZYqcZ1nr7QSvKvmU",
+    "url": "https://github.com/sweatco/sweat-jar/commit/663beb1883ae81cc0bd6b35945cb0749ab853d3f",
+    "description": "DeFi",
+    "added_at": "2023-11-14T17:29:02.163Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "sweateconomy",
+    "asset_id": "3SdkAPIZLct8r4pwXrH08O",
+    "url": "https://github.com/sweatco/sweat-claim/tree/main",
+    "description": " DeFi",
+    "added_at": "2024-02-07T09:44:32.318Z",
+    "revision": 1
+  }
+]

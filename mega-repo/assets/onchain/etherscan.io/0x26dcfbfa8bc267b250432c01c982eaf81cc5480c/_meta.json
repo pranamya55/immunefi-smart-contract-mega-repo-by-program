@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x26dcFbFa8Bc267b250432c01C982Eaf81cC5480C",
+  "host": "etherscan.io",
+  "address": "0x26dcFbFa8Bc267b250432c01C982Eaf81cC5480C",
+  "chainid": 1,
+  "project_slug": "ankr",
+  "asset_id": "6Q3o28BXsPFZhUPPCcCeYC",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "1",
+  "implementation": "0x2c00ce1a935ff8c9e78580533e2e17c36281c26e",
+  "swarm_source": "ipfs://93f028255035b61df476b13b9dba3c4f06f60e51b9b4caee31680b389aef327f",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xc2c48fbfec0e61683133aaff32c9c2e98fd17788",
+  "host": "etherscan.io",
+  "address": "0xc2c48fbfec0e61683133aaff32c9c2e98fd17788",
+  "chainid": 1,
+  "project_slug": "kiln",
+  "asset_id": "FQIz41eS4vBWIiQz2ItGF",
+  "contract_name": "PluggableHatcher",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "london",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0xe4dfefaff7f92c86c08107b3201270fa78885319",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 28,
+  "mode": "json-sources"
+}

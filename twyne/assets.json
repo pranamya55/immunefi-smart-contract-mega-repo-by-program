@@ -1,0 +1,106 @@
+[
+  {
+    "project_slug": "twyne",
+    "asset_id": "6ZyuP63lnWlRAJFkwc0SHS",
+    "url": "https://etherscan.io/address/0x7613D202Af490c3d1cE1873b0a7022a34E89815f",
+    "description": "eWSTETH Intermediate Credit Vault",
+    "added_at": "2026-01-21T11:27:22.127Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "twyne",
+    "asset_id": "6tytRoQFSHmzwDbJ1d2JUq",
+    "url": "https://etherscan.io/address/0x75029a47f28550C93Ad5A3BbD2d9b5315204B561",
+    "description": "aWSTETH Intermediate Credit Vault",
+    "added_at": "2026-01-21T11:27:22.140Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "twyne",
+    "asset_id": "2QlIEVqh8EXvdcNtDsvYs7",
+    "url": "https://etherscan.io/address/0x87b8081A3ace680f35125F469526Ac10f5418Ca7",
+    "description": "eWETH Intermediate Credit Vault",
+    "added_at": "2025-10-09T11:25:02.005Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "twyne",
+    "asset_id": "3KPWTCbSspspP26TgaiPQ0",
+    "url": "https://etherscan.io/address/0xB5Eb1d005e389Bef38161691E2083b4d86FF647a",
+    "description": "Intermediate Vault Factory",
+    "added_at": "2025-10-09T11:24:34.990Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "twyne",
+    "asset_id": "59IklEDHPkB71fwfYjfnfk",
+    "url": "https://etherscan.io/address/0x335AB81f1C3d9f72639004d3e982902458CF29b3",
+    "description": "Euler Leverage Operator",
+    "added_at": "2025-10-09T11:25:55.273Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "twyne",
+    "asset_id": "60tZnpcchN6yiO6hOpU41V",
+    "url": "https://etherscan.io/address/0xb001f039D76bA48E577A17c04b6940DB37aF8648",
+    "description": "Euler Oracle Router",
+    "added_at": "2025-10-09T11:25:14.895Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "twyne",
+    "asset_id": "6Yf3WyBHvvFQsfQ6sWweXs",
+    "url": "https://etherscan.io/address/0x0acd3A3c8Ab6a5F7b5A594C88DFa28999dA858aC",
+    "description": "Vault Manager",
+    "added_at": "2025-10-09T11:25:25.946Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "twyne",
+    "asset_id": "6kyGbPvccklgygiMtEDdD7",
+    "url": "https://etherscan.io/address/0xa1517cCe0bE75700A8838EA1cEE0dc383cd3A332",
+    "description": "Collateral Vault Factory",
+    "added_at": "2025-10-09T11:24:48.946Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "twyne",
+    "asset_id": "98749",
+    "url": "https://immunefi.com/",
+    "description": "Primacy of Impact",
+    "added_at": "2026-02-06T15:58:36.804Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "twyne",
+    "asset_id": "98826",
+    "url": "https://etherscan.io/address/0xFaBA8f777996C0C28fe9e6554D84cB30ca3e1881",
+    "description": "awstETH Wrapper",
+    "added_at": "2026-02-13T08:58:12.349Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "twyne",
+    "asset_id": "98827",
+    "url": "https://etherscan.io/address/0x868a21426852A775395d4b90De23B3e3E662bd78",
+    "description": "Aave V3 Teleport Operator",
+    "added_at": "2026-02-13T08:58:12.349Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "twyne",
+    "asset_id": "98828",
+    "url": "https://etherscan.io/address/0x451949bde57aBe2F5DBD4758Cd50C6DCfC093A4C",
+    "description": "Aave V3 Leverage Operator",
+    "added_at": "2026-02-13T08:58:12.349Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "twyne",
+    "asset_id": "98829",
+    "url": "https://etherscan.io/address/0x229fE10bC00bBE99Ac99703647D4f74F31605e91",
+    "description": "Aave V3 Deleverage Operator",
+    "added_at": "2026-02-13T08:58:12.349Z",
+    "revision": 0
+  }
+]

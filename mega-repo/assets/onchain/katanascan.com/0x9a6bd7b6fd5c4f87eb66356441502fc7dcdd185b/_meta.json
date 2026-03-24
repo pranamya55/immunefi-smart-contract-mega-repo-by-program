@@ -1,0 +1,7 @@
+{
+  "url": "https://katanascan.com/address/0x9A6bd7B6Fd5C4F87eb66356441502fc7dCdd185B",
+  "host": "katanascan.com",
+  "address": "0x9A6bd7B6Fd5C4F87eb66356441502fc7dCdd185B",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:unexpected-response"
+}

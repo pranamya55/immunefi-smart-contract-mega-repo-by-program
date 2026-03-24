@@ -1,0 +1,19 @@
+{
+  "url": "https://arbiscan.io/address/0x9c4ec768c28520b50860ea7a15bd7213a9ff58bf",
+  "host": "arbiscan.io",
+  "address": "0x9c4ec768c28520b50860ea7a15bd7213a9ff58bf",
+  "chainid": 42161,
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x88a7d5d0107aa7757a8b1bc8c0dbb22584dc78bd",
+  "swarm_source": "",
+  "files_written": 8,
+  "mode": "recover-json-sources"
+}

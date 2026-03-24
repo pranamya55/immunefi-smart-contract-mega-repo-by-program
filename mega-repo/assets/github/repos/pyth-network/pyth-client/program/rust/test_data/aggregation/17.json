@@ -1,0 +1,40 @@
+{
+ "exponent": -3,
+ "quotes": [
+  {
+   "price": 16320,
+   "conf": 1213,
+   "status": 1
+  },
+  {
+   "price": 15200,
+   "conf": 1123,
+   "status": 1
+  },
+  {
+   "price": 14020,
+   "conf": 1070,
+   "status": 1
+  },
+  {
+   "price": 13200,
+   "conf": 940,
+   "status": 1
+  },
+  {
+   "price": 12030,
+   "conf": 1123,
+   "status": 1
+  },
+  {
+   "price": 11030,
+   "conf": 900,
+   "status": 1
+  },
+  {
+   "price": 10000,
+   "conf": 1100,
+   "status": 1
+  }
+ ]
+}

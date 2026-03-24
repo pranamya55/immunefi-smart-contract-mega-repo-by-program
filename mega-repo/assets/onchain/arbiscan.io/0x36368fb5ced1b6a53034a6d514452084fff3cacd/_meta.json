@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x36368FB5CEd1b6A53034a6D514452084fff3cAcd",
+  "host": "arbiscan.io",
+  "address": "0x36368FB5CEd1b6A53034a6D514452084fff3cAcd",
+  "chainid": 42161,
+  "project_slug": "gmx",
+  "asset_id": "4uBMEfcjkNPBP1dFaf6Y7S",
+  "contract_name": "GlvShiftEventUtils",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": "1",
+  "runs": "10",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 10,
+  "mode": "json-sources"
+}

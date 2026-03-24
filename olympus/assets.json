@@ -1,0 +1,578 @@
+[
+  {
+    "project_slug": "olympus",
+    "asset_id": "5c7BpMfhc7RY0FJYWhm0IW",
+    "url": "https://etherscan.io/address/0xE6343ad0675C9b8D3f32679ae6aDbA0766A2ab4c",
+    "description": "Clearinghouse v2",
+    "added_at": "2023-12-27T14:08:31.897Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "5WnJNoWXRXXaZFeFhjVKk5",
+    "url": "https://etherscan.io/address/0x04906695D6D12CF5459975d7C3C03356E4Ccd460?utm_source=immunefi",
+    "description": "sOHM v2",
+    "added_at": "2022-02-07T11:57:29.181Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "7syzpfzs4xu7jGXtN2h9s0",
+    "url": "https://etherscan.io/address/0x64aa3364F17a4D01c6f1751Fd97C2BD3D7e7f1D5?utm_source=immunefi",
+    "description": "OHM v2",
+    "added_at": "2022-02-07T11:58:07.838Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "2PA3GGrap7GgVbcj6HoSOh",
+    "url": "https://etherscan.io/address/0xB63cac384247597756545b500253ff8E607a8020?utm_source=immunefi",
+    "description": "Staking v2",
+    "added_at": "2022-02-07T11:59:10.819Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "6mNeOhPLlDLmCf7dl1vd2m",
+    "url": "https://etherscan.io/address/0x0ab87046fBb341D058F17CBC4c1133F25a20a52f?utm_source=immunefi",
+    "description": "gOHM",
+    "added_at": "2022-02-07T11:59:37.175Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "NEEE3CVYr1Luzue6kJLP4",
+    "url": "https://etherscan.io/address/0x2286d7f9639e8158FaD1169e76d1FbC38247f54b?utm_source=immunefi",
+    "description": "Kernel",
+    "added_at": "2023-02-27T15:04:13.533Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "2pAGzNogzWs19HZ2RUQrhb",
+    "url": "https://etherscan.io/address/0x9229b0b6FA4A58D67Eb465567DaA2c6A34714A75?utm_source=immunefi",
+    "description": "Emergency",
+    "added_at": "2023-02-27T15:04:34.485Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "6Um9RprDvPpW7Bv2jNILki",
+    "url": "https://etherscan.io/address/0xb216d714d91eeC4F7120a732c11428857C659eC8?utm_source=immunefi",
+    "description": "Roles Admin",
+    "added_at": "2023-02-27T15:05:54.047Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "5lq7dQ6KuVEqhkGNyfuAmH",
+    "url": "https://etherscan.io/address/0xC9518AC915e46D707585116451Dc19c164513Ccf?utm_source=immunefi",
+    "description": "Treasury Custodian",
+    "added_at": "2023-02-27T15:06:10.553Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "tIpB5UuQflJvjUjUsgH1I",
+    "url": "https://etherscan.io/address/0xf6D5d06A4e8e6904E4360108749C177692F59E90?utm_source=immunefi",
+    "description": "Olympus Price Config",
+    "added_at": "2023-02-27T15:06:26.079Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "6dcVtm9wKxuwPUygctJbol",
+    "url": "https://etherscan.io/address/0xf577c77ee3578c7F216327F41B5D7221EaD2B2A3?utm_source=immunefi",
+    "description": "Bond Manager",
+    "added_at": "2023-02-27T15:06:42.933Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "XZlJNCZjjBAFbyGofr8pX",
+    "url": "https://etherscan.io/address/0xd6C4D723fdadCf0D171eF9A2a3Bfa870675b282f?utm_source=immunefi#code",
+    "description": "Olympus Price",
+    "added_at": "2023-02-27T15:06:58.768Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "5UKTfH9AcRQAxPQWrxnK5I",
+    "url": "https://etherscan.io/address/0xa8687A15D4BE32CC8F0a8a7B9704a4C3993D9613?utm_source=immunefi",
+    "description": "Olympus Treasury",
+    "added_at": "2023-02-27T15:07:30.400Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "64KLxYs8SlOMhXQV44SUaK",
+    "url": "https://etherscan.io/address/0xa90bFe53217da78D900749eb6Ef513ee5b6a491e?utm_source=immunefi",
+    "description": "Olympus Minter",
+    "added_at": "2023-02-27T15:07:45.516Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "1gt4PoWFOqYr9tgnTuJbXc",
+    "url": "https://etherscan.io/address/0x6CAfd730Dc199Df73C16420C4fCAb18E3afbfA59?utm_source=immunefi",
+    "description": "Olympus Roles",
+    "added_at": "2023-02-27T15:08:04.612Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "mMAjjWOFZR1DosiuTnYF4",
+    "url": "https://etherscan.io/address/0x7fdD4e808ee9608f1b2f05157A2A8098e3D432cD?utm_source=immunefi",
+    "description": "Boosted Liquidity Vault Implementation",
+    "added_at": "2023-04-19T20:58:44.119Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "5Lak1xLs4VseMNewnWXoVY",
+    "url": "https://etherscan.io/address/0xafe729d57d2CC58978C2e01b4EC39C47FB7C4b23?utm_source=immunefi",
+    "description": "Boosted Liquidity Vault Manager",
+    "added_at": "2023-04-19T20:58:58.106Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "1YNjWNvrAuM9Tdc5oyDoGt",
+    "url": "https://etherscan.io/address/0x375E06C694B5E50aF8be8FB03495A612eA3e2275?utm_source=immunefi",
+    "description": "Boosted Liquidity Registry",
+    "added_at": "2023-04-19T21:01:25.294Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "4SUiL4v9lsCXXyWGm6twl7",
+    "url": "https://arbiscan.io/token/0xf0cb2dc0db5e6c66B9a70Ac27B06b878da017028?utm_source=immunefi",
+    "description": "OHM (Arbitrum)",
+    "added_at": "2023-05-15T12:02:56.288Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "3d5BjwFnEAy4lcI5SNBxrR",
+    "url": "https://arbiscan.io/token/0x8D9bA570D6cb60C7e3e0F31343Efe75AB8E65FB1?utm_source=immunefi",
+    "description": "gOHM - (Arbitrum)",
+    "added_at": "2023-05-15T12:03:09.255Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "wzQZQX0S7Hyvr0Lvv5XCY",
+    "url": "https://snowtrace.io/token/0x321e7092a180bb43555132ec53aaa65a5bf84251?utm_source=immunefi",
+    "description": "gOHM - (Avalanche)",
+    "added_at": "2023-05-15T12:03:28.580Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "2GgJwD21jOuj4VtNdSC39u",
+    "url": "https://polygonscan.com/token/0xd8cA34fd379d9ca3C6Ee3b3905678320F5b45195?utm_source=immunefi",
+    "description": "gOHM - (Polygon/MATIC)",
+    "added_at": "2023-05-15T12:03:46.430Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "5eNhqdmwoOzrQhgPzFteAK",
+    "url": "https://ftmscan.com/token/0x91fa20244fb509e8289ca630e5db3e9166233fdc?utm_source=immunefi",
+    "description": "gOHM - (Fantom)",
+    "added_at": "2023-05-15T12:04:03.007Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "46dZw6djgxdLhQeWqMRhwh",
+    "url": "https://optimistic.etherscan.io/token/0x0b5740c6b4a97f90eF2F0220651Cca420B868FfB?utm_source=immunefi",
+    "description": "gOHM - (Optimism)",
+    "added_at": "2023-05-15T12:04:19.248Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99044",
+    "url": "https://optimistic.etherscan.io/address/0xb1fA0Ac44d399b778B14af0AAF4bCF8af3437ad1",
+    "description": "RolesAdmin - (Optimism)",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99045",
+    "url": "https://optimistic.etherscan.io/address/0x623164A9Ee2556D524b08f34F1d2389d7B4e1A1C",
+    "description": "MINTR - (Optimism)",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99046",
+    "url": "https://optimistic.etherscan.io/address/0x22AE99D07584A2AE1af748De573c83f1B9Cdb4c0",
+    "description": "CrossChainBridge - (Optimism)",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99047",
+    "url": "https://etherscan.io/address/0xFbf6383dC3F6010d403Ecdf12DDC1311701D143D",
+    "description": "CCIPCrossChainBridge",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99048",
+    "url": "https://etherscan.io/address/0xF35193DA8C10e44aF10853Ba5a3a1a6F7529E39a",
+    "description": "CD Auctioneer",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99049",
+    "url": "https://etherscan.io/address/0xEBDe552D851DD6Dfd3D360C596D3F4aF6e5F9678",
+    "description": "CD Facility",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99050",
+    "url": "https://etherscan.io/address/0xe045bd0a0d85e980aa152064c06eae6b6ae358d2",
+    "description": "Periphery - Cooler v2 Migrator - (Ethereum)",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99052",
+    "url": "https://etherscan.io/address/0xdb591Ea2e5Db886dA872654D58f6cc584b68e7cC",
+    "description": "MonoCooler (v2)",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99053",
+    "url": "https://etherscan.io/address/0xD98B5b2E4D5d6Cd554115DE19EfB7A9084BEddd1",
+    "description": "ReceiptTokenMgr",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99054",
+    "url": "https://etherscan.io/address/0xD58d7406E9CE34c90cf849Fc3eed3764EB3779B0",
+    "description": "Policy - Treasury Borrower - (Ethereum)",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99055",
+    "url": "https://etherscan.io/address/0xD3204Ae00d6599Ba6e182c6D640A79d76CdAad74",
+    "description": "Module - DLGTE - (Ethereum)",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99056",
+    "url": "https://etherscan.io/address/0xcb4E21Eb404d80F3e1dB781aAd9AD6A1217fbbf2",
+    "description": "DepositManager",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99057",
+    "url": "https://etherscan.io/address/0xa61b846d5d8b757e3d541e0e4f80390e28f0b6ff",
+    "description": "EmissionManager v1.2",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99058",
+    "url": "https://etherscan.io/address/0xa6013bBFd70d6190FA1cc1afD0cB3859847711B4",
+    "description": "Governor Bravo Delegate",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99059",
+    "url": "https://etherscan.io/address/0xa5588e518CE5ee0e4628C005E4edAbD5e87de3aD",
+    "description": "CCIPLockReleaseTokenPool",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99061",
+    "url": "https://etherscan.io/address/0x9ee9f0c2e91E4f6B195B988a9e6e19efcf91e8dc",
+    "description": "Cooler v2 LTV Oracle",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99062",
+    "url": "https://etherscan.io/address/0x953EA3223d2dd3c1A91E9D6cca1bf7Af162C9c39",
+    "description": "Timelock",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99063",
+    "url": "https://etherscan.io/address/0x89631595649cc6deba249a8012a5b2d88c8dde48",
+    "description": "RGSTY Module",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99064",
+    "url": "https://etherscan.io/address/0x7d8f82A0D5B67d5FDd1B77A899FF517818FaFc2e",
+    "description": "CD Auctioneer Limit Orders",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99065",
+    "url": "https://etherscan.io/address/0x73df08ce9dcc8d74d22f23282c4d49f13b4c795e",
+    "description": "BondCallback v1.1",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99066",
+    "url": "https://etherscan.io/address/0x69a3e97027d21a5984b6a543b36603ffbc6543a4",
+    "description": "CHREG Module",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99067",
+    "url": "https://etherscan.io/address/0x6593768feBF9C95aC857Fb7Ef244D5738D1C57Fd",
+    "description": "Periphery - Cooler v2 Composites - (Ethereum)",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99068",
+    "url": "https://etherscan.io/address/0x6417F206a0a6628Da136C0Faa39026d0134D2b52",
+    "description": "Operator v1.5",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99069",
+    "url": "https://etherscan.io/address/0x5824850D8A6E46a473445a5AF214C7EbD46c5ECB",
+    "description": "Heart v1.7",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99070",
+    "url": "https://etherscan.io/address/0x45e563c39cddba8699a90078f42353a57509543a",
+    "description": "CrossChainBridge - (Mainnet)",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99071",
+    "url": "https://etherscan.io/address/0x399cd3685912bb56aaed0949119db6ce5df60fb5",
+    "description": "RANGE v2.0",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99072",
+    "url": "https://etherscan.io/address/0x30Ce56e80aA96EbbA1E1a74bC5c0FEB5B0dB4216",
+    "description": "CoolerFactory",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99073",
+    "url": "https://etherscan.io/address/0x27e606fdb5C922F8213dC588A434BF7583697866",
+    "description": "Distributor",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99074",
+    "url": "https://etherscan.io/address/0x271e35a8555a62F6bA76508E85dfD76D580B0692",
+    "description": "YRF v1.2",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99075",
+    "url": "https://etherscan.io/address/0x20a3d8510f2e1176E8Db4CeA9883a8287a9029Db",
+    "description": "DepositRedemptionVault",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99076",
+    "url": "https://etherscan.io/address/0x1e094fe00e13fd06d64eea4fb3cd912893606fe0",
+    "description": "Clearinghouse v1.2",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99077",
+    "url": "https://etherscan.io/address/0x0941233c964e7d7Efeb05D253176E5E634cEFfcD",
+    "description": "Governor Bravo Delegator",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99078",
+    "url": "https://etherscan.io/address/0x02331A4c97a4841084dF54d7c0eC04DD3f1A9F1c",
+    "description": "CDEPO Module",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99079",
+    "url": "https://etherscan.io/address/0x007F7735baF391e207E3aA380bb53c4Bd9a5Fed6",
+    "description": "BondTeller",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99080",
+    "url": "https://berascan.io/address/0xbC9eE0D911739cBc72cd094ADA26F56E0C49EeAE",
+    "description": "MINTR - (Bera)",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99081",
+    "url": "https://berascan.com/token/0x18878df23e2a36f81e820e4b47b4a40576d3159c",
+    "description": "OHM - (Bera)",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99082",
+    "url": "https://berascan.com/address/0xe37D9a2791707BBB858012d219960D5FBD190794",
+    "description": "RolesAdmin - (Bera)",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99083",
+    "url": "https://berascan.com/address/0xBA42BE149e5260EbA4B82418A6306f55D532eA47",
+    "description": "CrossChainBridge - (Bera)",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99084",
+    "url": "https://berascan.com/address/0x0D33c811D0fcC711BcB388DFB3a152DE445bE66F",
+    "description": "Treasury Custodian - (Bera)",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99085",
+    "url": "https://basescan.org/token/0x060cb087a9730E13aa191f31A6d86bFF8DfcdCC0",
+    "description": "OHM - (Base)",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99086",
+    "url": "https://basescan.org/address/0xb1fA0Ac44d399b778B14af0AAF4bCF8af3437ad1",
+    "description": "RolesAdmin - (Base)",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99087",
+    "url": "https://basescan.org/address/0x6CA1a916e883c7ce2BFBcF59dc70F2c1EF9dac6e",
+    "description": "CrossChainBridge - (Base)",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99088",
+    "url": "https://basescan.org/address/0x623164A9Ee2556D524b08f34F1d2389d7B4e1A1C",
+    "description": "MINTR - (Base)",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99089",
+    "url": "https://arbiscan.io/address/0xeac3eC0CC130f4826715187805d1B50e861F2DaC",
+    "description": "Kernel - (Arbitrum)",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99090",
+    "url": "https://arbiscan.io/address/0x8f6406eDbFA393e327822D4A08BcF15503570D87",
+    "description": "MINTR - (Arbitrum)",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99091",
+    "url": "https://arbiscan.io/address/0x69168c08AcF66f002fd02E1B169f38C022c93b70",
+    "description": "RolesAdmin - (Arbitrum)",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99092",
+    "url": "https://arbiscan.io/address/0x20B3834091f038Ce04D8686FAC99CA44A0FB285c",
+    "description": "CrossChainBridge - (Arbitrum)",
+    "added_at": "2026-02-20T15:33:48.311Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "olympus",
+    "asset_id": "99119",
+    "url": "https://etherscan.io/address/0x5131654eFCd63f7b797e00118792e0d0dD90B8B0",
+    "description": "v1 Migrator ",
+    "added_at": "2026-03-02T16:04:24.572Z",
+    "revision": 0
+  }
+]

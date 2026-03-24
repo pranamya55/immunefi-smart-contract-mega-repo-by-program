@@ -1,0 +1,22 @@
+//! The state machine for managing the lifecycle of a deposit with respect to the multisig.
+//!
+//! This state machine handles the following:
+//!
+//! - The collection of nonces and partials for spending the deposit request.
+//! - The tracking of the deposit request UTXO on chain.
+//! - The tracking of the deposit UTXO on chain.
+//! - The collection of nonces and partials for spending the deposit cooperatively.
+
+pub mod config;
+pub mod context;
+pub mod duties;
+pub mod errors;
+pub mod events;
+mod handlers;
+pub mod machine;
+pub mod state;
+pub mod transitions;
+mod tx_classifier;
+
+#[cfg(test)]
+pub mod tests;

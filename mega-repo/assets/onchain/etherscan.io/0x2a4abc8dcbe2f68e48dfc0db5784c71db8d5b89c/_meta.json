@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x2A4ABC8dcBE2f68E48dFc0db5784C71dB8d5B89c#code",
+  "host": "etherscan.io",
+  "address": "0x2A4ABC8dcBE2f68E48dFc0db5784C71dB8d5B89c",
+  "chainid": 1,
+  "project_slug": "parallel",
+  "asset_id": "6RC1L8RzCYcuvySNAyj3jY",
+  "contract_name": "SideChainFeeCollector",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "1",
+  "runs": "10000",
+  "constructor_arguments": "00000000000000000000000094ea8800444017695345156319e96bdb1e355f7a000000000000000000000000000000000000000000000000000000000000759d00000000000000000000000074e3f9d724da6d7e4db8ecab4f18e6ba44f60e3000000000000000000000000090337e484b1cb02132fc150d3afa26214734854500000000000000000000000068037790a0229e9ce6eaa8a99ea92964106c4703",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 54,
+  "mode": "json-sources"
+}

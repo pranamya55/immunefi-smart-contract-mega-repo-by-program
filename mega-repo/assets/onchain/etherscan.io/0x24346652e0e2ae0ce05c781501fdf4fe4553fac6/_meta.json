@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x24346652e0e2aE0CE05c781501fDF4Fe4553fAc6#code",
+  "host": "etherscan.io",
+  "address": "0x24346652e0e2aE0CE05c781501fDF4Fe4553fAc6",
+  "chainid": 1,
+  "project_slug": "aurafinance",
+  "asset_id": "20whUlcNTXHoXnLrduQdjg",
+  "contract_name": "AuraVestedEscrow",
+  "compiler_version": "v0.8.11+commit.d7f03943",
+  "optimization_used": "1",
+  "runs": "800",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 7,
+  "mode": "json-sources"
+}

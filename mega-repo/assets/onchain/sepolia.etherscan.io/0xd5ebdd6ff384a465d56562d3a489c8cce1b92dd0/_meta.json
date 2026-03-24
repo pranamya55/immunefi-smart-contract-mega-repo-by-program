@@ -1,0 +1,24 @@
+{
+  "url": "https://sepolia.etherscan.io/address/0xd5EbDD6fF384a465D56562D3a489c8CCE1B92dd0",
+  "host": "sepolia.etherscan.io",
+  "address": "0xd5EbDD6fF384a465D56562D3a489c8CCE1B92dd0",
+  "chainid": 11155111,
+  "project_slug": "boost-acre",
+  "asset_id": "3fMKyFzodJw6f6Ypl6x4zv",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "0000000000000000000000000edde045a8f64c6c4257d0b75aac4ac20f516ad20000000000000000000000002d154a5c7ce9939274b89bbce9f5b069e57b09a800000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000064c0c53b8b0000000000000000000000006978e3e11b8bc34ea836c1706fc742ac4cb6b0db000000000000000000000000517f2982701695d4e52f1ecfbef3ba31df4701610000000000000000000000007e184179b1f95a9ca398e6a16127f06b81cb37a300000000000000000000000000000000000000000000000000000000",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x79602e559b909037f326cf72b8f504a296bc3410",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

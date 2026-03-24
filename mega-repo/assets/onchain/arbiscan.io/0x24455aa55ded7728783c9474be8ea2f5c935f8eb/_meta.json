@@ -1,0 +1,24 @@
+{
+  "url": "https://arbiscan.io/address/0x24455aa55ded7728783c9474be8ea2f5c935f8eb",
+  "host": "arbiscan.io",
+  "address": "0x24455aa55ded7728783c9474be8ea2f5c935f8eb",
+  "chainid": 42161,
+  "project_slug": "debridge",
+  "asset_id": "4OGhCrTGUdpL24WhAWkPBI",
+  "contract_name": "DeBridgeGate",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 29,
+  "mode": "json-sources"
+}

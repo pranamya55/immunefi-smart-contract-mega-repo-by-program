@@ -1,0 +1,11 @@
+testgen!(
+    test_bool_vec,
+    "out/svec_bool-abi.json",
+    "bool",
+    bool,
+    true,
+    true,
+    false,
+    true,
+    false
+);

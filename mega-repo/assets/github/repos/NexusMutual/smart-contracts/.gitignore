@@ -1,0 +1,13 @@
+.env
+.idea/
+.cursor/
+.vscode/
+.DS_Store
+artifacts/
+/build/
+cache/
+types/
+node_modules/
+coverage/
+coverage.json
+tenderly.yaml

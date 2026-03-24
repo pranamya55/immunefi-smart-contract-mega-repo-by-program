@@ -1,0 +1,7 @@
+{
+  "url": "https://polygonscan.com/address/0xE71f3C11D4535a7F8c5FB03FDA57899B2C9c721F",
+  "host": "polygonscan.com",
+  "address": "0xE71f3C11D4535a7F8c5FB03FDA57899B2C9c721F",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:unexpected-response; scan-host-no-key:http 403"
+}

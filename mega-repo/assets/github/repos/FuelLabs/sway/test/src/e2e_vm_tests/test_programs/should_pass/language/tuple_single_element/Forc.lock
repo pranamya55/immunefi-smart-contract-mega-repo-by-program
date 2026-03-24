@@ -1,0 +1,8 @@
+[[package]]
+name = "std"
+source = "path+from-root-E22D083410030709"
+
+[[package]]
+name = "tuple_single_element"
+source = "member"
+dependencies = ["std"]

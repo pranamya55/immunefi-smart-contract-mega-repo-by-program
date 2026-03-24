@@ -1,0 +1,24 @@
+{
+  "url": "https://bscscan.com/address/0x44487a445a7595446309464A82244B4bD4e325D5#code",
+  "host": "bscscan.com",
+  "address": "0x44487a445a7595446309464A82244B4bD4e325D5",
+  "chainid": 56,
+  "project_slug": "symbiosis",
+  "asset_id": "6Oo6MfLNkMgWQNKUwf9iUp",
+  "contract_name": "MetaRouter",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": "1",
+  "runs": "2000",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 7,
+  "mode": "json-sources"
+}

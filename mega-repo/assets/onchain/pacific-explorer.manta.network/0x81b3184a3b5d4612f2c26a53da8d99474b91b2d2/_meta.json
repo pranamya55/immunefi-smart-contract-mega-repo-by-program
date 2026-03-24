@@ -1,0 +1,25 @@
+{
+  "url": "https://pacific-explorer.manta.network/address/0x81b3184A3B5d4612F2c26A53Da8D99474B91B2D2",
+  "host": "pacific-explorer.manta.network",
+  "address": "0x81b3184A3B5d4612F2c26A53Da8D99474B91B2D2",
+  "chainid": 169,
+  "project_slug": "zerolend-boost",
+  "asset_id": "5JE3oeaqfwbgClIYhAMjdv",
+  "contract_name": "UiIncentiveDataProviderV3",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": null,
+  "evm_version": "berlin",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:unexpected-response",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

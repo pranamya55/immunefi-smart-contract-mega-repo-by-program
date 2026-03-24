@@ -1,0 +1,106 @@
+[
+  {
+    "project_slug": "hermetica",
+    "asset_id": "db_4864371a-5a7c-4a0c-ab97-86b87bf5f563",
+    "url": "https://explorer.hiro.so/txid/0x834662426960938e9d483ebfb7ecae90a6c5c0d4327e2cb4011700387d2167bf?chain=mainnet",
+    "description": "HQ",
+    "added_at": "2026-02-11T16:52:21.792Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "hermetica",
+    "asset_id": "db_f28b3bea-d99b-4cf0-9a17-681be6d4836e",
+    "url": "https://explorer.hiro.so/txid/0x0f1ad52bafc2099b9b75ecff15933546dc09a4c60ed93f902998c7eb570563e9?chain=mainnet",
+    "description": "Blacklist",
+    "added_at": "2026-02-11T16:52:36.300Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "hermetica",
+    "asset_id": "db_d118a8eb-fb4f-4121-b691-a1558bbb2e91",
+    "url": "https://explorer.hiro.so/txid/0x99e0e204634af511074897cae5d7b79602a808b1b4569a7f900fedb0ec2af245?chain=mainnet",
+    "description": "Token",
+    "added_at": "2026-02-11T16:52:49.994Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "hermetica",
+    "asset_id": "db_56b45f07-341f-40b1-a214-112febb3f206",
+    "url": "https://explorer.hiro.so/txid/0x49512dd2cf400a9b1ace64687d386b3d3d1ad40444de83f6dda1c29cebe01919?chain=mainnet",
+    "description": "State",
+    "added_at": "2026-02-11T16:52:59.677Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "hermetica",
+    "asset_id": "db_8e8db56b-68b7-4362-be12-a61db764387c",
+    "url": "https://explorer.hiro.so/txid/0xdd73e479841dbedba4fa6eee29be9dcef5d64e6093b905016ec1ba74dabba2ba?chain=mainnet",
+    "description": "Reserve Fund",
+    "added_at": "2026-02-11T16:53:16.395Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "hermetica",
+    "asset_id": "db_f6f03ee2-8c30-44ab-8ae5-2ac22ef8c5f1",
+    "url": "https://explorer.hiro.so/txid/0xb8ce9c1fb139bc4338ae3b6d6c5fa4525fafb87ed9f9ce515b213a0cc0022449?chain=mainnet",
+    "description": "Reserve",
+    "added_at": "2026-02-11T16:53:29.002Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "hermetica",
+    "asset_id": "db_779b9777-1844-48d8-9ee1-141cdd5594be",
+    "url": "https://explorer.hiro.so/txid/0x8a6cfafb63b1fb9549d42789cf2b9a160bcf5859257f4c578451d77dafd0a2e0?chain=mainnet",
+    "description": "Controller",
+    "added_at": "2026-02-11T16:53:50.147Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "hermetica",
+    "asset_id": "db_8a4dfe64-c239-4f46-87eb-4be98c8392fc",
+    "url": "https://explorer.hiro.so/txid/0x87f8c3bc9625579280050678cdddf46b00f678009be32aab76e5d9beca4e7056?chain=mainnet",
+    "description": "Fee Collector",
+    "added_at": "2026-02-11T16:54:00.557Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "hermetica",
+    "asset_id": "db_8a6e2bcf-7e70-4ed8-b45f-514cb7570ae3",
+    "url": "https://explorer.hiro.so/txid/0xc1c3face1d66819ce2cd6f28876b07577c252812c4c43b2145ac89af61819117?chain=mainnet",
+    "description": "Hermetica Interface",
+    "added_at": "2026-02-11T16:57:47.592Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "hermetica",
+    "asset_id": "db_abe5a77b-7550-4005-acd5-09403a9880d3",
+    "url": "https://explorer.hiro.so/txid/0x570b90c20a3b63e431a387a50ee3c9f6a3a709527731a8cbde75b731e9c7369a?chain=mainnet",
+    "description": "Zest Interface",
+    "added_at": "2026-02-11T16:58:00.511Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "hermetica",
+    "asset_id": "db_63db3c45-2de4-4955-a8e7-d43676e441b9",
+    "url": "https://explorer.hiro.so/txid/0x9e2cd7bdd7cc29cf30750835155060a42ebd26943c1f35d2a83b8e6e81f90a35?chain=mainnet",
+    "description": "Trading",
+    "added_at": "2026-02-11T16:58:15.958Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "hermetica",
+    "asset_id": "db_cfef648d-0521-4a47-8cf9-86190d32fe6b",
+    "url": "https://explorer.hiro.so/txid/0xb1b009daff4211c6c218858e46a3ec59b1624e77b7a440b730c3a9f599ac6b6a?chain=mainnet",
+    "description": "Vault",
+    "added_at": "2026-02-11T16:58:33.438Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "hermetica",
+    "asset_id": "db_c7869905-41da-4ceb-82e6-f23c96098427",
+    "url": "https://immunefi.com/bug-bounty/hermetica/information/",
+    "description": "Primacy of Impact",
+    "added_at": "2026-02-11T16:59:25.182Z",
+    "revision": 0
+  }
+]

@@ -1,0 +1,8 @@
+[[package]]
+name = "non_literal_const_decl"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-B9988D138619AE84"

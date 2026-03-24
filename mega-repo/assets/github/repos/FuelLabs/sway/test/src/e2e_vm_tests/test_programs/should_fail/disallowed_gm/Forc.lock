@@ -1,0 +1,8 @@
+[[package]]
+name = "disallowed_gm"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-3C5B50C68E15AEA9"

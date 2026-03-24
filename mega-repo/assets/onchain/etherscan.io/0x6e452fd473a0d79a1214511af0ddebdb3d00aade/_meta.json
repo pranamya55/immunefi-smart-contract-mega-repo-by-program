@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x6e452fD473A0D79A1214511aF0DDEbDb3d00aAde",
+  "host": "etherscan.io",
+  "address": "0x6e452fD473A0D79A1214511aF0DDEbDb3d00aAde",
+  "chainid": 1,
+  "project_slug": "metronome",
+  "asset_id": "7mIlllQvivcJ0F5tWlcru5",
+  "contract_name": "DebtToken",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "london",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 36,
+  "mode": "json-sources"
+}

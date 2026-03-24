@@ -1,0 +1,74 @@
+[
+  {
+    "project_slug": "usdn",
+    "asset_id": "b6h4v8JIdgaK5LaTGtv9m",
+    "url": "https://etherscan.io/address/0xde17a000ba631c5d7c2bd9fb692efea52d90dee2",
+    "description": "USDN Token",
+    "added_at": "2025-04-21T12:58:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "usdn",
+    "asset_id": "2Z7YETR5kcmVZ4ZQI3w8eZ",
+    "url": "https://etherscan.io/address/0xf67e2dc041b8a3c39d066037d29f500757b1e886",
+    "description": "sUSDN",
+    "added_at": "2025-04-21T12:58:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "usdn",
+    "asset_id": "1wv56HJW3wltDSIAfmsLLB",
+    "url": "https://etherscan.io/address/0x99999999999999cc837c997b882957dafdcb1af9",
+    "description": "wUSDN",
+    "added_at": "2025-04-21T12:58:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "usdn",
+    "asset_id": "3MVXWZTx07zTVj6jBu2X9D",
+    "url": "https://etherscan.io/address/0x656cb8c6d154aad29d8771384089be5b5141f01a",
+    "description": "USDN Protocol",
+    "added_at": "2025-04-21T12:58:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "usdn",
+    "asset_id": "6sMPCODNhog7LZ2w0EXCdj",
+    "url": "https://etherscan.io/address/0x9514D3496F46572e8461da381B200812D5Db202C",
+    "description": "Liquidation Rewards Manager",
+    "added_at": "2025-04-21T12:58:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "usdn",
+    "asset_id": "2pNVpLp1dkjCJXmT49XCrm",
+    "url": "https://etherscan.io/address/0xaebcc85a5594e687f6b302405e6e92d616826e03",
+    "description": "Dip Accumulator",
+    "added_at": "2025-04-21T12:58:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "usdn",
+    "asset_id": "1tMpT8DUbnOIvuE4G3f50Q",
+    "url": "https://etherscan.io/address/0xC1459fcFe23d5db9Ddb04935ab7a426Bd398EAb0",
+    "description": "WstEthOracleMiddleware",
+    "added_at": "2025-04-21T12:58:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "usdn",
+    "asset_id": "5bPPSt80bzkT9HXTtZKZ5g",
+    "url": "https://etherscan.io/address/0xF9D36078A248AF249AA57ae1D5D0c1033d6Bbe27",
+    "description": "LongFarming",
+    "added_at": "2025-04-21T12:58:00.000Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "usdn",
+    "asset_id": "69mrMvVal0qp4E2Ks8uf1e",
+    "url": "https://etherscan.io/address/0x49f66b1616865b2a59caecb8352bbf2ac80983e1",
+    "description": "Router",
+    "added_at": "2025-04-21T12:58:00.000Z",
+    "revision": 1
+  }
+]

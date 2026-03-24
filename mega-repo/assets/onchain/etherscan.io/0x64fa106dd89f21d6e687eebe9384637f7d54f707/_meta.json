@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x64Fa106DD89F21d6e687EEbE9384637F7d54f707",
+  "host": "etherscan.io",
+  "address": "0x64Fa106DD89F21d6e687EEbE9384637F7d54f707",
+  "chainid": 1,
+  "project_slug": "enzymefinance",
+  "asset_id": "2AO22TzKx62Y57BuCWcDlk",
+  "contract_name": "ERC4626Adapter",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "00000000000000000000000031329024f1a3e4a4b3336e0b1dfa74cc3fec633e",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 16,
+  "mode": "json-sources"
+}

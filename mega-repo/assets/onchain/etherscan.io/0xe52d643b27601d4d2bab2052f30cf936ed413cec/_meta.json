@@ -1,0 +1,19 @@
+{
+  "url": "https://etherscan.io/address/0xe52d643b27601d4d2bab2052f30cf936ed413cec",
+  "host": "etherscan.io",
+  "address": "0xe52d643b27601d4d2bab2052f30cf936ed413cec",
+  "chainid": 1,
+  "contract_name": "MainnetController",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "",
+  "evm_version": "cancun",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 38,
+  "mode": "recover-json-sources"
+}

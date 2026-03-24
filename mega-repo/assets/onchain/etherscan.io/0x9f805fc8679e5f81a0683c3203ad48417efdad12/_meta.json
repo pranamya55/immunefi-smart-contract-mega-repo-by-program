@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x9F805FC8679e5F81a0683c3203ad48417efDAd12",
+  "host": "etherscan.io",
+  "address": "0x9F805FC8679e5F81a0683c3203ad48417efDAd12",
+  "chainid": 1,
+  "project_slug": "resolv",
+  "asset_id": "vyM88simcUf5THxarvbVm",
+  "contract_name": "RewardDistributor",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "20000",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 22,
+  "mode": "json-sources"
+}

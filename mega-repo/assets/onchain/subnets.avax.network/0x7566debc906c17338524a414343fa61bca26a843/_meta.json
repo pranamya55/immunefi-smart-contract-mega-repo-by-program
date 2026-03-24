@@ -1,0 +1,7 @@
+{
+  "url": "https://subnets.avax.network/c-chain/address/0x7566DEbC906C17338524A414343fA61BcA26A843",
+  "host": "subnets.avax.network",
+  "address": "0x7566DEbC906C17338524A414343fA61BcA26A843",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:Expecting value: line 1 column 1 (char 0)"
+}

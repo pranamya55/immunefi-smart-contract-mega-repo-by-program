@@ -1,0 +1,25 @@
+{
+  "url": "https://explorer.lyra.finance/address/0xE201fCEfD4852f96810C069f66560dc25B2C7A55",
+  "host": "explorer.lyra.finance",
+  "address": "0xE201fCEfD4852f96810C069f66560dc25B2C7A55",
+  "chainid": null,
+  "project_slug": "derive",
+  "asset_id": "4xfb9vzhEH8Wr29subCcdC",
+  "contract_name": "WrappedERC20Asset",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": "0x000000000000000000000000e7603df191d699d8bd9891b821347dbab889e5a500000000000000000000000015cecd5190a43c7798dd2058308781d0662e678e",
+  "evm_version": "paris",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:missing-chainid",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

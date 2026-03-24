@@ -1,0 +1,7 @@
+{
+  "url": "https://hashscan.io/mainnet/contract/0xe3119e23fC2371d1E6b01775ba312035425A53d6",
+  "host": "hashscan.io",
+  "address": "0xe3119e23fC2371d1E6b01775ba312035425A53d6",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:missing-chainid; scan-host-no-key:http 404"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://arbiscan.io/address/0x13e0bbe893b33b64d4f3f96725dd70531fa4ebce",
+  "host": "arbiscan.io",
+  "address": "0x13e0bbe893b33b64d4f3f96725dd70531fa4ebce",
+  "chainid": 42161,
+  "contract_name": "GlpBalance",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "000000000000000000000000321f653eed006ad1c29d174e17d96351bde226490000000000000000000000001addd80e6039594ee970e5872d247bf0414c8903",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 4,
+  "mode": "recover-json-sources"
+}

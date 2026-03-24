@@ -1,0 +1,138 @@
+[
+  {
+    "project_slug": "vesper",
+    "asset_id": "1Tnjt6e2pnTSWJNon8EyWb",
+    "url": "https://etherscan.io/address/0xc14900dFB1Aa54e7674e1eCf9ce02b3b35157ba5",
+    "description": "vaFrax",
+    "added_at": "2022-11-30T20:15:25.569Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "vesper",
+    "asset_id": "4bVP4r4CfmxViqUZRHQbgc",
+    "url": "https://etherscan.io/address/0x0538C8bAc84E95A9dF8aC10Aad17DbE81b9E36ee",
+    "description": "vaDAI",
+    "added_at": "2022-11-30T20:16:39.225Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "vesper",
+    "asset_id": "7uyXYLVmAS6brL1BJQD30O",
+    "url": "https://etherscan.io/address/0xd1C117319B3595fbc39b471AB1fd485629eb05F2",
+    "description": "vaETH",
+    "added_at": "2022-11-30T20:17:09.066Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "vesper",
+    "asset_id": "5pjnscDcLSWosrTcNNLUZk",
+    "url": "https://etherscan.io/address/0xa8b607Aa09B6A2E306F93e74c282Fb13f6A80452",
+    "description": "vaUSDC",
+    "added_at": "2022-11-30T20:17:53.917Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "vesper",
+    "asset_id": "1ivxDRRuZ9Mwi7YbbjGXbR",
+    "url": "https://etherscan.io/address/0x4Dbe3f01aBe271D3E65432c74851625a8c30Aa7B",
+    "description": "vastETH",
+    "added_at": "2022-11-30T20:19:35.691Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "vesper",
+    "asset_id": "3ywuIm7Ht64lXmfJNK7mdW",
+    "url": "https://etherscan.io/address/0x01e1d41C1159b745298724c5Fd3eAfF3da1C6efD",
+    "description": "vaWBTC",
+    "added_at": "2022-11-30T20:19:59.408Z",
+    "revision": 3
+  },
+  {
+    "project_slug": "vesper",
+    "asset_id": "Pc0ToiWrUwqtvgbCW70Cz",
+    "url": "https://etherscan.io/address/0x650CD45DEdb19c33160Acc522aD1a82D9701036a",
+    "description": "vacbETH",
+    "added_at": "2022-11-30T20:21:00.289Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "vesper",
+    "asset_id": "6to9QiJ0FeePqcCOU7X9UM",
+    "url": "https://etherscan.io/address/0xef4F4604106de23CDadfEAE08fcC34602cB475C1",
+    "description": "vaLINK",
+    "added_at": "2022-11-30T20:22:21.923Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "vesper",
+    "asset_id": "1j6LGSRQ9hr6wpBgoSsq2C",
+    "url": "https://etherscan.io/address/0xDD9F61a85fFE73E41eF889817972f0B0AaE6D6Dd",
+    "description": "varETH",
+    "added_at": "2022-12-01T02:47:36.186Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "vesper",
+    "asset_id": "7iEjed5mSQa7JFMLBUtc7V",
+    "url": "https://optimistic.etherscan.io/address/0xdd63ae655b388Cd782681b7821Be37fdB6d0E78d",
+    "description": "Optimism wSTETH",
+    "added_at": "2025-06-13T21:13:46.226Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "vesper",
+    "asset_id": "bOnsOkGEqXe0r8SyRP7MZ",
+    "url": "https://optimistic.etherscan.io/address/0x539505Dde2B9771dEBE0898a84441c5E7fDF6BC0",
+    "description": "Optimism USDC",
+    "added_at": "2025-06-13T21:14:13.342Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "vesper",
+    "asset_id": "0iG0AtYyJmA4agIo8Cdwv",
+    "url": "https://optimistic.etherscan.io/address/0xCcF3d1AcF799bAe67F6e354d685295557cf64761",
+    "description": "Optimism ETH",
+    "added_at": "2025-06-13T21:14:33.785Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "vesper",
+    "asset_id": "4eE18NIapBzj6QXAVnUrO5",
+    "url": "https://optimistic.etherscan.io/address/0x19382707d5a47E74f60053b652Ab34b6e30Febad",
+    "description": "Optimism OP",
+    "added_at": "2025-06-13T21:14:57.218Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "vesper",
+    "asset_id": "5kwrBOAVmIacqoIq4G6BmN",
+    "url": "https://basescan.org//address/0x82562507429876486B60AF4F32390ef0947b3d13",
+    "description": "Base ETH",
+    "added_at": "2025-06-13T21:15:16.642Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "vesper",
+    "asset_id": "5DUlVpCqPm3smWqalZkNIQ",
+    "url": "https://basescan.org//address/0x1e41238aCd3A9fF90b0DCB9ea96Cf45F104e09Ef",
+    "description": "Base USDC",
+    "added_at": "2025-06-13T21:15:34.393Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "vesper",
+    "asset_id": "72YcuHnwU7mZ7p8WsAJVvQ",
+    "url": "https://basescan.org//address/0x3899a6090c5C178dB8A1800DA39daD0D06EeEFBE",
+    "description": "Base cbETH",
+    "added_at": "2025-06-13T21:15:57.875Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "vesper",
+    "asset_id": "JJDQTyKsmNRmmi3hgf9u7",
+    "url": "https://basescan.org//address/0x46fb68Eb2b1Fc43654AbaE5691D39D18D933E4b4",
+    "description": "Base wstETH",
+    "added_at": "2025-06-13T21:16:59.822Z",
+    "revision": 1
+  }
+]

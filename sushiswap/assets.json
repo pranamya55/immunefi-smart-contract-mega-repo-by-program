@@ -1,0 +1,26 @@
+[
+  {
+    "project_slug": "sushiswap",
+    "asset_id": "5TFgF2NoKSQeWTEdlpUGzk",
+    "url": "https://docs.sushi.com/contracts/red-snwapper#deployments",
+    "description": "Red Snwapper",
+    "added_at": "2025-10-07T15:42:32.045Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "sushiswap",
+    "asset_id": "6B4xxxhUuHtuPjrOciREcp",
+    "url": "https://docs.sushi.com/contracts/cpamm#deployments",
+    "description": "cpAMM (SuhiSwap V2)",
+    "added_at": "2025-10-07T15:43:02.712Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "sushiswap",
+    "asset_id": "2ZofOr0vchGeyPipicfqKv",
+    "url": "https://docs.sushi.com/contracts/clamm#deployments",
+    "description": "clAMM (SuhiSwap V3)",
+    "added_at": "2025-10-07T15:43:26.110Z",
+    "revision": 1
+  }
+]

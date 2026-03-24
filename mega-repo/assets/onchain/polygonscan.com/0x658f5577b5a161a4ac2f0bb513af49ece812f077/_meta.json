@@ -1,0 +1,24 @@
+{
+  "url": "https://polygonscan.com/address/0x658F5577b5a161A4aC2F0bb513af49ece812f077",
+  "host": "polygonscan.com",
+  "address": "0x658F5577b5a161A4aC2F0bb513af49ece812f077",
+  "chainid": 137,
+  "project_slug": "beefyfinance",
+  "asset_id": "54VAfsTgyJvMEYK34M0Fni",
+  "contract_name": "StrategyRewardPoolPolygonLP",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "ipfs://5da5f28def7e9720b08f455357ec5710a13e52d1b7fe44b1f712c5109893e5ee",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

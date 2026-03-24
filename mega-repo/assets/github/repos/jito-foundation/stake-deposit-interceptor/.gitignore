@@ -1,0 +1,10 @@
+**/target
+**/test-ledger
+**/keys
+**/local_validators.txt
+**/node_modules/
+**/.crates/
+.env
+.DS_Store
+**/.DS_Store
+credentials/

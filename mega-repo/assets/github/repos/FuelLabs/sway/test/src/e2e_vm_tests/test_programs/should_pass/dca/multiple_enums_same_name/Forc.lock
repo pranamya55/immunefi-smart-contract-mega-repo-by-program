@@ -1,0 +1,8 @@
+[[package]]
+name = "multiple_enums_same_name"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-C338E5C7068EA2A2"

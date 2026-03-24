@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xb99f2a02c0851efdD417bd6935d2eFcd23c56e61",
+  "host": "etherscan.io",
+  "address": "0xb99f2a02c0851efdD417bd6935d2eFcd23c56e61",
+  "chainid": 1,
+  "project_slug": "ipor",
+  "asset_id": "guaOTsYDdM2gvXhAqHMVc",
+  "contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "1",
+  "implementation": "0x4508ce1ab61fccac39ba28ff0e7acd5823e8c0f0",
+  "swarm_source": "ipfs://9b8470f06e8a3960c912103fc2be177edaad69584ee3c7d2809ee737e79408e7",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

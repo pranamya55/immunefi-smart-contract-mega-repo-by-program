@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0xfC446dB5E1255e837E95dB90c818C6fEb8e93ab0",
+  "host": "etherscan.io",
+  "address": "0xfC446dB5E1255e837E95dB90c818C6fEb8e93ab0",
+  "chainid": 1,
+  "project_slug": "drips",
+  "asset_id": "nwoOX3mOB2X2HMEJGp0gB",
+  "contract_name": "RepoDriver",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "7700",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 30,
+  "mode": "json-sources"
+}

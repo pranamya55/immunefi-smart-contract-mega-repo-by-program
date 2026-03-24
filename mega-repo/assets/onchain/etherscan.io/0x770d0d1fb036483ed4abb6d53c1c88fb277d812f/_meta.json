@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x770D0d1Fb036483Ed4AbB6d53c1C88fb277D812F",
+  "host": "etherscan.io",
+  "address": "0x770D0d1Fb036483Ed4AbB6d53c1C88fb277D812F",
+  "chainid": 1,
+  "project_slug": "yearnfinance",
+  "asset_id": "2GQBau5qvXxg11ERrPRkkQ",
+  "contract_name": "Yearn Vault Factory",
+  "compiler_version": "vyper:0.3.7",
+  "optimization_used": "0",
+  "runs": "0",
+  "constructor_arguments": "0000000000000000000000000000000000000000000000000000000000000060000000000000000000000000d8063123bba3b480569244ae66bfe72b6c84b00d0000000000000000000000006f3cbe2ab3483ec4ba7b672fbdca0e9b33f88db8000000000000000000000000000000000000000000000000000000000000001a596561726e2076332e302e34205661756c7420466163746f7279000000000000",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "GNU AGPLv3",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

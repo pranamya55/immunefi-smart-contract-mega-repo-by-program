@@ -1,0 +1,7 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0x3EBE332d2AA8cCB5dDc051c9925D9A41708e54D9#code",
+  "host": "optimistic.etherscan.io",
+  "address": "0x3EBE332d2AA8cCB5dDc051c9925D9A41708e54D9",
+  "mode": "placeholder-onchain",
+  "reason": "etherscan-v2:unexpected-response; scan-host-no-key:http 403"
+}

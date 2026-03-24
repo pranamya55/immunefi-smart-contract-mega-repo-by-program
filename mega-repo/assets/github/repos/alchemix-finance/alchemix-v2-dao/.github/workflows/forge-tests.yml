@@ -1,0 +1,26 @@
+name: Forge Tests
+
+on: [pull_request]
+
+jobs:
+    forge-tests:
+        name: Runs foundry tests and coverage report
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+
+            - name: Install Foundry
+              uses: onbjerg/foundry-toolchain@v1
+              with:
+                  version: nightly
+
+            - name: Install dependencies
+              run: forge install
+
+            - run: chmod 755 ./test.sh
+
+            - name: Run tests and coverage
+              env:
+                  ALCHEMY_API_KEY: ${{ secrets.ALCHEMY_API_KEY }}
+                  TEST_PROFILE: default
+              run: ./test.sh

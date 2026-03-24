@@ -1,0 +1,19 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0x0353b6221b23b8320202320ca450eeb9fb0de9e5",
+  "host": "optimistic.etherscan.io",
+  "address": "0x0353b6221b23b8320202320ca450eeb9fb0de9e5",
+  "chainid": 10,
+  "contract_name": "Pool",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": "1",
+  "runs": "100000",
+  "constructor_arguments": "000000000000000000000000a98cc6031ba6908d73dc5615ca82b607096d721d",
+  "evm_version": "shanghai",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 46,
+  "mode": "recover-json-sources"
+}

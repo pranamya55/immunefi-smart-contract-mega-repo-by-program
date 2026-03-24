@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x7276925e42f9c4054afa2fad80fa79520c453d6a",
+  "host": "etherscan.io",
+  "address": "0x7276925e42f9c4054afa2fad80fa79520c453d6a",
+  "chainid": 1,
+  "project_slug": "pufferfinance-boost",
+  "asset_id": "Vp5HhNZo73EtJ8JTtlRsL",
+  "contract_name": "PufferDepositor",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000d9a442856c234a39a81a089c06451ebaa4306a72000000000000000000000000ae7ab96520de3a18e5e111b5eaab095312d7fe84",
+  "evm_version": "shanghai",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 52,
+  "mode": "json-sources"
+}

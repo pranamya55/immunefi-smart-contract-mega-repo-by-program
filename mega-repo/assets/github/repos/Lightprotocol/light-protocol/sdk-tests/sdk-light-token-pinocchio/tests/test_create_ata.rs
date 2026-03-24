@@ -1,0 +1,281 @@
+// Tests for CreateAssociatedTokenAccountCpi (CreateAta instructions)
+
+mod shared;
+
+use borsh::{BorshDeserialize, BorshSerialize};
+use light_client::rpc::Rpc;
+use light_program_test::{LightProgramTest, ProgramTestConfig};
+use light_token::instruction::LIGHT_TOKEN_PROGRAM_ID;
+use light_token_interface::state::{
+    AccountState, ExtensionStruct, Token, ACCOUNT_TYPE_TOKEN_ACCOUNT,
+};
+use sdk_light_token_pinocchio_test::{CreateAtaData, ATA_SEED};
+use shared::*;
+use solana_sdk::{
+    instruction::{AccountMeta, Instruction},
+    pubkey::Pubkey,
+    signer::Signer,
+};
+
+fn assert_ata_account(account_state: &Token, mint_pda: Pubkey, owner: Pubkey) {
+    let compressible_ext = account_state
+        .extensions
+        .as_ref()
+        .and_then(|exts| {
+            exts.iter().find_map(|e| match e {
+                ExtensionStruct::Compressible(info) => Some(*info),
+                _ => None,
+            })
+        })
+        .expect("ATA should have Compressible extension");
+
+    let expected = Token {
+        mint: mint_pda.to_bytes().into(),
+        owner: owner.to_bytes().into(),
+        amount: 0,
+        delegate: None,
+        state: AccountState::Initialized,
+        is_native: None,
+        delegated_amount: 0,
+        close_authority: None,
+        account_type: ACCOUNT_TYPE_TOKEN_ACCOUNT,
+        extensions: Some(vec![ExtensionStruct::Compressible(compressible_ext)]),
+    };
+
+    assert_eq!(account_state, &expected);
+}
+
+/// Test creating an ATA using CreateAssociatedTokenAccountCpi::invoke()
+#[tokio::test]
+async fn test_create_ata_invoke() {
+    let mut rpc = LightProgramTest::new(ProgramTestConfig::new_v2(
+        false,
+        Some(vec![("sdk_light_token_pinocchio_test", PROGRAM_ID)]),
+    ))
+    .await
+    .unwrap();
+
+    let payer = rpc.get_payer().insecure_clone();
+    let mint_authority = payer.pubkey();
+
+    let (mint_pda, _compression_address, _, _mint_seed) =
+        setup_create_mint(&mut rpc, &payer, mint_authority, 9, vec![]).await;
+
+    let owner = payer.pubkey();
+    use light_token::instruction::derive_token_ata;
+    let ata_address = derive_token_ata(&owner, &mint_pda);
+
+    let create_ata_data = CreateAtaData {
+        pre_pay_num_epochs: 2,
+        lamports_per_write: 1,
+    };
+    // Discriminator 4 = CreateAtaInvoke
+    let instruction_data = [vec![4u8], create_ata_data.try_to_vec().unwrap()].concat();
+
+    use light_token::instruction::{config_pda, rent_sponsor_pda};
+    let config = config_pda();
+    let rent_sponsor = rent_sponsor_pda();
+
+    let instruction = Instruction {
+        program_id: PROGRAM_ID,
+        accounts: vec![
+            AccountMeta::new_readonly(owner, false),
+            AccountMeta::new_readonly(mint_pda, false),
+            AccountMeta::new(payer.pubkey(), true),
+            AccountMeta::new(ata_address, false),
+            AccountMeta::new_readonly(Pubkey::default(), false), // system_program
+            AccountMeta::new_readonly(config, false),
+            AccountMeta::new(rent_sponsor, false),
+            AccountMeta::new_readonly(LIGHT_TOKEN_PROGRAM_ID, false),
+        ],
+        data: instruction_data,
+    };
+
+    rpc.create_and_send_transaction(&[instruction], &payer.pubkey(), &[&payer])
+        .await
+        .unwrap();
+
+    let ata_account_data = rpc.get_account(ata_address).await.unwrap().unwrap();
+
+    let account_state = Token::deserialize(&mut &ata_account_data.data[..]).unwrap();
+    assert_ata_account(&account_state, mint_pda, owner);
+}
+
+/// Test creating an ATA with PDA payer using CreateAssociatedTokenAccountCpi::invoke_signed()
+#[tokio::test]
+async fn test_create_ata_invoke_signed() {
+    let mut rpc = LightProgramTest::new(ProgramTestConfig::new_v2(
+        false,
+        Some(vec![("sdk_light_token_pinocchio_test", PROGRAM_ID)]),
+    ))
+    .await
+    .unwrap();
+
+    let payer = rpc.get_payer().insecure_clone();
+    let mint_authority = payer.pubkey();
+
+    let (mint_pda, _compression_address, _, _mint_seed) =
+        setup_create_mint(&mut rpc, &payer, mint_authority, 9, vec![]).await;
+
+    let (pda_owner, _pda_bump) = Pubkey::find_program_address(&[ATA_SEED], &PROGRAM_ID);
+
+    // Fund the PDA so it can pay for the ATA creation
+    let fund_ix = solana_sdk::system_instruction::transfer(
+        &payer.pubkey(),
+        &pda_owner,
+        1_000_000_000, // 1 SOL
+    );
+    rpc.create_and_send_transaction(&[fund_ix], &payer.pubkey(), &[&payer])
+        .await
+        .unwrap();
+
+    use light_token::instruction::derive_token_ata;
+    let ata_address = derive_token_ata(&pda_owner, &mint_pda);
+
+    let create_ata_data = CreateAtaData {
+        pre_pay_num_epochs: 2,
+        lamports_per_write: 1,
+    };
+    // Discriminator 5 = CreateAtaInvokeSigned
+    let instruction_data = [vec![5u8], create_ata_data.try_to_vec().unwrap()].concat();
+
+    use light_token::instruction::{config_pda, rent_sponsor_pda};
+    let config = config_pda();
+    let rent_sponsor = rent_sponsor_pda();
+
+    let instruction = Instruction {
+        program_id: PROGRAM_ID,
+        accounts: vec![
+            AccountMeta::new_readonly(pda_owner, false), // owner
+            AccountMeta::new_readonly(mint_pda, false),
+            AccountMeta::new(pda_owner, false), // PDA payer - not a signer (program signs via invoke_signed)
+            AccountMeta::new(ata_address, false),
+            AccountMeta::new_readonly(Pubkey::default(), false), // system_program
+            AccountMeta::new_readonly(config, false),
+            AccountMeta::new(rent_sponsor, false),
+            AccountMeta::new_readonly(LIGHT_TOKEN_PROGRAM_ID, false),
+        ],
+        data: instruction_data,
+    };
+
+    rpc.create_and_send_transaction(&[instruction], &payer.pubkey(), &[&payer])
+        .await
+        .unwrap();
+
+    let ata_account_data = rpc.get_account(ata_address).await.unwrap().unwrap();
+
+    let account_state = Token::deserialize(&mut &ata_account_data.data[..]).unwrap();
+    assert_ata_account(&account_state, mint_pda, pda_owner);
+}
+
+/// Test creating an ATA using CreateAssociatedTokenAccountCpi::invoke_with()
+#[tokio::test]
+async fn test_create_ata_invoke_with() {
+    let mut rpc = LightProgramTest::new(ProgramTestConfig::new_v2(
+        false,
+        Some(vec![("sdk_light_token_pinocchio_test", PROGRAM_ID)]),
+    ))
+    .await
+    .unwrap();
+
+    let payer = rpc.get_payer().insecure_clone();
+    let mint_authority = payer.pubkey();
+
+    let (mint_pda, _compression_address, _, _mint_seed) =
+        setup_create_mint(&mut rpc, &payer, mint_authority, 9, vec![]).await;
+
+    let owner = payer.pubkey();
+    use light_token::instruction::derive_token_ata;
+    let ata_address = derive_token_ata(&owner, &mint_pda);
+
+    let create_ata_data = CreateAtaData {
+        pre_pay_num_epochs: 2,
+        lamports_per_write: 1,
+    };
+    // Discriminator 43 = CreateAtaInvokeWith
+    let instruction_data = [vec![43u8], create_ata_data.try_to_vec().unwrap()].concat();
+
+    use light_token::instruction::{config_pda, rent_sponsor_pda};
+    let config = config_pda();
+    let rent_sponsor = rent_sponsor_pda();
+
+    let instruction = Instruction {
+        program_id: PROGRAM_ID,
+        accounts: vec![
+            AccountMeta::new_readonly(owner, false),
+            AccountMeta::new_readonly(mint_pda, false),
+            AccountMeta::new(payer.pubkey(), true),
+            AccountMeta::new(ata_address, false),
+            AccountMeta::new_readonly(Pubkey::default(), false), // system_program
+            AccountMeta::new_readonly(config, false),
+            AccountMeta::new(rent_sponsor, false),
+            AccountMeta::new_readonly(LIGHT_TOKEN_PROGRAM_ID, false),
+        ],
+        data: instruction_data,
+    };
+
+    rpc.create_and_send_transaction(&[instruction], &payer.pubkey(), &[&payer])
+        .await
+        .unwrap();
+
+    let ata_account_data = rpc.get_account(ata_address).await.unwrap().unwrap();
+
+    let account_state = Token::deserialize(&mut &ata_account_data.data[..]).unwrap();
+    assert_ata_account(&account_state, mint_pda, owner);
+}
+
+/// Test creating an ATA idempotently using CreateAssociatedTokenAccountCpi::idempotent().invoke_with()
+#[tokio::test]
+async fn test_create_ata_idempotent_invoke_with() {
+    let mut rpc = LightProgramTest::new(ProgramTestConfig::new_v2(
+        false,
+        Some(vec![("sdk_light_token_pinocchio_test", PROGRAM_ID)]),
+    ))
+    .await
+    .unwrap();
+
+    let payer = rpc.get_payer().insecure_clone();
+    let mint_authority = payer.pubkey();
+
+    let (mint_pda, _compression_address, _, _mint_seed) =
+        setup_create_mint(&mut rpc, &payer, mint_authority, 9, vec![]).await;
+
+    let owner = payer.pubkey();
+    use light_token::instruction::derive_token_ata;
+    let ata_address = derive_token_ata(&owner, &mint_pda);
+
+    let create_ata_data = CreateAtaData {
+        pre_pay_num_epochs: 2,
+        lamports_per_write: 1,
+    };
+    // Discriminator 44 = CreateAtaIdempotentInvokeWith
+    let instruction_data = [vec![44u8], create_ata_data.try_to_vec().unwrap()].concat();
+
+    use light_token::instruction::{config_pda, rent_sponsor_pda};
+    let config = config_pda();
+    let rent_sponsor = rent_sponsor_pda();
+
+    let instruction = Instruction {
+        program_id: PROGRAM_ID,
+        accounts: vec![
+            AccountMeta::new_readonly(owner, false),
+            AccountMeta::new_readonly(mint_pda, false),
+            AccountMeta::new(payer.pubkey(), true),
+            AccountMeta::new(ata_address, false),
+            AccountMeta::new_readonly(Pubkey::default(), false), // system_program
+            AccountMeta::new_readonly(config, false),
+            AccountMeta::new(rent_sponsor, false),
+            AccountMeta::new_readonly(LIGHT_TOKEN_PROGRAM_ID, false),
+        ],
+        data: instruction_data,
+    };
+
+    rpc.create_and_send_transaction(&[instruction], &payer.pubkey(), &[&payer])
+        .await
+        .unwrap();
+
+    let ata_account_data = rpc.get_account(ata_address).await.unwrap().unwrap();
+
+    let account_state = Token::deserialize(&mut &ata_account_data.data[..]).unwrap();
+    assert_ata_account(&account_state, mint_pda, owner);
+}

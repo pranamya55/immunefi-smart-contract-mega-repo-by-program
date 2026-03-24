@@ -1,0 +1,19 @@
+{
+  "url": "https://moonriver.moonscan.io/address/0x32884baadfc211309d9a6baa2bb46fe4b2434d05",
+  "host": "moonriver.moonscan.io",
+  "address": "0x32884baadfc211309d9a6baa2bb46fe4b2434d05",
+  "chainid": 1285,
+  "contract_name": "BeaconProxy",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": "1",
+  "runs": "1",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "1",
+  "implementation": "0x9ea78f462f4f2ef1ff2841772024d8fe1149dd76",
+  "swarm_source": "",
+  "files_written": 7,
+  "mode": "recover-json-sources"
+}

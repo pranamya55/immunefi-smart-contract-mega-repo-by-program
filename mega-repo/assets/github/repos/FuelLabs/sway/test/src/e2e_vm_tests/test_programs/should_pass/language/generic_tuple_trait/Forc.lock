@@ -1,0 +1,8 @@
+[[package]]
+name = "generic_tuple_trait"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-CAC2A2813306AA09"

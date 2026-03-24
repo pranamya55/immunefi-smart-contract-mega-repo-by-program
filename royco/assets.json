@@ -1,0 +1,66 @@
+[
+  {
+    "project_slug": "royco",
+    "asset_id": "1T6YqYvr7SeDIycagiw12U",
+    "url": "https://immunefi.com",
+    "description": "Primacy of Impact",
+    "added_at": "2025-01-16T08:42:18.903Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "royco",
+    "asset_id": "db_44a87bcf-ff98-4eda-b51d-1889072daf6f",
+    "url": "https://etherscan.io/address/0xcD9f5907F92818bC06c9Ad70217f089E190d2a32",
+    "description": "Senior Royco USDC (srRoyUSDC)",
+    "added_at": "2026-02-19T16:23:41.327Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "royco",
+    "asset_id": "db_f6251375-6ed9-44db-8cc6-a349ca601907",
+    "url": "https://etherscan.io/address/0x170ff06326eBb64BF609a848Fc143143994AF6c8",
+    "description": "Multisig Safe",
+    "added_at": "2026-02-19T16:24:17.140Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "royco",
+    "asset_id": "db_5311d96c-40df-43b0-9c1b-965289eb1fdc",
+    "url": "https://etherscan.io/address/0xd3F8Edff57570c4F9B11CC95eA65117e2D7A6C2D",
+    "description": "Multisig Strategy",
+    "added_at": "2026-02-19T16:24:26.070Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "royco",
+    "asset_id": "db_6d92499b-3892-4390-85db-5e0e09097382",
+    "url": "https://etherscan.io/address/0xD567cCbb336Eb71eC2537057E2bCF6DB840bB71d",
+    "description": "Factory (ETH)",
+    "added_at": "2026-02-19T16:24:39.904Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "royco",
+    "asset_id": "db_052292d1-4b7f-49f5-9eee-1e448089feb3",
+    "url": "https://snowscan.xyz/address/0xD567cCbb336Eb71eC2537057E2bCF6DB840bB71d#code",
+    "description": "Factory (AVAX)",
+    "added_at": "2026-02-19T16:24:49.176Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "royco",
+    "asset_id": "db_a0bc4655-cc10-4839-b653-8800e221b9bd",
+    "url": "https://etherscan.io/address/0x071B0FA065774b403B8dae0aE93A09Df5DE3DFAc",
+    "description": "Yield Distribution Model (ETH)",
+    "added_at": "2026-02-19T16:25:03.020Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "royco",
+    "asset_id": "db_db0eb646-fc2f-44a3-8924-e5141b98c891",
+    "url": "https://snowscan.xyz/address/0x071B0FA065774b403B8dae0aE93A09Df5DE3DFAc#code",
+    "description": "Yield Distribution Model (AVAX)",
+    "added_at": "2026-02-19T16:25:27.176Z",
+    "revision": 0
+  }
+]

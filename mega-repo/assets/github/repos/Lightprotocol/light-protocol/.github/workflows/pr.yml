@@ -1,0 +1,41 @@
+name: "Lint PR"
+
+on:
+  pull_request:
+    branches:
+      - "*"
+    types:
+      - opened
+      - edited
+      - synchronize
+
+permissions:
+  pull-requests: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  main:
+    name: Validate PR title
+    runs-on: ubuntu-latest
+    steps:
+      - uses: amannn/action-semantic-pull-request@v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          scopes: |
+            programs
+            verifier-sdk
+            circuits
+            cli
+            scripts
+            macros
+            light-macros
+            aligned-sized
+            macro-circom
+            merkle-tree
+            deps
+            deps-dev
+            sdk

@@ -1,0 +1,365 @@
+import brownie
+from utils import evm_script as evm_script_utils, config
+
+DEFAULT_NETWORK = "mainnet"
+
+
+def addresses(network=DEFAULT_NETWORK):
+    if network == "mainnet" or network == "mainnet-fork":
+        return LidoAddressesSetup(
+            aragon=AragonSetup(
+                acl="0x9895F0F17cc1d1891b6f18ee0b483B6f221b37Bb",
+                agent="0x3e40d73eb977dc6a537af587d48316fee66e9c8c",
+                voting="0x2e59a20f205bb85a89c53f1936454680651e618e",
+                finance="0xb9e5cbb9ca5b0d659238807e84d0176930753d86",
+                gov_token="0x5a98fcbea516cf06857215779fd812ca3bef1b32",
+                calls_script="0x5cEb19e1890f677c3676d5ecDF7c501eBA01A054",
+                token_manager="0xf73a1260d222f447210581ddf212d915c09a3249",
+                kernel="0xb8FFC3Cd6e7Cf5a098A1c92F48009765B24088Dc",
+            ),
+            steth="0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+            node_operators_registry="0x55032650b14df07b85bf18a3a3ec8e0af2e028d5",
+            simple_dvt="0xaE7B191A31f627b4eB1d4DaC64eaB9976995b433",
+            curated_module="0x55032650b14df07b85bF18A3a3eC8E0Af2e028d5",
+            staking_router="0xFdDf38947aFB03C621C71b06C9C70bce73f12999",
+            locator="0xC1d0b3DE6792Bf6b4b37EccdcC24e45978Cfd2Eb",
+            mev_boost_list="0xF95f069F9AD107938F6ba802a3da87892298610E",
+            validators_exit_bus_oracle="0x0De4Ea0184c2ad0BacA7183356Aea5B8d5Bf5c6e",
+            dual_governance_admin_executor="0x23E0B465633FF5178808F4A75186E2F2F9537021",
+            dual_governance="0xC1db28B3301331277e307FDCfF8DE28242A4486E",
+            emergency_protected_timelock="0xCE0425301C85c5Ea2A0873A2dEe44d78E02D2316",
+            evm_script_executor="0xFE5986E06210aC1eCC1aDCafc0cc7f8D63B3F977",
+        )
+    if network == "holesky" or network == "holesky-fork":
+        return LidoAddressesSetup(
+            aragon=AragonSetup(
+                acl="0xfd1E42595CeC3E83239bf8dFc535250e7F48E0bC",
+                agent="0xE92329EC7ddB11D25e25b3c21eeBf11f15eB325d",
+                voting="0xdA7d2573Df555002503F29aA4003e398d28cc00f",
+                finance="0xf0F281E5d7FBc54EAFcE0dA225CDbde04173AB16",
+                gov_token="0x14ae7daeecdf57034f3E9db8564e46Dba8D97344",
+                calls_script="0xAa8B4F258a4817bfb0058b861447878168ddf7B0",
+                token_manager="0xFaa1692c6eea8eeF534e7819749aD93a1420379A",
+                kernel="0x3b03f75Ec541Ca11a223bB58621A3146246E1644",
+            ),
+            steth="0x3F1c547b21f65e10480dE3ad8E19fAAC46C95034",
+            node_operators_registry="0x595F64Ddc3856a3b5Ff4f4CC1d1fb4B46cFd2bAC",
+            simple_dvt="0x11a93807078f8BB880c1BD0ee4C387537de4b4b6",
+            staking_router="0xd6EbF043D30A7fe46D1Db32BA90a0A51207FE229",
+            locator="0x28FAB2059C713A7F9D8c86Db49f9bb0e96Af1ef8",
+            mev_boost_list="0x2d86C5855581194a386941806E38cA119E50aEA3",
+            curated_module="0x595F64Ddc3856a3b5Ff4f4CC1d1fb4B46cFd2bAC",
+            validators_exit_bus_oracle="0xffDDF7025410412deaa05E3E1cE68FE53208afcb",
+            dual_governance_admin_executor="0x8BD0a916faDa88Ba3accb595a3Acd28F467130e8",
+            dual_governance="0x490bf377734CA134A8E207525E8576745652212e",
+            emergency_protected_timelock="0xe9c5FfEAd0668AFdBB9aac16163840d649DB76DD",
+            evm_script_executor="0x28FAB2059C713A7F9D8c86Db49f9bb0e96Af1ef8", # fake address
+        )
+    if network == "hoodi" or network == "hoodi-fork":
+        return LidoAddressesSetup(
+            aragon=AragonSetup(
+                acl="0x78780e70Eae33e2935814a327f7dB6c01136cc62",
+                agent="0x0534aA41907c9631fae990960bCC72d75fA7cfeD",
+                voting="0x49B3512c44891bef83F8967d075121Bd1b07a01B",
+                finance="0x254Ae22bEEba64127F0e59fe8593082F3cd13f6b",
+                gov_token="0xEf2573966D009CcEA0Fc74451dee2193564198dc",
+                calls_script="0xfB3cB48d81eC8c7f2013a8dc9fA46D2D48112c3A",
+                token_manager="0x8ab4a56721Ad8e68c6Ad86F9D9929782A78E39E5",
+                kernel="0xA48DF029Fd2e5FCECB3886c5c2F60e3625A1E87d",
+            ),
+            steth="0x3508A952176b3c15387C97BE809eaffB1982176a",
+            node_operators_registry="0x5cDbE1590c083b5A2A64427fAA63A7cfDB91FbB5",
+            simple_dvt="0x0B5236BECA68004DB89434462DfC3BB074d2c830",
+            staking_router="0xCc820558B39ee15C7C45B59390B503b83fb499A8",
+            locator="0xe2EF9536DAAAEBFf5b1c130957AB3E80056b06D8",
+            curated_module="0x5cDbE1590c083b5A2A64427fAA63A7cfDB91FbB5",
+            mev_boost_list="0x279d3A456212a1294DaEd0faEE98675a52E8A4Bf",
+            validators_exit_bus_oracle="0x8664d394C2B3278F26A1B44B967aEf99707eeAB2",
+            dual_governance_admin_executor="0x0eCc17597D292271836691358B22340b78F3035B",
+            dual_governance="0x9CAaCCc62c66d817CC59c44780D1b722359795bF",
+            emergency_protected_timelock="0x0A5E22782C0Bd4AddF10D771f0bF0406B038282d",
+            evm_script_executor="0x79a20FD0FA36453B2F45eAbab19bfef43575Ba9E",
+        )
+    raise NameError(
+        f"""Unknown network "{network}". Supported networks: mainnet, mainnet-fork, hoodi, hoodi-fork, holesky, holesky-fork"""
+    )
+
+
+def contracts(network=DEFAULT_NETWORK):
+    return LidoContractsSetup(brownie.interface, lido_addresses=addresses(network))
+
+
+def external_contracts(network=DEFAULT_NETWORK):
+    if network == "mainnet" or network == "mainnet-fork":
+        return {
+            "usdc": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+            "dai": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+            "usdt": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+        }
+    if network == "holesky" or network == "holesky-fork":
+        return {
+            "usdc": "0x9715b2786f1053294fc8952df923b95cab9aac42",
+            "dai": "0x2eb8e9198e647f80ccf62a5e291bcd4a5a3ca68c",
+            "usdt": "0x86F6c353A0965eB069cD7f4f91C1aFEf8C725551",
+        }
+    if network == "hoodi" or network == "hoodi-fork":
+        return {
+            "usdc": "0x97bb030B93faF4684eAC76bA0bf3be5ec7140F36",
+            "dai": "0x17fc691f6EF57D2CA719d30b8fe040123d4ee319",
+            "usdt": "0x64f1904d1b419c6889BDf3238e31A138E258eA68",
+        }
+    raise NameError(
+        f"""Unknown network "{network}". Supported networks: mainnet, mainnet-fork, holesky, holesky-fork"""
+    )
+
+
+def allowed_recipients_builder_single_token(network=DEFAULT_NETWORK):
+    if network == "mainnet" or network == "mainnet-fork":
+        return brownie.AllowedRecipientsBuilderSingleToken.at("0x958e0D946D014F377421a53AB5f9180d4485e63B")
+    if network == "holesky" or network == "holesky-fork":
+        return brownie.AllowedRecipientsBuilderSingleToken.at("0xeC3785b13b21c226D66B5bC2E82BB2f4226f715e")
+    if network == "hoodi" or network == "hoodi-fork":
+        return brownie.AllowedRecipientsBuilderSingleToken.at("0xC20129f1dd4DFeD023a6d6A8de9d54A7b61af5CC")
+    raise NameError(
+        f"""Unknown network "{network}". Supported networks: mainnet, mainnet-fork, hoodi, hoodi-fork, holesky, holesky-fork"""
+    )
+
+
+
+def allowed_recipients_builder_multi_token(network=DEFAULT_NETWORK):
+    if network == "mainnet" or network == "mainnet-fork":
+        return brownie.AllowedRecipientsBuilder.at("0x334D6eDc13F63728b39e6A6D04A7Bbd5D6A9B9FF")
+    if network == "holesky" or network == "holesky-fork":
+        return brownie.AllowedRecipientsBuilder.at("0x983dF2EA3A7Dce9D60bD06f5C5dCc44a138eBA89")
+    if network == "hoodi" or network == "hoodi-fork":
+        return brownie.AllowedRecipientsBuilder.at("0xf5436129Cf9d8fa2a1cb6e591347155276550635")
+    raise NameError(
+        f"""Unknown network "{network}". Supported networks: mainnet, mainnet-fork, hoodi, hoodi-fork, holesky, holesky-fork"""
+    )
+
+
+class LidoContractsSetup:
+    def __init__(self, interface, lido_addresses):
+        self.lido_addresses = lido_addresses
+        self.aragon = AragonSetup(
+            acl=interface.ACL(lido_addresses.aragon.acl),
+            agent=interface.Agent(lido_addresses.aragon.agent),
+            voting=interface.Voting(lido_addresses.aragon.voting),
+            finance=interface.Finance(lido_addresses.aragon.finance),
+            gov_token=interface.MiniMeToken(lido_addresses.aragon.gov_token),
+            calls_script=interface.CallsScript(lido_addresses.aragon.calls_script),
+            token_manager=interface.TokenManager(lido_addresses.aragon.token_manager),
+            kernel=interface.Kernel(lido_addresses.aragon.kernel),
+        )
+        self.steth = interface.Lido(lido_addresses.steth)
+        self.node_operators_registry = interface.NodeOperatorsRegistry(lido_addresses.node_operators_registry)
+        self.simple_dvt = (
+            None if not lido_addresses.simple_dvt else interface.NodeOperatorsRegistry(lido_addresses.simple_dvt)
+        )
+        self.curated_module = (
+            None
+            if not lido_addresses.curated_module
+            else interface.NodeOperatorsRegistry(lido_addresses.curated_module)
+        )
+        self.ldo = self.aragon.gov_token
+        self.permissions = Permissions(contracts=self)
+        self.staking_router = interface.StakingRouter(lido_addresses.staking_router)
+        self.locator = interface.ILidoLocator(lido_addresses.locator)
+        self.mev_boost_list = interface.MEVBoostRelayAllowedList(lido_addresses.mev_boost_list)
+        self.dual_governance_admin_executor = interface.DualGovernanceExecutor(lido_addresses.dual_governance_admin_executor)
+        self.dual_governance = interface.DualGovernance(lido_addresses.dual_governance)
+        self.emergency_protected_timelock = interface.EmergencyProtectedTimelock(lido_addresses.emergency_protected_timelock)
+        self.validators_exit_bus_oracle = interface.ValidatorsExitBusOracle(lido_addresses.validators_exit_bus_oracle)
+
+
+    def create_voting(self, evm_script, description, tx_params=None):
+        voting = self.aragon.voting
+
+        config.set_balance_in_wei(self.aragon.agent.address, 100 * 10**18)
+
+        voting_tx = self.aragon.token_manager.forward(
+            evm_script_utils.encode_call_script(
+                [
+                    (
+                        voting.address,
+                        voting.newVote.encode_input(evm_script, description),
+                    )
+                ]
+            ),
+            tx_params or {"from": self.aragon.agent, "priority_fee": "2 gwei"},
+        )
+        return voting_tx.events["StartVote"]["voteId"], voting_tx
+
+    def execute_voting(self, voting_id):
+        voting = self.aragon.voting
+        if voting.getVote(voting_id)["executed"]:
+            print(f"Voting {voting_id} already executed")
+            return
+        ldo_holders = [self.aragon.agent.address]
+        for holder_addr in ldo_holders:
+            if not voting.canVote(voting_id, holder_addr):
+                print(f"{holder_addr} can't vote in voting {voting_id}")
+                continue
+            config.set_balance_in_wei(holder_addr, 10**18)
+            account = brownie.accounts.at(holder_addr, force=True)
+            voting.vote(voting_id, True, False, {"from": account, "priority_fee": "2 gwei"})
+
+        brownie.chain.sleep(self.aragon.voting.voteTime())
+        brownie.chain.mine()
+        assert voting.canExecute(voting_id)
+
+        voting.executeVote(voting_id, {"from": brownie.accounts[0], "priority_fee": "2 gwei"})
+
+
+class LidoAddressesSetup:
+    def __init__(
+        self,
+        aragon,
+        steth,
+        node_operators_registry,
+        simple_dvt,
+        curated_module,
+        staking_router,
+        locator,
+        mev_boost_list,
+        validators_exit_bus_oracle,
+        dual_governance_admin_executor,
+        dual_governance,
+        emergency_protected_timelock,
+        evm_script_executor
+    ):
+        self.aragon = aragon
+        self.steth = steth
+        self.node_operators_registry = node_operators_registry
+        self.simple_dvt = simple_dvt
+        self.curated_module = curated_module
+        self.ldo = self.aragon.gov_token
+        self.staking_router = staking_router
+        self.locator = locator
+        self.mev_boost_list = mev_boost_list
+        self.dual_governance_admin_executor = dual_governance_admin_executor
+        self.dual_governance = dual_governance
+        self.emergency_protected_timelock = emergency_protected_timelock
+        self.validators_exit_bus_oracle = validators_exit_bus_oracle
+        self.evm_script_executor = evm_script_executor
+
+
+class AragonSetup:
+    def __init__(
+        self,
+        acl,
+        agent,
+        voting,
+        finance,
+        gov_token,
+        calls_script,
+        token_manager,
+        kernel,
+    ):
+        self.acl = acl
+        self.agent = agent
+        self.voting = voting
+        self.finance = finance
+        self.gov_token = gov_token
+        self.calls_script = calls_script
+        self.token_manager = token_manager
+        self.kernel = kernel
+
+
+class Permissions:
+    def __init__(self, contracts):
+        self._acl = contracts.aragon.acl
+        self.finance = FinancePermissions(contracts.aragon.finance)
+        self.agent = AgentPermissions(contracts.aragon.agent)
+        self.lido = LidoPermissions(contracts.steth)
+        self.node_operators_registry = NodeOperatorsRegistryPermissions(contracts.node_operators_registry)
+        self.token_manager = TokenManagerPermissions(contracts.aragon.token_manager)
+        self.voting = VotingPermissions(contracts.aragon.voting)
+
+    def filter_granted(self, permissions, address):
+        return [
+            permission
+            for permission in permissions
+            if self._acl.hasPermission(address, permission.app, permission.role)
+        ]
+
+    def all(self):
+        return (
+            list(self.finance.__dict__.values())
+            + list(self.agent.__dict__.values())
+            + list(self.lido.__dict__.values())
+            + list(self.node_operators_registry.__dict__.values())
+            + list(self.token_manager.__dict__.values())
+            + list(self.voting.__dict__.values())
+        )
+
+
+class FinancePermissions:
+    def __init__(self, finance_app):
+        self.CREATE_PAYMENTS_ROLE = Permission(finance_app, "CREATE_PAYMENTS_ROLE")
+        self.CHANGE_PERIOD_ROLE = Permission(finance_app, "CHANGE_PERIOD_ROLE")
+        self.CHANGE_BUDGETS_ROLE = Permission(finance_app, "CHANGE_BUDGETS_ROLE")
+        self.EXECUTE_PAYMENTS_ROLE = Permission(finance_app, "EXECUTE_PAYMENTS_ROLE")
+        self.MANAGE_PAYMENTS_ROLE = Permission(finance_app, "MANAGE_PAYMENTS_ROLE")
+
+
+class AgentPermissions:
+    def __init__(self, agent_app):
+        self.ADD_PROTECTED_TOKEN_ROLE = Permission(agent_app, "ADD_PROTECTED_TOKEN_ROLE")
+        self.TRANSFER_ROLE = Permission(agent_app, "TRANSFER_ROLE")
+        self.RUN_SCRIPT_ROLE = Permission(agent_app, "RUN_SCRIPT_ROLE")
+        self.SAFE_EXECUTE_ROLE = Permission(agent_app, "SAFE_EXECUTE_ROLE")
+        self.REMOVE_PROTECTED_TOKEN_ROLE = Permission(agent_app, "REMOVE_PROTECTED_TOKEN_ROLE")
+        self.DESIGNATE_SIGNER_ROLE = Permission(agent_app, "DESIGNATE_SIGNER_ROLE")
+        self.EXECUTE_ROLE = Permission(agent_app, "EXECUTE_ROLE")
+        self.ADD_PRESIGNED_HASH_ROLE = Permission(agent_app, "ADD_PRESIGNED_HASH_ROLE")
+
+
+class LidoPermissions:
+    def __init__(self, lido_app):
+        self.PAUSE_ROLE = Permission(lido_app, "PAUSE_ROLE")
+        self.RESUME_ROLE = Permission(lido_app, "RESUME_ROLE")
+        self.STAKING_PAUSE_ROLE = Permission(lido_app, "STAKING_PAUSE_ROLE")
+        self.STAKING_CONTROL_ROLE = Permission(lido_app, "STAKING_CONTROL_ROLE")
+
+
+class NodeOperatorsRegistryPermissions:
+    def __init__(self, node_operators_registry_app):
+        self.STAKING_ROUTER_ROLE = Permission(node_operators_registry_app, "STAKING_ROUTER_ROLE")
+        self.MANAGE_NODE_OPERATOR_ROLE = Permission(node_operators_registry_app, "MANAGE_NODE_OPERATOR_ROLE")
+        self.MANAGE_SIGNING_KEYS = Permission(node_operators_registry_app, "MANAGE_SIGNING_KEYS")
+        self.SET_NODE_OPERATOR_LIMIT_ROLE = Permission(node_operators_registry_app, "SET_NODE_OPERATOR_LIMIT_ROLE")
+
+
+class TokenManagerPermissions:
+    def __init__(self, token_manager_app):
+        self.ISSUE_ROLE = Permission(token_manager_app, "ISSUE_ROLE")
+        self.ASSIGN_ROLE = Permission(token_manager_app, "ASSIGN_ROLE")
+        self.BURN_ROLE = Permission(token_manager_app, "BURN_ROLE")
+        self.MINT_ROLE = Permission(token_manager_app, "MINT_ROLE")
+        self.REVOKE_VESTINGS_ROLE = Permission(token_manager_app, "REVOKE_VESTINGS_ROLE")
+
+
+class VotingPermissions:
+    def __init__(self, voting_app):
+        self.MODIFY_QUORUM_ROLE = Permission(voting_app, "MODIFY_QUORUM_ROLE")
+        self.MODIFY_SUPPORT_ROLE = Permission(voting_app, "MODIFY_SUPPORT_ROLE")
+        self.CREATE_VOTES_ROLE = Permission(voting_app, "CREATE_VOTES_ROLE")
+
+
+class Permission:
+    def __init__(self, app, role_name):
+        self.app = app
+        self.role_name = role_name
+        self.role = getattr(app, role_name)()
+
+    def __hash__(self):
+        return hash((self.app, self.role_name))
+
+    def __eq__(self, o):
+        if isinstance(o, Permission):
+            return self.app == o.app and self.role_name == o.role_name
+        return False
+
+    def __str__(self):
+        return f"{self.app._name}.{self.role_name} ({self.role})"

@@ -1,0 +1,15 @@
+{
+    "name": "alex-dao",
+    "dependencies": {
+        "alex_v1": {
+            "commit": "dev",
+            "git": "https://github.com/alexgo-io/alex-v1.git",
+            "contracts_path": "clarity/contracts"
+        },
+        "alex_cloud": {
+            "commit": "main",
+            "git": "https://github.com/alexgo-io/xlink.git",
+            "contracts_path": "packages/contracts/bridge-stacks/contracts"
+        }        
+    }
+}

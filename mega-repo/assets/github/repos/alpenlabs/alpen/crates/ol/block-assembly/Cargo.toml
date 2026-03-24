@@ -1,0 +1,51 @@
+[package]
+name = "strata-ol-block-assembly"
+version = "0.1.0"
+edition = "2024"
+
+[lints]
+workspace = true
+
+[dependencies]
+ssz.workspace = true
+strata-acct-types.workspace = true
+strata-asm-manifest-types.workspace = true
+strata-config.workspace = true
+strata-crypto.workspace = true
+strata-db-types.workspace = true
+strata-identifiers.workspace = true
+strata-ledger-types.workspace = true
+strata-ol-chain-types.workspace = true
+strata-ol-chain-types-new.workspace = true
+strata-ol-mempool.workspace = true
+strata-ol-state-support-types.workspace = true
+strata-ol-state-types.workspace = true
+strata-ol-stf.workspace = true
+strata-params.workspace = true
+strata-service.workspace = true
+strata-snark-acct-types.workspace = true
+strata-storage.workspace = true
+strata-tasks.workspace = true
+
+anyhow.workspace = true
+async-trait.workspace = true
+schemars = { workspace = true, optional = true }
+serde.workspace = true
+thiserror.workspace = true
+tokio = { workspace = true, features = ["rt"] }
+tracing.workspace = true
+
+[features]
+jsonschema = ["dep:schemars", "strata-identifiers/jsonschema"]
+
+[dev-dependencies]
+proptest.workspace = true
+strata-asm-common.workspace = true
+strata-asm-manifest-types.workspace = true
+strata-btc-verification.workspace = true
+strata-db-store-sled.workspace = true
+strata-ol-params.workspace = true
+strata-predicate.workspace = true
+strata-state.workspace = true
+strata-test-utils-l2.workspace = true
+threadpool.workspace = true

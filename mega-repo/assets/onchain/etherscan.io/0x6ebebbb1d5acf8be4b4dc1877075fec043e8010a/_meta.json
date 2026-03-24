@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x6eBebBb1D5ACF8bE4B4DC1877075fec043e8010a#code",
+  "host": "etherscan.io",
+  "address": "0x6eBebBb1D5ACF8bE4B4DC1877075fec043e8010a",
+  "chainid": 1,
+  "project_slug": "daimo-pay",
+  "asset_id": "T9vPmf98FQAEO1Nlso5sE",
+  "contract_name": "DaimoPayExecutor",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "999999",
+  "constructor_arguments": "0000000000000000000000008e29a76dd752ad84fc92baab4ac2002b3c960ee8",
+  "evm_version": "london",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}

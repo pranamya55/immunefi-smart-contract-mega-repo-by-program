@@ -1,0 +1,24 @@
+{
+  "url": "https://bscscan.com/address/0xB562127efDC97B417B3116efF2C23A29857C0F0B",
+  "host": "bscscan.com",
+  "address": "0xB562127efDC97B417B3116efF2C23A29857C0F0B",
+  "chainid": 56,
+  "project_slug": "dexeprotocol",
+  "asset_id": "52mh6YEFW6Zqk1AfPgMuH2",
+  "contract_name": "ProtectedPublicBeaconProxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "00000000000000000000000083e225353fafc848bc5af132a3ebc2f8f66d95c800000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0xb1578bf6a66b1ec9ae731643b9f8b6ac34351068",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 15,
+  "mode": "json-sources"
+}

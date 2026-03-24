@@ -1,0 +1,25 @@
+{
+  "url": "https://explorer.optimism.io/address/0xE2868095814c2714039b3A9eBEE035B9E2c411E5#code",
+  "host": "explorer.optimism.io",
+  "address": "0xE2868095814c2714039b3A9eBEE035B9E2c411E5",
+  "chainid": null,
+  "project_slug": "sparklend",
+  "asset_id": "2JhGnmlzfippQF5M3UKWUi",
+  "contract_name": "OptimismReceiver",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": "0x0000000000000000000000006ac25b8638767a3c27a65597a74792d5990387240000000000000000000000006e53585449142a5e6d5fc918ae6bea341dc81c68",
+  "evm_version": "shanghai",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:missing-chainid",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

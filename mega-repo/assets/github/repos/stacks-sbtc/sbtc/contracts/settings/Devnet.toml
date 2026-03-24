@@ -1,0 +1,152 @@
+[network]
+name = "devnet"
+deployment_fee_rate = 10
+
+
+
+# ==============================================================================
+# SBTC ACCOUNTS
+# ==============================================================================
+
+# The deployer account is used to deploy sBTC contracts
+[accounts.deployer]
+mnemonic = "keep can record bracket note hip face pudding castle detail few sunset review burger enhance foil lamp estate reopen butter then wasp pen kick"
+balance = 100_000_000_000_000
+# ‣ Private Key:  27e27a9c242bcf79784bb8b19c8d875e23aaf65c132d54a47c84e1a5a67bc62601
+# ‣ Public Key:   025fa7693cfe4b7c7beccdd9e4bfe77f77a3779d5a58faeb69ead7d1ba94d64f76
+# ‣ STX Address:  ST2SBXRBJJTH7GV5J93HJ62W2NRRQ46XYBK92Y039
+# ‣ BTC Address:  mwp5EpXXVsZxzQRC7yrDe1CJBsyub9f91n
+# ‣ WIF:          cNvERZ1Ci4NQydr5dTuW8K2JuoyfjLJgYVskrLzBoXREnRVbS9qx
+
+
+
+# ==============================================================================
+# TRANSACTION GENERATOR ACCOUNTS
+# ------------------------------------------------------------------------------
+# These accounts are used to generate random transactions to simulate regular
+# usage of the network (and to push the network along). These accounts are also
+# participating in solo-stacking.
+# ==============================================================================
+
+# Test account 'alice'
+[accounts.wallet_1]
+mnemonic = "sorry door captain volume century wood soap asset scheme idea alley mammal effort shoulder gravity car pistol reform aisle gadget gown future lawsuit tone"
+balance = 100_000_000_000_000
+# ‣ Private Key:  e26e611fc92fe535c5e2e58a6a446375bb5e3b471440af21bbe327384befb50a01
+# ‣ Public Key:   03fb84a4a2931e7d0ec36bf6e695233bec878fd545bad580751cf4a49d78a7bb27
+# ‣ STX Address:  ST1YEHRRYJ4GF9CYBFFN0ZVCXX1APSBEEQ5KEDN7M
+# ‣ BTC Address:  mruR58H7NvUgmDydv1BM8zMT8og6QxN1Rx
+# ‣ WIF:          cVArVw9FJPeygtZhRtHJEhDqEQTeC3Ybw3UjXt1ir6RgMkMj1Mcz
+
+# Test account 'bob'
+[accounts.wallet_2]
+mnemonic = "album bid grant because narrow unusual unknown machine quick core dolphin occur repair decade toilet betray word people mule assume gesture faint trend about"
+balance = 100_000_000_000_000
+# ‣ Private Key:  e3ebd73a51da9a2ab0c6679145420876bf4338554a8972e3ab200cef7adbec6001
+# ‣ Public Key:   03e5049566e351debe8c4d9918faafac751fdcc0e80d3db59069b45761b39015f5
+# ‣ STX Address:  ST1WNJTS9JM1JYGK758B10DBAMBZ0K23ADP392SBV
+# ‣ BTC Address:  mrabBBLKnSZq8fziECh4TsNwVbmdGv6JDV
+# ‣ WIF:          cVDkVrPTBEVa9fFGwFQT4zKi9dXFUJqLym3Ct6MJTepT6Wh5413g
+
+# Test account 'charlie'
+[accounts.wallet_3]
+mnemonic = "action still web blush proud cat axis barrel tower assault cram catch more soup auction require again valley letter calm license release fruit industry"
+balance = 100_000_000_000_000
+# ‣ Private Key:  0bfff38daea4561a4343c9b3f29bfb06e32a988868fc68beed31a6c0f6de4cf701
+# ‣ Public Key:   03a89261c20768ce41930371cd4c0d756c872e96b8ff749ac044199cc7100ccd71
+# ‣ STX Address:  ST1MDWBDVDGAANEH9001HGXQA6XRNK7PX7A7X8M6R
+# ‣ BTC Address:  mq5SjFHAPh93ZnFLc6Jev8yqn2iLg28Q5B
+# ‣ WIF:          cMz2ZSsaVgWPFUkE44zHpJepB4NdwB9L938h53hQfFoot81AZFb3
+
+
+
+# ==============================================================================
+# FAUCET ACCOUNT
+# ------------------------------------------------------------------------------
+# The faucet account is used to distribute STX tokens to users who request them.
+# ==============================================================================
+
+[accounts.faucet]
+mnemonic = "shadow private easily thought say logic fault paddle word top book during ignore notable orange flight clock image wealth health outside kitten belt reform"
+balance = 100_000_000_000_000
+# secret_key: de433bdfa14ec43aa1098d5be594c8ffb20a31485ff9de2923b2689471c401b801
+# stx_address: STNHKEPYEPJ8ET55ZZ0M5A34J0R3N5FM2CMMMAZ6
+# btc_address: mjSrB3wS4xab3kYqFktwBzfTdPg367ZJ2d
+
+[devnet]
+disable_stacks_explorer = false
+disable_stacks_api = false
+# disable_subnet_api = false
+# disable_bitcoin_explorer = true
+# working_dir = "tmp/devnet"
+# stacks_node_events_observers = ["host.docker.internal:8002"]
+# miner_mnemonic = "fragile loan twenty basic net assault jazz absorb diet talk art shock innocent float punch travel gadget embrace caught blossom hockey surround initial reduce"
+# miner_derivation_path = "m/44'/5757'/0'/0/0"
+# faucet_mnemonic = "shadow private easily thought say logic fault paddle word top book during ignore notable orange flight clock image wealth health outside kitten belt reform"
+# faucet_derivation_path = "m/44'/5757'/0'/0/0"
+# orchestrator_port = 20445
+# bitcoin_node_p2p_port = 18444
+# bitcoin_node_rpc_port = 18443
+# bitcoin_node_username = "devnet"
+# bitcoin_node_password = "devnet"
+# bitcoin_controller_block_time = 30_000
+# stacks_node_rpc_port = 20443
+# stacks_node_p2p_port = 20444
+# stacks_api_port = 3999
+# stacks_api_events_port = 3700
+# bitcoin_explorer_port = 8001
+# stacks_explorer_port = 8000
+# postgres_port = 5432
+# postgres_username = "postgres"
+# postgres_password = "postgres"
+# postgres_database = "postgres"
+# bitcoin_node_image_url = "quay.io/hirosystems/bitcoind:26.0"
+# stacks_node_image_url = "quay.io/hirosystems/stacks-node:devnet-2.5"
+# stacks_signer_image_url = "quay.io/hirosystems/stacks-signer:devnet-2.5"
+# stacks_api_image_url = "hirosystems/stacks-blockchain-api:master"
+# stacks_explorer_image_url = "hirosystems/explorer:latest"
+# bitcoin_explorer_image_url = "quay.io/hirosystems/bitcoin-explorer:devnet"
+# postgres_image_url = "postgres:alpine"
+# enable_subnet_node = true
+# subnet_node_image_url = "hirosystems/stacks-subnets:0.8.1"
+# subnet_leader_mnemonic = "twice kind fence tip hidden tilt action fragile skin nothing glory cousin green tomorrow spring wrist shed math olympic multiply hip blue scout claw"
+# subnet_leader_derivation_path = "m/44'/5757'/0'/0/0"
+# subnet_contract_id = "ST173JK7NZBA4BS05ZRATQH1K89YJMTGEH1Z5J52E.subnet-v3-0-1"
+# subnet_node_rpc_port = 30443
+# subnet_node_p2p_port = 30444
+# subnet_events_ingestion_port = 30445
+# subnet_node_events_observers = ["host.docker.internal:8002"]
+# subnet_api_image_url = "hirosystems/stacks-blockchain-api:master"
+# subnet_api_postgres_database = "subnet_api"
+
+# For testing in epoch 2.1 / using Clarity2
+# epoch_2_0 = 100
+# epoch_2_05 = 100
+# epoch_2_1 = 101
+# epoch_2_2 = 102
+# epoch_2_3 = 103
+# epoch_2_4 = 104
+# epoch_2_5 = 108
+
+
+# Send some stacking orders
+[[devnet.pox_stacking_orders]]
+start_at_cycle = 1
+duration = 12
+wallet = "wallet_1"
+slots = 2
+btc_address = "mr1iPkD9N3RJZZxXRk7xF9d36gffa6exNC"
+
+[[devnet.pox_stacking_orders]]
+start_at_cycle = 1
+duration = 12
+wallet = "wallet_2"
+slots = 1
+btc_address = "muYdXKmX9bByAueDe6KFfHd5Ff1gdN9ErG"
+
+[[devnet.pox_stacking_orders]]
+start_at_cycle = 1
+duration = 12
+wallet = "wallet_3"
+slots = 1
+btc_address = "mvZtbibDAAA3WLpY7zXXFqRa3T4XSknBX7"

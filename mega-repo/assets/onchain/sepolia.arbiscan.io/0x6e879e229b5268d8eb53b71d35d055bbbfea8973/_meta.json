@@ -1,0 +1,24 @@
+{
+  "url": "https://sepolia.arbiscan.io/address/0x6E879e229B5268D8eb53b71d35d055bBBfEa8973",
+  "host": "sepolia.arbiscan.io",
+  "address": "0x6E879e229B5268D8eb53b71d35d055bBBfEa8973",
+  "chainid": 421614,
+  "project_slug": "boost-idex",
+  "asset_id": "30yakdICtyGYbrY9bJE6eF",
+  "contract_name": "EarningsEscrow",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": "1",
+  "runs": "1000000",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 8,
+  "mode": "json-sources"
+}

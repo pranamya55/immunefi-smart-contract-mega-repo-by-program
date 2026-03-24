@@ -1,0 +1,92 @@
+import { describe, it, expect, vi } from 'vitest';
+import { Keypair, PublicKey } from '@solana/web3.js';
+import {
+    TOKEN_PROGRAM_ID,
+    getAssociatedTokenAddressSync,
+} from '@solana/spl-token';
+import {
+    Rpc,
+    LIGHT_TOKEN_PROGRAM_ID,
+    featureFlags,
+} from '@lightprotocol/stateless.js';
+import { getAtaProgramId } from '../../src/v3/ata-utils';
+
+vi.mock('../../src/v3/get-mint-interface', async () => {
+    const { LIGHT_TOKEN_PROGRAM_ID } = await import(
+        '@lightprotocol/stateless.js'
+    );
+    return {
+        getMintInterface: vi.fn().mockResolvedValue({
+            mint: { decimals: 9 },
+            programId: LIGHT_TOKEN_PROGRAM_ID,
+        }),
+    };
+});
+
+import {
+    getAssociatedTokenAddressInterface as unifiedGetAssociatedTokenAddressInterface,
+    createLoadAtaInstructions as unifiedCreateLoadAtaInstructions,
+} from '../../src/v3/unified';
+
+describe('unified guards', () => {
+    it('throws when unified getAssociatedTokenAddressInterface uses non light-token program', () => {
+        const mint = Keypair.generate().publicKey;
+        const owner = Keypair.generate().publicKey;
+
+        expect(() =>
+            unifiedGetAssociatedTokenAddressInterface(
+                mint,
+                owner,
+                false,
+                TOKEN_PROGRAM_ID,
+            ),
+        ).toThrow(
+            'Please derive the unified ATA from the light-token program; balances across SPL, T22, and light-token are unified under the canonical light-token ATA.',
+        );
+    });
+
+    it('allows unified getAssociatedTokenAddressInterface with light-token program', () => {
+        const mint = Keypair.generate().publicKey;
+        const owner = Keypair.generate().publicKey;
+
+        expect(() =>
+            unifiedGetAssociatedTokenAddressInterface(
+                mint,
+                owner,
+                false,
+                LIGHT_TOKEN_PROGRAM_ID,
+            ),
+        ).not.toThrow();
+    });
+
+    // Skip unless V2 - createLoadAtaInstructions is a V2-only interface method
+    it.skipIf(!featureFlags.isV2())(
+        'throws when unified createLoadAtaInstructions receives non light-token ATA',
+        async () => {
+            const rpc = {} as Rpc;
+            const owner = Keypair.generate().publicKey;
+            const mint = Keypair.generate().publicKey;
+
+            // Derive SPL ATA using base function (not unified)
+            const wrongAta = getAssociatedTokenAddressSync(
+                mint,
+                owner,
+                false,
+                TOKEN_PROGRAM_ID,
+                getAtaProgramId(TOKEN_PROGRAM_ID),
+            );
+
+            await expect(
+                unifiedCreateLoadAtaInstructions(
+                    rpc,
+                    wrongAta,
+                    owner,
+                    mint,
+                    owner,
+                ),
+            ).rejects.toThrow(
+                'For wrap=true, ata must be the light-token ATA. Got spl ATA instead.',
+            );
+        },
+    );
+});

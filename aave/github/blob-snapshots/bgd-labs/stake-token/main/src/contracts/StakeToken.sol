@@ -1,0 +1,1 @@
+../../../../../../../../../mega-repo/assets/github/blob-snapshots/bgd-labs/stake-token/main/src/contracts/StakeToken.sol

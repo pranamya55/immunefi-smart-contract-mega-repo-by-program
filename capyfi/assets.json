@@ -1,0 +1,82 @@
+[
+  {
+    "project_slug": "capyfi",
+    "asset_id": "2HSXQVXsguHpED3AGtTTzs",
+    "url": "https://etherscan.io/address/0x0f864A3e50D1070adDE5100fd848446C0567362B",
+    "description": "caUSDT",
+    "added_at": "2025-11-19T09:48:03.569Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "capyfi",
+    "asset_id": "38q4ylkPE2oHDELbj0yNu2",
+    "url": "https://etherscan.io/address/0xF61159B4a0EE5b1615c9Afb3dA38111043344c32",
+    "description": "caRPC",
+    "added_at": "2025-11-19T09:48:32.430Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "capyfi",
+    "asset_id": "3DNnsQIYrnmTcWcxORZIU",
+    "url": "https://etherscan.io/address/0xDa5928d59ECE82808Af2cbBE4f2872FeA8E12CD6",
+    "description": "caWBTC",
+    "added_at": "2025-11-19T09:47:47.108Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "capyfi",
+    "asset_id": "4B4wpRsRLouiYO4CjOzHgP",
+    "url": "https://etherscan.io/address/0x0b9af1fd73885aD52680A1aeAa7A3f17AC702afA",
+    "description": "Unitroller",
+    "added_at": "2025-11-19T09:49:00.867Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "capyfi",
+    "asset_id": "5XAYOvHbjd9gE4qYzvV8Im",
+    "url": "https://etherscan.io/address/0xf80eeec09f417Fa7FCc4A848Ef03af9dF2658d7B",
+    "description": "caWARS",
+    "added_at": "2025-11-19T09:48:45.950Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "capyfi",
+    "asset_id": "6ENU2y7LydthIPPonlwBzO",
+    "url": "https://etherscan.io/address/0x00dc4965916e03A734190fA382633657c71f867E",
+    "description": "Comptroller",
+    "added_at": "2025-11-19T09:49:14.847Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "capyfi",
+    "asset_id": "6gGYZOT7PREttLVAabOkgU",
+    "url": "https://etherscan.io/address/0xc3aD34De18B59A24BD0877e454Fb924181F09C8f",
+    "description": "caUSDC",
+    "added_at": "2025-11-19T09:48:18.428Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "capyfi",
+    "asset_id": "6uX4DzqdB47FLGif4B4wwN",
+    "url": "https://etherscan.io/address/0x0568F6cb5A0E84FACa107D02f81ddEB1803f3B50",
+    "description": "caLAC",
+    "added_at": "2025-11-19T09:47:32.305Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "capyfi",
+    "asset_id": "rSGcXhJFwx7TISHirfrPj",
+    "url": "https://etherscan.io/address/0x37DE57183491Fa9745d8Fa5DCd950f0c3a4645c9",
+    "description": "caETH",
+    "added_at": "2025-11-19T09:47:16.383Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "capyfi",
+    "asset_id": "db_508e98f9-e2d1-49ab-824a-eee790ab44a7",
+    "url": "https://app.capyfi.com",
+    "description": "Primacy of Impact",
+    "added_at": "2026-02-06T13:39:50.230Z",
+    "revision": 0
+  }
+]

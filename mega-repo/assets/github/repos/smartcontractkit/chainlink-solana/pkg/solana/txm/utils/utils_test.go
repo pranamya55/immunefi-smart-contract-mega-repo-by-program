@@ -1,0 +1,150 @@
+package utils
+
+import (
+	"sync"
+	"testing"
+	"time"
+
+	"github.com/gagliardetto/solana-go"
+	"github.com/gagliardetto/solana-go/rpc"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+)
+
+func TestSortSignaturesAndResults(t *testing.T) {
+	sig := []solana.Signature{
+		{0}, {1}, {2}, {3},
+	}
+
+	statuses := []*rpc.SignatureStatusesResult{
+		{ConfirmationStatus: rpc.ConfirmationStatusProcessed},
+		{ConfirmationStatus: rpc.ConfirmationStatusConfirmed},
+		nil,
+		{ConfirmationStatus: rpc.ConfirmationStatusConfirmed, Err: "ERROR"},
+	}
+
+	_, _, err := SortSignaturesAndResults([]solana.Signature{}, statuses)
+	require.Error(t, err)
+
+	sig, statuses, err = SortSignaturesAndResults(sig, statuses)
+	require.NoError(t, err)
+
+	// new expected order [1, 0, 3, 2]
+	assert.Equal(t, rpc.SignatureStatusesResult{ConfirmationStatus: rpc.ConfirmationStatusConfirmed}, *statuses[0])
+	assert.Equal(t, rpc.SignatureStatusesResult{ConfirmationStatus: rpc.ConfirmationStatusProcessed}, *statuses[1])
+	assert.Equal(t, rpc.SignatureStatusesResult{ConfirmationStatus: rpc.ConfirmationStatusConfirmed, Err: "ERROR"}, *statuses[2])
+	assert.True(t, nil == statuses[3])
+
+	assert.Equal(t, solana.Signature{1}, sig[0])
+	assert.Equal(t, solana.Signature{0}, sig[1])
+	assert.Equal(t, solana.Signature{3}, sig[2])
+	assert.Equal(t, solana.Signature{2}, sig[3])
+}
+
+func TestStatusSortHelpers(t *testing.T) {
+	t.Parallel()
+
+	t.Run("successfully swaps statuses in list", func(t *testing.T) {
+		status := NewTestStatuses(t)
+		status.Swap(0, 1)
+		require.Equal(t, rpc.ConfirmationStatusFinalized, status.res[0].ConfirmationStatus)
+		require.Equal(t, rpc.ConfirmationStatusConfirmed, status.res[1].ConfirmationStatus)
+	})
+
+	t.Run("no-op if swap indexes are out-of-bounds", func(t *testing.T) {
+		status := NewTestStatuses(t)
+		status.Swap(1, 2) // j out of bounds
+		require.Equal(t, rpc.ConfirmationStatusConfirmed, status.res[0].ConfirmationStatus)
+		require.Equal(t, rpc.ConfirmationStatusFinalized, status.res[1].ConfirmationStatus)
+
+		status.Swap(2, 1) // i out of bounds
+		require.Equal(t, rpc.ConfirmationStatusConfirmed, status.res[0].ConfirmationStatus)
+		require.Equal(t, rpc.ConfirmationStatusFinalized, status.res[1].ConfirmationStatus)
+
+		status.Swap(2, 3) // i and j out of bounds
+		require.Equal(t, rpc.ConfirmationStatusConfirmed, status.res[0].ConfirmationStatus)
+		require.Equal(t, rpc.ConfirmationStatusFinalized, status.res[1].ConfirmationStatus)
+	})
+
+	t.Run("successfully compares statuses in list", func(t *testing.T) {
+		status := NewTestStatuses(t)
+		less := status.Less(0, 1)
+		require.False(t, less) // expect highest to lowest statuses and Finalized > Confirmed
+	})
+
+	t.Run("no-op if less indexes are out-of-bounds", func(t *testing.T) {
+		status := NewTestStatuses(t)
+		less := status.Less(1, 2) // j out of bounds
+		require.True(t, less)
+
+		less = status.Less(2, 1) // i out of bounds
+		require.True(t, less)
+
+		less = status.Less(2, 3) // i and j out of bounds
+		require.True(t, less)
+	})
+}
+
+func TestSignatureList_AllocateWaitSet(t *testing.T) {
+	sigs := SignatureList{}
+	assert.Equal(t, 0, sigs.Length())
+
+	// can't set without pre-allocating
+	assert.ErrorContains(t, sigs.Set(0, solana.Signature{}), "invalid index")
+
+	// can't set on index that has already been set
+	assert.Equal(t, 0, sigs.Allocate())
+	assert.Equal(t, 1, sigs.Length())
+	assert.NoError(t, sigs.Set(0, solana.Signature{1}))
+	assert.ErrorContains(t, sigs.Set(0, solana.Signature{1}), "trying to set signature when already set")
+
+	// waitgroup does not block on invalid index
+	sigs.Wait(100000)
+
+	// waitgroup blocks between allocate and set
+	ind1 := sigs.Allocate()
+	assert.Equal(t, 1, ind1)
+	ind2 := sigs.Allocate()
+	assert.Equal(t, 2, ind2)
+
+	var wg sync.WaitGroup
+	wg.Add(1)
+	go func() {
+		sigs.Wait(ind1)
+		sigs.Wait(ind2)
+		wg.Done()
+	}()
+	assert.NoError(t, sigs.Set(ind2, solana.Signature{1}))
+	assert.NoError(t, sigs.Set(ind1, solana.Signature{1}))
+	wg.Wait()
+}
+
+func TestSetTxConfig(t *testing.T) {
+	cfg := TxConfig{}
+
+	for _, v := range []SetTxConfig{
+		SetTimeout(1 * time.Second),
+		SetFeeBumpPeriod(2 * time.Second),
+		SetBaseComputeUnitPrice(3),
+		SetComputeUnitPriceMin(4),
+		SetComputeUnitPriceMax(5),
+		SetComputeUnitLimit(6),
+	} {
+		v(&cfg)
+	}
+
+	assert.Equal(t, 1*time.Second, cfg.Timeout)
+	assert.Equal(t, 2*time.Second, cfg.FeeBumpPeriod)
+	assert.Equal(t, uint64(3), cfg.BaseComputeUnitPrice)
+	assert.Equal(t, uint64(4), cfg.ComputeUnitPriceMin)
+	assert.Equal(t, uint64(5), cfg.ComputeUnitPriceMax)
+	assert.Equal(t, uint32(6), cfg.ComputeUnitLimit)
+}
+
+func NewTestStatuses(t *testing.T) statuses {
+	t.Helper()
+	return statuses{
+		sigs: make([]solana.Signature, 2),
+		res:  []*rpc.SignatureStatusesResult{{ConfirmationStatus: rpc.ConfirmationStatusConfirmed}, {ConfirmationStatus: rpc.ConfirmationStatusFinalized}},
+	}
+}

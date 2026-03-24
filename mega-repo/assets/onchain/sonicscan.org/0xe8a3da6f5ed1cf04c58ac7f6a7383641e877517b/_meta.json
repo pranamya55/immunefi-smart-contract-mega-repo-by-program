@@ -1,0 +1,24 @@
+{
+  "url": "https://sonicscan.org/address/0xe8a3DA6f5ed1cf04c58ac7f6A7383641e877517b#code",
+  "host": "sonicscan.org",
+  "address": "0xe8a3DA6f5ed1cf04c58ac7f6A7383641e877517b",
+  "chainid": 146,
+  "project_slug": "parallel",
+  "asset_id": "2IZnGTjRoWGLKxFOyKl07Z",
+  "contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "1",
+  "runs": "999999",
+  "constructor_arguments": "",
+  "evm_version": "london",
+  "library": "",
+  "license_type": "MIT",
+  "proxy": "1",
+  "implementation": "0xae2fb66d1989ec1684ff095b75d151ae8e403e2e",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 7,
+  "mode": "json-sources"
+}

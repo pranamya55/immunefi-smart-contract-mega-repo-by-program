@@ -1,0 +1,24 @@
+{
+  "url": "https://gnosisscan.io/address/0xCF86A65779e88bedfF0319FE13aE2B47358EB1bF",
+  "host": "gnosisscan.io",
+  "address": "0xCF86A65779e88bedfF0319FE13aE2B47358EB1bF",
+  "chainid": 100,
+  "project_slug": "sparklend",
+  "asset_id": "OfPS07Mu5g2yiYf1edeCM",
+  "contract_name": "Pool",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": "1",
+  "runs": "100000",
+  "constructor_arguments": "000000000000000000000000a98dacb3fc964a6a0d2ce3b77294241585eaba6d",
+  "evm_version": "london",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 46,
+  "mode": "json-sources"
+}

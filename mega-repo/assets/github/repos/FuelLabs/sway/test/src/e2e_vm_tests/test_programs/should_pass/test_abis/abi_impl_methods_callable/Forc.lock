@@ -1,0 +1,8 @@
+[[package]]
+name = "abi_impl_methods_callable"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-214E8589AEAE48E5"

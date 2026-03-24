@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+require('tsx/cjs')
+
+const oclif = require('@oclif/core')
+
+// In dev mode -> use tsx and dev plugins
+process.env.NODE_ENV = 'development'
+
+// In dev mode, always show stack traces
+oclif.settings.debug = true;
+
+// Start the CLI
+oclif.run().then(oclif.flush).catch(oclif.Errors.handle)

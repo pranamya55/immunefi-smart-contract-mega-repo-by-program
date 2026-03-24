@@ -1,0 +1,24 @@
+{
+  "url": "https://seitrace.com/token/0xEfD9931eD35820C88196351E132421f5917736bE?chain=pacific-1",
+  "host": "seitrace.com",
+  "address": "0xEfD9931eD35820C88196351E132421f5917736bE",
+  "chainid": 1329,
+  "project_slug": "nucleus",
+  "asset_id": "1yw3YQGZO5o0PzJCgjQYH1",
+  "contract_name": "RolesAuthority",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "00000000000000000000000094544835cf97c631f101c5f538787fe14e2e04f60000000000000000000000000000000000000000000000000000000000000000",
+  "evm_version": "shanghai",
+  "library": "",
+  "license_type": "None",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 1,
+  "mode": "json-sources"
+}

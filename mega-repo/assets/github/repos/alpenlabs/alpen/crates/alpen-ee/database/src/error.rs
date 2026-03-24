@@ -1,0 +1,124 @@
+use alpen_ee_common::{BatchId, ChunkId, StorageError};
+use sled::transaction::TransactionError;
+use strata_acct_types::Hash;
+use strata_identifiers::OLBlockId;
+use strata_storage_common::exec::OpsError;
+use thiserror::Error;
+use typed_sled::error::Error as SledError;
+
+pub type DbResult<T> = Result<T, DbError>;
+
+/// Database-specific errors.
+#[derive(Debug, Clone, Error)]
+pub enum DbError {
+    /// Attempted to persist a null OL block.
+    #[error("null OL block should not be persisted")]
+    NullOLBlock,
+
+    /// OL slot was skipped in sequential persistence.
+    #[error("OL entries must be persisted sequentially; next: {expected}; got: {got}")]
+    SkippedOLSlot { expected: u64, got: u64 },
+
+    /// Transaction conflict: slot is already filled.
+    #[error("Txn conflict: OL slot {0} already filled")]
+    TxnFilledOLSlot(u64),
+
+    /// Transaction conflict: expected slot to be empty.
+    #[error("Txn conflict: OL slot {0} should be empty")]
+    TxnExpectEmptyOLSlot(u64),
+
+    /// Account state is missing for the given block.
+    #[error("Account state expected to be present; block_id = {0}")]
+    MissingAccountState(OLBlockId),
+
+    /// Finalized chain is empty.
+    #[error("Finalized exec block expected to be present")]
+    FinalizedExecChainEmpty,
+
+    /// Exec block is missing.
+    #[error("Exec block expected to be present; blockhahs = {0:?}")]
+    MissingExecBlock(Hash),
+
+    #[error("Expected exec block finalized chain to be empty")]
+    FinalizedExecChainGenesisBlockMismatch,
+
+    #[error("Provided block does not extend chain; {0:?}")]
+    ExecBlockDoesNotExtendChain(Hash),
+
+    #[error("Txn conflict: expected finalized height {0} to be empty")]
+    TxnExpectEmptyFinalized(u64),
+
+    #[error("Txn conflict: expected finalized height {0} to be {1:?}")]
+    TxnExpectFinalized(u64, Hash),
+
+    /// Attempted to delete a finalized block.
+    #[error("Cannot delete finalized block: {0:?}")]
+    CannotDeleteFinalizedBlock(Hash),
+
+    /// Batch not found when trying to update status.
+    #[error("Batch not found: {0:?}")]
+    BatchNotFound(BatchId),
+
+    /// Chunk not found when trying to update status.
+    #[error("Chunk not found: {0:?}")]
+    ChunkNotFound(ChunkId),
+
+    /// Batch deserialization error.
+    #[error("Failed to deserialize batch: {0}")]
+    BatchDeserialize(String),
+
+    /// Database operation error.
+    #[error("Database: {0}")]
+    DbOpsError(#[from] OpsError),
+
+    /// Sled database error.
+    #[error("sled: {0}")]
+    Sled(String),
+
+    /// Sled transaction error.
+    #[error("sled txn: {0}")]
+    SledTxn(String),
+
+    /// Other unspecified database error.
+    #[error("{0}")]
+    Other(String),
+}
+
+impl DbError {
+    pub(crate) fn skipped_ol_slot(expected: u64, got: u64) -> DbError {
+        DbError::SkippedOLSlot { expected, got }
+    }
+}
+
+impl From<SledError> for DbError {
+    fn from(maybe_dberr: SledError) -> Self {
+        match maybe_dberr.downcast_abort::<DbError>() {
+            Ok(dberr) => dberr,
+            Err(other) => DbError::Sled(other.to_string()),
+        }
+    }
+}
+
+impl From<TransactionError<SledError>> for DbError {
+    fn from(value: TransactionError<SledError>) -> Self {
+        match value {
+            TransactionError::Abort(tsled_err) => tsled_err.into(),
+            err => DbError::SledTxn(err.to_string()),
+        }
+    }
+}
+
+impl From<DbError> for StorageError {
+    fn from(err: DbError) -> Self {
+        match err {
+            DbError::SkippedOLSlot { expected, got } => StorageError::MissingSlot {
+                attempted_slot: got,
+                last_slot: expected,
+            },
+            DbError::CannotDeleteFinalizedBlock(hash) => {
+                StorageError::CannotDeleteFinalizedBlock(format!("{:?}", hash))
+            }
+            e => StorageError::database(e.to_string()),
+        }
+    }
+}

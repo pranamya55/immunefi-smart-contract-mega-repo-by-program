@@ -1,0 +1,1776 @@
+import { describe, it, expect, beforeAll } from 'vitest';
+import {
+    Keypair,
+    Signer,
+    PublicKey,
+    ComputeBudgetProgram,
+} from '@solana/web3.js';
+import {
+    Rpc,
+    bn,
+    newAccountWithLamports,
+    createRpc,
+    selectStateTreeInfo,
+    TreeInfo,
+    LIGHT_TOKEN_PROGRAM_ID,
+    VERSION,
+    featureFlags,
+    buildAndSignTx,
+    sendAndConfirmTx,
+    dedupeSigner,
+} from '@lightprotocol/stateless.js';
+import {
+    TOKEN_PROGRAM_ID,
+    TOKEN_2022_PROGRAM_ID,
+    getAccount,
+    getAssociatedTokenAddressSync,
+    createAssociatedTokenAccount,
+    createFreezeAccountInstruction,
+    createMintToInstruction,
+    createApproveInstruction,
+} from '@solana/spl-token';
+import { createMint, mintTo, approve } from '../../src/actions';
+import {
+    getTokenPoolInfos,
+    selectTokenPoolInfo,
+    TokenPoolInfo,
+} from '../../src/utils/get-token-pool-infos';
+import { getAssociatedTokenAddressInterface } from '../../src/v3/get-associated-token-address-interface';
+import { getOrCreateAtaInterface } from '../../src/v3/actions/get-or-create-ata-interface';
+import {
+    transferToAccountInterface as transferInterface,
+    createTransferToAccountInterfaceInstructions as createTransferInterfaceInstructions,
+    transferInterface as transferToRecipientInterface,
+    createTransferInterfaceInstructions as createTransferToRecipientInstructions,
+} from '../../src/v3/actions/transfer-interface';
+import {
+    loadAta,
+    createLoadAtaInstructions,
+} from '../../src/v3/actions/load-ata';
+import { createAtaInterfaceIdempotent } from '../../src/v3/actions/create-ata-interface';
+import { createAssociatedTokenAccountInterfaceIdempotentInstruction } from '../../src/v3/instructions/create-ata-interface';
+import { createLightTokenFreezeAccountInstruction } from '../../src/v3/instructions/freeze-thaw';
+import { createLightTokenTransferInstruction } from '../../src/v3/instructions/transfer-interface';
+import {
+    LIGHT_TOKEN_RENT_SPONSOR,
+    TOTAL_COMPRESSION_COST,
+    DEFAULT_PREPAY_EPOCHS,
+} from '../../src/constants';
+import { getAtaProgramId } from '../../src/v3/ata-utils';
+
+featureFlags.version = VERSION.V2;
+
+const TEST_TOKEN_DECIMALS = 9;
+
+describe('transfer-interface', () => {
+    let rpc: Rpc;
+    let payer: Signer;
+    let mint: PublicKey;
+    let mintAuthority: Keypair;
+    let stateTreeInfo: TreeInfo;
+    let tokenPoolInfos: TokenPoolInfo[];
+
+    beforeAll(async () => {
+        rpc = createRpc();
+        payer = await newAccountWithLamports(rpc, 10e9);
+        mintAuthority = Keypair.generate();
+        const mintKeypair = Keypair.generate();
+
+        mint = (
+            await createMint(
+                rpc,
+                payer,
+                mintAuthority.publicKey,
+                TEST_TOKEN_DECIMALS,
+                mintKeypair,
+            )
+        ).mint;
+
+        stateTreeInfo = selectStateTreeInfo(await rpc.getStateTreeInfos());
+        tokenPoolInfos = await getTokenPoolInfos(rpc, mint);
+    }, 60_000);
+
+    describe('createLightTokenTransferInstruction', () => {
+        it('should create Light token transfer instruction with correct accounts', () => {
+            const source = Keypair.generate().publicKey;
+            const destination = Keypair.generate().publicKey;
+            const owner = Keypair.generate().publicKey;
+            const amount = BigInt(1000);
+
+            const ix = createLightTokenTransferInstruction(
+                source,
+                destination,
+                owner,
+                amount,
+            );
+
+            expect(ix.programId.equals(LIGHT_TOKEN_PROGRAM_ID)).toBe(true);
+            // 5 accounts: source, destination, owner, system_program, fee_payer
+            expect(ix.keys.length).toBe(5);
+            expect(ix.keys[0].pubkey.equals(source)).toBe(true);
+            expect(ix.keys[1].pubkey.equals(destination)).toBe(true);
+            expect(ix.keys[2].pubkey.equals(owner)).toBe(true);
+        });
+
+        it('should have owner as writable (pays for top-ups)', () => {
+            const source = Keypair.generate().publicKey;
+            const destination = Keypair.generate().publicKey;
+            const owner = Keypair.generate().publicKey;
+            const amount = BigInt(1000);
+
+            const ix = createLightTokenTransferInstruction(
+                source,
+                destination,
+                owner,
+                amount,
+            );
+
+            // 5 accounts: source, destination, owner, system_program, fee_payer
+            expect(ix.keys.length).toBe(5);
+            expect(ix.keys[2].pubkey.equals(owner)).toBe(true);
+            expect(ix.keys[2].isSigner).toBe(true);
+            expect(ix.keys[2].isWritable).toBe(true); // owner pays for top-ups
+            // fee_payer defaults to owner
+            expect(ix.keys[4].pubkey.equals(owner)).toBe(true);
+            expect(ix.keys[4].isWritable).toBe(true);
+        });
+    });
+
+    describe('createTransferInterfaceInstructions validation', () => {
+        it('should throw when amount is zero', async () => {
+            const sender = await newAccountWithLamports(rpc, 1e9);
+            const destination = getAssociatedTokenAddressInterface(
+                mint,
+                Keypair.generate().publicKey,
+            );
+
+            await expect(
+                createTransferInterfaceInstructions(
+                    rpc,
+                    payer.publicKey,
+                    mint,
+                    0,
+                    sender.publicKey,
+                    destination,
+                    TEST_TOKEN_DECIMALS,
+                ),
+            ).rejects.toThrow('Transfer amount must be greater than zero.');
+        });
+
+        it('should throw when amount is negative', async () => {
+            const sender = await newAccountWithLamports(rpc, 1e9);
+            const destination = getAssociatedTokenAddressInterface(
+                mint,
+                Keypair.generate().publicKey,
+            );
+
+            await expect(
+                createTransferInterfaceInstructions(
+                    rpc,
+                    payer.publicKey,
+                    mint,
+                    -100,
+                    sender.publicKey,
+                    destination,
+                    TEST_TOKEN_DECIMALS,
+                ),
+            ).rejects.toThrow('Transfer amount must be greater than zero.');
+        });
+    });
+
+    describe('transferToAccountInterface frozen sender', () => {
+        let splMintWithFreeze: PublicKey;
+        let freezeAuthority: Keypair;
+
+        beforeAll(async () => {
+            freezeAuthority = Keypair.generate();
+            const mintKeypair = Keypair.generate();
+            const { mint } = await createMint(
+                rpc,
+                payer,
+                mintAuthority.publicKey,
+                TEST_TOKEN_DECIMALS,
+                mintKeypair,
+                undefined,
+                TOKEN_PROGRAM_ID,
+                freezeAuthority.publicKey,
+            );
+            splMintWithFreeze = mint;
+        }, 60_000);
+
+        it('should throw when sender SPL token account is frozen', async () => {
+            const sender = await newAccountWithLamports(rpc, 2e9);
+            const recipient = Keypair.generate().publicKey;
+            const recipientSplAta = getAssociatedTokenAddressSync(
+                splMintWithFreeze,
+                recipient,
+                false,
+                TOKEN_PROGRAM_ID,
+                getAtaProgramId(TOKEN_PROGRAM_ID),
+            );
+
+            const senderSplAta = await createAssociatedTokenAccount(
+                rpc,
+                payer,
+                splMintWithFreeze,
+                sender.publicKey,
+                undefined,
+                TOKEN_PROGRAM_ID,
+            );
+
+            const mintIx = createMintToInstruction(
+                splMintWithFreeze,
+                senderSplAta,
+                mintAuthority.publicKey,
+                1000,
+            );
+            const { blockhash } = await rpc.getLatestBlockhash();
+            const mintTx = buildAndSignTx([mintIx], payer, blockhash, [
+                mintAuthority,
+            ]);
+            await sendAndConfirmTx(rpc, mintTx);
+
+            const freezeIx = createFreezeAccountInstruction(
+                senderSplAta,
+                splMintWithFreeze,
+                freezeAuthority.publicKey,
+            );
+            const freezeTx = buildAndSignTx(
+                [freezeIx],
+                payer,
+                await rpc.getLatestBlockhash().then(b => b.blockhash),
+                [freezeAuthority],
+            );
+            await sendAndConfirmTx(rpc, freezeTx);
+
+            await expect(
+                transferInterface(
+                    rpc,
+                    payer,
+                    senderSplAta,
+                    splMintWithFreeze,
+                    recipientSplAta,
+                    sender.publicKey,
+                    sender,
+                    BigInt(100),
+                    TOKEN_PROGRAM_ID,
+                ),
+            ).rejects.toThrow(/Account is frozen|transfer is not allowed/);
+        });
+
+        it('should throw when sender has frozen source (wrap=true unified path)', async () => {
+            const freezeAuthority = Keypair.generate();
+            const mintKeypair = Keypair.generate();
+            const { mint: freezableMint } = await createMint(
+                rpc,
+                payer,
+                mintAuthority.publicKey,
+                TEST_TOKEN_DECIMALS,
+                mintKeypair,
+                undefined,
+                TOKEN_PROGRAM_ID,
+                freezeAuthority.publicKey,
+            );
+            const freezablePoolInfos = await getTokenPoolInfos(
+                rpc,
+                freezableMint,
+            );
+
+            const sender = await newAccountWithLamports(rpc, 2e9);
+            const recipient = Keypair.generate().publicKey;
+
+            await mintTo(
+                rpc,
+                payer,
+                freezableMint,
+                sender.publicKey,
+                mintAuthority,
+                bn(1000),
+                stateTreeInfo,
+                selectTokenPoolInfo(freezablePoolInfos),
+            );
+            const senderAta = getAssociatedTokenAddressInterface(
+                freezableMint,
+                sender.publicKey,
+            );
+            await createAtaInterfaceIdempotent(
+                rpc,
+                payer,
+                freezableMint,
+                sender.publicKey,
+            );
+            await loadAta(rpc, senderAta, sender, freezableMint, payer);
+
+            const freezeIx = createLightTokenFreezeAccountInstruction(
+                senderAta,
+                freezableMint,
+                freezeAuthority.publicKey,
+            );
+            const { blockhash } = await rpc.getLatestBlockhash();
+            await sendAndConfirmTx(
+                rpc,
+                buildAndSignTx([freezeIx], payer, blockhash, [freezeAuthority]),
+            );
+
+            const recipientAta = getAssociatedTokenAddressInterface(
+                freezableMint,
+                recipient,
+            );
+            await expect(
+                createTransferInterfaceInstructions(
+                    rpc,
+                    payer.publicKey,
+                    freezableMint,
+                    BigInt(100),
+                    sender.publicKey,
+                    recipientAta,
+                    TEST_TOKEN_DECIMALS,
+                    { wrap: true },
+                ),
+            ).rejects.toThrow(/Account is frozen|transfer is not allowed/);
+
+            await expect(
+                transferInterface(
+                    rpc,
+                    payer,
+                    senderAta,
+                    freezableMint,
+                    recipientAta,
+                    sender.publicKey,
+                    sender,
+                    BigInt(100),
+                    LIGHT_TOKEN_PROGRAM_ID,
+                    undefined,
+                    { wrap: true },
+                ),
+            ).rejects.toThrow(/Account is frozen|transfer is not allowed/);
+        });
+    });
+
+    describe('transferToAccountInterface as delegate', () => {
+        it('should transfer from hot ATA when delegate is approved on ATA', async () => {
+            const owner = await newAccountWithLamports(rpc, 2e9);
+            const delegate = await newAccountWithLamports(rpc, 2e9);
+            const recipient = Keypair.generate();
+
+            await mintTo(
+                rpc,
+                payer,
+                mint,
+                owner.publicKey,
+                mintAuthority,
+                bn(1500),
+                stateTreeInfo,
+                selectTokenPoolInfo(tokenPoolInfos),
+            );
+
+            const sourceAta = getAssociatedTokenAddressInterface(
+                mint,
+                owner.publicKey,
+            );
+
+            await loadAta(rpc, sourceAta, owner, mint, payer);
+
+            const approveIx = createApproveInstruction(
+                sourceAta,
+                delegate.publicKey,
+                owner.publicKey,
+                BigInt(1000),
+                [],
+                LIGHT_TOKEN_PROGRAM_ID,
+            );
+            const { blockhash: bh } = await rpc.getLatestBlockhash();
+            const approveTx = buildAndSignTx(
+                [approveIx],
+                payer,
+                bh,
+                dedupeSigner(payer, [owner]),
+            );
+            await sendAndConfirmTx(rpc, approveTx);
+
+            await getOrCreateAtaInterface(
+                rpc,
+                payer,
+                mint,
+                recipient.publicKey,
+            );
+
+            const recipientAta = getAssociatedTokenAddressInterface(
+                mint,
+                recipient.publicKey,
+            );
+            const signature = await transferInterface(
+                rpc,
+                payer,
+                sourceAta,
+                mint,
+                recipientAta,
+                owner.publicKey,
+                delegate,
+                BigInt(500),
+                LIGHT_TOKEN_PROGRAM_ID,
+                undefined,
+            );
+            expect(signature).toBeDefined();
+            const recipientInfo = await rpc.getAccountInfo(recipientAta);
+            expect(recipientInfo).not.toBeNull();
+            const recipientBalance = recipientInfo!.data.readBigUInt64LE(64);
+            expect(recipientBalance).toBe(BigInt(500));
+        });
+
+        it('delegate transfer planning from cold sources builds instructions', async () => {
+            const owner = await newAccountWithLamports(rpc, 2e9);
+            const delegate = await newAccountWithLamports(rpc, 2e9);
+            const recipient = Keypair.generate().publicKey;
+
+            await mintTo(
+                rpc,
+                payer,
+                mint,
+                owner.publicKey,
+                mintAuthority,
+                bn(1500),
+                stateTreeInfo,
+                selectTokenPoolInfo(tokenPoolInfos),
+            );
+            await approve(
+                rpc,
+                payer,
+                mint,
+                bn(1500),
+                owner,
+                delegate.publicKey,
+            );
+
+            const recipientAta = getAssociatedTokenAddressInterface(
+                mint,
+                recipient,
+            );
+            const batches = await createTransferInterfaceInstructions(
+                rpc,
+                payer.publicKey,
+                mint,
+                BigInt(500),
+                owner.publicKey,
+                recipientAta,
+                TEST_TOKEN_DECIMALS,
+                { delegatePubkey: delegate.publicKey },
+            );
+
+            expect(batches.length).toBeGreaterThan(0);
+            expect(batches[batches.length - 1].length).toBeGreaterThan(0);
+        });
+
+        it('delegate transfer from cold approve-style sources fails on-chain (no CompressedOnly extension)', async () => {
+            const owner = await newAccountWithLamports(rpc, 2e9);
+            const delegate = await newAccountWithLamports(rpc, 2e9);
+            const recipient = Keypair.generate();
+
+            await mintTo(
+                rpc,
+                payer,
+                mint,
+                owner.publicKey,
+                mintAuthority,
+                bn(1500),
+                stateTreeInfo,
+                selectTokenPoolInfo(tokenPoolInfos),
+            );
+            await approve(
+                rpc,
+                payer,
+                mint,
+                bn(1500),
+                owner,
+                delegate.publicKey,
+            );
+
+            const sourceAta = getAssociatedTokenAddressInterface(
+                mint,
+                owner.publicKey,
+            );
+            await getOrCreateAtaInterface(
+                rpc,
+                payer,
+                mint,
+                recipient.publicKey,
+            );
+
+            const recipientAta = getAssociatedTokenAddressInterface(
+                mint,
+                recipient.publicKey,
+            );
+            await expect(
+                transferInterface(
+                    rpc,
+                    payer,
+                    sourceAta,
+                    mint,
+                    recipientAta,
+                    owner.publicKey,
+                    delegate,
+                    BigInt(700),
+                    LIGHT_TOKEN_PROGRAM_ID,
+                    undefined,
+                ),
+            ).rejects.toThrow();
+        }, 120_000);
+
+        it('createTransferInterfaceInstructions throws when signer is not owner or delegate', async () => {
+            const owner = await newAccountWithLamports(rpc, 1e9);
+            const delegate = await newAccountWithLamports(rpc, 1e9);
+            const other = Keypair.generate().publicKey;
+            const recipient = Keypair.generate().publicKey;
+
+            await mintTo(
+                rpc,
+                payer,
+                mint,
+                owner.publicKey,
+                mintAuthority,
+                bn(500),
+                stateTreeInfo,
+                selectTokenPoolInfo(tokenPoolInfos),
+            );
+            await approve(rpc, payer, mint, bn(500), owner, delegate.publicKey);
+
+            const recipientAta = getAssociatedTokenAddressInterface(
+                mint,
+                recipient,
+            );
+            await expect(
+                createTransferInterfaceInstructions(
+                    rpc,
+                    payer.publicKey,
+                    mint,
+                    BigInt(100),
+                    owner.publicKey,
+                    recipientAta,
+                    TEST_TOKEN_DECIMALS,
+                    { delegatePubkey: other },
+                ),
+            ).rejects.toThrow(/Signer is not the owner or a delegate/);
+        });
+
+        it('createTransferInterfaceInstructions throws when delegate has insufficient delegated balance', async () => {
+            const owner = await newAccountWithLamports(rpc, 1e9);
+            const delegate = await newAccountWithLamports(rpc, 1e9);
+            const recipient = Keypair.generate().publicKey;
+            const recipientAta = getAssociatedTokenAddressInterface(
+                mint,
+                recipient,
+            );
+
+            await mintTo(
+                rpc,
+                payer,
+                mint,
+                owner.publicKey,
+                mintAuthority,
+                bn(500),
+                stateTreeInfo,
+                selectTokenPoolInfo(tokenPoolInfos),
+            );
+            await approve(rpc, payer, mint, bn(300), owner, delegate.publicKey);
+
+            await expect(
+                createTransferInterfaceInstructions(
+                    rpc,
+                    payer.publicKey,
+                    mint,
+                    BigInt(500),
+                    owner.publicKey,
+                    recipientAta,
+                    TEST_TOKEN_DECIMALS,
+                    { delegatePubkey: delegate.publicKey },
+                ),
+            ).rejects.toThrow(/Insufficient delegated balance/);
+        });
+    });
+
+    describe('createLoadAtaInstructions', () => {
+        it('should return empty when no balances to load (idempotent)', async () => {
+            const owner = Keypair.generate();
+            const ata = getAssociatedTokenAddressInterface(
+                mint,
+                owner.publicKey,
+            );
+
+            const batches = await createLoadAtaInstructions(
+                rpc,
+                ata,
+                owner.publicKey,
+                mint,
+                TEST_TOKEN_DECIMALS,
+                payer.publicKey,
+            );
+
+            expect(batches.length).toBe(0);
+        });
+
+        it('should build load instructions for compressed balance', async () => {
+            const owner = Keypair.generate();
+
+            // Mint compressed tokens
+            await mintTo(
+                rpc,
+                payer,
+                mint,
+                owner.publicKey,
+                mintAuthority,
+                bn(1000),
+                stateTreeInfo,
+                selectTokenPoolInfo(tokenPoolInfos),
+            );
+
+            const ata = getAssociatedTokenAddressInterface(
+                mint,
+                owner.publicKey,
+            );
+            const batches = await createLoadAtaInstructions(
+                rpc,
+                ata,
+                owner.publicKey,
+                mint,
+                TEST_TOKEN_DECIMALS,
+            );
+
+            expect(batches.length).toBeGreaterThan(0);
+        });
+
+        it('should load ALL compressed accounts', async () => {
+            const owner = Keypair.generate();
+
+            // Mint multiple compressed token accounts
+            await mintTo(
+                rpc,
+                payer,
+                mint,
+                owner.publicKey,
+                mintAuthority,
+                bn(500),
+                stateTreeInfo,
+                selectTokenPoolInfo(tokenPoolInfos),
+            );
+            await mintTo(
+                rpc,
+                payer,
+                mint,
+                owner.publicKey,
+                mintAuthority,
+                bn(300),
+                stateTreeInfo,
+                selectTokenPoolInfo(tokenPoolInfos),
+            );
+
+            const ata = getAssociatedTokenAddressInterface(
+                mint,
+                owner.publicKey,
+            );
+            const batches = await createLoadAtaInstructions(
+                rpc,
+                ata,
+                owner.publicKey,
+                mint,
+                TEST_TOKEN_DECIMALS,
+            );
+
+            expect(batches.length).toBeGreaterThan(0);
+        });
+    });
+
+    describe('loadAta action', () => {
+        it('should return null when nothing to load (idempotent)', async () => {
+            const owner = await newAccountWithLamports(rpc, 1e9);
+            const ata = getAssociatedTokenAddressInterface(
+                mint,
+                owner.publicKey,
+            );
+
+            const signature = await loadAta(rpc, ata, owner, mint);
+
+            expect(signature).toBeNull();
+        });
+
+        it('should execute load and return signature', async () => {
+            const owner = await newAccountWithLamports(rpc, 1e9);
+
+            // Mint compressed tokens
+            await mintTo(
+                rpc,
+                payer,
+                mint,
+                owner.publicKey,
+                mintAuthority,
+                bn(2000),
+                stateTreeInfo,
+                selectTokenPoolInfo(tokenPoolInfos),
+            );
+
+            const ata = getAssociatedTokenAddressInterface(
+                mint,
+                owner.publicKey,
+            );
+            const signature = await loadAta(rpc, ata, owner, mint);
+
+            expect(signature).not.toBeNull();
+            expect(typeof signature).toBe('string');
+
+            // Verify hot balance increased
+            const lightTokenAta = getAssociatedTokenAddressInterface(
+                mint,
+                owner.publicKey,
+            );
+            const ataInfo = await rpc.getAccountInfo(lightTokenAta);
+            expect(ataInfo).not.toBeNull();
+            const hotBalance = ataInfo!.data.readBigUInt64LE(64);
+            expect(hotBalance).toBe(BigInt(2000));
+        });
+    });
+
+    describe('transferToAccountInterface action', () => {
+        it('should transfer from hot balance (destination exists)', async () => {
+            const sender = await newAccountWithLamports(rpc, 1e9);
+            const recipient = Keypair.generate();
+
+            // Mint and load sender
+            await mintTo(
+                rpc,
+                payer,
+                mint,
+                sender.publicKey,
+                mintAuthority,
+                bn(5000),
+                stateTreeInfo,
+                selectTokenPoolInfo(tokenPoolInfos),
+            );
+            const senderAta = getAssociatedTokenAddressInterface(
+                mint,
+                sender.publicKey,
+            );
+            await loadAta(rpc, senderAta, sender, mint);
+
+            // Create recipient ATA first (like SPL Token flow)
+            const recipientAta = await getOrCreateAtaInterface(
+                rpc,
+                payer,
+                mint,
+                recipient.publicKey,
+            );
+
+            const sourceAta = getAssociatedTokenAddressInterface(
+                mint,
+                sender.publicKey,
+            );
+
+            const signature = await transferInterface(
+                rpc,
+                payer,
+                sourceAta,
+                mint,
+                recipientAta.parsed.address,
+                sender.publicKey,
+                sender,
+                BigInt(1000),
+            );
+
+            expect(signature).toBeDefined();
+
+            const senderAtaInfo = await rpc.getAccountInfo(sourceAta);
+            const senderBalance = senderAtaInfo!.data.readBigUInt64LE(64);
+            expect(senderBalance).toBe(BigInt(4000));
+
+            const recipientAtaInfo = await rpc.getAccountInfo(
+                recipientAta.parsed.address,
+            );
+            const recipientBalance = recipientAtaInfo!.data.readBigUInt64LE(64);
+            expect(recipientBalance).toBe(BigInt(1000));
+        });
+
+        it('should auto-load sender when transferring from cold', async () => {
+            const sender = await newAccountWithLamports(rpc, 1e9);
+            const recipient = Keypair.generate();
+
+            // Mint compressed tokens (cold) - don't load
+            await mintTo(
+                rpc,
+                payer,
+                mint,
+                sender.publicKey,
+                mintAuthority,
+                bn(3000),
+                stateTreeInfo,
+                selectTokenPoolInfo(tokenPoolInfos),
+            );
+
+            // Create recipient ATA first
+            const recipientAta = await getOrCreateAtaInterface(
+                rpc,
+                payer,
+                mint,
+                recipient.publicKey,
+            );
+
+            const sourceAta = getAssociatedTokenAddressInterface(
+                mint,
+                sender.publicKey,
+            );
+
+            const signature = await transferInterface(
+                rpc,
+                payer,
+                sourceAta,
+                mint,
+                recipientAta.parsed.address,
+                sender.publicKey,
+                sender,
+                BigInt(2000),
+                undefined,
+                undefined,
+                { splInterfaceInfos: tokenPoolInfos },
+            );
+
+            expect(signature).toBeDefined();
+
+            const recipientAtaInfo = await rpc.getAccountInfo(
+                recipientAta.parsed.address,
+            );
+            const recipientBalance = recipientAtaInfo!.data.readBigUInt64LE(64);
+            expect(recipientBalance).toBe(BigInt(2000));
+
+            // Sender should have change (loaded all 3000, sent 2000)
+            const senderAtaInfo = await rpc.getAccountInfo(sourceAta);
+            const senderBalance = senderAtaInfo!.data.readBigUInt64LE(64);
+            expect(senderBalance).toBe(BigInt(1000));
+        });
+
+        it('should throw on source mismatch', async () => {
+            const sender = await newAccountWithLamports(rpc, 1e9);
+            const recipient = Keypair.generate();
+            const wrongSource = Keypair.generate().publicKey;
+
+            const recipientAta = await getOrCreateAtaInterface(
+                rpc,
+                payer,
+                mint,
+                recipient.publicKey,
+            );
+            await expect(
+                transferInterface(
+                    rpc,
+                    payer,
+                    wrongSource,
+                    mint,
+                    recipientAta.parsed.address,
+                    sender.publicKey,
+                    sender,
+                    BigInt(100),
+                ),
+            ).rejects.toThrow('Source mismatch');
+        });
+
+        it('should throw on insufficient balance', async () => {
+            const sender = await newAccountWithLamports(rpc, 1e9);
+            const recipient = Keypair.generate();
+
+            // Mint small amount
+            await mintTo(
+                rpc,
+                payer,
+                mint,
+                sender.publicKey,
+                mintAuthority,
+                bn(100),
+                stateTreeInfo,
+                selectTokenPoolInfo(tokenPoolInfos),
+            );
+
+            const recipientAta = await getOrCreateAtaInterface(
+                rpc,
+                payer,
+                mint,
+                recipient.publicKey,
+            );
+
+            const sourceAta = getAssociatedTokenAddressInterface(
+                mint,
+                sender.publicKey,
+            );
+            await expect(
+                transferInterface(
+                    rpc,
+                    payer,
+                    sourceAta,
+                    mint,
+                    recipientAta.parsed.address,
+                    sender.publicKey,
+                    sender,
+                    BigInt(99999),
+                    undefined,
+                    undefined,
+                    { splInterfaceInfos: tokenPoolInfos },
+                ),
+            ).rejects.toThrow('Insufficient balance');
+        });
+
+        it('should work when both sender and recipient have existing ATAs', async () => {
+            const sender = await newAccountWithLamports(rpc, 1e9);
+            const recipient = await newAccountWithLamports(rpc, 1e9);
+
+            // Setup sender with hot balance
+            await mintTo(
+                rpc,
+                payer,
+                mint,
+                sender.publicKey,
+                mintAuthority,
+                bn(5000),
+                stateTreeInfo,
+                selectTokenPoolInfo(tokenPoolInfos),
+            );
+            const senderAta2 = getAssociatedTokenAddressInterface(
+                mint,
+                sender.publicKey,
+            );
+            await loadAta(rpc, senderAta2, sender, mint);
+
+            // Setup recipient with existing ATA and balance
+            await mintTo(
+                rpc,
+                payer,
+                mint,
+                recipient.publicKey,
+                mintAuthority,
+                bn(1000),
+                stateTreeInfo,
+                selectTokenPoolInfo(tokenPoolInfos),
+            );
+            const recipientAta2 = getAssociatedTokenAddressInterface(
+                mint,
+                recipient.publicKey,
+            );
+            await loadAta(
+                rpc,
+                recipientAta2,
+                recipient,
+                mint,
+                undefined,
+                undefined,
+                {
+                    splInterfaceInfos: tokenPoolInfos,
+                },
+            );
+
+            const sourceAta = getAssociatedTokenAddressInterface(
+                mint,
+                sender.publicKey,
+            );
+            const destAta = getAssociatedTokenAddressInterface(
+                mint,
+                recipient.publicKey,
+            );
+
+            const recipientBalanceBefore = (await rpc.getAccountInfo(
+                destAta,
+            ))!.data.readBigUInt64LE(64);
+
+            const recipientAta = getAssociatedTokenAddressInterface(
+                mint,
+                recipient.publicKey,
+            );
+            await transferInterface(
+                rpc,
+                payer,
+                sourceAta,
+                mint,
+                recipientAta,
+                sender.publicKey,
+                sender,
+                BigInt(500),
+            );
+
+            // Verify recipient balance increased
+            const recipientBalanceAfter = (await rpc.getAccountInfo(
+                destAta,
+            ))!.data.readBigUInt64LE(64);
+            expect(recipientBalanceAfter).toBe(
+                recipientBalanceBefore + BigInt(500),
+            );
+        });
+
+        it('should succeed when transferring minimum amount (1)', async () => {
+            const sender = await newAccountWithLamports(rpc, 1e9);
+            const recipient = Keypair.generate();
+
+            await mintTo(
+                rpc,
+                payer,
+                mint,
+                sender.publicKey,
+                mintAuthority,
+                bn(100),
+                stateTreeInfo,
+                selectTokenPoolInfo(tokenPoolInfos),
+            );
+            const senderAta = getAssociatedTokenAddressInterface(
+                mint,
+                sender.publicKey,
+            );
+            await loadAta(rpc, senderAta, sender, mint);
+
+            const recipientAta = await getOrCreateAtaInterface(
+                rpc,
+                payer,
+                mint,
+                recipient.publicKey,
+            );
+            const sig = await transferInterface(
+                rpc,
+                payer,
+                senderAta,
+                mint,
+                recipientAta.parsed.address,
+                sender.publicKey,
+                sender,
+                BigInt(1),
+            );
+            expect(sig).toBeDefined();
+
+            const senderInfo = await rpc.getAccountInfo(senderAta);
+            expect(senderInfo!.data.readBigUInt64LE(64)).toBe(BigInt(99));
+
+            const recipientInfo = await rpc.getAccountInfo(
+                recipientAta.parsed.address,
+            );
+            expect(recipientInfo!.data.readBigUInt64LE(64)).toBe(BigInt(1));
+        });
+
+        it('should succeed on self-transfer (sender === recipient) with balance unchanged', async () => {
+            const owner = await newAccountWithLamports(rpc, 1e9);
+
+            await mintTo(
+                rpc,
+                payer,
+                mint,
+                owner.publicKey,
+                mintAuthority,
+                bn(2000),
+                stateTreeInfo,
+                selectTokenPoolInfo(tokenPoolInfos),
+            );
+            const ownerAta = getAssociatedTokenAddressInterface(
+                mint,
+                owner.publicKey,
+            );
+            await loadAta(rpc, ownerAta, owner, mint);
+
+            await getOrCreateAtaInterface(rpc, payer, mint, owner.publicKey);
+
+            const balanceBefore = (await rpc.getAccountInfo(
+                ownerAta,
+            ))!.data.readBigUInt64LE(64);
+
+            const ownerAtaDest = getAssociatedTokenAddressInterface(
+                mint,
+                owner.publicKey,
+            );
+            const sig = await transferInterface(
+                rpc,
+                payer,
+                ownerAta,
+                mint,
+                ownerAtaDest,
+                owner.publicKey,
+                owner,
+                BigInt(100),
+            );
+            expect(sig).toBeDefined();
+
+            const balanceAfter = (await rpc.getAccountInfo(
+                ownerAta,
+            ))!.data.readBigUInt64LE(64);
+            expect(balanceAfter).toBe(balanceBefore);
+        });
+
+        it('should verify ATA is funded for 24h at creation', async () => {
+            const sender = await newAccountWithLamports(rpc, 1e9);
+            const recipient = Keypair.generate();
+
+            // Mint and load sender
+            await mintTo(
+                rpc,
+                payer,
+                mint,
+                sender.publicKey,
+                mintAuthority,
+                bn(5000),
+                stateTreeInfo,
+                selectTokenPoolInfo(tokenPoolInfos),
+            );
+            const senderAta = getAssociatedTokenAddressInterface(
+                mint,
+                sender.publicKey,
+            );
+            await loadAta(rpc, senderAta, sender, mint);
+
+            // Get rent sponsor and payer balances before creating recipient ATA
+            const rentSponsorBalanceBefore = await rpc.getBalance(
+                LIGHT_TOKEN_RENT_SPONSOR,
+            );
+            const payerBalanceBefore = await rpc.getBalance(payer.publicKey);
+
+            // Create recipient ATA (through getOrCreate)
+            const recipientAta = await getOrCreateAtaInterface(
+                rpc,
+                payer,
+                mint,
+                recipient.publicKey,
+            );
+
+            // Get balances after ATA creation
+            const rentSponsorBalanceAfter = await rpc.getBalance(
+                LIGHT_TOKEN_RENT_SPONSOR,
+            );
+            const payerBalanceAfter = await rpc.getBalance(payer.publicKey);
+            const recipientAtaBalance = await rpc.getBalance(
+                recipientAta.parsed.address,
+            );
+
+            // 1) Rent sponsor pays rent exemption (~890,880 lamports)
+            const rentSponsorDiff =
+                rentSponsorBalanceBefore - rentSponsorBalanceAfter;
+            expect(rentSponsorDiff).toBeGreaterThan(800_000);
+
+            // 2) Fee payer pays compression_cost (11K) + 16 epochs rent + tx fees
+            const payerDiff = payerBalanceBefore - payerBalanceAfter;
+
+            // 3) Verify ATA has correct balance (rent_exemption + working capital)
+            const accountInfo = await rpc.getAccountInfo(
+                recipientAta.parsed.address,
+            );
+            const accountDataLength = accountInfo!.data.length;
+            const rentExemption =
+                await rpc.getMinimumBalanceForRentExemption(accountDataLength);
+
+            // Calculate expected prepaid rent using ACTUAL account size
+            const actualRentPerEpoch = 128 + accountDataLength; // base_rent + bytes * 1
+            const expectedPrepaidRent =
+                DEFAULT_PREPAY_EPOCHS * actualRentPerEpoch;
+            const expectedFeePayerCost =
+                TOTAL_COMPRESSION_COST + expectedPrepaidRent;
+
+            expect(payerDiff).toBeGreaterThanOrEqual(expectedFeePayerCost);
+            expect(payerDiff).toBeLessThan(expectedFeePayerCost + 20_000); // Allow for tx fees
+
+            const expectedAtaBalance =
+                rentExemption + TOTAL_COMPRESSION_COST + expectedPrepaidRent;
+
+            // ATA balance should EXACTLY match (no tolerance needed when using actual size)
+            expect(recipientAtaBalance).toBe(expectedAtaBalance);
+        });
+    });
+
+    describe('new transferInterface recipient-owner behavior', () => {
+        it('createTransferInterfaceInstructions derives recipient ATA and includes ATA create', async () => {
+            const sender = await newAccountWithLamports(rpc, 1e9);
+            const recipient = Keypair.generate();
+
+            await mintTo(
+                rpc,
+                payer,
+                mint,
+                sender.publicKey,
+                mintAuthority,
+                bn(1000),
+                stateTreeInfo,
+                selectTokenPoolInfo(tokenPoolInfos),
+            );
+            const senderAta = getAssociatedTokenAddressInterface(
+                mint,
+                sender.publicKey,
+            );
+            await loadAta(rpc, senderAta, sender, mint);
+
+            const recipientAta = getAssociatedTokenAddressInterface(
+                mint,
+                recipient.publicKey,
+            );
+
+            const batches = await createTransferToRecipientInstructions(
+                rpc,
+                payer.publicKey,
+                mint,
+                BigInt(100),
+                sender.publicKey,
+                recipient.publicKey,
+                TEST_TOKEN_DECIMALS,
+            );
+            const transferBatch = batches[batches.length - 1];
+            const hasRecipientAtaCreate = transferBatch.some(ix =>
+                ix.keys.some(k => k.pubkey.equals(recipientAta)),
+            );
+            expect(hasRecipientAtaCreate).toBe(true);
+        });
+
+        it('transferInterface succeeds without pre-creating recipient ATA', async () => {
+            const sender = await newAccountWithLamports(rpc, 1e9);
+            const recipient = Keypair.generate();
+
+            await mintTo(
+                rpc,
+                payer,
+                mint,
+                sender.publicKey,
+                mintAuthority,
+                bn(1000),
+                stateTreeInfo,
+                selectTokenPoolInfo(tokenPoolInfos),
+            );
+            const senderAta = getAssociatedTokenAddressInterface(
+                mint,
+                sender.publicKey,
+            );
+            await loadAta(rpc, senderAta, sender, mint);
+
+            const signature = await transferToRecipientInterface(
+                rpc,
+                payer,
+                senderAta,
+                mint,
+                recipient.publicKey,
+                sender.publicKey,
+                sender,
+                BigInt(250),
+            );
+            expect(signature).toBeDefined();
+
+            const recipientAta = getAssociatedTokenAddressInterface(
+                mint,
+                recipient.publicKey,
+            );
+            const recipientInfo = await rpc.getAccountInfo(recipientAta);
+            expect(recipientInfo).not.toBeNull();
+            expect(recipientInfo!.data.readBigUInt64LE(64)).toBe(BigInt(250));
+        });
+    });
+
+    // ================================================================
+    // H7: wrap=true + programId=TOKEN_PROGRAM_ID
+    // isSplOrT22 && !wrap is false → would route to light-token transfer path,
+    // but _buildLoadBatches rejects a non-light-token targetAta when wrap=true.
+    // ================================================================
+    describe('H7: transferToAccountInterface wrap=true + programId=TOKEN_PROGRAM_ID', () => {
+        it('should throw when wrap=true is combined with programId=TOKEN_PROGRAM_ID (targetAta is SPL)', async () => {
+            const sender = await newAccountWithLamports(rpc, 2e9);
+            const recipient = Keypair.generate();
+
+            // Mint compressed tokens and decompress to SPL ATA so the sender has SPL hot balance
+            await mintTo(
+                rpc,
+                payer,
+                mint,
+                sender.publicKey,
+                mintAuthority,
+                bn(2000),
+                stateTreeInfo,
+                selectTokenPoolInfo(tokenPoolInfos),
+            );
+
+            const senderSplAta = getAssociatedTokenAddressSync(
+                mint,
+                sender.publicKey,
+                false,
+                TOKEN_PROGRAM_ID,
+                getAtaProgramId(TOKEN_PROGRAM_ID),
+            );
+            await loadAta(rpc, senderSplAta, sender, mint, payer, undefined, {
+                splInterfaceInfos: tokenPoolInfos,
+            });
+
+            const recipientAta = getAssociatedTokenAddressInterface(
+                mint,
+                recipient.publicKey,
+            );
+            await expect(
+                transferInterface(
+                    rpc,
+                    payer,
+                    senderSplAta,
+                    mint,
+                    recipient.publicKey,
+                    sender.publicKey,
+                    sender,
+                    BigInt(500),
+                    TOKEN_PROGRAM_ID,
+                    undefined,
+                    { splInterfaceInfos: tokenPoolInfos, wrap: true },
+                ),
+            ).rejects.toThrow(/For wrap=true, ata must be the light-token ATA/);
+        }, 120_000);
+    });
+
+    // ================================================================
+    // H8: partially frozen cold sources, hot is unfrozen
+    // Full e2e requires a freeze-compressed-account SDK operation which is
+    // not yet exposed. The tests below cover what can be verified without it:
+    // - hot-only sender with insufficient balance reports no frozen note
+    // - unfrozen cold load path works correctly (covered by auto-load test)
+    // ================================================================
+    describe('H8: unfrozen balance calc – frozen balance note in error', () => {
+        it('should report no frozen note when all sources are unfrozen and balance is insufficient', async () => {
+            const sender = await newAccountWithLamports(rpc, 1e9);
+            const recipient = Keypair.generate();
+
+            await mintTo(
+                rpc,
+                payer,
+                mint,
+                sender.publicKey,
+                mintAuthority,
+                bn(100),
+                stateTreeInfo,
+                selectTokenPoolInfo(tokenPoolInfos),
+            );
+
+            const senderAta = getAssociatedTokenAddressInterface(
+                mint,
+                sender.publicKey,
+            );
+            await loadAta(rpc, senderAta, sender, mint);
+
+            const recipientAta = getAssociatedTokenAddressInterface(
+                mint,
+                recipient.publicKey,
+            );
+            await expect(
+                createTransferInterfaceInstructions(
+                    rpc,
+                    payer.publicKey,
+                    mint,
+                    BigInt(99_999),
+                    sender.publicKey,
+                    recipientAta,
+                    TEST_TOKEN_DECIMALS,
+                ),
+            ).rejects.toThrow(
+                /Insufficient balance.*Required: 99999.*Available: 100$/,
+            );
+        }, 90_000);
+
+        it('should succeed transferring exactly the unfrozen balance (cold-only, no frozen)', async () => {
+            const sender = await newAccountWithLamports(rpc, 1e9);
+            const recipient = Keypair.generate();
+
+            await mintTo(
+                rpc,
+                payer,
+                mint,
+                sender.publicKey,
+                mintAuthority,
+                bn(1500),
+                stateTreeInfo,
+                selectTokenPoolInfo(tokenPoolInfos),
+            );
+
+            const senderAta = getAssociatedTokenAddressInterface(
+                mint,
+                sender.publicKey,
+            );
+            const recipientAta = getAssociatedTokenAddressInterface(
+                mint,
+                recipient.publicKey,
+            );
+
+            const batches = await createTransferInterfaceInstructions(
+                rpc,
+                payer.publicKey,
+                mint,
+                BigInt(1500),
+                sender.publicKey,
+                recipientAta,
+                TEST_TOKEN_DECIMALS,
+            );
+            const loads = batches.slice(0, -1);
+            const transferIxs = batches.at(-1)!;
+            const createRecipientIx =
+                createAssociatedTokenAccountInterfaceIdempotentInstruction(
+                    payer.publicKey,
+                    recipientAta,
+                    recipient.publicKey,
+                    mint,
+                    LIGHT_TOKEN_PROGRAM_ID,
+                );
+            const transferTxIxs = [
+                transferIxs[0],
+                createRecipientIx,
+                ...transferIxs.slice(1),
+            ];
+
+            const additionalSigners = dedupeSigner(payer, [sender]);
+            await Promise.all(
+                loads.map(async ixs => {
+                    const { blockhash } = await rpc.getLatestBlockhash();
+                    const tx = buildAndSignTx(
+                        ixs,
+                        payer,
+                        blockhash,
+                        additionalSigners,
+                    );
+                    return sendAndConfirmTx(rpc, tx);
+                }),
+            );
+            const { blockhash } = await rpc.getLatestBlockhash();
+            const tx = buildAndSignTx(
+                transferTxIxs,
+                payer,
+                blockhash,
+                additionalSigners,
+            );
+            const signature = await sendAndConfirmTx(rpc, tx);
+
+            expect(signature).toBeDefined();
+
+            const recipientBalance = (await rpc.getAccountInfo(
+                recipientAta,
+            ))!.data.readBigUInt64LE(64);
+            expect(recipientBalance).toBe(BigInt(1500));
+        }, 120_000);
+    });
+
+    // ================================================================
+    // SPL/T22 NO-WRAP TRANSFER (programId=TOKEN_PROGRAM_ID, wrap=false)
+    // ================================================================
+    describe('transferToAccountInterface with SPL programId (no-wrap)', () => {
+        it('should transfer cold-only via SPL (decompress + SPL transferChecked)', async () => {
+            const sender = await newAccountWithLamports(rpc, 2e9);
+            const recipient = await newAccountWithLamports(rpc, 1e9);
+
+            // Mint compressed tokens (cold)
+            await mintTo(
+                rpc,
+                payer,
+                mint,
+                sender.publicKey,
+                mintAuthority,
+                bn(5000),
+                stateTreeInfo,
+                selectTokenPoolInfo(tokenPoolInfos),
+            );
+
+            // Derive SPL ATAs (not light-token ATAs)
+            const senderSplAta = getAssociatedTokenAddressSync(
+                mint,
+                sender.publicKey,
+                false,
+                TOKEN_PROGRAM_ID,
+                getAtaProgramId(TOKEN_PROGRAM_ID),
+            );
+            const recipientSplAta = getAssociatedTokenAddressSync(
+                mint,
+                recipient.publicKey,
+                false,
+                TOKEN_PROGRAM_ID,
+                getAtaProgramId(TOKEN_PROGRAM_ID),
+            );
+            await createAssociatedTokenAccount(
+                rpc,
+                payer,
+                mint,
+                recipient.publicKey,
+                undefined,
+                TOKEN_PROGRAM_ID,
+            );
+
+            const signature = await transferInterface(
+                rpc,
+                payer,
+                senderSplAta,
+                mint,
+                recipientSplAta,
+                sender.publicKey,
+                sender,
+                BigInt(2000),
+                TOKEN_PROGRAM_ID,
+                undefined,
+                { splInterfaceInfos: tokenPoolInfos },
+            );
+
+            expect(signature).toBeDefined();
+
+            // Verify recipient SPL ATA has tokens
+            const recipientAccount = await getAccount(
+                rpc,
+                recipientSplAta,
+                undefined,
+                TOKEN_PROGRAM_ID,
+            );
+            expect(recipientAccount.amount).toBe(BigInt(2000));
+
+            // Verify sender SPL ATA has remaining tokens
+            const senderAccount = await getAccount(
+                rpc,
+                senderSplAta,
+                undefined,
+                TOKEN_PROGRAM_ID,
+            );
+            expect(senderAccount.amount).toBe(BigInt(3000));
+        }, 120_000);
+
+        it('should build SPL transfer instructions via createTransferInterfaceInstructions', async () => {
+            const sender = await newAccountWithLamports(rpc, 2e9);
+            const recipient = Keypair.generate();
+            const recipientSplAta = getAssociatedTokenAddressSync(
+                mint,
+                recipient.publicKey,
+                false,
+                TOKEN_PROGRAM_ID,
+                getAtaProgramId(TOKEN_PROGRAM_ID),
+            );
+            await createAssociatedTokenAccount(
+                rpc,
+                payer,
+                mint,
+                recipient.publicKey,
+                undefined,
+                TOKEN_PROGRAM_ID,
+            );
+
+            // Mint compressed tokens (cold)
+            await mintTo(
+                rpc,
+                payer,
+                mint,
+                sender.publicKey,
+                mintAuthority,
+                bn(3000),
+                stateTreeInfo,
+                selectTokenPoolInfo(tokenPoolInfos),
+            );
+
+            const batches = await createTransferInterfaceInstructions(
+                rpc,
+                payer.publicKey,
+                mint,
+                BigInt(1000),
+                sender.publicKey,
+                recipient.publicKey,
+                TEST_TOKEN_DECIMALS,
+                {
+                    splInterfaceInfos: tokenPoolInfos,
+                },
+                TOKEN_PROGRAM_ID,
+            );
+
+            // Should have at least one batch with the transfer
+            expect(batches.length).toBeGreaterThan(0);
+
+            // The last batch (transfer tx) should contain a SPL transferChecked
+            // instruction as its last ix (programId = TOKEN_PROGRAM_ID)
+            const transferBatch = batches[batches.length - 1];
+            const transferIx = transferBatch[transferBatch.length - 1];
+            expect(transferIx.programId.equals(TOKEN_PROGRAM_ID)).toBe(true);
+        }, 120_000);
+
+        it('should transfer hot-only SPL balance (no decompress needed)', async () => {
+            const sender = await newAccountWithLamports(rpc, 2e9);
+            const recipient = await newAccountWithLamports(rpc, 1e9);
+
+            // First: mint compressed and decompress to SPL ATA to get hot SPL balance
+            await mintTo(
+                rpc,
+                payer,
+                mint,
+                sender.publicKey,
+                mintAuthority,
+                bn(4000),
+                stateTreeInfo,
+                selectTokenPoolInfo(tokenPoolInfos),
+            );
+
+            const senderSplAta = getAssociatedTokenAddressSync(
+                mint,
+                sender.publicKey,
+                false,
+                TOKEN_PROGRAM_ID,
+                getAtaProgramId(TOKEN_PROGRAM_ID),
+            );
+
+            // Load to SPL ATA first (decompress)
+            await loadAta(rpc, senderSplAta, sender, mint, payer);
+
+            // Verify sender has hot SPL balance
+            const senderBefore = await getAccount(
+                rpc,
+                senderSplAta,
+                undefined,
+                TOKEN_PROGRAM_ID,
+            );
+            expect(senderBefore.amount).toBe(BigInt(4000));
+
+            const recipientSplAta = getAssociatedTokenAddressSync(
+                mint,
+                recipient.publicKey,
+                false,
+                TOKEN_PROGRAM_ID,
+                getAtaProgramId(TOKEN_PROGRAM_ID),
+            );
+            await createAssociatedTokenAccount(
+                rpc,
+                payer,
+                mint,
+                recipient.publicKey,
+                undefined,
+                TOKEN_PROGRAM_ID,
+            );
+            const signature = await transferInterface(
+                rpc,
+                payer,
+                senderSplAta,
+                mint,
+                recipientSplAta,
+                sender.publicKey,
+                sender,
+                BigInt(1500),
+                TOKEN_PROGRAM_ID,
+                undefined,
+                undefined,
+            );
+
+            expect(signature).toBeDefined();
+
+            const recipientAccount = await getAccount(
+                rpc,
+                recipientSplAta,
+                undefined,
+                TOKEN_PROGRAM_ID,
+            );
+            expect(recipientAccount.amount).toBe(BigInt(1500));
+
+            const senderAfter = await getAccount(
+                rpc,
+                senderSplAta,
+                undefined,
+                TOKEN_PROGRAM_ID,
+            );
+            expect(senderAfter.amount).toBe(BigInt(2500));
+        }, 120_000);
+    });
+
+    describe('transferInterface recipient-wallet with Token-2022 programId (no-wrap)', () => {
+        let t22Mint: PublicKey;
+        let t22TokenPoolInfos: TokenPoolInfo[];
+
+        beforeAll(async () => {
+            const mintKeypair = Keypair.generate();
+            const created = await createMint(
+                rpc,
+                payer,
+                mintAuthority.publicKey,
+                TEST_TOKEN_DECIMALS,
+                mintKeypair,
+                undefined,
+                TOKEN_2022_PROGRAM_ID,
+            );
+            t22Mint = created.mint;
+            t22TokenPoolInfos = await getTokenPoolInfos(rpc, t22Mint);
+        }, 60_000);
+
+        it('should build T22 transfer plan and include idempotent recipient ATA creation', async () => {
+            const sender = await newAccountWithLamports(rpc, 2e9);
+            const recipient = Keypair.generate();
+
+            await mintTo(
+                rpc,
+                payer,
+                t22Mint,
+                sender.publicKey,
+                mintAuthority,
+                bn(2200),
+                stateTreeInfo,
+                selectTokenPoolInfo(t22TokenPoolInfos),
+            );
+
+            const batches = await createTransferToRecipientInstructions(
+                rpc,
+                payer.publicKey,
+                t22Mint,
+                BigInt(700),
+                sender.publicKey,
+                recipient.publicKey,
+                TEST_TOKEN_DECIMALS,
+                {
+                    splInterfaceInfos: t22TokenPoolInfos,
+                },
+                TOKEN_2022_PROGRAM_ID,
+            );
+            expect(batches.length).toBeGreaterThan(0);
+
+            const recipientT22Ata = getAssociatedTokenAddressSync(
+                t22Mint,
+                recipient.publicKey,
+                false,
+                TOKEN_2022_PROGRAM_ID,
+                getAtaProgramId(TOKEN_2022_PROGRAM_ID),
+            );
+            const transferBatch = batches[batches.length - 1];
+            const hasRecipientAtaCreate = transferBatch.some(ix =>
+                ix.keys.some(k => k.pubkey.equals(recipientT22Ata)),
+            );
+            expect(hasRecipientAtaCreate).toBe(true);
+        }, 120_000);
+
+        it('should transfer to Token-2022 ATA without pre-creating recipient ATA', async () => {
+            const sender = await newAccountWithLamports(rpc, 2e9);
+            const recipient = await newAccountWithLamports(rpc, 1e9);
+
+            await mintTo(
+                rpc,
+                payer,
+                t22Mint,
+                sender.publicKey,
+                mintAuthority,
+                bn(3000),
+                stateTreeInfo,
+                selectTokenPoolInfo(t22TokenPoolInfos),
+            );
+
+            const senderT22Ata = getAssociatedTokenAddressSync(
+                t22Mint,
+                sender.publicKey,
+                false,
+                TOKEN_2022_PROGRAM_ID,
+                getAtaProgramId(TOKEN_2022_PROGRAM_ID),
+            );
+            const recipientT22Ata = getAssociatedTokenAddressSync(
+                t22Mint,
+                recipient.publicKey,
+                false,
+                TOKEN_2022_PROGRAM_ID,
+                getAtaProgramId(TOKEN_2022_PROGRAM_ID),
+            );
+
+            const signature = await transferToRecipientInterface(
+                rpc,
+                payer,
+                senderT22Ata,
+                t22Mint,
+                recipient.publicKey,
+                sender.publicKey,
+                sender,
+                BigInt(900),
+                TOKEN_2022_PROGRAM_ID,
+                undefined,
+                { splInterfaceInfos: t22TokenPoolInfos },
+            );
+            expect(signature).toBeDefined();
+
+            const recipientAccount = await getAccount(
+                rpc,
+                recipientT22Ata,
+                undefined,
+                TOKEN_2022_PROGRAM_ID,
+            );
+            expect(recipientAccount.amount).toBe(BigInt(900));
+        }, 120_000);
+    });
+});

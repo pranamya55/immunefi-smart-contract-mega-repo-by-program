@@ -1,0 +1,24 @@
+{
+  "url": "https://basescan.org/address/0x0490A477e4fc96392bDf1e2846E3230A1263a5D2",
+  "host": "basescan.org",
+  "address": "0x0490A477e4fc96392bDf1e2846E3230A1263a5D2",
+  "chainid": 8453,
+  "project_slug": "velvet-capital-v2",
+  "asset_id": "SC55oJNVKlitYxuUZNp0F",
+  "contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0xfc0c1eecf60d8dee2c56a1686798e7df4161f3a6",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 14,
+  "mode": "json-sources"
+}

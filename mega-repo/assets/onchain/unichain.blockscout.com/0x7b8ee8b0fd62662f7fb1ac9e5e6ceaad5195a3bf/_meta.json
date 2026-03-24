@@ -1,0 +1,25 @@
+{
+  "url": "https://unichain.blockscout.com/address/0x7B8ee8b0fD62662F7FB1ac9e5E6cEAad5195A3bF",
+  "host": "unichain.blockscout.com",
+  "address": "0x7B8ee8b0fD62662F7FB1ac9e5E6cEAad5195A3bF",
+  "chainid": null,
+  "project_slug": "sparklend",
+  "asset_id": "10cTJu0uZgnYEYAHUZ8IUs",
+  "contract_name": "OptimismReceiver",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": "0x0000000000000000000000003300f198988e4c9c63f75df86de36421f06af8c4000000000000000000000000b037c43b433964a2017cd689f535beb6b0531473",
+  "evm_version": "cancun",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:missing-chainid",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

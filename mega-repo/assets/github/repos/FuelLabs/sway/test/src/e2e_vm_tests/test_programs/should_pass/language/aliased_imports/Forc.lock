@@ -1,0 +1,8 @@
+[[package]]
+name = "aliased_imports"
+source = "member"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "path+from-root-2EBF01AEC6158688"

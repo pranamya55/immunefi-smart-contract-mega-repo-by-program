@@ -1,0 +1,19 @@
+{
+  "url": "https://etherscan.io/address/0xed6a08e05cb4260388dc7cc60bc5fefccfab2793",
+  "host": "etherscan.io",
+  "address": "0xed6a08e05cb4260388dc7cc60bc5fefccfab2793",
+  "chainid": 1,
+  "contract_name": "UniswapV3Adapter",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": "0",
+  "runs": "200",
+  "constructor_arguments": "00000000000000000000000031329024f1a3e4a4b3336e0b1dfa74cc3fec633e000000000000000000000000e592427a0aece92de3edee1f18e0157c05861564",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "GNU GPLv3",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "files_written": 14,
+  "mode": "recover-json-sources"
+}

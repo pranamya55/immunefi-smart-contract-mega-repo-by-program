@@ -1,0 +1,24 @@
+{
+  "url": "https://bscscan.com/address/0x57c99087fd5dade38e25e1033e69feb0ccea0823",
+  "host": "bscscan.com",
+  "address": "0x57c99087fd5dade38e25e1033e69feb0ccea0823",
+  "chainid": 56,
+  "project_slug": "teahousefinance",
+  "asset_id": "7s6Oadjt5oMEBXBJJ0bZ0V",
+  "contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0xbb4ce34c3f6731103f474e204445eb830e627f1f",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 13,
+  "mode": "json-sources"
+}

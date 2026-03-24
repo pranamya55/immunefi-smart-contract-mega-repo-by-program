@@ -1,0 +1,4 @@
+category = "unit_tests_pass"
+validate_abi = true
+validate_storage_slots = true
+expected_warnings = 6

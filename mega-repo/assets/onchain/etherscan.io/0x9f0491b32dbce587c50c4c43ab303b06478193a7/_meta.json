@@ -1,0 +1,24 @@
+{
+  "url": "https://etherscan.io/address/0x9F0491B32DBce587c50c4C43AB303b06478193A7",
+  "host": "etherscan.io",
+  "address": "0x9F0491B32DBce587c50c4C43AB303b06478193A7",
+  "chainid": 1,
+  "project_slug": "staderforeth",
+  "asset_id": "7izx3PfgFB307ygGulvotQ",
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "1",
+  "implementation": "0x678f0d5aac7398502b50b24b3ce67ea2dc4fc29c",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 14,
+  "mode": "json-sources"
+}

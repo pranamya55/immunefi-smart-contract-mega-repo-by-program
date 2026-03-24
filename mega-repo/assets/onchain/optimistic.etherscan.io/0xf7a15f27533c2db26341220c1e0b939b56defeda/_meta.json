@@ -1,0 +1,24 @@
+{
+  "url": "https://optimistic.etherscan.io/address/0xf7a15F27533c2Db26341220C1e0B939B56dEfeda#code",
+  "host": "optimistic.etherscan.io",
+  "address": "0xf7a15F27533c2Db26341220C1e0B939B56dEfeda",
+  "chainid": 10,
+  "project_slug": "velodromefinance",
+  "asset_id": "3qGHKeUwDPg0FaqEm89I8H",
+  "contract_name": "EmergencyCouncil",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": "1",
+  "runs": "200",
+  "constructor_arguments": "000000000000000000000000838352f4e3992187a33a04826273db3992ee2b3f00000000000000000000000041c914ee0c7e1a5edcd0295623e6dc557b5abf3c",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 23,
+  "mode": "json-sources"
+}

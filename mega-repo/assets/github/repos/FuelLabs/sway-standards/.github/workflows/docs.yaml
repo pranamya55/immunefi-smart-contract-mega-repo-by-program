@@ -1,0 +1,22 @@
+name: Docs
+
+on:
+  pull_request:
+
+jobs:
+  spell-check:
+    name: Spell Check
+    uses: FuelLabs/github-actions/.github/workflows/mdbook-docs.yml@master
+    with:
+      docs-src-path: "docs/src"
+      spellcheck-config-path: "docs/.spellcheck.yml"
+
+  link-check:
+    name: Link Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Run Markdown Link Check
+        uses: gaurav-nelson/github-action-markdown-link-check@1.0.15

@@ -1,0 +1,706 @@
+[
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "4H9jOxIZhUY2jb5sXIMvYx",
+    "url": "https://seiscan.io/address/0x6f04B655d5209E85E47D3920A2EF407A66e83f6c",
+    "description": "OndoMintBurnAdapter (Sei)",
+    "added_at": "2026-01-28T07:30:40.965Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "3pkHhNikhcEEEWb4gP6lrK",
+    "url": "https://seiscan.io/address/0x54cD901491AeF397084453F4372B93c33260e2A6",
+    "description": "USDY Token (Sei)",
+    "added_at": "2026-01-28T07:30:40.995Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "3fVzSTp8iZv5mnHXMywPb",
+    "url": "https://explorer.plume.org/address/0xD2B65e851Be3d80D3c2ce795eB2E78f16cB088b2",
+    "description": "USDY Token (Plume)",
+    "added_at": "2026-01-28T07:30:40.991Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "1D4823ZA702C6DvOfDaKvG",
+    "url": "https://bscscan.com/address/0x2D3Fa4e1AaB6E4BBd909CF81518A8084873c47B5",
+    "description": "IssuanceHours (BSC)",
+    "added_at": "2025-10-29T09:48:00.289Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "1DqKwGmJJZmSrXgLQXFTDy",
+    "url": "https://etherscan.io/address/0x87b126e5518b6a1Bb8465779b4607C45C643DF90",
+    "description": "USDYOracleWrapper",
+    "added_at": "2025-12-17T12:08:25.520Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "1I4aOolbm8s2fcdjbW3QnW",
+    "url": "https://bscscan.com/address/0x898128F9f22c0192da0c5acD394D9eeAc461D911",
+    "description": "OndoIDRegistry (BSC)",
+    "added_at": "2025-10-29T09:47:58.519Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "1JCjHxUia8E1vxTXoMP4Ln",
+    "url": "https://polygonscan.com/address/0xbA11C5effA33c4D6F8f593CFA394241CfE925811",
+    "description": "OUSG Token (Polygon)",
+    "added_at": "2024-04-25T14:41:41.678Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "1QPIZFMIkMpFGgMDVESMIo",
+    "url": "https://bscscan.com/address/0x4D4E562D6882Dc523B8d629d2E9dF9230B699933",
+    "description": "OndoOwner (BSC)",
+    "added_at": "2025-12-15T09:47:03.681Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "1TVlBsTv3kC1KKGgoYI8tj",
+    "url": "https://solscan.io/token/i7u4r16TcsJTgq1kAG8opmVZyVnAKBwLKu6ZPMwzxNc#metadata",
+    "description": "OUSG Token (Solana)",
+    "added_at": "2024-04-25T14:41:26.276Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "1b4Is79YQdj2gYoHElb567",
+    "url": "https://etherscan.io/address/0x914D5Cb27cb30E80BdE8215ff577eD63Eb986B79",
+    "description": "OndoSanityCheckOracle",
+    "added_at": "2025-09-15T22:00:25.497Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "1eJQ8QLfNXFPJifGKyNjHf",
+    "url": "https://bscscan.com/address/0x01bB8620c0aEF4390c983A5A792d178AF2733e82",
+    "description": "GMTokenFactory (BSC)",
+    "added_at": "2025-10-29T09:48:00.452Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "1szSefhlBsgBDF7Dkn4nOn",
+    "url": "https://polygonscan.com/address/0x7cd852c0d7613aa869e632929560f310d4059ac1",
+    "description": "KYCRegistry (Polygon)",
+    "added_at": "2024-04-25T14:40:43.211Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "1zHPIJc3cT7IFmw2wSUXT5",
+    "url": "https://solscan.io/account/3cKyGYojYbFxeUnBf5xak3cTpaxmYuzpFbSnP9n3kyui",
+    "description": "Solana GMTokenManagerState",
+    "added_at": "2026-01-22T09:49:44.659Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "2D2pcPDGtkFRCUPJivF78Q",
+    "url": "https://solscan.io/account/7YNReenG6AXgVUfmSizt6hoVXrznS4zDdgCj1UTLJ2S3",
+    "description": "OndoMintBurnAdapter (Solana)",
+    "added_at": "2025-05-05T08:53:14.206Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "2F9jmSfh9enq7ZiXpRbxAr",
+    "url": "https://etherscan.io/address/0xa0219aa5b31e65bc920b5b6dfb8edf0988121de0",
+    "description": "USDY Price Oracle",
+    "added_at": "2024-04-25T14:44:51.720Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "2Z2D6457Gbi2rMe13e4HhS",
+    "url": "https://solscan.io/account/CKW82CT7QtJUDkxCa6sSHZ3UXvUSu6EuGDXUtKyXgn67",
+    "description": "Solana USDonManagerState",
+    "added_at": "2026-01-22T09:49:44.667Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "2b68lQcDpEavPH0RjZvS6L",
+    "url": "https://bscscan.com/address/0x87786323ad9997924B22eac3AA9f71f562795633",
+    "description": "OndoOFT (BSC)",
+    "added_at": "2025-12-15T09:47:03.692Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "2iMuoYZjhZydB4n4aLqSYT",
+    "url": "https://arbiscan.io/address/0x0bE393DC46248E4285dc5CAcA3084bc7e9bfbB41#code",
+    "description": "OndoMintBurnAdapter (Arbitrum)",
+    "added_at": "2024-11-26T07:52:47.626Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "2mFHjVqnm2KwMhGUgWaKDL",
+    "url": "https://bscscan.com/address/0xCd6D30a1A585eb67E0d0ef5c1ae601BE20862897",
+    "description": "OndoRateLimiter (BSC)",
+    "added_at": "2025-10-29T09:47:58.352Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "32DQuxkbUCuF6UIWLJ0wrZ",
+    "url": "https://bscscan.com/address/0x91f8Aff3738825e8eB16FC6f6b1A7A4647bDB299",
+    "description": "GMTokenManager (BSC)",
+    "added_at": "2025-10-29T09:47:58.344Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "33vSk5IFfOHltDRf5vJGse",
+    "url": "https://etherscan.io/address/0x54043c656F0FAd0652D9Ae2603cDF347c5578d00",
+    "description": "rOUSG Token",
+    "added_at": "2024-04-25T14:41:56.725Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "34oYv1hQzMHEYhUMpOrbp7",
+    "url": "https://etherscan.io/address/0xe9b3c628103580702b465c052f67843cac61fb35",
+    "description": "BasicRecipient - USDC",
+    "added_at": "2025-04-09T08:15:45.935Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "354kMljxeU271GPxbKL49X",
+    "url": "https://etherscan.io/address/0xcf6958D69d535FD03BD6Df3F4fe6CDcd127D97df",
+    "description": "OndoIDRegistry",
+    "added_at": "2025-04-09T08:12:18.291Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "36j2WovOV4r60uLOCowWt5",
+    "url": "https://etherscan.io/address/0x98Db502215Da1ad9F626D4a0090A8A2f4971003c",
+    "description": "OndoRateLimiter",
+    "added_at": "2025-04-09T08:13:52.704Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "36tEanWtF8QmIaP0blwssO",
+    "url": "https://etherscan.io/address/0xeA8dBF5F3456FaB742fc11b977330A58069758eF",
+    "description": "OndoOFT",
+    "added_at": "2025-12-15T09:47:03.359Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "3NaUpk9J81qHjSa0M0n7nk",
+    "url": "https://bscscan.com/address/0x14032815B65f6B65f23d2532ad5F5DFf7BE48C03",
+    "description": "OndoSanityCheckOracle (BSC)",
+    "added_at": "2025-10-29T09:48:00.406Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "3RUuTskeCn6UnYiyZo5ea2",
+    "url": "https://etherscan.io/address/0x99B8d1D1c17a10CD1A878d1A44c11fd7E4daD7bC",
+    "description": "OndoTokenRouter",
+    "added_at": "2025-04-09T08:14:50.287Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "3Zl74YH2wjIJspiihuDvo7",
+    "url": "https://etherscan.io/address/0xfD48112E448417CA79305a518c4186dF4b0A200a",
+    "description": "TokenPauseManger",
+    "added_at": "2025-09-15T22:01:38.886Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "3na9s2abRIZ2juuBSYjrE8",
+    "url": "https://etherscan.io/address/0xff2BABA46Df92919705E60120C477Ae5b7341Eb3",
+    "description": "Messenger",
+    "added_at": "2025-12-15T09:47:03.445Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "3oLb5MgAR0T2EWK6M7DxdH",
+    "url": "https://etherscan.io/address/0xD2746617c58b72254785BDb483e04f311c858d5f",
+    "description": "TokenManagerRegistrar",
+    "added_at": "2025-09-15T22:01:09.302Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "3vca5jMkjCkb5XccCj54Wu",
+    "url": "https://etherscan.io/address/0x2c158BC456e027b2AfFCCadF1BDBD9f5fC4c5C8c",
+    "description": "GMTokenManager",
+    "added_at": "2025-09-15T22:02:15.017Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "3wNkIHNmYmzfZGhLVPMhYR",
+    "url": "https://bscscan.com/address/0x578f397CA4661D1dB4D9a65065D6B284A1A850fd",
+    "description": "GMToken Implementation (BSC)",
+    "added_at": "2025-10-29T09:47:58.678Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "44mmOWoiUdP1y3nakyVy76",
+    "url": "https://solscan.io/token/A1KLoBrKBde8Ty9qtNQUtq3C2ortoC3u7twggz7sEto6#metadata",
+    "description": "USDY Token (Standard SPL Token on Solana)",
+    "added_at": "2024-04-25T14:43:50.726Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "47DAiuDuv29dtOAbWWHRvo",
+    "url": "https://etherscan.io/address/0x0b34233a94c3433092009D8903080553039bB7a1",
+    "description": "Inspector",
+    "added_at": "2025-12-15T09:47:03.631Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "48Jwose3l9xfjauJHL44J7",
+    "url": "https://etherscan.io/address/0x56A5D911052323D688C731d516530878557463e7",
+    "description": "OndoIDRegistryView",
+    "added_at": "2025-04-09T08:12:32.948Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "4M304BTapgeMB8O3Zv5KoA",
+    "url": "https://etherscan.io/address/0xE59dbF08CccF8D1ab90156b9664d31Fd20BB2AC7",
+    "description": "OndoIssuanceHours",
+    "added_at": "2025-09-15T22:00:09.614Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "4OEwyM3wTmdgQRl68iAg3g",
+    "url": "https://etherscan.io/address/0x54a8757c2FEF8649830b158a8C19D3a670e80318",
+    "description": "OndoComplianceGMView",
+    "added_at": "2025-09-15T22:01:51.580Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "4S4SorXAoTFnyoFednxr59",
+    "url": "https://etherscan.io/address/0x95feCDD21D48426d3bAd195c6A3f0686e6b4d635",
+    "description": "USDCSource",
+    "added_at": "2025-09-15T21:59:40.212Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "4Sc6p0Hhih1maG2OzH0bTs",
+    "url": "https://etherscan.io/address/0xaf37c1167910ebc994e266949387d2c7c326b879",
+    "description": "rUSDY Token",
+    "added_at": "2024-05-08T11:24:39.926Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "4sLrsVaMrjZFzyKaA6hf5t",
+    "url": "https://bscscan.com/address/0x2ced30744edcF9eDe5799eb07a0A29CE4f012a0c",
+    "description": "RateLimiter (OFTs) (BSC)",
+    "added_at": "2025-12-15T09:47:03.855Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "4uvY2gzrwyGSjQERNjImfS",
+    "url": "https://etherscan.io/address/0xEaC2181075BA0FC53D5141B17943Ea9F913954e6",
+    "description": "OndoSubscriptionFees",
+    "added_at": "2025-04-09T08:12:47.359Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "4v549PJbXsqxt646flBHAw",
+    "url": "https://etherscan.io/address/0xAcE8E719899F6E91831B18AE746C9A965c2119F1",
+    "description": "USDon",
+    "added_at": "2025-09-15T21:58:45.152Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "4w3sisY63j5t6JNrPWHLHm",
+    "url": "https://etherscan.io/address/0xbC6D5C103a3f586e68bd475942a49d041b171C3e",
+    "description": "OndoOwner",
+    "added_at": "2025-12-15T09:47:03.452Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "5GhUOY1685ETpg6sOuT6O5",
+    "url": "https://etherscan.io/address/0xa6275720b3fB1Efe3E6EF2b5BF2293148852307D#code",
+    "description": "OndoMintBurnAdapter (Ethereum)",
+    "added_at": "2024-11-26T07:51:14.705Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "5JVsLIPq3l6JhhSY7IHEpu",
+    "url": "https://bscscan.com/address/0x55E0b3aC59D3F6A924483B25A9F3D83C0Dd7C31c",
+    "description": "BridgeRegistrarStub (BSC)",
+    "added_at": "2025-10-29T09:48:00.369Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "5Waq0MZQYbda9PdC1bBiYC",
+    "url": "https://etherscan.io/address/0x14dd822e1b75253525a209e3cc917cd0d54b6cae",
+    "description": "USDC/USDonRecipient",
+    "added_at": "2025-09-15T21:59:56.403Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "5ZvccnSOzAJz2YFvP8972c",
+    "url": "https://etherscan.io/address/0x156F73fc73197555e950743Cb2B23F411c751002",
+    "description": "OndoCompliance",
+    "added_at": "2025-04-09T08:12:02.895Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "5hvUM0AM1h5Oo9HtSN0qa8",
+    "url": "https://arbiscan.io/address/0x35e050d3C0eC2d29D269a8EcEa763a183bDF9A9D",
+    "description": "USDY Token (Arbitrum)",
+    "added_at": "2024-07-15T08:39:26.415Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "5kEmPMOIbi02edgxcOJQ2N",
+    "url": "https://etherscan.io/address/0xebBcb2cEE51c2FeE4062c9C1270dcb98B0b22250",
+    "description": "GMToken Implementation",
+    "added_at": "2025-09-15T22:00:57.413Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "5smEAhasH5fYcaXmG5XmT2",
+    "url": "https://etherscan.io/address/0x9Cad45a8BF0Ed41Ff33074449B357C7a1fAb4094",
+    "description": "OndoOracle",
+    "added_at": "2025-04-09T08:14:19.795Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "5uavndQmk9LaHXjClyowjA",
+    "url": "https://bscscan.com/address/0x5f7d50242206993A4476C76b21950219a4ED2c91",
+    "description": "Messenger (BSC)",
+    "added_at": "2025-12-15T09:47:03.684Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "5ueXCR78RaZjYo27ympqLr",
+    "url": "https://explorer.mantle.xyz/address/0x5bE26527e817998A7206475496fDE1E68957c5A6",
+    "description": "USDY Token (Mantle)",
+    "added_at": "2024-04-25T14:43:34.838Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "611CKJy19FdSgKs9bJUD5y",
+    "url": "https://etherscan.io/address/0xa42613C243b67BF6194Ac327795b926B4b491f15",
+    "description": "USDY Instant RWA Manager",
+    "added_at": "2025-12-17T12:08:25.535Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "6GfbDIHkp4d10hSASUSlCX",
+    "url": "https://etherscan.io/address/0x27370016A46fF10255b8DAAbE7035f5203ce280E",
+    "description": "BasicSource - PYUSD",
+    "added_at": "2025-04-09T08:15:31.120Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "6Gpl690o30t6b2HMx0NVz9",
+    "url": "https://www.oklink.com/xlayer/address/0x5903E2Be82832c42a868A4748B64b5c401DE91Eb/contract#category=read",
+    "description": "USDY Token (X Layer)",
+    "added_at": "2024-04-25T14:44:05.398Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "6QRTGY8RlCVAQObUBd0QJs",
+    "url": "https://etherscan.io/address/0x44cBF4D4Db78a48F80d54b61FA1955979f07AEfd",
+    "description": "USDonSource",
+    "added_at": "2025-09-15T21:59:24.638Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "6mw7WC3xxcHyKXPTdXRWrQ",
+    "url": "https://etherscan.io/address/0x10d8bbFAE5dF091DC1646A95685F7aFAe0c853E7",
+    "description": "BasicRecipient - PYUSD",
+    "added_at": "2025-04-09T08:15:58.492Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "6oTcuEs56NJ0SJZ0s95ZT7",
+    "url": "https://explorer.mantle.xyz/address/0xA96abbe61AfEdEB0D14a20440Ae7100D9aB4882f#code",
+    "description": "USDY Price Oracle (Mantle)",
+    "added_at": "2024-04-25T14:45:07.102Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "6skHHLKBU1AoJ4Wy8ya8ly",
+    "url": "https://bscscan.com/address/0x6334924c787Ebd21C881740Ef6237Ef51962638F",
+    "description": "TokenPauseManager (BSC)",
+    "added_at": "2025-10-29T09:47:58.525Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "6u49DeizPTadFzQcEFSSwP",
+    "url": "https://etherscan.io/address/0x93358db73B6cd4b98D89c8F5f230E81a95c2643a",
+    "description": "OUSG Instant RWA Manager",
+    "added_at": "2025-04-09T08:11:49.694Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "7F6fEIeg0dpQx75WbV2K0M",
+    "url": "https://etherscan.io/address/0x25A103A1D6AeC5967c1A4fe2039cdc514886b97e",
+    "description": "USDY Manager",
+    "added_at": "2024-04-25T14:44:35.674Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "7KVmmz7L6BZwzLX1BcffR",
+    "url": "https://etherscan.io/address/0x9F205E1aC7698F59EdbAa0a28C4A4c4ed605b722",
+    "description": "BuidlUSDCSource",
+    "added_at": "2025-04-09T08:15:15.286Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "7aWqjVfH9FwYxJ9JGWWZok",
+    "url": "https://bscscan.com/address/0xA21Ed4C3122fc51c6D6Db0d668D968C3B3f689CB",
+    "description": "TokenManagerRegistrar (BSC)",
+    "added_at": "2025-10-29T09:47:58.345Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "7l3SmSJBn7GLvVbFDDEXVs",
+    "url": "https://bscscan.com/address/0x0b34233a94c3433092009d8903080553039bb7a1",
+    "description": "Inspector (BSC)",
+    "added_at": "2025-12-15T09:47:05.459Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "9GeDAT7suA3EXGebE9zon",
+    "url": "https://www.mintscan.io/noble/assets/native/YXVzZHk=",
+    "description": "USDY Token (Noble)",
+    "added_at": "2024-07-15T08:39:08.711Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "9Q8aeDRwKHuX1aQ7zcbQJ",
+    "url": "https://etherscan.io/address/0x1B19C19393e2d034D8Ff31ff34c81252FcBbee92",
+    "description": "OUSG Token",
+    "added_at": "2024-04-25T14:41:10.094Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "BMyZkIhAAyM7RRoxrOv0N",
+    "url": "https://etherscan.io/address/0x0502c5ae08E7CD64fe1AEDA7D6e229413eCC6abe",
+    "description": "OUSG Oracle",
+    "added_at": "2024-04-25T14:40:55.716Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "BuX74VFrq4JdaQ26sEFRQ",
+    "url": "https://explorer.mantle.xyz/address/0x0bE393DC46248E4285dc5CAcA3084bc7e9bfbB41?tab=contract",
+    "description": "OndoMintBurnAdapter (Mantle)",
+    "added_at": "2024-11-26T07:52:03.749Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "C7jJIp5K3076mlqAuQ3xi",
+    "url": "https://etherscan.io/address/0x05CCbB4b74854f8A067b83475E8c34f5a413D7e1",
+    "description": "USDonManager",
+    "added_at": "2025-09-15T21:59:07.567Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "J15fQjmHBeDbXpYZBrce9",
+    "url": "https://explorer.mantle.xyz/address/0xab575258d37EaA5C8956EfABe71F4eE8F6397cF3?tab=contract#address-tabs",
+    "description": "rUSDY Token (a.k.a mUSD) (Mantle)",
+    "added_at": "2024-04-25T14:43:19.866Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "SNUa4df67cHNceIbrL7Vd",
+    "url": "https://etherscan.io/address/0x7a17Ad297b79f1fA7e40FF4F81A332bE85D10f29",
+    "description": "BridgeRegistrarStub",
+    "added_at": "2025-09-15T22:01:23.580Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "TJwGG8nT5j2ZoBYq234Wz",
+    "url": "https://explorer.aptoslabs.com/account/0xcfea864b32833f157f042618bd845145256b1bf4c0da34a7013b76e42daa53cc/modules/code/usdy?network=mainnet",
+    "description": "USDY Token (Aptos)",
+    "added_at": "2024-04-25T14:44:19.928Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "UBFXxEaZIfJSKv9LiMWtT",
+    "url": "https://bscscan.com/address/0x76be569C94C39a2E2492DE2F4D1C253F348250D0",
+    "description": "OndoComplianceGMView (BSC)",
+    "added_at": "2025-10-29T09:47:58.667Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "ZDCt6DU5KFdZaWM9pLxoL",
+    "url": "https://etherscan.io/address/0xF16c188c2D411627d39655A60409eC6707D3d5e8",
+    "description": "OUSG Manager",
+    "added_at": "2024-04-25T14:42:12.918Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "bTRUgA0m9itLvAfnj3I1R",
+    "url": "https://bscscan.com/address/0x1f8955E640Cbd9abc3C3Bb408c9E2E1f5F20DfE6",
+    "description": "USDon (BSC)",
+    "added_at": "2025-10-29T09:48:00.561Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "czSQSN4XaRsSODXXDFfA4",
+    "url": "https://solscan.io/account/XzTT4XB8m7sLD2xi6snefSasaswsKCxx5Tifjondogm",
+    "description": "Solana GM Program",
+    "added_at": "2026-01-22T09:49:44.668Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "hG4XhNerFWQTSd99X6YkW",
+    "url": "https://etherscan.io/address/0xADC4966E4F8CAAf12C777f07AA7A0Ae8D894cDf3",
+    "description": "OUSGOracleWrapper",
+    "added_at": "2025-04-09T08:14:06.856Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "i2lZCCznitpmeMyglzvWz",
+    "url": "https://etherscan.io/address/0xe28AfEC27C50096B4e98cd5546eAE8414b5e7542",
+    "description": "PauseManager",
+    "added_at": "2025-04-09T08:15:03.759Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "oVNNHOVfvhgAm02eaFn1f",
+    "url": "https://etherscan.io/address/0xE60F44AA6b7084d5Ca05D0e9145921e94bc23caB",
+    "description": "GMTokenFactory",
+    "added_at": "2025-09-15T22:00:42.756Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "qRJsG9LoKlU1MCEcYvK4P",
+    "url": "https://etherscan.io/address/0x96F6eF951840721AdBF46Ac996b59E0235CB985C",
+    "description": "USDY Token",
+    "added_at": "2024-04-25T14:43:03.971Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "sBBsTmGcZAYwvo14kai3p",
+    "url": "https://etherscan.io/address/0xE1cb24077d77d2fE763fCAC63e5653D97dc8D20C",
+    "description": "OndoRedemptionFees",
+    "added_at": "2025-04-09T08:13:38.696Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "tuXK1mW45VjBwiIjFrYpN",
+    "url": "https://etherscan.io/address/0x4D4E562D6882Dc523B8d629d2E9dF9230B699933",
+    "description": "RateLimiter (OFTs)",
+    "added_at": "2025-12-15T09:47:03.449Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "ygVey6hIjvto9KFT6PvDZ",
+    "url": "https://bscscan.com/address/0xC58584FF45b06822f49Ec8871BA8af9B8943A689",
+    "description": "USDonConverter (BSC)",
+    "added_at": "2025-10-29T09:47:58.381Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "yrxyaBAo2Xyvja0vXIQf0",
+    "url": "https://etherscan.io/address/0x1cb2Dcc325615d02ae384941149d1dA6521fa018",
+    "description": "AdminSubscriptionChecker",
+    "added_at": "2025-04-09T08:14:33.740Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "98713",
+    "url": "https://etherscan.io/address/0x9BC39DB6fbB44B91a48b8D5A6C208B82B1741bE6",
+    "description": "SyntheticSharesOracle",
+    "added_at": "2026-02-06T18:50:51.374Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "98714",
+    "url": "https://bscscan.com/address/0xF4Fd8a1B412633e10527454137A29Db7Aa35F15e",
+    "description": "SyntheticSharesOracle (BSC)",
+    "added_at": "2026-02-06T18:50:51.374Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "98775",
+    "url": "https://etherscan.io/address/0xf0Bc39Fc911F6437C84d16188dD8294F7110f451",
+    "description": "GMTokenLimitOrder",
+    "added_at": "2026-02-10T08:49:15.010Z",
+    "revision": 0
+  },
+  {
+    "project_slug": "ondofinance",
+    "asset_id": "98776",
+    "url": "https://bscscan.com/address/0x96b525B1a93f31E65F4aAf18C53842eD28525D48",
+    "description": "GMTokenLimitOrder (BSC)",
+    "added_at": "2026-02-10T08:49:15.010Z",
+    "revision": 0
+  }
+]

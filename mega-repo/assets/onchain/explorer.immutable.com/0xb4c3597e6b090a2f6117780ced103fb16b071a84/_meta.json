@@ -1,0 +1,25 @@
+{
+  "url": "https://explorer.immutable.com/address/0xb4c3597e6b090A2f6117780cEd103FB16B071A84",
+  "host": "explorer.immutable.com",
+  "address": "0xb4c3597e6b090A2f6117780cEd103FB16B071A84",
+  "chainid": null,
+  "project_slug": "immutable",
+  "asset_id": "6uO76lmxp86rMyBwTqfSQL",
+  "contract_name": "ChildERC20Bridge",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": "true",
+  "runs": null,
+  "constructor_arguments": "000000000000000000000000dda0d9448ebe3ea43afece5fa6401f5795c19333",
+  "evm_version": "paris",
+  "library": null,
+  "license_type": null,
+  "proxy": null,
+  "implementation": null,
+  "swarm_source": null,
+  "fetch_messages": [
+    "etherscan-v2:missing-chainid",
+    "scan-host-no-key:ok"
+  ],
+  "files_written": 1,
+  "mode": "single-file"
+}

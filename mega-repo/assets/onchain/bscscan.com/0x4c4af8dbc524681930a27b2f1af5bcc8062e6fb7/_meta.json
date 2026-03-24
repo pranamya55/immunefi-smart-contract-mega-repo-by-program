@@ -1,0 +1,24 @@
+{
+  "url": "https://bscscan.com/address/0x4c4AF8DBc524681930a27b2F1Af5bcC8062E6fB7#code",
+  "host": "bscscan.com",
+  "address": "0x4c4AF8DBc524681930a27b2F1Af5bcC8062E6fB7",
+  "chainid": 56,
+  "project_slug": "woofi",
+  "asset_id": "6F6aeY3vnxeSpRN2zJgF84",
+  "contract_name": "WooRouterV2",
+  "compiler_version": "v0.8.14+commit.80d49f37",
+  "optimization_used": "1",
+  "runs": "20000",
+  "constructor_arguments": "000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c00000000000000000000000059de3b49314bf5067719364a2cb43e8525ab93fa",
+  "evm_version": "Default",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 12,
+  "mode": "json-sources"
+}

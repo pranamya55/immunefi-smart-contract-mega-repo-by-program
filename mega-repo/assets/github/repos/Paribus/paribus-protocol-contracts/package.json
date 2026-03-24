@@ -1,0 +1,33 @@
+{
+  "name": "paribus-protocol",
+  "version": "0.0.1",
+  "description": "",
+  "main": "npx hardhat",
+  "author": "Paribus",
+  "license": "UNLICENSED",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "recompile": "npx hardhat compile --force",
+    "console": "npx hardhat console",
+    "coverage": "npx hardhat coverage && printf '\n\n!!! SOLIDITY-COVERAGE <= v0.8.2 PLUGIN IS BROKEN, THE RESULTS ARE UNTRUSTWORTHY AND COMPROMISED !!!\n'",
+    "lint": "./scripts/lint",
+    "report": "HARDHAT_REPORT_GAS=true npx hardhat test",
+    "test": "npx hardhat test",
+    "checksize": "npx hardhat size-contracts",
+    "depcheck": "npx depcheck"
+  },
+  "devDependencies": {
+    "hardhat": "^2.12.7",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+    "@chainlink/contracts": "^0.4.0",
+    "@openzeppelin/contracts": "^3.4.2",
+    "hardhat-contract-sizer": "^2.6.1",
+    "chai": "^4.3.6",
+    "ethlint": "^1.2.5",
+    "mathjs": "^10.4.2",
+    "solidity-coverage": "^0.8.2",
+    "synthetix": "2.66.0",
+    "depcheck": "^1.4.3",
+    "openzeppelin-solidity-2.3.0": "npm:openzeppelin-solidity@2.3.0"
+  }
+}

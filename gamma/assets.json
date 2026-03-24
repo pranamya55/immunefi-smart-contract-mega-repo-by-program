@@ -1,0 +1,26 @@
+[
+  {
+    "project_slug": "gamma",
+    "asset_id": "21zPm19TlbEQqK0SR1jK48",
+    "url": "https://etherscan.io/address/0x26805021988F1a45dC708B5FB75Fc75F21747D8c",
+    "description": "xGamma",
+    "added_at": "2022-02-09T12:45:07.989Z",
+    "revision": 1
+  },
+  {
+    "project_slug": "gamma",
+    "asset_id": "2zW4jVKz9ikehx9XfuQkKY",
+    "url": "https://etherscan.io/address/0xa8076ae31e4b6c64d07b1ed27889924a962a70d3",
+    "description": "Hypervisor",
+    "added_at": "2022-03-30T17:40:11.919Z",
+    "revision": 2
+  },
+  {
+    "project_slug": "gamma",
+    "asset_id": "5HYeXpcawP3e58xcFJJJrT",
+    "url": "https://etherscan.io/address/0x83de646a7125ac04950fea7e322481d4be66c71d",
+    "description": "UniProxy",
+    "added_at": "2022-04-25T16:25:55.512Z",
+    "revision": 2
+  }
+]

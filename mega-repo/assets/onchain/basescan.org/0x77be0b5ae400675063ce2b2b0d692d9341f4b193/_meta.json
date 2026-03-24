@@ -1,0 +1,24 @@
+{
+  "url": "https://basescan.org/address/0x77bE0b5aE400675063Ce2B2B0d692D9341f4b193",
+  "host": "basescan.org",
+  "address": "0x77bE0b5aE400675063Ce2B2B0d692D9341f4b193",
+  "chainid": 8453,
+  "project_slug": "hyperlane",
+  "asset_id": "5pa3eedjOBgMkK4xHZOE3s",
+  "contract_name": "StaticAggregationIsm",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": "1",
+  "runs": "999999",
+  "constructor_arguments": "",
+  "evm_version": "paris",
+  "library": "",
+  "license_type": "",
+  "proxy": "0",
+  "implementation": "",
+  "swarm_source": "",
+  "fetch_messages": [
+    "etherscan-v2:ok"
+  ],
+  "files_written": 9,
+  "mode": "json-sources"
+}
